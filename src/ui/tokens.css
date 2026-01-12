@@ -1,0 +1,15 @@
+﻿:root{
+  --cdw-fw-font: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --cdw-fw-accent-ocean: #1d4ed8;
+  --cdw-fw-accent-sky: #0ea5e9;
+  --cdw-fw-accent-teal: #14b8a6;
+  --cdw-fw-accent-forest: #15803d;
+  --cdw-fw-accent-lime: #65a30d;
+  --cdw-fw-accent-sun: #f59e0b;
+  --cdw-fw-accent-ember: #f97316;
+  --cdw-fw-accent-cocoa: #7c4a2d;
+  --cdw-fw-accent-ruby: #dc2626;
+  --cdw-fw-accent-rose: #e11d48;
+  --cdw-fw-accent-violet: #8b5cf6;
+  --cdw-fw-accent-indigo: #4f46e5;
+}

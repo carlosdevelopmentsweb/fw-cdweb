@@ -1,0 +1,30 @@
+/* Layout containers */
+.cdw-fw-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.cdw-fw-container-fluid {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media (min-width: 576px) {
+  .cdw-fw-container { max-width: 540px; }
+}
+
+@media (min-width: 768px) {
+  .cdw-fw-container { max-width: 720px; }
+}
+
+@media (min-width: 992px) {
+  .cdw-fw-container { max-width: 960px; }
+}
+
+@media (min-width: 1200px) {
+  .cdw-fw-container { max-width: 1140px; }
+}

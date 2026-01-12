@@ -1,0 +1,169 @@
+﻿<section id="layout" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+  <div class="cdw-fw-docs-section-head">
+    <h2 class="cdw-fw-docs-section-title">Layout</h2>
+    <p class="cdw-fw-docs-lead">
+      Containers e grid de 12 colunas para composições responsivas.
+    </p>
+  </div>
+
+  <div class="cdw-fw-docs-toc">
+    <span class="cdw-fw-docs-toc-title">Índice desta página</span>
+    <a href="#layout-container">Container</a>
+    <a href="#layout-grid">Grid</a>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="layout-container" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Container</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Centralize conteúdo com largura máxima ou ocupe toda a largura com o fluid.
+      <span class="cdw-fw-docs-when">Quando usar: páginas com leitura centralizada.</span>
+    </p>
+    <div class="cdw-fw-docs-classlist">
+      <span>cdw-fw-container</span>
+      <span>cdw-fw-container-fluid</span>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Container vs container-fluid</div>
+        <div class="cdw-fw-docs-badge">Comum</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-docs-layout-band">Container</div>
+        <div class="cdw-fw-container" style="margin-top:10px;">
+          <div class="cdw-fw-docs-grid-demo">Conteúdo centralizado</div>
+        </div>
+        <div class="cdw-fw-docs-layout-band" style="margin-top:14px;">Container fluid</div>
+        <div class="cdw-fw-container-fluid" style="margin-top:10px;">
+          <div class="cdw-fw-docs-grid-demo">Conteúdo full width</div>
+        </div>
+        <div class="cdw-fw-docs-example-caption">
+          O container respeita max-width; o fluid ocupa 100%.
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-container"&gt;...&lt;/div&gt;
+&lt;div class="cdw-fw-container-fluid"&gt;...&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="layout-grid" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Grid 12 colunas</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Estruture linhas e colunas responsivas usando breakpoints.
+      <span class="cdw-fw-docs-when">Quando usar: layouts de marketing e dashboards.</span>
+    </p>
+    <div class="cdw-fw-docs-classlist">
+      <span>cdw-fw-row</span>
+      <span>cdw-fw-col-*</span>
+      <span>cdw-fw-col-md-*</span>
+      <span>cdw-fw-col-lg-*</span>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Duas colunas</div>
+        <div class="cdw-fw-docs-badge">Básico</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-container">
+          <div class="cdw-fw-row cdw-fw-gap-3">
+            <div class="cdw-fw-col-12 cdw-fw-col-md-6">
+              <div class="cdw-fw-docs-grid-demo">col-12 / md-6</div>
+            </div>
+            <div class="cdw-fw-col-12 cdw-fw-col-md-6">
+              <div class="cdw-fw-docs-grid-demo">col-12 / md-6</div>
+            </div>
+          </div>
+        </div>
+        <div class="cdw-fw-docs-example-caption">Mobile empilha, md divide em 2 colunas.</div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-row cdw-fw-gap-3"&gt;
+  &lt;div class="cdw-fw-col-12 cdw-fw-col-md-6"&gt;...&lt;/div&gt;
+  &lt;div class="cdw-fw-col-12 cdw-fw-col-md-6"&gt;...&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Três colunas</div>
+        <div class="cdw-fw-docs-badge">Comum</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-container">
+          <div class="cdw-fw-row cdw-fw-gap-3">
+            <div class="cdw-fw-col-12 cdw-fw-col-md-6 cdw-fw-col-lg-4">
+              <div class="cdw-fw-docs-grid-demo">col-12 / md-6 / lg-4</div>
+            </div>
+            <div class="cdw-fw-col-12 cdw-fw-col-md-6 cdw-fw-col-lg-4">
+              <div class="cdw-fw-docs-grid-demo">col-12 / md-6 / lg-4</div>
+            </div>
+            <div class="cdw-fw-col-12 cdw-fw-col-lg-4">
+              <div class="cdw-fw-docs-grid-demo">col-12 / lg-4</div>
+            </div>
+          </div>
+        </div>
+        <div class="cdw-fw-docs-example-caption">Mobile empilha, md divide, lg vira 3 colunas.</div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-row cdw-fw-gap-3"&gt;
+  &lt;div class="cdw-fw-col-12 cdw-fw-col-md-6 cdw-fw-col-lg-4"&gt;...&lt;/div&gt;
+  &lt;div class="cdw-fw-col-12 cdw-fw-col-md-6 cdw-fw-col-lg-4"&gt;...&lt;/div&gt;
+  &lt;div class="cdw-fw-col-12 cdw-fw-col-lg-4"&gt;...&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Sidebar + conteúdo</div>
+        <div class="cdw-fw-docs-badge">Comum</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-container">
+          <div class="cdw-fw-row cdw-fw-gap-3">
+            <div class="cdw-fw-col-12 cdw-fw-col-lg-3">
+              <div class="cdw-fw-docs-grid-demo">Sidebar</div>
+            </div>
+            <div class="cdw-fw-col-12 cdw-fw-col-lg-9">
+              <div class="cdw-fw-docs-grid-demo">Conteúdo</div>
+            </div>
+          </div>
+        </div>
+        <div class="cdw-fw-docs-example-caption">Mobile empilha, lg separa sidebar e conteúdo.</div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-row cdw-fw-gap-3"&gt;
+  &lt;div class="cdw-fw-col-12 cdw-fw-col-lg-3"&gt;Sidebar&lt;/div&gt;
+  &lt;div class="cdw-fw-col-12 cdw-fw-col-lg-9"&gt;Conteúdo&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-card">
+      <div class="cdw-fw-docs-card-title">Recomendações de uso</div>
+      <div class="cdw-fw-docs-highlight">Row sempre como pai</div>
+      <div class="cdw-fw-docs-highlight">Colunas sempre dentro de Row</div>
+      <div class="cdw-fw-docs-highlight">Use gap utilities para espaçamento</div>
+    </div>
+  </div>
+</section>

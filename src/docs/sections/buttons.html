@@ -1,0 +1,225 @@
+﻿<section id="botoes" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+  <div class="cdw-fw-docs-section-head">
+    <h2 class="cdw-fw-docs-section-title">Bot&otilde;es</h2>
+    <p class="cdw-fw-docs-lead">
+      Bot&otilde;es do CDW-FW foram pensados para combinar forma, estilo e cor de maneira modular.
+    </p>
+  </div>
+
+  <div class="cdw-fw-docs-toc">
+    <span class="cdw-fw-docs-toc-title">&Iacute;ndice desta p&aacute;gina</span>
+    <a href="#botoes-intro">Introdu&ccedil;&atilde;o</a>
+    <a href="#botoes-estrutura">Estrutura b&aacute;sica</a>
+    <a href="#botoes-formas">Formas</a>
+    <a href="#botoes-estilos">Estilos</a>
+    <a href="#botoes-tamanhos">Tamanhos</a>
+    <a href="#botoes-combinacoes">Combina&ccedil;&otilde;es</a>
+    <a href="#botoes-estados">Estados</a>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="botoes-intro" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Introdu&ccedil;&atilde;o</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Separe forma (radius), estilo (solid/soft/outline/text) e cor (accent).
+      <span class="cdw-fw-docs-when">Quando usar: qualquer a&ccedil;&atilde;o principal ou secund&aacute;ria da interface.</span>
+    </p>
+    <div class="cdw-fw-docs-classlist">
+      <span>cdw-fw-btn</span>
+      <span>cdw-fw-btn--solid</span>
+      <span>cdw-fw-btn--outline</span>
+      <span>cdw-fw-btn--soft</span>
+      <span>cdw-fw-btn--text</span>
+      <span>cdw-fw-accent-*</span>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="botoes-estrutura" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Estrutura b&aacute;sica</h3>
+    <p class="cdw-fw-docs-subdesc">
+      A estrutura m&iacute;nima combina a classe base, o estilo e a cor.
+      <span class="cdw-fw-docs-when">Quando usar: ponto de partida para qualquer bot&atilde;o.</span>
+    </p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Bot&atilde;o m&iacute;nimo</div>
+        <div class="cdw-fw-docs-badge">B&aacute;sico</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--default cdw-fw-accent-ocean">Bot&atilde;o</button>
+        <div class="cdw-fw-docs-example-caption">A cor vem de cdw-fw-accent-ocean.</div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-accent-ocean"&gt;
+  Bot&atilde;o
+&lt;/button&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="botoes-formas" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Formas</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Ajuste o raio para refor&ccedil;ar o estilo da interface.
+      <span class="cdw-fw-docs-when">Quando usar: diferenciar a&ccedil;&otilde;es prim&aacute;rias e secund&aacute;rias.</span>
+    </p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Formas principais</div>
+        <div class="cdw-fw-docs-badge">Comum</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-docs-btn-row">
+          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--default cdw-fw-accent-sky">Default</button>
+          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--square cdw-fw-accent-sky">Square</button>
+          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded cdw-fw-accent-sky">Rounded</button>
+          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--circle cdw-fw-accent-sky" aria-label="Info">i</button>
+        </div>
+        <div class="cdw-fw-docs-example-caption">Circle &eacute; ideal para &iacute;cones.</div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--default cdw-fw-accent-sky"&gt;Default&lt;/button&gt;
+&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--square cdw-fw-accent-sky"&gt;Square&lt;/button&gt;
+&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded cdw-fw-accent-sky"&gt;Rounded&lt;/button&gt;
+&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--circle cdw-fw-accent-sky"&gt;i&lt;/button&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="botoes-estilos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Estilos</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Defina como a cor aparece no bot&atilde;o.
+      <span class="cdw-fw-docs-when">Quando usar: alterar o peso visual do CTA.</span>
+    </p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Solid, Soft, Outline e Text</div>
+        <div class="cdw-fw-docs-badge">Comum</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-docs-btn-row">
+          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--default cdw-fw-accent-rose">Solid</button>
+          <button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--default cdw-fw-accent-rose">Soft</button>
+          <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--default cdw-fw-accent-rose">Outline</button>
+          <button class="cdw-fw-btn cdw-fw-btn--text cdw-fw-btn--default cdw-fw-accent-rose">Text</button>
+        </div>
+        <div class="cdw-fw-docs-example-caption">Soft usa o modifier cdw-fw-soft embutido no estilo.</div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-accent-rose"&gt;Solid&lt;/button&gt;
+&lt;button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-accent-rose"&gt;Soft&lt;/button&gt;
+&lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-accent-rose"&gt;Outline&lt;/button&gt;
+&lt;button class="cdw-fw-btn cdw-fw-btn--text cdw-fw-accent-rose"&gt;Text&lt;/button&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="botoes-tamanhos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Tamanhos</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Tr&ecirc;s tamanhos para hierarquia visual.
+      <span class="cdw-fw-docs-when">Quando usar: adaptar densidade da interface.</span>
+    </p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Small, Medium e Large</div>
+        <div class="cdw-fw-docs-badge">Comum</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-docs-btn-row">
+          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-accent-forest">Small</button>
+          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--md cdw-fw-accent-forest">Medium</button>
+          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--lg cdw-fw-accent-forest">Large</button>
+        </div>
+        <div class="cdw-fw-docs-example-caption">Medium &eacute; o tamanho padr&atilde;o.</div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-accent-forest"&gt;Small&lt;/button&gt;
+&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--md cdw-fw-accent-forest"&gt;Medium&lt;/button&gt;
+&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--lg cdw-fw-accent-forest"&gt;Large&lt;/button&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="botoes-combinacoes" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Combina&ccedil;&otilde;es reais</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Exemplos prontos para cen&aacute;rios comuns.
+      <span class="cdw-fw-docs-when">Quando usar: CTAs, a&ccedil;&otilde;es secund&aacute;rias e &iacute;cones.</span>
+    </p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">A&ccedil;&otilde;es principais</div>
+        <div class="cdw-fw-docs-badge">Comum</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-docs-btn-row">
+          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--default cdw-fw-accent-indigo">Bot&atilde;o principal</button>
+          <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--default cdw-fw-accent-indigo">Secund&aacute;rio</button>
+          <button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--default cdw-fw-accent-indigo">Suave</button>
+          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--circle cdw-fw-accent-indigo" aria-label="Editar">+</button>
+        </div>
+        <div class="cdw-fw-docs-example-caption">
+          Solid para destaque, outline para secund&aacute;ria, soft para suporte e circle para &iacute;cone.
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-accent-indigo"&gt;Bot&atilde;o principal&lt;/button&gt;
+&lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-accent-indigo"&gt;Secund&aacute;rio&lt;/button&gt;
+&lt;button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-accent-indigo"&gt;Suave&lt;/button&gt;
+&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--circle cdw-fw-accent-indigo"&gt;+&lt;/button&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="botoes-estados" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Estados</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Estados padr&atilde;o para indicar intera&ccedil;&atilde;o.
+      <span class="cdw-fw-docs-when">Quando usar: sinalizar hover, foco e desabilitado.</span>
+    </p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Hover, Focus e Disabled</div>
+        <div class="cdw-fw-docs-badge">B&aacute;sico</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-docs-btn-row">
+          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-accent-sun cdw-fw-docs-is-hover">Hover</button>
+          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-accent-sun cdw-fw-docs-is-focus">Focus</button>
+          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-accent-sun" disabled>Disabled</button>
+        </div>
+        <div class="cdw-fw-docs-example-caption">Focus usa highlight vis&iacute;vel; disabled reduz opacidade.</div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-accent-sun"&gt;Hover&lt;/button&gt;
+&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-accent-sun"&gt;Focus&lt;/button&gt;
+&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-accent-sun" disabled&gt;Disabled&lt;/button&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
