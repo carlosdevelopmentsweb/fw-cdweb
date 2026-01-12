@@ -1,3 +1,3 @@
-import { renderDocs } from "./docs/docs";
+﻿import { init } from "./index";
 
-renderDocs();
+init();

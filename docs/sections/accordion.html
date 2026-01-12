@@ -1,0 +1,512 @@
+<section id="accordion" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+  <div class="cdw-fw-docs-section-head">
+    <h2 class="cdw-fw-docs-section-title">Accordion</h2>
+    <p class="cdw-fw-docs-lead">
+      Componente para organizar conte&uacute;do em blocos expans&iacute;veis, com anima&ccedil;&atilde;o suave,
+      foco vis&iacute;vel e suporte completo ao teclado.
+    </p>
+  </div>
+
+  <div class="cdw-fw-docs-card">
+    <div class="cdw-fw-docs-card-title">Pr&eacute;-requisito</div>
+    <p class="cdw-fw-docs-card-desc">
+      Antes de usar, leia o Guia do Framework na se&ccedil;&atilde;o Come&ccedil;ando.
+    </p>
+  </div>
+
+  <div class="cdw-fw-docs-toc">
+    <span class="cdw-fw-docs-toc-title">&Iacute;ndice desta p&aacute;gina</span>
+    <a href="#accordion-introducao">Introdu&ccedil;&atilde;o</a>
+    <a href="#accordion-estrutura">Estrutura base</a>
+    <a href="#accordion-basico">B&aacute;sico</a>
+    <a href="#accordion-multiple">M&uacute;ltiplo</a>
+    <a href="#accordion-default-open">Abertura padr&atilde;o</a>
+    <a href="#accordion-disabled">Desativado</a>
+    <a href="#accordion-variantes">Variantes</a>
+    <a href="#accordion-icones">&Iacute;cones</a>
+    <a href="#accordion-api">API / Op&ccedil;&otilde;es</a>
+    <a href="#accordion-eventos">Eventos</a>
+    <a href="#accordion-acessibilidade">Acessibilidade</a>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="accordion-introducao" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Introdu&ccedil;&atilde;o</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Use o Accordion para reduzir a altura de p&aacute;ginas longas, agrupar informa&ccedil;&otilde;es
+      e facilitar a leitura por etapas. Ele suporta modo single ou m&uacute;ltiplo, &iacute;cone
+      customiz&aacute;vel e configura&ccedil;&atilde;o por data-attributes.
+    </p>
+    <div class="cdw-fw-docs-classlist">
+      <span>cdw-accordion</span>
+      <span>cdw-accordion-item</span>
+      <span>cdw-accordion-trigger</span>
+      <span>cdw-accordion-panel</span>
+      <span>cdw-accordion-content</span>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="accordion-estrutura" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Estrutura base</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Estrutura m&iacute;nima com container, item, trigger e panel.
+    </p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">HTML m&iacute;nimo</div>
+        <div class="cdw-fw-docs-badge">B&aacute;sico</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-accordion" data-cdw-accordion>
+          <div class="cdw-accordion-item">
+            <button class="cdw-accordion-trigger" type="button">
+              <span>T&iacute;tulo</span>
+              <span class="cdw-accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="cdw-accordion-panel">
+              <div class="cdw-accordion-content">Conte&uacute;do do item.</div>
+            </div>
+          </div>
+        </div>
+        <div class="cdw-fw-docs-example-caption">
+          O trigger &eacute; sempre um bot&atilde;o para garantir acessibilidade.
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-accordion" data-cdw-accordion&gt;
+  &lt;div class="cdw-accordion-item"&gt;
+    &lt;button class="cdw-accordion-trigger" type="button"&gt;
+      &lt;span&gt;T&iacute;tulo&lt;/span&gt;
+      &lt;span class="cdw-accordion-icon" aria-hidden="true"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class="cdw-accordion-panel"&gt;
+      &lt;div class="cdw-accordion-content"&gt;Conte&uacute;do do item.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="accordion-basico" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">B&aacute;sico (single)</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Apenas um item aberto por vez, com op&ccedil;&atilde;o de fechar o atual.
+    </p>
+    <div class="cdw-fw-docs-classlist">
+      <span>data-mode="single"</span>
+      <span>data-collapsible="true"</span>
+    </div>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Accordion b&aacute;sico</div>
+        <div class="cdw-fw-docs-badge">B&aacute;sico</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-accordion" data-cdw-accordion data-mode="single" data-collapsible="true">
+          <div class="cdw-accordion-item is-open">
+            <button class="cdw-accordion-trigger" type="button">
+              <span>Vis&atilde;o geral</span>
+              <span class="cdw-accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="cdw-accordion-panel">
+              <div class="cdw-accordion-content">
+                Este item inicia aberto para destacar o conte&uacute;do principal.
+              </div>
+            </div>
+          </div>
+          <div class="cdw-accordion-item">
+            <button class="cdw-accordion-trigger" type="button">
+              <span>Detalhes</span>
+              <span class="cdw-accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="cdw-accordion-panel">
+              <div class="cdw-accordion-content">
+                Cada item pode conter qualquer conte&uacute;do HTML.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cdw-fw-docs-example-caption">
+          Modo single garante apenas um item aberto por vez.
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-accordion" data-cdw-accordion data-mode="single" data-collapsible="true"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="accordion-multiple" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">M&uacute;ltiplo</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Permite abrir v&aacute;rios itens ao mesmo tempo.
+    </p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Modo m&uacute;ltiplo</div>
+        <div class="cdw-fw-docs-badge">Comum</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-accordion" data-cdw-accordion data-mode="multiple">
+          <div class="cdw-accordion-item is-open">
+            <button class="cdw-accordion-trigger" type="button">
+              <span>Planejamento</span>
+              <span class="cdw-accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="cdw-accordion-panel">
+              <div class="cdw-accordion-content">Itens abertos simultaneamente.</div>
+            </div>
+          </div>
+          <div class="cdw-accordion-item is-open">
+            <button class="cdw-accordion-trigger" type="button">
+              <span>Execu&ccedil;&atilde;o</span>
+              <span class="cdw-accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="cdw-accordion-panel">
+              <div class="cdw-accordion-content">Ideal para listas de tarefas.</div>
+            </div>
+          </div>
+        </div>
+        <div class="cdw-fw-docs-example-caption">
+          Use o modo m&uacute;ltiplo quando o conte&uacute;do n&atilde;o &eacute; exclusivo.
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-accordion" data-cdw-accordion data-mode="multiple"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="accordion-default-open" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Abertura padr&atilde;o</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Defina qual item inicia aberto usando &iacute;ndice ou id l&oacute;gico.
+    </p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Abrir por &iacute;ndice</div>
+        <div class="cdw-fw-docs-badge">Comum</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-accordion" data-cdw-accordion data-default-open="1">
+          <div class="cdw-accordion-item">
+            <button class="cdw-accordion-trigger" type="button">
+              <span>Primeiro</span>
+              <span class="cdw-accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="cdw-accordion-panel">
+              <div class="cdw-accordion-content">Item 0 fechado.</div>
+            </div>
+          </div>
+          <div class="cdw-accordion-item" data-cdw-accordion-item="meuId">
+            <button class="cdw-accordion-trigger" type="button">
+              <span>Segundo</span>
+              <span class="cdw-accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="cdw-accordion-panel">
+              <div class="cdw-accordion-content">Item 1 abre por padr&atilde;o.</div>
+            </div>
+          </div>
+        </div>
+        <div class="cdw-fw-docs-example-caption">
+          data-default-open="1" abre o segundo item.
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-accordion" data-cdw-accordion data-default-open="1"&gt;...&lt;/div&gt;
+&lt;div class="cdw-accordion" data-cdw-accordion data-default-open="id:meuId"&gt;...&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="accordion-disabled" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Desativado</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Itens desativados ficam visuais e n&atilde;o respondem a cliques.
+    </p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Item desativado</div>
+        <div class="cdw-fw-docs-badge">Comum</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-accordion" data-cdw-accordion>
+          <div class="cdw-accordion-item">
+            <button class="cdw-accordion-trigger" type="button">
+              <span>Ativo</span>
+              <span class="cdw-accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="cdw-accordion-panel">
+              <div class="cdw-accordion-content">Item interativo.</div>
+            </div>
+          </div>
+          <div class="cdw-accordion-item is-disabled" data-disabled="true">
+            <button class="cdw-accordion-trigger" type="button" disabled>
+              <span>Desativado</span>
+              <span class="cdw-accordion-icon" aria-hidden="true"></span>
+            </button>
+            <div class="cdw-accordion-panel">
+              <div class="cdw-accordion-content">N&atilde;o pode ser aberto.</div>
+            </div>
+          </div>
+        </div>
+        <div class="cdw-fw-docs-example-caption">
+          Use is-disabled ou data-disabled="true" para bloquear intera&ccedil;&atilde;o.
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-accordion-item is-disabled" data-disabled="true"&gt;
+  &lt;button class="cdw-accordion-trigger" type="button" disabled&gt;...&lt;/button&gt;
+  &lt;div class="cdw-accordion-panel"&gt;...&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="accordion-variantes" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Variantes</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Ajuste o visual com as classes de variante.
+    </p>
+    <div class="cdw-fw-docs-classlist">
+      <span>cdw-accordion--flush</span>
+      <span>cdw-accordion--soft</span>
+      <span>cdw-accordion--compact</span>
+    </div>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Flush / Soft / Compact</div>
+        <div class="cdw-fw-docs-badge">Avan&ccedil;ado</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-flex cdw-fw-flex-col cdw-fw-gap-3">
+          <div class="cdw-accordion cdw-accordion--flush" data-cdw-accordion>
+            <div class="cdw-accordion-item is-open">
+              <button class="cdw-accordion-trigger" type="button">
+                <span>Flush</span>
+                <span class="cdw-accordion-icon" aria-hidden="true"></span>
+              </button>
+              <div class="cdw-accordion-panel">
+                <div class="cdw-accordion-content">Sem bordas externas.</div>
+              </div>
+            </div>
+          </div>
+          <div class="cdw-accordion cdw-accordion--soft" data-cdw-accordion>
+            <div class="cdw-accordion-item is-open">
+              <button class="cdw-accordion-trigger" type="button">
+                <span>Soft</span>
+                <span class="cdw-accordion-icon" aria-hidden="true"></span>
+              </button>
+              <div class="cdw-accordion-panel">
+                <div class="cdw-accordion-content">Fundo leve e moderno.</div>
+              </div>
+            </div>
+          </div>
+          <div class="cdw-accordion cdw-accordion--compact" data-cdw-accordion>
+            <div class="cdw-accordion-item is-open">
+              <button class="cdw-accordion-trigger" type="button">
+                <span>Compact</span>
+                <span class="cdw-accordion-icon" aria-hidden="true"></span>
+              </button>
+              <div class="cdw-accordion-panel">
+                <div class="cdw-accordion-content">Mais denso e enxuto.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cdw-fw-docs-example-caption">
+          Combine as variantes conforme o contexto visual.
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-accordion cdw-accordion--flush" data-cdw-accordion&gt;...&lt;/div&gt;
+&lt;div class="cdw-accordion cdw-accordion--soft" data-cdw-accordion&gt;...&lt;/div&gt;
+&lt;div class="cdw-accordion cdw-accordion--compact" data-cdw-accordion&gt;...&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="accordion-icones" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">&Iacute;cones</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Escolha entre chevron e plus usando o atributo data-icon.
+    </p>
+    <div class="cdw-fw-docs-classlist">
+      <span>data-icon="chevron"</span>
+      <span>data-icon="plus"</span>
+    </div>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Chevron / Plus</div>
+        <div class="cdw-fw-docs-badge">Comum</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-flex cdw-fw-gap-3">
+          <div class="cdw-accordion" data-cdw-accordion data-icon="chevron">
+            <div class="cdw-accordion-item is-open">
+              <button class="cdw-accordion-trigger" type="button">
+                <span>Chevron</span>
+                <span class="cdw-accordion-icon" aria-hidden="true"></span>
+              </button>
+              <div class="cdw-accordion-panel">
+                <div class="cdw-accordion-content">Seta minimalista.</div>
+              </div>
+            </div>
+          </div>
+          <div class="cdw-accordion" data-cdw-accordion data-icon="plus">
+            <div class="cdw-accordion-item is-open">
+              <button class="cdw-accordion-trigger" type="button">
+                <span>Plus</span>
+                <span class="cdw-accordion-icon" aria-hidden="true"></span>
+              </button>
+              <div class="cdw-accordion-panel">
+                <div class="cdw-accordion-content">Transforma em menos.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cdw-fw-docs-example-caption">
+          data-icon ajusta o estilo do indicador.
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-accordion" data-cdw-accordion data-icon="chevron"&gt;...&lt;/div&gt;
+&lt;div class="cdw-accordion" data-cdw-accordion data-icon="plus"&gt;...&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="accordion-api" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">API / Op&ccedil;&otilde;es</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Configure via data-attributes ou via op&ccedil;&otilde;es do JavaScript.
+    </p>
+    <table class="cdw-fw-docs-scale-table">
+      <thead>
+        <tr>
+          <th>Op&ccedil;&atilde;o</th>
+          <th>Tipo</th>
+          <th>Padr&atilde;o</th>
+          <th>Descri&ccedil;&atilde;o</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>data-mode</td>
+          <td>single | multiple</td>
+          <td>single</td>
+          <td>Controla se abre um ou v&aacute;rios itens.</td>
+        </tr>
+        <tr>
+          <td>data-collapsible</td>
+          <td>true | false</td>
+          <td>false</td>
+          <td>Permite fechar o item aberto no modo single.</td>
+        </tr>
+        <tr>
+          <td>data-default-open</td>
+          <td>number | id:xxx</td>
+          <td>-</td>
+          <td>Define qual item inicia aberto.</td>
+        </tr>
+        <tr>
+          <td>data-animate</td>
+          <td>true | false</td>
+          <td>true</td>
+          <td>Ativa/desativa anima&ccedil;&atilde;o.</td>
+        </tr>
+        <tr>
+          <td>data-icon</td>
+          <td>chevron | plus</td>
+          <td>chevron</td>
+          <td>Define o estilo do indicador.</td>
+        </tr>
+        <tr>
+          <td>data-cdw-accordion-item</td>
+          <td>string</td>
+          <td>-</td>
+          <td>Identificador opcional do item.</td>
+        </tr>
+        <tr>
+          <td>data-disabled</td>
+          <td>true | false</td>
+          <td>false</td>
+          <td>Desativa o item.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="accordion-eventos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Eventos</h3>
+    <p class="cdw-fw-docs-subdesc">
+      O accordion dispara eventos no container quando abre ou fecha itens.
+    </p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Listener</div>
+        <div class="cdw-fw-docs-badge">Comum</div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">JS</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>const accordion = document.querySelector("[data-cdw-accordion]");
+
+accordion?.addEventListener("cdw:accordion:open", (event) =&gt; {
+  console.log("abriu", event.detail);
+});
+
+accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
+  console.log("fechou", event.detail);
+});</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="accordion-acessibilidade" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Acessibilidade</h3>
+    <p class="cdw-fw-docs-subdesc">
+      O componente possui foco vis&iacute;vel, ARIA completo e navega&ccedil;&atilde;o por teclado.
+    </p>
+    <div class="cdw-fw-docs-card">
+      <div class="cdw-fw-docs-card-title">Atalhos de teclado</div>
+      <div class="cdw-fw-docs-highlight">Enter / Espa&ccedil;o: abre e fecha.</div>
+      <div class="cdw-fw-docs-highlight">Setas: navegam entre os triggers.</div>
+      <div class="cdw-fw-docs-highlight">Home / End: primeiro e &uacute;ltimo item.</div>
+    </div>
+  </div>
+</section>

@@ -2,6 +2,7 @@
 @import "./base.css";
 @import "./colors.css";
 @import "./components/button.css";
+@import "./components/accordion.css";
 @import "./utilities/spacing.css";
 @import "./utilities/display.css";
 @import "./utilities/flex.css";

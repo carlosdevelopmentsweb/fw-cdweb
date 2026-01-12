@@ -1,0 +1,143 @@
+<section id="comecando" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+  <div class="cdw-fw-docs-section-head">
+    <h2 class="cdw-fw-docs-section-title">Come&ccedil;ando</h2>
+    <p class="cdw-fw-docs-lead">
+      O CDW-FW &eacute; um framework de layout, utilidades e componentes leves para criar interfaces
+      r&aacute;pidas e consistentes. Ele n&atilde;o conflita com outros frameworks porque todas as classes usam
+      o prefixo <strong>cdw-fw-</strong>.
+    </p>
+  </div>
+
+  <div class="cdw-fw-docs-toc">
+    <span class="cdw-fw-docs-toc-title">&Iacute;ndice desta p&aacute;gina</span>
+    <a href="#comecando-cdn">Inclus&atilde;o via CDN (Recomendado)</a>
+    <a href="#comecando-latest">Vers&atilde;o sempre atual</a>
+    <a href="#comecando-esm">Uso com ES Modules (ESM)</a>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="comecando-cdn" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Inclus&atilde;o via CDN (Recomendado)</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Use URLs com vers&atilde;o fixa para garantir estabilidade em produ&ccedil;&atilde;o.
+    </p>
+    <div class="cdw-fw-docs-classlist">
+      <span>CSS (vers&atilde;o fixa)</span>
+      <span>JS UMD (vers&atilde;o fixa)</span>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Links diretos</div>
+        <div class="cdw-fw-docs-badge">Recomendado</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-docs-highlight">
+          https://cdn.jsdelivr.net/gh/carlosdevelopmentsweb/fw-cdweb@0.1.3/dist/cdw-fw.css
+        </div>
+        <div class="cdw-fw-docs-highlight">
+          https://cdn.jsdelivr.net/gh/carlosdevelopmentsweb/fw-cdweb@0.1.3/dist/cdw-fw.js
+        </div>
+        <div class="cdw-fw-docs-example-caption">
+          ✔️ Forma recomendada para produ&ccedil;&atilde;o. ✔️ Evita que atualiza&ccedil;&otilde;es quebrem seu projeto.
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/carlosdevelopmentsweb/fw-cdweb@0.1.3/dist/cdw-fw.css"&gt;
+
+&lt;script src="https://cdn.jsdelivr.net/gh/carlosdevelopmentsweb/fw-cdweb@0.1.3/dist/cdw-fw.js"&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  CDWFW.init();
+&lt;/script&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="comecando-latest" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Vers&atilde;o sempre atual (n&atilde;o recomendada para produ&ccedil;&atilde;o)</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Carrega sempre a &uacute;ltima vers&atilde;o dispon&iacute;vel no CDN.
+    </p>
+    <div class="cdw-fw-docs-classlist">
+      <span>CSS (sempre atual)</span>
+      <span>JS UMD (sempre atual)</span>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Links diretos</div>
+        <div class="cdw-fw-docs-badge">Aten&ccedil;&atilde;o</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-docs-highlight">
+          https://cdn.jsdelivr.net/gh/carlosdevelopmentsweb/fw-cdweb/dist/
+        </div>
+        <div class="cdw-fw-docs-callout">
+          ⚠️ Esta op&ccedil;&atilde;o carrega sempre a vers&atilde;o mais recente e pode quebrar seu projeto.
+        </div>
+        <div class="cdw-fw-docs-highlight">
+          https://cdn.jsdelivr.net/gh/carlosdevelopmentsweb/fw-cdweb/dist/cdw-fw.css
+        </div>
+        <div class="cdw-fw-docs-highlight">
+          https://cdn.jsdelivr.net/gh/carlosdevelopmentsweb/fw-cdweb/dist/cdw-fw.js
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/carlosdevelopmentsweb/fw-cdweb/dist/cdw-fw.css"&gt;
+
+&lt;script src="https://cdn.jsdelivr.net/gh/carlosdevelopmentsweb/fw-cdweb/dist/cdw-fw.js"&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  CDWFW.init();
+&lt;/script&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="comecando-esm" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Uso com ES Modules (ESM)</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Ideal para projetos modernos com suporte a m&oacute;dulos ES.
+    </p>
+    <div class="cdw-fw-docs-classlist">
+      <span>ESM</span>
+      <span>CDN</span>
+      <span>init()</span>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Link ESM</div>
+        <div class="cdw-fw-docs-badge">Comum</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-docs-highlight">
+          https://cdn.jsdelivr.net/gh/carlosdevelopmentsweb/fw-cdweb@0.1.3/dist/cdw-fw.esm.js
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/carlosdevelopmentsweb/fw-cdweb@0.1.3/dist/cdw-fw.css"&gt;
+
+&lt;script type="module"&gt;
+  import { init } from "https://cdn.jsdelivr.net/gh/carlosdevelopmentsweb/fw-cdweb@0.1.3/dist/cdw-fw.esm.js";
+  init();
+&lt;/script&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
