@@ -2,7 +2,7 @@ import type { FrameworkAPI } from "../core/init";
 import { register } from "./_registry";
 
 type AccordionMode = "single" | "multiple";
-type AccordionIcon = "chevron" | "plus";
+type AccordionIcon = "chevron" | "plus" | "caret" | "arrow" | "dot";
 
 export interface AccordionOptions {
   mode?: AccordionMode;
@@ -58,7 +58,16 @@ function parseMode(value: string | null, fallback: AccordionMode): AccordionMode
 }
 
 function parseIcon(value: string | null, fallback: AccordionIcon): AccordionIcon {
-  return value === "plus" ? "plus" : fallback;
+  switch (value) {
+    case "plus":
+    case "caret":
+    case "arrow":
+    case "dot":
+    case "chevron":
+      return value;
+    default:
+      return fallback;
+  }
 }
 
 function parseDefaultOpen(

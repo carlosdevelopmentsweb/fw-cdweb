@@ -1,97 +1,106 @@
 const u = [];
-function v(t) {
-  const e = u.findIndex((n) => n.name === t.name);
-  if (e >= 0) {
-    u[e] = t;
+function v(e) {
+  const t = u.findIndex((n) => n.name === e.name);
+  if (t >= 0) {
+    u[t] = e;
     return;
   }
-  u.push(t);
+  u.push(e);
 }
 function C() {
   return [...u];
 }
 const g = "[data-cdw-accordion]", R = ".cdw-accordion-item", p = ".cdw-accordion-trigger", D = ".cdw-accordion-panel", a = /* @__PURE__ */ new WeakMap();
 let E = 0;
-function L(t) {
-  return E += 1, `${t}-${E}`;
+function w(e) {
+  return E += 1, `${e}-${E}`;
 }
-function x(t) {
-  return t instanceof HTMLElement;
+function L(e) {
+  return e instanceof HTMLElement;
 }
-function w(t, e) {
-  return t === null ? e : t === "" ? !0 : t === "true";
+function x(e, t) {
+  return e === null ? t : e === "" ? !0 : e === "true";
 }
-function z(t, e) {
-  return t === "multiple" ? "multiple" : e;
+function z(e, t) {
+  return e === "multiple" ? "multiple" : t;
 }
-function B(t, e) {
-  return t === "plus" ? "plus" : e;
+function B(e, t) {
+  switch (e) {
+    case "plus":
+    case "caret":
+    case "arrow":
+    case "dot":
+    case "chevron":
+      return e;
+    default:
+      return t;
+  }
 }
-function H(t) {
-  if (t == null) return [];
-  if (Array.isArray(t)) return t;
-  if (typeof t == "number") return [t];
-  if (typeof t == "string") {
-    const e = t.trim();
-    if (!e) return [];
-    if (e.includes(","))
-      return e.split(",").map((i) => i.trim()).filter(Boolean).map((i) => {
+function H(e) {
+  if (e == null) return [];
+  if (Array.isArray(e)) return e;
+  if (typeof e == "number") return [e];
+  if (typeof e == "string") {
+    const t = e.trim();
+    if (!t) return [];
+    if (t.includes(","))
+      return t.split(",").map((i) => i.trim()).filter(Boolean).map((i) => {
         const r = Number(i);
         return Number.isNaN(r) ? i : r;
       });
-    const n = Number(e);
-    return Number.isNaN(n) ? [e] : [n];
+    const n = Number(t);
+    return Number.isNaN(n) ? [t] : [n];
   }
   return [];
 }
-function _(t, e) {
-  const n = z(t.getAttribute("data-mode"), "single"), i = w(
-    t.getAttribute("data-collapsible"),
+function _(e, t) {
+  const n = z(e.getAttribute("data-mode"), "single"), i = x(
+    e.getAttribute("data-collapsible"),
     !1
-  ), r = w(t.getAttribute("data-animate"), !0), s = B(t.getAttribute("data-icon"), "chevron"), o = H(
-    t.getAttribute("data-default-open")
+  ), r = x(e.getAttribute("data-animate"), !0), s = B(e.getAttribute("data-icon"), "chevron"), o = H(
+    e.getAttribute("data-default-open")
   );
   return {
-    mode: e?.mode ?? n,
-    collapsible: e?.collapsible ?? i,
-    defaultOpen: e?.defaultOpen ?? o,
-    animate: e?.animate ?? r,
-    icon: e?.icon ?? s
+    mode: t?.mode ?? n,
+    collapsible: t?.collapsible ?? i,
+    defaultOpen: t?.defaultOpen ?? o,
+    animate: t?.animate ?? r,
+    icon: t?.icon ?? s
   };
 }
-function q(t, e) {
-  return t.getAttribute("data-cdw-accordion-item") || t.id || String(e);
+function q(e, t) {
+  return e.getAttribute("data-cdw-accordion-item") || e.id || String(t);
 }
-function d(t, e) {
-  if (typeof e == "number")
-    return t.index === e;
-  if (e.startsWith("id:")) {
-    const n = e.slice(3);
-    return t.key === n || t.item.id === n;
+function d(e, t) {
+  if (typeof t == "number")
+    return e.index === t;
+  if (t.startsWith("id:")) {
+    const n = t.slice(3);
+    return e.key === n || e.item.id === n;
   }
-  return t.key === e;
+  return e.key === t;
 }
-function m(t, e, n) {
+function m(e, t, n) {
   if (!n) {
-    t.style.maxHeight = e ? "none" : "0px", t.style.opacity = e ? "1" : "0", t.style.pointerEvents = e ? "auto" : "none";
+    e.style.maxHeight = t ? "none" : "0px", e.style.opacity = t ? "1" : "0", e.style.pointerEvents = t ? "auto" : "none";
     return;
   }
-  if (e) {
-    t.style.maxHeight = `${t.scrollHeight}px`, t.style.opacity = "1", t.style.pointerEvents = "auto";
+  if (t) {
+    e.style.maxHeight = `${e.scrollHeight}px`, e.style.opacity = "1", e.style.pointerEvents = "auto";
     const i = (r) => {
-      r.propertyName === "max-height" && (t.style.maxHeight !== "0px" && (t.style.maxHeight = "none"), t.removeEventListener("transitionend", i));
+      r.propertyName === "max-height" && (e.style.maxHeight !== "0px" && (e.style.maxHeight = "none"), e.removeEventListener("transitionend", i));
     };
-    t.addEventListener("transitionend", i);
+    e.addEventListener("transitionend", i);
     return;
   }
-  (t.style.maxHeight === "none" || t.style.maxHeight === "") && (t.style.maxHeight = `${t.scrollHeight}px`), t.style.opacity = "1", t.style.pointerEvents = "none", t.getBoundingClientRect(), t.style.maxHeight = "0px", t.style.opacity = "0";
+  (e.style.maxHeight === "none" || e.style.maxHeight === "") && (e.style.maxHeight = `${e.scrollHeight}px`), e.style.opacity = "1", e.style.pointerEvents = "none", e.getBoundingClientRect(), e.style.maxHeight = "0px", e.style.opacity = "0";
 }
-function b(t, e) {
-  t.trigger.setAttribute("aria-expanded", e ? "true" : "false"), t.panel.setAttribute("aria-hidden", e ? "false" : "true");
+function b(e, t) {
+  e.trigger.setAttribute("aria-expanded", t ? "true" : "false"), e.panel.setAttribute("aria-hidden", t ? "false" : "true");
 }
-function T(t, e, n) {
-  t.dispatchEvent(
-    new CustomEvent(e, {
+function T(e, t, n) {
+  e.dispatchEvent(
+    new CustomEvent(t, {
       detail: {
         item: n.item,
         index: n.index,
@@ -100,29 +109,29 @@ function T(t, e, n) {
     })
   );
 }
-function y(t, e) {
-  e.item.classList.contains("is-open") && (e.item.classList.remove("is-open"), b(e, !1), m(e.panel, !1, t.options.animate), T(t.container, "cdw:accordion:close", e));
+function y(e, t) {
+  t.item.classList.contains("is-open") && (t.item.classList.remove("is-open"), b(t, !1), m(t.panel, !1, e.options.animate), T(e.container, "cdw:accordion:close", t));
 }
-function N(t, e) {
-  e.disabled || e.item.classList.contains("is-open") || (t.options.mode === "single" && t.items.forEach((n) => {
-    n !== e && y(t, n);
-  }), e.item.classList.add("is-open"), b(e, !0), m(e.panel, !0, t.options.animate), T(t.container, "cdw:accordion:open", e));
+function N(e, t) {
+  t.disabled || t.item.classList.contains("is-open") || (e.options.mode === "single" && e.items.forEach((n) => {
+    n !== t && y(e, n);
+  }), t.item.classList.add("is-open"), b(t, !0), m(t.panel, !0, e.options.animate), T(e.container, "cdw:accordion:open", t));
 }
-function A(t, e) {
-  if (e.disabled) return;
-  if (e.item.classList.contains("is-open")) {
-    if (t.options.mode === "single" && !t.options.collapsible)
+function A(e, t) {
+  if (t.disabled) return;
+  if (t.item.classList.contains("is-open")) {
+    if (e.options.mode === "single" && !e.options.collapsible)
       return;
-    y(t, e);
+    y(e, t);
     return;
   }
-  N(t, e);
+  N(e, t);
 }
-function $(t) {
-  return Array.from(t.querySelectorAll(R)).map((n, i) => {
+function $(e) {
+  return Array.from(e.querySelectorAll(R)).map((n, i) => {
     const r = n.querySelector(p), s = n.querySelector(D);
     if (!r || !s) return null;
-    r.id || (r.id = L("cdw-accordion-trigger")), s.id || (s.id = L("cdw-accordion-panel")), r.setAttribute("aria-controls", s.id), r.tagName === "BUTTON" && !r.getAttribute("type") && r.setAttribute("type", "button"), s.setAttribute("role", "region"), s.setAttribute("aria-labelledby", r.id);
+    r.id || (r.id = w("cdw-accordion-trigger")), s.id || (s.id = w("cdw-accordion-panel")), r.setAttribute("aria-controls", s.id), r.tagName === "BUTTON" && !r.getAttribute("type") && r.setAttribute("type", "button"), s.setAttribute("role", "region"), s.setAttribute("aria-labelledby", r.id);
     const o = n.classList.contains("is-disabled") || n.getAttribute("data-disabled") === "true" || r.hasAttribute("disabled") || r.getAttribute("aria-disabled") === "true";
     return o ? (n.classList.add("is-disabled"), r.setAttribute("aria-disabled", "true"), r.tagName === "BUTTON" && r.setAttribute("disabled", "true"), r.tagName !== "BUTTON" && r.setAttribute("tabindex", "-1")) : (n.classList.remove("is-disabled"), r.removeAttribute("aria-disabled"), r.tagName !== "BUTTON" && r.setAttribute("tabindex", "0")), {
       item: n,
@@ -134,69 +143,69 @@ function $(t) {
     };
   }).filter((n) => n !== null);
 }
-function U(t) {
-  const e = H(t.options.defaultOpen), n = e.length > 0;
+function U(e) {
+  const t = H(e.options.defaultOpen), n = t.length > 0;
   let i = 0;
-  t.items.forEach((r) => {
-    const s = n ? e.some((c) => d(r, c)) : r.item.classList.contains("is-open");
-    t.options.mode === "single" && i > 0 && s && r.item.classList.remove("is-open");
+  e.items.forEach((r) => {
+    const s = n ? t.some((c) => d(r, c)) : r.item.classList.contains("is-open");
+    e.options.mode === "single" && i > 0 && s && r.item.classList.remove("is-open");
     const o = s && !r.disabled;
-    o ? (r.item.classList.add("is-open"), i += 1) : r.item.classList.remove("is-open"), b(r, o), m(r.panel, o, t.options.animate);
+    o ? (r.item.classList.add("is-open"), i += 1) : r.item.classList.remove("is-open"), b(r, o), m(r.panel, o, e.options.animate);
   });
 }
-function K(t, e) {
-  const n = e.target;
+function K(e, t) {
+  const n = t.target;
   if (!(n instanceof Element)) return;
   const i = n.closest(p);
-  if (!i || !t.triggerMap.has(i) || i.getAttribute("aria-disabled") === "true" || i.hasAttribute("disabled"))
+  if (!i || !e.triggerMap.has(i) || i.getAttribute("aria-disabled") === "true" || i.hasAttribute("disabled"))
     return;
-  const r = t.triggerMap.get(i);
-  r && A(t, r);
+  const r = e.triggerMap.get(i);
+  r && A(e, r);
 }
-function W(t, e) {
-  const n = e.target;
+function W(e, t) {
+  const n = t.target;
   if (!(n instanceof Element)) return;
   const i = n.closest(p);
-  if (!i || !t.triggerMap.has(i)) return;
-  const r = t.items.filter((c) => !c.disabled).map((c) => c.trigger), s = r.indexOf(i);
+  if (!i || !e.triggerMap.has(i)) return;
+  const r = e.items.filter((c) => !c.disabled).map((c) => c.trigger), s = r.indexOf(i);
   if (s === -1) return;
   const o = (c) => {
     const h = r[c];
     h && h.focus();
   };
-  switch (e.key) {
+  switch (t.key) {
     case "Enter":
     case " ":
     case "Spacebar":
-      e.preventDefault(), A(t, t.triggerMap.get(i));
+      t.preventDefault(), A(e, e.triggerMap.get(i));
       break;
     case "ArrowDown":
-      e.preventDefault(), o((s + 1) % r.length);
+      t.preventDefault(), o((s + 1) % r.length);
       break;
     case "ArrowUp":
-      e.preventDefault(), o((s - 1 + r.length) % r.length);
+      t.preventDefault(), o((s - 1 + r.length) % r.length);
       break;
     case "Home":
-      e.preventDefault(), o(0);
+      t.preventDefault(), o(0);
       break;
     case "End":
-      e.preventDefault(), o(r.length - 1);
+      t.preventDefault(), o(r.length - 1);
       break;
   }
 }
-function G(t) {
-  t.options.animate && t.items.forEach((e) => {
-    e.item.classList.contains("is-open") && (e.panel.style.maxHeight = `${e.panel.scrollHeight}px`);
+function G(e) {
+  e.options.animate && e.items.forEach((t) => {
+    t.item.classList.contains("is-open") && (t.panel.style.maxHeight = `${t.panel.scrollHeight}px`);
   });
 }
-function f(t, e) {
-  a.has(t) && O(t);
-  const n = _(t, e);
-  t.setAttribute("data-icon", n.icon), t.setAttribute("data-animate", n.animate ? "true" : "false");
-  const i = $(t), r = /* @__PURE__ */ new Map();
+function f(e, t) {
+  a.has(e) && O(e);
+  const n = _(e, t);
+  e.setAttribute("data-icon", n.icon), e.setAttribute("data-animate", n.animate ? "true" : "false");
+  const i = $(e), r = /* @__PURE__ */ new Map();
   i.forEach((o) => r.set(o.trigger, o));
   const s = {
-    container: t,
+    container: e,
     options: n,
     items: i,
     triggerMap: r,
@@ -204,91 +213,91 @@ function f(t, e) {
     keyHandler: (o) => W(s, o),
     resizeHandler: () => G(s)
   };
-  t.addEventListener("click", s.clickHandler), t.addEventListener("keydown", s.keyHandler), window.addEventListener("resize", s.resizeHandler), U(s), a.set(t, s);
+  e.addEventListener("click", s.clickHandler), e.addEventListener("keydown", s.keyHandler), window.addEventListener("resize", s.resizeHandler), U(s), a.set(e, s);
 }
-function l(t) {
-  return typeof t == "string" ? document.querySelector(t) : t;
+function l(e) {
+  return typeof e == "string" ? document.querySelector(e) : e;
 }
-function P(t) {
-  const e = Array.from(t.querySelectorAll(g)).filter(
-    x
+function P(e) {
+  const t = Array.from(e.querySelectorAll(g)).filter(
+    L
   );
-  return x(t) && t.matches(g) && e.unshift(t), e;
+  return L(e) && e.matches(g) && t.unshift(e), t;
 }
 const Y = {
-  init(t, e) {
-    P(t ?? document).forEach((r) => f(r, e));
+  init(e, t) {
+    P(e ?? document).forEach((r) => f(r, t));
   },
-  open(t, e) {
-    const n = l(t);
+  open(e, t) {
+    const n = l(e);
     if (!n) return;
     a.has(n) || f(n);
     const i = a.get(n);
     if (!i) return;
-    const r = i.items.find((s) => d(s, e));
+    const r = i.items.find((s) => d(s, t));
     r && N(i, r);
   },
-  close(t, e) {
-    const n = l(t);
+  close(e, t) {
+    const n = l(e);
     if (!n) return;
     const i = a.get(n);
     if (!i) return;
-    const r = i.items.find((s) => d(s, e));
+    const r = i.items.find((s) => d(s, t));
     r && y(i, r);
   },
-  toggle(t, e) {
-    const n = l(t);
+  toggle(e, t) {
+    const n = l(e);
     if (!n) return;
     a.has(n) || f(n);
     const i = a.get(n);
     if (!i) return;
-    const r = i.items.find((s) => d(s, e));
+    const r = i.items.find((s) => d(s, t));
     r && A(i, r);
   },
-  destroy(t) {
-    const e = l(t);
-    e && O(e);
+  destroy(e) {
+    const t = l(e);
+    t && O(t);
   }
 };
-function O(t) {
-  const e = a.get(t);
-  e && (t.removeEventListener("click", e.clickHandler), t.removeEventListener("keydown", e.keyHandler), window.removeEventListener("resize", e.resizeHandler), e.items.forEach((n) => {
+function O(e) {
+  const t = a.get(e);
+  t && (e.removeEventListener("click", t.clickHandler), e.removeEventListener("keydown", t.keyHandler), window.removeEventListener("resize", t.resizeHandler), t.items.forEach((n) => {
     n.item.classList.remove("is-open"), n.trigger.removeAttribute("aria-expanded"), n.trigger.removeAttribute("aria-controls"), n.panel.removeAttribute("aria-hidden"), n.panel.removeAttribute("aria-labelledby"), n.panel.removeAttribute("role"), n.panel.style.maxHeight = "", n.panel.style.opacity = "", n.panel.style.pointerEvents = "";
-  }), a.delete(t));
+  }), a.delete(e));
 }
 function V() {
   v({
     name: "accordion",
     selector: g,
-    init: (t, e) => {
-      f(t);
+    init: (e, t) => {
+      f(e);
     }
   });
 }
 V();
 const j = "0.1.0", I = "data-cdw-fw-initialized";
-function F(t) {
-  return t ?? document;
+function F(e) {
+  return e ?? document;
 }
-function k(t) {
-  const e = t.getAttribute(I);
-  return e ? new Set(e.split(" ").filter(Boolean)) : /* @__PURE__ */ new Set();
+function k(e) {
+  const t = e.getAttribute(I);
+  return t ? new Set(t.split(" ").filter(Boolean)) : /* @__PURE__ */ new Set();
 }
-function Z(t, e) {
-  const n = k(t);
-  n.has(e) || (n.add(e), t.setAttribute(I, Array.from(n).join(" ")));
+function Z(e, t) {
+  const n = k(e);
+  n.has(t) || (n.add(t), e.setAttribute(I, Array.from(n).join(" ")));
 }
-function J(t, e) {
-  return !k(t).has(e);
+function J(e, t) {
+  return !k(e).has(t);
 }
-function Q(t, e) {
-  const n = Array.from(t.querySelectorAll(e));
-  return t instanceof HTMLElement && t.matches(e) && n.unshift(t), n;
+function Q(e, t) {
+  const n = Array.from(e.querySelectorAll(t));
+  return e instanceof HTMLElement && e.matches(t) && n.unshift(e), n;
 }
-function S(t) {
-  const e = F(t), n = C();
+function S(e) {
+  const t = F(e), n = C();
   for (const i of n) {
-    const r = Q(e, i.selector);
+    const r = Q(t, i.selector);
     for (const s of r)
       if (J(s, i.name))
         try {
@@ -298,8 +307,8 @@ function S(t) {
         }
   }
 }
-function X(t) {
-  return S(t), M;
+function X(e) {
+  return S(e), M;
 }
 const M = {
   version: j,

@@ -538,21 +538,24 @@
   </div>
 
   <div class="cdw-fw-docs-subsection" id="accordion-icones" data-cdw-fw-docs-section>
-    <h3 class="cdw-fw-docs-subtitle">&Iacute;cones</h3>
+    <h3 class="cdw-fw-docs-subtitle">&Iacute;cones do Accordion</h3>
     <p class="cdw-fw-docs-subdesc">
-      Escolha entre chevron e plus usando o atributo data-icon.
+      Escolha entre cinco estilos usando o atributo data-icon.
     </p>
     <div class="cdw-fw-docs-classlist">
       <span>data-icon="chevron"</span>
       <span>data-icon="plus"</span>
+      <span>data-icon="caret"</span>
+      <span>data-icon="arrow"</span>
+      <span>data-icon="dot"</span>
     </div>
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
-        <div class="cdw-fw-docs-example-title">Chevron / Plus</div>
+        <div class="cdw-fw-docs-example-title">&Iacute;cones do Accordion</div>
         <div class="cdw-fw-docs-badge">Comum</div>
       </div>
       <div class="cdw-fw-docs-preview">
-        <div class="cdw-fw-flex cdw-fw-gap-3">
+        <div class="cdw-fw-flex cdw-fw-flex-wrap cdw-fw-gap-3">
           <div class="cdw-accordion" data-cdw-accordion data-icon="chevron">
             <div class="cdw-accordion-item is-open">
               <button class="cdw-accordion-trigger" type="button">
@@ -560,7 +563,7 @@
                 <span class="cdw-accordion-icon" aria-hidden="true"></span>
               </button>
               <div class="cdw-accordion-panel">
-                <div class="cdw-accordion-content">Seta minimalista.</div>
+                <div class="cdw-accordion-content">Seta minimalista, elegante e discreta.</div>
               </div>
             </div>
           </div>
@@ -571,7 +574,40 @@
                 <span class="cdw-accordion-icon" aria-hidden="true"></span>
               </button>
               <div class="cdw-accordion-panel">
-                <div class="cdw-accordion-content">Transforma em menos.</div>
+                <div class="cdw-accordion-content">Transforma em menos ao abrir.</div>
+              </div>
+            </div>
+          </div>
+          <div class="cdw-accordion" data-cdw-accordion data-icon="caret">
+            <div class="cdw-accordion-item is-open">
+              <button class="cdw-accordion-trigger" type="button">
+                <span>Caret</span>
+                <span class="cdw-accordion-icon" aria-hidden="true"></span>
+              </button>
+              <div class="cdw-accordion-panel">
+                <div class="cdw-accordion-content">Seta s&oacute;lida simples e direta.</div>
+              </div>
+            </div>
+          </div>
+          <div class="cdw-accordion" data-cdw-accordion data-icon="arrow">
+            <div class="cdw-accordion-item is-open">
+              <button class="cdw-accordion-trigger" type="button">
+                <span>Arrow</span>
+                <span class="cdw-accordion-icon" aria-hidden="true"></span>
+              </button>
+              <div class="cdw-accordion-panel">
+                <div class="cdw-accordion-content">Seta linear fina, visual moderno.</div>
+              </div>
+            </div>
+          </div>
+          <div class="cdw-accordion" data-cdw-accordion data-icon="dot">
+            <div class="cdw-accordion-item is-open">
+              <button class="cdw-accordion-trigger" type="button">
+                <span>Dot</span>
+                <span class="cdw-accordion-icon" aria-hidden="true"></span>
+              </button>
+              <div class="cdw-accordion-panel">
+                <div class="cdw-accordion-content">Indicador minimalista (ponto/anel).</div>
               </div>
             </div>
           </div>
@@ -585,8 +621,7 @@
           <div class="cdw-fw-docs-code-title">HTML</div>
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-accordion" data-cdw-accordion data-icon="chevron"&gt;...&lt;/div&gt;
-&lt;div class="cdw-accordion" data-cdw-accordion data-icon="plus"&gt;...&lt;/div&gt;</code></pre>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-accordion" data-cdw-accordion data-icon="caret"&gt;...&lt;/div&gt;</code></pre>
       </div>
     </div>
   </div>
@@ -630,12 +665,12 @@
           <td>true</td>
           <td>Ativa/desativa anima&ccedil;&atilde;o.</td>
         </tr>
-        <tr>
-          <td>data-icon</td>
-          <td>chevron | plus</td>
-          <td>chevron</td>
-          <td>Define o estilo do indicador.</td>
-        </tr>
+          <tr>
+            <td>data-icon</td>
+            <td>chevron | plus | caret | arrow | dot</td>
+            <td>chevron</td>
+            <td>Define o estilo do indicador.</td>
+          </tr>
         <tr>
           <td>data-cdw-accordion-item</td>
           <td>string</td>
