@@ -1,8 +1,4 @@
-import type { FrameworkAPI } from "../core/init";
-import { register } from "./_registry";
-
-const ALERT_SELECTOR = ".cdw-alert";
-const CLOSE_SELECTOR = ".cdw-alert-close";
+const CLOSE_SELECTOR = "[data-cdw-alert-close]";
 const AUTO_CLOSE_ATTR = "data-autoclose";
 
 function parseAutoClose(value: string | null): number | null {
@@ -31,14 +27,6 @@ function initAlert(alert: HTMLElement): void {
   }
 }
 
-export function registerAlert(): void {
-  register({
-    name: "alert",
-    selector: ALERT_SELECTOR,
-    init: (el: HTMLElement, _api: FrameworkAPI) => {
-      initAlert(el);
-    },
-  });
+export function bindAlert(alert: HTMLElement): void {
+  initAlert(alert);
 }
-
-registerAlert();

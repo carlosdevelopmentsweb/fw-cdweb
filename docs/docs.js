@@ -4,11 +4,11 @@
     return;
   }
 
-  const framework =
-    window.CDWFW && typeof window.CDWFW.init === "function"
-      ? window.CDWFW.init()
-      : null;
-  const version = framework && framework.version ? framework.version : "0.0.0";
+  const framework = window.CDWFW || null;
+  const version =
+    framework && typeof framework.CDW_FW_VERSION === "string"
+      ? framework.CDW_FW_VERSION
+      : "0.0.0";
 
   const sections = {
   layout: `<section id="layout" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
@@ -807,7 +807,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--default cdw-fw-accent-sky">Default</button>
           <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--square cdw-fw-accent-sky">Square</button>
           <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded cdw-fw-accent-sky">Rounded</button>
-          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--circle cdw-fw-accent-sky" aria-label="Info">i</button>
+          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--circle cdw-fw-accent-sky" aria-label="Detalhe">i</button>
         </div>
         <div class="cdw-fw-docs-example-caption">Circle &eacute; ideal para &iacute;cones.</div>
       </div>
@@ -1006,11 +1006,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;link rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/carlosdevelopmentsweb/fw-cdweb@0.1.3/dist/cdw-fw.css"&gt;
 
-&lt;script src="https://cdn.jsdelivr.net/gh/carlosdevelopmentsweb/fw-cdweb@0.1.3/dist/cdw-fw.js"&gt;&lt;/script&gt;
-
-&lt;script&gt;
-  CDWFW.init();
-&lt;/script&gt;</code></pre>
+&lt;script src="https://cdn.jsdelivr.net/gh/carlosdevelopmentsweb/fw-cdweb@0.1.3/dist/cdw-fw.js"&gt;&lt;/script&gt;</code></pre>
       </div>
     </div>
   </div>
@@ -1052,11 +1048,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;link rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/carlosdevelopmentsweb/fw-cdweb/dist/cdw-fw.css"&gt;
 
-&lt;script src="https://cdn.jsdelivr.net/gh/carlosdevelopmentsweb/fw-cdweb/dist/cdw-fw.js"&gt;&lt;/script&gt;
-
-&lt;script&gt;
-  CDWFW.init();
-&lt;/script&gt;</code></pre>
+&lt;script src="https://cdn.jsdelivr.net/gh/carlosdevelopmentsweb/fw-cdweb/dist/cdw-fw.js"&gt;&lt;/script&gt;</code></pre>
       </div>
     </div>
   </div>
@@ -1069,7 +1061,6 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     <div class="cdw-fw-docs-classlist">
       <span>ESM</span>
       <span>CDN</span>
-      <span>init()</span>
     </div>
 
     <div class="cdw-fw-docs-example">
@@ -1091,8 +1082,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
       href="https://cdn.jsdelivr.net/gh/carlosdevelopmentsweb/fw-cdweb@0.1.3/dist/cdw-fw.css"&gt;
 
 &lt;script type="module"&gt;
-  import { init } from "https://cdn.jsdelivr.net/gh/carlosdevelopmentsweb/fw-cdweb@0.1.3/dist/cdw-fw.esm.js";
-  init();
+  import "https://cdn.jsdelivr.net/gh/carlosdevelopmentsweb/fw-cdweb@0.1.3/dist/cdw-fw.esm.js";
 &lt;/script&gt;</code></pre>
       </div>
     </div>
@@ -1733,6 +1723,8 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
       <span>cdw-alert--neutral</span>
       <span>cdw-alert-icon</span>
       <span>cdw-alert-close</span>
+      <span>data-cdw-alert</span>
+      <span>data-cdw-alert-close</span>
     </div>
   </div>
 
@@ -1747,13 +1739,13 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <div class="cdw-fw-docs-badge">B&aacute;sico</div>
       </div>
       <div class="cdw-fw-docs-preview">
-        <div class="cdw-alert cdw-alert--note">
+        <div class="cdw-alert cdw-alert--note" data-cdw-alert>
           <div class="cdw-alert-icon"></div>
           <div class="cdw-alert-content">
             <div class="cdw-alert-title">Atualiza&ccedil;&atilde;o dispon&iacute;vel</div>
             <div class="cdw-alert-message">Seu painel foi atualizado com sucesso.</div>
           </div>
-          <button class="cdw-alert-close" aria-label="Fechar"></button>
+          <button class="cdw-alert-close" data-cdw-alert-close aria-label="Fechar"></button>
         </div>
       </div>
       <div class="cdw-fw-docs-codeblock">
@@ -1761,13 +1753,13 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <div class="cdw-fw-docs-code-title">HTML</div>
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-alert cdw-alert--note"&gt;
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-alert cdw-alert--note" data-cdw-alert&gt;
   &lt;div class="cdw-alert-icon"&gt;&lt;/div&gt;
   &lt;div class="cdw-alert-content"&gt;
     &lt;div class="cdw-alert-title"&gt;T&iacute;tulo&lt;/div&gt;
     &lt;div class="cdw-alert-message"&gt;Mensagem&lt;/div&gt;
   &lt;/div&gt;
-  &lt;button class="cdw-alert-close" aria-label="Fechar"&gt;&lt;/button&gt;
+  &lt;button class="cdw-alert-close" data-cdw-alert-close aria-label="Fechar"&gt;&lt;/button&gt;
 &lt;/div&gt;</code></pre>
       </div>
     </div>
@@ -1785,7 +1777,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <div class="cdw-fw-docs-badge">B&aacute;sico</div>
       </div>
       <div class="cdw-fw-docs-preview">
-        <div class="cdw-alert cdw-alert--note">
+        <div class="cdw-alert cdw-alert--note" data-cdw-alert>
           <div class="cdw-alert-content">
             <div class="cdw-alert-message">Seu perfil foi atualizado.</div>
           </div>
@@ -1796,7 +1788,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <div class="cdw-fw-docs-code-title">HTML</div>
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-alert cdw-alert--note"&gt;
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-alert cdw-alert--note" data-cdw-alert&gt;
   &lt;div class="cdw-alert-content"&gt;
     &lt;div class="cdw-alert-message"&gt;Seu perfil foi atualizado.&lt;/div&gt;
   &lt;/div&gt;
@@ -1810,7 +1802,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <div class="cdw-fw-docs-badge">Comum</div>
       </div>
       <div class="cdw-fw-docs-preview">
-        <div class="cdw-alert cdw-alert--ok">
+        <div class="cdw-alert cdw-alert--ok" data-cdw-alert>
           <div class="cdw-alert-content">
             <div class="cdw-alert-title">Pagamento confirmado</div>
             <div class="cdw-alert-message">Recebemos seu pagamento e atualizamos o status.</div>
@@ -1822,7 +1814,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <div class="cdw-fw-docs-code-title">HTML</div>
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-alert cdw-alert--ok"&gt;
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-alert cdw-alert--ok" data-cdw-alert&gt;
   &lt;div class="cdw-alert-content"&gt;
     &lt;div class="cdw-alert-title"&gt;Pagamento confirmado&lt;/div&gt;
     &lt;div class="cdw-alert-message"&gt;Recebemos seu pagamento.&lt;/div&gt;
@@ -1837,7 +1829,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <div class="cdw-fw-docs-badge">Comum</div>
       </div>
       <div class="cdw-fw-docs-preview">
-        <div class="cdw-alert cdw-alert--focus">
+        <div class="cdw-alert cdw-alert--focus" data-cdw-alert>
           <div class="cdw-alert-icon"></div>
           <div class="cdw-alert-content">
             <div class="cdw-alert-title">Verifique os dados</div>
@@ -1850,7 +1842,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <div class="cdw-fw-docs-code-title">HTML</div>
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-alert cdw-alert--focus"&gt;
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-alert cdw-alert--focus" data-cdw-alert&gt;
   &lt;div class="cdw-alert-icon"&gt;&lt;/div&gt;
   &lt;div class="cdw-alert-content"&gt;
     &lt;div class="cdw-alert-title"&gt;Verifique os dados&lt;/div&gt;
@@ -1866,13 +1858,13 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <div class="cdw-fw-docs-badge">Comum</div>
       </div>
       <div class="cdw-fw-docs-preview">
-        <div class="cdw-alert cdw-alert--note">
+        <div class="cdw-alert cdw-alert--note" data-cdw-alert>
           <div class="cdw-alert-icon"></div>
           <div class="cdw-alert-content">
             <div class="cdw-alert-title">Nova mensagem</div>
             <div class="cdw-alert-message">Voc&ecirc; recebeu uma nova notifica&ccedil;&atilde;o.</div>
           </div>
-          <button class="cdw-alert-close" aria-label="Fechar"></button>
+          <button class="cdw-alert-close" data-cdw-alert-close aria-label="Fechar"></button>
         </div>
       </div>
       <div class="cdw-fw-docs-codeblock">
@@ -1880,13 +1872,13 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <div class="cdw-fw-docs-code-title">HTML</div>
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-alert cdw-alert--note"&gt;
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-alert cdw-alert--note" data-cdw-alert&gt;
   &lt;div class="cdw-alert-icon"&gt;&lt;/div&gt;
   &lt;div class="cdw-alert-content"&gt;
     &lt;div class="cdw-alert-title"&gt;Nova mensagem&lt;/div&gt;
     &lt;div class="cdw-alert-message"&gt;Voc&ecirc; recebeu uma notifica&ccedil;&atilde;o.&lt;/div&gt;
   &lt;/div&gt;
-  &lt;button class="cdw-alert-close" aria-label="Fechar"&gt;&lt;/button&gt;
+  &lt;button class="cdw-alert-close" data-cdw-alert-close aria-label="Fechar"&gt;&lt;/button&gt;
 &lt;/div&gt;</code></pre>
       </div>
     </div>
@@ -1897,7 +1889,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <div class="cdw-fw-docs-badge">Comum</div>
       </div>
       <div class="cdw-fw-docs-preview">
-        <div class="cdw-alert cdw-alert--neutral-soft">
+        <div class="cdw-alert cdw-alert--neutral-soft" data-cdw-alert>
           <div class="cdw-alert-icon"></div>
           <div class="cdw-alert-content">
             <div class="cdw-alert-title">Pol&iacute;ticas atualizadas</div>
@@ -1910,7 +1902,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <div class="cdw-fw-docs-code-title">HTML</div>
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-alert cdw-alert--neutral-soft"&gt;
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-alert cdw-alert--neutral-soft" data-cdw-alert&gt;
   &lt;div class="cdw-alert-icon"&gt;&lt;/div&gt;
   &lt;div class="cdw-alert-content"&gt;
     &lt;div class="cdw-alert-title"&gt;Pol&iacute;ticas atualizadas&lt;/div&gt;
@@ -1926,10 +1918,10 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <div class="cdw-fw-docs-badge">Forms</div>
       </div>
       <div class="cdw-fw-docs-preview">
-        <div class="cdw-alert cdw-alert--focus-soft cdw-alert--inline">
+        <div class="cdw-alert cdw-alert--focus-soft cdw-alert--inline" data-cdw-alert>
           <div class="cdw-alert-icon"></div>
           <div class="cdw-alert-content">
-            <div class="cdw-alert-message">Informe um e-mail v&aacute;lido para continuar.</div>
+            <div class="cdw-alert-message">Digite um e-mail v&aacute;lido para continuar.</div>
           </div>
         </div>
       </div>
@@ -1938,10 +1930,10 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <div class="cdw-fw-docs-code-title">HTML</div>
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-alert cdw-alert--focus-soft cdw-alert--inline"&gt;
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-alert cdw-alert--focus-soft cdw-alert--inline" data-cdw-alert&gt;
   &lt;div class="cdw-alert-icon"&gt;&lt;/div&gt;
   &lt;div class="cdw-alert-content"&gt;
-    &lt;div class="cdw-alert-message"&gt;Informe um e-mail v&aacute;lido.&lt;/div&gt;
+    &lt;div class="cdw-alert-message"&gt;Digite um e-mail v&aacute;lido.&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
       </div>
@@ -1953,13 +1945,13 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <div class="cdw-fw-docs-badge">Premium</div>
       </div>
       <div class="cdw-fw-docs-preview">
-        <div class="cdw-alert cdw-alert--block cdw-alert--featured">
+        <div class="cdw-alert cdw-alert--block cdw-alert--featured" data-cdw-alert>
           <div class="cdw-alert-icon"></div>
           <div class="cdw-alert-content">
             <div class="cdw-alert-title">Aten&ccedil;&atilde;o cr&iacute;tica</div>
             <div class="cdw-alert-message">Identificamos um acesso incomum na sua conta.</div>
           </div>
-          <button class="cdw-alert-close" aria-label="Fechar"></button>
+          <button class="cdw-alert-close" data-cdw-alert-close aria-label="Fechar"></button>
         </div>
       </div>
       <div class="cdw-fw-docs-codeblock">
@@ -1967,13 +1959,13 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <div class="cdw-fw-docs-code-title">HTML</div>
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-alert cdw-alert--block cdw-alert--featured"&gt;
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-alert cdw-alert--block cdw-alert--featured" data-cdw-alert&gt;
   &lt;div class="cdw-alert-icon"&gt;&lt;/div&gt;
   &lt;div class="cdw-alert-content"&gt;
     &lt;div class="cdw-alert-title"&gt;Aten&ccedil;&atilde;o cr&iacute;tica&lt;/div&gt;
     &lt;div class="cdw-alert-message"&gt;Identificamos um acesso incomum.&lt;/div&gt;
   &lt;/div&gt;
-  &lt;button class="cdw-alert-close" aria-label="Fechar"&gt;&lt;/button&gt;
+  &lt;button class="cdw-alert-close" data-cdw-alert-close aria-label="Fechar"&gt;&lt;/button&gt;
 &lt;/div&gt;</code></pre>
       </div>
     </div>
@@ -2062,6 +2054,18 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <td>Layout de destaque premium.</td>
         </tr>
         <tr>
+          <td>data-cdw-alert</td>
+          <td>attribute</td>
+          <td>-</td>
+          <td>Ativa o comportamento autom&aacute;tico do Alert.</td>
+        </tr>
+        <tr>
+          <td>data-cdw-alert-close</td>
+          <td>attribute</td>
+          <td>-</td>
+          <td>Habilita o fechamento do Alert.</td>
+        </tr>
+        <tr>
           <td>data-autoclose</td>
           <td>number</td>
           <td>-</td>
@@ -2137,9 +2141,6 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
   setupSmoothScroll(app);
   setupScrollSpy(app);
 
-  if (framework && typeof framework.scan === "function") {
-    framework.scan(app);
-  }
 })();
 
 function buildNav(root) {

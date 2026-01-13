@@ -1,15 +1,29 @@
-import { CDW_FW_VERSION } from "./env";
-import { getAll, register } from "../components/_registry";
-import type { ComponentDefinition } from "../components/_registry";
+import { bindAccordion } from "../components/accordion";
+import { bindAlert } from "../components/alert";
 
 export interface FrameworkAPI {
   version: string;
-  init: (root?: ParentNode | Document | HTMLElement) => FrameworkAPI;
-  register: (def: ComponentDefinition) => void;
   scan: (root?: ParentNode | Document | HTMLElement) => void;
 }
 
 const INITIALIZED_ATTR = "data-cdw-fw-initialized";
+const OBSERVER_OPTIONS: MutationObserverInit = {
+  childList: true,
+  subtree: true,
+};
+
+const defs = [
+  {
+    name: "accordion",
+    selector: "[data-cdw-accordion]",
+    bind: bindAccordion,
+  },
+  {
+    name: "alert",
+    selector: "[data-cdw-alert]",
+    bind: bindAlert,
+  },
+];
 
 function getRoot(root?: ParentNode | Document | HTMLElement): ParentNode | Document | HTMLElement {
   return root ?? document;
@@ -46,14 +60,13 @@ function collectTargets(
 
 export function scan(root?: ParentNode | Document | HTMLElement): void {
   const rootNode = getRoot(root);
-  const defs = getAll();
 
   for (const def of defs) {
     const targets = collectTargets(rootNode, def.selector);
     for (const el of targets) {
       if (!shouldInit(el, def.name)) continue;
       try {
-        def.init(el, api);
+        def.bind(el);
         markInitialized(el, def.name);
       } catch (err) {
         console.warn(`cdw-fw init issue: ${def.name}`, err);
@@ -62,14 +75,31 @@ export function scan(root?: ParentNode | Document | HTMLElement): void {
   }
 }
 
-export function init(root?: ParentNode | Document | HTMLElement): FrameworkAPI {
-  scan(root);
-  return api;
+function observeDom(): void {
+  if (typeof MutationObserver === "undefined") return;
+  const target = document.body;
+  if (!target) return;
+  const observer = new MutationObserver((mutations) => {
+    for (const mutation of mutations) {
+      mutation.addedNodes.forEach((node) => {
+        if (node instanceof HTMLElement) {
+          scan(node);
+        }
+      });
+    }
+  });
+  observer.observe(target, OBSERVER_OPTIONS);
 }
 
-const api: FrameworkAPI = {
-  version: CDW_FW_VERSION,
-  init,
-  register,
-  scan,
-};
+function start(): void {
+  scan(document);
+  observeDom();
+}
+
+if (typeof window !== "undefined") {
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", () => start(), { once: true });
+  } else {
+    start();
+  }
+}

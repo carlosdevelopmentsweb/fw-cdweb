@@ -41,10 +41,10 @@ export default defineConfig(({ command, mode }) => {
       },
       rollupOptions: {
         output: {
-          assetFileNames: (assetInfo) =>
-            assetInfo.name?.endsWith(".css")
+          assetFileNames: (assetMeta) =>
+            assetMeta.name?.endsWith(".css")
               ? "cdw-fw.css"
-              : assetInfo.name || "asset",
+              : assetMeta.name || "asset",
         },
       },
     },

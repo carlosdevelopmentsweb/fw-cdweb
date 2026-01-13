@@ -1,6 +1,3 @@
-import type { FrameworkAPI } from "../core/init";
-import { register } from "./_registry";
-
 type AccordionMode = "single" | "multiple";
 type AccordionIcon = "chevron" | "plus" | "caret" | "arrow" | "dot";
 
@@ -31,7 +28,6 @@ interface AccordionState {
   resizeHandler: () => void;
 }
 
-const ACCORDION_SELECTOR = "[data-cdw-accordion]";
 const ITEM_SELECTOR = ".cdw-accordion-item";
 const TRIGGER_SELECTOR = ".cdw-accordion-trigger";
 const PANEL_SELECTOR = ".cdw-accordion-panel";
@@ -41,10 +37,6 @@ let idCounter = 0;
 function nextId(prefix: string): string {
   idCounter += 1;
   return `${prefix}-${idCounter}`;
-}
-
-function isHTMLElement(value: unknown): value is HTMLElement {
-  return value instanceof HTMLElement;
 }
 
 function parseBoolean(value: string | null, fallback: boolean): boolean {
@@ -406,68 +398,6 @@ function initAccordion(container: HTMLElement, options?: AccordionOptions): void
   stateMap.set(container, state);
 }
 
-function resolveContainer(container: HTMLElement | string): HTMLElement | null {
-  if (typeof container === "string") {
-    return document.querySelector<HTMLElement>(container);
-  }
-  return container;
-}
-
-function collectAccordions(
-  scope: ParentNode | Document | HTMLElement
-): HTMLElement[] {
-  const nodes = Array.from(scope.querySelectorAll(ACCORDION_SELECTOR)).filter(
-    isHTMLElement
-  );
-  if (isHTMLElement(scope) && scope.matches(ACCORDION_SELECTOR)) {
-    nodes.unshift(scope);
-  }
-  return nodes;
-}
-
-export const Accordion = {
-  init(root?: ParentNode | Document | HTMLElement, options?: AccordionOptions): void {
-    const scope = root ?? document;
-    const nodes = collectAccordions(scope);
-    nodes.forEach((node) => initAccordion(node, options));
-  },
-  open(container: HTMLElement | string, key: string | number): void {
-    const target = resolveContainer(container);
-    if (!target) return;
-    if (!stateMap.has(target)) {
-      initAccordion(target);
-    }
-    const state = stateMap.get(target);
-    if (!state) return;
-    const item = state.items.find((entry) => matchKey(entry, key));
-    if (item) openItem(state, item);
-  },
-  close(container: HTMLElement | string, key: string | number): void {
-    const target = resolveContainer(container);
-    if (!target) return;
-    const state = stateMap.get(target);
-    if (!state) return;
-    const item = state.items.find((entry) => matchKey(entry, key));
-    if (item) closeItem(state, item);
-  },
-  toggle(container: HTMLElement | string, key: string | number): void {
-    const target = resolveContainer(container);
-    if (!target) return;
-    if (!stateMap.has(target)) {
-      initAccordion(target);
-    }
-    const state = stateMap.get(target);
-    if (!state) return;
-    const item = state.items.find((entry) => matchKey(entry, key));
-    if (item) toggleItem(state, item);
-  },
-  destroy(container: HTMLElement | string): void {
-    const target = resolveContainer(container);
-    if (!target) return;
-    destroyAccordion(target);
-  },
-};
-
 function destroyAccordion(container: HTMLElement): void {
   const state = stateMap.get(container);
   if (!state) return;
@@ -488,14 +418,6 @@ function destroyAccordion(container: HTMLElement): void {
   stateMap.delete(container);
 }
 
-export function registerAccordion(): void {
-  register({
-    name: "accordion",
-    selector: ACCORDION_SELECTOR,
-    init: (el: HTMLElement, _api: FrameworkAPI) => {
-      initAccordion(el);
-    },
-  });
+export function bindAccordion(container: HTMLElement): void {
+  initAccordion(container);
 }
-
-registerAccordion();

@@ -1,3 +1,1 @@
-﻿import { init } from "./index";
-
-init();
+import "./index";
