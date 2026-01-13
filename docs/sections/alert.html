@@ -1,0 +1,383 @@
+<section id="alertas" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+  <div class="cdw-fw-docs-section-head">
+    <h2 class="cdw-fw-docs-section-title">Alert</h2>
+    <p class="cdw-fw-docs-lead">
+      Alertas premium para mensagens importantes, com hierarquia clara,
+      cores suaves e op&ccedil;&otilde;es elegantes de &iacute;cone e fechamento.
+    </p>
+  </div>
+
+  <div class="cdw-fw-docs-toc">
+    <span class="cdw-fw-docs-toc-title">&Iacute;ndice desta p&aacute;gina</span>
+    <a href="#alert-intro">Introdu&ccedil;&atilde;o</a>
+    <a href="#alert-estrutura">Estrutura base</a>
+    <a href="#alert-modelos">Modelos</a>
+    <a href="#alert-variantes">Cores e variantes</a>
+    <a href="#alert-api">API / Op&ccedil;&otilde;es</a>
+    <a href="#alert-boas-praticas">Boas pr&aacute;ticas</a>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="alert-intro" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Introdu&ccedil;&atilde;o</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Use o Alert para comunicar mensagens importantes sem perder
+      a eleg&acirc;ncia visual. Ele suporta variantes sem&acirc;nticas, vers&otilde;es soft,
+      &iacute;cones opcionais e bot&atilde;o de fechar.
+    </p>
+    <div class="cdw-fw-docs-classlist">
+      <span>cdw-alert</span>
+      <span>cdw-alert--note</span>
+      <span>cdw-alert--ok</span>
+      <span>cdw-alert--focus</span>
+      <span>cdw-alert--block</span>
+      <span>cdw-alert--neutral</span>
+      <span>cdw-alert-icon</span>
+      <span>cdw-alert-close</span>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="alert-estrutura" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Estrutura base</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Estrutura m&iacute;nima com &iacute;cone e bot&atilde;o opcionais.
+    </p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">HTML base</div>
+        <div class="cdw-fw-docs-badge">B&aacute;sico</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-alert cdw-alert--note">
+          <div class="cdw-alert-icon"></div>
+          <div class="cdw-alert-content">
+            <div class="cdw-alert-title">Atualiza&ccedil;&atilde;o dispon&iacute;vel</div>
+            <div class="cdw-alert-message">Seu painel foi atualizado com sucesso.</div>
+          </div>
+          <button class="cdw-alert-close" aria-label="Fechar"></button>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-alert cdw-alert--note"&gt;
+  &lt;div class="cdw-alert-icon"&gt;&lt;/div&gt;
+  &lt;div class="cdw-alert-content"&gt;
+    &lt;div class="cdw-alert-title"&gt;T&iacute;tulo&lt;/div&gt;
+    &lt;div class="cdw-alert-message"&gt;Mensagem&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button class="cdw-alert-close" aria-label="Fechar"&gt;&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="alert-modelos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Modelos</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Modelos prontos para contextos corporativos reais.
+    </p>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Alert simples</div>
+        <div class="cdw-fw-docs-badge">B&aacute;sico</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-alert cdw-alert--note">
+          <div class="cdw-alert-content">
+            <div class="cdw-alert-message">Seu perfil foi atualizado.</div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-alert cdw-alert--note"&gt;
+  &lt;div class="cdw-alert-content"&gt;
+    &lt;div class="cdw-alert-message"&gt;Seu perfil foi atualizado.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">T&iacute;tulo + descri&ccedil;&atilde;o</div>
+        <div class="cdw-fw-docs-badge">Comum</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-alert cdw-alert--ok">
+          <div class="cdw-alert-content">
+            <div class="cdw-alert-title">Pagamento confirmado</div>
+            <div class="cdw-alert-message">Recebemos seu pagamento e atualizamos o status.</div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-alert cdw-alert--ok"&gt;
+  &lt;div class="cdw-alert-content"&gt;
+    &lt;div class="cdw-alert-title"&gt;Pagamento confirmado&lt;/div&gt;
+    &lt;div class="cdw-alert-message"&gt;Recebemos seu pagamento.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Alert com &iacute;cone</div>
+        <div class="cdw-fw-docs-badge">Comum</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-alert cdw-alert--focus">
+          <div class="cdw-alert-icon"></div>
+          <div class="cdw-alert-content">
+            <div class="cdw-alert-title">Verifique os dados</div>
+            <div class="cdw-alert-message">Existem campos pendentes para finalizar o cadastro.</div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-alert cdw-alert--focus"&gt;
+  &lt;div class="cdw-alert-icon"&gt;&lt;/div&gt;
+  &lt;div class="cdw-alert-content"&gt;
+    &lt;div class="cdw-alert-title"&gt;Verifique os dados&lt;/div&gt;
+    &lt;div class="cdw-alert-message"&gt;Existem campos pendentes.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Alert com fechar</div>
+        <div class="cdw-fw-docs-badge">Comum</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-alert cdw-alert--note">
+          <div class="cdw-alert-icon"></div>
+          <div class="cdw-alert-content">
+            <div class="cdw-alert-title">Nova mensagem</div>
+            <div class="cdw-alert-message">Voc&ecirc; recebeu uma nova notifica&ccedil;&atilde;o.</div>
+          </div>
+          <button class="cdw-alert-close" aria-label="Fechar"></button>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-alert cdw-alert--note"&gt;
+  &lt;div class="cdw-alert-icon"&gt;&lt;/div&gt;
+  &lt;div class="cdw-alert-content"&gt;
+    &lt;div class="cdw-alert-title"&gt;Nova mensagem&lt;/div&gt;
+    &lt;div class="cdw-alert-message"&gt;Voc&ecirc; recebeu uma notifica&ccedil;&atilde;o.&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button class="cdw-alert-close" aria-label="Fechar"&gt;&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Alert soft corporativo</div>
+        <div class="cdw-fw-docs-badge">Comum</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-alert cdw-alert--neutral-soft">
+          <div class="cdw-alert-icon"></div>
+          <div class="cdw-alert-content">
+            <div class="cdw-alert-title">Pol&iacute;ticas atualizadas</div>
+            <div class="cdw-alert-message">As novas diretrizes entram em vigor amanh&atilde;.</div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-alert cdw-alert--neutral-soft"&gt;
+  &lt;div class="cdw-alert-icon"&gt;&lt;/div&gt;
+  &lt;div class="cdw-alert-content"&gt;
+    &lt;div class="cdw-alert-title"&gt;Pol&iacute;ticas atualizadas&lt;/div&gt;
+    &lt;div class="cdw-alert-message"&gt;As novas diretrizes entram em vigor amanh&atilde;.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Alert inline</div>
+        <div class="cdw-fw-docs-badge">Forms</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-alert cdw-alert--focus-soft cdw-alert--inline">
+          <div class="cdw-alert-icon"></div>
+          <div class="cdw-alert-content">
+            <div class="cdw-alert-message">Informe um e-mail v&aacute;lido para continuar.</div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-alert cdw-alert--focus-soft cdw-alert--inline"&gt;
+  &lt;div class="cdw-alert-icon"&gt;&lt;/div&gt;
+  &lt;div class="cdw-alert-content"&gt;
+    &lt;div class="cdw-alert-message"&gt;Informe um e-mail v&aacute;lido.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Alert destaque</div>
+        <div class="cdw-fw-docs-badge">Premium</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-alert cdw-alert--block cdw-alert--featured">
+          <div class="cdw-alert-icon"></div>
+          <div class="cdw-alert-content">
+            <div class="cdw-alert-title">Aten&ccedil;&atilde;o cr&iacute;tica</div>
+            <div class="cdw-alert-message">Identificamos um acesso incomum na sua conta.</div>
+          </div>
+          <button class="cdw-alert-close" aria-label="Fechar"></button>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-alert cdw-alert--block cdw-alert--featured"&gt;
+  &lt;div class="cdw-alert-icon"&gt;&lt;/div&gt;
+  &lt;div class="cdw-alert-content"&gt;
+    &lt;div class="cdw-alert-title"&gt;Aten&ccedil;&atilde;o cr&iacute;tica&lt;/div&gt;
+    &lt;div class="cdw-alert-message"&gt;Identificamos um acesso incomum.&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button class="cdw-alert-close" aria-label="Fechar"&gt;&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="alert-variantes" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Cores e variantes</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Use variantes sem&acirc;nticas para indicar o contexto da mensagem.
+    </p>
+    <div class="cdw-fw-docs-classlist">
+      <span>cdw-alert--note</span>
+      <span>cdw-alert--note-soft</span>
+      <span>cdw-alert--ok</span>
+      <span>cdw-alert--ok-soft</span>
+      <span>cdw-alert--focus</span>
+      <span>cdw-alert--focus-soft</span>
+      <span>cdw-alert--block</span>
+      <span>cdw-alert--block-soft</span>
+      <span>cdw-alert--neutral</span>
+      <span>cdw-alert--neutral-soft</span>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="alert-api" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">API / Op&ccedil;&otilde;es</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Configure o comportamento e o visual via classes e atributos.
+    </p>
+    <table class="cdw-fw-docs-scale-table">
+      <thead>
+        <tr>
+          <th>Op&ccedil;&atilde;o</th>
+          <th>Tipo</th>
+          <th>Padr&atilde;o</th>
+          <th>Descri&ccedil;&atilde;o</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>cdw-alert--note</td>
+          <td>class</td>
+          <td>-</td>
+          <td>Mensagem contextual.</td>
+        </tr>
+        <tr>
+          <td>cdw-alert--ok</td>
+          <td>class</td>
+          <td>-</td>
+          <td>Confirma&ccedil;&atilde;o de sucesso.</td>
+        </tr>
+        <tr>
+          <td>cdw-alert--focus</td>
+          <td>class</td>
+          <td>-</td>
+          <td>Alerta de aten&ccedil;&atilde;o.</td>
+        </tr>
+        <tr>
+          <td>cdw-alert--block</td>
+          <td>class</td>
+          <td>-</td>
+          <td>Mensagem cr&iacute;tica.</td>
+        </tr>
+        <tr>
+          <td>cdw-alert--neutral</td>
+          <td>class</td>
+          <td>-</td>
+          <td>Mensagem neutra.</td>
+        </tr>
+        <tr>
+          <td>cdw-alert--*-soft</td>
+          <td>class</td>
+          <td>-</td>
+          <td>Vers&atilde;o suave da variante.</td>
+        </tr>
+        <tr>
+          <td>cdw-alert--inline</td>
+          <td>class</td>
+          <td>-</td>
+          <td>Compacto para formul&aacute;rios.</td>
+        </tr>
+        <tr>
+          <td>cdw-alert--featured</td>
+          <td>class</td>
+          <td>-</td>
+          <td>Layout de destaque premium.</td>
+        </tr>
+        <tr>
+          <td>data-autoclose</td>
+          <td>number</td>
+          <td>-</td>
+          <td>Remove o alert ap&oacute;s X ms.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="alert-boas-praticas" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Boas pr&aacute;ticas</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Use note para comunica&ccedil;&otilde;es neutras, ok para confirma&ccedil;&atilde;o,
+      focus para avisos operacionais e block para bloqueios cr&iacute;ticos. Para mensagens din&acirc;micas,
+      aplique aria-live="polite" no container.
+    </p>
+  </div>
+</section>
+

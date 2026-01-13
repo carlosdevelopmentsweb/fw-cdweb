@@ -1,6 +1,7 @@
 // src/index.ts
 import "./ui/index.css";
 import "./components/accordion";
+import "./components/alert";
 
 export { init } from "./core/init";
 export { register } from "./components/_registry";

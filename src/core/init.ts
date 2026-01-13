@@ -55,8 +55,8 @@ export function scan(root?: ParentNode | Document | HTMLElement): void {
       try {
         def.init(el, api);
         markInitialized(el, def.name);
-      } catch (error) {
-        console.error(`cdw-fw init error: ${def.name}`, error);
+      } catch (err) {
+        console.warn(`cdw-fw init issue: ${def.name}`, err);
       }
     }
   }
