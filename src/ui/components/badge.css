@@ -1,0 +1,244 @@
+.cdw-badge {
+  --cdw-badge-color: var(--cdw-fw-accent-ocean);
+  --cdw-badge-ink: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--cdw-fw-font);
+  font-weight: 700;
+  line-height: 1;
+  border: 1px solid transparent;
+  text-decoration: none;
+  position: relative;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease,
+    color 160ms ease, border-color 160ms ease;
+}
+
+.cdw-badge:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(31, 54, 70, 0.2);
+}
+
+.cdw-badge--inline {
+  border-radius: 999px;
+}
+
+.cdw-badge--accent {
+  border-radius: 8px 10px 10px 8px;
+  padding-right: 18px;
+  padding-left: 12px;
+}
+
+.cdw-badge--accent::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 5px;
+  width: 10px;
+  height: 100%;
+  background: inherit;
+  transform: skewX(-18deg);
+  opacity: 0.9;
+}
+
+.cdw-badge--corner {
+  border-radius: 8px;
+  padding-left: 12px;
+  padding-right: 10px;
+}
+
+.cdw-badge--corner::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 6px solid currentColor;
+  opacity: 0.35;
+}
+
+.cdw-badge--docked {
+  position: absolute;
+  z-index: 2;
+  border-radius: 8px;
+}
+
+.cdw-badge--floating {
+  position: absolute;
+  z-index: 3;
+  border-radius: 10px;
+  box-shadow: 0 12px 26px rgba(16, 32, 48, 0.22);
+}
+
+.cdw-badge--pos-tl {
+  top: 12px;
+  left: 12px;
+}
+
+.cdw-badge--pos-tr {
+  top: 12px;
+  right: 12px;
+}
+
+.cdw-badge--pos-side {
+  top: 50%;
+  right: -8px;
+  transform: translateY(-50%);
+  border-radius: 8px 0 0 8px;
+  padding-right: 18px;
+}
+
+.cdw-badge--offset {
+  transform: translate(6px, -8px);
+}
+
+.cdw-badge-icon {
+  width: 14px;
+  height: 14px;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  background: rgba(255, 255, 255, 0.22);
+  color: inherit;
+}
+
+.cdw-badge-count {
+  padding: 2px 6px;
+  border-radius: 999px;
+  font-size: 10px;
+  background: rgba(255, 255, 255, 0.18);
+  color: inherit;
+}
+
+.cdw-badge--sm {
+  font-size: 9px;
+  padding: 3px 8px;
+}
+
+.cdw-badge--md {
+  font-size: 10px;
+  padding: 4px 10px;
+}
+
+.cdw-badge--lg {
+  font-size: 12px;
+  padding: 6px 12px;
+}
+
+.cdw-badge--docked.cdw-badge--sm,
+.cdw-badge--floating.cdw-badge--sm {
+  padding: 5px 10px;
+}
+
+.cdw-badge--docked.cdw-badge--lg,
+.cdw-badge--floating.cdw-badge--lg {
+  padding: 10px 18px;
+}
+
+.cdw-badge--solid {
+  background: var(--cdw-badge-color);
+  color: var(--cdw-badge-ink);
+  box-shadow: 0 6px 12px color-mix(in srgb, var(--cdw-badge-color) 28%, transparent);
+}
+
+.cdw-badge--soft {
+  color: var(--cdw-badge-color);
+  border-color: color-mix(in srgb, var(--cdw-badge-color) 30%, transparent);
+}
+
+@supports (background-color: color-mix(in srgb, #000 12%, white)) {
+  .cdw-badge--soft {
+    background: color-mix(in srgb, var(--cdw-badge-color) 14%, white);
+  }
+}
+
+@supports not (background-color: color-mix(in srgb, #000 12%, white)) {
+  .cdw-badge--soft {
+    background: var(--cdw-badge-color);
+    opacity: 0.2;
+  }
+}
+
+.cdw-badge--outline {
+  background: transparent;
+  color: var(--cdw-badge-color);
+  border-color: color-mix(in srgb, var(--cdw-badge-color) 60%, transparent);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--cdw-badge-color) 20%, transparent);
+}
+
+@supports not (background-color: color-mix(in srgb, #000 12%, white)) {
+  .cdw-badge--outline {
+    border-color: var(--cdw-badge-color);
+  }
+}
+
+.cdw-badge--glow {
+  background: var(--cdw-badge-color);
+  color: var(--cdw-badge-ink);
+  box-shadow:
+    0 10px 22px color-mix(in srgb, var(--cdw-badge-color) 35%, transparent),
+    0 0 12px color-mix(in srgb, var(--cdw-badge-color) 35%, transparent);
+}
+
+.cdw-badge--flat {
+  background: color-mix(in srgb, var(--cdw-badge-color) 10%, white);
+  color: var(--cdw-badge-color);
+  border-color: color-mix(in srgb, var(--cdw-badge-color) 18%, transparent);
+}
+
+.cdw-badge:hover {
+  transform: translateY(-1px);
+}
+
+.cdw-badge:active {
+  transform: translateY(0);
+}
+
+.cdw-badge.is-disabled,
+.cdw-badge[aria-disabled="true"],
+.cdw-badge[disabled] {
+  opacity: 0.45;
+  pointer-events: none;
+  filter: grayscale(0.2);
+}
+
+.cdw-badge--ocean {
+  --cdw-badge-color: var(--cdw-fw-accent-ocean);
+}
+
+.cdw-badge--sky {
+  --cdw-badge-color: var(--cdw-fw-accent-sky);
+}
+
+.cdw-badge--mint {
+  --cdw-badge-color: var(--cdw-fw-accent-teal);
+}
+
+.cdw-badge--amber {
+  --cdw-badge-color: var(--cdw-fw-accent-sun);
+}
+
+.cdw-badge--rose {
+  --cdw-badge-color: var(--cdw-fw-accent-rose);
+}
+
+.cdw-badge--graphite {
+  --cdw-badge-color: #334155;
+}
+
+.cdw-badge--ghost {
+  --cdw-badge-color: #94a3b8;
+  --cdw-badge-ink: #1f2937;
+}
+
+.cdw-badge--ghost.cdw-badge--solid {
+  color: #1f2937;
+}

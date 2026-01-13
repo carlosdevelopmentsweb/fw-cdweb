@@ -2086,6 +2086,280 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
 </section>
 
 `,
+  badges: `<section id="badges" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+  <div class="cdw-fw-docs-section-head">
+    <h2 class="cdw-fw-docs-section-title">Badges</h2>
+    <p class="cdw-fw-docs-lead">
+      Badges avan&ccedil;ados para status, novidade e destaque com identidade CDWeb.
+    </p>
+  </div>
+
+  <div class="cdw-fw-docs-toc">
+    <span class="cdw-fw-docs-toc-title">&Iacute;ndice desta p&aacute;gina</span>
+    <a href="#badges-conceito">Conceito</a>
+    <a href="#badges-tipos">Tipos</a>
+    <a href="#badges-estilos">Estilos</a>
+    <a href="#badges-exemplos">Exemplos visuais</a>
+    <a href="#badges-uso">Exemplos de uso</a>
+    <a href="#badges-modelos">Modelos adicionais</a>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="badges-conceito" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Conceito</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Badge &eacute; um marcador curto para status, novidade ou categoria. Pode ser inline,
+      acoplado ou flutuante sem perder a eleg&acirc;ncia.
+    </p>
+    <div class="cdw-fw-docs-classlist">
+      <span>cdw-badge</span>
+      <span>cdw-badge--inline</span>
+      <span>cdw-badge--accent</span>
+      <span>cdw-badge--corner</span>
+      <span>cdw-badge--docked</span>
+      <span>cdw-badge--floating</span>
+      <span>cdw-badge--pos-tl</span>
+      <span>cdw-badge--pos-tr</span>
+      <span>cdw-badge--pos-side</span>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="badges-tipos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Tipos</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Inline para textos, Accent para destaque, Corner/Flag para avisos e Docked/Floating para cards.
+    </p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Tipos de badge</div>
+        <div class="cdw-fw-docs-badge">B&aacute;sico</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-docs-badge-row">
+          <span class="cdw-badge cdw-badge--inline cdw-badge--ocean cdw-badge--solid cdw-badge--sm">Inline</span>
+          <span class="cdw-badge cdw-badge--accent cdw-badge--sky cdw-badge--solid cdw-badge--sm">Accent</span>
+          <span class="cdw-badge cdw-badge--corner cdw-badge--mint cdw-badge--solid cdw-badge--sm">Corner</span>
+          <span class="cdw-badge cdw-badge--inline cdw-badge--graphite cdw-badge--outline cdw-badge--sm">Docked</span>
+        </div>
+        <div class="cdw-fw-docs-badge-stage">
+          <span class="cdw-badge cdw-badge--docked cdw-badge--rose cdw-badge--solid cdw-badge--sm cdw-badge--pos-tr">Beta</span>
+          <span class="cdw-badge cdw-badge--floating cdw-badge--graphite cdw-badge--soft cdw-badge--sm cdw-badge--pos-tl cdw-badge--offset">
+            Destaque
+          </span>
+          <div class="cdw-fw-docs-badge-card">
+            <div class="cdw-fw-docs-badge-title">Card corporativo</div>
+            <div class="cdw-fw-docs-badge-desc">Badge acoplado sem quebrar layout.</div>
+          </div>
+        </div>
+      </div>
+        <div class="cdw-fw-docs-codeblock">
+          <div class="cdw-fw-docs-code-head">
+            <div class="cdw-fw-docs-code-title">HTML</div>
+            <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+          </div>
+          <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;span class="cdw-badge cdw-badge--inline cdw-badge--ocean cdw-badge--solid cdw-badge--sm"&gt;Inline&lt;/span&gt;
+&lt;span class="cdw-badge cdw-badge--accent cdw-badge--sky cdw-badge--solid cdw-badge--sm"&gt;Accent&lt;/span&gt;
+&lt;span class="cdw-badge cdw-badge--corner cdw-badge--mint cdw-badge--solid cdw-badge--sm"&gt;Corner&lt;/span&gt;</code></pre>
+        </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="badges-estilos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Estilos</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Solid e Glow para destaque, Soft e Flat para contexto, Outline para contraste limpo.
+    </p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Varia&ccedil;&otilde;es visuais</div>
+        <div class="cdw-fw-docs-badge">Comum</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-docs-badge-row">
+          <span class="cdw-badge cdw-badge--inline cdw-badge--ocean cdw-badge--solid cdw-badge--sm">Solid</span>
+          <span class="cdw-badge cdw-badge--inline cdw-badge--sky cdw-badge--soft cdw-badge--sm">Soft</span>
+          <span class="cdw-badge cdw-badge--inline cdw-badge--mint cdw-badge--outline cdw-badge--sm">Outline</span>
+          <span class="cdw-badge cdw-badge--inline cdw-badge--amber cdw-badge--glow cdw-badge--sm">Glow</span>
+          <span class="cdw-badge cdw-badge--inline cdw-badge--rose cdw-badge--flat cdw-badge--sm">Flat</span>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;span class="cdw-badge cdw-badge--inline cdw-badge--ocean cdw-badge--solid cdw-badge--sm"&gt;Solid&lt;/span&gt;
+&lt;span class="cdw-badge cdw-badge--inline cdw-badge--sky cdw-badge--soft cdw-badge--sm"&gt;Soft&lt;/span&gt;
+&lt;span class="cdw-badge cdw-badge--inline cdw-badge--mint cdw-badge--outline cdw-badge--sm"&gt;Outline&lt;/span&gt;
+&lt;span class="cdw-badge cdw-badge--inline cdw-badge--amber cdw-badge--glow cdw-badge--sm"&gt;Glow&lt;/span&gt;
+&lt;span class="cdw-badge cdw-badge--inline cdw-badge--rose cdw-badge--flat cdw-badge--sm"&gt;Flat&lt;/span&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="badges-exemplos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Exemplos visuais</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Combina&ccedil;&otilde;es com &iacute;cone e contador em tamanhos compactos.
+    </p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Badge com &iacute;cone e contador</div>
+        <div class="cdw-fw-docs-badge">Premium</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-docs-badge-row">
+          <span class="cdw-badge cdw-badge--inline cdw-badge--graphite cdw-badge--solid cdw-badge--md">
+            <span class="cdw-badge-icon">★</span>
+            Premium
+            <span class="cdw-badge-count">12</span>
+          </span>
+          <span class="cdw-badge cdw-badge--accent cdw-badge--ghost cdw-badge--outline cdw-badge--md">
+            <span class="cdw-badge-icon">◎</span>
+            Neutro
+          </span>
+          <span class="cdw-badge cdw-badge--corner cdw-badge--ocean cdw-badge--solid cdw-badge--md">Novo</span>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;span class="cdw-badge cdw-badge--inline cdw-badge--graphite cdw-badge--solid cdw-badge--md"&gt;
+  &lt;span class="cdw-badge-icon"&gt;★&lt;/span&gt;
+  Premium
+  &lt;span class="cdw-badge-count"&gt;12&lt;/span&gt;
+&lt;/span&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="badges-uso" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Exemplos de uso</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Badges antes de t&iacute;tulos e acoplados a cards.
+    </p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Badges em contextos reais</div>
+        <div class="cdw-fw-docs-badge">Comum</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-docs-badge-titleline">
+          <span class="cdw-badge cdw-badge--inline cdw-badge--ocean cdw-badge--solid cdw-badge--sm">Novo</span>
+          Relat&oacute;rio Financeiro
+        </div>
+        <div class="cdw-fw-docs-badge-row" style="margin-top:10px;">
+          <span class="cdw-badge cdw-badge--inline cdw-badge--ocean cdw-badge--soft cdw-badge--sm">Financeiro</span>
+          <span class="cdw-badge cdw-badge--inline cdw-badge--mint cdw-badge--soft cdw-badge--sm">Operacional</span>
+          <span class="cdw-badge cdw-badge--inline cdw-badge--amber cdw-badge--soft cdw-badge--sm">Urgente</span>
+        </div>
+        <div class="cdw-fw-docs-badge-stage">
+          <span class="cdw-badge cdw-badge--docked cdw-badge--sky cdw-badge--solid cdw-badge--sm cdw-badge--pos-tl">Novo</span>
+          <div class="cdw-fw-docs-badge-card">
+            <div class="cdw-fw-docs-badge-title">Painel Executivo</div>
+            <div class="cdw-fw-docs-badge-desc">Badge destacado para conte&uacute;do priorit&aacute;rio.</div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;span class="cdw-badge cdw-badge--inline cdw-badge--ocean cdw-badge--solid cdw-badge--sm"&gt;Novo&lt;/span&gt;
+
+&lt;div style="position:relative;"&gt;
+  &lt;span class="cdw-badge cdw-badge--docked cdw-badge--sky cdw-badge--solid cdw-badge--sm cdw-badge--pos-tl"&gt;Novo&lt;/span&gt;
+  ...
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <div class="cdw-fw-docs-subsection" id="badges-modelos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Modelos adicionais</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Combina&ccedil;&otilde;es extras com formas e posicionamentos diferentes.
+    </p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Cinco modelos novos</div>
+        <div class="cdw-fw-docs-badge">Novo</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-docs-badge-grid">
+          <div class="cdw-fw-docs-badge-model">
+            <div class="cdw-fw-docs-badge-model-title">Quina esquerda</div>
+            <div class="cdw-fw-docs-badge-stage cdw-fw-docs-badge-stage--tight">
+              <span class="cdw-badge cdw-badge--docked cdw-badge--ocean cdw-badge--solid cdw-badge--sm cdw-badge--pos-tl">Novo</span>
+              <div class="cdw-fw-docs-badge-card">
+                <div class="cdw-fw-docs-badge-title">Resumo mensal</div>
+                <div class="cdw-fw-docs-badge-desc">Badge preso &agrave; quina.</div>
+              </div>
+            </div>
+          </div>
+          <div class="cdw-fw-docs-badge-model">
+            <div class="cdw-fw-docs-badge-model-title">Quina direita</div>
+            <div class="cdw-fw-docs-badge-stage cdw-fw-docs-badge-stage--tight">
+              <span class="cdw-badge cdw-badge--docked cdw-badge--amber cdw-badge--solid cdw-badge--sm cdw-badge--pos-tr">Beta</span>
+              <div class="cdw-fw-docs-badge-card">
+                <div class="cdw-fw-docs-badge-title">Relat&oacute;rio executivo</div>
+                <div class="cdw-fw-docs-badge-desc">Destaque em canto superior.</div>
+              </div>
+            </div>
+          </div>
+          <div class="cdw-fw-docs-badge-model">
+            <div class="cdw-fw-docs-badge-model-title">Lateral discreta</div>
+            <div class="cdw-fw-docs-badge-stage cdw-fw-docs-badge-stage--side">
+              <span class="cdw-badge cdw-badge--docked cdw-badge--graphite cdw-badge--solid cdw-badge--sm cdw-badge--pos-side">Live</span>
+              <div class="cdw-fw-docs-badge-card">
+                <div class="cdw-fw-docs-badge-title">Painel de controle</div>
+                <div class="cdw-fw-docs-badge-desc">Badge colado &agrave; borda.</div>
+              </div>
+            </div>
+          </div>
+          <div class="cdw-fw-docs-badge-model">
+            <div class="cdw-fw-docs-badge-model-title">Flutuante com contador</div>
+            <div class="cdw-fw-docs-badge-stage cdw-fw-docs-badge-stage--tight">
+              <span class="cdw-badge cdw-badge--floating cdw-badge--rose cdw-badge--glow cdw-badge--sm cdw-badge--pos-tr cdw-badge--offset">
+                7
+              </span>
+              <div class="cdw-fw-docs-badge-card">
+                <div class="cdw-fw-docs-badge-title">Pend&ecirc;ncias</div>
+                <div class="cdw-fw-docs-badge-desc">Indicador visual imediato.</div>
+              </div>
+            </div>
+          </div>
+          <div class="cdw-fw-docs-badge-model">
+            <div class="cdw-fw-docs-badge-model-title">Selo angular</div>
+            <div class="cdw-fw-docs-badge-stage cdw-fw-docs-badge-stage--tight">
+              <span class="cdw-badge cdw-badge--accent cdw-badge--mint cdw-badge--solid cdw-badge--sm cdw-badge--pos-tl">Destaque</span>
+              <div class="cdw-fw-docs-badge-card">
+                <div class="cdw-fw-docs-badge-title">Plano Enterprise</div>
+                <div class="cdw-fw-docs-badge-desc">Apar&ecirc;ncia premium e angular.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;span class="cdw-badge cdw-badge--docked cdw-badge--ocean cdw-badge--solid cdw-badge--sm cdw-badge--pos-tl"&gt;Novo&lt;/span&gt;
+&lt;span class="cdw-badge cdw-badge--docked cdw-badge--amber cdw-badge--solid cdw-badge--sm cdw-badge--pos-tr"&gt;Beta&lt;/span&gt;
+&lt;span class="cdw-badge cdw-badge--docked cdw-badge--graphite cdw-badge--solid cdw-badge--sm cdw-badge--pos-side"&gt;Live&lt;/span&gt;
+&lt;span class="cdw-badge cdw-badge--floating cdw-badge--rose cdw-badge--glow cdw-badge--sm cdw-badge--pos-tr cdw-badge--offset"&gt;7&lt;/span&gt;
+&lt;span class="cdw-badge cdw-badge--accent cdw-badge--mint cdw-badge--solid cdw-badge--sm cdw-badge--pos-tl"&gt;Destaque&lt;/span&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+`,
   };
 
   const sectionOrder = [
@@ -2096,6 +2370,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     "buttons",
     "accordion",
     "alert",
+    "badges",
   ];
 
   app.innerHTML = `
@@ -2213,6 +2488,17 @@ function buildNav(root) {
             { label: "Tipos", href: "#alert-variantes" },
             { label: "Contextos", href: "#alert-intro" },
             { label: "Exemplos", href: "#alert-modelos" },
+          ],
+        },
+        {
+          title: "Badges",
+          target: "#badges",
+          links: [
+            { label: "Conceito", href: "#badges-conceito" },
+            { label: "Tipos", href: "#badges-tipos" },
+            { label: "Estilos", href: "#badges-estilos" },
+            { label: "Exemplos", href: "#badges-exemplos" },
+            { label: "Uso", href: "#badges-uso" },
           ],
         },
       ],

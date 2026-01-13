@@ -12,9 +12,9 @@
   --cdw-docs-accent-bright: #2f6f9a;
   --cdw-docs-link: #1d5f8e;
   --cdw-docs-link-hover: #0f3f60;
-  --cdw-docs-menu-bg: #1f3646;
-  --cdw-docs-menu-panel: #223b4c;
-  --cdw-docs-menu-panel-2: #203545;
+  --cdw-docs-menu-bg: #22313f;
+  --cdw-docs-menu-panel: #263747;
+  --cdw-docs-menu-panel-2: #233342;
   --cdw-docs-menu-border: rgba(255, 255, 255, 0.12);
   --cdw-docs-menu-text: #e7eef6;
   --cdw-docs-menu-muted: #b4c3d2;
@@ -674,6 +674,110 @@
   background: #f4f7fb;
   border: 1px dashed rgba(27, 79, 114, 0.25);
 }
+
+.cdw-fw-docs-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.cdw-fw-docs-badge-stage {
+  margin-top: 16px;
+  position: relative;
+  padding: 20px;
+  border-radius: 16px;
+  background: #f3f6fb;
+  border: 1px solid rgba(16, 45, 67, 0.12);
+}
+
+.cdw-fw-docs-badge-stage--tight {
+  padding: 16px;
+}
+
+.cdw-fw-docs-badge-stage--side {
+  padding-right: 36px;
+}
+
+.cdw-fw-docs-badge-stage .cdw-badge--docked {
+  box-shadow: 0 8px 16px rgba(16, 32, 48, 0.14);
+}
+
+.cdw-fw-docs-badge-stage .cdw-badge--pos-tl {
+  top: 10px;
+  left: 10px;
+}
+
+.cdw-fw-docs-badge-stage .cdw-badge--pos-tr {
+  top: 10px;
+  right: 10px;
+}
+
+.cdw-fw-docs-badge-stage .cdw-badge--pos-side {
+  right: -10px;
+}
+
+.cdw-fw-docs-badge-stage .cdw-badge--floating.cdw-badge--pos-tr {
+  top: 6px;
+  right: 6px;
+}
+
+.cdw-fw-docs-badge-titleline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: #1b2f40;
+}
+
+.cdw-fw-docs-badge-titleline .cdw-badge {
+  margin-right: 2px;
+}
+
+.cdw-fw-docs-badge-card {
+  padding: 16px;
+  border-radius: 14px;
+  background: #ffffff;
+  border: 1px solid rgba(16, 45, 67, 0.12);
+  box-shadow: 0 12px 26px rgba(14, 26, 38, 0.08);
+}
+
+.cdw-fw-docs-badge-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1b2f40;
+}
+
+.cdw-fw-docs-badge-desc {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #5a6b7c;
+}
+
+.cdw-fw-docs-badge-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.cdw-fw-docs-badge-model {
+  background: #f7f9fc;
+  border: 1px solid rgba(16, 45, 67, 0.12);
+  border-radius: 14px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cdw-fw-docs-badge-model-title {
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #4b6073;
+  font-weight: 600;
+}
+
 
 .cdw-fw-docs-is-hover {
   filter: brightness(0.96);
