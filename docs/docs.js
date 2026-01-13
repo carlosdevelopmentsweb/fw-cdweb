@@ -2138,6 +2138,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
   buildNav(app);
   setupCopy(app);
   setupHiddenToggle(app);
+  setupNavTargets(app);
   setupSmoothScroll(app);
   setupScrollSpy(app);
 
@@ -2151,31 +2152,208 @@ function buildNav(root) {
 
   nav.innerHTML = "";
 
-  const sections = Array.from(root.querySelectorAll(".cdw-fw-docs-section"));
-  sections.forEach((section) => {
-    const title = section.querySelector(".cdw-fw-docs-section-title");
-    const group = document.createElement("div");
-    group.className = "cdw-fw-docs-nav-group";
+  const navData = [
+    {
+      title: "LAYOUT",
+      items: [
+        {
+          title: "Containers",
+          target: "#layout-container",
+          links: [
+            { label: "Container b&aacute;sico", href: "#layout-container" },
+            { label: "Container fluido", href: "#layout-container" },
+            { label: "Exemplos de uso", href: "#layout-container" },
+          ],
+        },
+        {
+          title: "Grids",
+          target: "#layout-grid",
+          links: [
+            { label: "Grid system", href: "#layout-grid" },
+            { label: "Colunas", href: "#layout-grid" },
+            { label: "Responsividade", href: "#layout-grid" },
+          ],
+        },
+        {
+          title: "Cores",
+          target: "#cores-paleta",
+          links: [
+            { label: "Paleta", href: "#cores-paleta" },
+            { label: "Uso recomendado", href: "#cores-uso" },
+            { label: "Boas pr&aacute;ticas", href: "#cores-uso" },
+          ],
+        },
+      ],
+    },
+    {
+      title: "COMPONENTES",
+      items: [
+        {
+          title: "Bot&otilde;es",
+          target: "#botoes-estrutura",
+          links: [
+            { label: "Tipos", href: "#botoes-estrutura" },
+            { label: "Estados", href: "#botoes-estados" },
+            { label: "&Iacute;cones", href: "#botoes-formas" },
+          ],
+        },
+        {
+          title: "Accordions",
+          target: "#accordion-introducao",
+          links: [
+            { label: "Uso", href: "#accordion-introducao" },
+            { label: "Varia&ccedil;&otilde;es", href: "#accordion-variantes" },
+            { label: "Exemplos", href: "#accordion-basico" },
+          ],
+        },
+        {
+          title: "Alerts",
+          target: "#alert-intro",
+          links: [
+            { label: "Tipos", href: "#alert-variantes" },
+            { label: "Contextos", href: "#alert-intro" },
+            { label: "Exemplos", href: "#alert-modelos" },
+          ],
+        },
+      ],
+    },
+    {
+      title: "UTILIT&Aacute;RIOS",
+      items: [
+        {
+          title: "Helpers CSS",
+          target: "#utilitarios",
+          links: [{ label: "Vis&atilde;o geral", href: "#utilitarios" }],
+        },
+        {
+          title: "Classes utilit&aacute;rias",
+          target: "#util-espacamento",
+          links: [
+            { label: "Espa&ccedil;amento", href: "#util-espacamento" },
+            { label: "Display", href: "#util-display" },
+            { label: "Flex", href: "#util-flex" },
+          ],
+        },
+      ],
+    },
+  ];
 
-    const link = document.createElement("a");
-    link.className = "cdw-fw-docs-nav-link";
-    link.href = `#${section.id}`;
-    link.textContent = title ? title.textContent.trim() : section.id;
-    link.setAttribute("data-cdw-fw-docs-nav", "");
-    group.appendChild(link);
+  const createLink = (link) => {
+    const anchor = document.createElement("a");
+    anchor.className = "cdw-fw-docs-nav-link";
+    anchor.href = link.href;
+    anchor.innerHTML = link.label;
+    anchor.setAttribute("data-cdw-fw-docs-nav", "");
+    return anchor;
+  };
 
-    const subSections = Array.from(section.querySelectorAll(".cdw-fw-docs-subsection"));
-    subSections.forEach((sub) => {
-      const subTitle = sub.querySelector(".cdw-fw-docs-subtitle");
-      const subLink = document.createElement("a");
-      subLink.className = "cdw-fw-docs-nav-link cdw-fw-docs-nav-link--sub";
-      subLink.href = `#${sub.id}`;
-      subLink.textContent = subTitle ? subTitle.textContent.trim() : sub.id;
-      subLink.setAttribute("data-cdw-fw-docs-nav", "");
-      group.appendChild(subLink);
+  const navAccordion = document.createElement("div");
+  navAccordion.className = "cdw-accordion cdw-fw-docs-nav-accordion";
+  navAccordion.setAttribute("data-cdw-accordion", "");
+  navAccordion.setAttribute("data-mode", "single");
+  navAccordion.setAttribute("data-collapsible", "true");
+  navAccordion.setAttribute("data-icon", "chevron");
+
+  navData.forEach((group) => {
+    const groupItem = document.createElement("div");
+    groupItem.className = "cdw-accordion-item";
+
+    const groupTrigger = document.createElement("button");
+    groupTrigger.className = "cdw-accordion-trigger cdw-fw-docs-nav-group-trigger";
+    groupTrigger.type = "button";
+
+    const groupTitle = document.createElement("span");
+    groupTitle.className = "cdw-fw-docs-nav-group-title";
+    groupTitle.innerHTML = group.title;
+
+    const groupIcon = document.createElement("span");
+    groupIcon.className = "cdw-accordion-icon";
+    groupIcon.setAttribute("aria-hidden", "true");
+
+    groupTrigger.appendChild(groupTitle);
+    groupTrigger.appendChild(groupIcon);
+    groupItem.appendChild(groupTrigger);
+
+    const groupPanel = document.createElement("div");
+    groupPanel.className = "cdw-accordion-panel";
+    const groupContent = document.createElement("div");
+    groupContent.className = "cdw-accordion-content";
+
+    const subAccordion = document.createElement("div");
+    subAccordion.className = "cdw-accordion cdw-fw-docs-nav-sub";
+    subAccordion.setAttribute("data-cdw-accordion", "");
+    subAccordion.setAttribute("data-mode", "single");
+    subAccordion.setAttribute("data-collapsible", "true");
+    subAccordion.setAttribute("data-icon", "caret");
+
+    group.items.forEach((item) => {
+      const itemEntry = document.createElement("div");
+      itemEntry.className = "cdw-accordion-item";
+
+      const itemTrigger = document.createElement("button");
+      itemTrigger.className = "cdw-accordion-trigger cdw-fw-docs-nav-item-trigger";
+      itemTrigger.type = "button";
+
+      const itemTitle = document.createElement("span");
+      itemTitle.className = "cdw-fw-docs-nav-item-title";
+      itemTitle.innerHTML = item.title;
+
+      const itemIcon = document.createElement("span");
+      itemIcon.className = "cdw-accordion-icon";
+      itemIcon.setAttribute("aria-hidden", "true");
+
+      itemTrigger.appendChild(itemTitle);
+      itemTrigger.appendChild(itemIcon);
+      if (item.target) {
+        itemTrigger.setAttribute("data-cdw-fw-docs-target", item.target);
+      }
+      itemEntry.appendChild(itemTrigger);
+
+      const itemPanel = document.createElement("div");
+      itemPanel.className = "cdw-accordion-panel";
+      const itemContent = document.createElement("div");
+      itemContent.className = "cdw-accordion-content";
+      const linksWrap = document.createElement("div");
+      linksWrap.className = "cdw-fw-docs-nav-links";
+
+      item.links.forEach((link) => {
+        linksWrap.appendChild(createLink(link));
+      });
+
+      itemContent.appendChild(linksWrap);
+      itemPanel.appendChild(itemContent);
+      itemEntry.appendChild(itemPanel);
+      subAccordion.appendChild(itemEntry);
     });
 
-    nav.appendChild(group);
+    groupContent.appendChild(subAccordion);
+    groupPanel.appendChild(groupContent);
+    groupItem.appendChild(groupPanel);
+    navAccordion.appendChild(groupItem);
+  });
+
+  nav.appendChild(navAccordion);
+}
+
+function setupNavTargets(root) {
+  const triggers = Array.from(root.querySelectorAll("[data-cdw-fw-docs-target]"));
+  if (!triggers.length) {
+    return;
+  }
+
+  triggers.forEach((trigger) => {
+    trigger.addEventListener("click", () => {
+      const targetId = trigger.getAttribute("data-cdw-fw-docs-target");
+      if (!targetId) {
+        return;
+      }
+      const target = root.querySelector(targetId);
+      if (!target) {
+        return;
+      }
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+      history.replaceState(null, "", targetId);
+    });
   });
 }
 
