@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CDW-FW Alert Teste</title>
+    <link rel="stylesheet" href="./dist/cdw-fw.css" />
+  </head>
+  <body style="padding: 24px; background: #f4f6fb;">
+    <div style="display: flex; flex-direction: column; gap: 16px; max-width: 720px;">
+      <div class="cdw-alert cdw-alert--note">
+        <div class="cdw-alert-icon"></div>
+        <div class="cdw-alert-content">
+          <div class="cdw-alert-title">Mensagem contextual</div>
+          <div class="cdw-alert-message">Exemplo fora da documentacao.</div>
+        </div>
+        <button class="cdw-alert-close" aria-label="Fechar"></button>
+      </div>
+
+      <div class="cdw-alert cdw-alert--ok">
+        <div class="cdw-alert-icon"></div>
+        <div class="cdw-alert-content">
+          <div class="cdw-alert-title">Confirmacao de acao</div>
+          <div class="cdw-alert-message">Operacao concluida com sucesso.</div>
+        </div>
+      </div>
+
+      <div class="cdw-alert cdw-alert--focus-soft cdw-alert--inline">
+        <div class="cdw-alert-icon"></div>
+        <div class="cdw-alert-content">
+          <div class="cdw-alert-message">Aviso operacional inline.</div>
+        </div>
+      </div>
+
+      <div class="cdw-alert cdw-alert--block" data-autoclose="4000">
+        <div class="cdw-alert-icon"></div>
+        <div class="cdw-alert-content">
+          <div class="cdw-alert-title">Bloqueio critico</div>
+          <div class="cdw-alert-message">Este alerta fecha automaticamente em 4s.</div>
+        </div>
+        <button class="cdw-alert-close" aria-label="Fechar"></button>
+      </div>
+    </div>
+
+    <script src="./dist/cdw-fw.js"></script>
+  </body>
+</html>
