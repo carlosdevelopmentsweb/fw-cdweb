@@ -10,6 +10,14 @@
 .cdw-fw-accent-rose { --cdw-fw-accent: var(--cdw-fw-accent-rose); }
 .cdw-fw-accent-violet { --cdw-fw-accent: var(--cdw-fw-accent-violet); }
 .cdw-fw-accent-indigo { --cdw-fw-accent: var(--cdw-fw-accent-indigo); }
+.cdw-fw-accent-carbon { --cdw-fw-accent: var(--cdw-fw-accent-carbon); }
+.cdw-fw-accent-obsidian { --cdw-fw-accent: var(--cdw-fw-accent-obsidian); }
+.cdw-fw-accent-graphite-dark { --cdw-fw-accent: var(--cdw-fw-accent-graphite-dark); }
+.cdw-fw-accent-graphite { --cdw-fw-accent: var(--cdw-fw-accent-graphite); }
+.cdw-fw-accent-steel { --cdw-fw-accent: var(--cdw-fw-accent-steel); }
+.cdw-fw-accent-slate { --cdw-fw-accent: var(--cdw-fw-accent-slate); }
+.cdw-fw-accent-ash { --cdw-fw-accent: var(--cdw-fw-accent-ash); }
+.cdw-fw-accent-fog { --cdw-fw-accent: var(--cdw-fw-accent-fog); }
 
 .cdw-fw-text-accent { color: var(--cdw-fw-accent); }
 .cdw-fw-bg-accent { background-color: var(--cdw-fw-accent); }

@@ -234,6 +234,36 @@
   --cdw-badge-color: #334155;
 }
 
+.cdw-badge--carbon {
+  --cdw-badge-color: var(--cdw-fw-accent-carbon);
+}
+
+.cdw-badge--obsidian {
+  --cdw-badge-color: var(--cdw-fw-accent-obsidian);
+}
+
+.cdw-badge--graphite-dark {
+  --cdw-badge-color: var(--cdw-fw-accent-graphite-dark);
+}
+
+.cdw-badge--steel {
+  --cdw-badge-color: var(--cdw-fw-accent-steel);
+}
+
+.cdw-badge--slate {
+  --cdw-badge-color: var(--cdw-fw-accent-slate);
+}
+
+.cdw-badge--ash {
+  --cdw-badge-color: var(--cdw-fw-accent-ash);
+  --cdw-badge-ink: #1f2937;
+}
+
+.cdw-badge--fog {
+  --cdw-badge-color: var(--cdw-fw-accent-fog);
+  --cdw-badge-ink: #1f2937;
+}
+
 .cdw-badge--ghost {
   --cdw-badge-color: #94a3b8;
   --cdw-badge-ink: #1f2937;

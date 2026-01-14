@@ -1487,6 +1487,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     <span class="cdw-fw-docs-toc-title">&Iacute;ndice desta p&aacute;gina</span>
     <a href="#cores-intro">Introdu&ccedil;&atilde;o</a>
     <a href="#cores-paleta">Paleta</a>
+    <a href="#cores-monocromaticas">Monocrom&aacute;ticas</a>
     <a href="#cores-uso">Uso b&aacute;sico</a>
   </div>
 
@@ -1517,7 +1518,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
   <div class="cdw-fw-docs-subsection" id="cores-paleta" data-cdw-fw-docs-section>
     <h3 class="cdw-fw-docs-subtitle">Paleta de cores</h3>
     <p class="cdw-fw-docs-subdesc">
-      12 cores oficiais, todas diferentes e prontas para uso.
+      12 cores principais, todas diferentes e prontas para uso.
       <span class="cdw-fw-docs-when">Quando usar: escolha a cor para o contexto do seu componente.</span>
     </p>
 
@@ -1604,6 +1605,72 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <div class="cdw-fw-docs-color-swatches">
           <div class="cdw-fw-docs-color-swatch cdw-fw-docs-color-swatch--base cdw-fw-accent-indigo cdw-fw-bg-accent">Base</div>
           <div class="cdw-fw-docs-color-swatch cdw-fw-accent-indigo cdw-fw-bg-accent cdw-fw-soft">Soft</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="cores-monocromaticas" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Monocrom&aacute;ticas</h3>
+    <p class="cdw-fw-docs-subdesc">
+      8 tons neutros para hierarquia visual sem cores chamativas.
+      <span class="cdw-fw-docs-when">Quando usar: layouts corporativos, dashboards e &aacute;reas administrativas.</span>
+    </p>
+    <div class="cdw-fw-docs-color-grid">
+      <div class="cdw-fw-docs-color-card">
+        <div class="cdw-fw-docs-color-name">carbon</div>
+        <div class="cdw-fw-docs-color-swatches">
+          <div class="cdw-fw-docs-color-swatch cdw-fw-docs-color-swatch--base cdw-fw-accent-carbon cdw-fw-bg-accent">Base</div>
+          <div class="cdw-fw-docs-color-swatch cdw-fw-accent-carbon cdw-fw-bg-accent cdw-fw-soft">Soft</div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-color-card">
+        <div class="cdw-fw-docs-color-name">obsidian</div>
+        <div class="cdw-fw-docs-color-swatches">
+          <div class="cdw-fw-docs-color-swatch cdw-fw-docs-color-swatch--base cdw-fw-accent-obsidian cdw-fw-bg-accent">Base</div>
+          <div class="cdw-fw-docs-color-swatch cdw-fw-accent-obsidian cdw-fw-bg-accent cdw-fw-soft">Soft</div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-color-card">
+        <div class="cdw-fw-docs-color-name">graphite-dark</div>
+        <div class="cdw-fw-docs-color-swatches">
+          <div class="cdw-fw-docs-color-swatch cdw-fw-docs-color-swatch--base cdw-fw-accent-graphite-dark cdw-fw-bg-accent">Base</div>
+          <div class="cdw-fw-docs-color-swatch cdw-fw-accent-graphite-dark cdw-fw-bg-accent cdw-fw-soft">Soft</div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-color-card">
+        <div class="cdw-fw-docs-color-name">graphite</div>
+        <div class="cdw-fw-docs-color-swatches">
+          <div class="cdw-fw-docs-color-swatch cdw-fw-docs-color-swatch--base cdw-fw-accent-graphite cdw-fw-bg-accent">Base</div>
+          <div class="cdw-fw-docs-color-swatch cdw-fw-accent-graphite cdw-fw-bg-accent cdw-fw-soft">Soft</div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-color-card">
+        <div class="cdw-fw-docs-color-name">steel</div>
+        <div class="cdw-fw-docs-color-swatches">
+          <div class="cdw-fw-docs-color-swatch cdw-fw-docs-color-swatch--base cdw-fw-accent-steel cdw-fw-bg-accent">Base</div>
+          <div class="cdw-fw-docs-color-swatch cdw-fw-accent-steel cdw-fw-bg-accent cdw-fw-soft">Soft</div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-color-card">
+        <div class="cdw-fw-docs-color-name">slate</div>
+        <div class="cdw-fw-docs-color-swatches">
+          <div class="cdw-fw-docs-color-swatch cdw-fw-docs-color-swatch--base cdw-fw-accent-slate cdw-fw-bg-accent">Base</div>
+          <div class="cdw-fw-docs-color-swatch cdw-fw-accent-slate cdw-fw-bg-accent cdw-fw-soft">Soft</div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-color-card">
+        <div class="cdw-fw-docs-color-name">ash</div>
+        <div class="cdw-fw-docs-color-swatches">
+          <div class="cdw-fw-docs-color-swatch cdw-fw-docs-color-swatch--base cdw-fw-docs-color-swatch--light cdw-fw-accent-ash cdw-fw-bg-accent">Base</div>
+          <div class="cdw-fw-docs-color-swatch cdw-fw-accent-ash cdw-fw-bg-accent cdw-fw-soft">Soft</div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-color-card">
+        <div class="cdw-fw-docs-color-name">fog</div>
+        <div class="cdw-fw-docs-color-swatches">
+          <div class="cdw-fw-docs-color-swatch cdw-fw-docs-color-swatch--base cdw-fw-docs-color-swatch--light cdw-fw-accent-fog cdw-fw-bg-accent">Base</div>
+          <div class="cdw-fw-docs-color-swatch cdw-fw-accent-fog cdw-fw-bg-accent cdw-fw-soft">Soft</div>
         </div>
       </div>
     </div>
@@ -2360,6 +2427,871 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
 </section>
 
 `,
+  cards: `<section id="cards" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+  <div class="cdw-fw-docs-section-head">
+    <h2 class="cdw-fw-docs-section-title">Cards</h2>
+    <p class="cdw-fw-docs-lead">
+      Containers premium para pain&eacute;is, resumos e m&oacute;dulos com identidade CDWeb.
+    </p>
+  </div>
+
+  <div class="cdw-fw-docs-toc">
+    <span class="cdw-fw-docs-toc-title">&Iacute;ndice desta p&aacute;gina</span>
+    <a href="#cards-conceito">Conceito</a>
+    <a href="#cards-tipos">Tipos</a>
+    <a href="#cards-estrutura">Estrutura</a>
+    <a href="#cards-exemplos">Exemplos visuais</a>
+    <a href="#cards-modelos">Modelos adicionais</a>
+    <a href="#cards-uso">Exemplos de uso</a>
+  </div>
+
+  <div class="cdw-fw-docs-example">
+    <div class="cdw-fw-docs-example-head">
+      <div class="cdw-fw-docs-example-title">Cards CDWeb</div>
+      <div class="cdw-fw-docs-badge">Novo</div>
+    </div>
+    <div class="cdw-fw-docs-preview">
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="cards-conceito" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Conceito</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Card CDWeb &eacute; um container estruturado para agrupar dados com
+      personalidade visual. Ele &eacute; mais firme que caixas gen&eacute;ricas e funciona
+      bem em dashboards e m&oacute;dulos.
+    </p>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="cards-tipos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Tipos</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Flat para base, Accent para destaque, Docked para status e Panel para ambientes internos.
+    </p>
+    <div class="cdw-fw-docs-card-grid cdw-fw-docs-card-grid--models">
+      <div class="cdw-card cdw-card--flat cdw-card--ocean">
+        <div class="cdw-card__header">
+          <div>
+            <div class="cdw-card__title">Flat</div>
+            <div class="cdw-card__subtitle">Base s&oacute;lida</div>
+          </div>
+          <span class="cdw-badge cdw-badge--inline cdw-badge--ocean cdw-badge--soft cdw-badge--sm">Novo</span>
+        </div>
+        <div class="cdw-card__body">Foco em leitura e espa&ccedil;o.</div>
+      </div>
+      <div class="cdw-card cdw-card--accent cdw-card--sky">
+        <div class="cdw-card__header">
+          <div>
+            <div class="cdw-card__title">Accent</div>
+            <div class="cdw-card__subtitle">Faixa lateral</div>
+          </div>
+        </div>
+        <div class="cdw-card__body">Destaque lateral sem sombra cl&aacute;ssica.</div>
+      </div>
+      <div class="cdw-card cdw-card--docked cdw-card--mint">
+        <div class="cdw-card__header">
+          <div>
+            <div class="cdw-card__title">Docked</div>
+            <div class="cdw-card__subtitle">Barra superior</div>
+          </div>
+          <span class="cdw-badge cdw-badge--inline cdw-badge--mint cdw-badge--solid cdw-badge--sm">OK</span>
+        </div>
+        <div class="cdw-card__body">Ideal para status em pain&eacute;is.</div>
+      </div>
+      <div class="cdw-card cdw-card--panel cdw-card--graphite">
+        <div class="cdw-card__header">
+          <div>
+            <div class="cdw-card__title">Panel</div>
+            <div class="cdw-card__subtitle">Apar&ecirc;ncia t&eacute;cnica</div>
+          </div>
+        </div>
+        <div class="cdw-card__body">Fundo fechado para ambientes internos.</div>
+      </div>
+    </div>
+    <div class="cdw-fw-docs-codeblock" style="margin-top:16px;">
+      <div class="cdw-fw-docs-code-head">
+        <div class="cdw-fw-docs-code-title">HTML</div>
+        <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+      </div>
+      <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-card cdw-card--flat cdw-card--ocean"&gt;
+  &lt;div class="cdw-fw-docs-card-media cdw-fw-docs-card-media--ocean"&gt;&lt;/div&gt;
+  &lt;div class="cdw-card__header cdw-fw-docs-card-row"&gt;
+    &lt;div class="cdw-fw-docs-card-avatar"&gt;KC&lt;/div&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-card__title"&gt;Karina Costa&lt;/div&gt;
+      &lt;div class="cdw-card__subtitle"&gt;Diretoria criativa&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-card__body"&gt;Atua em produtos digitais e opera&ccedil;&otilde;es globais.&lt;/div&gt;
+  &lt;div class="cdw-card__footer cdw-fw-docs-card-stats"&gt;
+    &lt;span&gt;22 conex&otilde;es&lt;/span&gt;
+    &lt;span&gt;14 projetos&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="cdw-card cdw-card--flat cdw-card--sky"&gt;
+  &lt;div class="cdw-fw-docs-card-media cdw-fw-docs-card-media--sky"&gt;&lt;/div&gt;
+  &lt;div class="cdw-card__header cdw-fw-docs-card-row"&gt;
+    &lt;div class="cdw-fw-docs-card-avatar cdw-fw-docs-card-avatar--sky"&gt;ML&lt;/div&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-card__title"&gt;Marina Lima&lt;/div&gt;
+      &lt;div class="cdw-card__subtitle"&gt;Produto digital&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-card__body"&gt;Lidera squads de entrega e experi&ecirc;ncia.&lt;/div&gt;
+  &lt;div class="cdw-card__footer cdw-fw-docs-card-stats"&gt;
+    &lt;span&gt;18 conex&otilde;es&lt;/span&gt;
+    &lt;span&gt;9 projetos&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="cdw-card cdw-card--flat cdw-card--mint"&gt;
+  &lt;div class="cdw-fw-docs-card-media cdw-fw-docs-card-media--mint"&gt;&lt;/div&gt;
+  &lt;div class="cdw-card__header cdw-fw-docs-card-row"&gt;
+    &lt;div class="cdw-fw-docs-card-avatar cdw-fw-docs-card-avatar--mint"&gt;BR&lt;/div&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-card__title"&gt;Bruno Rocha&lt;/div&gt;
+      &lt;div class="cdw-card__subtitle"&gt;Opera&ccedil;&otilde;es&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-card__body"&gt;Coordena integra&ccedil;&otilde;es e processos internos.&lt;/div&gt;
+  &lt;div class="cdw-card__footer cdw-fw-docs-card-stats"&gt;
+    &lt;span&gt;26 conex&otilde;es&lt;/span&gt;
+    &lt;span&gt;11 projetos&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="cards-estrutura" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Estrutura</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Header, Body e Footer com slots de badge e a&ccedil;&atilde;o.
+    </p>
+    <div class="cdw-card cdw-card--flat cdw-card--ghost cdw-card--dense">
+      <div class="cdw-card__header">
+        <div>
+          <div class="cdw-card__title">Cabe&ccedil;alho</div>
+          <div class="cdw-card__subtitle">Subt&iacute;tulo</div>
+        </div>
+        <span class="cdw-badge cdw-badge--inline cdw-badge--ghost cdw-badge--outline cdw-badge--sm">Badge</span>
+      </div>
+      <div class="cdw-card__body">
+        Corpo com texto e conte&uacute;do principal.
+      </div>
+      <div class="cdw-card__footer">
+        <span class="cdw-card__meta">Atualizado agora</span>
+        <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-accent-ocean">A&ccedil;&atilde;o</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="cards-exemplos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Exemplos visuais</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Exemplos com destaque e status.
+    </p>
+    <div class="cdw-fw-docs-card-grid">
+      <div class="cdw-card cdw-card--accent cdw-card--amber">
+        <div class="cdw-card__header">
+          <div>
+            <div class="cdw-card__title">Resumo financeiro</div>
+            <div class="cdw-card__subtitle">M&ecirc;s atual</div>
+          </div>
+          <span class="cdw-badge cdw-badge--inline cdw-badge--amber cdw-badge--solid cdw-badge--sm">Plus</span>
+        </div>
+        <div class="cdw-card__body">
+          Receita 18% acima do esperado.
+        </div>
+      </div>
+      <div class="cdw-card cdw-card--docked cdw-card--rose">
+        <div class="cdw-card__header">
+          <div>
+            <div class="cdw-card__title">Alertas</div>
+            <div class="cdw-card__subtitle">Prioridade alta</div>
+          </div>
+          <span class="cdw-badge cdw-badge--inline cdw-badge--rose cdw-badge--solid cdw-badge--sm">3</span>
+        </div>
+        <div class="cdw-card__body">Tarefas pendentes para revisar.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="cards-modelos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Modelos adicionais</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Combina&ccedil;&otilde;es com midia, status e hierarquia visual distinta.
+    </p>
+    <div class="cdw-fw-docs-card-grid cdw-fw-docs-card-grid--models">
+      <div class="cdw-card cdw-card--flat cdw-card--ocean">
+        <div class="cdw-fw-docs-card-media cdw-fw-docs-card-media--ocean"></div>
+        <div class="cdw-card__header cdw-fw-docs-card-row">
+          <div class="cdw-fw-docs-card-avatar">KC</div>
+          <div>
+            <div class="cdw-card__title">Karina Costa</div>
+            <div class="cdw-card__subtitle">Diretoria criativa</div>
+          </div>
+        </div>
+        <div class="cdw-card__body">
+          Atua em produtos digitais e opera&ccedil;&otilde;es globais.
+        </div>
+        <div class="cdw-card__footer cdw-fw-docs-card-stats">
+          <span>22 conex&otilde;es</span>
+          <span>14 projetos</span>
+        </div>
+      </div>
+
+      <div class="cdw-card cdw-card--flat cdw-card--sky">
+        <div class="cdw-fw-docs-card-media cdw-fw-docs-card-media--sky"></div>
+        <div class="cdw-card__header cdw-fw-docs-card-row">
+          <div class="cdw-fw-docs-card-avatar cdw-fw-docs-card-avatar--sky">ML</div>
+          <div>
+            <div class="cdw-card__title">Marina Lima</div>
+            <div class="cdw-card__subtitle">Produto digital</div>
+          </div>
+        </div>
+        <div class="cdw-card__body">
+          Lidera squads de entrega e experi&ecirc;ncia.
+        </div>
+        <div class="cdw-card__footer cdw-fw-docs-card-stats">
+          <span>18 conex&otilde;es</span>
+          <span>9 projetos</span>
+        </div>
+      </div>
+
+      <div class="cdw-card cdw-card--flat cdw-card--mint">
+        <div class="cdw-fw-docs-card-media cdw-fw-docs-card-media--mint"></div>
+        <div class="cdw-card__header cdw-fw-docs-card-row">
+          <div class="cdw-fw-docs-card-avatar cdw-fw-docs-card-avatar--mint">BR</div>
+          <div>
+            <div class="cdw-card__title">Bruno Rocha</div>
+            <div class="cdw-card__subtitle">Opera&ccedil;&otilde;es</div>
+          </div>
+        </div>
+        <div class="cdw-card__body">
+          Coordena integra&ccedil;&otilde;es e processos internos.
+        </div>
+        <div class="cdw-card__footer cdw-fw-docs-card-stats">
+          <span>26 conex&otilde;es</span>
+          <span>11 projetos</span>
+        </div>
+      </div>
+    </div>
+    <div class="cdw-fw-docs-codeblock" style="margin-top:16px;">
+      <div class="cdw-fw-docs-code-head">
+        <div class="cdw-fw-docs-code-title">HTML</div>
+        <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+      </div>
+      <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-card cdw-card--flat cdw-card--ocean"&gt;
+  &lt;div class="cdw-fw-docs-card-media cdw-fw-docs-card-media--ocean"&gt;&lt;/div&gt;
+  &lt;div class="cdw-card__header cdw-fw-docs-card-row"&gt;
+    &lt;div class="cdw-fw-docs-card-avatar"&gt;KC&lt;/div&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-card__title"&gt;Karina Costa&lt;/div&gt;
+      &lt;div class="cdw-card__subtitle"&gt;Diretoria criativa&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-card__body"&gt;
+    Atua em produtos digitais e opera&ccedil;&otilde;es globais.
+  &lt;/div&gt;
+  &lt;div class="cdw-card__footer cdw-fw-docs-card-stats"&gt;
+    &lt;span&gt;22 conex&otilde;es&lt;/span&gt;
+    &lt;span&gt;14 projetos&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="cdw-card cdw-card--flat cdw-card--sky"&gt;
+  &lt;div class="cdw-fw-docs-card-media cdw-fw-docs-card-media--sky"&gt;&lt;/div&gt;
+  &lt;div class="cdw-card__header cdw-fw-docs-card-row"&gt;
+    &lt;div class="cdw-fw-docs-card-avatar cdw-fw-docs-card-avatar--sky"&gt;ML&lt;/div&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-card__title"&gt;Marina Lima&lt;/div&gt;
+      &lt;div class="cdw-card__subtitle"&gt;Produto digital&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-card__body"&gt;
+    Lidera squads de entrega e experi&ecirc;ncia.
+  &lt;/div&gt;
+  &lt;div class="cdw-card__footer cdw-fw-docs-card-stats"&gt;
+    &lt;span&gt;18 conex&otilde;es&lt;/span&gt;
+    &lt;span&gt;9 projetos&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="cdw-card cdw-card--flat cdw-card--mint"&gt;
+  &lt;div class="cdw-fw-docs-card-media cdw-fw-docs-card-media--mint"&gt;&lt;/div&gt;
+  &lt;div class="cdw-card__header cdw-fw-docs-card-row"&gt;
+    &lt;div class="cdw-fw-docs-card-avatar cdw-fw-docs-card-avatar--mint"&gt;BR&lt;/div&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-card__title"&gt;Bruno Rocha&lt;/div&gt;
+      &lt;div class="cdw-card__subtitle"&gt;Opera&ccedil;&otilde;es&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-card__body"&gt;
+    Coordena integra&ccedil;&otilde;es e processos internos.
+  &lt;/div&gt;
+  &lt;div class="cdw-card__footer cdw-fw-docs-card-stats"&gt;
+    &lt;span&gt;26 conex&otilde;es&lt;/span&gt;
+    &lt;span&gt;11 projetos&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="cdw-fw-docs-card-grid cdw-fw-docs-card-grid--models" style="margin-top:16px;">
+      <div class="cdw-card cdw-card--flat cdw-card--amber">
+        <div class="cdw-card__header cdw-fw-docs-card-row">
+          <div class="cdw-fw-docs-card-avatar cdw-fw-docs-card-avatar--amber">RN</div>
+          <div>
+            <div class="cdw-card__title">Rafael Nunes</div>
+            <div class="cdw-card__subtitle">h&aacute; 3h</div>
+          </div>
+          <span class="cdw-badge cdw-badge--inline cdw-badge--amber cdw-badge--outline cdw-badge--sm">Atual</span>
+        </div>
+        <div class="cdw-fw-docs-card-media cdw-fw-docs-card-media--amber"></div>
+        <div class="cdw-card__footer cdw-fw-docs-card-actions">
+          <span>5 coment&aacute;rios</span>
+          <span>28 curtidas</span>
+        </div>
+      </div>
+
+      <div class="cdw-card cdw-card--flat cdw-card--rose">
+        <div class="cdw-card__header cdw-fw-docs-card-row">
+          <div class="cdw-fw-docs-card-avatar cdw-fw-docs-card-avatar--rose">LN</div>
+          <div>
+            <div class="cdw-card__title">Larissa Nogueira</div>
+            <div class="cdw-card__subtitle">h&aacute; 1h</div>
+          </div>
+          <span class="cdw-badge cdw-badge--inline cdw-badge--rose cdw-badge--outline cdw-badge--sm">Novo</span>
+        </div>
+        <div class="cdw-fw-docs-card-media cdw-fw-docs-card-media--rose"></div>
+        <div class="cdw-card__footer cdw-fw-docs-card-actions">
+          <span>2 coment&aacute;rios</span>
+          <span>11 curtidas</span>
+        </div>
+      </div>
+
+      <div class="cdw-card cdw-card--flat cdw-card--graphite">
+        <div class="cdw-card__header cdw-fw-docs-card-row">
+          <div class="cdw-fw-docs-card-avatar cdw-fw-docs-card-avatar--graphite">JF</div>
+          <div>
+            <div class="cdw-card__title">Jo&atilde;o Faria</div>
+            <div class="cdw-card__subtitle">h&aacute; 20m</div>
+          </div>
+          <span class="cdw-badge cdw-badge--inline cdw-badge--graphite cdw-badge--outline cdw-badge--sm">Ativo</span>
+        </div>
+        <div class="cdw-fw-docs-card-media cdw-fw-docs-card-media--graphite"></div>
+        <div class="cdw-card__footer cdw-fw-docs-card-actions">
+          <span>8 coment&aacute;rios</span>
+          <span>42 curtidas</span>
+        </div>
+      </div>
+    </div>
+    <div class="cdw-fw-docs-codeblock" style="margin-top:16px;">
+      <div class="cdw-fw-docs-code-head">
+        <div class="cdw-fw-docs-code-title">HTML</div>
+        <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+      </div>
+      <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-card cdw-card--flat cdw-card--amber"&gt;
+  &lt;div class="cdw-card__header cdw-fw-docs-card-row"&gt;
+    &lt;div class="cdw-fw-docs-card-avatar cdw-fw-docs-card-avatar--amber"&gt;RN&lt;/div&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-card__title"&gt;Rafael Nunes&lt;/div&gt;
+      &lt;div class="cdw-card__subtitle"&gt;h&aacute; 3h&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;span class="cdw-badge cdw-badge--inline cdw-badge--amber cdw-badge--outline cdw-badge--sm"&gt;Atual&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-fw-docs-card-media cdw-fw-docs-card-media--amber"&gt;&lt;/div&gt;
+  &lt;div class="cdw-card__footer cdw-fw-docs-card-actions"&gt;
+    &lt;span&gt;5 coment&aacute;rios&lt;/span&gt;
+    &lt;span&gt;28 curtidas&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="cdw-card cdw-card--flat cdw-card--rose"&gt;
+  &lt;div class="cdw-card__header cdw-fw-docs-card-row"&gt;
+    &lt;div class="cdw-fw-docs-card-avatar cdw-fw-docs-card-avatar--rose"&gt;LN&lt;/div&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-card__title"&gt;Larissa Nogueira&lt;/div&gt;
+      &lt;div class="cdw-card__subtitle"&gt;h&aacute; 1h&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;span class="cdw-badge cdw-badge--inline cdw-badge--rose cdw-badge--outline cdw-badge--sm"&gt;Novo&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-fw-docs-card-media cdw-fw-docs-card-media--rose"&gt;&lt;/div&gt;
+  &lt;div class="cdw-card__footer cdw-fw-docs-card-actions"&gt;
+    &lt;span&gt;2 coment&aacute;rios&lt;/span&gt;
+    &lt;span&gt;11 curtidas&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="cdw-card cdw-card--flat cdw-card--graphite"&gt;
+  &lt;div class="cdw-card__header cdw-fw-docs-card-row"&gt;
+    &lt;div class="cdw-fw-docs-card-avatar cdw-fw-docs-card-avatar--graphite"&gt;JF&lt;/div&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-card__title"&gt;Jo&atilde;o Faria&lt;/div&gt;
+      &lt;div class="cdw-card__subtitle"&gt;h&aacute; 20m&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;span class="cdw-badge cdw-badge--inline cdw-badge--graphite cdw-badge--outline cdw-badge--sm"&gt;Ativo&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-fw-docs-card-media cdw-fw-docs-card-media--graphite"&gt;&lt;/div&gt;
+  &lt;div class="cdw-card__footer cdw-fw-docs-card-actions"&gt;
+    &lt;span&gt;8 coment&aacute;rios&lt;/span&gt;
+    &lt;span&gt;42 curtidas&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="cdw-fw-docs-card-grid cdw-fw-docs-card-grid--models" style="margin-top:16px;">
+      <div class="cdw-card cdw-card--docked cdw-card--mint">
+        <span class="cdw-badge cdw-badge--inline cdw-badge--mint cdw-badge--solid cdw-badge--sm cdw-card__badge">Live</span>
+        <div class="cdw-card__header">
+          <div>
+            <div class="cdw-card__title">Indicadores KPIs</div>
+            <div class="cdw-card__subtitle">Atualiza&ccedil;&atilde;o em tempo real</div>
+          </div>
+        </div>
+        <div class="cdw-card__body cdw-fw-docs-card-kpi">
+          <div>
+            <div class="cdw-fw-docs-card-kpi-value">+18%</div>
+            <div class="cdw-fw-docs-card-kpi-label">Convers&atilde;o</div>
+          </div>
+          <div>
+            <div class="cdw-fw-docs-card-kpi-value">2m 14s</div>
+            <div class="cdw-fw-docs-card-kpi-label">Tempo m&eacute;dio</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cdw-card cdw-card--docked cdw-card--sky">
+        <span class="cdw-badge cdw-badge--inline cdw-badge--sky cdw-badge--solid cdw-badge--sm cdw-card__badge">Meta</span>
+        <div class="cdw-card__header">
+          <div>
+            <div class="cdw-card__title">Receita anual</div>
+            <div class="cdw-card__subtitle">Revis&atilde;o trimestral</div>
+          </div>
+        </div>
+        <div class="cdw-card__body cdw-fw-docs-card-kpi">
+          <div>
+            <div class="cdw-fw-docs-card-kpi-value">R$ 2.1M</div>
+            <div class="cdw-fw-docs-card-kpi-label">Meta</div>
+          </div>
+          <div>
+            <div class="cdw-fw-docs-card-kpi-value">+9%</div>
+            <div class="cdw-fw-docs-card-kpi-label">Progresso</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cdw-card cdw-card--docked cdw-card--amber">
+        <span class="cdw-badge cdw-badge--inline cdw-badge--amber cdw-badge--solid cdw-badge--sm cdw-card__badge">Di&aacute;rio</span>
+        <div class="cdw-card__header">
+          <div>
+            <div class="cdw-card__title">Atendimento</div>
+            <div class="cdw-card__subtitle">Performance do dia</div>
+          </div>
+        </div>
+        <div class="cdw-card__body cdw-fw-docs-card-kpi">
+          <div>
+            <div class="cdw-fw-docs-card-kpi-value">97%</div>
+            <div class="cdw-fw-docs-card-kpi-label">NPS</div>
+          </div>
+          <div>
+            <div class="cdw-fw-docs-card-kpi-value">38m</div>
+            <div class="cdw-fw-docs-card-kpi-label">Fila</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cdw-fw-docs-codeblock" style="margin-top:16px;">
+      <div class="cdw-fw-docs-code-head">
+        <div class="cdw-fw-docs-code-title">HTML</div>
+        <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+      </div>
+      <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-card cdw-card--docked cdw-card--mint"&gt;
+  &lt;span class="cdw-badge cdw-badge--inline cdw-badge--mint cdw-badge--solid cdw-badge--sm cdw-card__badge"&gt;Live&lt;/span&gt;
+  &lt;div class="cdw-card__header"&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-card__title"&gt;Indicadores KPIs&lt;/div&gt;
+      &lt;div class="cdw-card__subtitle"&gt;Atualiza&ccedil;&atilde;o em tempo real&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-card__body cdw-fw-docs-card-kpi"&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-fw-docs-card-kpi-value"&gt;+18%&lt;/div&gt;
+      &lt;div class="cdw-fw-docs-card-kpi-label"&gt;Convers&atilde;o&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-fw-docs-card-kpi-value"&gt;2m 14s&lt;/div&gt;
+      &lt;div class="cdw-fw-docs-card-kpi-label"&gt;Tempo m&eacute;dio&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="cdw-card cdw-card--docked cdw-card--sky"&gt;
+  &lt;span class="cdw-badge cdw-badge--inline cdw-badge--sky cdw-badge--solid cdw-badge--sm cdw-card__badge"&gt;Meta&lt;/span&gt;
+  &lt;div class="cdw-card__header"&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-card__title"&gt;Receita anual&lt;/div&gt;
+      &lt;div class="cdw-card__subtitle"&gt;Revis&atilde;o trimestral&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-card__body cdw-fw-docs-card-kpi"&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-fw-docs-card-kpi-value"&gt;R$ 2.1M&lt;/div&gt;
+      &lt;div class="cdw-fw-docs-card-kpi-label"&gt;Meta&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-fw-docs-card-kpi-value"&gt;+9%&lt;/div&gt;
+      &lt;div class="cdw-fw-docs-card-kpi-label"&gt;Progresso&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="cdw-card cdw-card--docked cdw-card--amber"&gt;
+  &lt;span class="cdw-badge cdw-badge--inline cdw-badge--amber cdw-badge--solid cdw-badge--sm cdw-card__badge"&gt;Di&aacute;rio&lt;/span&gt;
+  &lt;div class="cdw-card__header"&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-card__title"&gt;Atendimento&lt;/div&gt;
+      &lt;div class="cdw-card__subtitle"&gt;Performance do dia&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-card__body cdw-fw-docs-card-kpi"&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-fw-docs-card-kpi-value"&gt;97%&lt;/div&gt;
+      &lt;div class="cdw-fw-docs-card-kpi-label"&gt;NPS&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-fw-docs-card-kpi-value"&gt;38m&lt;/div&gt;
+      &lt;div class="cdw-fw-docs-card-kpi-label"&gt;Fila&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="cdw-fw-docs-card-grid cdw-fw-docs-card-grid--models" style="margin-top:16px;">
+      <div class="cdw-card cdw-card--accent cdw-card--amber">
+        <span class="cdw-badge cdw-badge--corner cdw-badge--amber cdw-badge--solid cdw-badge--sm cdw-card__badge">Fila</span>
+        <div class="cdw-card__header">
+          <div>
+            <div class="cdw-card__title">Aprova&ccedil;&otilde;es pendentes</div>
+            <div class="cdw-card__subtitle">Setor financeiro</div>
+          </div>
+        </div>
+        <div class="cdw-card__body cdw-fw-docs-card-list">
+          <div>Reembolso #4821</div>
+          <div>Contrato #1190</div>
+          <div>Pedido #7712</div>
+        </div>
+      </div>
+
+      <div class="cdw-card cdw-card--accent cdw-card--rose">
+        <span class="cdw-badge cdw-badge--corner cdw-badge--rose cdw-badge--solid cdw-badge--sm cdw-card__badge">Pendente</span>
+        <div class="cdw-card__header">
+          <div>
+            <div class="cdw-card__title">Revis&otilde;es legais</div>
+            <div class="cdw-card__subtitle">Documentos</div>
+          </div>
+        </div>
+        <div class="cdw-card__body cdw-fw-docs-card-list">
+          <div>Contrato #2301</div>
+          <div>Termo #1180</div>
+          <div>Recurso #901</div>
+        </div>
+      </div>
+
+      <div class="cdw-card cdw-card--accent cdw-card--ocean">
+        <span class="cdw-badge cdw-badge--corner cdw-badge--ocean cdw-badge--solid cdw-badge--sm cdw-card__badge">Revis&atilde;o</span>
+        <div class="cdw-card__header">
+          <div>
+            <div class="cdw-card__title">Entregas semanais</div>
+            <div class="cdw-card__subtitle">Equipe interna</div>
+          </div>
+        </div>
+        <div class="cdw-card__body cdw-fw-docs-card-list">
+          <div>Release #32</div>
+          <div>Checklist #88</div>
+          <div>Deploy #14</div>
+        </div>
+      </div>
+    </div>
+    <div class="cdw-fw-docs-codeblock" style="margin-top:16px;">
+      <div class="cdw-fw-docs-code-head">
+        <div class="cdw-fw-docs-code-title">HTML</div>
+        <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+      </div>
+      <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-card cdw-card--accent cdw-card--amber"&gt;
+  &lt;span class="cdw-badge cdw-badge--corner cdw-badge--amber cdw-badge--solid cdw-badge--sm cdw-card__badge"&gt;Fila&lt;/span&gt;
+  &lt;div class="cdw-card__header"&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-card__title"&gt;Aprova&ccedil;&otilde;es pendentes&lt;/div&gt;
+      &lt;div class="cdw-card__subtitle"&gt;Setor financeiro&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-card__body cdw-fw-docs-card-list"&gt;
+    &lt;div&gt;Reembolso #4821&lt;/div&gt;
+    &lt;div&gt;Contrato #1190&lt;/div&gt;
+    &lt;div&gt;Pedido #7712&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="cdw-card cdw-card--accent cdw-card--rose"&gt;
+  &lt;span class="cdw-badge cdw-badge--corner cdw-badge--rose cdw-badge--solid cdw-badge--sm cdw-card__badge"&gt;Pendente&lt;/span&gt;
+  &lt;div class="cdw-card__header"&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-card__title"&gt;Revis&otilde;es legais&lt;/div&gt;
+      &lt;div class="cdw-card__subtitle"&gt;Documentos&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-card__body cdw-fw-docs-card-list"&gt;
+    &lt;div&gt;Contrato #2301&lt;/div&gt;
+    &lt;div&gt;Termo #1180&lt;/div&gt;
+    &lt;div&gt;Recurso #901&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="cdw-card cdw-card--accent cdw-card--ocean"&gt;
+  &lt;span class="cdw-badge cdw-badge--corner cdw-badge--ocean cdw-badge--solid cdw-badge--sm cdw-card__badge"&gt;Revis&atilde;o&lt;/span&gt;
+  &lt;div class="cdw-card__header"&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-card__title"&gt;Entregas semanais&lt;/div&gt;
+      &lt;div class="cdw-card__subtitle"&gt;Equipe interna&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-card__body cdw-fw-docs-card-list"&gt;
+    &lt;div&gt;Release #32&lt;/div&gt;
+    &lt;div&gt;Checklist #88&lt;/div&gt;
+    &lt;div&gt;Deploy #14&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="cdw-fw-docs-card-grid cdw-fw-docs-card-grid--models" style="margin-top:16px;">
+      <div class="cdw-card cdw-card--panel cdw-card--graphite cdw-card--comfortable">
+        <div class="cdw-card__header">
+          <div>
+            <div class="cdw-card__title">Painel t&eacute;cnico</div>
+            <div class="cdw-card__subtitle">Infraestrutura</div>
+          </div>
+          <span class="cdw-badge cdw-badge--inline cdw-badge--ghost cdw-badge--outline cdw-badge--sm">Est&aacute;vel</span>
+        </div>
+        <div class="cdw-card__body cdw-fw-docs-card-grid-mini">
+          <div>
+            <div class="cdw-fw-docs-card-kpi-value">99.9%</div>
+            <div class="cdw-fw-docs-card-kpi-label">Uptime</div>
+          </div>
+          <div>
+            <div class="cdw-fw-docs-card-kpi-value">4.2s</div>
+            <div class="cdw-fw-docs-card-kpi-label">Resposta</div>
+          </div>
+        </div>
+        <div class="cdw-card__footer cdw-fw-docs-card-actions">
+          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-accent-sky">Detalhes</button>
+          <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-accent-sky">Hist&oacute;rico</button>
+        </div>
+      </div>
+
+      <div class="cdw-card cdw-card--panel cdw-card--ocean cdw-card--comfortable">
+        <div class="cdw-card__header">
+          <div>
+            <div class="cdw-card__title">Monitoramento</div>
+            <div class="cdw-card__subtitle">Servi&ccedil;os</div>
+          </div>
+          <span class="cdw-badge cdw-badge--inline cdw-badge--ghost cdw-badge--outline cdw-badge--sm">Ativo</span>
+        </div>
+        <div class="cdw-card__body cdw-fw-docs-card-grid-mini">
+          <div>
+            <div class="cdw-fw-docs-card-kpi-value">312</div>
+            <div class="cdw-fw-docs-card-kpi-label">Alertas</div>
+          </div>
+          <div>
+            <div class="cdw-fw-docs-card-kpi-value">1.8s</div>
+            <div class="cdw-fw-docs-card-kpi-label">Lat&ecirc;ncia</div>
+          </div>
+        </div>
+        <div class="cdw-card__footer cdw-fw-docs-card-actions">
+          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-accent-sky">Painel</button>
+          <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-accent-sky">Logs</button>
+        </div>
+      </div>
+
+      <div class="cdw-card cdw-card--panel cdw-card--ghost cdw-card--comfortable">
+        <div class="cdw-card__header">
+          <div>
+            <div class="cdw-card__title">Compliance</div>
+            <div class="cdw-card__subtitle">Auditorias</div>
+          </div>
+          <span class="cdw-badge cdw-badge--inline cdw-badge--ghost cdw-badge--outline cdw-badge--sm">Revis&atilde;o</span>
+        </div>
+        <div class="cdw-card__body cdw-fw-docs-card-grid-mini">
+          <div>
+            <div class="cdw-fw-docs-card-kpi-value">12</div>
+            <div class="cdw-fw-docs-card-kpi-label">Itens</div>
+          </div>
+          <div>
+            <div class="cdw-fw-docs-card-kpi-value">4</div>
+            <div class="cdw-fw-docs-card-kpi-label">Pendentes</div>
+          </div>
+        </div>
+        <div class="cdw-card__footer cdw-fw-docs-card-actions">
+          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-accent-sky">Abrir</button>
+          <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-accent-sky">Exportar</button>
+        </div>
+      </div>
+    </div>
+    <div class="cdw-fw-docs-codeblock" style="margin-top:16px;">
+      <div class="cdw-fw-docs-code-head">
+        <div class="cdw-fw-docs-code-title">HTML</div>
+        <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+      </div>
+      <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-card cdw-card--panel cdw-card--graphite cdw-card--comfortable"&gt;
+  &lt;div class="cdw-card__header"&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-card__title"&gt;Painel t&eacute;cnico&lt;/div&gt;
+      &lt;div class="cdw-card__subtitle"&gt;Infraestrutura&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;span class="cdw-badge cdw-badge--inline cdw-badge--ghost cdw-badge--outline cdw-badge--sm"&gt;Est&aacute;vel&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-card__body cdw-fw-docs-card-grid-mini"&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-fw-docs-card-kpi-value"&gt;99.9%&lt;/div&gt;
+      &lt;div class="cdw-fw-docs-card-kpi-label"&gt;Uptime&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-fw-docs-card-kpi-value"&gt;4.2s&lt;/div&gt;
+      &lt;div class="cdw-fw-docs-card-kpi-label"&gt;Resposta&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-card__footer cdw-fw-docs-card-actions"&gt;
+    &lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-accent-sky"&gt;Detalhes&lt;/button&gt;
+    &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-accent-sky"&gt;Hist&oacute;rico&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="cdw-card cdw-card--panel cdw-card--ocean cdw-card--comfortable"&gt;
+  &lt;div class="cdw-card__header"&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-card__title"&gt;Monitoramento&lt;/div&gt;
+      &lt;div class="cdw-card__subtitle"&gt;Servi&ccedil;os&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;span class="cdw-badge cdw-badge--inline cdw-badge--ghost cdw-badge--outline cdw-badge--sm"&gt;Ativo&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-card__body cdw-fw-docs-card-grid-mini"&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-fw-docs-card-kpi-value"&gt;312&lt;/div&gt;
+      &lt;div class="cdw-fw-docs-card-kpi-label"&gt;Alertas&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-fw-docs-card-kpi-value"&gt;1.8s&lt;/div&gt;
+      &lt;div class="cdw-fw-docs-card-kpi-label"&gt;Lat&ecirc;ncia&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-card__footer cdw-fw-docs-card-actions"&gt;
+    &lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-accent-sky"&gt;Painel&lt;/button&gt;
+    &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-accent-sky"&gt;Logs&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="cdw-card cdw-card--panel cdw-card--ghost cdw-card--comfortable"&gt;
+  &lt;div class="cdw-card__header"&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-card__title"&gt;Compliance&lt;/div&gt;
+      &lt;div class="cdw-card__subtitle"&gt;Auditorias&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;span class="cdw-badge cdw-badge--inline cdw-badge--ghost cdw-badge--outline cdw-badge--sm"&gt;Revis&atilde;o&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-card__body cdw-fw-docs-card-grid-mini"&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-fw-docs-card-kpi-value"&gt;12&lt;/div&gt;
+      &lt;div class="cdw-fw-docs-card-kpi-label"&gt;Itens&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-fw-docs-card-kpi-value"&gt;4&lt;/div&gt;
+      &lt;div class="cdw-fw-docs-card-kpi-label"&gt;Pendentes&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-card__footer cdw-fw-docs-card-actions"&gt;
+    &lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-accent-sky"&gt;Abrir&lt;/button&gt;
+    &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-accent-sky"&gt;Exportar&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="cards-uso" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Exemplos de uso</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Cards em dashboard e painel interno.
+    </p>
+    <div class="cdw-fw-docs-card-grid">
+      <div class="cdw-card cdw-card--flat cdw-card--ocean">
+        <div class="cdw-card__header">
+          <div>
+            <div class="cdw-card__title">Painel de performance</div>
+            <div class="cdw-card__subtitle">Resumo semanal</div>
+          </div>
+          <span class="cdw-badge cdw-badge--inline cdw-badge--ocean cdw-badge--soft cdw-badge--sm">Est&aacute;vel</span>
+        </div>
+        <div class="cdw-card__body">
+          12 indicadores dentro da meta.
+        </div>
+        <div class="cdw-card__footer">
+          <span class="cdw-card__meta">Atualizado 2h atr&aacute;s</span>
+        </div>
+      </div>
+      <div class="cdw-card cdw-card--panel cdw-card--graphite cdw-card--comfortable">
+        <div class="cdw-card__header">
+          <div>
+            <div class="cdw-card__title">Logs t&eacute;cnicos</div>
+            <div class="cdw-card__subtitle">Ambiente interno</div>
+          </div>
+        </div>
+        <div class="cdw-card__body">
+          Sistema est&aacute;vel com 0 falhas cr&iacute;ticas.
+        </div>
+        <div class="cdw-card__footer">
+          <span class="cdw-card__meta">Ver detalhes</span>
+        </div>
+      </div>
+    </div>
+    <div class="cdw-fw-docs-codeblock" style="margin-top:16px;">
+      <div class="cdw-fw-docs-code-head">
+        <div class="cdw-fw-docs-code-title">HTML</div>
+        <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+      </div>
+      <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-card cdw-card--flat cdw-card--ocean"&gt;
+  &lt;div class="cdw-card__header"&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-card__title"&gt;Painel de performance&lt;/div&gt;
+      &lt;div class="cdw-card__subtitle"&gt;Resumo semanal&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;span class="cdw-badge cdw-badge--inline cdw-badge--ocean cdw-badge--soft cdw-badge--sm"&gt;Est&aacute;vel&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-card__body"&gt;
+    12 indicadores dentro da meta.
+  &lt;/div&gt;
+  &lt;div class="cdw-card__footer"&gt;
+    &lt;span class="cdw-card__meta"&gt;Atualizado 2h atr&aacute;s&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="cdw-card cdw-card--panel cdw-card--graphite cdw-card--comfortable"&gt;
+  &lt;div class="cdw-card__header"&gt;
+    &lt;div&gt;
+      &lt;div class="cdw-card__title"&gt;Logs t&eacute;cnicos&lt;/div&gt;
+      &lt;div class="cdw-card__subtitle"&gt;Ambiente interno&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-card__body"&gt;
+    Sistema est&aacute;vel com 0 falhas cr&iacute;ticas.
+  &lt;/div&gt;
+  &lt;div class="cdw-card__footer"&gt;
+    &lt;span class="cdw-card__meta"&gt;Ver detalhes&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+  </div>
+</section>
+
+`,
   };
 
   const sectionOrder = [
@@ -2371,6 +3303,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     "accordion",
     "alert",
     "badges",
+    "cards",
   ];
 
   app.innerHTML = `
@@ -2499,6 +3432,17 @@ function buildNav(root) {
             { label: "Estilos", href: "#badges-estilos" },
             { label: "Exemplos", href: "#badges-exemplos" },
             { label: "Uso", href: "#badges-uso" },
+          ],
+        },
+        {
+          title: "Cards",
+          target: "#cards",
+          links: [
+            { label: "Conceito", href: "#cards-conceito" },
+            { label: "Tipos", href: "#cards-tipos" },
+            { label: "Estrutura", href: "#cards-estrutura" },
+            { label: "Exemplos", href: "#cards-exemplos" },
+            { label: "Uso", href: "#cards-uso" },
           ],
         },
       ],
