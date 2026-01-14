@@ -239,6 +239,18 @@
   --cdw-card-accent: var(--cdw-fw-accent-sky);
 }
 
+.cdw-card--teal {
+  --cdw-card-accent: var(--cdw-fw-accent-teal);
+}
+
+.cdw-card--forest {
+  --cdw-card-accent: var(--cdw-fw-accent-forest);
+}
+
+.cdw-card--lime {
+  --cdw-card-accent: var(--cdw-fw-accent-lime);
+}
+
 .cdw-card--mint {
   --cdw-card-accent: var(--cdw-fw-accent-teal);
 }
@@ -247,8 +259,32 @@
   --cdw-card-accent: var(--cdw-fw-accent-sun);
 }
 
+.cdw-card--sun {
+  --cdw-card-accent: var(--cdw-fw-accent-sun);
+}
+
+.cdw-card--ember {
+  --cdw-card-accent: var(--cdw-fw-accent-ember);
+}
+
+.cdw-card--cocoa {
+  --cdw-card-accent: var(--cdw-fw-accent-cocoa);
+}
+
+.cdw-card--ruby {
+  --cdw-card-accent: var(--cdw-fw-accent-ruby);
+}
+
 .cdw-card--rose {
   --cdw-card-accent: var(--cdw-fw-accent-rose);
+}
+
+.cdw-card--violet {
+  --cdw-card-accent: var(--cdw-fw-accent-violet);
+}
+
+.cdw-card--indigo {
+  --cdw-card-accent: var(--cdw-fw-accent-indigo);
 }
 
 .cdw-card--graphite {
