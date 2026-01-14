@@ -46,6 +46,86 @@
   color: var(--cdw-card-muted);
 }
 
+.cdw-card__media {
+  height: 120px;
+  border-radius: 12px;
+  border: 1px solid color-mix(in srgb, var(--cdw-card-accent) 20%, transparent);
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--cdw-card-accent) 35%, white),
+    color-mix(in srgb, var(--cdw-card-accent) 8%, white)
+  );
+}
+
+@supports not (background-color: color-mix(in srgb, #000 20%, white)) {
+  .cdw-card__media {
+    background: #eef2f7;
+    border-color: var(--cdw-card-border);
+  }
+}
+
+.cdw-card__row {
+  align-items: center;
+}
+
+.cdw-card__avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  background: var(--cdw-card-accent);
+  color: #f2f6fb;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.cdw-card__stats,
+.cdw-card__actions {
+  font-size: 12px;
+  color: var(--cdw-card-muted);
+  gap: 12px;
+}
+
+.cdw-card__kpi {
+  display: flex;
+  gap: 18px;
+}
+
+.cdw-card__kpi-value {
+  font-size: 16px;
+  font-weight: 700;
+  color: inherit;
+}
+
+.cdw-card__kpi-label {
+  font-size: 11px;
+  color: var(--cdw-card-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.cdw-card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--cdw-card-ink);
+}
+
+.cdw-card__grid-mini {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.cdw-card--panel .cdw-card__kpi-label,
+.cdw-card--panel .cdw-card__actions,
+.cdw-card--panel .cdw-card__stats {
+  color: rgba(231, 238, 246, 0.7);
+}
+
 .cdw-card__badge {
   position: absolute;
   top: 12px;

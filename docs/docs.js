@@ -1,4 +1,4 @@
-Ôªø(function () {
+(function () {
   const app = document.getElementById("app");
   if (!app) {
     return;
@@ -15,12 +15,12 @@
   <div class="cdw-fw-docs-section-head">
     <h2 class="cdw-fw-docs-section-title">Layout</h2>
     <p class="cdw-fw-docs-lead">
-      Containers e grid de 12 colunas para composi√ß√µes responsivas.
+      Containers e grid de 12 colunas para composiÁıes responsivas.
     </p>
   </div>
 
   <div class="cdw-fw-docs-toc">
-    <span class="cdw-fw-docs-toc-title">√çndice desta p√°gina</span>
+    <span class="cdw-fw-docs-toc-title">Õndice desta p·gina</span>
     <a href="#layout-container">Container</a>
     <a href="#layout-grid">Grid</a>
   </div>
@@ -28,8 +28,8 @@
   <div class="cdw-fw-docs-subsection" id="layout-container" data-cdw-fw-docs-section>
     <h3 class="cdw-fw-docs-subtitle">Container</h3>
     <p class="cdw-fw-docs-subdesc">
-      Centralize conte√∫do com largura m√°xima ou ocupe toda a largura com o fluid.
-      <span class="cdw-fw-docs-when">Quando usar: p√°ginas com leitura centralizada.</span>
+      Centralize conte˙do com largura m·xima ou ocupe toda a largura com o fluid.
+      <span class="cdw-fw-docs-when">Quando usar: p·ginas com leitura centralizada.</span>
     </p>
     <div class="cdw-fw-docs-classlist">
       <span>cdw-fw-container</span>
@@ -44,11 +44,11 @@
       <div class="cdw-fw-docs-preview">
         <div class="cdw-fw-docs-layout-band">Container</div>
         <div class="cdw-fw-container" style="margin-top:10px;">
-          <div class="cdw-fw-docs-grid-demo">Conte√∫do centralizado</div>
+          <div class="cdw-fw-docs-grid-demo">Conte˙do centralizado</div>
         </div>
         <div class="cdw-fw-docs-layout-band" style="margin-top:14px;">Container fluid</div>
         <div class="cdw-fw-container-fluid" style="margin-top:10px;">
-          <div class="cdw-fw-docs-grid-demo">Conte√∫do full width</div>
+          <div class="cdw-fw-docs-grid-demo">Conte˙do full width</div>
         </div>
         <div class="cdw-fw-docs-example-caption">
           O container respeita max-width; o fluid ocupa 100%.
@@ -81,7 +81,7 @@
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
         <div class="cdw-fw-docs-example-title">Duas colunas</div>
-        <div class="cdw-fw-docs-badge">B√°sico</div>
+        <div class="cdw-fw-docs-badge">B·sico</div>
       </div>
       <div class="cdw-fw-docs-preview">
         <div class="cdw-fw-container">
@@ -110,7 +110,7 @@
 
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
-        <div class="cdw-fw-docs-example-title">Tr√™s colunas</div>
+        <div class="cdw-fw-docs-example-title">TrÍs colunas</div>
         <div class="cdw-fw-docs-badge">Comum</div>
       </div>
       <div class="cdw-fw-docs-preview">
@@ -144,7 +144,7 @@
 
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
-        <div class="cdw-fw-docs-example-title">Sidebar + conte√∫do</div>
+        <div class="cdw-fw-docs-example-title">Sidebar + conte˙do</div>
         <div class="cdw-fw-docs-badge">Comum</div>
       </div>
       <div class="cdw-fw-docs-preview">
@@ -154,11 +154,11 @@
               <div class="cdw-fw-docs-grid-demo">Sidebar</div>
             </div>
             <div class="cdw-fw-col-12 cdw-fw-col-lg-9">
-              <div class="cdw-fw-docs-grid-demo">Conte√∫do</div>
+              <div class="cdw-fw-docs-grid-demo">Conte˙do</div>
             </div>
           </div>
         </div>
-        <div class="cdw-fw-docs-example-caption">Mobile empilha, lg separa sidebar e conte√∫do.</div>
+        <div class="cdw-fw-docs-example-caption">Mobile empilha, lg separa sidebar e conte˙do.</div>
       </div>
       <div class="cdw-fw-docs-codeblock">
         <div class="cdw-fw-docs-code-head">
@@ -167,16 +167,16 @@
         </div>
         <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-row cdw-fw-gap-3"&gt;
   &lt;div class="cdw-fw-col-12 cdw-fw-col-lg-3"&gt;Sidebar&lt;/div&gt;
-  &lt;div class="cdw-fw-col-12 cdw-fw-col-lg-9"&gt;Conte√∫do&lt;/div&gt;
+  &lt;div class="cdw-fw-col-12 cdw-fw-col-lg-9"&gt;Conte˙do&lt;/div&gt;
 &lt;/div&gt;</code></pre>
       </div>
     </div>
 
     <div class="cdw-fw-docs-card">
-      <div class="cdw-fw-docs-card-title">Recomenda√ß√µes de uso</div>
+      <div class="cdw-fw-docs-card-title">RecomendaÁıes de uso</div>
       <div class="cdw-fw-docs-highlight">Row sempre como pai</div>
       <div class="cdw-fw-docs-highlight">Colunas sempre dentro de Row</div>
-      <div class="cdw-fw-docs-highlight">Use gap utilities para espa√ßamento</div>
+      <div class="cdw-fw-docs-highlight">Use gap utilities para espaÁamento</div>
     </div>
   </div>
 </section>
@@ -995,7 +995,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           https://cdn.jsdelivr.net/gh/carlosdevelopmentsweb/fw-cdweb@0.1.3/dist/cdw-fw.js
         </div>
         <div class="cdw-fw-docs-example-caption">
-          √¢≈ì‚Äù√Ø¬∏¬è Forma recomendada para produ&ccedil;&atilde;o. √¢≈ì‚Äù√Ø¬∏¬è Evita que atualiza&ccedil;&otilde;es quebrem seu projeto.
+          ‚úîÔ∏è Forma recomendada para produ&ccedil;&atilde;o. ‚úîÔ∏è Evita que atualiza&ccedil;&otilde;es quebrem seu projeto.
         </div>
       </div>
       <div class="cdw-fw-docs-codeblock">
@@ -1031,7 +1031,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           https://cdn.jsdelivr.net/gh/carlosdevelopmentsweb/fw-cdweb/dist/
         </div>
         <div class="cdw-fw-docs-callout">
-          √¢≈°¬†√Ø¬∏¬è Esta op&ccedil;&atilde;o carrega sempre a vers&atilde;o mais recente e pode quebrar seu projeto.
+          ‚ö†Ô∏è Esta op&ccedil;&atilde;o carrega sempre a vers&atilde;o mais recente e pode quebrar seu projeto.
         </div>
         <div class="cdw-fw-docs-highlight">
           https://cdn.jsdelivr.net/gh/carlosdevelopmentsweb/fw-cdweb/dist/cdw-fw.css
@@ -1091,15 +1091,15 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
 `,
   utilities: `<section id="utilitarios" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
   <div class="cdw-fw-docs-section-head">
-    <h2 class="cdw-fw-docs-section-title">Utilit√°rios</h2>
+    <h2 class="cdw-fw-docs-section-title">Utilit·rios</h2>
     <p class="cdw-fw-docs-lead">
-      Classes utilit√°rias para resolver layout e ajustes r√°pidos sem criar componentes.
+      Classes utilit·rias para resolver layout e ajustes r·pidos sem criar componentes.
     </p>
   </div>
 
   <div class="cdw-fw-docs-toc">
-    <span class="cdw-fw-docs-toc-title">√çndice desta p√°gina</span>
-    <a href="#util-espacamento">Espa√ßamento</a>
+    <span class="cdw-fw-docs-toc-title">Õndice desta p·gina</span>
+    <a href="#util-espacamento">EspaÁamento</a>
     <a href="#util-display">Display</a>
     <a href="#util-flex">Flex</a>
     <a href="#util-gap">Gap</a>
@@ -1108,10 +1108,10 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
   </div>
 
   <div class="cdw-fw-docs-subsection" id="util-espacamento" data-cdw-fw-docs-section>
-    <h3 class="cdw-fw-docs-subtitle">Espa√ßamento</h3>
+    <h3 class="cdw-fw-docs-subtitle">EspaÁamento</h3>
     <p class="cdw-fw-docs-subdesc">
       Controle de margin e padding com escala fixa baseada em 4px.
-      <span class="cdw-fw-docs-when">Quando usar: separa√ß√£o entre elementos e respiro interno.</span>
+      <span class="cdw-fw-docs-when">Quando usar: separaÁ„o entre elementos e respiro interno.</span>
     </p>
     <div class="cdw-fw-docs-classlist">
       <span>cdw-fw-m-*</span>
@@ -1122,7 +1122,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     </div>
 
     <div class="cdw-fw-docs-card">
-      <div class="cdw-fw-docs-card-title">Escala de espa√ßamento</div>
+      <div class="cdw-fw-docs-card-title">Escala de espaÁamento</div>
       <table class="cdw-fw-docs-scale-table">
         <thead>
           <tr>
@@ -1149,7 +1149,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
         <div class="cdw-fw-docs-example-title">Padding e margin</div>
-        <div class="cdw-fw-docs-badge">B√°sico</div>
+        <div class="cdw-fw-docs-badge">B·sico</div>
       </div>
       <div class="cdw-fw-docs-preview">
         <div class="cdw-fw-p-4" style="background:#dfe9f6; border-radius:12px;">
@@ -1159,7 +1159,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           Margin top 4
         </div>
         <div class="cdw-fw-docs-example-caption">
-          Use p-* para espa√ßo interno e mt-* para separar itens verticalmente.
+          Use p-* para espaÁo interno e mt-* para separar itens verticalmente.
         </div>
       </div>
       <div class="cdw-fw-docs-codeblock">
@@ -1202,8 +1202,8 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
   <div class="cdw-fw-docs-subsection" id="util-display" data-cdw-fw-docs-section>
     <h3 class="cdw-fw-docs-subtitle">Display</h3>
     <p class="cdw-fw-docs-subdesc">
-      Ajuste o comportamento de renderiza√ß√£o dos elementos.
-      <span class="cdw-fw-docs-when">Quando usar: alinhar itens pequenos ou ocultar conte√∫do.</span>
+      Ajuste o comportamento de renderizaÁ„o dos elementos.
+      <span class="cdw-fw-docs-when">Quando usar: alinhar itens pequenos ou ocultar conte˙do.</span>
     </p>
     <div class="cdw-fw-docs-classlist">
       <span>cdw-fw-block</span>
@@ -1215,7 +1215,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
         <div class="cdw-fw-docs-example-title">Inline vs block</div>
-        <div class="cdw-fw-docs-badge">B√°sico</div>
+        <div class="cdw-fw-docs-badge">B·sico</div>
       </div>
       <div class="cdw-fw-docs-preview">
         <div class="cdw-fw-inline" style="background:#dfe9f6; padding:6px 10px; border-radius:8px;">inline</div>
@@ -1241,13 +1241,13 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
       </div>
       <div class="cdw-fw-docs-preview">
         <div id="cdw-fw-docs-hidden-target" class="cdw-fw-docs-preview-box cdw-fw-docs-preview-box--dark">
-          Alvo ocult√°vel
+          Alvo ocult·vel
         </div>
         <button class="cdw-fw-docs-toggle" type="button" data-cdw-fw-docs-toggle-hidden="cdw-fw-docs-hidden-target">
           Esconder
         </button>
         <div class="cdw-fw-docs-example-caption">
-          O bot√£o alterna a classe cdw-fw-hidden no alvo.
+          O bot„o alterna a classe cdw-fw-hidden no alvo.
         </div>
       </div>
       <div class="cdw-fw-docs-codeblock">
@@ -1255,7 +1255,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <div class="cdw-fw-docs-code-title">HTML</div>
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div id="alvo" class="cdw-fw-hidden"&gt;Alvo ocult√°vel&lt;/div&gt;
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div id="alvo" class="cdw-fw-hidden"&gt;Alvo ocult·vel&lt;/div&gt;
 &lt;button&gt;Mostrar/Esconder&lt;/button&gt;</code></pre>
       </div>
     </div>
@@ -1264,8 +1264,8 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
   <div class="cdw-fw-docs-subsection" id="util-flex" data-cdw-fw-docs-section>
     <h3 class="cdw-fw-docs-subtitle">Flex</h3>
     <p class="cdw-fw-docs-subdesc">
-      Controle de alinhamento, dire√ß√£o e quebra de linha com flexbox.
-      <span class="cdw-fw-docs-when">Quando usar: barras de a√ß√£o, cards alinhados e grids flex√≠veis.</span>
+      Controle de alinhamento, direÁ„o e quebra de linha com flexbox.
+      <span class="cdw-fw-docs-when">Quando usar: barras de aÁ„o, cards alinhados e grids flexÌveis.</span>
     </p>
     <div class="cdw-fw-docs-classlist">
       <span>cdw-fw-flex</span>
@@ -1278,7 +1278,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
         <div class="cdw-fw-docs-example-title">Justify between + items center</div>
-        <div class="cdw-fw-docs-badge">B√°sico</div>
+        <div class="cdw-fw-docs-badge">B·sico</div>
       </div>
       <div class="cdw-fw-docs-preview">
         <div class="cdw-fw-flex cdw-fw-items-center cdw-fw-justify-between" style="background:#eef2f7; padding:12px; border-radius:12px;">
@@ -1286,7 +1286,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <div class="cdw-fw-docs-preview-box cdw-fw-docs-preview-box--alt">Centro</div>
           <div class="cdw-fw-docs-preview-box cdw-fw-docs-preview-box--dark">Direita</div>
         </div>
-        <div class="cdw-fw-docs-example-caption">Distribui o conte√∫do com espa√ßo entre os itens.</div>
+        <div class="cdw-fw-docs-example-caption">Distribui o conte˙do com espaÁo entre os itens.</div>
       </div>
       <div class="cdw-fw-docs-codeblock">
         <div class="cdw-fw-docs-code-head">
@@ -1309,7 +1309,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <div class="cdw-fw-docs-preview-box">Item 1</div>
           <div class="cdw-fw-docs-preview-box cdw-fw-docs-preview-box--alt">Item 2</div>
         </div>
-        <div class="cdw-fw-docs-example-caption">Empilha itens verticalmente com espa√ßamento.</div>
+        <div class="cdw-fw-docs-example-caption">Empilha itens verticalmente com espaÁamento.</div>
       </div>
       <div class="cdw-fw-docs-codeblock">
         <div class="cdw-fw-docs-code-head">
@@ -1323,7 +1323,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
         <div class="cdw-fw-docs-example-title">Wrap com gap</div>
-        <div class="cdw-fw-docs-badge">Avan√ßado</div>
+        <div class="cdw-fw-docs-badge">AvanÁado</div>
       </div>
       <div class="cdw-fw-docs-preview">
         <div class="cdw-fw-flex cdw-fw-flex-wrap cdw-fw-gap-2" style="background:#eef2f7; padding:12px; border-radius:12px;">
@@ -1348,7 +1348,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
   <div class="cdw-fw-docs-subsection" id="util-gap" data-cdw-fw-docs-section>
     <h3 class="cdw-fw-docs-subtitle">Gap</h3>
     <p class="cdw-fw-docs-subdesc">
-      Espa√ßamento entre itens de flex ou grid.
+      EspaÁamento entre itens de flex ou grid.
       <span class="cdw-fw-docs-when">Quando usar: listas horizontais e colunas alinhadas.</span>
     </p>
     <div class="cdw-fw-docs-classlist">
@@ -1358,7 +1358,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
         <div class="cdw-fw-docs-example-title">Comparando gap-2 e gap-6</div>
-        <div class="cdw-fw-docs-badge">B√°sico</div>
+        <div class="cdw-fw-docs-badge">B·sico</div>
       </div>
       <div class="cdw-fw-docs-preview">
         <div class="cdw-fw-flex cdw-fw-gap-2">
@@ -1371,7 +1371,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <div class="cdw-fw-docs-preview-box cdw-fw-docs-preview-box--alt">gap-6</div>
           <div class="cdw-fw-docs-preview-box cdw-fw-docs-preview-box--alt">gap-6</div>
         </div>
-        <div class="cdw-fw-docs-example-caption">Use gaps maiores para blocos mais espa√ßados.</div>
+        <div class="cdw-fw-docs-example-caption">Use gaps maiores para blocos mais espaÁados.</div>
       </div>
       <div class="cdw-fw-docs-codeblock">
         <div class="cdw-fw-docs-code-head">
@@ -1387,8 +1387,8 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
   <div class="cdw-fw-docs-subsection" id="util-tamanho" data-cdw-fw-docs-section>
     <h3 class="cdw-fw-docs-subtitle">Tamanho</h3>
     <p class="cdw-fw-docs-subdesc">
-      Ajuste largura e limite m√°ximo de forma simples.
-      <span class="cdw-fw-docs-when">Quando usar: formul√°rios e containers responsivos.</span>
+      Ajuste largura e limite m·ximo de forma simples.
+      <span class="cdw-fw-docs-when">Quando usar: formul·rios e containers responsivos.</span>
     </p>
     <div class="cdw-fw-docs-classlist">
       <span>cdw-fw-w-100</span>
@@ -1399,12 +1399,12 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
         <div class="cdw-fw-docs-example-title">Largura 100% e auto</div>
-        <div class="cdw-fw-docs-badge">B√°sico</div>
+        <div class="cdw-fw-docs-badge">B·sico</div>
       </div>
       <div class="cdw-fw-docs-preview">
         <input class="cdw-fw-w-100" type="text" placeholder="Input com w-100" style="padding:8px; border-radius:8px; border:1px solid #d1d7df;" />
         <div class="cdw-fw-w-auto" style="margin-top:10px; background:#dfe9f6; padding:10px; border-radius:10px;">Caixa w-auto</div>
-        <div class="cdw-fw-docs-example-caption">w-100 expande, w-auto ajusta ao conte√∫do.</div>
+        <div class="cdw-fw-docs-example-caption">w-100 expande, w-auto ajusta ao conte˙do.</div>
       </div>
       <div class="cdw-fw-docs-codeblock">
         <div class="cdw-fw-docs-code-head">
@@ -1418,12 +1418,12 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
 
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
-        <div class="cdw-fw-docs-example-title">M√°ximo de largura</div>
+        <div class="cdw-fw-docs-example-title">M·ximo de largura</div>
         <div class="cdw-fw-docs-badge">Comum</div>
       </div>
       <div class="cdw-fw-docs-preview">
         <div class="cdw-fw-maxw-100" style="background:#eef2f7; padding:10px; border-radius:10px;">
-          Conte√∫do longo que n√£o ultrapassa o container.
+          Conte˙do longo que n„o ultrapassa o container.
         </div>
         <div class="cdw-fw-docs-example-caption">maxw-100 evita estouro horizontal.</div>
       </div>
@@ -1432,7 +1432,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <div class="cdw-fw-docs-code-title">HTML</div>
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-maxw-100"&gt;Conte√∫do longo...&lt;/div&gt;</code></pre>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-maxw-100"&gt;Conte˙do longo...&lt;/div&gt;</code></pre>
       </div>
     </div>
   </div>
@@ -1441,7 +1441,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     <h3 class="cdw-fw-docs-subtitle">Alinhamento de texto</h3>
     <p class="cdw-fw-docs-subdesc">
       Alinhe texto rapidamente sem criar classes customizadas.
-      <span class="cdw-fw-docs-when">Quando usar: t√≠tulos, cards e legendas.</span>
+      <span class="cdw-fw-docs-when">Quando usar: tÌtulos, cards e legendas.</span>
     </p>
     <div class="cdw-fw-docs-classlist">
       <span>cdw-fw-text-left</span>
@@ -1451,8 +1451,8 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
 
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
-        <div class="cdw-fw-docs-example-title">Alinhamento em tr√™s caixas</div>
-        <div class="cdw-fw-docs-badge">B√°sico</div>
+        <div class="cdw-fw-docs-example-title">Alinhamento em trÍs caixas</div>
+        <div class="cdw-fw-docs-badge">B·sico</div>
       </div>
       <div class="cdw-fw-docs-preview">
         <div class="cdw-fw-flex cdw-fw-gap-2">
@@ -2276,12 +2276,12 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
       <div class="cdw-fw-docs-preview">
         <div class="cdw-fw-docs-badge-row">
           <span class="cdw-badge cdw-badge--inline cdw-badge--graphite cdw-badge--solid cdw-badge--md">
-            <span class="cdw-badge-icon">‚òÖ</span>
+            <span class="cdw-badge-icon">?</span>
             Premium
             <span class="cdw-badge-count">12</span>
           </span>
           <span class="cdw-badge cdw-badge--accent cdw-badge--ghost cdw-badge--outline cdw-badge--md">
-            <span class="cdw-badge-icon">‚óé</span>
+            <span class="cdw-badge-icon">?</span>
             Neutro
           </span>
           <span class="cdw-badge cdw-badge--corner cdw-badge--ocean cdw-badge--solid cdw-badge--md">Novo</span>
@@ -2293,7 +2293,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
         <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;span class="cdw-badge cdw-badge--inline cdw-badge--graphite cdw-badge--solid cdw-badge--md"&gt;
-  &lt;span class="cdw-badge-icon"&gt;‚òÖ&lt;/span&gt;
+  &lt;span class="cdw-badge-icon"&gt;?&lt;/span&gt;
   Premium
   &lt;span class="cdw-badge-count"&gt;12&lt;/span&gt;
 &lt;/span&gt;</code></pre>
@@ -2514,48 +2514,48 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
       </div>
       <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-card cdw-card--flat cdw-card--ocean"&gt;
-  &lt;div class="cdw-fw-docs-card-media cdw-fw-docs-card-media--ocean"&gt;&lt;/div&gt;
-  &lt;div class="cdw-card__header cdw-fw-docs-card-row"&gt;
-    &lt;div class="cdw-fw-docs-card-avatar"&gt;KC&lt;/div&gt;
+  &lt;div class="cdw-card__media "&gt;&lt;/div&gt;
+  &lt;div class="cdw-card__header cdw-card__row"&gt;
+    &lt;div class="cdw-card__avatar"&gt;KC&lt;/div&gt;
     &lt;div&gt;
       &lt;div class="cdw-card__title"&gt;Karina Costa&lt;/div&gt;
       &lt;div class="cdw-card__subtitle"&gt;Diretoria criativa&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;div class="cdw-card__body"&gt;Atua em produtos digitais e opera&ccedil;&otilde;es globais.&lt;/div&gt;
-  &lt;div class="cdw-card__footer cdw-fw-docs-card-stats"&gt;
+  &lt;div class="cdw-card__footer cdw-card__stats"&gt;
     &lt;span&gt;22 conex&otilde;es&lt;/span&gt;
     &lt;span&gt;14 projetos&lt;/span&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class="cdw-card cdw-card--flat cdw-card--sky"&gt;
-  &lt;div class="cdw-fw-docs-card-media cdw-fw-docs-card-media--sky"&gt;&lt;/div&gt;
-  &lt;div class="cdw-card__header cdw-fw-docs-card-row"&gt;
-    &lt;div class="cdw-fw-docs-card-avatar cdw-fw-docs-card-avatar--sky"&gt;ML&lt;/div&gt;
+  &lt;div class="cdw-card__media "&gt;&lt;/div&gt;
+  &lt;div class="cdw-card__header cdw-card__row"&gt;
+    &lt;div class="cdw-card__avatar "&gt;ML&lt;/div&gt;
     &lt;div&gt;
       &lt;div class="cdw-card__title"&gt;Marina Lima&lt;/div&gt;
       &lt;div class="cdw-card__subtitle"&gt;Produto digital&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;div class="cdw-card__body"&gt;Lidera squads de entrega e experi&ecirc;ncia.&lt;/div&gt;
-  &lt;div class="cdw-card__footer cdw-fw-docs-card-stats"&gt;
+  &lt;div class="cdw-card__footer cdw-card__stats"&gt;
     &lt;span&gt;18 conex&otilde;es&lt;/span&gt;
     &lt;span&gt;9 projetos&lt;/span&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class="cdw-card cdw-card--flat cdw-card--mint"&gt;
-  &lt;div class="cdw-fw-docs-card-media cdw-fw-docs-card-media--mint"&gt;&lt;/div&gt;
-  &lt;div class="cdw-card__header cdw-fw-docs-card-row"&gt;
-    &lt;div class="cdw-fw-docs-card-avatar cdw-fw-docs-card-avatar--mint"&gt;BR&lt;/div&gt;
+  &lt;div class="cdw-card__media "&gt;&lt;/div&gt;
+  &lt;div class="cdw-card__header cdw-card__row"&gt;
+    &lt;div class="cdw-card__avatar "&gt;BR&lt;/div&gt;
     &lt;div&gt;
       &lt;div class="cdw-card__title"&gt;Bruno Rocha&lt;/div&gt;
       &lt;div class="cdw-card__subtitle"&gt;Opera&ccedil;&otilde;es&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;div class="cdw-card__body"&gt;Coordena integra&ccedil;&otilde;es e processos internos.&lt;/div&gt;
-  &lt;div class="cdw-card__footer cdw-fw-docs-card-stats"&gt;
+  &lt;div class="cdw-card__footer cdw-card__stats"&gt;
     &lt;span&gt;26 conex&otilde;es&lt;/span&gt;
     &lt;span&gt;11 projetos&lt;/span&gt;
   &lt;/div&gt;
@@ -2624,9 +2624,9 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     </p>
     <div class="cdw-fw-docs-card-grid cdw-fw-docs-card-grid--models">
       <div class="cdw-card cdw-card--flat cdw-card--ocean">
-        <div class="cdw-fw-docs-card-media cdw-fw-docs-card-media--ocean"></div>
-        <div class="cdw-card__header cdw-fw-docs-card-row">
-          <div class="cdw-fw-docs-card-avatar">KC</div>
+        <div class="cdw-card__media "></div>
+        <div class="cdw-card__header cdw-card__row">
+          <div class="cdw-card__avatar">KC</div>
           <div>
             <div class="cdw-card__title">Karina Costa</div>
             <div class="cdw-card__subtitle">Diretoria criativa</div>
@@ -2635,16 +2635,16 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <div class="cdw-card__body">
           Atua em produtos digitais e opera&ccedil;&otilde;es globais.
         </div>
-        <div class="cdw-card__footer cdw-fw-docs-card-stats">
+        <div class="cdw-card__footer cdw-card__stats">
           <span>22 conex&otilde;es</span>
           <span>14 projetos</span>
         </div>
       </div>
 
       <div class="cdw-card cdw-card--flat cdw-card--sky">
-        <div class="cdw-fw-docs-card-media cdw-fw-docs-card-media--sky"></div>
-        <div class="cdw-card__header cdw-fw-docs-card-row">
-          <div class="cdw-fw-docs-card-avatar cdw-fw-docs-card-avatar--sky">ML</div>
+        <div class="cdw-card__media "></div>
+        <div class="cdw-card__header cdw-card__row">
+          <div class="cdw-card__avatar ">ML</div>
           <div>
             <div class="cdw-card__title">Marina Lima</div>
             <div class="cdw-card__subtitle">Produto digital</div>
@@ -2653,16 +2653,16 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <div class="cdw-card__body">
           Lidera squads de entrega e experi&ecirc;ncia.
         </div>
-        <div class="cdw-card__footer cdw-fw-docs-card-stats">
+        <div class="cdw-card__footer cdw-card__stats">
           <span>18 conex&otilde;es</span>
           <span>9 projetos</span>
         </div>
       </div>
 
       <div class="cdw-card cdw-card--flat cdw-card--mint">
-        <div class="cdw-fw-docs-card-media cdw-fw-docs-card-media--mint"></div>
-        <div class="cdw-card__header cdw-fw-docs-card-row">
-          <div class="cdw-fw-docs-card-avatar cdw-fw-docs-card-avatar--mint">BR</div>
+        <div class="cdw-card__media "></div>
+        <div class="cdw-card__header cdw-card__row">
+          <div class="cdw-card__avatar ">BR</div>
           <div>
             <div class="cdw-card__title">Bruno Rocha</div>
             <div class="cdw-card__subtitle">Opera&ccedil;&otilde;es</div>
@@ -2671,7 +2671,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <div class="cdw-card__body">
           Coordena integra&ccedil;&otilde;es e processos internos.
         </div>
-        <div class="cdw-card__footer cdw-fw-docs-card-stats">
+        <div class="cdw-card__footer cdw-card__stats">
           <span>26 conex&otilde;es</span>
           <span>11 projetos</span>
         </div>
@@ -2683,9 +2683,9 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
       </div>
       <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-card cdw-card--flat cdw-card--ocean"&gt;
-  &lt;div class="cdw-fw-docs-card-media cdw-fw-docs-card-media--ocean"&gt;&lt;/div&gt;
-  &lt;div class="cdw-card__header cdw-fw-docs-card-row"&gt;
-    &lt;div class="cdw-fw-docs-card-avatar"&gt;KC&lt;/div&gt;
+  &lt;div class="cdw-card__media "&gt;&lt;/div&gt;
+  &lt;div class="cdw-card__header cdw-card__row"&gt;
+    &lt;div class="cdw-card__avatar"&gt;KC&lt;/div&gt;
     &lt;div&gt;
       &lt;div class="cdw-card__title"&gt;Karina Costa&lt;/div&gt;
       &lt;div class="cdw-card__subtitle"&gt;Diretoria criativa&lt;/div&gt;
@@ -2694,16 +2694,16 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
   &lt;div class="cdw-card__body"&gt;
     Atua em produtos digitais e opera&ccedil;&otilde;es globais.
   &lt;/div&gt;
-  &lt;div class="cdw-card__footer cdw-fw-docs-card-stats"&gt;
+  &lt;div class="cdw-card__footer cdw-card__stats"&gt;
     &lt;span&gt;22 conex&otilde;es&lt;/span&gt;
     &lt;span&gt;14 projetos&lt;/span&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class="cdw-card cdw-card--flat cdw-card--sky"&gt;
-  &lt;div class="cdw-fw-docs-card-media cdw-fw-docs-card-media--sky"&gt;&lt;/div&gt;
-  &lt;div class="cdw-card__header cdw-fw-docs-card-row"&gt;
-    &lt;div class="cdw-fw-docs-card-avatar cdw-fw-docs-card-avatar--sky"&gt;ML&lt;/div&gt;
+  &lt;div class="cdw-card__media "&gt;&lt;/div&gt;
+  &lt;div class="cdw-card__header cdw-card__row"&gt;
+    &lt;div class="cdw-card__avatar "&gt;ML&lt;/div&gt;
     &lt;div&gt;
       &lt;div class="cdw-card__title"&gt;Marina Lima&lt;/div&gt;
       &lt;div class="cdw-card__subtitle"&gt;Produto digital&lt;/div&gt;
@@ -2712,16 +2712,16 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
   &lt;div class="cdw-card__body"&gt;
     Lidera squads de entrega e experi&ecirc;ncia.
   &lt;/div&gt;
-  &lt;div class="cdw-card__footer cdw-fw-docs-card-stats"&gt;
+  &lt;div class="cdw-card__footer cdw-card__stats"&gt;
     &lt;span&gt;18 conex&otilde;es&lt;/span&gt;
     &lt;span&gt;9 projetos&lt;/span&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class="cdw-card cdw-card--flat cdw-card--mint"&gt;
-  &lt;div class="cdw-fw-docs-card-media cdw-fw-docs-card-media--mint"&gt;&lt;/div&gt;
-  &lt;div class="cdw-card__header cdw-fw-docs-card-row"&gt;
-    &lt;div class="cdw-fw-docs-card-avatar cdw-fw-docs-card-avatar--mint"&gt;BR&lt;/div&gt;
+  &lt;div class="cdw-card__media "&gt;&lt;/div&gt;
+  &lt;div class="cdw-card__header cdw-card__row"&gt;
+    &lt;div class="cdw-card__avatar "&gt;BR&lt;/div&gt;
     &lt;div&gt;
       &lt;div class="cdw-card__title"&gt;Bruno Rocha&lt;/div&gt;
       &lt;div class="cdw-card__subtitle"&gt;Opera&ccedil;&otilde;es&lt;/div&gt;
@@ -2730,7 +2730,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
   &lt;div class="cdw-card__body"&gt;
     Coordena integra&ccedil;&otilde;es e processos internos.
   &lt;/div&gt;
-  &lt;div class="cdw-card__footer cdw-fw-docs-card-stats"&gt;
+  &lt;div class="cdw-card__footer cdw-card__stats"&gt;
     &lt;span&gt;26 conex&otilde;es&lt;/span&gt;
     &lt;span&gt;11 projetos&lt;/span&gt;
   &lt;/div&gt;
@@ -2739,48 +2739,48 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
 
     <div class="cdw-fw-docs-card-grid cdw-fw-docs-card-grid--models" style="margin-top:16px;">
       <div class="cdw-card cdw-card--flat cdw-card--amber">
-        <div class="cdw-card__header cdw-fw-docs-card-row">
-          <div class="cdw-fw-docs-card-avatar cdw-fw-docs-card-avatar--amber">RN</div>
+        <div class="cdw-card__header cdw-card__row">
+          <div class="cdw-card__avatar ">RN</div>
           <div>
             <div class="cdw-card__title">Rafael Nunes</div>
             <div class="cdw-card__subtitle">h&aacute; 3h</div>
           </div>
           <span class="cdw-badge cdw-badge--inline cdw-badge--amber cdw-badge--outline cdw-badge--sm">Atual</span>
         </div>
-        <div class="cdw-fw-docs-card-media cdw-fw-docs-card-media--amber"></div>
-        <div class="cdw-card__footer cdw-fw-docs-card-actions">
+        <div class="cdw-card__media "></div>
+        <div class="cdw-card__footer cdw-card__actions">
           <span>5 coment&aacute;rios</span>
           <span>28 curtidas</span>
         </div>
       </div>
 
       <div class="cdw-card cdw-card--flat cdw-card--rose">
-        <div class="cdw-card__header cdw-fw-docs-card-row">
-          <div class="cdw-fw-docs-card-avatar cdw-fw-docs-card-avatar--rose">LN</div>
+        <div class="cdw-card__header cdw-card__row">
+          <div class="cdw-card__avatar ">LN</div>
           <div>
             <div class="cdw-card__title">Larissa Nogueira</div>
             <div class="cdw-card__subtitle">h&aacute; 1h</div>
           </div>
           <span class="cdw-badge cdw-badge--inline cdw-badge--rose cdw-badge--outline cdw-badge--sm">Novo</span>
         </div>
-        <div class="cdw-fw-docs-card-media cdw-fw-docs-card-media--rose"></div>
-        <div class="cdw-card__footer cdw-fw-docs-card-actions">
+        <div class="cdw-card__media "></div>
+        <div class="cdw-card__footer cdw-card__actions">
           <span>2 coment&aacute;rios</span>
           <span>11 curtidas</span>
         </div>
       </div>
 
       <div class="cdw-card cdw-card--flat cdw-card--graphite">
-        <div class="cdw-card__header cdw-fw-docs-card-row">
-          <div class="cdw-fw-docs-card-avatar cdw-fw-docs-card-avatar--graphite">JF</div>
+        <div class="cdw-card__header cdw-card__row">
+          <div class="cdw-card__avatar ">JF</div>
           <div>
             <div class="cdw-card__title">Jo&atilde;o Faria</div>
             <div class="cdw-card__subtitle">h&aacute; 20m</div>
           </div>
           <span class="cdw-badge cdw-badge--inline cdw-badge--graphite cdw-badge--outline cdw-badge--sm">Ativo</span>
         </div>
-        <div class="cdw-fw-docs-card-media cdw-fw-docs-card-media--graphite"></div>
-        <div class="cdw-card__footer cdw-fw-docs-card-actions">
+        <div class="cdw-card__media "></div>
+        <div class="cdw-card__footer cdw-card__actions">
           <span>8 coment&aacute;rios</span>
           <span>42 curtidas</span>
         </div>
@@ -2792,48 +2792,48 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
       </div>
       <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-card cdw-card--flat cdw-card--amber"&gt;
-  &lt;div class="cdw-card__header cdw-fw-docs-card-row"&gt;
-    &lt;div class="cdw-fw-docs-card-avatar cdw-fw-docs-card-avatar--amber"&gt;RN&lt;/div&gt;
+  &lt;div class="cdw-card__header cdw-card__row"&gt;
+    &lt;div class="cdw-card__avatar "&gt;RN&lt;/div&gt;
     &lt;div&gt;
       &lt;div class="cdw-card__title"&gt;Rafael Nunes&lt;/div&gt;
       &lt;div class="cdw-card__subtitle"&gt;h&aacute; 3h&lt;/div&gt;
     &lt;/div&gt;
     &lt;span class="cdw-badge cdw-badge--inline cdw-badge--amber cdw-badge--outline cdw-badge--sm"&gt;Atual&lt;/span&gt;
   &lt;/div&gt;
-  &lt;div class="cdw-fw-docs-card-media cdw-fw-docs-card-media--amber"&gt;&lt;/div&gt;
-  &lt;div class="cdw-card__footer cdw-fw-docs-card-actions"&gt;
+  &lt;div class="cdw-card__media "&gt;&lt;/div&gt;
+  &lt;div class="cdw-card__footer cdw-card__actions"&gt;
     &lt;span&gt;5 coment&aacute;rios&lt;/span&gt;
     &lt;span&gt;28 curtidas&lt;/span&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class="cdw-card cdw-card--flat cdw-card--rose"&gt;
-  &lt;div class="cdw-card__header cdw-fw-docs-card-row"&gt;
-    &lt;div class="cdw-fw-docs-card-avatar cdw-fw-docs-card-avatar--rose"&gt;LN&lt;/div&gt;
+  &lt;div class="cdw-card__header cdw-card__row"&gt;
+    &lt;div class="cdw-card__avatar "&gt;LN&lt;/div&gt;
     &lt;div&gt;
       &lt;div class="cdw-card__title"&gt;Larissa Nogueira&lt;/div&gt;
       &lt;div class="cdw-card__subtitle"&gt;h&aacute; 1h&lt;/div&gt;
     &lt;/div&gt;
     &lt;span class="cdw-badge cdw-badge--inline cdw-badge--rose cdw-badge--outline cdw-badge--sm"&gt;Novo&lt;/span&gt;
   &lt;/div&gt;
-  &lt;div class="cdw-fw-docs-card-media cdw-fw-docs-card-media--rose"&gt;&lt;/div&gt;
-  &lt;div class="cdw-card__footer cdw-fw-docs-card-actions"&gt;
+  &lt;div class="cdw-card__media "&gt;&lt;/div&gt;
+  &lt;div class="cdw-card__footer cdw-card__actions"&gt;
     &lt;span&gt;2 coment&aacute;rios&lt;/span&gt;
     &lt;span&gt;11 curtidas&lt;/span&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class="cdw-card cdw-card--flat cdw-card--graphite"&gt;
-  &lt;div class="cdw-card__header cdw-fw-docs-card-row"&gt;
-    &lt;div class="cdw-fw-docs-card-avatar cdw-fw-docs-card-avatar--graphite"&gt;JF&lt;/div&gt;
+  &lt;div class="cdw-card__header cdw-card__row"&gt;
+    &lt;div class="cdw-card__avatar "&gt;JF&lt;/div&gt;
     &lt;div&gt;
       &lt;div class="cdw-card__title"&gt;Jo&atilde;o Faria&lt;/div&gt;
       &lt;div class="cdw-card__subtitle"&gt;h&aacute; 20m&lt;/div&gt;
     &lt;/div&gt;
     &lt;span class="cdw-badge cdw-badge--inline cdw-badge--graphite cdw-badge--outline cdw-badge--sm"&gt;Ativo&lt;/span&gt;
   &lt;/div&gt;
-  &lt;div class="cdw-fw-docs-card-media cdw-fw-docs-card-media--graphite"&gt;&lt;/div&gt;
-  &lt;div class="cdw-card__footer cdw-fw-docs-card-actions"&gt;
+  &lt;div class="cdw-card__media "&gt;&lt;/div&gt;
+  &lt;div class="cdw-card__footer cdw-card__actions"&gt;
     &lt;span&gt;8 coment&aacute;rios&lt;/span&gt;
     &lt;span&gt;42 curtidas&lt;/span&gt;
   &lt;/div&gt;
@@ -2849,14 +2849,14 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
             <div class="cdw-card__subtitle">Atualiza&ccedil;&atilde;o em tempo real</div>
           </div>
         </div>
-        <div class="cdw-card__body cdw-fw-docs-card-kpi">
+        <div class="cdw-card__body cdw-card__kpi">
           <div>
-            <div class="cdw-fw-docs-card-kpi-value">+18%</div>
-            <div class="cdw-fw-docs-card-kpi-label">Convers&atilde;o</div>
+            <div class="cdw-card__kpi-value">+18%</div>
+            <div class="cdw-card__kpi-label">Convers&atilde;o</div>
           </div>
           <div>
-            <div class="cdw-fw-docs-card-kpi-value">2m 14s</div>
-            <div class="cdw-fw-docs-card-kpi-label">Tempo m&eacute;dio</div>
+            <div class="cdw-card__kpi-value">2m 14s</div>
+            <div class="cdw-card__kpi-label">Tempo m&eacute;dio</div>
           </div>
         </div>
       </div>
@@ -2869,14 +2869,14 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
             <div class="cdw-card__subtitle">Revis&atilde;o trimestral</div>
           </div>
         </div>
-        <div class="cdw-card__body cdw-fw-docs-card-kpi">
+        <div class="cdw-card__body cdw-card__kpi">
           <div>
-            <div class="cdw-fw-docs-card-kpi-value">R$ 2.1M</div>
-            <div class="cdw-fw-docs-card-kpi-label">Meta</div>
+            <div class="cdw-card__kpi-value">R$ 2.1M</div>
+            <div class="cdw-card__kpi-label">Meta</div>
           </div>
           <div>
-            <div class="cdw-fw-docs-card-kpi-value">+9%</div>
-            <div class="cdw-fw-docs-card-kpi-label">Progresso</div>
+            <div class="cdw-card__kpi-value">+9%</div>
+            <div class="cdw-card__kpi-label">Progresso</div>
           </div>
         </div>
       </div>
@@ -2889,14 +2889,14 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
             <div class="cdw-card__subtitle">Performance do dia</div>
           </div>
         </div>
-        <div class="cdw-card__body cdw-fw-docs-card-kpi">
+        <div class="cdw-card__body cdw-card__kpi">
           <div>
-            <div class="cdw-fw-docs-card-kpi-value">97%</div>
-            <div class="cdw-fw-docs-card-kpi-label">NPS</div>
+            <div class="cdw-card__kpi-value">97%</div>
+            <div class="cdw-card__kpi-label">NPS</div>
           </div>
           <div>
-            <div class="cdw-fw-docs-card-kpi-value">38m</div>
-            <div class="cdw-fw-docs-card-kpi-label">Fila</div>
+            <div class="cdw-card__kpi-value">38m</div>
+            <div class="cdw-card__kpi-label">Fila</div>
           </div>
         </div>
       </div>
@@ -2914,14 +2914,14 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
       &lt;div class="cdw-card__subtitle"&gt;Atualiza&ccedil;&atilde;o em tempo real&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class="cdw-card__body cdw-fw-docs-card-kpi"&gt;
+  &lt;div class="cdw-card__body cdw-card__kpi"&gt;
     &lt;div&gt;
-      &lt;div class="cdw-fw-docs-card-kpi-value"&gt;+18%&lt;/div&gt;
-      &lt;div class="cdw-fw-docs-card-kpi-label"&gt;Convers&atilde;o&lt;/div&gt;
+      &lt;div class="cdw-card__kpi-value"&gt;+18%&lt;/div&gt;
+      &lt;div class="cdw-card__kpi-label"&gt;Convers&atilde;o&lt;/div&gt;
     &lt;/div&gt;
     &lt;div&gt;
-      &lt;div class="cdw-fw-docs-card-kpi-value"&gt;2m 14s&lt;/div&gt;
-      &lt;div class="cdw-fw-docs-card-kpi-label"&gt;Tempo m&eacute;dio&lt;/div&gt;
+      &lt;div class="cdw-card__kpi-value"&gt;2m 14s&lt;/div&gt;
+      &lt;div class="cdw-card__kpi-label"&gt;Tempo m&eacute;dio&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -2934,14 +2934,14 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
       &lt;div class="cdw-card__subtitle"&gt;Revis&atilde;o trimestral&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class="cdw-card__body cdw-fw-docs-card-kpi"&gt;
+  &lt;div class="cdw-card__body cdw-card__kpi"&gt;
     &lt;div&gt;
-      &lt;div class="cdw-fw-docs-card-kpi-value"&gt;R$ 2.1M&lt;/div&gt;
-      &lt;div class="cdw-fw-docs-card-kpi-label"&gt;Meta&lt;/div&gt;
+      &lt;div class="cdw-card__kpi-value"&gt;R$ 2.1M&lt;/div&gt;
+      &lt;div class="cdw-card__kpi-label"&gt;Meta&lt;/div&gt;
     &lt;/div&gt;
     &lt;div&gt;
-      &lt;div class="cdw-fw-docs-card-kpi-value"&gt;+9%&lt;/div&gt;
-      &lt;div class="cdw-fw-docs-card-kpi-label"&gt;Progresso&lt;/div&gt;
+      &lt;div class="cdw-card__kpi-value"&gt;+9%&lt;/div&gt;
+      &lt;div class="cdw-card__kpi-label"&gt;Progresso&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -2954,14 +2954,14 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
       &lt;div class="cdw-card__subtitle"&gt;Performance do dia&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class="cdw-card__body cdw-fw-docs-card-kpi"&gt;
+  &lt;div class="cdw-card__body cdw-card__kpi"&gt;
     &lt;div&gt;
-      &lt;div class="cdw-fw-docs-card-kpi-value"&gt;97%&lt;/div&gt;
-      &lt;div class="cdw-fw-docs-card-kpi-label"&gt;NPS&lt;/div&gt;
+      &lt;div class="cdw-card__kpi-value"&gt;97%&lt;/div&gt;
+      &lt;div class="cdw-card__kpi-label"&gt;NPS&lt;/div&gt;
     &lt;/div&gt;
     &lt;div&gt;
-      &lt;div class="cdw-fw-docs-card-kpi-value"&gt;38m&lt;/div&gt;
-      &lt;div class="cdw-fw-docs-card-kpi-label"&gt;Fila&lt;/div&gt;
+      &lt;div class="cdw-card__kpi-value"&gt;38m&lt;/div&gt;
+      &lt;div class="cdw-card__kpi-label"&gt;Fila&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -2976,7 +2976,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
             <div class="cdw-card__subtitle">Setor financeiro</div>
           </div>
         </div>
-        <div class="cdw-card__body cdw-fw-docs-card-list">
+        <div class="cdw-card__body cdw-card__list">
           <div>Reembolso #4821</div>
           <div>Contrato #1190</div>
           <div>Pedido #7712</div>
@@ -2991,7 +2991,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
             <div class="cdw-card__subtitle">Documentos</div>
           </div>
         </div>
-        <div class="cdw-card__body cdw-fw-docs-card-list">
+        <div class="cdw-card__body cdw-card__list">
           <div>Contrato #2301</div>
           <div>Termo #1180</div>
           <div>Recurso #901</div>
@@ -3006,7 +3006,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
             <div class="cdw-card__subtitle">Equipe interna</div>
           </div>
         </div>
-        <div class="cdw-card__body cdw-fw-docs-card-list">
+        <div class="cdw-card__body cdw-card__list">
           <div>Release #32</div>
           <div>Checklist #88</div>
           <div>Deploy #14</div>
@@ -3026,7 +3026,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
       &lt;div class="cdw-card__subtitle"&gt;Setor financeiro&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class="cdw-card__body cdw-fw-docs-card-list"&gt;
+  &lt;div class="cdw-card__body cdw-card__list"&gt;
     &lt;div&gt;Reembolso #4821&lt;/div&gt;
     &lt;div&gt;Contrato #1190&lt;/div&gt;
     &lt;div&gt;Pedido #7712&lt;/div&gt;
@@ -3041,7 +3041,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
       &lt;div class="cdw-card__subtitle"&gt;Documentos&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class="cdw-card__body cdw-fw-docs-card-list"&gt;
+  &lt;div class="cdw-card__body cdw-card__list"&gt;
     &lt;div&gt;Contrato #2301&lt;/div&gt;
     &lt;div&gt;Termo #1180&lt;/div&gt;
     &lt;div&gt;Recurso #901&lt;/div&gt;
@@ -3056,7 +3056,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
       &lt;div class="cdw-card__subtitle"&gt;Equipe interna&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class="cdw-card__body cdw-fw-docs-card-list"&gt;
+  &lt;div class="cdw-card__body cdw-card__list"&gt;
     &lt;div&gt;Release #32&lt;/div&gt;
     &lt;div&gt;Checklist #88&lt;/div&gt;
     &lt;div&gt;Deploy #14&lt;/div&gt;
@@ -3073,17 +3073,17 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           </div>
           <span class="cdw-badge cdw-badge--inline cdw-badge--ghost cdw-badge--outline cdw-badge--sm">Est&aacute;vel</span>
         </div>
-        <div class="cdw-card__body cdw-fw-docs-card-grid-mini">
+        <div class="cdw-card__body cdw-card__grid-mini">
           <div>
-            <div class="cdw-fw-docs-card-kpi-value">99.9%</div>
-            <div class="cdw-fw-docs-card-kpi-label">Uptime</div>
+            <div class="cdw-card__kpi-value">99.9%</div>
+            <div class="cdw-card__kpi-label">Uptime</div>
           </div>
           <div>
-            <div class="cdw-fw-docs-card-kpi-value">4.2s</div>
-            <div class="cdw-fw-docs-card-kpi-label">Resposta</div>
+            <div class="cdw-card__kpi-value">4.2s</div>
+            <div class="cdw-card__kpi-label">Resposta</div>
           </div>
         </div>
-        <div class="cdw-card__footer cdw-fw-docs-card-actions">
+        <div class="cdw-card__footer cdw-card__actions">
           <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-accent-sky">Detalhes</button>
           <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-accent-sky">Hist&oacute;rico</button>
         </div>
@@ -3097,17 +3097,17 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           </div>
           <span class="cdw-badge cdw-badge--inline cdw-badge--ghost cdw-badge--outline cdw-badge--sm">Ativo</span>
         </div>
-        <div class="cdw-card__body cdw-fw-docs-card-grid-mini">
+        <div class="cdw-card__body cdw-card__grid-mini">
           <div>
-            <div class="cdw-fw-docs-card-kpi-value">312</div>
-            <div class="cdw-fw-docs-card-kpi-label">Alertas</div>
+            <div class="cdw-card__kpi-value">312</div>
+            <div class="cdw-card__kpi-label">Alertas</div>
           </div>
           <div>
-            <div class="cdw-fw-docs-card-kpi-value">1.8s</div>
-            <div class="cdw-fw-docs-card-kpi-label">Lat&ecirc;ncia</div>
+            <div class="cdw-card__kpi-value">1.8s</div>
+            <div class="cdw-card__kpi-label">Lat&ecirc;ncia</div>
           </div>
         </div>
-        <div class="cdw-card__footer cdw-fw-docs-card-actions">
+        <div class="cdw-card__footer cdw-card__actions">
           <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-accent-sky">Painel</button>
           <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-accent-sky">Logs</button>
         </div>
@@ -3121,17 +3121,17 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           </div>
           <span class="cdw-badge cdw-badge--inline cdw-badge--ghost cdw-badge--outline cdw-badge--sm">Revis&atilde;o</span>
         </div>
-        <div class="cdw-card__body cdw-fw-docs-card-grid-mini">
+        <div class="cdw-card__body cdw-card__grid-mini">
           <div>
-            <div class="cdw-fw-docs-card-kpi-value">12</div>
-            <div class="cdw-fw-docs-card-kpi-label">Itens</div>
+            <div class="cdw-card__kpi-value">12</div>
+            <div class="cdw-card__kpi-label">Itens</div>
           </div>
           <div>
-            <div class="cdw-fw-docs-card-kpi-value">4</div>
-            <div class="cdw-fw-docs-card-kpi-label">Pendentes</div>
+            <div class="cdw-card__kpi-value">4</div>
+            <div class="cdw-card__kpi-label">Pendentes</div>
           </div>
         </div>
-        <div class="cdw-card__footer cdw-fw-docs-card-actions">
+        <div class="cdw-card__footer cdw-card__actions">
           <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-accent-sky">Abrir</button>
           <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-accent-sky">Exportar</button>
         </div>
@@ -3150,17 +3150,17 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     &lt;/div&gt;
     &lt;span class="cdw-badge cdw-badge--inline cdw-badge--ghost cdw-badge--outline cdw-badge--sm"&gt;Est&aacute;vel&lt;/span&gt;
   &lt;/div&gt;
-  &lt;div class="cdw-card__body cdw-fw-docs-card-grid-mini"&gt;
+  &lt;div class="cdw-card__body cdw-card__grid-mini"&gt;
     &lt;div&gt;
-      &lt;div class="cdw-fw-docs-card-kpi-value"&gt;99.9%&lt;/div&gt;
-      &lt;div class="cdw-fw-docs-card-kpi-label"&gt;Uptime&lt;/div&gt;
+      &lt;div class="cdw-card__kpi-value"&gt;99.9%&lt;/div&gt;
+      &lt;div class="cdw-card__kpi-label"&gt;Uptime&lt;/div&gt;
     &lt;/div&gt;
     &lt;div&gt;
-      &lt;div class="cdw-fw-docs-card-kpi-value"&gt;4.2s&lt;/div&gt;
-      &lt;div class="cdw-fw-docs-card-kpi-label"&gt;Resposta&lt;/div&gt;
+      &lt;div class="cdw-card__kpi-value"&gt;4.2s&lt;/div&gt;
+      &lt;div class="cdw-card__kpi-label"&gt;Resposta&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class="cdw-card__footer cdw-fw-docs-card-actions"&gt;
+  &lt;div class="cdw-card__footer cdw-card__actions"&gt;
     &lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-accent-sky"&gt;Detalhes&lt;/button&gt;
     &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-accent-sky"&gt;Hist&oacute;rico&lt;/button&gt;
   &lt;/div&gt;
@@ -3174,17 +3174,17 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     &lt;/div&gt;
     &lt;span class="cdw-badge cdw-badge--inline cdw-badge--ghost cdw-badge--outline cdw-badge--sm"&gt;Ativo&lt;/span&gt;
   &lt;/div&gt;
-  &lt;div class="cdw-card__body cdw-fw-docs-card-grid-mini"&gt;
+  &lt;div class="cdw-card__body cdw-card__grid-mini"&gt;
     &lt;div&gt;
-      &lt;div class="cdw-fw-docs-card-kpi-value"&gt;312&lt;/div&gt;
-      &lt;div class="cdw-fw-docs-card-kpi-label"&gt;Alertas&lt;/div&gt;
+      &lt;div class="cdw-card__kpi-value"&gt;312&lt;/div&gt;
+      &lt;div class="cdw-card__kpi-label"&gt;Alertas&lt;/div&gt;
     &lt;/div&gt;
     &lt;div&gt;
-      &lt;div class="cdw-fw-docs-card-kpi-value"&gt;1.8s&lt;/div&gt;
-      &lt;div class="cdw-fw-docs-card-kpi-label"&gt;Lat&ecirc;ncia&lt;/div&gt;
+      &lt;div class="cdw-card__kpi-value"&gt;1.8s&lt;/div&gt;
+      &lt;div class="cdw-card__kpi-label"&gt;Lat&ecirc;ncia&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class="cdw-card__footer cdw-fw-docs-card-actions"&gt;
+  &lt;div class="cdw-card__footer cdw-card__actions"&gt;
     &lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-accent-sky"&gt;Painel&lt;/button&gt;
     &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-accent-sky"&gt;Logs&lt;/button&gt;
   &lt;/div&gt;
@@ -3198,17 +3198,17 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     &lt;/div&gt;
     &lt;span class="cdw-badge cdw-badge--inline cdw-badge--ghost cdw-badge--outline cdw-badge--sm"&gt;Revis&atilde;o&lt;/span&gt;
   &lt;/div&gt;
-  &lt;div class="cdw-card__body cdw-fw-docs-card-grid-mini"&gt;
+  &lt;div class="cdw-card__body cdw-card__grid-mini"&gt;
     &lt;div&gt;
-      &lt;div class="cdw-fw-docs-card-kpi-value"&gt;12&lt;/div&gt;
-      &lt;div class="cdw-fw-docs-card-kpi-label"&gt;Itens&lt;/div&gt;
+      &lt;div class="cdw-card__kpi-value"&gt;12&lt;/div&gt;
+      &lt;div class="cdw-card__kpi-label"&gt;Itens&lt;/div&gt;
     &lt;/div&gt;
     &lt;div&gt;
-      &lt;div class="cdw-fw-docs-card-kpi-value"&gt;4&lt;/div&gt;
-      &lt;div class="cdw-fw-docs-card-kpi-label"&gt;Pendentes&lt;/div&gt;
+      &lt;div class="cdw-card__kpi-value"&gt;4&lt;/div&gt;
+      &lt;div class="cdw-card__kpi-label"&gt;Pendentes&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class="cdw-card__footer cdw-fw-docs-card-actions"&gt;
+  &lt;div class="cdw-card__footer cdw-card__actions"&gt;
     &lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-accent-sky"&gt;Abrir&lt;/button&gt;
     &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-accent-sky"&gt;Exportar&lt;/button&gt;
   &lt;/div&gt;
@@ -3733,3 +3733,4 @@ function setupScrollSpy(root) {
     setActive(initialHash);
   }
 }
+
