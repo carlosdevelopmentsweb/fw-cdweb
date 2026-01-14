@@ -1,5 +1,5 @@
 .cdw-card {
-  --cdw-card-accent: var(--cdw-fw-accent-ocean);
+  --cdw-card-accent: var(--cdw-fw-accent, var(--cdw-fw-accent-ocean));
   --cdw-card-bg: #ffffff;
   --cdw-card-ink: #1b2f40;
   --cdw-card-border: rgba(16, 45, 67, 0.18);
