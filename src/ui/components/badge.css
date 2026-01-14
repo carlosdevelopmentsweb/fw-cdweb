@@ -218,6 +218,42 @@
   --cdw-badge-color: var(--cdw-fw-accent-sky);
 }
 
+.cdw-badge--teal {
+  --cdw-badge-color: var(--cdw-fw-accent-teal);
+}
+
+.cdw-badge--forest {
+  --cdw-badge-color: var(--cdw-fw-accent-forest);
+}
+
+.cdw-badge--lime {
+  --cdw-badge-color: var(--cdw-fw-accent-lime);
+}
+
+.cdw-badge--sun {
+  --cdw-badge-color: var(--cdw-fw-accent-sun);
+}
+
+.cdw-badge--ember {
+  --cdw-badge-color: var(--cdw-fw-accent-ember);
+}
+
+.cdw-badge--cocoa {
+  --cdw-badge-color: var(--cdw-fw-accent-cocoa);
+}
+
+.cdw-badge--ruby {
+  --cdw-badge-color: var(--cdw-fw-accent-ruby);
+}
+
+.cdw-badge--violet {
+  --cdw-badge-color: var(--cdw-fw-accent-violet);
+}
+
+.cdw-badge--indigo {
+  --cdw-badge-color: var(--cdw-fw-accent-indigo);
+}
+
 .cdw-badge--mint {
   --cdw-badge-color: var(--cdw-fw-accent-teal);
 }
