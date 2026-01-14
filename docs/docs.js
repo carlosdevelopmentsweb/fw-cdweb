@@ -1,4 +1,4 @@
-(function () {
+Ôªø(function () {
   const app = document.getElementById("app");
   if (!app) {
     return;
@@ -15,12 +15,12 @@
   <div class="cdw-fw-docs-section-head">
     <h2 class="cdw-fw-docs-section-title">Layout</h2>
     <p class="cdw-fw-docs-lead">
-      Containers e grid de 12 colunas para composiÁıes responsivas.
+      Containers e grid de 12 colunas para composi&ccedil;&otilde;es responsivas.
     </p>
   </div>
 
   <div class="cdw-fw-docs-toc">
-    <span class="cdw-fw-docs-toc-title">Õndice desta p·gina</span>
+    <span class="cdw-fw-docs-toc-title">&Iacute;ndice desta p&aacute;gina</span>
     <a href="#layout-container">Container</a>
     <a href="#layout-grid">Grid</a>
   </div>
@@ -28,8 +28,8 @@
   <div class="cdw-fw-docs-subsection" id="layout-container" data-cdw-fw-docs-section>
     <h3 class="cdw-fw-docs-subtitle">Container</h3>
     <p class="cdw-fw-docs-subdesc">
-      Centralize conte˙do com largura m·xima ou ocupe toda a largura com o fluid.
-      <span class="cdw-fw-docs-when">Quando usar: p·ginas com leitura centralizada.</span>
+      Centralize conte&uacute;do com largura m&aacute;xima ou ocupe toda a largura com o fluid.
+      <span class="cdw-fw-docs-when">Quando usar: p&aacute;ginas com leitura centralizada.</span>
     </p>
     <div class="cdw-fw-docs-classlist">
       <span>cdw-fw-container</span>
@@ -44,11 +44,11 @@
       <div class="cdw-fw-docs-preview">
         <div class="cdw-fw-docs-layout-band">Container</div>
         <div class="cdw-fw-container" style="margin-top:10px;">
-          <div class="cdw-fw-docs-grid-demo">Conte˙do centralizado</div>
+          <div class="cdw-fw-docs-grid-demo">Conte&uacute;do centralizado</div>
         </div>
         <div class="cdw-fw-docs-layout-band" style="margin-top:14px;">Container fluid</div>
         <div class="cdw-fw-container-fluid" style="margin-top:10px;">
-          <div class="cdw-fw-docs-grid-demo">Conte˙do full width</div>
+          <div class="cdw-fw-docs-grid-demo">Conte&uacute;do full width</div>
         </div>
         <div class="cdw-fw-docs-example-caption">
           O container respeita max-width; o fluid ocupa 100%.
@@ -76,12 +76,20 @@
       <span>cdw-fw-col-*</span>
       <span>cdw-fw-col-md-*</span>
       <span>cdw-fw-col-lg-*</span>
+      <span>cdw-fw-gap-*</span>
+    </div>
+
+    <div class="cdw-fw-docs-card">
+      <div class="cdw-fw-docs-card-title">Sobre o gap</div>
+      <div class="cdw-fw-docs-highlight">Gap cria espa&ccedil;o real entre colunas</div>
+      <div class="cdw-fw-docs-highlight">Quando a soma + gap passa de 12, quebra linha</div>
+      <div class="cdw-fw-docs-highlight">Use cdw-fw-gap-0 ou um gap menor para manter tudo na mesma row</div>
     </div>
 
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
         <div class="cdw-fw-docs-example-title">Duas colunas</div>
-        <div class="cdw-fw-docs-badge">B·sico</div>
+        <div class="cdw-fw-docs-badge">B&aacute;sico</div>
       </div>
       <div class="cdw-fw-docs-preview">
         <div class="cdw-fw-container">
@@ -110,7 +118,43 @@
 
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
-        <div class="cdw-fw-docs-example-title">TrÍs colunas</div>
+        <div class="cdw-fw-docs-example-title">12 colunas sem quebra</div>
+        <div class="cdw-fw-docs-badge">Base</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-container">
+          <div class="cdw-fw-row cdw-fw-gap-0">
+            <div class="cdw-fw-col-2"><div class="cdw-fw-docs-grid-demo">col-2</div></div>
+            <div class="cdw-fw-col-2"><div class="cdw-fw-docs-grid-demo">col-2</div></div>
+            <div class="cdw-fw-col-2"><div class="cdw-fw-docs-grid-demo">col-2</div></div>
+            <div class="cdw-fw-col-2"><div class="cdw-fw-docs-grid-demo">col-2</div></div>
+            <div class="cdw-fw-col-2"><div class="cdw-fw-docs-grid-demo">col-2</div></div>
+            <div class="cdw-fw-col-2"><div class="cdw-fw-docs-grid-demo">col-2</div></div>
+          </div>
+        </div>
+        <div class="cdw-fw-docs-example-caption">
+          Sem gap, 6x col-2 fecha 12 e fica na mesma linha.
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-row cdw-fw-gap-0"&gt;
+  &lt;div class="cdw-fw-col-2"&gt;...&lt;/div&gt;
+  &lt;div class="cdw-fw-col-2"&gt;...&lt;/div&gt;
+  &lt;div class="cdw-fw-col-2"&gt;...&lt;/div&gt;
+  &lt;div class="cdw-fw-col-2"&gt;...&lt;/div&gt;
+  &lt;div class="cdw-fw-col-2"&gt;...&lt;/div&gt;
+  &lt;div class="cdw-fw-col-2"&gt;...&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Tr&ecirc;s colunas</div>
         <div class="cdw-fw-docs-badge">Comum</div>
       </div>
       <div class="cdw-fw-docs-preview">
@@ -144,7 +188,7 @@
 
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
-        <div class="cdw-fw-docs-example-title">Sidebar + conte˙do</div>
+        <div class="cdw-fw-docs-example-title">Sidebar + conte&uacute;do</div>
         <div class="cdw-fw-docs-badge">Comum</div>
       </div>
       <div class="cdw-fw-docs-preview">
@@ -154,11 +198,11 @@
               <div class="cdw-fw-docs-grid-demo">Sidebar</div>
             </div>
             <div class="cdw-fw-col-12 cdw-fw-col-lg-9">
-              <div class="cdw-fw-docs-grid-demo">Conte˙do</div>
+              <div class="cdw-fw-docs-grid-demo">Conte&uacute;do</div>
             </div>
           </div>
         </div>
-        <div class="cdw-fw-docs-example-caption">Mobile empilha, lg separa sidebar e conte˙do.</div>
+        <div class="cdw-fw-docs-example-caption">Mobile empilha, lg separa sidebar e conte&uacute;do.</div>
       </div>
       <div class="cdw-fw-docs-codeblock">
         <div class="cdw-fw-docs-code-head">
@@ -167,16 +211,242 @@
         </div>
         <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-row cdw-fw-gap-3"&gt;
   &lt;div class="cdw-fw-col-12 cdw-fw-col-lg-3"&gt;Sidebar&lt;/div&gt;
-  &lt;div class="cdw-fw-col-12 cdw-fw-col-lg-9"&gt;Conte˙do&lt;/div&gt;
+  &lt;div class="cdw-fw-col-12 cdw-fw-col-lg-9"&gt;Conte&uacute;do&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Mapa completo (1-12)</div>
+        <div class="cdw-fw-docs-badge">Refer&ecirc;ncia</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-container">
+          <div class="cdw-fw-row cdw-fw-gap-3">
+            <div class="cdw-fw-col-12">
+              <div class="cdw-fw-docs-grid-demo">col-12</div>
+            </div>
+          </div>
+          <div class="cdw-fw-row cdw-fw-gap-3" style="margin-top:12px;">
+            <div class="cdw-fw-col-11">
+              <div class="cdw-fw-docs-grid-demo">col-11</div>
+            </div>
+            <div class="cdw-fw-col-1">
+              <div class="cdw-fw-docs-grid-demo">col-1</div>
+            </div>
+          </div>
+          <div class="cdw-fw-row cdw-fw-gap-3" style="margin-top:12px;">
+            <div class="cdw-fw-col-10">
+              <div class="cdw-fw-docs-grid-demo">col-10</div>
+            </div>
+            <div class="cdw-fw-col-2">
+              <div class="cdw-fw-docs-grid-demo">col-2</div>
+            </div>
+          </div>
+          <div class="cdw-fw-row cdw-fw-gap-3" style="margin-top:12px;">
+            <div class="cdw-fw-col-9">
+              <div class="cdw-fw-docs-grid-demo">col-9</div>
+            </div>
+            <div class="cdw-fw-col-3">
+              <div class="cdw-fw-docs-grid-demo">col-3</div>
+            </div>
+          </div>
+          <div class="cdw-fw-row cdw-fw-gap-3" style="margin-top:12px;">
+            <div class="cdw-fw-col-8">
+              <div class="cdw-fw-docs-grid-demo">col-8</div>
+            </div>
+            <div class="cdw-fw-col-4">
+              <div class="cdw-fw-docs-grid-demo">col-4</div>
+            </div>
+          </div>
+          <div class="cdw-fw-row cdw-fw-gap-3" style="margin-top:12px;">
+            <div class="cdw-fw-col-7">
+              <div class="cdw-fw-docs-grid-demo">col-7</div>
+            </div>
+            <div class="cdw-fw-col-5">
+              <div class="cdw-fw-docs-grid-demo">col-5</div>
+            </div>
+          </div>
+          <div class="cdw-fw-row cdw-fw-gap-3" style="margin-top:12px;">
+            <div class="cdw-fw-col-6">
+              <div class="cdw-fw-docs-grid-demo">col-6</div>
+            </div>
+            <div class="cdw-fw-col-6">
+              <div class="cdw-fw-docs-grid-demo">col-6</div>
+            </div>
+          </div>
+          <div class="cdw-fw-row cdw-fw-gap-3" style="margin-top:12px;">
+            <div class="cdw-fw-col-4">
+              <div class="cdw-fw-docs-grid-demo">col-4</div>
+            </div>
+            <div class="cdw-fw-col-4">
+              <div class="cdw-fw-docs-grid-demo">col-4</div>
+            </div>
+            <div class="cdw-fw-col-4">
+              <div class="cdw-fw-docs-grid-demo">col-4</div>
+            </div>
+          </div>
+          <div class="cdw-fw-row cdw-fw-gap-3" style="margin-top:12px;">
+            <div class="cdw-fw-col-3">
+              <div class="cdw-fw-docs-grid-demo">col-3</div>
+            </div>
+            <div class="cdw-fw-col-3">
+              <div class="cdw-fw-docs-grid-demo">col-3</div>
+            </div>
+            <div class="cdw-fw-col-3">
+              <div class="cdw-fw-docs-grid-demo">col-3</div>
+            </div>
+            <div class="cdw-fw-col-3">
+              <div class="cdw-fw-docs-grid-demo">col-3</div>
+            </div>
+          </div>
+          <div class="cdw-fw-row cdw-fw-gap-3" style="margin-top:12px;">
+            <div class="cdw-fw-col-2">
+              <div class="cdw-fw-docs-grid-demo">col-2</div>
+            </div>
+            <div class="cdw-fw-col-2">
+              <div class="cdw-fw-docs-grid-demo">col-2</div>
+            </div>
+            <div class="cdw-fw-col-2">
+              <div class="cdw-fw-docs-grid-demo">col-2</div>
+            </div>
+            <div class="cdw-fw-col-2">
+              <div class="cdw-fw-docs-grid-demo">col-2</div>
+            </div>
+            <div class="cdw-fw-col-2">
+              <div class="cdw-fw-docs-grid-demo">col-2</div>
+            </div>
+            <div class="cdw-fw-col-2">
+              <div class="cdw-fw-docs-grid-demo">col-2</div>
+            </div>
+          </div>
+          <div class="cdw-fw-row cdw-fw-gap-3" style="margin-top:12px;">
+            <div class="cdw-fw-col-1">
+              <div class="cdw-fw-docs-grid-demo">col-1</div>
+            </div>
+            <div class="cdw-fw-col-1">
+              <div class="cdw-fw-docs-grid-demo">col-1</div>
+            </div>
+            <div class="cdw-fw-col-1">
+              <div class="cdw-fw-docs-grid-demo">col-1</div>
+            </div>
+            <div class="cdw-fw-col-1">
+              <div class="cdw-fw-docs-grid-demo">col-1</div>
+            </div>
+            <div class="cdw-fw-col-1">
+              <div class="cdw-fw-docs-grid-demo">col-1</div>
+            </div>
+            <div class="cdw-fw-col-1">
+              <div class="cdw-fw-docs-grid-demo">col-1</div>
+            </div>
+            <div class="cdw-fw-col-1">
+              <div class="cdw-fw-docs-grid-demo">col-1</div>
+            </div>
+            <div class="cdw-fw-col-1">
+              <div class="cdw-fw-docs-grid-demo">col-1</div>
+            </div>
+            <div class="cdw-fw-col-1">
+              <div class="cdw-fw-docs-grid-demo">col-1</div>
+            </div>
+            <div class="cdw-fw-col-1">
+              <div class="cdw-fw-docs-grid-demo">col-1</div>
+            </div>
+            <div class="cdw-fw-col-1">
+              <div class="cdw-fw-docs-grid-demo">col-1</div>
+            </div>
+            <div class="cdw-fw-col-1">
+              <div class="cdw-fw-docs-grid-demo">col-1</div>
+            </div>
+          </div>
+        </div>
+        <div class="cdw-fw-docs-example-caption">
+          Mapa visual com todas as larguras de 1 a 12 colunas.
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-row cdw-fw-gap-3"&gt;
+  &lt;div class="cdw-fw-col-12"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-12&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="cdw-fw-row cdw-fw-gap-3"&gt;
+  &lt;div class="cdw-fw-col-11"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-11&lt;/div&gt;&lt;/div&gt;
+  &lt;div class="cdw-fw-col-1"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-1&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="cdw-fw-row cdw-fw-gap-3"&gt;
+  &lt;div class="cdw-fw-col-10"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-10&lt;/div&gt;&lt;/div&gt;
+  &lt;div class="cdw-fw-col-2"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-2&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="cdw-fw-row cdw-fw-gap-3"&gt;
+  &lt;div class="cdw-fw-col-9"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-9&lt;/div&gt;&lt;/div&gt;
+  &lt;div class="cdw-fw-col-3"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-3&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="cdw-fw-row cdw-fw-gap-3"&gt;
+  &lt;div class="cdw-fw-col-8"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-8&lt;/div&gt;&lt;/div&gt;
+  &lt;div class="cdw-fw-col-4"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-4&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="cdw-fw-row cdw-fw-gap-3"&gt;
+  &lt;div class="cdw-fw-col-7"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-7&lt;/div&gt;&lt;/div&gt;
+  &lt;div class="cdw-fw-col-5"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-5&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="cdw-fw-row cdw-fw-gap-3"&gt;
+  &lt;div class="cdw-fw-col-6"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-6&lt;/div&gt;&lt;/div&gt;
+  &lt;div class="cdw-fw-col-6"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-6&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="cdw-fw-row cdw-fw-gap-3"&gt;
+  &lt;div class="cdw-fw-col-4"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-4&lt;/div&gt;&lt;/div&gt;
+  &lt;div class="cdw-fw-col-4"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-4&lt;/div&gt;&lt;/div&gt;
+  &lt;div class="cdw-fw-col-4"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-4&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="cdw-fw-row cdw-fw-gap-3"&gt;
+  &lt;div class="cdw-fw-col-3"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-3&lt;/div&gt;&lt;/div&gt;
+  &lt;div class="cdw-fw-col-3"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-3&lt;/div&gt;&lt;/div&gt;
+  &lt;div class="cdw-fw-col-3"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-3&lt;/div&gt;&lt;/div&gt;
+  &lt;div class="cdw-fw-col-3"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-3&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="cdw-fw-row cdw-fw-gap-3"&gt;
+  &lt;div class="cdw-fw-col-2"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-2&lt;/div&gt;&lt;/div&gt;
+  &lt;div class="cdw-fw-col-2"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-2&lt;/div&gt;&lt;/div&gt;
+  &lt;div class="cdw-fw-col-2"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-2&lt;/div&gt;&lt;/div&gt;
+  &lt;div class="cdw-fw-col-2"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-2&lt;/div&gt;&lt;/div&gt;
+  &lt;div class="cdw-fw-col-2"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-2&lt;/div&gt;&lt;/div&gt;
+  &lt;div class="cdw-fw-col-2"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-2&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="cdw-fw-row cdw-fw-gap-3"&gt;
+  &lt;div class="cdw-fw-col-1"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-1&lt;/div&gt;&lt;/div&gt;
+  &lt;div class="cdw-fw-col-1"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-1&lt;/div&gt;&lt;/div&gt;
+  &lt;div class="cdw-fw-col-1"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-1&lt;/div&gt;&lt;/div&gt;
+  &lt;div class="cdw-fw-col-1"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-1&lt;/div&gt;&lt;/div&gt;
+  &lt;div class="cdw-fw-col-1"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-1&lt;/div&gt;&lt;/div&gt;
+  &lt;div class="cdw-fw-col-1"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-1&lt;/div&gt;&lt;/div&gt;
+  &lt;div class="cdw-fw-col-1"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-1&lt;/div&gt;&lt;/div&gt;
+  &lt;div class="cdw-fw-col-1"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-1&lt;/div&gt;&lt;/div&gt;
+  &lt;div class="cdw-fw-col-1"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-1&lt;/div&gt;&lt;/div&gt;
+  &lt;div class="cdw-fw-col-1"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-1&lt;/div&gt;&lt;/div&gt;
+  &lt;div class="cdw-fw-col-1"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-1&lt;/div&gt;&lt;/div&gt;
+  &lt;div class="cdw-fw-col-1"&gt;&lt;div class="cdw-fw-docs-grid-demo"&gt;col-1&lt;/div&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre>
       </div>
     </div>
 
     <div class="cdw-fw-docs-card">
-      <div class="cdw-fw-docs-card-title">RecomendaÁıes de uso</div>
+      <div class="cdw-fw-docs-card-title">Recomenda&ccedil;&otilde;es de uso</div>
       <div class="cdw-fw-docs-highlight">Row sempre como pai</div>
       <div class="cdw-fw-docs-highlight">Colunas sempre dentro de Row</div>
-      <div class="cdw-fw-docs-highlight">Use gap utilities para espaÁamento</div>
+      <div class="cdw-fw-docs-highlight">Use gap utilities para espa&ccedil;amento</div>
     </div>
   </div>
 </section>
@@ -995,7 +1265,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           https://cdn.jsdelivr.net/gh/carlosdevelopmentsweb/fw-cdweb@0.1.3/dist/cdw-fw.js
         </div>
         <div class="cdw-fw-docs-example-caption">
-          ‚úîÔ∏è Forma recomendada para produ&ccedil;&atilde;o. ‚úîÔ∏è Evita que atualiza&ccedil;&otilde;es quebrem seu projeto.
+          Recomendado: Forma indicada para produ&ccedil;&atilde;o. Evita que atualiza&ccedil;&otilde;es quebrem seu projeto.
         </div>
       </div>
       <div class="cdw-fw-docs-codeblock">
@@ -1031,7 +1301,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           https://cdn.jsdelivr.net/gh/carlosdevelopmentsweb/fw-cdweb/dist/
         </div>
         <div class="cdw-fw-docs-callout">
-          ‚ö†Ô∏è Esta op&ccedil;&atilde;o carrega sempre a vers&atilde;o mais recente e pode quebrar seu projeto.
+          Aviso: Esta op&ccedil;&atilde;o carrega sempre a vers&atilde;o mais recente e pode quebrar seu projeto.
         </div>
         <div class="cdw-fw-docs-highlight">
           https://cdn.jsdelivr.net/gh/carlosdevelopmentsweb/fw-cdweb/dist/cdw-fw.css
@@ -1091,15 +1361,15 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
 `,
   utilities: `<section id="utilitarios" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
   <div class="cdw-fw-docs-section-head">
-    <h2 class="cdw-fw-docs-section-title">Utilit·rios</h2>
+    <h2 class="cdw-fw-docs-section-title">Utilit&aacute;rios</h2>
     <p class="cdw-fw-docs-lead">
-      Classes utilit·rias para resolver layout e ajustes r·pidos sem criar componentes.
+      Classes utilit&aacute;rias para resolver layout e ajustes r&aacute;pidos sem criar componentes.
     </p>
   </div>
 
   <div class="cdw-fw-docs-toc">
-    <span class="cdw-fw-docs-toc-title">Õndice desta p·gina</span>
-    <a href="#util-espacamento">EspaÁamento</a>
+    <span class="cdw-fw-docs-toc-title">&Iacute;ndice desta p&aacute;gina</span>
+    <a href="#util-espacamento">Espa&ccedil;amento</a>
     <a href="#util-display">Display</a>
     <a href="#util-flex">Flex</a>
     <a href="#util-gap">Gap</a>
@@ -1108,10 +1378,10 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
   </div>
 
   <div class="cdw-fw-docs-subsection" id="util-espacamento" data-cdw-fw-docs-section>
-    <h3 class="cdw-fw-docs-subtitle">EspaÁamento</h3>
+    <h3 class="cdw-fw-docs-subtitle">Espa&ccedil;amento</h3>
     <p class="cdw-fw-docs-subdesc">
       Controle de margin e padding com escala fixa baseada em 4px.
-      <span class="cdw-fw-docs-when">Quando usar: separaÁ„o entre elementos e respiro interno.</span>
+      <span class="cdw-fw-docs-when">Quando usar: separa&ccedil;&atilde;o entre elementos e respiro interno.</span>
     </p>
     <div class="cdw-fw-docs-classlist">
       <span>cdw-fw-m-*</span>
@@ -1122,7 +1392,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     </div>
 
     <div class="cdw-fw-docs-card">
-      <div class="cdw-fw-docs-card-title">Escala de espaÁamento</div>
+      <div class="cdw-fw-docs-card-title">Escala de espa&ccedil;amento</div>
       <table class="cdw-fw-docs-scale-table">
         <thead>
           <tr>
@@ -1149,7 +1419,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
         <div class="cdw-fw-docs-example-title">Padding e margin</div>
-        <div class="cdw-fw-docs-badge">B·sico</div>
+        <div class="cdw-fw-docs-badge">B&aacute;sico</div>
       </div>
       <div class="cdw-fw-docs-preview">
         <div class="cdw-fw-p-4" style="background:#dfe9f6; border-radius:12px;">
@@ -1159,7 +1429,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           Margin top 4
         </div>
         <div class="cdw-fw-docs-example-caption">
-          Use p-* para espaÁo interno e mt-* para separar itens verticalmente.
+          Use p-* para espa&ccedil;o interno e mt-* para separar itens verticalmente.
         </div>
       </div>
       <div class="cdw-fw-docs-codeblock">
@@ -1202,8 +1472,8 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
   <div class="cdw-fw-docs-subsection" id="util-display" data-cdw-fw-docs-section>
     <h3 class="cdw-fw-docs-subtitle">Display</h3>
     <p class="cdw-fw-docs-subdesc">
-      Ajuste o comportamento de renderizaÁ„o dos elementos.
-      <span class="cdw-fw-docs-when">Quando usar: alinhar itens pequenos ou ocultar conte˙do.</span>
+      Ajuste o comportamento de renderiza&ccedil;&atilde;o dos elementos.
+      <span class="cdw-fw-docs-when">Quando usar: alinhar itens pequenos ou ocultar conte&uacute;do.</span>
     </p>
     <div class="cdw-fw-docs-classlist">
       <span>cdw-fw-block</span>
@@ -1215,7 +1485,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
         <div class="cdw-fw-docs-example-title">Inline vs block</div>
-        <div class="cdw-fw-docs-badge">B·sico</div>
+        <div class="cdw-fw-docs-badge">B&aacute;sico</div>
       </div>
       <div class="cdw-fw-docs-preview">
         <div class="cdw-fw-inline" style="background:#dfe9f6; padding:6px 10px; border-radius:8px;">inline</div>
@@ -1241,13 +1511,13 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
       </div>
       <div class="cdw-fw-docs-preview">
         <div id="cdw-fw-docs-hidden-target" class="cdw-fw-docs-preview-box cdw-fw-docs-preview-box--dark">
-          Alvo ocult·vel
+          Alvo ocult&aacute;vel
         </div>
         <button class="cdw-fw-docs-toggle" type="button" data-cdw-fw-docs-toggle-hidden="cdw-fw-docs-hidden-target">
           Esconder
         </button>
         <div class="cdw-fw-docs-example-caption">
-          O bot„o alterna a classe cdw-fw-hidden no alvo.
+          O bot&atilde;o alterna a classe cdw-fw-hidden no alvo.
         </div>
       </div>
       <div class="cdw-fw-docs-codeblock">
@@ -1255,7 +1525,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <div class="cdw-fw-docs-code-title">HTML</div>
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div id="alvo" class="cdw-fw-hidden"&gt;Alvo ocult·vel&lt;/div&gt;
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div id="alvo" class="cdw-fw-hidden"&gt;Alvo ocult&aacute;vel&lt;/div&gt;
 &lt;button&gt;Mostrar/Esconder&lt;/button&gt;</code></pre>
       </div>
     </div>
@@ -1264,8 +1534,8 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
   <div class="cdw-fw-docs-subsection" id="util-flex" data-cdw-fw-docs-section>
     <h3 class="cdw-fw-docs-subtitle">Flex</h3>
     <p class="cdw-fw-docs-subdesc">
-      Controle de alinhamento, direÁ„o e quebra de linha com flexbox.
-      <span class="cdw-fw-docs-when">Quando usar: barras de aÁ„o, cards alinhados e grids flexÌveis.</span>
+      Controle de alinhamento, dire&ccedil;&atilde;o e quebra de linha com flexbox.
+      <span class="cdw-fw-docs-when">Quando usar: barras de a&ccedil;&atilde;o, cards alinhados e grids flex&iacute;veis.</span>
     </p>
     <div class="cdw-fw-docs-classlist">
       <span>cdw-fw-flex</span>
@@ -1278,7 +1548,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
         <div class="cdw-fw-docs-example-title">Justify between + items center</div>
-        <div class="cdw-fw-docs-badge">B·sico</div>
+        <div class="cdw-fw-docs-badge">B&aacute;sico</div>
       </div>
       <div class="cdw-fw-docs-preview">
         <div class="cdw-fw-flex cdw-fw-items-center cdw-fw-justify-between" style="background:#eef2f7; padding:12px; border-radius:12px;">
@@ -1286,7 +1556,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <div class="cdw-fw-docs-preview-box cdw-fw-docs-preview-box--alt">Centro</div>
           <div class="cdw-fw-docs-preview-box cdw-fw-docs-preview-box--dark">Direita</div>
         </div>
-        <div class="cdw-fw-docs-example-caption">Distribui o conte˙do com espaÁo entre os itens.</div>
+        <div class="cdw-fw-docs-example-caption">Distribui o conte&uacute;do com espa&ccedil;o entre os itens.</div>
       </div>
       <div class="cdw-fw-docs-codeblock">
         <div class="cdw-fw-docs-code-head">
@@ -1309,7 +1579,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <div class="cdw-fw-docs-preview-box">Item 1</div>
           <div class="cdw-fw-docs-preview-box cdw-fw-docs-preview-box--alt">Item 2</div>
         </div>
-        <div class="cdw-fw-docs-example-caption">Empilha itens verticalmente com espaÁamento.</div>
+        <div class="cdw-fw-docs-example-caption">Empilha itens verticalmente com espa&ccedil;amento.</div>
       </div>
       <div class="cdw-fw-docs-codeblock">
         <div class="cdw-fw-docs-code-head">
@@ -1323,7 +1593,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
         <div class="cdw-fw-docs-example-title">Wrap com gap</div>
-        <div class="cdw-fw-docs-badge">AvanÁado</div>
+        <div class="cdw-fw-docs-badge">Avan&ccedil;ado</div>
       </div>
       <div class="cdw-fw-docs-preview">
         <div class="cdw-fw-flex cdw-fw-flex-wrap cdw-fw-gap-2" style="background:#eef2f7; padding:12px; border-radius:12px;">
@@ -1348,7 +1618,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
   <div class="cdw-fw-docs-subsection" id="util-gap" data-cdw-fw-docs-section>
     <h3 class="cdw-fw-docs-subtitle">Gap</h3>
     <p class="cdw-fw-docs-subdesc">
-      EspaÁamento entre itens de flex ou grid.
+      Espa&ccedil;amento entre itens de flex ou grid.
       <span class="cdw-fw-docs-when">Quando usar: listas horizontais e colunas alinhadas.</span>
     </p>
     <div class="cdw-fw-docs-classlist">
@@ -1358,7 +1628,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
         <div class="cdw-fw-docs-example-title">Comparando gap-2 e gap-6</div>
-        <div class="cdw-fw-docs-badge">B·sico</div>
+        <div class="cdw-fw-docs-badge">B&aacute;sico</div>
       </div>
       <div class="cdw-fw-docs-preview">
         <div class="cdw-fw-flex cdw-fw-gap-2">
@@ -1371,7 +1641,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <div class="cdw-fw-docs-preview-box cdw-fw-docs-preview-box--alt">gap-6</div>
           <div class="cdw-fw-docs-preview-box cdw-fw-docs-preview-box--alt">gap-6</div>
         </div>
-        <div class="cdw-fw-docs-example-caption">Use gaps maiores para blocos mais espaÁados.</div>
+        <div class="cdw-fw-docs-example-caption">Use gaps maiores para blocos mais espa&ccedil;ados.</div>
       </div>
       <div class="cdw-fw-docs-codeblock">
         <div class="cdw-fw-docs-code-head">
@@ -1387,8 +1657,8 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
   <div class="cdw-fw-docs-subsection" id="util-tamanho" data-cdw-fw-docs-section>
     <h3 class="cdw-fw-docs-subtitle">Tamanho</h3>
     <p class="cdw-fw-docs-subdesc">
-      Ajuste largura e limite m·ximo de forma simples.
-      <span class="cdw-fw-docs-when">Quando usar: formul·rios e containers responsivos.</span>
+      Ajuste largura e limite m&aacute;ximo de forma simples.
+      <span class="cdw-fw-docs-when">Quando usar: formul&aacute;rios e containers responsivos.</span>
     </p>
     <div class="cdw-fw-docs-classlist">
       <span>cdw-fw-w-100</span>
@@ -1399,12 +1669,12 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
         <div class="cdw-fw-docs-example-title">Largura 100% e auto</div>
-        <div class="cdw-fw-docs-badge">B·sico</div>
+        <div class="cdw-fw-docs-badge">B&aacute;sico</div>
       </div>
       <div class="cdw-fw-docs-preview">
         <input class="cdw-fw-w-100" type="text" placeholder="Input com w-100" style="padding:8px; border-radius:8px; border:1px solid #d1d7df;" />
         <div class="cdw-fw-w-auto" style="margin-top:10px; background:#dfe9f6; padding:10px; border-radius:10px;">Caixa w-auto</div>
-        <div class="cdw-fw-docs-example-caption">w-100 expande, w-auto ajusta ao conte˙do.</div>
+        <div class="cdw-fw-docs-example-caption">w-100 expande, w-auto ajusta ao conte&uacute;do.</div>
       </div>
       <div class="cdw-fw-docs-codeblock">
         <div class="cdw-fw-docs-code-head">
@@ -1418,12 +1688,12 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
 
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
-        <div class="cdw-fw-docs-example-title">M·ximo de largura</div>
+        <div class="cdw-fw-docs-example-title">M&aacute;ximo de largura</div>
         <div class="cdw-fw-docs-badge">Comum</div>
       </div>
       <div class="cdw-fw-docs-preview">
         <div class="cdw-fw-maxw-100" style="background:#eef2f7; padding:10px; border-radius:10px;">
-          Conte˙do longo que n„o ultrapassa o container.
+          Conte&uacute;do longo que n&atilde;o ultrapassa o container.
         </div>
         <div class="cdw-fw-docs-example-caption">maxw-100 evita estouro horizontal.</div>
       </div>
@@ -1432,7 +1702,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <div class="cdw-fw-docs-code-title">HTML</div>
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-maxw-100"&gt;Conte˙do longo...&lt;/div&gt;</code></pre>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-maxw-100"&gt;Conte&uacute;do longo...&lt;/div&gt;</code></pre>
       </div>
     </div>
   </div>
@@ -1441,7 +1711,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     <h3 class="cdw-fw-docs-subtitle">Alinhamento de texto</h3>
     <p class="cdw-fw-docs-subdesc">
       Alinhe texto rapidamente sem criar classes customizadas.
-      <span class="cdw-fw-docs-when">Quando usar: tÌtulos, cards e legendas.</span>
+      <span class="cdw-fw-docs-when">Quando usar: t&iacute;tulos, cards e legendas.</span>
     </p>
     <div class="cdw-fw-docs-classlist">
       <span>cdw-fw-text-left</span>
@@ -1451,8 +1721,8 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
 
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
-        <div class="cdw-fw-docs-example-title">Alinhamento em trÍs caixas</div>
-        <div class="cdw-fw-docs-badge">B·sico</div>
+        <div class="cdw-fw-docs-example-title">Alinhamento em tr&ecirc;s caixas</div>
+        <div class="cdw-fw-docs-badge">B&aacute;sico</div>
       </div>
       <div class="cdw-fw-docs-preview">
         <div class="cdw-fw-flex cdw-fw-gap-2">
