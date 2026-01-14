@@ -1,91 +1,91 @@
-const O = ".cdw-accordion-item", d = ".cdw-accordion-trigger", T = ".cdw-accordion-panel", c = /* @__PURE__ */ new WeakMap();
-let g = 0;
-function p(e) {
-  return g += 1, `${e}-${g}`;
+const F = ".cdw-accordion-item", y = ".cdw-accordion-trigger", G = ".cdw-accordion-panel", m = /* @__PURE__ */ new WeakMap();
+let H = 0;
+function O(t) {
+  return H += 1, `${t}-${H}`;
 }
-function b(e, t) {
-  return e === null ? t : e === "" ? !0 : e === "true";
+function I(t, e) {
+  return t === null ? e : t === "" ? !0 : t === "true";
 }
-function H(e, t) {
-  return e === "multiple" ? "multiple" : t;
+function K(t, e) {
+  return t === "multiple" ? "multiple" : e;
 }
-function N(e, t) {
-  switch (e) {
+function W(t, e) {
+  switch (t) {
     case "plus":
     case "caret":
     case "arrow":
     case "dot":
     case "chevron":
-      return e;
-    default:
       return t;
+    default:
+      return e;
   }
 }
-function A(e) {
-  if (e == null) return [];
-  if (Array.isArray(e)) return e;
-  if (typeof e == "number") return [e];
-  if (typeof e == "string") {
-    const t = e.trim();
-    if (!t) return [];
-    if (t.includes(","))
-      return t.split(",").map((r) => r.trim()).filter(Boolean).map((r) => {
-        const i = Number(r);
-        return Number.isNaN(i) ? r : i;
+function D(t) {
+  if (t == null) return [];
+  if (Array.isArray(t)) return t;
+  if (typeof t == "number") return [t];
+  if (typeof t == "string") {
+    const e = t.trim();
+    if (!e) return [];
+    if (e.includes(","))
+      return e.split(",").map((i) => i.trim()).filter(Boolean).map((i) => {
+        const r = Number(i);
+        return Number.isNaN(r) ? i : r;
       });
-    const n = Number(t);
-    return Number.isNaN(n) ? [t] : [n];
+    const n = Number(e);
+    return Number.isNaN(n) ? [e] : [n];
   }
   return [];
 }
-function S(e, t) {
-  const n = H(e.getAttribute("data-mode"), "single"), r = b(
-    e.getAttribute("data-collapsible"),
+function V(t, e) {
+  const n = K(t.getAttribute("data-mode"), "single"), i = I(
+    t.getAttribute("data-collapsible"),
     !1
-  ), i = b(e.getAttribute("data-animate"), !0), s = N(e.getAttribute("data-icon"), "chevron"), o = A(
-    e.getAttribute("data-default-open")
+  ), r = I(t.getAttribute("data-animate"), !0), o = W(t.getAttribute("data-icon"), "chevron"), a = D(
+    t.getAttribute("data-default-open")
   );
   return {
     mode: n,
-    collapsible: r,
-    defaultOpen: o,
-    animate: i,
-    icon: s
+    collapsible: i,
+    defaultOpen: a,
+    animate: r,
+    icon: o
   };
 }
-function I(e, t) {
-  return e.getAttribute("data-cdw-accordion-item") || e.id || String(t);
+function j(t, e) {
+  return t.getAttribute("data-cdw-accordion-item") || t.id || String(e);
 }
-function k(e, t) {
-  if (typeof t == "number")
-    return e.index === t;
-  if (t.startsWith("id:")) {
-    const n = t.slice(3);
-    return e.key === n || e.item.id === n;
+function Z(t, e) {
+  if (typeof e == "number")
+    return t.index === e;
+  if (e.startsWith("id:")) {
+    const n = e.slice(3);
+    return t.key === n || t.item.id === n;
   }
-  return e.key === t;
+  return t.key === e;
 }
-function u(e, t, n) {
+function v(t, e, n) {
   if (!n) {
-    e.style.maxHeight = t ? "none" : "0px", e.style.opacity = t ? "1" : "0", e.style.pointerEvents = t ? "auto" : "none";
+    t.style.maxHeight = e ? "none" : "0px", t.style.opacity = e ? "1" : "0", t.style.pointerEvents = e ? "auto" : "none";
     return;
   }
-  if (t) {
-    e.style.maxHeight = `${e.scrollHeight}px`, e.style.opacity = "1", e.style.pointerEvents = "auto";
-    const r = (i) => {
-      i.propertyName === "max-height" && (e.style.maxHeight !== "0px" && (e.style.maxHeight = "none"), e.removeEventListener("transitionend", r));
+  if (e) {
+    t.style.maxHeight = `${t.scrollHeight}px`, t.style.opacity = "1", t.style.pointerEvents = "auto";
+    const i = (r) => {
+      r.propertyName === "max-height" && (t.style.maxHeight !== "0px" && (t.style.maxHeight = "none"), t.removeEventListener("transitionend", i));
     };
-    e.addEventListener("transitionend", r);
+    t.addEventListener("transitionend", i);
     return;
   }
-  (e.style.maxHeight === "none" || e.style.maxHeight === "") && (e.style.maxHeight = `${e.scrollHeight}px`), e.style.opacity = "1", e.style.pointerEvents = "none", e.getBoundingClientRect(), e.style.maxHeight = "0px", e.style.opacity = "0";
+  (t.style.maxHeight === "none" || t.style.maxHeight === "") && (t.style.maxHeight = `${t.scrollHeight}px`), t.style.opacity = "1", t.style.pointerEvents = "none", t.getBoundingClientRect(), t.style.maxHeight = "0px", t.style.opacity = "0";
 }
-function l(e, t) {
-  e.trigger.setAttribute("aria-expanded", t ? "true" : "false"), e.panel.setAttribute("aria-hidden", t ? "false" : "true");
+function w(t, e) {
+  t.trigger.setAttribute("aria-expanded", e ? "true" : "false"), t.panel.setAttribute("aria-hidden", e ? "false" : "true");
 }
-function h(e, t, n) {
-  e.dispatchEvent(
-    new CustomEvent(t, {
+function B(t, e, n) {
+  t.dispatchEvent(
+    new CustomEvent(e, {
       detail: {
         item: n.item,
         index: n.index,
@@ -94,203 +94,356 @@ function h(e, t, n) {
     })
   );
 }
-function E(e, t) {
-  t.item.classList.contains("is-open") && (t.item.classList.remove("is-open"), l(t, !1), u(t.panel, !1, e.options.animate), h(e.container, "cdw:accordion:close", t));
+function $(t, e) {
+  e.item.classList.contains("is-open") && (e.item.classList.remove("is-open"), w(e, !1), v(e.panel, !1, t.options.animate), B(t.container, "cdw:accordion:close", e));
 }
-function M(e, t) {
-  t.disabled || t.item.classList.contains("is-open") || (e.options.mode === "single" && e.items.forEach((n) => {
-    n !== t && E(e, n);
-  }), t.item.classList.add("is-open"), l(t, !0), u(t.panel, !0, e.options.animate), h(e.container, "cdw:accordion:open", t));
+function J(t, e) {
+  e.disabled || e.item.classList.contains("is-open") || (t.options.mode === "single" && t.items.forEach((n) => {
+    n !== e && $(t, n);
+  }), e.item.classList.add("is-open"), w(e, !0), v(e.panel, !0, t.options.animate), B(t.container, "cdw:accordion:open", e));
 }
-function w(e, t) {
-  if (t.disabled) return;
-  if (t.item.classList.contains("is-open")) {
-    if (e.options.mode === "single" && !e.options.collapsible)
+function q(t, e) {
+  if (e.disabled) return;
+  if (e.item.classList.contains("is-open")) {
+    if (t.options.mode === "single" && !t.options.collapsible)
       return;
-    E(e, t);
+    $(t, e);
     return;
   }
-  M(e, t);
+  J(t, e);
 }
-function C(e) {
-  return Array.from(e.querySelectorAll(O)).map((n, r) => {
-    const i = n.querySelector(d), s = n.querySelector(T);
-    if (!i || !s) return null;
-    i.id || (i.id = p("cdw-accordion-trigger")), s.id || (s.id = p("cdw-accordion-panel")), i.setAttribute("aria-controls", s.id), i.tagName === "BUTTON" && !i.getAttribute("type") && i.setAttribute("type", "button"), s.setAttribute("role", "region"), s.setAttribute("aria-labelledby", i.id);
-    const o = n.classList.contains("is-disabled") || n.getAttribute("data-disabled") === "true" || i.hasAttribute("disabled") || i.getAttribute("aria-disabled") === "true";
-    return o ? (n.classList.add("is-disabled"), i.setAttribute("aria-disabled", "true"), i.tagName === "BUTTON" && i.setAttribute("disabled", "true"), i.tagName !== "BUTTON" && i.setAttribute("tabindex", "-1")) : (n.classList.remove("is-disabled"), i.removeAttribute("aria-disabled"), i.tagName !== "BUTTON" && i.setAttribute("tabindex", "0")), {
+function Q(t) {
+  return Array.from(t.querySelectorAll(F)).map((n, i) => {
+    const r = n.querySelector(y), o = n.querySelector(G);
+    if (!r || !o) return null;
+    r.id || (r.id = O("cdw-accordion-trigger")), o.id || (o.id = O("cdw-accordion-panel")), r.setAttribute("aria-controls", o.id), r.tagName === "BUTTON" && !r.getAttribute("type") && r.setAttribute("type", "button"), o.setAttribute("role", "region"), o.setAttribute("aria-labelledby", r.id);
+    const a = n.classList.contains("is-disabled") || n.getAttribute("data-disabled") === "true" || r.hasAttribute("disabled") || r.getAttribute("aria-disabled") === "true";
+    return a ? (n.classList.add("is-disabled"), r.setAttribute("aria-disabled", "true"), r.tagName === "BUTTON" && r.setAttribute("disabled", "true"), r.tagName !== "BUTTON" && r.setAttribute("tabindex", "-1")) : (n.classList.remove("is-disabled"), r.removeAttribute("aria-disabled"), r.tagName !== "BUTTON" && r.setAttribute("tabindex", "0")), {
       item: n,
-      trigger: i,
-      panel: s,
-      index: r,
-      key: I(n, r),
-      disabled: o
+      trigger: r,
+      panel: o,
+      index: i,
+      key: j(n, i),
+      disabled: a
     };
   }).filter((n) => n !== null);
 }
-function R(e) {
-  const t = A(e.options.defaultOpen), n = t.length > 0;
-  let r = 0;
-  e.items.forEach((i) => {
-    const s = n ? t.some((a) => k(i, a)) : i.item.classList.contains("is-open");
-    e.options.mode === "single" && r > 0 && s && i.item.classList.remove("is-open");
-    const o = s && !i.disabled;
-    o ? (i.item.classList.add("is-open"), r += 1) : i.item.classList.remove("is-open"), l(i, o), u(i.panel, o, e.options.animate);
+function tt(t) {
+  const e = D(t.options.defaultOpen), n = e.length > 0;
+  let i = 0;
+  t.items.forEach((r) => {
+    const o = n ? e.some((u) => Z(r, u)) : r.item.classList.contains("is-open");
+    t.options.mode === "single" && i > 0 && o && r.item.classList.remove("is-open");
+    const a = o && !r.disabled;
+    a ? (r.item.classList.add("is-open"), i += 1) : r.item.classList.remove("is-open"), w(r, a), v(r.panel, a, t.options.animate);
   });
 }
-function D(e, t) {
-  const n = t.target;
+function et(t, e) {
+  const n = e.target;
   if (!(n instanceof Element)) return;
-  const r = n.closest(d);
-  if (!r || !e.triggerMap.has(r) || r.getAttribute("aria-disabled") === "true" || r.hasAttribute("disabled"))
+  const i = n.closest(y);
+  if (!i || !t.triggerMap.has(i) || i.getAttribute("aria-disabled") === "true" || i.hasAttribute("disabled"))
     return;
-  const i = e.triggerMap.get(r);
-  i && w(e, i);
+  const r = t.triggerMap.get(i);
+  r && q(t, r);
 }
-function B(e, t) {
-  const n = t.target;
+function nt(t, e) {
+  const n = e.target;
   if (!(n instanceof Element)) return;
-  const r = n.closest(d);
-  if (!r || !e.triggerMap.has(r)) return;
-  const i = e.items.filter((a) => !a.disabled).map((a) => a.trigger), s = i.indexOf(r);
-  if (s === -1) return;
-  const o = (a) => {
-    const f = i[a];
-    f && f.focus();
+  const i = n.closest(y);
+  if (!i || !t.triggerMap.has(i)) return;
+  const r = t.items.filter((u) => !u.disabled).map((u) => u.trigger), o = r.indexOf(i);
+  if (o === -1) return;
+  const a = (u) => {
+    const p = r[u];
+    p && p.focus();
   };
-  switch (t.key) {
+  switch (e.key) {
     case "Enter":
     case " ":
     case "Spacebar":
-      t.preventDefault(), w(e, e.triggerMap.get(r));
+      e.preventDefault(), q(t, t.triggerMap.get(i));
       break;
     case "ArrowDown":
-      t.preventDefault(), o((s + 1) % i.length);
+      e.preventDefault(), a((o + 1) % r.length);
       break;
     case "ArrowUp":
-      t.preventDefault(), o((s - 1 + i.length) % i.length);
+      e.preventDefault(), a((o - 1 + r.length) % r.length);
       break;
     case "Home":
-      t.preventDefault(), o(0);
+      e.preventDefault(), a(0);
       break;
     case "End":
-      t.preventDefault(), o(i.length - 1);
+      e.preventDefault(), a(r.length - 1);
       break;
   }
 }
-function _(e) {
-  e.options.animate && e.items.forEach((t) => {
-    t.item.classList.contains("is-open") && (t.panel.style.maxHeight = `${t.panel.scrollHeight}px`);
+function rt(t) {
+  t.options.animate && t.items.forEach((e) => {
+    e.item.classList.contains("is-open") && (e.panel.style.maxHeight = `${e.panel.scrollHeight}px`);
   });
 }
-function z(e, t) {
-  c.has(e) && U(e);
-  const n = S(e);
-  e.setAttribute("data-icon", n.icon), e.setAttribute("data-animate", n.animate ? "true" : "false");
-  const r = C(e), i = /* @__PURE__ */ new Map();
-  r.forEach((o) => i.set(o.trigger, o));
-  const s = {
-    container: e,
+function it(t, e) {
+  m.has(t) && ot(t);
+  const n = V(t);
+  t.setAttribute("data-icon", n.icon), t.setAttribute("data-animate", n.animate ? "true" : "false");
+  const i = Q(t), r = /* @__PURE__ */ new Map();
+  i.forEach((a) => r.set(a.trigger, a));
+  const o = {
+    container: t,
     options: n,
-    items: r,
-    triggerMap: i,
-    clickHandler: (o) => D(s, o),
-    keyHandler: (o) => B(s, o),
-    resizeHandler: () => _(s)
+    items: i,
+    triggerMap: r,
+    clickHandler: (a) => et(o, a),
+    keyHandler: (a) => nt(o, a),
+    resizeHandler: () => rt(o)
   };
-  e.addEventListener("click", s.clickHandler), e.addEventListener("keydown", s.keyHandler), window.addEventListener("resize", s.resizeHandler), R(s), c.set(e, s);
+  t.addEventListener("click", o.clickHandler), t.addEventListener("keydown", o.keyHandler), window.addEventListener("resize", o.resizeHandler), tt(o), m.set(t, o);
 }
-function U(e) {
-  const t = c.get(e);
-  t && (e.removeEventListener("click", t.clickHandler), e.removeEventListener("keydown", t.keyHandler), window.removeEventListener("resize", t.resizeHandler), t.items.forEach((n) => {
+function ot(t) {
+  const e = m.get(t);
+  e && (t.removeEventListener("click", e.clickHandler), t.removeEventListener("keydown", e.keyHandler), window.removeEventListener("resize", e.resizeHandler), e.items.forEach((n) => {
     n.item.classList.remove("is-open"), n.trigger.removeAttribute("aria-expanded"), n.trigger.removeAttribute("aria-controls"), n.panel.removeAttribute("aria-hidden"), n.panel.removeAttribute("aria-labelledby"), n.panel.removeAttribute("role"), n.panel.style.maxHeight = "", n.panel.style.opacity = "", n.panel.style.pointerEvents = "";
-  }), c.delete(e));
+  }), m.delete(t));
 }
-function $(e) {
-  z(e);
+function st(t) {
+  it(t);
 }
-const q = "[data-cdw-alert-close]", K = "data-autoclose";
-function W(e) {
-  if (!e) return null;
-  const t = Number.parseInt(e, 10);
-  return Number.isFinite(t) && t > 0 ? t : null;
+const at = "[data-cdw-alert-close]", ct = "data-autoclose";
+function ut(t) {
+  if (!t) return null;
+  const e = Number.parseInt(t, 10);
+  return Number.isFinite(e) && e > 0 ? e : null;
 }
-function m(e) {
-  e.classList.contains("is-hiding") || (e.classList.add("is-hiding"), window.setTimeout(() => {
-    e.remove();
+function T(t) {
+  t.classList.contains("is-hiding") || (t.classList.add("is-hiding"), window.setTimeout(() => {
+    t.remove();
   }, 200));
 }
-function P(e) {
-  const t = e.querySelector(q);
-  t && t.addEventListener("click", () => m(e));
-  const n = W(e.getAttribute(K));
-  n && window.setTimeout(() => m(e), n);
+function lt(t) {
+  const e = t.querySelector(at);
+  e && e.addEventListener("click", () => T(t));
+  const n = ut(t.getAttribute(ct));
+  n && window.setTimeout(() => T(t), n);
 }
-function V(e) {
-  P(e);
+function dt(t) {
+  lt(t);
 }
-const L = "data-cdw-fw-initialized", F = {
+const ft = ".cdw-stage-track", pt = ".cdw-stage-slide", N = "[data-cdw-stage-prev]", k = "[data-cdw-stage-next]", x = "[data-cdw-stage-go]", gt = "[data-cdw-stage-counter]", bt = "[data-cdw-stage-progress]", C = /* @__PURE__ */ new WeakMap();
+function b(t, e) {
+  return t === null ? e : t === "" ? !0 : t === "true";
+}
+function R(t, e) {
+  if (!t) return e;
+  const n = Number.parseInt(t, 10);
+  return Number.isFinite(n) ? n : e;
+}
+function mt(t) {
+  const e = t.getAttribute("data-autoplay"), n = t.getAttribute("data-interval"), i = b(t.getAttribute("data-pause-on-hover"), !0), r = b(t.getAttribute("data-loop"), !0), o = b(t.getAttribute("data-keyboard"), !0), a = b(t.getAttribute("data-swipe"), !0), u = R(t.getAttribute("data-start"), 0), p = t.getAttribute("data-nav") === "manual" ? "manual" : "auto";
+  let s = !1, c = R(n, 5200);
+  if (e !== null) {
+    s = e === "" || e === "true";
+    const l = Number.parseInt(e, 10);
+    Number.isFinite(l) && (s = !0, c = l);
+  }
+  return {
+    autoplay: s,
+    interval: c,
+    pauseOnHover: i,
+    loop: r,
+    keyboard: o,
+    swipe: a,
+    startIndex: u,
+    navMode: p
+  };
+}
+function ht(t) {
+  const e = t.querySelector(ft) || t, n = Array.from(e.querySelectorAll(pt));
+  return { track: e, slides: n };
+}
+function At(t, e) {
+  const n = t.slides.length;
+  return n === 0 ? 0 : t.options.loop ? (e + n) % n : Math.max(0, Math.min(n - 1, e));
+}
+function Et(t) {
+  const e = t.slides.length;
+  t.slides.forEach((n, i) => {
+    n.setAttribute("role", "group"), n.setAttribute("aria-roledescription", "slide"), n.setAttribute("aria-label", `${i + 1} de ${e}`), n.setAttribute("aria-hidden", i === t.current ? "false" : "true");
+  });
+}
+function z(t) {
+  const e = t.slides.length;
+  if (t.navButtons.forEach((n, i) => {
+    i === t.current ? n.setAttribute("aria-current", "true") : n.removeAttribute("aria-current");
+  }), t.counterEl && (t.counterEl.textContent = `${t.current + 1}/${e}`), t.progressEl) {
+    const n = e > 0 ? (t.current + 1) / e * 100 : 0;
+    t.progressEl.style.width = `${n}%`;
+  }
+}
+function g(t, e) {
+  const n = t.slides.length;
+  if (n === 0) return;
+  const i = At(t, e), r = t.options.loop ? (i - 1 + n) % n : i - 1, o = t.options.loop ? (i + 1) % n : i + 1;
+  t.slides.forEach((a, u) => {
+    a.classList.toggle("is-active", u === i), a.classList.toggle("is-prev", r >= 0 && u === r), a.classList.toggle("is-next", o < n && u === o);
+  }), t.current = i, Et(t), z(t);
+}
+function M(t) {
+  !t.options.autoplay || t.slides.length <= 1 || (t.timerId && window.clearInterval(t.timerId), t.timerId = window.setInterval(() => {
+    g(t, t.current + 1);
+  }, t.options.interval));
+}
+function yt(t) {
+  t.timerId && (window.clearInterval(t.timerId), t.timerId = null);
+}
+function h(t) {
+  g(t, t.current - 1);
+}
+function A(t) {
+  g(t, t.current + 1);
+}
+function E(t, e) {
+  g(t, e);
+}
+function vt(t) {
+  t.options.pauseOnHover && (t.container.addEventListener("mouseenter", t.enterHandler), t.container.addEventListener("mouseleave", t.leaveHandler), t.container.addEventListener("focusin", t.enterHandler), t.container.addEventListener("focusout", t.leaveHandler)), t.container.addEventListener("click", t.clickHandler), t.options.keyboard && (t.container.setAttribute("tabindex", "0"), t.container.addEventListener("keydown", t.keyHandler)), t.options.swipe && (t.container.addEventListener("touchstart", t.touchStartHandler, { passive: !0 }), t.container.addEventListener("touchend", t.touchEndHandler));
+}
+function wt(t) {
+  if (C.has(t)) return;
+  const e = mt(t), { track: n, slides: i } = ht(t), r = Array.from(t.querySelectorAll(x)), o = Array.from(t.querySelectorAll(N)), a = Array.from(t.querySelectorAll(k)), u = t.querySelector(gt), p = t.querySelector(bt), s = {
+    container: t,
+    track: n,
+    slides: i,
+    navButtons: r,
+    prevButtons: o,
+    nextButtons: a,
+    counterEl: u,
+    progressEl: p,
+    options: e,
+    current: 0,
+    timerId: null,
+    hoverCount: 0,
+    touchStartX: 0,
+    touchStartY: 0,
+    touchActive: !1,
+    keyHandler: (c) => {
+      c.key === "ArrowLeft" ? (c.preventDefault(), h(s)) : c.key === "ArrowRight" ? (c.preventDefault(), A(s)) : c.key === "Home" ? (c.preventDefault(), E(s, 0)) : c.key === "End" && (c.preventDefault(), E(s, s.slides.length - 1));
+    },
+    clickHandler: (c) => {
+      const l = c.target;
+      if (!(l instanceof Element)) return;
+      const f = l.closest(N), d = l.closest(k);
+      if (f) {
+        h(s);
+        return;
+      }
+      if (d) {
+        A(s);
+        return;
+      }
+      const L = l.closest(x);
+      if (L) {
+        const Y = L.getAttribute("data-cdw-stage-go"), S = Number.parseInt(Y || "", 10);
+        Number.isFinite(S) && E(s, S);
+      }
+    },
+    enterHandler: () => {
+      s.hoverCount += 1, yt(s);
+    },
+    leaveHandler: () => {
+      s.hoverCount = Math.max(0, s.hoverCount - 1), s.hoverCount === 0 && M(s);
+    },
+    touchStartHandler: (c) => {
+      if (c.touches.length !== 1) return;
+      const l = c.touches[0];
+      s.touchActive = !0, s.touchStartX = l.clientX, s.touchStartY = l.clientY;
+    },
+    touchEndHandler: (c) => {
+      if (!s.touchActive) return;
+      s.touchActive = !1;
+      const l = c.changedTouches[0], f = l.clientX - s.touchStartX, d = l.clientY - s.touchStartY;
+      Math.abs(f) < 30 || Math.abs(f) < Math.abs(d) || (f > 0 ? h(s) : A(s));
+    }
+  };
+  if (t.setAttribute("role", "region"), t.setAttribute("aria-roledescription", "stage"), i.length > 0 && t.setAttribute("aria-live", "polite"), g(s, e.startIndex), vt(s), M(s), e.navMode === "auto" && r.length === 0 && i.length > 1) {
+    const c = document.createElement("div");
+    c.className = "cdw-stage-nav", i.forEach((l, f) => {
+      const d = document.createElement("button");
+      d.type = "button", d.className = "cdw-stage-indicator", d.setAttribute("data-cdw-stage-go", String(f)), d.setAttribute("aria-label", `Ir para o slide ${f + 1}`), c.appendChild(d), s.navButtons.push(d);
+    }), t.appendChild(c), z(s);
+  }
+  C.set(t, s);
+}
+function Lt(t) {
+  wt(t);
+}
+const P = "data-cdw-fw-initialized", St = {
   childList: !0,
   subtree: !0
-}, G = [
+}, Ht = [
   {
     name: "accordion",
     selector: "[data-cdw-accordion]",
-    bind: $
+    bind: st
   },
   {
     name: "alert",
     selector: "[data-cdw-alert]",
-    bind: V
+    bind: dt
+  },
+  {
+    name: "stage",
+    selector: "[data-cdw-stage]",
+    bind: Lt
   }
 ];
-function j(e) {
-  return e ?? document;
+function Ot(t) {
+  return t ?? document;
 }
-function v(e) {
-  const t = e.getAttribute(L);
-  return t ? new Set(t.split(" ").filter(Boolean)) : /* @__PURE__ */ new Set();
+function U(t) {
+  const e = t.getAttribute(P);
+  return e ? new Set(e.split(" ").filter(Boolean)) : /* @__PURE__ */ new Set();
 }
-function Z(e, t) {
-  const n = v(e);
-  n.has(t) || (n.add(t), e.setAttribute(L, Array.from(n).join(" ")));
+function It(t, e) {
+  const n = U(t);
+  n.has(e) || (n.add(e), t.setAttribute(P, Array.from(n).join(" ")));
 }
-function J(e, t) {
-  return !v(e).has(t);
+function Tt(t, e) {
+  return !U(t).has(e);
 }
-function Q(e, t) {
-  const n = Array.from(e.querySelectorAll(t));
-  return e instanceof HTMLElement && e.matches(t) && n.unshift(e), n;
+function Nt(t, e) {
+  const n = Array.from(t.querySelectorAll(e));
+  return t instanceof HTMLElement && t.matches(e) && n.unshift(t), n;
 }
-function x(e) {
-  const t = j(e);
-  for (const n of G) {
-    const r = Q(t, n.selector);
-    for (const i of r)
-      if (J(i, n.name))
+function X(t) {
+  const e = Ot(t);
+  for (const n of Ht) {
+    const i = Nt(e, n.selector);
+    for (const r of i)
+      if (Tt(r, n.name))
         try {
-          n.bind(i), Z(i, n.name);
-        } catch (s) {
-          console.warn(`cdw-fw init issue: ${n.name}`, s);
+          n.bind(r), It(r, n.name);
+        } catch (o) {
+          console.warn(`cdw-fw init issue: ${n.name}`, o);
         }
   }
 }
-function X() {
+function kt() {
   if (typeof MutationObserver > "u") return;
-  const e = document.body;
-  if (!e) return;
+  const t = document.body;
+  if (!t) return;
   new MutationObserver((n) => {
-    for (const r of n)
-      r.addedNodes.forEach((i) => {
-        i instanceof HTMLElement && x(i);
+    for (const i of n)
+      i.addedNodes.forEach((r) => {
+        r instanceof HTMLElement && X(r);
       });
-  }).observe(e, F);
+  }).observe(t, St);
 }
-function y() {
-  x(document), X();
+function _() {
+  X(document), kt();
 }
-typeof window < "u" && (document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", () => y(), { once: !0 }) : y());
-const Y = "0.1.0";
+typeof window < "u" && (document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", () => _(), { once: !0 }) : _());
+const xt = "0.1.0";
 export {
-  Y as CDW_FW_VERSION
+  xt as CDW_FW_VERSION
 };

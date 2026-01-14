@@ -1,5 +1,6 @@
 import { bindAccordion } from "../components/accordion";
 import { bindAlert } from "../components/alert";
+import { bindStage } from "../components/stage";
 
 export interface FrameworkAPI {
   version: string;
@@ -22,6 +23,11 @@ const defs = [
     name: "alert",
     selector: "[data-cdw-alert]",
     bind: bindAlert,
+  },
+  {
+    name: "stage",
+    selector: "[data-cdw-stage]",
+    bind: bindStage,
   },
 ];
 
