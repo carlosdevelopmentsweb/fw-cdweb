@@ -14,6 +14,18 @@ const TOGGLE_SELECTOR = "[data-cdw-navbar-toggle]";
 const CLOSE_SELECTOR = "[data-cdw-navbar-close]";
 const SUB_TOGGLE_SELECTOR = "[data-cdw-navbar-sub]";
 const stateMap = new WeakMap<HTMLElement, NavbarState>();
+let mobileClassApplied = false;
+
+function applyMobileClass(): void {
+  if (mobileClassApplied || typeof window === "undefined") return;
+  const prefersCoarse = window.matchMedia?.("(pointer: coarse)").matches;
+  const prefersNoHover = window.matchMedia?.("(hover: none)").matches;
+  const hasTouch = "ontouchstart" in window || navigator.maxTouchPoints > 0;
+  if (prefersCoarse || prefersNoHover || hasTouch) {
+    document.documentElement.classList.add("cdw-navbar-mobile");
+    mobileClassApplied = true;
+  }
+}
 
 function ensurePanelId(panel: HTMLElement, container: HTMLElement): string {
   if (panel.id) return panel.id;
@@ -55,6 +67,7 @@ function toggleSubmenu(trigger: HTMLElement): void {
 
 function initNavbar(container: HTMLElement): void {
   if (stateMap.has(container)) return;
+  applyMobileClass();
 
   const panel = container.querySelector<HTMLElement>(PANEL_SELECTOR);
   const toggle = container.querySelector<HTMLButtonElement>(TOGGLE_SELECTOR);
