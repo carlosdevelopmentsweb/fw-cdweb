@@ -4415,7 +4415,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
       </div>
 <div class="cdw-navbar__cluster">
         <div class="cdw-navbar-item">
-          <a class="cdw-navbar__link" href="#" data-cdw-navbar-sub aria-expanded="false">Produtos</a>
+          <a class="cdw-navbar__link" href="javascript:void(0)" data-cdw-navbar-sub aria-expanded="false">Produtos</a>
           <div class="cdw-navbar__submenu">
             <a href="#">Core</a>
             <a href="#">Cloud</a>
@@ -4455,7 +4455,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
       &lt;/div&gt;
 &lt;div class="cdw-navbar__cluster"&gt;
         &lt;div class="cdw-navbar-item"&gt;
-          &lt;a class="cdw-navbar__link" href="#" data-cdw-navbar-sub aria-expanded="false"&gt;Produtos&lt;/a&gt;
+          &lt;a class="cdw-navbar__link" href="javascript:void(0)" data-cdw-navbar-sub aria-expanded="false"&gt;Produtos&lt;/a&gt;
           &lt;div class="cdw-navbar__submenu"&gt;
             &lt;a href="#"&gt;Core&lt;/a&gt;
             &lt;a href="#"&gt;Cloud&lt;/a&gt;
@@ -4669,8 +4669,8 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
         <div class="cdw-fw-docs-example-title">NavBar Hybrid</div>
-      <div class="cdw-fw-docs-badge">Mix</div>
-    </div>
+        <div class="cdw-fw-docs-badge">Mix</div>
+      </div>
       <div class="cdw-fw-docs-preview"><div class="cdw-navbar cdw-navbar--hybrid cdw-navbar--soft cdw-fw-accent-amber" data-cdw-navbar>
     <div class="cdw-navbar__inner">
       <div class="cdw-navbar__brand">
@@ -4728,12 +4728,227 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     &lt;/div&gt;
     &lt;div class="cdw-navbar-overlay" data-cdw-navbar-close&gt;&lt;/div&gt;
   &lt;/div&gt;</code></pre>
+      </div>
     </div>
-  </div>
-  </div>
-
-  <div class="cdw-fw-docs-subsection" id="navbars-exemplos" data-cdw-fw-docs-section>
-    <h3 class="cdw-fw-docs-subtitle">Exemplos reais</h3>
+    </div>
+  
+    <div class="cdw-fw-docs-subsection" id="navbars-mobile" data-cdw-fw-docs-section>
+      <h3 class="cdw-fw-docs-subtitle">Mobile</h3>
+      <p class="cdw-fw-docs-subdesc">Estrutura compacta com overlay organizado. Exemplo fechado e aberto.</p>
+  
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Menu fechado</div>
+        <div class="cdw-fw-docs-badge">Mobile</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-docs-mobile-preview">
+          <div class="cdw-navbar cdw-navbar--prime cdw-navbar--soft cdw-fw-accent-slate" data-cdw-navbar>
+            <div class="cdw-navbar__inner">
+              <div class="cdw-navbar__brand">
+                <div class="cdw-navbar__logo"></div>
+                <span>Helix</span>
+              </div>
+              <div class="cdw-navbar__panel">
+                <div class="cdw-navbar__panel-top">
+                  <div class="cdw-navbar__brand">
+                    <div class="cdw-navbar__logo"></div>
+                    <span>Helix</span>
+                  </div>
+                  <button class="cdw-navbar__close" type="button" data-cdw-navbar-close></button>
+                </div>
+                <div class="cdw-navbar__cluster">
+                  <nav class="cdw-navbar__links cdw-navbar__links--underline">
+                    <a class="cdw-navbar__link is-active" href="#">Painel</a>
+                    <a class="cdw-navbar__link" href="#">Insights</a>
+                    <a class="cdw-navbar__link" href="#">Relatorios</a>
+                  </nav>
+                </div>
+                <div class="cdw-navbar__cluster">
+                  <div class="cdw-navbar__actions">
+                    <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded">Nova busca</button>
+                    <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded">Entrar</button>
+                  </div>
+                </div>
+                <div class="cdw-navbar__cluster">
+                  <div class="cdw-navbar__search cdw-navbar__search--wide">
+                    <input type="text" placeholder="Buscar no CDWeb" />
+                  </div>
+                </div>
+                <div class="cdw-navbar__cluster">
+                  <div class="cdw-navbar__meta">
+                    <span class="cdw-navbar__chip">Beta</span>
+                    Ambiente de testes
+                  </div>
+                </div>
+              </div>
+              <button class="cdw-navbar__toggle" type="button" data-cdw-navbar-toggle></button>
+            </div>
+            <div class="cdw-navbar-overlay" data-cdw-navbar-close></div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-docs-mobile-preview"&gt;
+  &lt;div class="cdw-navbar cdw-navbar--prime cdw-navbar--soft cdw-fw-accent-slate" data-cdw-navbar&gt;
+    &lt;div class="cdw-navbar__inner"&gt;
+      &lt;div class="cdw-navbar__brand"&gt;
+        &lt;div class="cdw-navbar__logo"&gt;&lt;/div&gt;
+        &lt;span&gt;Helix&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class="cdw-navbar__panel"&gt;
+        &lt;div class="cdw-navbar__panel-top"&gt;
+          &lt;div class="cdw-navbar__brand"&gt;
+            &lt;div class="cdw-navbar__logo"&gt;&lt;/div&gt;
+            &lt;span&gt;Helix&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;button class="cdw-navbar__close" type="button" data-cdw-navbar-close&gt;&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class="cdw-navbar__cluster"&gt;
+          &lt;nav class="cdw-navbar__links cdw-navbar__links--underline"&gt;
+            &lt;a class="cdw-navbar__link is-active" href="#"&gt;Painel&lt;/a&gt;
+            &lt;a class="cdw-navbar__link" href="#"&gt;Insights&lt;/a&gt;
+            &lt;a class="cdw-navbar__link" href="#"&gt;Relatorios&lt;/a&gt;
+          &lt;/nav&gt;
+        &lt;/div&gt;
+        &lt;div class="cdw-navbar__cluster"&gt;
+          &lt;div class="cdw-navbar__actions"&gt;
+            &lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Nova busca&lt;/button&gt;
+            &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Entrar&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="cdw-navbar__cluster"&gt;
+          &lt;div class="cdw-navbar__search cdw-navbar__search--wide"&gt;
+            &lt;input type="text" placeholder="Buscar no CDWeb" /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="cdw-navbar__cluster"&gt;
+          &lt;div class="cdw-navbar__meta"&gt;
+            &lt;span class="cdw-navbar__chip"&gt;Beta&lt;/span&gt;
+            Ambiente de testes
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;button class="cdw-navbar__toggle" type="button" data-cdw-navbar-toggle&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-navbar-overlay" data-cdw-navbar-close&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Menu aberto</div>
+        <div class="cdw-fw-docs-badge">Mobile</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-docs-mobile-preview cdw-fw-docs-mobile-preview--open">
+          <div class="cdw-navbar cdw-navbar--prime cdw-navbar--soft cdw-fw-accent-slate is-open" data-cdw-navbar>
+            <div class="cdw-navbar__inner">
+              <div class="cdw-navbar__brand">
+                <div class="cdw-navbar__logo"></div>
+                <span>Helix</span>
+              </div>
+              <div class="cdw-navbar__panel">
+                <div class="cdw-navbar__panel-top">
+                  <div class="cdw-navbar__brand">
+                    <div class="cdw-navbar__logo"></div>
+                    <span>Helix</span>
+                  </div>
+                  <button class="cdw-navbar__close" type="button" data-cdw-navbar-close></button>
+                </div>
+                <div class="cdw-navbar__cluster">
+                  <nav class="cdw-navbar__links cdw-navbar__links--underline">
+                    <a class="cdw-navbar__link is-active" href="#">Painel</a>
+                    <a class="cdw-navbar__link" href="#">Insights</a>
+                    <a class="cdw-navbar__link" href="#">Relatorios</a>
+                  </nav>
+                </div>
+                <div class="cdw-navbar__cluster">
+                  <div class="cdw-navbar__actions">
+                    <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded">Nova busca</button>
+                    <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded">Entrar</button>
+                  </div>
+                </div>
+                <div class="cdw-navbar__cluster">
+                  <div class="cdw-navbar__search cdw-navbar__search--wide">
+                    <input type="text" placeholder="Buscar no CDWeb" />
+                  </div>
+                </div>
+                <div class="cdw-navbar__cluster">
+                  <div class="cdw-navbar__meta">
+                    <span class="cdw-navbar__chip">Beta</span>
+                    Ambiente de testes
+                  </div>
+                </div>
+              </div>
+              <button class="cdw-navbar__toggle" type="button" data-cdw-navbar-toggle></button>
+            </div>
+            <div class="cdw-navbar-overlay" data-cdw-navbar-close></div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-docs-mobile-preview cdw-fw-docs-mobile-preview--open"&gt;
+  &lt;div class="cdw-navbar cdw-navbar--prime cdw-navbar--soft cdw-fw-accent-slate is-open" data-cdw-navbar&gt;
+    &lt;div class="cdw-navbar__inner"&gt;
+      &lt;div class="cdw-navbar__brand"&gt;
+        &lt;div class="cdw-navbar__logo"&gt;&lt;/div&gt;
+        &lt;span&gt;Helix&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class="cdw-navbar__panel"&gt;
+        &lt;div class="cdw-navbar__panel-top"&gt;
+          &lt;div class="cdw-navbar__brand"&gt;
+            &lt;div class="cdw-navbar__logo"&gt;&lt;/div&gt;
+            &lt;span&gt;Helix&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;button class="cdw-navbar__close" type="button" data-cdw-navbar-close&gt;&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class="cdw-navbar__cluster"&gt;
+          &lt;nav class="cdw-navbar__links cdw-navbar__links--underline"&gt;
+            &lt;a class="cdw-navbar__link is-active" href="#"&gt;Painel&lt;/a&gt;
+            &lt;a class="cdw-navbar__link" href="#"&gt;Insights&lt;/a&gt;
+            &lt;a class="cdw-navbar__link" href="#"&gt;Relatorios&lt;/a&gt;
+          &lt;/nav&gt;
+        &lt;/div&gt;
+        &lt;div class="cdw-navbar__cluster"&gt;
+          &lt;div class="cdw-navbar__actions"&gt;
+            &lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Nova busca&lt;/button&gt;
+            &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Entrar&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="cdw-navbar__cluster"&gt;
+          &lt;div class="cdw-navbar__search cdw-navbar__search--wide"&gt;
+            &lt;input type="text" placeholder="Buscar no CDWeb" /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="cdw-navbar__cluster"&gt;
+          &lt;div class="cdw-navbar__meta"&gt;
+            &lt;span class="cdw-navbar__chip"&gt;Beta&lt;/span&gt;
+            Ambiente de testes
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;button class="cdw-navbar__toggle" type="button" data-cdw-navbar-toggle&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-navbar-overlay" data-cdw-navbar-close&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+    </div>
+  
+    <div class="cdw-fw-docs-subsection" id="navbars-exemplos" data-cdw-fw-docs-section>
+      <h3 class="cdw-fw-docs-subtitle">Exemplos reais</h3>
 
   <div class="cdw-fw-docs-example">
     <div class="cdw-fw-docs-example-head">
@@ -4972,16 +5187,17 @@ function buildNav(root) {
             { label: "Uso", href: "#stage-usos" },
           ],
         },
-        {
-          title: "NavBars",
-          target: "#navbars",
-          links: [
-            { label: "Conceito", href: "#navbars-conceito" },
-            { label: "Estrutura", href: "#navbars-estrutura" },
-            { label: "Modelos", href: "#navbars-modelos" },
-            { label: "Exemplos", href: "#navbars-exemplos" },
-          ],
-        },
+          {
+            title: "NavBars",
+            target: "#navbars",
+            links: [
+              { label: "Conceito", href: "#navbars-conceito" },
+              { label: "Estrutura", href: "#navbars-estrutura" },
+              { label: "Modelos", href: "#navbars-modelos" },
+              { label: "Mobile", href: "#navbars-mobile" },
+              { label: "Exemplos", href: "#navbars-exemplos" },
+            ],
+          },
       ],
     },
     {
@@ -5197,16 +5413,22 @@ function setupSmoothScroll(root) {
   }
 
   links.forEach((link) => {
-    link.addEventListener("click", (event) => {
-      const href = link.getAttribute("href");
-      if (!href) {
-        return;
-      }
-      const id = href.slice(1);
-      const target = root.querySelector(`#${id}`);
-      if (!target) {
-        return;
-      }
+      link.addEventListener("click", (event) => {
+        const href = link.getAttribute("href");
+        if (!href || href === "#") {
+          return;
+        }
+        if (link.hasAttribute("data-cdw-navbar-sub")) {
+          return;
+        }
+        const id = href.slice(1);
+        if (!id) {
+          return;
+        }
+        const target = root.querySelector(`#${id}`);
+        if (!target) {
+          return;
+        }
       event.preventDefault();
       target.scrollIntoView({ behavior: "smooth", block: "start" });
       history.replaceState(null, "", href);

@@ -646,6 +646,63 @@
   border: 1px solid rgba(27, 79, 114, 0.2);
 }
 
+.cdw-fw-docs-mobile-preview {
+  max-width: 360px;
+  margin: 0 auto;
+  background: #eef2f8;
+  border-radius: 24px;
+  padding: 12px;
+  position: relative;
+  min-height: 420px;
+}
+
+.cdw-fw-docs-mobile-preview .cdw-navbar {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.cdw-fw-docs-mobile-preview .cdw-navbar__inner {
+  min-height: 56px;
+}
+
+.cdw-fw-docs-mobile-preview .cdw-navbar__toggle {
+  display: inline-flex;
+}
+
+.cdw-fw-docs-mobile-preview .cdw-navbar__panel {
+  position: absolute;
+  top: 56px;
+  right: 0;
+  left: 0;
+  height: calc(100% - 56px);
+  width: 100%;
+  transform: translateX(100%);
+  background: color-mix(in srgb, var(--cdw-navbar-accent) 6%, #ffffff);
+  border-top: 1px solid color-mix(in srgb, var(--cdw-navbar-accent) 18%, #d8e0ea);
+  padding: 18px;
+  gap: 16px;
+  z-index: 2;
+}
+
+.cdw-fw-docs-mobile-preview .cdw-navbar-overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+  display: block;
+}
+
+.cdw-fw-docs-mobile-preview--open .cdw-navbar__panel {
+  transform: translateX(0);
+}
+
+.cdw-fw-docs-mobile-preview--open .cdw-navbar-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .cdw-fw-docs-toggle {
   display: inline-flex;
   align-items: center;
