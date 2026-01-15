@@ -3745,6 +3745,484 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
 </section>
 
 `,
+  gallery: `<section id="gallery" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+    <div class="cdw-fw-docs-section-head">
+      <h2 class="cdw-fw-docs-section-title">Gallery</h2>
+      <p class="cdw-fw-docs-lead">
+        Galeria premium para imagens com ritmo visual, recortes e destaque controlado.
+      </p>
+    </div>
+
+      <div class="cdw-fw-docs-toc">
+        <a href="#gallery-conceito">Conceito</a>
+        <a href="#gallery-estrutura">Estrutura</a>
+        <a href="#gallery-modelos">Modelos</a>
+        <a href="#gallery-ecommerce">E-commerce</a>
+        <a href="#gallery-uso">Exemplos de uso</a>
+      </div>
+
+      <div class="cdw-fw-docs-subsection" id="gallery-conceito" data-cdw-fw-docs-section>
+        <h3 class="cdw-fw-docs-subtitle">Conceito</h3>
+        <p class="cdw-fw-docs-subdesc">
+          CDWeb Gallery organiza imagens com hierarquia visual e espacamento refinado, sem grids genericos. Cada midia pode ter descricao individual e loading automatico na troca. O foco usa data-cdw-gallery-focus="clean|immersive".
+        </p>
+        <div class="cdw-fw-docs-classlist">
+          <span>cdw-gallery</span>
+          <span>cdw-gallery__list</span>
+          <span>cdw-gallery__item</span>
+          <span>cdw-gallery__media</span>
+          <span>cdw-gallery__label</span>
+          <span>data-cdw-gallery</span>
+          <span>data-cdw-gallery-controls</span>
+          <span>data-cdw-gallery-focus</span>
+          <span>data-cdw-gallery-product</span>
+          <span>data-title</span>
+          <span>data-desc</span>
+          <span>data-meta</span>
+        </div>
+      </div>
+
+    <div class="cdw-fw-docs-subsection" id="gallery-estrutura" data-cdw-fw-docs-section>
+      <h3 class="cdw-fw-docs-subtitle">Estrutura</h3>
+
+      <div class="cdw-fw-docs-example">
+        <div class="cdw-fw-docs-example-head">
+          <div class="cdw-fw-docs-example-title">Estrutura base</div>
+          <div class="cdw-fw-docs-badge">Base</div>
+        </div>
+        <div class="cdw-fw-docs-preview">
+          <div class="cdw-gallery cdw-gallery--grid cdw-fw-accent-ocean" data-cdw-gallery data-cdw-gallery-focus="clean">
+            <div class="cdw-gallery__list">
+              <div class="cdw-gallery__item">
+                <div class="cdw-gallery__media cdw-gallery__media--landscape">
+                  <span class="cdw-gallery__label">Image 01</span>
+                </div>
+              </div>
+              <div class="cdw-gallery__item">
+                <div class="cdw-gallery__media cdw-gallery__media--square">
+                  <span class="cdw-gallery__label">Image 02</span>
+                </div>
+              </div>
+              <div class="cdw-gallery__item">
+                <div class="cdw-gallery__media cdw-gallery__media--portrait">
+                  <span class="cdw-gallery__label">Image 03</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cdw-fw-docs-codeblock">
+          <div class="cdw-fw-docs-code-head">
+            <div class="cdw-fw-docs-code-title">HTML</div>
+            <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+          </div>
+          <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-gallery cdw-gallery--grid cdw-fw-accent-ocean" data-cdw-gallery data-cdw-gallery-focus="clean"&gt;
+  &lt;div class="cdw-gallery__list"&gt;
+    &lt;div class="cdw-gallery__item"&gt;
+      &lt;div class="cdw-gallery__media cdw-gallery__media--landscape"&gt;
+        &lt;span class="cdw-gallery__label"&gt;Image 01&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-gallery__item"&gt;
+      &lt;div class="cdw-gallery__media cdw-gallery__media--square"&gt;
+        &lt;span class="cdw-gallery__label"&gt;Image 02&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-gallery__item"&gt;
+      &lt;div class="cdw-gallery__media cdw-gallery__media--portrait"&gt;
+        &lt;span class="cdw-gallery__label"&gt;Image 03&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-subsection" id="gallery-modelos" data-cdw-fw-docs-section>
+      <h3 class="cdw-fw-docs-subtitle">Modelos</h3>
+      <p class="cdw-fw-docs-subdesc">Todos os modelos aplicam loading automatico na troca de midia.</p>
+
+      <div class="cdw-fw-docs-example">
+        <div class="cdw-fw-docs-example-head">
+          <div class="cdw-fw-docs-example-title">Gallery Grid Classic</div>
+          <div class="cdw-fw-docs-badge">Grid</div>
+        </div>
+        <div class="cdw-fw-docs-preview">
+          <div class="cdw-gallery cdw-gallery--grid cdw-fw-accent-sky" data-cdw-gallery data-cdw-gallery-focus="clean">
+            <div class="cdw-gallery__list">
+              <div class="cdw-gallery__item"><div class="cdw-gallery__media cdw-gallery__media--landscape"><span class="cdw-gallery__label">Image 01</span></div></div>
+              <div class="cdw-gallery__item"><div class="cdw-gallery__media cdw-gallery__media--square"><span class="cdw-gallery__label">Image 02</span></div></div>
+              <div class="cdw-gallery__item"><div class="cdw-gallery__media cdw-gallery__media--wide"><span class="cdw-gallery__label">Image 03</span></div></div>
+              <div class="cdw-gallery__item"><div class="cdw-gallery__media cdw-gallery__media--portrait"><span class="cdw-gallery__label">Image 04</span></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="cdw-fw-docs-codeblock">
+          <div class="cdw-fw-docs-code-head">
+            <div class="cdw-fw-docs-code-title">HTML</div>
+            <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+          </div>
+          <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-gallery cdw-gallery--grid cdw-fw-accent-sky" data-cdw-gallery data-cdw-gallery-focus="clean"&gt;
+  &lt;div class="cdw-gallery__list"&gt;
+    &lt;div class="cdw-gallery__item"&gt;&lt;div class="cdw-gallery__media cdw-gallery__media--landscape"&gt;&lt;span class="cdw-gallery__label"&gt;Image 01&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class="cdw-gallery__item"&gt;&lt;div class="cdw-gallery__media cdw-gallery__media--square"&gt;&lt;span class="cdw-gallery__label"&gt;Image 02&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class="cdw-gallery__item"&gt;&lt;div class="cdw-gallery__media cdw-gallery__media--wide"&gt;&lt;span class="cdw-gallery__label"&gt;Image 03&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class="cdw-gallery__item"&gt;&lt;div class="cdw-gallery__media cdw-gallery__media--portrait"&gt;&lt;span class="cdw-gallery__label"&gt;Image 04&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="cdw-fw-docs-example">
+        <div class="cdw-fw-docs-example-head">
+          <div class="cdw-fw-docs-example-title">Gallery Mason Flow</div>
+          <div class="cdw-fw-docs-badge">Masonry</div>
+        </div>
+        <div class="cdw-fw-docs-preview">
+          <div class="cdw-gallery cdw-gallery--masonry cdw-fw-accent-mint" data-cdw-gallery data-cdw-gallery-focus="immersive">
+            <div class="cdw-gallery__list">
+              <div class="cdw-gallery__item"><div class="cdw-gallery__media cdw-gallery__media--portrait"><span class="cdw-gallery__label">Image 01</span></div></div>
+              <div class="cdw-gallery__item"><div class="cdw-gallery__media cdw-gallery__media--wide"><span class="cdw-gallery__label">Image 02</span></div></div>
+              <div class="cdw-gallery__item"><div class="cdw-gallery__media cdw-gallery__media--square"><span class="cdw-gallery__label">Image 03</span></div></div>
+              <div class="cdw-gallery__item"><div class="cdw-gallery__media cdw-gallery__media--landscape"><span class="cdw-gallery__label">Image 04</span></div></div>
+              <div class="cdw-gallery__item"><div class="cdw-gallery__media cdw-gallery__media--portrait"><span class="cdw-gallery__label">Image 05</span></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="cdw-fw-docs-codeblock">
+          <div class="cdw-fw-docs-code-head">
+            <div class="cdw-fw-docs-code-title">HTML</div>
+            <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+          </div>
+          <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-gallery cdw-gallery--masonry cdw-fw-accent-mint" data-cdw-gallery data-cdw-gallery-focus="immersive"&gt;
+  &lt;div class="cdw-gallery__list"&gt;
+    &lt;div class="cdw-gallery__item"&gt;&lt;div class="cdw-gallery__media cdw-gallery__media--portrait"&gt;&lt;span class="cdw-gallery__label"&gt;Image 01&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class="cdw-gallery__item"&gt;&lt;div class="cdw-gallery__media cdw-gallery__media--wide"&gt;&lt;span class="cdw-gallery__label"&gt;Image 02&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class="cdw-gallery__item"&gt;&lt;div class="cdw-gallery__media cdw-gallery__media--square"&gt;&lt;span class="cdw-gallery__label"&gt;Image 03&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class="cdw-gallery__item"&gt;&lt;div class="cdw-gallery__media cdw-gallery__media--landscape"&gt;&lt;span class="cdw-gallery__label"&gt;Image 04&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class="cdw-gallery__item"&gt;&lt;div class="cdw-gallery__media cdw-gallery__media--portrait"&gt;&lt;span class="cdw-gallery__label"&gt;Image 05&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="cdw-fw-docs-example">
+        <div class="cdw-fw-docs-example-head">
+          <div class="cdw-fw-docs-example-title">Gallery Highlight</div>
+          <div class="cdw-fw-docs-badge">Highlight</div>
+        </div>
+        <div class="cdw-fw-docs-preview">
+          <div class="cdw-gallery cdw-gallery--highlight cdw-fw-accent-amber" data-cdw-gallery data-cdw-gallery-focus="clean">
+            <div class="cdw-gallery__list">
+              <div class="cdw-gallery__item cdw-gallery__item--hero"><div class="cdw-gallery__media cdw-gallery__media--wide"><span class="cdw-gallery__label">Image 01</span></div></div>
+              <div class="cdw-gallery__item"><div class="cdw-gallery__media cdw-gallery__media--square"><span class="cdw-gallery__label">Image 02</span></div></div>
+              <div class="cdw-gallery__item"><div class="cdw-gallery__media cdw-gallery__media--landscape"><span class="cdw-gallery__label">Image 03</span></div></div>
+              <div class="cdw-gallery__item"><div class="cdw-gallery__media cdw-gallery__media--portrait"><span class="cdw-gallery__label">Image 04</span></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="cdw-fw-docs-codeblock">
+          <div class="cdw-fw-docs-code-head">
+            <div class="cdw-fw-docs-code-title">HTML</div>
+            <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+          </div>
+          <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-gallery cdw-gallery--highlight cdw-fw-accent-amber" data-cdw-gallery data-cdw-gallery-focus="clean"&gt;
+  &lt;div class="cdw-gallery__list"&gt;
+    &lt;div class="cdw-gallery__item cdw-gallery__item--hero"&gt;&lt;div class="cdw-gallery__media cdw-gallery__media--wide"&gt;&lt;span class="cdw-gallery__label"&gt;Image 01&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class="cdw-gallery__item"&gt;&lt;div class="cdw-gallery__media cdw-gallery__media--square"&gt;&lt;span class="cdw-gallery__label"&gt;Image 02&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class="cdw-gallery__item"&gt;&lt;div class="cdw-gallery__media cdw-gallery__media--landscape"&gt;&lt;span class="cdw-gallery__label"&gt;Image 03&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class="cdw-gallery__item"&gt;&lt;div class="cdw-gallery__media cdw-gallery__media--portrait"&gt;&lt;span class="cdw-gallery__label"&gt;Image 04&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="cdw-fw-docs-example">
+        <div class="cdw-fw-docs-example-head">
+          <div class="cdw-fw-docs-example-title">Gallery Strip</div>
+          <div class="cdw-fw-docs-badge">Strip</div>
+        </div>
+        <div class="cdw-fw-docs-preview">
+          <div class="cdw-gallery cdw-gallery--strip cdw-fw-accent-graphite" data-cdw-gallery data-cdw-gallery-controls="true" data-cdw-gallery-focus="immersive">
+            <div class="cdw-gallery__list">
+              <div class="cdw-gallery__item"><div class="cdw-gallery__media cdw-gallery__media--wide"><span class="cdw-gallery__label">Image 01</span></div></div>
+              <div class="cdw-gallery__item"><div class="cdw-gallery__media cdw-gallery__media--square"><span class="cdw-gallery__label">Image 02</span></div></div>
+              <div class="cdw-gallery__item"><div class="cdw-gallery__media cdw-gallery__media--landscape"><span class="cdw-gallery__label">Image 03</span></div></div>
+              <div class="cdw-gallery__item"><div class="cdw-gallery__media cdw-gallery__media--portrait"><span class="cdw-gallery__label">Image 04</span></div></div>
+            </div>
+            <div class="cdw-gallery__controls">
+              <button class="cdw-gallery__control cdw-gallery__control--prev" type="button" data-cdw-gallery-strip-prev></button>
+              <button class="cdw-gallery__control cdw-gallery__control--next" type="button" data-cdw-gallery-strip-next></button>
+            </div>
+          </div>
+        </div>
+        <div class="cdw-fw-docs-codeblock">
+          <div class="cdw-fw-docs-code-head">
+            <div class="cdw-fw-docs-code-title">HTML</div>
+            <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+          </div>
+          <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-gallery cdw-gallery--strip cdw-fw-accent-graphite" data-cdw-gallery data-cdw-gallery-controls="true" data-cdw-gallery-focus="immersive"&gt;
+  &lt;div class="cdw-gallery__list"&gt;
+    &lt;div class="cdw-gallery__item"&gt;&lt;div class="cdw-gallery__media cdw-gallery__media--wide"&gt;&lt;span class="cdw-gallery__label"&gt;Image 01&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class="cdw-gallery__item"&gt;&lt;div class="cdw-gallery__media cdw-gallery__media--square"&gt;&lt;span class="cdw-gallery__label"&gt;Image 02&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class="cdw-gallery__item"&gt;&lt;div class="cdw-gallery__media cdw-gallery__media--landscape"&gt;&lt;span class="cdw-gallery__label"&gt;Image 03&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class="cdw-gallery__item"&gt;&lt;div class="cdw-gallery__media cdw-gallery__media--portrait"&gt;&lt;span class="cdw-gallery__label"&gt;Image 04&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-gallery__controls"&gt;
+    &lt;button class="cdw-gallery__control cdw-gallery__control--prev" type="button" data-cdw-gallery-strip-prev&gt;&lt;/button&gt;
+    &lt;button class="cdw-gallery__control cdw-gallery__control--next" type="button" data-cdw-gallery-strip-next&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="cdw-fw-docs-example">
+        <div class="cdw-fw-docs-example-head">
+          <div class="cdw-fw-docs-example-title">Gallery Overlay</div>
+          <div class="cdw-fw-docs-badge">Focus</div>
+        </div>
+        <div class="cdw-fw-docs-preview">
+          <div class="cdw-gallery cdw-gallery--overlay cdw-fw-accent-rose" data-cdw-gallery data-cdw-gallery-focus="immersive">
+            <div class="cdw-gallery__list">
+              <div class="cdw-gallery__item"><div class="cdw-gallery__media cdw-gallery__media--square"><span class="cdw-gallery__label">Image 01</span></div></div>
+              <div class="cdw-gallery__item"><div class="cdw-gallery__media cdw-gallery__media--portrait"><span class="cdw-gallery__label">Image 02</span></div></div>
+              <div class="cdw-gallery__item"><div class="cdw-gallery__media cdw-gallery__media--landscape"><span class="cdw-gallery__label">Image 03</span></div></div>
+              <div class="cdw-gallery__item"><div class="cdw-gallery__media cdw-gallery__media--wide"><span class="cdw-gallery__label">Image 04</span></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="cdw-fw-docs-codeblock">
+          <div class="cdw-fw-docs-code-head">
+            <div class="cdw-fw-docs-code-title">HTML</div>
+            <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+          </div>
+          <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-gallery cdw-gallery--overlay cdw-fw-accent-rose" data-cdw-gallery data-cdw-gallery-focus="immersive"&gt;
+  &lt;div class="cdw-gallery__list"&gt;
+    &lt;div class="cdw-gallery__item"&gt;&lt;div class="cdw-gallery__media cdw-gallery__media--square"&gt;&lt;span class="cdw-gallery__label"&gt;Image 01&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class="cdw-gallery__item"&gt;&lt;div class="cdw-gallery__media cdw-gallery__media--portrait"&gt;&lt;span class="cdw-gallery__label"&gt;Image 02&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class="cdw-gallery__item"&gt;&lt;div class="cdw-gallery__media cdw-gallery__media--landscape"&gt;&lt;span class="cdw-gallery__label"&gt;Image 03&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class="cdw-gallery__item"&gt;&lt;div class="cdw-gallery__media cdw-gallery__media--wide"&gt;&lt;span class="cdw-gallery__label"&gt;Image 04&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+      </div>
+
+      <div class="cdw-fw-docs-subsection" id="gallery-ecommerce" data-cdw-fw-docs-section>
+        <h3 class="cdw-fw-docs-subtitle">Gallery – E-commerce</h3>
+        <p class="cdw-fw-docs-subdesc">
+          Product Switch serve para alternar imagens rapidamente. Product Detail adiciona descricao individual por imagem e leitura de compra. Loading automatico aparece ao trocar.
+        </p>
+
+        <div class="cdw-fw-docs-example">
+          <div class="cdw-fw-docs-example-head">
+            <div class="cdw-fw-docs-example-title">Product Switch</div>
+            <div class="cdw-fw-docs-badge">Produto</div>
+          </div>
+          <div class="cdw-fw-docs-preview">
+            <div class="cdw-gallery cdw-gallery--product cdw-gallery--product-switch cdw-fw-accent-graphite" data-cdw-gallery data-cdw-gallery-product="switch">
+              <div class="cdw-gallery__product">
+                <div class="cdw-gallery__product-thumbs">
+                  <button class="cdw-gallery__thumb is-active" type="button" data-cdw-gallery-thumb data-label="Product 01" data-alt="Produto 01" data-src="https://picsum.photos/seed/cdw-prod-01/900/900" data-aspect="cdw-gallery__media--square">
+                    <div class="cdw-gallery__thumb-media">
+                      <img src="https://picsum.photos/seed/cdw-prod-01/180/180" alt="Produto 01" loading="lazy" />
+                    </div>
+                  </button>
+                  <button class="cdw-gallery__thumb" type="button" data-cdw-gallery-thumb data-label="Product 02" data-alt="Produto 02" data-src="https://picsum.photos/seed/cdw-prod-02/900/900" data-aspect="cdw-gallery__media--square">
+                    <div class="cdw-gallery__thumb-media">
+                      <img src="https://picsum.photos/seed/cdw-prod-02/180/180" alt="Produto 02" loading="lazy" />
+                    </div>
+                  </button>
+                  <button class="cdw-gallery__thumb" type="button" data-cdw-gallery-thumb data-label="Product 03" data-alt="Produto 03" data-src="https://picsum.photos/seed/cdw-prod-03/900/900" data-aspect="cdw-gallery__media--square">
+                    <div class="cdw-gallery__thumb-media">
+                      <img src="https://picsum.photos/seed/cdw-prod-03/180/180" alt="Produto 03" loading="lazy" />
+                    </div>
+                  </button>
+                  <button class="cdw-gallery__thumb" type="button" data-cdw-gallery-thumb data-label="Detail 04" data-alt="Detalhe 04" data-src="https://picsum.photos/seed/cdw-prod-04/900/620" data-aspect="cdw-gallery__media--landscape">
+                    <div class="cdw-gallery__thumb-media">
+                      <img src="https://picsum.photos/seed/cdw-prod-04/180/180" alt="Detalhe 04" loading="lazy" />
+                    </div>
+                  </button>
+                </div>
+                <div class="cdw-gallery__product-main">
+                  <div class="cdw-gallery__media cdw-gallery__media--square">
+                    <img src="https://picsum.photos/seed/cdw-prod-01/900/900" alt="Produto 01" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cdw-fw-docs-codeblock">
+            <div class="cdw-fw-docs-code-head">
+              <div class="cdw-fw-docs-code-title">HTML</div>
+            </div>
+            <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-gallery cdw-gallery--product cdw-gallery--product-switch cdw-fw-accent-graphite" data-cdw-gallery data-cdw-gallery-product="switch"&gt;
+  &lt;div class="cdw-gallery__product"&gt;
+    &lt;div class="cdw-gallery__product-thumbs"&gt;
+      &lt;button class="cdw-gallery__thumb is-active" type="button" data-cdw-gallery-thumb data-label="Product 01" data-alt="Produto 01" data-src="https://picsum.photos/seed/cdw-prod-01/900/900" data-aspect="cdw-gallery__media--square"&gt;
+        &lt;div class="cdw-gallery__thumb-media"&gt;
+          &lt;img src="https://picsum.photos/seed/cdw-prod-01/180/180" alt="Produto 01" loading="lazy" /&gt;
+        &lt;/div&gt;
+      &lt;/button&gt;
+      &lt;button class="cdw-gallery__thumb" type="button" data-cdw-gallery-thumb data-label="Product 02" data-alt="Produto 02" data-src="https://picsum.photos/seed/cdw-prod-02/900/900" data-aspect="cdw-gallery__media--square"&gt;
+        &lt;div class="cdw-gallery__thumb-media"&gt;
+          &lt;img src="https://picsum.photos/seed/cdw-prod-02/180/180" alt="Produto 02" loading="lazy" /&gt;
+        &lt;/div&gt;
+      &lt;/button&gt;
+      &lt;button class="cdw-gallery__thumb" type="button" data-cdw-gallery-thumb data-label="Product 03" data-alt="Produto 03" data-src="https://picsum.photos/seed/cdw-prod-03/900/900" data-aspect="cdw-gallery__media--square"&gt;
+        &lt;div class="cdw-gallery__thumb-media"&gt;
+          &lt;img src="https://picsum.photos/seed/cdw-prod-03/180/180" alt="Produto 03" loading="lazy" /&gt;
+        &lt;/div&gt;
+      &lt;/button&gt;
+      &lt;button class="cdw-gallery__thumb" type="button" data-cdw-gallery-thumb data-label="Detail 04" data-alt="Detalhe 04" data-src="https://picsum.photos/seed/cdw-prod-04/900/620" data-aspect="cdw-gallery__media--landscape"&gt;
+        &lt;div class="cdw-gallery__thumb-media"&gt;
+          &lt;img src="https://picsum.photos/seed/cdw-prod-04/180/180" alt="Detalhe 04" loading="lazy" /&gt;
+        &lt;/div&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-gallery__product-main"&gt;
+      &lt;div class="cdw-gallery__media cdw-gallery__media--square"&gt;
+        &lt;img src="https://picsum.photos/seed/cdw-prod-01/900/900" alt="Produto 01" loading="lazy" /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+
+          <div class="cdw-fw-docs-example">
+            <div class="cdw-fw-docs-example-head">
+              <div class="cdw-fw-docs-example-title">Product Detail</div>
+              <div class="cdw-fw-docs-badge">Detalhe</div>
+            </div>
+            <div class="cdw-fw-docs-preview">
+              <div class="cdw-gallery cdw-gallery--product cdw-gallery--product-detail cdw-fw-accent-slate" data-cdw-gallery data-cdw-gallery-product="detail">
+                <div class="cdw-gallery__product">
+                  <div class="cdw-gallery__product-main">
+                    <div class="cdw-gallery__media cdw-gallery__media--landscape">
+                      <img src="https://picsum.photos/seed/cdw-detail-01/980/640" alt="Produto 01" loading="lazy" />
+                    </div>
+                  </div>
+                  <div class="cdw-gallery__product-thumbs">
+                    <button class="cdw-gallery__thumb is-active" type="button" data-cdw-gallery-thumb data-label="Product 01" data-title="Produto executivo" data-desc="Acabamento premium com foco em durabilidade e leitura clara da textura." data-meta="Material: composto|Variacao: grafite|Status: pronto" data-alt="Produto 01" data-src="https://picsum.photos/seed/cdw-detail-01/980/640" data-aspect="cdw-gallery__media--landscape">
+                      <div class="cdw-gallery__thumb-media">
+                        <img src="https://picsum.photos/seed/cdw-detail-01/160/160" alt="Produto 01" loading="lazy" />
+                      </div>
+                    </button>
+                    <button class="cdw-gallery__thumb" type="button" data-cdw-gallery-thumb data-label="Product 02" data-title="Linha tecnica" data-desc="Textura controlada e cor equilibrada para ambientes profissionais." data-meta="Material: tecido|Variacao: azul|Status: em linha" data-alt="Produto 02" data-src="https://picsum.photos/seed/cdw-detail-02/980/640" data-aspect="cdw-gallery__media--landscape">
+                      <div class="cdw-gallery__thumb-media">
+                        <img src="https://picsum.photos/seed/cdw-detail-02/160/160" alt="Produto 02" loading="lazy" />
+                      </div>
+                    </button>
+                    <button class="cdw-gallery__thumb" type="button" data-cdw-gallery-thumb data-label="Detail 03" data-title="Detalhe ampliado" data-desc="Enfoque em acabamento e recorte para decisao rapida." data-meta="Material: acabamento|Variacao: grafite|Status: pronto" data-alt="Detalhe 03" data-src="https://picsum.photos/seed/cdw-detail-03/980/640" data-aspect="cdw-gallery__media--landscape">
+                      <div class="cdw-gallery__thumb-media">
+                        <img src="https://picsum.photos/seed/cdw-detail-03/160/160" alt="Detalhe 03" loading="lazy" />
+                      </div>
+                    </button>
+                    <button class="cdw-gallery__thumb" type="button" data-cdw-gallery-thumb data-label="Detail 04" data-title="Vista lateral" data-desc="Visao complementar para comparar cortes e proporcao." data-meta="Material: composto|Variacao: grafite|Status: em linha" data-alt="Detalhe 04" data-src="https://picsum.photos/seed/cdw-detail-04/980/640" data-aspect="cdw-gallery__media--landscape">
+                      <div class="cdw-gallery__thumb-media">
+                        <img src="https://picsum.photos/seed/cdw-detail-04/160/160" alt="Detalhe 04" loading="lazy" />
+                      </div>
+                    </button>
+                  </div>
+                  <div class="cdw-gallery__product-info">
+                    <div class="cdw-gallery__product-info-title">Produto executivo</div>
+                    <div class="cdw-gallery__product-info-desc">Acabamento premium com foco em durabilidade e leitura clara da textura.</div>
+                    <div class="cdw-gallery__product-info-meta">
+                      <span>Material: composto</span>
+                      <span>Variacao: grafite</span>
+                      <span>Status: pronto</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cdw-fw-docs-codeblock">
+              <div class="cdw-fw-docs-code-head">
+                <div class="cdw-fw-docs-code-title">HTML</div>
+              </div>
+              <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-gallery cdw-gallery--product cdw-gallery--product-detail cdw-fw-accent-slate" data-cdw-gallery data-cdw-gallery-product="detail"&gt;
+  &lt;div class="cdw-gallery__product"&gt;
+    &lt;div class="cdw-gallery__product-main"&gt;
+      &lt;div class="cdw-gallery__media cdw-gallery__media--landscape"&gt;
+        &lt;img src="https://picsum.photos/seed/cdw-detail-01/980/640" alt="Produto 01" loading="lazy" /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-gallery__product-thumbs"&gt;
+      &lt;button class="cdw-gallery__thumb is-active" type="button" data-cdw-gallery-thumb data-label="Product 01" data-title="Produto executivo" data-desc="Acabamento premium com foco em durabilidade e leitura clara da textura." data-meta="Material: composto|Variacao: grafite|Status: pronto" data-alt="Produto 01" data-src="https://picsum.photos/seed/cdw-detail-01/980/640" data-aspect="cdw-gallery__media--landscape"&gt;
+        &lt;div class="cdw-gallery__thumb-media"&gt;
+          &lt;img src="https://picsum.photos/seed/cdw-detail-01/160/160" alt="Produto 01" loading="lazy" /&gt;
+        &lt;/div&gt;
+      &lt;/button&gt;
+      &lt;button class="cdw-gallery__thumb" type="button" data-cdw-gallery-thumb data-label="Product 02" data-title="Linha tecnica" data-desc="Textura controlada e cor equilibrada para ambientes profissionais." data-meta="Material: tecido|Variacao: azul|Status: em linha" data-alt="Produto 02" data-src="https://picsum.photos/seed/cdw-detail-02/980/640" data-aspect="cdw-gallery__media--landscape"&gt;
+        &lt;div class="cdw-gallery__thumb-media"&gt;
+          &lt;img src="https://picsum.photos/seed/cdw-detail-02/160/160" alt="Produto 02" loading="lazy" /&gt;
+        &lt;/div&gt;
+      &lt;/button&gt;
+      &lt;button class="cdw-gallery__thumb" type="button" data-cdw-gallery-thumb data-label="Detail 03" data-title="Detalhe ampliado" data-desc="Enfoque em acabamento e recorte para decisao rapida." data-meta="Material: acabamento|Variacao: grafite|Status: pronto" data-alt="Detalhe 03" data-src="https://picsum.photos/seed/cdw-detail-03/980/640" data-aspect="cdw-gallery__media--landscape"&gt;
+        &lt;div class="cdw-gallery__thumb-media"&gt;
+          &lt;img src="https://picsum.photos/seed/cdw-detail-03/160/160" alt="Detalhe 03" loading="lazy" /&gt;
+        &lt;/div&gt;
+      &lt;/button&gt;
+      &lt;button class="cdw-gallery__thumb" type="button" data-cdw-gallery-thumb data-label="Detail 04" data-title="Vista lateral" data-desc="Visao complementar para comparar cortes e proporcao." data-meta="Material: composto|Variacao: grafite|Status: em linha" data-alt="Detalhe 04" data-src="https://picsum.photos/seed/cdw-detail-04/980/640" data-aspect="cdw-gallery__media--landscape"&gt;
+        &lt;div class="cdw-gallery__thumb-media"&gt;
+          &lt;img src="https://picsum.photos/seed/cdw-detail-04/160/160" alt="Detalhe 04" loading="lazy" /&gt;
+        &lt;/div&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-gallery__product-info"&gt;
+      &lt;div class="cdw-gallery__product-info-title"&gt;Produto executivo&lt;/div&gt;
+      &lt;div class="cdw-gallery__product-info-desc"&gt;Acabamento premium com foco em durabilidade e leitura clara da textura.&lt;/div&gt;
+      &lt;div class="cdw-gallery__product-info-meta"&gt;
+        &lt;span&gt;Material: composto&lt;/span&gt;
+        &lt;span&gt;Variacao: grafite&lt;/span&gt;
+        &lt;span&gt;Status: pronto&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </div>
+
+    <div class="cdw-fw-docs-subsection" id="gallery-uso" data-cdw-fw-docs-section>
+      <h3 class="cdw-fw-docs-subtitle">Exemplos de uso</h3>
+      <p class="cdw-fw-docs-subdesc">Galerias para portfolio, produtos e destaque institucional com loading e descricao por imagem quando aplicavel.</p>
+
+      <div class="cdw-fw-docs-example">
+        <div class="cdw-fw-docs-example-head">
+          <div class="cdw-fw-docs-example-title">Portfolio institucional</div>
+          <div class="cdw-fw-docs-badge">Real</div>
+        </div>
+        <div class="cdw-fw-docs-preview">
+          <div class="cdw-gallery cdw-gallery--highlight cdw-fw-accent-obsidian" data-cdw-gallery data-cdw-gallery-focus="clean">
+            <div class="cdw-gallery__list">
+              <div class="cdw-gallery__item cdw-gallery__item--hero"><div class="cdw-gallery__media cdw-gallery__media--wide"><span class="cdw-gallery__label">Image 01</span></div></div>
+              <div class="cdw-gallery__item"><div class="cdw-gallery__media cdw-gallery__media--square"><span class="cdw-gallery__label">Image 02</span></div></div>
+              <div class="cdw-gallery__item"><div class="cdw-gallery__media cdw-gallery__media--portrait"><span class="cdw-gallery__label">Image 03</span></div></div>
+              <div class="cdw-gallery__item"><div class="cdw-gallery__media cdw-gallery__media--landscape"><span class="cdw-gallery__label">Image 04</span></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="cdw-fw-docs-codeblock">
+          <div class="cdw-fw-docs-code-head">
+            <div class="cdw-fw-docs-code-title">HTML</div>
+            <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+          </div>
+          <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-gallery cdw-gallery--highlight cdw-fw-accent-obsidian" data-cdw-gallery data-cdw-gallery-focus="clean"&gt;
+  &lt;div class="cdw-gallery__list"&gt;
+    &lt;div class="cdw-gallery__item cdw-gallery__item--hero"&gt;&lt;div class="cdw-gallery__media cdw-gallery__media--wide"&gt;&lt;span class="cdw-gallery__label"&gt;Image 01&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class="cdw-gallery__item"&gt;&lt;div class="cdw-gallery__media cdw-gallery__media--square"&gt;&lt;span class="cdw-gallery__label"&gt;Image 02&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class="cdw-gallery__item"&gt;&lt;div class="cdw-gallery__media cdw-gallery__media--portrait"&gt;&lt;span class="cdw-gallery__label"&gt;Image 03&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class="cdw-gallery__item"&gt;&lt;div class="cdw-gallery__media cdw-gallery__media--landscape"&gt;&lt;span class="cdw-gallery__label"&gt;Image 04&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+    </section>
+  `,
   stage: `<section id="stage" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
   <div class="cdw-fw-docs-section-head">
     <h2 class="cdw-fw-docs-section-title">Stage</h2>
@@ -5033,6 +5511,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     "alert",
     "badges",
     "cards",
+    "gallery",
     "stage",
     "navbars",
   ];
@@ -5165,22 +5644,33 @@ function buildNav(root) {
             { label: "Uso", href: "#badges-uso" },
           ],
         },
-        {
-          title: "Cards",
-          target: "#cards",
-          links: [
-            { label: "Conceito", href: "#cards-conceito" },
-            { label: "Tipos", href: "#cards-tipos" },
-            { label: "Estrutura", href: "#cards-estrutura" },
-            { label: "Exemplos", href: "#cards-exemplos" },
-            { label: "Uso", href: "#cards-uso" },
-          ],
-        },
-        {
-          title: "Stage",
-          target: "#stage",
-          links: [
-            { label: "Conceito", href: "#stage-conceito" },
+          {
+            title: "Cards",
+            target: "#cards",
+            links: [
+              { label: "Conceito", href: "#cards-conceito" },
+              { label: "Tipos", href: "#cards-tipos" },
+              { label: "Estrutura", href: "#cards-estrutura" },
+              { label: "Exemplos", href: "#cards-exemplos" },
+              { label: "Uso", href: "#cards-uso" },
+            ],
+          },
+          {
+            title: "Gallery",
+            target: "#gallery",
+            links: [
+              { label: "Conceito", href: "#gallery-conceito" },
+              { label: "Estrutura", href: "#gallery-estrutura" },
+              { label: "Modelos", href: "#gallery-modelos" },
+              { label: "E-commerce", href: "#gallery-ecommerce" },
+              { label: "Uso", href: "#gallery-uso" },
+            ],
+          },
+          {
+            title: "Stage",
+            target: "#stage",
+            links: [
+              { label: "Conceito", href: "#stage-conceito" },
             { label: "Estrutura", href: "#stage-estrutura" },
             { label: "Modelos", href: "#stage-modelos" },
             { label: "Exemplos", href: "#stage-exemplos" },

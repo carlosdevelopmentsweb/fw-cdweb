@@ -1,91 +1,91 @@
-const J = ".cdw-accordion-item", y = ".cdw-accordion-trigger", Q = ".cdw-accordion-panel", m = /* @__PURE__ */ new WeakMap();
-let T = 0;
-function H(t) {
-  return T += 1, `${t}-${T}`;
+const de = ".cdw-accordion-item", H = ".cdw-accordion-trigger", ue = ".cdw-accordion-panel", A = /* @__PURE__ */ new WeakMap();
+let M = 0;
+function R(e) {
+  return M += 1, `${e}-${M}`;
 }
-function k(t, e) {
-  return t === null ? e : t === "" ? !0 : t === "true";
+function $(e, t) {
+  return e === null ? t : e === "" ? !0 : e === "true";
 }
-function tt(t, e) {
-  return t === "multiple" ? "multiple" : e;
+function fe(e, t) {
+  return e === "multiple" ? "multiple" : t;
 }
-function et(t, e) {
-  switch (t) {
+function ge(e, t) {
+  switch (e) {
     case "plus":
     case "caret":
     case "arrow":
     case "dot":
     case "chevron":
-      return t;
-    default:
       return e;
+    default:
+      return t;
   }
 }
-function G(t) {
-  if (t == null) return [];
-  if (Array.isArray(t)) return t;
-  if (typeof t == "number") return [t];
-  if (typeof t == "string") {
-    const e = t.trim();
-    if (!e) return [];
-    if (e.includes(","))
-      return e.split(",").map((o) => o.trim()).filter(Boolean).map((o) => {
+function Z(e) {
+  if (e == null) return [];
+  if (Array.isArray(e)) return e;
+  if (typeof e == "number") return [e];
+  if (typeof e == "string") {
+    const t = e.trim();
+    if (!t) return [];
+    if (t.includes(","))
+      return t.split(",").map((o) => o.trim()).filter(Boolean).map((o) => {
         const r = Number(o);
         return Number.isNaN(r) ? o : r;
       });
-    const n = Number(e);
-    return Number.isNaN(n) ? [e] : [n];
+    const n = Number(t);
+    return Number.isNaN(n) ? [t] : [n];
   }
   return [];
 }
-function nt(t, e) {
-  const n = tt(t.getAttribute("data-mode"), "single"), o = k(
-    t.getAttribute("data-collapsible"),
+function pe(e, t) {
+  const n = fe(e.getAttribute("data-mode"), "single"), o = $(
+    e.getAttribute("data-collapsible"),
     !1
-  ), r = k(t.getAttribute("data-animate"), !0), i = et(t.getAttribute("data-icon"), "chevron"), s = G(
-    t.getAttribute("data-default-open")
+  ), r = $(e.getAttribute("data-animate"), !0), a = ge(e.getAttribute("data-icon"), "chevron"), s = Z(
+    e.getAttribute("data-default-open")
   );
   return {
     mode: n,
     collapsible: o,
     defaultOpen: s,
     animate: r,
-    icon: i
+    icon: a
   };
 }
-function rt(t, e) {
-  return t.getAttribute("data-cdw-accordion-item") || t.id || String(e);
+function ye(e, t) {
+  return e.getAttribute("data-cdw-accordion-item") || e.id || String(t);
 }
-function ot(t, e) {
-  if (typeof e == "number")
-    return t.index === e;
-  if (e.startsWith("id:")) {
-    const n = e.slice(3);
-    return t.key === n || t.item.id === n;
+function me(e, t) {
+  if (typeof t == "number")
+    return e.index === t;
+  if (t.startsWith("id:")) {
+    const n = t.slice(3);
+    return e.key === n || e.item.id === n;
   }
-  return t.key === e;
+  return e.key === t;
 }
-function w(t, e, n) {
+function I(e, t, n) {
   if (!n) {
-    t.style.maxHeight = e ? "none" : "0px", t.style.opacity = e ? "1" : "0", t.style.pointerEvents = e ? "auto" : "none";
+    e.style.maxHeight = t ? "none" : "0px", e.style.opacity = t ? "1" : "0", e.style.pointerEvents = t ? "auto" : "none";
     return;
   }
-  if (e) {
-    t.style.maxHeight = `${t.scrollHeight}px`, t.style.opacity = "1", t.style.pointerEvents = "auto";
+  if (t) {
+    e.style.maxHeight = `${e.scrollHeight}px`, e.style.opacity = "1", e.style.pointerEvents = "auto";
     const o = (r) => {
-      r.propertyName === "max-height" && (t.style.maxHeight !== "0px" && (t.style.maxHeight = "none"), t.removeEventListener("transitionend", o));
+      r.propertyName === "max-height" && (e.style.maxHeight !== "0px" && (e.style.maxHeight = "none"), e.removeEventListener("transitionend", o));
     };
-    t.addEventListener("transitionend", o);
+    e.addEventListener("transitionend", o);
     return;
   }
-  (t.style.maxHeight === "none" || t.style.maxHeight === "") && (t.style.maxHeight = `${t.scrollHeight}px`), t.style.opacity = "1", t.style.pointerEvents = "none", t.getBoundingClientRect(), t.style.maxHeight = "0px", t.style.opacity = "0";
+  (e.style.maxHeight === "none" || e.style.maxHeight === "") && (e.style.maxHeight = `${e.scrollHeight}px`), e.style.opacity = "1", e.style.pointerEvents = "none", e.getBoundingClientRect(), e.style.maxHeight = "0px", e.style.opacity = "0";
 }
-function L(t, e) {
-  t.trigger.setAttribute("aria-expanded", e ? "true" : "false"), t.panel.setAttribute("aria-hidden", e ? "false" : "true");
+function N(e, t) {
+  e.trigger.setAttribute("aria-expanded", t ? "true" : "false"), e.panel.setAttribute("aria-hidden", t ? "false" : "true");
 }
-function U(t, e, n) {
-  t.dispatchEvent(
-    new CustomEvent(e, {
+function J(e, t, n) {
+  e.dispatchEvent(
+    new CustomEvent(t, {
       detail: {
         item: n.item,
         index: n.index,
@@ -94,429 +94,584 @@ function U(t, e, n) {
     })
   );
 }
-function X(t, e) {
-  e.item.classList.contains("is-open") && (e.item.classList.remove("is-open"), L(e, !1), w(e.panel, !1, t.options.animate), U(t.container, "cdw:accordion:close", e));
+function Q(e, t) {
+  t.item.classList.contains("is-open") && (t.item.classList.remove("is-open"), N(t, !1), I(t.panel, !1, e.options.animate), J(e.container, "cdw:accordion:close", t));
 }
-function it(t, e) {
-  e.disabled || e.item.classList.contains("is-open") || (t.options.mode === "single" && t.items.forEach((n) => {
-    n !== e && X(t, n);
-  }), e.item.classList.add("is-open"), L(e, !0), w(e.panel, !0, t.options.animate), U(t.container, "cdw:accordion:open", e));
+function be(e, t) {
+  t.disabled || t.item.classList.contains("is-open") || (e.options.mode === "single" && e.items.forEach((n) => {
+    n !== t && Q(e, n);
+  }), t.item.classList.add("is-open"), N(t, !0), I(t.panel, !0, e.options.animate), J(e.container, "cdw:accordion:open", t));
 }
-function W(t, e) {
-  if (e.disabled) return;
-  if (e.item.classList.contains("is-open")) {
-    if (t.options.mode === "single" && !t.options.collapsible)
+function ee(e, t) {
+  if (t.disabled) return;
+  if (t.item.classList.contains("is-open")) {
+    if (e.options.mode === "single" && !e.options.collapsible)
       return;
-    X(t, e);
+    Q(e, t);
     return;
   }
-  it(t, e);
+  be(e, t);
 }
-function st(t) {
-  return Array.from(t.querySelectorAll(J)).map((n, o) => {
-    const r = n.querySelector(y), i = n.querySelector(Q);
-    if (!r || !i) return null;
-    r.id || (r.id = H("cdw-accordion-trigger")), i.id || (i.id = H("cdw-accordion-panel")), r.setAttribute("aria-controls", i.id), r.tagName === "BUTTON" && !r.getAttribute("type") && r.setAttribute("type", "button"), i.setAttribute("role", "region"), i.setAttribute("aria-labelledby", r.id);
+function we(e) {
+  return Array.from(e.querySelectorAll(de)).map((n, o) => {
+    const r = n.querySelector(H), a = n.querySelector(ue);
+    if (!r || !a) return null;
+    r.id || (r.id = R("cdw-accordion-trigger")), a.id || (a.id = R("cdw-accordion-panel")), r.setAttribute("aria-controls", a.id), r.tagName === "BUTTON" && !r.getAttribute("type") && r.setAttribute("type", "button"), a.setAttribute("role", "region"), a.setAttribute("aria-labelledby", r.id);
     const s = n.classList.contains("is-disabled") || n.getAttribute("data-disabled") === "true" || r.hasAttribute("disabled") || r.getAttribute("aria-disabled") === "true";
     return s ? (n.classList.add("is-disabled"), r.setAttribute("aria-disabled", "true"), r.tagName === "BUTTON" && r.setAttribute("disabled", "true"), r.tagName !== "BUTTON" && r.setAttribute("tabindex", "-1")) : (n.classList.remove("is-disabled"), r.removeAttribute("aria-disabled"), r.tagName !== "BUTTON" && r.setAttribute("tabindex", "0")), {
       item: n,
       trigger: r,
-      panel: i,
+      panel: a,
       index: o,
-      key: rt(n, o),
+      key: ye(n, o),
       disabled: s
     };
   }).filter((n) => n !== null);
 }
-function at(t) {
-  const e = G(t.options.defaultOpen), n = e.length > 0;
+function ve(e) {
+  const t = Z(e.options.defaultOpen), n = t.length > 0;
   let o = 0;
-  t.items.forEach((r) => {
-    const i = n ? e.some((u) => ot(r, u)) : r.item.classList.contains("is-open");
-    t.options.mode === "single" && o > 0 && i && r.item.classList.remove("is-open");
-    const s = i && !r.disabled;
-    s ? (r.item.classList.add("is-open"), o += 1) : r.item.classList.remove("is-open"), L(r, s), w(r.panel, s, t.options.animate);
+  e.items.forEach((r) => {
+    const a = n ? t.some((i) => me(r, i)) : r.item.classList.contains("is-open");
+    e.options.mode === "single" && o > 0 && a && r.item.classList.remove("is-open");
+    const s = a && !r.disabled;
+    s ? (r.item.classList.add("is-open"), o += 1) : r.item.classList.remove("is-open"), N(r, s), I(r.panel, s, e.options.animate);
   });
 }
-function ct(t, e) {
-  const n = e.target;
+function Ee(e, t) {
+  const n = t.target;
   if (!(n instanceof Element)) return;
-  const o = n.closest(y);
-  if (!o || !t.triggerMap.has(o) || o.getAttribute("aria-disabled") === "true" || o.hasAttribute("disabled"))
+  const o = n.closest(H);
+  if (!o || !e.triggerMap.has(o) || o.getAttribute("aria-disabled") === "true" || o.hasAttribute("disabled"))
     return;
-  const r = t.triggerMap.get(o);
-  r && W(t, r);
+  const r = e.triggerMap.get(o);
+  r && ee(e, r);
 }
-function ut(t, e) {
-  const n = e.target;
+function he(e, t) {
+  const n = t.target;
   if (!(n instanceof Element)) return;
-  const o = n.closest(y);
-  if (!o || !t.triggerMap.has(o)) return;
-  const r = t.items.filter((u) => !u.disabled).map((u) => u.trigger), i = r.indexOf(o);
-  if (i === -1) return;
-  const s = (u) => {
-    const d = r[u];
-    d && d.focus();
+  const o = n.closest(H);
+  if (!o || !e.triggerMap.has(o)) return;
+  const r = e.items.filter((i) => !i.disabled).map((i) => i.trigger), a = r.indexOf(o);
+  if (a === -1) return;
+  const s = (i) => {
+    const u = r[i];
+    u && u.focus();
   };
-  switch (e.key) {
+  switch (t.key) {
     case "Enter":
     case " ":
     case "Spacebar":
-      e.preventDefault(), W(t, t.triggerMap.get(o));
+      t.preventDefault(), ee(e, e.triggerMap.get(o));
       break;
     case "ArrowDown":
-      e.preventDefault(), s((i + 1) % r.length);
+      t.preventDefault(), s((a + 1) % r.length);
       break;
     case "ArrowUp":
-      e.preventDefault(), s((i - 1 + r.length) % r.length);
+      t.preventDefault(), s((a - 1 + r.length) % r.length);
       break;
     case "Home":
-      e.preventDefault(), s(0);
+      t.preventDefault(), s(0);
       break;
     case "End":
-      e.preventDefault(), s(r.length - 1);
+      t.preventDefault(), s(r.length - 1);
       break;
   }
 }
-function lt(t) {
-  t.options.animate && t.items.forEach((e) => {
-    e.item.classList.contains("is-open") && (e.panel.style.maxHeight = `${e.panel.scrollHeight}px`);
+function Ae(e) {
+  e.options.animate && e.items.forEach((t) => {
+    t.item.classList.contains("is-open") && (t.panel.style.maxHeight = `${t.panel.scrollHeight}px`);
   });
 }
-function dt(t, e) {
-  m.has(t) && ft(t);
-  const n = nt(t);
-  t.setAttribute("data-icon", n.icon), t.setAttribute("data-animate", n.animate ? "true" : "false");
-  const o = st(t), r = /* @__PURE__ */ new Map();
+function Le(e, t) {
+  A.has(e) && Se(e);
+  const n = pe(e);
+  e.setAttribute("data-icon", n.icon), e.setAttribute("data-animate", n.animate ? "true" : "false");
+  const o = we(e), r = /* @__PURE__ */ new Map();
   o.forEach((s) => r.set(s.trigger, s));
-  const i = {
-    container: t,
+  const a = {
+    container: e,
     options: n,
     items: o,
     triggerMap: r,
-    clickHandler: (s) => ct(i, s),
-    keyHandler: (s) => ut(i, s),
-    resizeHandler: () => lt(i)
+    clickHandler: (s) => Ee(a, s),
+    keyHandler: (s) => he(a, s),
+    resizeHandler: () => Ae(a)
   };
-  t.addEventListener("click", i.clickHandler), t.addEventListener("keydown", i.keyHandler), window.addEventListener("resize", i.resizeHandler), at(i), m.set(t, i);
+  e.addEventListener("click", a.clickHandler), e.addEventListener("keydown", a.keyHandler), window.addEventListener("resize", a.resizeHandler), ve(a), A.set(e, a);
 }
-function ft(t) {
-  const e = m.get(t);
-  e && (t.removeEventListener("click", e.clickHandler), t.removeEventListener("keydown", e.keyHandler), window.removeEventListener("resize", e.resizeHandler), e.items.forEach((n) => {
+function Se(e) {
+  const t = A.get(e);
+  t && (e.removeEventListener("click", t.clickHandler), e.removeEventListener("keydown", t.keyHandler), window.removeEventListener("resize", t.resizeHandler), t.items.forEach((n) => {
     n.item.classList.remove("is-open"), n.trigger.removeAttribute("aria-expanded"), n.trigger.removeAttribute("aria-controls"), n.panel.removeAttribute("aria-hidden"), n.panel.removeAttribute("aria-labelledby"), n.panel.removeAttribute("role"), n.panel.style.maxHeight = "", n.panel.style.opacity = "", n.panel.style.pointerEvents = "";
-  }), m.delete(t));
+  }), A.delete(e));
 }
-function pt(t) {
-  dt(t);
+function _e(e) {
+  Le(e);
 }
-const gt = "[data-cdw-alert-close]", bt = "data-autoclose";
-function mt(t) {
-  if (!t) return null;
-  const e = Number.parseInt(t, 10);
-  return Number.isFinite(e) && e > 0 ? e : null;
+const xe = "[data-cdw-alert-close]", Te = "data-autoclose";
+function ke(e) {
+  if (!e) return null;
+  const t = Number.parseInt(e, 10);
+  return Number.isFinite(t) && t > 0 ? t : null;
 }
-function N(t) {
-  t.classList.contains("is-hiding") || (t.classList.add("is-hiding"), window.setTimeout(() => {
-    t.remove();
+function B(e) {
+  e.classList.contains("is-hiding") || (e.classList.add("is-hiding"), window.setTimeout(() => {
+    e.remove();
   }, 200));
 }
-function ht(t) {
-  const e = t.querySelector(gt);
-  e && e.addEventListener("click", () => N(t));
-  const n = mt(t.getAttribute(bt));
-  n && window.setTimeout(() => N(t), n);
+function Oe(e) {
+  const t = e.querySelector(xe);
+  t && t.addEventListener("click", () => B(e));
+  const n = ke(e.getAttribute(Te));
+  n && window.setTimeout(() => B(e), n);
 }
-function At(t) {
-  ht(t);
+function Ce(e) {
+  Oe(e);
 }
-const Et = ".cdw-navbar-panel", x = "[data-cdw-navbar-toggle]", I = "[data-cdw-navbar-close]", C = "[data-cdw-navbar-sub]", M = /* @__PURE__ */ new WeakMap();
-let R = !1;
-function vt() {
-  if (R || typeof window > "u") return;
-  const t = window.matchMedia?.("(pointer: coarse)").matches, e = window.matchMedia?.("(hover: none)").matches, n = "ontouchstart" in window || navigator.maxTouchPoints > 0;
-  (t || e || n) && (document.documentElement.classList.add("cdw-navbar-mobile"), R = !0);
+const He = "[data-cdw-gallery]", te = "[data-cdw-gallery-item], .cdw-gallery__item", ne = ".cdw-gallery__media", Ie = ".cdw-gallery__label", Ne = "[data-cdw-gallery-product]";
+let y = null;
+function qe(e) {
+  return e ? Array.from(e.classList).find(
+    (n) => n.startsWith("cdw-gallery__media--")
+  ) ?? "cdw-gallery__media--landscape" : "cdw-gallery__media--landscape";
 }
-function yt(t, e) {
-  if (t.id) return t.id;
+function Me() {
+  if (y) return y;
+  const e = document.createElement("div");
+  e.className = "cdw-gallery-focus cdw-gallery-focus--clean", e.setAttribute("aria-hidden", "true"), e.innerHTML = `
+    <div class="cdw-gallery-focus__backdrop" data-cdw-gallery-close></div>
+    <div class="cdw-gallery-focus__frame" role="dialog" aria-modal="true">
+      <button class="cdw-gallery-focus__close" type="button" data-cdw-gallery-close aria-label="Fechar"></button>
+      <div class="cdw-gallery-focus__media"></div>
+      <button class="cdw-gallery-focus__nav cdw-gallery-focus__nav--prev" type="button" data-cdw-gallery-prev aria-label="Anterior"></button>
+      <button class="cdw-gallery-focus__nav cdw-gallery-focus__nav--next" type="button" data-cdw-gallery-next aria-label="Proximo"></button>
+    </div>
+  `, document.body.appendChild(e);
+  const t = e.querySelector(".cdw-gallery-focus__frame"), n = e.querySelector(".cdw-gallery-focus__media"), o = e.querySelector("[data-cdw-gallery-prev]"), r = e.querySelector("[data-cdw-gallery-next]"), a = Array.from(e.querySelectorAll("[data-cdw-gallery-close]")), s = {
+    root: e,
+    frame: t,
+    media: n,
+    prev: o,
+    next: r,
+    closeButtons: a,
+    items: [],
+    index: 0,
+    controlsEnabled: !1,
+    lastTap: 0,
+    keyHandler: (i) => {
+      s.root.classList.contains("is-open") && (i.key === "Escape" && x(), s.controlsEnabled && i.key === "ArrowLeft" && b(s.index - 1), s.controlsEnabled && i.key === "ArrowRight" && b(s.index + 1));
+    }
+  };
+  return e.addEventListener("click", (i) => {
+    const u = i.target;
+    if (u) {
+      if (u.closest("[data-cdw-gallery-close]")) {
+        x();
+        return;
+      }
+      if (u.closest("[data-cdw-gallery-prev]")) {
+        b(s.index - 1);
+        return;
+      }
+      u.closest("[data-cdw-gallery-next]") && b(s.index + 1);
+    }
+  }), n.addEventListener("click", () => {
+    const i = Date.now();
+    i - s.lastTap < 280 && s.root.classList.toggle("is-zoomed"), s.lastTap = i;
+  }), a.forEach((i) => {
+    i.addEventListener("click", () => x());
+  }), document.addEventListener("keydown", s.keyHandler), y = s, s;
+}
+function Re(e, t) {
+  e.classList.remove("cdw-gallery-focus--clean", "cdw-gallery-focus--immersive"), t === "immersive" ? e.classList.add("cdw-gallery-focus--immersive") : e.classList.add("cdw-gallery-focus--clean");
+}
+function x() {
+  y && (y.root.classList.remove("is-open", "is-zoomed"), y.root.setAttribute("aria-hidden", "true"), document.body.classList.remove("cdw-gallery-focus-open"));
+}
+function b(e) {
+  if (!y) return;
+  const t = y, n = t.items.length;
+  if (!n) return;
+  const o = (e + n) % n, r = t.items[o], a = r.querySelector(ne), s = r.querySelector(Ie)?.textContent?.trim() ?? "Image", i = qe(a);
+  t.media.className = `cdw-gallery-focus__media ${i}`, t.media.innerHTML = `<span class="cdw-gallery__label cdw-gallery__label--focus">${s}</span>`, t.index = o;
+}
+function $e(e, t, n) {
+  const o = Me(), r = Array.from(e.querySelectorAll(te));
+  o.items = r, o.controlsEnabled = n && r.length > 1, o.prev.style.display = o.controlsEnabled ? "block" : "none", o.next.style.display = o.controlsEnabled ? "block" : "none", Re(o.root, e.getAttribute("data-cdw-gallery-focus")), o.root.classList.add("is-open"), o.root.setAttribute("aria-hidden", "false"), document.body.classList.add("cdw-gallery-focus-open");
+  const a = Math.max(0, r.indexOf(t));
+  b(a);
+}
+function Be(e, t) {
+  if (!t) return;
+  const n = e.querySelector("[data-cdw-gallery-strip-prev]"), o = e.querySelector("[data-cdw-gallery-strip-next]");
+  if (!n && !o) return;
+  const r = () => Math.max(180, t.clientWidth * 0.75);
+  n?.addEventListener("click", () => {
+    t.scrollBy({ left: -r(), behavior: "smooth" });
+  }), o?.addEventListener("click", () => {
+    t.scrollBy({ left: r(), behavior: "smooth" });
+  });
+}
+function h(e, t, n, o) {
+  if (e.classList.add("is-loading"), !t) {
+    window.setTimeout(() => {
+      e.classList.remove("is-loading"), n?.();
+    }, 220);
+    return;
+  }
+  const r = () => {
+    e.classList.remove("is-loading"), n?.();
+  };
+  if (o) {
+    t.addEventListener("load", r, { once: !0 });
+    return;
+  }
+  t.complete ? requestAnimationFrame(r) : t.addEventListener("load", r, { once: !0 });
+}
+function De(e) {
+  const t = e.querySelector(".cdw-gallery__product");
+  if (!t) return;
+  const n = t.querySelector(".cdw-gallery__product-main"), o = n?.querySelector(".cdw-gallery__media"), r = n?.querySelector(".cdw-gallery__label"), a = n?.querySelector(".cdw-gallery__media img"), s = t.querySelector(".cdw-gallery__product-info"), i = s?.querySelector(".cdw-gallery__product-info-title"), u = s?.querySelector(".cdw-gallery__product-info-desc"), c = s?.querySelector(".cdw-gallery__product-info-meta"), l = Array.from(
+    t.querySelectorAll("[data-cdw-gallery-thumb]")
+  );
+  if (!n || !o || !l.length) return;
+  const f = (d) => {
+    l.forEach((m) => m.classList.remove("is-active")), d.classList.add("is-active");
+    const p = d.getAttribute("data-label") ?? "Product", L = d.getAttribute("data-title") ?? p, v = d.getAttribute("data-desc") ?? "", q = d.getAttribute("data-meta") ?? "", ce = d.getAttribute("data-aspect") ?? "cdw-gallery__media--square", S = d.getAttribute("data-src"), le = d.getAttribute("data-alt") ?? p;
+    o.className = `cdw-gallery__media ${ce}`;
+    const _ = () => {
+      r && (r.textContent = p), i && (i.textContent = L), u && (u.textContent = v), c && (c.innerHTML = q ? q.split("|").map((m) => `<span>${m.trim()}</span>`).join("") : ""), s && s.classList.remove("is-loading");
+    };
+    if (s && s.classList.add("is-loading"), a && S) {
+      const m = new URL(S, window.location.href).href;
+      if (a.src === m) {
+        h(o, a, _);
+        return;
+      }
+      h(o, a, _, !0), a.src = S, a.alt = le;
+    } else
+      h(o, a ?? null, _);
+  };
+  l.forEach((d) => {
+    d.addEventListener("click", (p) => {
+      p.target instanceof HTMLImageElement && f(d);
+    });
+  });
+  const g = l.find((d) => d.classList.contains("is-active")) ?? l[0];
+  f(g);
+}
+function Pe(e) {
+  if (!e.matches(He)) return;
+  if (e.matches(Ne)) {
+    De(e);
+    return;
+  }
+  const t = e.querySelector(".cdw-gallery__list");
+  Be(e, t), e.addEventListener("click", (n) => {
+    const o = n.target;
+    if (!o) return;
+    const r = o.closest(te);
+    if (!r) return;
+    const a = r.querySelector(ne), s = a?.querySelector("img") ?? null;
+    a && h(a, s);
+    const i = e.getAttribute("data-cdw-gallery-controls") === "true";
+    $e(e, r, i);
+  });
+}
+const Ge = ".cdw-navbar-panel", D = "[data-cdw-navbar-toggle]", P = "[data-cdw-navbar-close]", G = "[data-cdw-navbar-sub]", z = /* @__PURE__ */ new WeakMap();
+let F = !1;
+function ze() {
+  if (F || typeof window > "u") return;
+  const e = window.matchMedia?.("(pointer: coarse)").matches, t = window.matchMedia?.("(hover: none)").matches, n = "ontouchstart" in window || navigator.maxTouchPoints > 0;
+  (e || t || n) && (document.documentElement.classList.add("cdw-navbar-mobile"), F = !0);
+}
+function Fe(e, t) {
+  if (e.id) return e.id;
   const n = `cdw-navbar-panel-${Math.random().toString(36).slice(2, 8)}`;
-  return t.id = n, e.setAttribute("data-cdw-navbar-panel", n), n;
+  return e.id = n, t.setAttribute("data-cdw-navbar-panel", n), n;
 }
-function Y(t, e) {
-  t && t.setAttribute("aria-expanded", e ? "true" : "false");
+function re(e, t) {
+  e && e.setAttribute("aria-expanded", t ? "true" : "false");
 }
-function wt(t) {
-  t.container.classList.add("is-open"), Y(t.toggle, !0);
+function Ue(e) {
+  e.container.classList.add("is-open"), re(e.toggle, !0);
 }
-function v(t) {
-  t.container.classList.remove("is-open"), Y(t.toggle, !1);
+function C(e) {
+  e.container.classList.remove("is-open"), re(e.toggle, !1);
 }
-function Lt(t) {
-  t.container.classList.contains("is-open") ? v(t) : wt(t);
+function We(e) {
+  e.container.classList.contains("is-open") ? C(e) : Ue(e);
 }
-function St(t) {
-  const e = t.closest(".cdw-navbar-item");
-  if (!e) return;
-  const n = e.classList.toggle("is-open");
-  t.setAttribute("aria-expanded", n ? "true" : "false");
+function Xe(e) {
+  const t = e.closest(".cdw-navbar-item");
+  if (!t) return;
+  const n = t.classList.toggle("is-open");
+  e.setAttribute("aria-expanded", n ? "true" : "false");
 }
-function Ot(t) {
-  if (M.has(t)) return;
-  vt();
-  const e = t.querySelector(Et), n = t.querySelector(x), o = t.querySelector(".cdw-navbar-overlay"), r = Array.from(t.querySelectorAll(I)), i = Array.from(t.querySelectorAll(C));
-  if (e) {
-    const u = yt(e, t);
-    n && (n.setAttribute("aria-controls", u), n.setAttribute("aria-expanded", "false"), n.setAttribute("aria-label", "Abrir menu"));
+function Ye(e) {
+  if (z.has(e)) return;
+  ze();
+  const t = e.querySelector(Ge), n = e.querySelector(D), o = e.querySelector(".cdw-navbar-overlay"), r = Array.from(e.querySelectorAll(P)), a = Array.from(e.querySelectorAll(G));
+  if (t) {
+    const i = Fe(t, e);
+    n && (n.setAttribute("aria-controls", i), n.setAttribute("aria-expanded", "false"), n.setAttribute("aria-label", "Abrir menu"));
   }
   const s = {
-    container: t,
-    panel: e,
+    container: e,
+    panel: t,
     toggle: n,
     overlay: o,
     closeButtons: r,
-    subToggles: i,
-    keyHandler: (u) => {
-      u.key === "Escape" && v(s);
+    subToggles: a,
+    keyHandler: (i) => {
+      i.key === "Escape" && C(s);
     },
-    clickHandler: (u) => {
-      const d = u.target;
-      if (!(d instanceof Element)) return;
-      if (d.closest(x)) {
-        Lt(s);
+    clickHandler: (i) => {
+      const u = i.target;
+      if (!(u instanceof Element)) return;
+      if (u.closest(D)) {
+        We(s);
         return;
       }
-      if (d.closest(I) || d.closest(".cdw-navbar-overlay")) {
-        v(s);
+      if (u.closest(P) || u.closest(".cdw-navbar-overlay")) {
+        C(s);
         return;
       }
-      const c = d.closest(C);
-      c && (u.preventDefault(), St(c));
+      const l = u.closest(G);
+      l && (i.preventDefault(), Xe(l));
     }
   };
-  t.addEventListener("click", s.clickHandler), t.addEventListener("keydown", s.keyHandler), M.set(t, s);
+  e.addEventListener("click", s.clickHandler), e.addEventListener("keydown", s.keyHandler), z.set(e, s);
 }
-function Tt(t) {
-  Ot(t);
+function Ke(e) {
+  Ye(e);
 }
-const Ht = ".cdw-stage-track", kt = ".cdw-stage-slide", _ = "[data-cdw-stage-prev]", $ = "[data-cdw-stage-next]", B = "[data-cdw-stage-go]", Nt = "[data-cdw-stage-counter]", xt = "[data-cdw-stage-progress]", D = /* @__PURE__ */ new WeakMap();
-function b(t, e) {
-  return t === null ? e : t === "" ? !0 : t === "true";
+const Ve = ".cdw-stage-track", je = ".cdw-stage-slide", U = "[data-cdw-stage-prev]", W = "[data-cdw-stage-next]", X = "[data-cdw-stage-go]", Ze = "[data-cdw-stage-counter]", Je = "[data-cdw-stage-progress]", Y = /* @__PURE__ */ new WeakMap();
+function E(e, t) {
+  return e === null ? t : e === "" ? !0 : e === "true";
 }
-function q(t, e) {
-  if (!t) return e;
-  const n = Number.parseInt(t, 10);
-  return Number.isFinite(n) ? n : e;
+function K(e, t) {
+  if (!e) return t;
+  const n = Number.parseInt(e, 10);
+  return Number.isFinite(n) ? n : t;
 }
-function It(t) {
-  const e = t.getAttribute("data-autoplay"), n = t.getAttribute("data-interval"), o = b(t.getAttribute("data-pause-on-hover"), !0), r = b(t.getAttribute("data-loop"), !0), i = b(t.getAttribute("data-keyboard"), !0), s = b(t.getAttribute("data-swipe"), !0), u = q(t.getAttribute("data-start"), 0), d = t.getAttribute("data-nav") === "manual" ? "manual" : "auto";
-  let a = !1, c = q(n, 5200);
-  if (e !== null) {
-    a = e === "" || e === "true";
-    const l = Number.parseInt(e, 10);
-    Number.isFinite(l) && (a = !0, c = l);
+function Qe(e) {
+  const t = e.getAttribute("data-autoplay"), n = e.getAttribute("data-interval"), o = E(e.getAttribute("data-pause-on-hover"), !0), r = E(e.getAttribute("data-loop"), !0), a = E(e.getAttribute("data-keyboard"), !0), s = E(e.getAttribute("data-swipe"), !0), i = K(e.getAttribute("data-start"), 0), u = e.getAttribute("data-nav") === "manual" ? "manual" : "auto";
+  let c = !1, l = K(n, 5200);
+  if (t !== null) {
+    c = t === "" || t === "true";
+    const f = Number.parseInt(t, 10);
+    Number.isFinite(f) && (c = !0, l = f);
   }
   return {
-    autoplay: a,
-    interval: c,
+    autoplay: c,
+    interval: l,
     pauseOnHover: o,
     loop: r,
-    keyboard: i,
+    keyboard: a,
     swipe: s,
-    startIndex: u,
-    navMode: d
+    startIndex: i,
+    navMode: u
   };
 }
-function Ct(t) {
-  const e = t.querySelector(Ht) || t, n = Array.from(e.querySelectorAll(kt));
-  return { track: e, slides: n };
+function et(e) {
+  const t = e.querySelector(Ve) || e, n = Array.from(t.querySelectorAll(je));
+  return { track: t, slides: n };
 }
-function Mt(t, e) {
-  const n = t.slides.length;
-  return n === 0 ? 0 : t.options.loop ? (e + n) % n : Math.max(0, Math.min(n - 1, e));
+function tt(e, t) {
+  const n = e.slides.length;
+  return n === 0 ? 0 : e.options.loop ? (t + n) % n : Math.max(0, Math.min(n - 1, t));
 }
-function Rt(t) {
-  const e = t.slides.length;
-  t.slides.forEach((n, o) => {
-    n.setAttribute("role", "group"), n.setAttribute("aria-roledescription", "slide"), n.setAttribute("aria-label", `${o + 1} de ${e}`), n.setAttribute("aria-hidden", o === t.current ? "false" : "true");
+function nt(e) {
+  const t = e.slides.length;
+  e.slides.forEach((n, o) => {
+    n.setAttribute("role", "group"), n.setAttribute("aria-roledescription", "slide"), n.setAttribute("aria-label", `${o + 1} de ${t}`), n.setAttribute("aria-hidden", o === e.current ? "false" : "true");
   });
 }
-function F(t) {
-  const e = t.slides.length;
-  if (t.navButtons.forEach((n, o) => {
-    o === t.current ? n.setAttribute("aria-current", "true") : n.removeAttribute("aria-current");
-  }), t.counterEl && (t.counterEl.textContent = `${t.current + 1}/${e}`), t.progressEl) {
-    const n = e > 0 ? (t.current + 1) / e * 100 : 0;
-    t.progressEl.style.width = `${n}%`;
+function oe(e) {
+  const t = e.slides.length;
+  if (e.navButtons.forEach((n, o) => {
+    o === e.current ? n.setAttribute("aria-current", "true") : n.removeAttribute("aria-current");
+  }), e.counterEl && (e.counterEl.textContent = `${e.current + 1}/${t}`), e.progressEl) {
+    const n = t > 0 ? (e.current + 1) / t * 100 : 0;
+    e.progressEl.style.width = `${n}%`;
   }
 }
-function g(t, e) {
-  const n = t.slides.length;
+function w(e, t) {
+  const n = e.slides.length;
   if (n === 0) return;
-  const o = Mt(t, e), r = t.options.loop ? (o - 1 + n) % n : o - 1, i = t.options.loop ? (o + 1) % n : o + 1;
-  t.slides.forEach((s, u) => {
-    s.classList.toggle("is-active", u === o), s.classList.toggle("is-prev", r >= 0 && u === r), s.classList.toggle("is-next", i < n && u === i);
-  }), t.current = o, Rt(t), F(t);
+  const o = tt(e, t), r = e.options.loop ? (o - 1 + n) % n : o - 1, a = e.options.loop ? (o + 1) % n : o + 1;
+  e.slides.forEach((s, i) => {
+    s.classList.toggle("is-active", i === o), s.classList.toggle("is-prev", r >= 0 && i === r), s.classList.toggle("is-next", a < n && i === a);
+  }), e.current = o, nt(e), oe(e);
 }
-function P(t) {
-  !t.options.autoplay || t.slides.length <= 1 || (t.timerId && window.clearInterval(t.timerId), t.timerId = window.setInterval(() => {
-    g(t, t.current + 1);
-  }, t.options.interval));
+function V(e) {
+  !e.options.autoplay || e.slides.length <= 1 || (e.timerId && window.clearInterval(e.timerId), e.timerId = window.setInterval(() => {
+    w(e, e.current + 1);
+  }, e.options.interval));
 }
-function _t(t) {
-  t.timerId && (window.clearInterval(t.timerId), t.timerId = null);
+function rt(e) {
+  e.timerId && (window.clearInterval(e.timerId), e.timerId = null);
 }
-function h(t) {
-  g(t, t.current - 1);
+function T(e) {
+  w(e, e.current - 1);
 }
-function A(t) {
-  g(t, t.current + 1);
+function k(e) {
+  w(e, e.current + 1);
 }
-function E(t, e) {
-  g(t, e);
+function O(e, t) {
+  w(e, t);
 }
-function $t(t) {
-  t.options.pauseOnHover && (t.container.addEventListener("mouseenter", t.enterHandler), t.container.addEventListener("mouseleave", t.leaveHandler), t.container.addEventListener("focusin", t.enterHandler), t.container.addEventListener("focusout", t.leaveHandler)), t.container.addEventListener("click", t.clickHandler), t.options.keyboard && (t.container.setAttribute("tabindex", "0"), t.container.addEventListener("keydown", t.keyHandler)), t.options.swipe && (t.container.addEventListener("touchstart", t.touchStartHandler, { passive: !0 }), t.container.addEventListener("touchend", t.touchEndHandler));
+function ot(e) {
+  e.options.pauseOnHover && (e.container.addEventListener("mouseenter", e.enterHandler), e.container.addEventListener("mouseleave", e.leaveHandler), e.container.addEventListener("focusin", e.enterHandler), e.container.addEventListener("focusout", e.leaveHandler)), e.container.addEventListener("click", e.clickHandler), e.options.keyboard && (e.container.setAttribute("tabindex", "0"), e.container.addEventListener("keydown", e.keyHandler)), e.options.swipe && (e.container.addEventListener("touchstart", e.touchStartHandler, { passive: !0 }), e.container.addEventListener("touchend", e.touchEndHandler));
 }
-function Bt(t) {
-  if (D.has(t)) return;
-  const e = It(t), { track: n, slides: o } = Ct(t), r = Array.from(t.querySelectorAll(B)), i = Array.from(t.querySelectorAll(_)), s = Array.from(t.querySelectorAll($)), u = t.querySelector(Nt), d = t.querySelector(xt), a = {
-    container: t,
+function st(e) {
+  if (Y.has(e)) return;
+  const t = Qe(e), { track: n, slides: o } = et(e), r = Array.from(e.querySelectorAll(X)), a = Array.from(e.querySelectorAll(U)), s = Array.from(e.querySelectorAll(W)), i = e.querySelector(Ze), u = e.querySelector(Je), c = {
+    container: e,
     track: n,
     slides: o,
     navButtons: r,
-    prevButtons: i,
+    prevButtons: a,
     nextButtons: s,
-    counterEl: u,
-    progressEl: d,
-    options: e,
+    counterEl: i,
+    progressEl: u,
+    options: t,
     current: 0,
     timerId: null,
     hoverCount: 0,
     touchStartX: 0,
     touchStartY: 0,
     touchActive: !1,
-    keyHandler: (c) => {
-      c.key === "ArrowLeft" ? (c.preventDefault(), h(a)) : c.key === "ArrowRight" ? (c.preventDefault(), A(a)) : c.key === "Home" ? (c.preventDefault(), E(a, 0)) : c.key === "End" && (c.preventDefault(), E(a, a.slides.length - 1));
+    keyHandler: (l) => {
+      l.key === "ArrowLeft" ? (l.preventDefault(), T(c)) : l.key === "ArrowRight" ? (l.preventDefault(), k(c)) : l.key === "Home" ? (l.preventDefault(), O(c, 0)) : l.key === "End" && (l.preventDefault(), O(c, c.slides.length - 1));
     },
-    clickHandler: (c) => {
-      const l = c.target;
-      if (!(l instanceof Element)) return;
-      const p = l.closest(_), f = l.closest($);
+    clickHandler: (l) => {
+      const f = l.target;
+      if (!(f instanceof Element)) return;
+      const g = f.closest(U), d = f.closest(W);
+      if (g) {
+        T(c);
+        return;
+      }
+      if (d) {
+        k(c);
+        return;
+      }
+      const p = f.closest(X);
       if (p) {
-        h(a);
-        return;
-      }
-      if (f) {
-        A(a);
-        return;
-      }
-      const S = l.closest(B);
-      if (S) {
-        const Z = S.getAttribute("data-cdw-stage-go"), O = Number.parseInt(Z || "", 10);
-        Number.isFinite(O) && E(a, O);
+        const L = p.getAttribute("data-cdw-stage-go"), v = Number.parseInt(L || "", 10);
+        Number.isFinite(v) && O(c, v);
       }
     },
     enterHandler: () => {
-      a.hoverCount += 1, _t(a);
+      c.hoverCount += 1, rt(c);
     },
     leaveHandler: () => {
-      a.hoverCount = Math.max(0, a.hoverCount - 1), a.hoverCount === 0 && P(a);
+      c.hoverCount = Math.max(0, c.hoverCount - 1), c.hoverCount === 0 && V(c);
     },
-    touchStartHandler: (c) => {
-      if (c.touches.length !== 1) return;
-      const l = c.touches[0];
-      a.touchActive = !0, a.touchStartX = l.clientX, a.touchStartY = l.clientY;
+    touchStartHandler: (l) => {
+      if (l.touches.length !== 1) return;
+      const f = l.touches[0];
+      c.touchActive = !0, c.touchStartX = f.clientX, c.touchStartY = f.clientY;
     },
-    touchEndHandler: (c) => {
-      if (!a.touchActive) return;
-      a.touchActive = !1;
-      const l = c.changedTouches[0], p = l.clientX - a.touchStartX, f = l.clientY - a.touchStartY;
-      Math.abs(p) < 30 || Math.abs(p) < Math.abs(f) || (p > 0 ? h(a) : A(a));
+    touchEndHandler: (l) => {
+      if (!c.touchActive) return;
+      c.touchActive = !1;
+      const f = l.changedTouches[0], g = f.clientX - c.touchStartX, d = f.clientY - c.touchStartY;
+      Math.abs(g) < 30 || Math.abs(g) < Math.abs(d) || (g > 0 ? T(c) : k(c));
     }
   };
-  if (t.setAttribute("role", "region"), t.setAttribute("aria-roledescription", "stage"), o.length > 0 && t.setAttribute("aria-live", "polite"), g(a, e.startIndex), $t(a), P(a), e.navMode === "auto" && r.length === 0 && o.length > 1) {
-    const c = document.createElement("div");
-    c.className = "cdw-stage-nav", o.forEach((l, p) => {
-      const f = document.createElement("button");
-      f.type = "button", f.className = "cdw-stage-indicator", f.setAttribute("data-cdw-stage-go", String(p)), f.setAttribute("aria-label", `Ir para o slide ${p + 1}`), c.appendChild(f), a.navButtons.push(f);
-    }), t.appendChild(c), F(a);
+  if (e.setAttribute("role", "region"), e.setAttribute("aria-roledescription", "stage"), o.length > 0 && e.setAttribute("aria-live", "polite"), w(c, t.startIndex), ot(c), V(c), t.navMode === "auto" && r.length === 0 && o.length > 1) {
+    const l = document.createElement("div");
+    l.className = "cdw-stage-nav", o.forEach((f, g) => {
+      const d = document.createElement("button");
+      d.type = "button", d.className = "cdw-stage-indicator", d.setAttribute("data-cdw-stage-go", String(g)), d.setAttribute("aria-label", `Ir para o slide ${g + 1}`), l.appendChild(d), c.navButtons.push(d);
+    }), e.appendChild(l), oe(c);
   }
-  D.set(t, a);
+  Y.set(e, c);
 }
-function Dt(t) {
-  Bt(t);
+function at(e) {
+  st(e);
 }
-const K = "data-cdw-fw-initialized", qt = {
+const se = "data-cdw-fw-initialized", it = {
   childList: !0,
   subtree: !0
-}, Pt = [
+}, ct = [
   {
     name: "accordion",
     selector: "[data-cdw-accordion]",
-    bind: pt
+    bind: _e
   },
   {
     name: "alert",
     selector: "[data-cdw-alert]",
-    bind: At
+    bind: Ce
+  },
+  {
+    name: "gallery",
+    selector: "[data-cdw-gallery]",
+    bind: Pe
   },
   {
     name: "navbar",
     selector: "[data-cdw-navbar]",
-    bind: Tt
+    bind: Ke
   },
   {
     name: "stage",
     selector: "[data-cdw-stage]",
-    bind: Dt
+    bind: at
   }
 ];
-function zt(t) {
-  return t ?? document;
+function lt(e) {
+  return e ?? document;
 }
-function V(t) {
-  const e = t.getAttribute(K);
-  return e ? new Set(e.split(" ").filter(Boolean)) : /* @__PURE__ */ new Set();
+function ae(e) {
+  const t = e.getAttribute(se);
+  return t ? new Set(t.split(" ").filter(Boolean)) : /* @__PURE__ */ new Set();
 }
-function Gt(t, e) {
-  const n = V(t);
-  n.has(e) || (n.add(e), t.setAttribute(K, Array.from(n).join(" ")));
+function dt(e, t) {
+  const n = ae(e);
+  n.has(t) || (n.add(t), e.setAttribute(se, Array.from(n).join(" ")));
 }
-function Ut(t, e) {
-  return !V(t).has(e);
+function ut(e, t) {
+  return !ae(e).has(t);
 }
-function Xt(t, e) {
-  const n = Array.from(t.querySelectorAll(e));
-  return t instanceof HTMLElement && t.matches(e) && n.unshift(t), n;
+function ft(e, t) {
+  const n = Array.from(e.querySelectorAll(t));
+  return e instanceof HTMLElement && e.matches(t) && n.unshift(e), n;
 }
-function j(t) {
-  const e = zt(t);
-  for (const n of Pt) {
-    const o = Xt(e, n.selector);
+function ie(e) {
+  const t = lt(e);
+  for (const n of ct) {
+    const o = ft(t, n.selector);
     for (const r of o)
-      if (Ut(r, n.name))
+      if (ut(r, n.name))
         try {
-          n.bind(r), Gt(r, n.name);
-        } catch (i) {
-          console.warn(`cdw-fw init issue: ${n.name}`, i);
+          n.bind(r), dt(r, n.name);
+        } catch (a) {
+          console.warn(`cdw-fw init issue: ${n.name}`, a);
         }
   }
 }
-function Wt() {
+function gt() {
   if (typeof MutationObserver > "u") return;
-  const t = document.body;
-  if (!t) return;
+  const e = document.body;
+  if (!e) return;
   new MutationObserver((n) => {
     for (const o of n)
       o.addedNodes.forEach((r) => {
-        r instanceof HTMLElement && j(r);
+        r instanceof HTMLElement && ie(r);
       });
-  }).observe(t, qt);
+  }).observe(e, it);
 }
-function z() {
-  j(document), Wt();
+function j() {
+  ie(document), gt();
 }
-typeof window < "u" && (document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", () => z(), { once: !0 }) : z());
-const Yt = "0.1.0";
+typeof window < "u" && (document.readyState === "loading" ? document.addEventListener("DOMContentLoaded", () => j(), { once: !0 }) : j());
+const pt = "0.1.0";
 export {
-  Yt as CDW_FW_VERSION
+  pt as CDW_FW_VERSION
 };

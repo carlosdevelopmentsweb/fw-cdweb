@@ -1,5 +1,6 @@
 import { bindAccordion } from "../components/accordion";
 import { bindAlert } from "../components/alert";
+import { bindGallery } from "../components/gallery";
 import { bindNavbar } from "../components/navbar";
 import { bindStage } from "../components/stage";
 
@@ -24,6 +25,11 @@ const defs = [
     name: "alert",
     selector: "[data-cdw-alert]",
     bind: bindAlert,
+  },
+  {
+    name: "gallery",
+    selector: "[data-cdw-gallery]",
+    bind: bindGallery,
   },
   {
     name: "navbar",
