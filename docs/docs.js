@@ -4036,6 +4036,776 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
 
 `,
 
+  navbars: `<section id="navbars" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+  <div class="cdw-fw-docs-section-head">
+    <h2 class="cdw-fw-docs-section-title">NavBars</h2>
+    <p class="cdw-fw-docs-lead">NavBars premium para identidade e navegacao, com auto-init e responsividade nativa.</p>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="navbars-conceito" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Conceito</h3>
+    <p class="cdw-fw-docs-subdesc">NavBar CDWeb e a camada de identidade do produto, com controle total via classes e data-attributes.</p>
+    <div class="cdw-fw-docs-classlist">
+      <span>cdw-navbar</span>
+      <span>cdw-navbar__brand</span>
+      <span>cdw-navbar__links</span>
+      <span>cdw-navbar__actions</span>
+      <span>data-cdw-navbar</span>
+      <span>data-cdw-navbar-toggle</span>
+      <span>data-cdw-navbar-close</span>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="navbars-estrutura" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Estrutura</h3>
+
+  <div class="cdw-fw-docs-example">
+    <div class="cdw-fw-docs-example-head">
+      <div class="cdw-fw-docs-example-title">Estrutura base</div>
+      <div class="cdw-fw-docs-badge">Base</div>
+    </div>
+    <div class="cdw-fw-docs-preview"><div class="cdw-navbar cdw-navbar--prime cdw-navbar--soft cdw-fw-accent-ocean" data-cdw-navbar>
+  <div class="cdw-navbar__inner">
+    <div class="cdw-navbar__brand">
+      <div class="cdw-navbar__logo"></div>
+      <span>CDWeb</span>
+    </div>
+    <div class="cdw-navbar__panel">
+      <div class="cdw-navbar__panel-top">
+        <div class="cdw-navbar__brand">
+          <div class="cdw-navbar__logo"></div>
+          <span>CDWeb</span>
+        </div>
+        <button class="cdw-navbar__close" type="button" data-cdw-navbar-close></button>
+      </div>
+<div class="cdw-navbar__cluster cdw-navbar__cluster--center"><nav class="cdw-navbar__links cdw-navbar__links--pill"><a class=\"cdw-navbar__link\" href=\"#\">Inicio</a><a class=\"cdw-navbar__link\" href=\"#\">Servicos</a><a class=\"cdw-navbar__link\" href=\"#\">Cases</a><a class=\"cdw-navbar__link\" href=\"#\">Contato</a></nav></div>
+<div class="cdw-navbar__cluster cdw-navbar__cluster--end">
+        <div class="cdw-navbar__meta">
+          <span class="cdw-navbar__chip">Premium</span>
+          Navegacao principal
+        </div>
+        <div class="cdw-navbar__actions cdw-navbar__actions--compact"><button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded">Entrar</button><button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded">Contato</button></div>
+      </div>
+    </div>
+    <button class="cdw-navbar__toggle" type="button" data-cdw-navbar-toggle></button>
+  </div>
+  <div class="cdw-navbar-overlay" data-cdw-navbar-close></div>
+</div></div>
+    <div class="cdw-fw-docs-codeblock">
+      <div class="cdw-fw-docs-code-head">
+        <div class="cdw-fw-docs-code-title">HTML</div>
+        <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+      </div>
+      <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-navbar cdw-navbar--prime cdw-navbar--soft cdw-fw-accent-ocean" data-cdw-navbar&gt;
+  &lt;div class="cdw-navbar__inner"&gt;
+    &lt;div class="cdw-navbar__brand"&gt;
+      &lt;div class="cdw-navbar__logo"&gt;&lt;/div&gt;
+      &lt;span&gt;CDWeb&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-navbar__panel"&gt;
+      &lt;div class="cdw-navbar__panel-top"&gt;
+        &lt;div class="cdw-navbar__brand"&gt;
+          &lt;div class="cdw-navbar__logo"&gt;&lt;/div&gt;
+          &lt;span&gt;CDWeb&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;button class="cdw-navbar__close" type="button" data-cdw-navbar-close&gt;&lt;/button&gt;
+      &lt;/div&gt;
+&lt;div class="cdw-navbar__cluster cdw-navbar__cluster--center"&gt;&lt;nav class="cdw-navbar__links cdw-navbar__links--pill"&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Inicio&lt;/a&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Servicos&lt;/a&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Cases&lt;/a&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Contato&lt;/a&gt;&lt;/nav&gt;&lt;/div&gt;
+&lt;div class="cdw-navbar__cluster cdw-navbar__cluster--end"&gt;
+        &lt;div class="cdw-navbar__meta"&gt;
+          &lt;span class="cdw-navbar__chip"&gt;Premium&lt;/span&gt;
+          Navegacao principal
+        &lt;/div&gt;
+        &lt;div class="cdw-navbar__actions cdw-navbar__actions--compact"&gt;&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Entrar&lt;/button&gt;&lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Contato&lt;/button&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class="cdw-navbar__toggle" type="button" data-cdw-navbar-toggle&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-navbar-overlay" data-cdw-navbar-close&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+  </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="navbars-modelos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Modelos</h3>
+
+  <div class="cdw-fw-docs-example">
+    <div class="cdw-fw-docs-example-head">
+      <div class="cdw-fw-docs-example-title">NavBar Prime</div>
+      <div class="cdw-fw-docs-badge">Institucional</div>
+    </div>
+    <div class="cdw-fw-docs-preview"><div class="cdw-navbar cdw-navbar--prime cdw-navbar--soft cdw-fw-accent-ocean" data-cdw-navbar>
+  <div class="cdw-navbar__inner">
+    <div class="cdw-navbar__brand">
+      <div class="cdw-navbar__logo"></div>
+      <span>CDWeb</span>
+    </div>
+    <div class="cdw-navbar__panel">
+      <div class="cdw-navbar__panel-top">
+        <div class="cdw-navbar__brand">
+          <div class="cdw-navbar__logo"></div>
+          <span>CDWeb</span>
+        </div>
+        <button class="cdw-navbar__close" type="button" data-cdw-navbar-close></button>
+      </div>
+<div class="cdw-navbar__cluster cdw-navbar__cluster--center"><nav class="cdw-navbar__links cdw-navbar__links--pill"><a class=\"cdw-navbar__link\" href=\"#\">Inicio</a><a class=\"cdw-navbar__link\" href=\"#\">Servicos</a><a class=\"cdw-navbar__link\" href=\"#\">Cases</a><a class=\"cdw-navbar__link\" href=\"#\">Contato</a></nav></div>
+<div class="cdw-navbar__cluster cdw-navbar__cluster--end">
+        <div class="cdw-navbar__meta">
+          <span class="cdw-navbar__chip">Premium</span>
+          Navegacao principal
+        </div>
+        <div class="cdw-navbar__actions cdw-navbar__actions--compact"><button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded">Entrar</button><button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded">Contato</button></div>
+      </div>
+    </div>
+    <button class="cdw-navbar__toggle" type="button" data-cdw-navbar-toggle></button>
+  </div>
+  <div class="cdw-navbar-overlay" data-cdw-navbar-close></div>
+</div></div>
+    <div class="cdw-fw-docs-codeblock">
+      <div class="cdw-fw-docs-code-head">
+        <div class="cdw-fw-docs-code-title">HTML</div>
+        <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+      </div>
+      <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-navbar cdw-navbar--prime cdw-navbar--soft cdw-fw-accent-ocean" data-cdw-navbar&gt;
+  &lt;div class="cdw-navbar__inner"&gt;
+    &lt;div class="cdw-navbar__brand"&gt;
+      &lt;div class="cdw-navbar__logo"&gt;&lt;/div&gt;
+      &lt;span&gt;CDWeb&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-navbar__panel"&gt;
+      &lt;div class="cdw-navbar__panel-top"&gt;
+        &lt;div class="cdw-navbar__brand"&gt;
+          &lt;div class="cdw-navbar__logo"&gt;&lt;/div&gt;
+          &lt;span&gt;CDWeb&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;button class="cdw-navbar__close" type="button" data-cdw-navbar-close&gt;&lt;/button&gt;
+      &lt;/div&gt;
+&lt;div class="cdw-navbar__cluster cdw-navbar__cluster--center"&gt;&lt;nav class="cdw-navbar__links cdw-navbar__links--pill"&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Inicio&lt;/a&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Servicos&lt;/a&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Cases&lt;/a&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Contato&lt;/a&gt;&lt;/nav&gt;&lt;/div&gt;
+&lt;div class="cdw-navbar__cluster cdw-navbar__cluster--end"&gt;
+        &lt;div class="cdw-navbar__meta"&gt;
+          &lt;span class="cdw-navbar__chip"&gt;Premium&lt;/span&gt;
+          Navegacao principal
+        &lt;/div&gt;
+        &lt;div class="cdw-navbar__actions cdw-navbar__actions--compact"&gt;&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Entrar&lt;/button&gt;&lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Contato&lt;/button&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class="cdw-navbar__toggle" type="button" data-cdw-navbar-toggle&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-navbar-overlay" data-cdw-navbar-close&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-example">
+    <div class="cdw-fw-docs-example-head">
+      <div class="cdw-fw-docs-example-title">NavBar Action</div>
+      <div class="cdw-fw-docs-badge">CTA</div>
+    </div>
+    <div class="cdw-fw-docs-preview"><div class="cdw-navbar cdw-navbar--action cdw-navbar--solid cdw-fw-accent-ember" data-cdw-navbar>
+  <div class="cdw-navbar__inner">
+    <div class="cdw-navbar__brand">
+      <div class="cdw-navbar__logo"></div>
+      <span>Atlas</span>
+    </div>
+    <div class="cdw-navbar__panel">
+      <div class="cdw-navbar__panel-top">
+        <div class="cdw-navbar__brand">
+          <div class="cdw-navbar__logo"></div>
+          <span>Atlas</span>
+        </div>
+        <button class="cdw-navbar__close" type="button" data-cdw-navbar-close></button>
+      </div>
+<div class="cdw-navbar__cluster"><nav class="cdw-navbar__links cdw-navbar__links--pill"><a class=\"cdw-navbar__link\" href=\"#\">Produto</a><a class=\"cdw-navbar__link\" href=\"#\">Precos</a><a class=\"cdw-navbar__link\" href=\"#\">Equipe</a><a class=\"cdw-navbar__link\" href=\"#\">Blog</a></nav></div>
+<div class="cdw-navbar__cluster cdw-navbar__cluster--end">
+        <div class="cdw-navbar__meta">
+          <span class="cdw-navbar__chip">Live</span>
+          Conversao alta
+        </div>
+        <div class="cdw-navbar__actions cdw-navbar__actions--pill"><button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded">Agendar demo</button><button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded">Entrar</button></div>
+      </div>
+    </div>
+    <button class="cdw-navbar__toggle" type="button" data-cdw-navbar-toggle></button>
+  </div>
+  <div class="cdw-navbar-overlay" data-cdw-navbar-close></div>
+</div></div>
+    <div class="cdw-fw-docs-codeblock">
+      <div class="cdw-fw-docs-code-head">
+        <div class="cdw-fw-docs-code-title">HTML</div>
+        <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+      </div>
+      <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-navbar cdw-navbar--action cdw-navbar--solid cdw-fw-accent-ember" data-cdw-navbar&gt;
+  &lt;div class="cdw-navbar__inner"&gt;
+    &lt;div class="cdw-navbar__brand"&gt;
+      &lt;div class="cdw-navbar__logo"&gt;&lt;/div&gt;
+      &lt;span&gt;Atlas&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-navbar__panel"&gt;
+      &lt;div class="cdw-navbar__panel-top"&gt;
+        &lt;div class="cdw-navbar__brand"&gt;
+          &lt;div class="cdw-navbar__logo"&gt;&lt;/div&gt;
+          &lt;span&gt;Atlas&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;button class="cdw-navbar__close" type="button" data-cdw-navbar-close&gt;&lt;/button&gt;
+      &lt;/div&gt;
+&lt;div class="cdw-navbar__cluster"&gt;&lt;nav class="cdw-navbar__links cdw-navbar__links--pill"&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Produto&lt;/a&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Precos&lt;/a&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Equipe&lt;/a&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Blog&lt;/a&gt;&lt;/nav&gt;&lt;/div&gt;
+&lt;div class="cdw-navbar__cluster cdw-navbar__cluster--end"&gt;
+        &lt;div class="cdw-navbar__meta"&gt;
+          &lt;span class="cdw-navbar__chip"&gt;Live&lt;/span&gt;
+          Conversao alta
+        &lt;/div&gt;
+        &lt;div class="cdw-navbar__actions cdw-navbar__actions--pill"&gt;&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Agendar demo&lt;/button&gt;&lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Entrar&lt;/button&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class="cdw-navbar__toggle" type="button" data-cdw-navbar-toggle&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-navbar-overlay" data-cdw-navbar-close&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-example">
+    <div class="cdw-fw-docs-example-head">
+      <div class="cdw-fw-docs-example-title">NavBar Iconic</div>
+      <div class="cdw-fw-docs-badge">Icones</div>
+    </div>
+    <div class="cdw-fw-docs-preview"><div class="cdw-navbar cdw-navbar--iconic cdw-navbar--soft cdw-fw-accent-violet" data-cdw-navbar>
+  <div class="cdw-navbar__inner">
+    <div class="cdw-navbar__brand">
+      <div class="cdw-navbar__logo"></div>
+      <span>Aurora</span>
+    </div>
+    <div class="cdw-navbar__panel">
+      <div class="cdw-navbar__panel-top">
+        <div class="cdw-navbar__brand">
+          <div class="cdw-navbar__logo"></div>
+          <span>Aurora</span>
+        </div>
+        <button class="cdw-navbar__close" type="button" data-cdw-navbar-close></button>
+      </div>
+<div class="cdw-navbar__cluster cdw-navbar__cluster--center"><nav class="cdw-navbar__links cdw-navbar__links--iconic"><a class=\"cdw-navbar__link\" href=\"#\"><span class=\"cdw-navbar__icon\">H</span>Home</a><a class=\"cdw-navbar__link\" href=\"#\"><span class=\"cdw-navbar__icon\">D</span>Dados</a><a class=\"cdw-navbar__link\" href=\"#\"><span class=\"cdw-navbar__icon\">A</span>Analise</a><a class=\"cdw-navbar__link\" href=\"#\"><span class=\"cdw-navbar__icon\">S</span>Suporte</a></nav></div>
+<div class="cdw-navbar__cluster cdw-navbar__cluster--end">
+        <div class="cdw-navbar__actions"><button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded">Abrir app</button></div>
+      </div>
+    </div>
+    <button class="cdw-navbar__toggle" type="button" data-cdw-navbar-toggle></button>
+  </div>
+  <div class="cdw-navbar-overlay" data-cdw-navbar-close></div>
+</div></div>
+    <div class="cdw-fw-docs-codeblock">
+      <div class="cdw-fw-docs-code-head">
+        <div class="cdw-fw-docs-code-title">HTML</div>
+        <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+      </div>
+      <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-navbar cdw-navbar--iconic cdw-navbar--soft cdw-fw-accent-violet" data-cdw-navbar&gt;
+  &lt;div class="cdw-navbar__inner"&gt;
+    &lt;div class="cdw-navbar__brand"&gt;
+      &lt;div class="cdw-navbar__logo"&gt;&lt;/div&gt;
+      &lt;span&gt;Aurora&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-navbar__panel"&gt;
+      &lt;div class="cdw-navbar__panel-top"&gt;
+        &lt;div class="cdw-navbar__brand"&gt;
+          &lt;div class="cdw-navbar__logo"&gt;&lt;/div&gt;
+          &lt;span&gt;Aurora&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;button class="cdw-navbar__close" type="button" data-cdw-navbar-close&gt;&lt;/button&gt;
+      &lt;/div&gt;
+&lt;div class="cdw-navbar__cluster cdw-navbar__cluster--center"&gt;&lt;nav class="cdw-navbar__links cdw-navbar__links--iconic"&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;&lt;span class=\"cdw-navbar__icon\"&gt;H&lt;/span&gt;Home&lt;/a&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;&lt;span class=\"cdw-navbar__icon\"&gt;D&lt;/span&gt;Dados&lt;/a&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;&lt;span class=\"cdw-navbar__icon\"&gt;A&lt;/span&gt;Analise&lt;/a&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;&lt;span class=\"cdw-navbar__icon\"&gt;S&lt;/span&gt;Suporte&lt;/a&gt;&lt;/nav&gt;&lt;/div&gt;
+&lt;div class="cdw-navbar__cluster cdw-navbar__cluster--end"&gt;
+        &lt;div class="cdw-navbar__actions"&gt;&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Abrir app&lt;/button&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class="cdw-navbar__toggle" type="button" data-cdw-navbar-toggle&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-navbar-overlay" data-cdw-navbar-close&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-example">
+    <div class="cdw-fw-docs-example-head">
+      <div class="cdw-fw-docs-example-title">NavBar Search</div>
+      <div class="cdw-fw-docs-badge">Busca</div>
+    </div>
+    <div class="cdw-fw-docs-preview"><div class="cdw-navbar cdw-navbar--search cdw-navbar--soft cdw-fw-accent-sky" data-cdw-navbar>
+  <div class="cdw-navbar__inner">
+    <div class="cdw-navbar__brand">
+      <div class="cdw-navbar__logo"></div>
+      <span>Helix</span>
+    </div>
+    <div class="cdw-navbar__panel">
+      <div class="cdw-navbar__panel-top">
+        <div class="cdw-navbar__brand">
+          <div class="cdw-navbar__logo"></div>
+          <span>Helix</span>
+        </div>
+        <button class="cdw-navbar__close" type="button" data-cdw-navbar-close></button>
+      </div>
+<div class="cdw-navbar__cluster"><nav class="cdw-navbar__links cdw-navbar__links--underline"><a class=\"cdw-navbar__link\" href=\"#\">Painel</a><a class=\"cdw-navbar__link\" href=\"#\">Insights</a><a class=\"cdw-navbar__link\" href=\"#\">Relatorios</a></nav></div>
+<div class="cdw-navbar__cluster cdw-navbar__cluster--center">
+      <div class="cdw-navbar__search cdw-navbar__search--wide">
+        <input type="text" placeholder="Buscar no CDWeb" />
+      </div>
+    </div>
+<div class="cdw-navbar__cluster cdw-navbar__cluster--end">
+        <div class="cdw-navbar__actions"><button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded">Nova busca</button></div>
+        <span class="cdw-navbar__chip">Beta</span>
+      </div>
+    </div>
+    <button class="cdw-navbar__toggle" type="button" data-cdw-navbar-toggle></button>
+  </div>
+  <div class="cdw-navbar-overlay" data-cdw-navbar-close></div>
+</div></div>
+    <div class="cdw-fw-docs-codeblock">
+      <div class="cdw-fw-docs-code-head">
+        <div class="cdw-fw-docs-code-title">HTML</div>
+        <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+      </div>
+      <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-navbar cdw-navbar--search cdw-navbar--soft cdw-fw-accent-sky" data-cdw-navbar&gt;
+  &lt;div class="cdw-navbar__inner"&gt;
+    &lt;div class="cdw-navbar__brand"&gt;
+      &lt;div class="cdw-navbar__logo"&gt;&lt;/div&gt;
+      &lt;span&gt;Helix&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-navbar__panel"&gt;
+      &lt;div class="cdw-navbar__panel-top"&gt;
+        &lt;div class="cdw-navbar__brand"&gt;
+          &lt;div class="cdw-navbar__logo"&gt;&lt;/div&gt;
+          &lt;span&gt;Helix&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;button class="cdw-navbar__close" type="button" data-cdw-navbar-close&gt;&lt;/button&gt;
+      &lt;/div&gt;
+&lt;div class="cdw-navbar__cluster"&gt;&lt;nav class="cdw-navbar__links cdw-navbar__links--underline"&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Painel&lt;/a&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Insights&lt;/a&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Relatorios&lt;/a&gt;&lt;/nav&gt;&lt;/div&gt;
+&lt;div class="cdw-navbar__cluster cdw-navbar__cluster--center"&gt;
+      &lt;div class="cdw-navbar__search cdw-navbar__search--wide"&gt;
+        &lt;input type="text" placeholder="Buscar no CDWeb" /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+&lt;div class="cdw-navbar__cluster cdw-navbar__cluster--end"&gt;
+        &lt;div class="cdw-navbar__actions"&gt;&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Nova busca&lt;/button&gt;&lt;/div&gt;
+        &lt;span class="cdw-navbar__chip"&gt;Beta&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class="cdw-navbar__toggle" type="button" data-cdw-navbar-toggle&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-navbar-overlay" data-cdw-navbar-close&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-example">
+    <div class="cdw-fw-docs-example-head">
+      <div class="cdw-fw-docs-example-title">NavBar Multi-Level</div>
+      <div class="cdw-fw-docs-badge">Hierarquia</div>
+    </div>
+    <div class="cdw-fw-docs-preview"><div class="cdw-navbar cdw-navbar--multi cdw-navbar--soft cdw-fw-accent-mint" data-cdw-navbar>
+  <div class="cdw-navbar__inner">
+    <div class="cdw-navbar__brand">
+      <div class="cdw-navbar__logo"></div>
+      <span>Orbit</span>
+    </div>
+    <div class="cdw-navbar__panel">
+      <div class="cdw-navbar__panel-top">
+        <div class="cdw-navbar__brand">
+          <div class="cdw-navbar__logo"></div>
+          <span>Orbit</span>
+        </div>
+        <button class="cdw-navbar__close" type="button" data-cdw-navbar-close></button>
+      </div>
+<div class="cdw-navbar__cluster">
+        <div class="cdw-navbar-item">
+          <a class="cdw-navbar__link" href="#" data-cdw-navbar-sub aria-expanded="false">Produtos</a>
+          <div class="cdw-navbar__submenu">
+            <a href="#">Core</a>
+            <a href="#">Cloud</a>
+            <a href="#">Analytics</a>
+          </div>
+        </div>
+        <a class="cdw-navbar__link" href="#">Solucao</a>
+        <a class="cdw-navbar__link" href="#">Mercados</a>
+        <a class="cdw-navbar__link" href="#">Contato</a>
+      </div>
+<div class="cdw-navbar__cluster cdw-navbar__cluster--end">
+        <div class="cdw-navbar__actions"><button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded">Agenda</button></div>
+      </div>
+    </div>
+    <button class="cdw-navbar__toggle" type="button" data-cdw-navbar-toggle></button>
+  </div>
+  <div class="cdw-navbar-overlay" data-cdw-navbar-close></div>
+</div></div>
+    <div class="cdw-fw-docs-codeblock">
+      <div class="cdw-fw-docs-code-head">
+        <div class="cdw-fw-docs-code-title">HTML</div>
+        <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+      </div>
+      <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-navbar cdw-navbar--multi cdw-navbar--soft cdw-fw-accent-mint" data-cdw-navbar&gt;
+  &lt;div class="cdw-navbar__inner"&gt;
+    &lt;div class="cdw-navbar__brand"&gt;
+      &lt;div class="cdw-navbar__logo"&gt;&lt;/div&gt;
+      &lt;span&gt;Orbit&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-navbar__panel"&gt;
+      &lt;div class="cdw-navbar__panel-top"&gt;
+        &lt;div class="cdw-navbar__brand"&gt;
+          &lt;div class="cdw-navbar__logo"&gt;&lt;/div&gt;
+          &lt;span&gt;Orbit&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;button class="cdw-navbar__close" type="button" data-cdw-navbar-close&gt;&lt;/button&gt;
+      &lt;/div&gt;
+&lt;div class="cdw-navbar__cluster"&gt;
+        &lt;div class="cdw-navbar-item"&gt;
+          &lt;a class="cdw-navbar__link" href="#" data-cdw-navbar-sub aria-expanded="false"&gt;Produtos&lt;/a&gt;
+          &lt;div class="cdw-navbar__submenu"&gt;
+            &lt;a href="#"&gt;Core&lt;/a&gt;
+            &lt;a href="#"&gt;Cloud&lt;/a&gt;
+            &lt;a href="#"&gt;Analytics&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;a class="cdw-navbar__link" href="#"&gt;Solucao&lt;/a&gt;
+        &lt;a class="cdw-navbar__link" href="#"&gt;Mercados&lt;/a&gt;
+        &lt;a class="cdw-navbar__link" href="#"&gt;Contato&lt;/a&gt;
+      &lt;/div&gt;
+&lt;div class="cdw-navbar__cluster cdw-navbar__cluster--end"&gt;
+        &lt;div class="cdw-navbar__actions"&gt;&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Agenda&lt;/button&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class="cdw-navbar__toggle" type="button" data-cdw-navbar-toggle&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-navbar-overlay" data-cdw-navbar-close&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-example">
+    <div class="cdw-fw-docs-example-head">
+      <div class="cdw-fw-docs-example-title">NavBar Dashboard</div>
+      <div class="cdw-fw-docs-badge">Sistema</div>
+    </div>
+    <div class="cdw-fw-docs-preview"><div class="cdw-navbar cdw-navbar--dashboard cdw-navbar--contrast cdw-fw-accent-graphite" data-cdw-navbar>
+  <div class="cdw-navbar__inner">
+    <div class="cdw-navbar__brand">
+      <div class="cdw-navbar__logo"></div>
+      <span>Control</span>
+    </div>
+    <div class="cdw-navbar__panel">
+      <div class="cdw-navbar__panel-top">
+        <div class="cdw-navbar__brand">
+          <div class="cdw-navbar__logo"></div>
+          <span>Control</span>
+        </div>
+        <button class="cdw-navbar__close" type="button" data-cdw-navbar-close></button>
+      </div>
+<div class="cdw-navbar__cluster"><nav class="cdw-navbar__links cdw-navbar__links--tabs"><a class=\"cdw-navbar__link\" href=\"#\">Visao</a><a class=\"cdw-navbar__link\" href=\"#\">Fluxos</a><a class=\"cdw-navbar__link\" href=\"#\">Logs</a><a class=\"cdw-navbar__link\" href=\"#\">Equipe</a></nav></div>
+<div class="cdw-navbar__cluster cdw-navbar__cluster--center">
+        <div class="cdw-navbar__meta">
+          <span class="cdw-navbar__chip">Online</span>
+          <span class="cdw-navbar__status-dot"></span>
+          Sistema estavel
+        </div>
+      </div>
+<div class="cdw-navbar__cluster cdw-navbar__cluster--end">
+        <div class="cdw-navbar__actions"><button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded">Criar</button><button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded">Relatorios</button></div>
+      </div>
+    </div>
+    <button class="cdw-navbar__toggle" type="button" data-cdw-navbar-toggle></button>
+  </div>
+  <div class="cdw-navbar-overlay" data-cdw-navbar-close></div>
+</div></div>
+    <div class="cdw-fw-docs-codeblock">
+      <div class="cdw-fw-docs-code-head">
+        <div class="cdw-fw-docs-code-title">HTML</div>
+        <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+      </div>
+      <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-navbar cdw-navbar--dashboard cdw-navbar--contrast cdw-fw-accent-graphite" data-cdw-navbar&gt;
+  &lt;div class="cdw-navbar__inner"&gt;
+    &lt;div class="cdw-navbar__brand"&gt;
+      &lt;div class="cdw-navbar__logo"&gt;&lt;/div&gt;
+      &lt;span&gt;Control&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-navbar__panel"&gt;
+      &lt;div class="cdw-navbar__panel-top"&gt;
+        &lt;div class="cdw-navbar__brand"&gt;
+          &lt;div class="cdw-navbar__logo"&gt;&lt;/div&gt;
+          &lt;span&gt;Control&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;button class="cdw-navbar__close" type="button" data-cdw-navbar-close&gt;&lt;/button&gt;
+      &lt;/div&gt;
+&lt;div class="cdw-navbar__cluster"&gt;&lt;nav class="cdw-navbar__links cdw-navbar__links--tabs"&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Visao&lt;/a&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Fluxos&lt;/a&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Logs&lt;/a&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Equipe&lt;/a&gt;&lt;/nav&gt;&lt;/div&gt;
+&lt;div class="cdw-navbar__cluster cdw-navbar__cluster--center"&gt;
+        &lt;div class="cdw-navbar__meta"&gt;
+          &lt;span class="cdw-navbar__chip"&gt;Online&lt;/span&gt;
+          &lt;span class="cdw-navbar__status-dot"&gt;&lt;/span&gt;
+          Sistema estavel
+        &lt;/div&gt;
+      &lt;/div&gt;
+&lt;div class="cdw-navbar__cluster cdw-navbar__cluster--end"&gt;
+        &lt;div class="cdw-navbar__actions"&gt;&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Criar&lt;/button&gt;&lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Relatorios&lt;/button&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class="cdw-navbar__toggle" type="button" data-cdw-navbar-toggle&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-navbar-overlay" data-cdw-navbar-close&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-example">
+    <div class="cdw-fw-docs-example-head">
+      <div class="cdw-fw-docs-example-title">NavBar Minimal</div>
+      <div class="cdw-fw-docs-badge">Clean</div>
+    </div>
+    <div class="cdw-fw-docs-preview"><div class="cdw-navbar cdw-navbar--minimal cdw-navbar--soft cdw-fw-accent-slate" data-cdw-navbar>
+  <div class="cdw-navbar__inner">
+    <div class="cdw-navbar__brand">
+      <div class="cdw-navbar__logo"></div>
+      <span>Mono</span>
+    </div>
+    <div class="cdw-navbar__panel">
+      <div class="cdw-navbar__panel-top">
+        <div class="cdw-navbar__brand">
+          <div class="cdw-navbar__logo"></div>
+          <span>Mono</span>
+        </div>
+        <button class="cdw-navbar__close" type="button" data-cdw-navbar-close></button>
+      </div>
+<div class="cdw-navbar__cluster cdw-navbar__cluster--center"><nav class="cdw-navbar__links cdw-navbar__links--underline"><a class=\"cdw-navbar__link\" href=\"#\">Sobre</a><a class=\"cdw-navbar__link\" href=\"#\">Manifesto</a><a class=\"cdw-navbar__link\" href=\"#\">Trabalho</a><a class=\"cdw-navbar__link\" href=\"#\">Contato</a></nav></div>
+    </div>
+    <button class="cdw-navbar__toggle" type="button" data-cdw-navbar-toggle></button>
+  </div>
+  <div class="cdw-navbar-overlay" data-cdw-navbar-close></div>
+</div></div>
+    <div class="cdw-fw-docs-codeblock">
+      <div class="cdw-fw-docs-code-head">
+        <div class="cdw-fw-docs-code-title">HTML</div>
+        <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+      </div>
+      <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-navbar cdw-navbar--minimal cdw-navbar--soft cdw-fw-accent-slate" data-cdw-navbar&gt;
+  &lt;div class="cdw-navbar__inner"&gt;
+    &lt;div class="cdw-navbar__brand"&gt;
+      &lt;div class="cdw-navbar__logo"&gt;&lt;/div&gt;
+      &lt;span&gt;Mono&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-navbar__panel"&gt;
+      &lt;div class="cdw-navbar__panel-top"&gt;
+        &lt;div class="cdw-navbar__brand"&gt;
+          &lt;div class="cdw-navbar__logo"&gt;&lt;/div&gt;
+          &lt;span&gt;Mono&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;button class="cdw-navbar__close" type="button" data-cdw-navbar-close&gt;&lt;/button&gt;
+      &lt;/div&gt;
+&lt;div class="cdw-navbar__cluster cdw-navbar__cluster--center"&gt;&lt;nav class="cdw-navbar__links cdw-navbar__links--underline"&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Sobre&lt;/a&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Manifesto&lt;/a&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Trabalho&lt;/a&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Contato&lt;/a&gt;&lt;/nav&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class="cdw-navbar__toggle" type="button" data-cdw-navbar-toggle&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-navbar-overlay" data-cdw-navbar-close&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+    </div>
+  
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">NavBar Centered</div>
+        <div class="cdw-fw-docs-badge">Centered</div>
+      </div>
+      <div class="cdw-fw-docs-preview"><div class="cdw-navbar cdw-navbar--centered cdw-navbar--soft cdw-fw-accent-ocean" data-cdw-navbar>
+    <div class="cdw-navbar__inner">
+      <div class="cdw-navbar__brand">
+        <div class="cdw-navbar__logo"></div>
+        <span>Fusion</span>
+      </div>
+      <div class="cdw-navbar__panel">
+        <div class="cdw-navbar__panel-top">
+          <div class="cdw-navbar__brand">
+            <div class="cdw-navbar__logo"></div>
+            <span>Fusion</span>
+          </div>
+          <button class="cdw-navbar__close" type="button" data-cdw-navbar-close></button>
+        </div>
+  <div class="cdw-navbar__cluster cdw-navbar__cluster--links"><nav class="cdw-navbar__links cdw-navbar__links--underline"><a class=\"cdw-navbar__link is-active\" href=\"#\">Inicio</a><a class=\"cdw-navbar__link\" href=\"#\">Produtos</a><a class=\"cdw-navbar__link\" href=\"#\">Recursos</a><a class=\"cdw-navbar__link\" href=\"#\">Suporte</a></nav></div>
+  <div class="cdw-navbar__cluster cdw-navbar__cluster--search">
+        <div class="cdw-navbar__search cdw-navbar__search--wide">
+          <input type="text" placeholder="Pesquisar recursos" />
+        </div>
+      </div>
+      </div>
+      <button class="cdw-navbar__toggle" type="button" data-cdw-navbar-toggle></button>
+    </div>
+    <div class="cdw-navbar-overlay" data-cdw-navbar-close></div>
+  </div></div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-navbar cdw-navbar--centered cdw-navbar--soft cdw-fw-accent-ocean" data-cdw-navbar&gt;
+    &lt;div class="cdw-navbar__inner"&gt;
+      &lt;div class="cdw-navbar__brand"&gt;
+        &lt;div class="cdw-navbar__logo"&gt;&lt;/div&gt;
+        &lt;span&gt;Fusion&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class="cdw-navbar__panel"&gt;
+        &lt;div class="cdw-navbar__panel-top"&gt;
+          &lt;div class="cdw-navbar__brand"&gt;
+            &lt;div class="cdw-navbar__logo"&gt;&lt;/div&gt;
+            &lt;span&gt;Fusion&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;button class="cdw-navbar__close" type="button" data-cdw-navbar-close&gt;&lt;/button&gt;
+        &lt;/div&gt;
+  &lt;div class="cdw-navbar__cluster cdw-navbar__cluster--links"&gt;&lt;nav class="cdw-navbar__links cdw-navbar__links--underline"&gt;&lt;a class=\"cdw-navbar__link is-active\" href=\"#\"&gt;Inicio&lt;/a&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Produtos&lt;/a&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Recursos&lt;/a&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Suporte&lt;/a&gt;&lt;/nav&gt;&lt;/div&gt;
+  &lt;div class="cdw-navbar__cluster cdw-navbar__cluster--search"&gt;
+        &lt;div class="cdw-navbar__search cdw-navbar__search--wide"&gt;
+          &lt;input type="text" placeholder="Pesquisar recursos" /&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;button class="cdw-navbar__toggle" type="button" data-cdw-navbar-toggle&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-navbar-overlay" data-cdw-navbar-close&gt;&lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">NavBar Hybrid</div>
+      <div class="cdw-fw-docs-badge">Mix</div>
+    </div>
+      <div class="cdw-fw-docs-preview"><div class="cdw-navbar cdw-navbar--hybrid cdw-navbar--soft cdw-fw-accent-amber" data-cdw-navbar>
+    <div class="cdw-navbar__inner">
+      <div class="cdw-navbar__brand">
+        <div class="cdw-navbar__logo"></div>
+        <span>Fusion</span>
+      </div>
+      <div class="cdw-navbar__panel">
+        <div class="cdw-navbar__panel-top">
+          <div class="cdw-navbar__brand">
+            <div class="cdw-navbar__logo"></div>
+            <span>Fusion</span>
+          </div>
+          <button class="cdw-navbar__close" type="button" data-cdw-navbar-close></button>
+        </div>
+  <div class="cdw-navbar__cluster cdw-navbar__cluster--links"><nav class="cdw-navbar__links cdw-navbar__links--underline"><a class=\"cdw-navbar__link is-active\" href=\"#\">Inicio</a><a class=\"cdw-navbar__link\" href=\"#\">Produtos</a><a class=\"cdw-navbar__link\" href=\"#\">Recursos</a><a class=\"cdw-navbar__link\" href=\"#\">Suporte</a></nav></div>
+  <div class="cdw-navbar__cluster cdw-navbar__cluster--search">
+        <div class="cdw-navbar__search cdw-navbar__search--wide">
+          <input type="text" placeholder="Pesquisar recursos" />
+        </div>
+      </div>
+      </div>
+      <div class="cdw-navbar__actions cdw-navbar__actions--pill"><button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded">Entrar</button></div>
+      <button class="cdw-navbar__toggle" type="button" data-cdw-navbar-toggle></button>
+    </div>
+    <div class="cdw-navbar-overlay" data-cdw-navbar-close></div>
+  </div></div>
+    <div class="cdw-fw-docs-codeblock">
+      <div class="cdw-fw-docs-code-head">
+        <div class="cdw-fw-docs-code-title">HTML</div>
+        <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+      </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-navbar cdw-navbar--hybrid cdw-navbar--soft cdw-fw-accent-amber" data-cdw-navbar&gt;
+    &lt;div class="cdw-navbar__inner"&gt;
+      &lt;div class="cdw-navbar__brand"&gt;
+        &lt;div class="cdw-navbar__logo"&gt;&lt;/div&gt;
+        &lt;span&gt;Fusion&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class="cdw-navbar__panel"&gt;
+        &lt;div class="cdw-navbar__panel-top"&gt;
+          &lt;div class="cdw-navbar__brand"&gt;
+            &lt;div class="cdw-navbar__logo"&gt;&lt;/div&gt;
+            &lt;span&gt;Fusion&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;button class="cdw-navbar__close" type="button" data-cdw-navbar-close&gt;&lt;/button&gt;
+        &lt;/div&gt;
+  &lt;div class="cdw-navbar__cluster cdw-navbar__cluster--links"&gt;&lt;nav class="cdw-navbar__links cdw-navbar__links--underline"&gt;&lt;a class=\"cdw-navbar__link is-active\" href=\"#\"&gt;Inicio&lt;/a&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Produtos&lt;/a&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Recursos&lt;/a&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Suporte&lt;/a&gt;&lt;/nav&gt;&lt;/div&gt;
+  &lt;div class="cdw-navbar__cluster cdw-navbar__cluster--search"&gt;
+        &lt;div class="cdw-navbar__search cdw-navbar__search--wide"&gt;
+          &lt;input type="text" placeholder="Pesquisar recursos" /&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="cdw-navbar__actions cdw-navbar__actions--pill"&gt;&lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Entrar&lt;/button&gt;&lt;/div&gt;
+      &lt;button class="cdw-navbar__toggle" type="button" data-cdw-navbar-toggle&gt;&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-navbar-overlay" data-cdw-navbar-close&gt;&lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+    </div>
+  </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="navbars-exemplos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Exemplos reais</h3>
+
+  <div class="cdw-fw-docs-example">
+    <div class="cdw-fw-docs-example-head">
+      <div class="cdw-fw-docs-example-title">Navbar institucional</div>
+      <div class="cdw-fw-docs-badge">Real</div>
+    </div>
+    <div class="cdw-fw-docs-preview"><div class="cdw-navbar cdw-navbar--prime cdw-navbar--soft cdw-fw-accent-slate" data-cdw-navbar>
+  <div class="cdw-navbar__inner">
+    <div class="cdw-navbar__brand">
+      <div class="cdw-navbar__logo"></div>
+      <span>CDWeb</span>
+    </div>
+    <div class="cdw-navbar__panel">
+      <div class="cdw-navbar__panel-top">
+        <div class="cdw-navbar__brand">
+          <div class="cdw-navbar__logo"></div>
+          <span>CDWeb</span>
+        </div>
+        <button class="cdw-navbar__close" type="button" data-cdw-navbar-close></button>
+      </div>
+<div class="cdw-navbar__cluster cdw-navbar__cluster--center"><nav class="cdw-navbar__links cdw-navbar__links--pill"><a class=\"cdw-navbar__link\" href=\"#\">Inicio</a><a class=\"cdw-navbar__link\" href=\"#\">Servicos</a><a class=\"cdw-navbar__link\" href=\"#\">Cases</a><a class=\"cdw-navbar__link\" href=\"#\">Contato</a></nav></div>
+<div class="cdw-navbar__cluster cdw-navbar__cluster--end">
+        <div class="cdw-navbar__meta">
+          <span class="cdw-navbar__chip">Premium</span>
+          Navegacao principal
+        </div>
+        <div class="cdw-navbar__actions cdw-navbar__actions--compact"><button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded">Entrar</button><button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded">Contato</button></div>
+      </div>
+    </div>
+    <button class="cdw-navbar__toggle" type="button" data-cdw-navbar-toggle></button>
+  </div>
+  <div class="cdw-navbar-overlay" data-cdw-navbar-close></div>
+</div></div>
+    <div class="cdw-fw-docs-codeblock">
+      <div class="cdw-fw-docs-code-head">
+        <div class="cdw-fw-docs-code-title">HTML</div>
+        <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+      </div>
+      <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-navbar cdw-navbar--prime cdw-navbar--soft cdw-fw-accent-slate" data-cdw-navbar&gt;
+  &lt;div class="cdw-navbar__inner"&gt;
+    &lt;div class="cdw-navbar__brand"&gt;
+      &lt;div class="cdw-navbar__logo"&gt;&lt;/div&gt;
+      &lt;span&gt;CDWeb&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-navbar__panel"&gt;
+      &lt;div class="cdw-navbar__panel-top"&gt;
+        &lt;div class="cdw-navbar__brand"&gt;
+          &lt;div class="cdw-navbar__logo"&gt;&lt;/div&gt;
+          &lt;span&gt;CDWeb&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;button class="cdw-navbar__close" type="button" data-cdw-navbar-close&gt;&lt;/button&gt;
+      &lt;/div&gt;
+&lt;div class="cdw-navbar__cluster cdw-navbar__cluster--center"&gt;&lt;nav class="cdw-navbar__links cdw-navbar__links--pill"&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Inicio&lt;/a&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Servicos&lt;/a&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Cases&lt;/a&gt;&lt;a class=\"cdw-navbar__link\" href=\"#\"&gt;Contato&lt;/a&gt;&lt;/nav&gt;&lt;/div&gt;
+&lt;div class="cdw-navbar__cluster cdw-navbar__cluster--end"&gt;
+        &lt;div class="cdw-navbar__meta"&gt;
+          &lt;span class="cdw-navbar__chip"&gt;Premium&lt;/span&gt;
+          Navegacao principal
+        &lt;/div&gt;
+        &lt;div class="cdw-navbar__actions cdw-navbar__actions--compact"&gt;&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Entrar&lt;/button&gt;&lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Contato&lt;/button&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;button class="cdw-navbar__toggle" type="button" data-cdw-navbar-toggle&gt;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-navbar-overlay" data-cdw-navbar-close&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+  </div>
+  </div>
+</section>
+
+`,
+
   };
 
   const sectionOrder = [
@@ -4049,6 +4819,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     "badges",
     "cards",
     "stage",
+    "navbars",
   ];
 
   app.innerHTML = `
@@ -4199,6 +4970,16 @@ function buildNav(root) {
             { label: "Modelos", href: "#stage-modelos" },
             { label: "Exemplos", href: "#stage-exemplos" },
             { label: "Uso", href: "#stage-usos" },
+          ],
+        },
+        {
+          title: "NavBars",
+          target: "#navbars",
+          links: [
+            { label: "Conceito", href: "#navbars-conceito" },
+            { label: "Estrutura", href: "#navbars-estrutura" },
+            { label: "Modelos", href: "#navbars-modelos" },
+            { label: "Exemplos", href: "#navbars-exemplos" },
           ],
         },
       ],
