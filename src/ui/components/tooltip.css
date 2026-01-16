@@ -100,17 +100,23 @@
 .cdw-tooltip[data-placement="left"] .cdw-tooltip__arrow {
   right: -6px;
   top: var(--cdw-tooltip-arrow-y, 50%);
-  transform: translateY(-50%) rotate(45deg);
-  border-top: 0;
-  border-right: 0;
+  width: 10px;
+  height: 14px;
+  transform: translateY(-50%);
+  border: 0;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  box-shadow: 1px 0 0 0 var(--cdw-tooltip-border);
 }
 
 .cdw-tooltip[data-placement="right"] .cdw-tooltip__arrow {
   left: -6px;
   top: var(--cdw-tooltip-arrow-y, 50%);
-  transform: translateY(-50%) rotate(45deg);
-  border-bottom: 0;
-  border-left: 0;
+  width: 10px;
+  height: 14px;
+  transform: translateY(-50%);
+  border: 0;
+  clip-path: polygon(100% 0, 0 50%, 100% 100%);
+  box-shadow: -1px 0 0 0 var(--cdw-tooltip-border);
 }
 
 .cdw-tooltip--classic {
