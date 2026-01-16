@@ -10,6 +10,7 @@
 @import "./components/modal.css";
 @import "./components/navbar.css";
 @import "./components/stage.css";
+@import "./components/tooltip.css";
 @import "./utilities/spacing.css";
 @import "./utilities/display.css";
 @import "./utilities/flex.css";

@@ -4908,7 +4908,166 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
       </div>
     </section>
     `,
-    stage: `<section id="stage" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+  tooltip: `<section id="tooltip" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+  <div class="cdw-fw-docs-section-head">
+    <h2 class="cdw-fw-docs-section-title">Tooltip</h2>
+    <p class="cdw-fw-docs-lead">
+      Tooltips premium para refor&ccedil;ar contexto com eleg&acirc;ncia e clareza.
+    </p>
+  </div>
+
+  <div class="cdw-fw-docs-toc">
+    <span class="cdw-fw-docs-toc-title">&Iacute;ndice desta p&aacute;gina</span>
+    <a href="#tooltip-conceito">Conceito</a>
+    <a href="#tooltip-modelos">Modelos</a>
+    <a href="#tooltip-posicionamento">Posicionamento</a>
+    <a href="#tooltip-cores">Cores</a>
+    <a href="#tooltip-exemplos">Exemplos</a>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="tooltip-conceito" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Conceito</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Use <code>data-cdw-tooltip</code> para o texto b&aacute;sico e complemente com t&iacute;tulo ou metadados quando precisar.
+      <span class="cdw-fw-docs-when">Quando usar: instru&ccedil;&otilde;es curtas, avisos e refor&ccedil;o de contexto.</span>
+    </p>
+    <div class="cdw-fw-docs-classlist">
+      <span>data-cdw-tooltip</span>
+      <span>data-tooltip-model</span>
+      <span>data-tooltip-placement</span>
+      <span>data-tooltip-trigger</span>
+      <span>data-tooltip-title</span>
+      <span>data-tooltip-text</span>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="tooltip-modelos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Modelos</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Seis estilos com identidade pr&oacute;pria para diferentes tons de interface.
+    </p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Classic, Soft, Solid, Float, Card e Prime</div>
+        <div class="cdw-fw-docs-badge">Modelos</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-docs-btn-row">
+          <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded cdw-fw-accent-graphite" data-cdw-tooltip="Tooltip Classic" data-tooltip-model="classic">Classic</button>
+          <button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--rounded cdw-fw-accent-sky" data-cdw-tooltip="Tooltip Soft" data-tooltip-model="soft">Soft</button>
+          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded cdw-fw-accent-ocean" data-cdw-tooltip="Tooltip Solid" data-tooltip-model="solid">Solid</button>
+          <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded cdw-fw-accent-forest" data-cdw-tooltip="Tooltip Float" data-tooltip-model="float">Float</button>
+          <button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--rounded cdw-fw-accent-cocoa" data-cdw-tooltip="Tooltip Card" data-tooltip-model="card" data-tooltip-title="Resumo curto" data-tooltip-text="Texto de apoio elegante.">Card</button>
+          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded cdw-fw-accent-violet" data-cdw-tooltip="Tooltip Prime" data-tooltip-model="prime">Prime</button>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded cdw-fw-accent-graphite" data-cdw-tooltip="Tooltip Classic" data-tooltip-model="classic"&gt;Classic&lt;/button&gt;
+&lt;button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--rounded cdw-fw-accent-sky" data-cdw-tooltip="Tooltip Soft" data-tooltip-model="soft"&gt;Soft&lt;/button&gt;
+&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded cdw-fw-accent-ocean" data-cdw-tooltip="Tooltip Solid" data-tooltip-model="solid"&gt;Solid&lt;/button&gt;
+&lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded cdw-fw-accent-forest" data-cdw-tooltip="Tooltip Float" data-tooltip-model="float"&gt;Float&lt;/button&gt;
+&lt;button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--rounded cdw-fw-accent-cocoa" data-cdw-tooltip="Tooltip Card" data-tooltip-model="card" data-tooltip-title="Resumo curto" data-tooltip-text="Texto de apoio elegante."&gt;Card&lt;/button&gt;
+&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded cdw-fw-accent-violet" data-cdw-tooltip="Tooltip Prime" data-tooltip-model="prime"&gt;Prime&lt;/button&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="tooltip-posicionamento" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Posicionamento</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Ajuste o posicionamento manualmente ou deixe em auto.
+    </p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Top, Right, Bottom e Left</div>
+        <div class="cdw-fw-docs-badge">Posi&ccedil;&atilde;o</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-docs-btn-row">
+          <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded cdw-fw-accent-indigo" data-cdw-tooltip="Topo alinhado" data-tooltip-placement="top">Top</button>
+          <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded cdw-fw-accent-indigo" data-cdw-tooltip="Lado direito" data-tooltip-placement="right">Right</button>
+          <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded cdw-fw-accent-indigo" data-cdw-tooltip="Base alinhada" data-tooltip-placement="bottom">Bottom</button>
+          <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded cdw-fw-accent-indigo" data-cdw-tooltip="Lado esquerdo" data-tooltip-placement="left">Left</button>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded cdw-fw-accent-indigo" data-cdw-tooltip="Topo alinhado" data-tooltip-placement="top"&gt;Top&lt;/button&gt;
+&lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded cdw-fw-accent-indigo" data-cdw-tooltip="Lado direito" data-tooltip-placement="right"&gt;Right&lt;/button&gt;
+&lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded cdw-fw-accent-indigo" data-cdw-tooltip="Base alinhada" data-tooltip-placement="bottom"&gt;Bottom&lt;/button&gt;
+&lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded cdw-fw-accent-indigo" data-cdw-tooltip="Lado esquerdo" data-tooltip-placement="left"&gt;Left&lt;/button&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="tooltip-cores" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Cores</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Aplique qualquer cor da paleta CDWeb por meio de <code>data-tooltip-accent</code>.
+    </p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Cores em uso</div>
+        <div class="cdw-fw-docs-badge">Paleta</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-docs-btn-row">
+          <button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--rounded cdw-fw-accent-ocean" data-cdw-tooltip="Ocean" data-tooltip-model="soft" data-tooltip-accent="ocean">Ocean</button>
+          <button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--rounded cdw-fw-accent-forest" data-cdw-tooltip="Forest" data-tooltip-model="soft" data-tooltip-accent="forest">Forest</button>
+          <button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--rounded cdw-fw-accent-cocoa" data-cdw-tooltip="Cocoa" data-tooltip-model="soft" data-tooltip-accent="cocoa">Cocoa</button>
+          <button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--rounded cdw-fw-accent-graphite" data-cdw-tooltip="Graphite" data-tooltip-model="soft" data-tooltip-accent="graphite">Graphite</button>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--rounded cdw-fw-accent-ocean" data-cdw-tooltip="Ocean" data-tooltip-model="soft" data-tooltip-accent="ocean"&gt;Ocean&lt;/button&gt;
+&lt;button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--rounded cdw-fw-accent-forest" data-cdw-tooltip="Forest" data-tooltip-model="soft" data-tooltip-accent="forest"&gt;Forest&lt;/button&gt;
+&lt;button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--rounded cdw-fw-accent-cocoa" data-cdw-tooltip="Cocoa" data-tooltip-model="soft" data-tooltip-accent="cocoa"&gt;Cocoa&lt;/button&gt;
+&lt;button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--rounded cdw-fw-accent-graphite" data-cdw-tooltip="Graphite" data-tooltip-model="soft" data-tooltip-accent="graphite"&gt;Graphite&lt;/button&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="tooltip-exemplos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Exemplos visuais</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Card e Prime com conte&uacute;do mais rico e acionamento por clique.
+    </p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Tooltip com t&iacute;tulo e meta</div>
+        <div class="cdw-fw-docs-badge">Premium</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-docs-btn-row">
+          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded cdw-fw-accent-slate" data-cdw-tooltip="Detalhes do plano" data-tooltip-model="card" data-tooltip-title="Plano Prime" data-tooltip-text="Suporte dedicado e recursos avan&ccedil;ados." data-tooltip-meta="Atualizado hoje">Ver detalhes</button>
+          <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded cdw-fw-accent-indigo" data-cdw-tooltip="Clique para ver" data-tooltip-model="prime" data-tooltip-trigger="click" data-tooltip-title="A&ccedil;&atilde;o assistida" data-tooltip-text="Ideal para treinar o usu&aacute;rio." data-tooltip-meta="Clique novamente para fechar">Click tooltip</button>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded cdw-fw-accent-slate" data-cdw-tooltip="Detalhes do plano" data-tooltip-model="card" data-tooltip-title="Plano Prime" data-tooltip-text="Suporte dedicado e recursos avancados." data-tooltip-meta="Atualizado hoje"&gt;Ver detalhes&lt;/button&gt;
+&lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded cdw-fw-accent-indigo" data-cdw-tooltip="Clique para ver" data-tooltip-model="prime" data-tooltip-trigger="click" data-tooltip-title="Acao assistida" data-tooltip-text="Ideal para treinar o usuario." data-tooltip-meta="Clique novamente para fechar"&gt;Click tooltip&lt;/button&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+`,
+  stage: `<section id="stage" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
   <div class="cdw-fw-docs-section-head">
     <h2 class="cdw-fw-docs-section-title">Stage</h2>
     <p class="cdw-fw-docs-lead">Sequencias visuais premium para destaques, apresentacoes e dashboards sem depender de JS manual.</p>
@@ -6194,13 +6353,14 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     "buttons",
     "accordion",
     "alert",
-      "badges",
-      "cards",
-      "gallery",
-      "modal",
-      "stage",
-      "navbars",
-    ];
+    "badges",
+    "cards",
+    "gallery",
+    "modal",
+    "tooltip",
+    "stage",
+    "navbars",
+  ];
 
   app.innerHTML = `
     <div class="cdw-fw-docs-app">
@@ -6361,6 +6521,17 @@ function buildNav(root) {
               { label: "Tamanhos", href: "#modal-tamanhos" },
               { label: "Modelos", href: "#modal-modelos" },
               { label: "Exemplos", href: "#modal-exemplos" },
+            ],
+          },
+          {
+            title: "Tooltip",
+            target: "#tooltip",
+            links: [
+              { label: "Conceito", href: "#tooltip-conceito" },
+              { label: "Modelos", href: "#tooltip-modelos" },
+              { label: "Posicionamento", href: "#tooltip-posicionamento" },
+              { label: "Cores", href: "#tooltip-cores" },
+              { label: "Exemplos", href: "#tooltip-exemplos" },
             ],
           },
           {
