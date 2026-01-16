@@ -3744,7 +3744,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
   </div>
 </section>
 
-`,
+  `,
   gallery: `<section id="gallery" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
     <div class="cdw-fw-docs-section-head">
       <h2 class="cdw-fw-docs-section-title">Gallery</h2>
@@ -4220,10 +4220,538 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
 &lt;/div&gt;</code></pre>
         </div>
       </div>
+      </div>
+      </section>
+    `,
+    modal: `<section id="modal" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+    <div class="cdw-fw-docs-section-head">
+      <h2 class="cdw-fw-docs-section-title">Modal</h2>
+      <p class="cdw-fw-docs-lead">Camadas premium para decisoes, formul&aacute;rios e fluxos cr&iacute;ticos com identidade CDWeb.</p>
     </div>
+
+    <div class="cdw-fw-docs-toc">
+      <a href="#modal-conceito">Conceito</a>
+      <a href="#modal-estrutura">Estrutura</a>
+      <a href="#modal-tamanhos">Tamanhos</a>
+      <a href="#modal-modelos">Modelos</a>
+      <a href="#modal-exemplos">Exemplos visuais</a>
+    </div>
+
+    <div class="cdw-fw-docs-subsection" id="modal-conceito" data-cdw-fw-docs-section>
+      <h3 class="cdw-fw-docs-subtitle">Conceito</h3>
+      <p class="cdw-fw-docs-subdesc">
+        Modais CDWeb abrem por data-attribute e entregam hierarquia visual clara, com anima&ccedil;&otilde;es suaves e foco no conte&uacute;do.
+      </p>
+      <div class="cdw-fw-docs-classlist">
+        <span>cdw-modal</span>
+        <span>cdw-modal__dialog</span>
+        <span>cdw-modal__header</span>
+        <span>cdw-modal__body</span>
+        <span>cdw-modal__footer</span>
+        <span>data-cdw-modal</span>
+        <span>data-cdw-modal-open</span>
+        <span>data-cdw-modal-close</span>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-subsection" id="modal-estrutura" data-cdw-fw-docs-section>
+      <h3 class="cdw-fw-docs-subtitle">Estrutura</h3>
+      <div class="cdw-fw-docs-example">
+        <div class="cdw-fw-docs-example-head">
+          <div class="cdw-fw-docs-example-title">Estrutura base</div>
+          <div class="cdw-fw-docs-badge">Base</div>
+        </div>
+        <div class="cdw-fw-docs-preview">
+          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded cdw-fw-accent-ocean" data-cdw-modal-open="#modal-base">Abrir modal</button>
+        </div>
+        <div class="cdw-fw-docs-codeblock">
+          <div class="cdw-fw-docs-code-head">
+            <div class="cdw-fw-docs-code-title">HTML</div>
+            <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+          </div>
+          <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded cdw-fw-accent-ocean" data-cdw-modal-open="#modal-base"&gt;Abrir modal&lt;/button&gt;
+
+&lt;div class="cdw-modal cdw-modal--frame cdw-modal--md cdw-fw-accent-ocean" id="modal-base" data-cdw-modal data-close-overlay="true"&gt;
+  &lt;div class="cdw-modal__backdrop" data-cdw-modal-close&gt;&lt;/div&gt;
+  &lt;div class="cdw-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-base-title"&gt;
+    &lt;button class="cdw-modal__close" type="button" data-cdw-modal-close aria-label="Fechar"&gt;&lt;/button&gt;
+    &lt;div class="cdw-modal__header"&gt;
+      &lt;h3 class="cdw-modal__title" id="modal-base-title"&gt;Titulo do modal&lt;/h3&gt;
+      &lt;div class="cdw-modal__subtitle"&gt;Texto de apoio para orientar a decisao.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-modal__body"&gt;Conteudo principal do modal.&lt;/div&gt;
+    &lt;div class="cdw-modal__footer"&gt;
+      &lt;div class="cdw-modal__actions"&gt;
+        &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded" data-cdw-modal-close&gt;Cancelar&lt;/button&gt;
+        &lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Confirmar&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-subsection" id="modal-tamanhos" data-cdw-fw-docs-section>
+      <h3 class="cdw-fw-docs-subtitle">Tamanhos</h3>
+      <div class="cdw-fw-docs-example">
+        <div class="cdw-fw-docs-example-head">
+          <div class="cdw-fw-docs-example-title">sm / md / lg / xl</div>
+          <div class="cdw-fw-docs-badge">Tamanho</div>
+        </div>
+        <div class="cdw-fw-docs-preview">
+          <div class="cdw-fw-row cdw-fw-gap-3">
+            <div class="cdw-fw-col-12 cdw-fw-col-md-6 cdw-fw-col-lg-3">
+              <div class="cdw-modal cdw-modal--card cdw-modal--sm cdw-fw-accent-sky is-open" style="position:relative; inset:auto; display:flex; height:240px; padding:12px;">
+                <div class="cdw-modal__backdrop" style="background:transparent;"></div>
+                <div class="cdw-modal__dialog">
+                  <div class="cdw-modal__header"><div class="cdw-modal__title">sm</div></div>
+                  <div class="cdw-modal__body">Compacto e direto.</div>
+                </div>
+              </div>
+            </div>
+            <div class="cdw-fw-col-12 cdw-fw-col-md-6 cdw-fw-col-lg-3">
+              <div class="cdw-modal cdw-modal--card cdw-modal--md cdw-fw-accent-mint is-open" style="position:relative; inset:auto; display:flex; height:240px; padding:12px;">
+                <div class="cdw-modal__backdrop" style="background:transparent;"></div>
+                <div class="cdw-modal__dialog">
+                  <div class="cdw-modal__header"><div class="cdw-modal__title">md</div></div>
+                  <div class="cdw-modal__body">Equilibrado.</div>
+                </div>
+              </div>
+            </div>
+            <div class="cdw-fw-col-12 cdw-fw-col-md-6 cdw-fw-col-lg-3">
+              <div class="cdw-modal cdw-modal--card cdw-modal--lg cdw-fw-accent-amber is-open" style="position:relative; inset:auto; display:flex; height:240px; padding:12px;">
+                <div class="cdw-modal__backdrop" style="background:transparent;"></div>
+                <div class="cdw-modal__dialog">
+                  <div class="cdw-modal__header"><div class="cdw-modal__title">lg</div></div>
+                  <div class="cdw-modal__body">Conteudo amplo.</div>
+                </div>
+              </div>
+            </div>
+            <div class="cdw-fw-col-12 cdw-fw-col-md-6 cdw-fw-col-lg-3">
+              <div class="cdw-modal cdw-modal--card cdw-modal--xl cdw-fw-accent-graphite is-open" style="position:relative; inset:auto; display:flex; height:240px; padding:12px;">
+                <div class="cdw-modal__backdrop" style="background:transparent;"></div>
+                <div class="cdw-modal__dialog">
+                  <div class="cdw-modal__header"><div class="cdw-modal__title">xl</div></div>
+                  <div class="cdw-modal__body">Para decis&otilde;es complexas.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cdw-fw-docs-codeblock">
+          <div class="cdw-fw-docs-code-head">
+            <div class="cdw-fw-docs-code-title">HTML</div>
+            <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+          </div>
+          <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-modal cdw-modal--card cdw-modal--sm cdw-fw-accent-sky" data-cdw-modal&gt;...&lt;/div&gt;
+&lt;div class="cdw-modal cdw-modal--card cdw-modal--md cdw-fw-accent-mint" data-cdw-modal&gt;...&lt;/div&gt;
+&lt;div class="cdw-modal cdw-modal--card cdw-modal--lg cdw-fw-accent-amber" data-cdw-modal&gt;...&lt;/div&gt;
+&lt;div class="cdw-modal cdw-modal--card cdw-modal--xl cdw-fw-accent-graphite" data-cdw-modal&gt;...&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-subsection" id="modal-modelos" data-cdw-fw-docs-section>
+      <h3 class="cdw-fw-docs-subtitle">Modelos</h3>
+      <div class="cdw-fw-docs-example">
+        <div class="cdw-fw-docs-example-head">
+          <div class="cdw-fw-docs-example-title">Modal Frame</div>
+          <div class="cdw-fw-docs-badge">Frame</div>
+        </div>
+        <div class="cdw-fw-docs-preview">
+          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded cdw-fw-accent-ocean" data-cdw-modal-open="#modal-frame">Abrir Frame</button>
+        </div>
+        <div class="cdw-fw-docs-codeblock">
+          <div class="cdw-fw-docs-code-head">
+            <div class="cdw-fw-docs-code-title">HTML</div>
+            <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+          </div>
+          <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded cdw-fw-accent-ocean" data-cdw-modal-open="#modal-frame"&gt;Abrir Frame&lt;/button&gt;
+
+&lt;div class="cdw-modal cdw-modal--frame cdw-modal--md cdw-fw-accent-ocean" id="modal-frame" data-cdw-modal data-close-overlay="true"&gt;
+  &lt;div class="cdw-modal__backdrop" data-cdw-modal-close&gt;&lt;/div&gt;
+  &lt;div class="cdw-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-frame-title"&gt;
+    &lt;button class="cdw-modal__close" type="button" data-cdw-modal-close aria-label="Fechar"&gt;&lt;/button&gt;
+    &lt;div class="cdw-modal__header"&gt;
+      &lt;h3 class="cdw-modal__title" id="modal-frame-title"&gt;Relatorio executivo&lt;/h3&gt;
+      &lt;div class="cdw-modal__subtitle"&gt;Painel premium com moldura integrada.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-modal__body"&gt;Conteudo com leitura clara e contraste equilibrado.&lt;/div&gt;
+    &lt;div class="cdw-modal__footer"&gt;
+      &lt;div class="cdw-modal__actions"&gt;
+        &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded" data-cdw-modal-close&gt;Fechar&lt;/button&gt;
+        &lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Prosseguir&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="cdw-fw-docs-example">
+        <div class="cdw-fw-docs-example-head">
+          <div class="cdw-fw-docs-example-title">Modal Focus</div>
+          <div class="cdw-fw-docs-badge">Focus</div>
+        </div>
+        <div class="cdw-fw-docs-preview">
+          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded cdw-fw-accent-obsidian" data-cdw-modal-open="#modal-focus">Abrir Focus</button>
+        </div>
+        <div class="cdw-fw-docs-codeblock">
+          <div class="cdw-fw-docs-code-head">
+            <div class="cdw-fw-docs-code-title">HTML</div>
+            <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+          </div>
+          <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded cdw-fw-accent-obsidian" data-cdw-modal-open="#modal-focus"&gt;Abrir Focus&lt;/button&gt;
+
+&lt;div class="cdw-modal cdw-modal--focus cdw-modal--md cdw-fw-accent-obsidian" id="modal-focus" data-cdw-modal data-close-overlay="true"&gt;
+  &lt;div class="cdw-modal__backdrop" data-cdw-modal-close&gt;&lt;/div&gt;
+  &lt;div class="cdw-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-focus-title"&gt;
+    &lt;button class="cdw-modal__close" type="button" data-cdw-modal-close aria-label="Fechar"&gt;&lt;/button&gt;
+    &lt;div class="cdw-modal__body"&gt;
+      &lt;h3 class="cdw-modal__title" id="modal-focus-title"&gt;Ajuste critico&lt;/h3&gt;
+      &lt;div class="cdw-modal__subtitle"&gt;Leitura direta para uma decisao importante.&lt;/div&gt;
+      &lt;div style="margin-top:14px;"&gt;Confirme a acao para manter a consistencia do ambiente.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-modal__footer"&gt;
+      &lt;div class="cdw-modal__actions"&gt;
+        &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded" data-cdw-modal-close&gt;Cancelar&lt;/button&gt;
+        &lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Confirmar&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="cdw-fw-docs-example">
+        <div class="cdw-fw-docs-example-head">
+          <div class="cdw-fw-docs-example-title">Modal Action</div>
+          <div class="cdw-fw-docs-badge">Action</div>
+        </div>
+        <div class="cdw-fw-docs-preview">
+          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded cdw-fw-accent-cocoa" data-cdw-modal-open="#modal-action">Abrir Action</button>
+        </div>
+        <div class="cdw-fw-docs-codeblock">
+          <div class="cdw-fw-docs-code-head">
+            <div class="cdw-fw-docs-code-title">HTML</div>
+            <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+          </div>
+          <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded cdw-fw-accent-cocoa" data-cdw-modal-open="#modal-action"&gt;Abrir Action&lt;/button&gt;
+
+&lt;div class="cdw-modal cdw-modal--action cdw-modal--md cdw-fw-accent-cocoa" id="modal-action" data-cdw-modal data-close-overlay="true"&gt;
+  &lt;div class="cdw-modal__backdrop" data-cdw-modal-close&gt;&lt;/div&gt;
+  &lt;div class="cdw-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-action-title"&gt;
+    &lt;button class="cdw-modal__close" type="button" data-cdw-modal-close aria-label="Fechar"&gt;&lt;/button&gt;
+    &lt;div class="cdw-modal__header"&gt;
+      &lt;h3 class="cdw-modal__title" id="modal-action-title"&gt;Confirmacao de fluxo&lt;/h3&gt;
+      &lt;div class="cdw-modal__subtitle"&gt;Acao critica com prioridade alta.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-modal__body"&gt;Validar os dados antes de prosseguir evita perda de informacao.&lt;/div&gt;
+    &lt;div class="cdw-modal__footer"&gt;
+      &lt;div class="cdw-modal__actions"&gt;
+          &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded cdw-fw-accent-cocoa" data-cdw-modal-close&gt;Revisar&lt;/button&gt;
+          &lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded cdw-fw-accent-cocoa"&gt;Confirmar&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="cdw-fw-docs-example">
+        <div class="cdw-fw-docs-example-head">
+          <div class="cdw-fw-docs-example-title">Modal Split</div>
+          <div class="cdw-fw-docs-badge">Split</div>
+        </div>
+        <div class="cdw-fw-docs-preview">
+          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded cdw-fw-accent-sky" data-cdw-modal-open="#modal-split">Abrir Split</button>
+        </div>
+        <div class="cdw-fw-docs-codeblock">
+          <div class="cdw-fw-docs-code-head">
+            <div class="cdw-fw-docs-code-title">HTML</div>
+            <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+          </div>
+          <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded cdw-fw-accent-sky" data-cdw-modal-open="#modal-split"&gt;Abrir Split&lt;/button&gt;
+
+&lt;div class="cdw-modal cdw-modal--split cdw-modal--lg cdw-fw-accent-sky" id="modal-split" data-cdw-modal data-close-overlay="true"&gt;
+  &lt;div class="cdw-modal__backdrop" data-cdw-modal-close&gt;&lt;/div&gt;
+  &lt;div class="cdw-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-split-title"&gt;
+    &lt;button class="cdw-modal__close" type="button" data-cdw-modal-close aria-label="Fechar"&gt;&lt;/button&gt;
+    &lt;div class="cdw-modal__panel"&gt;
+      &lt;div class="cdw-modal__panel-title"&gt;Contexto&lt;/div&gt;
+      &lt;div style="margin-top:10px;"&gt;Dados auxiliares para apoiar a decisao.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-modal__content"&gt;
+      &lt;div class="cdw-modal__header"&gt;
+        &lt;h3 class="cdw-modal__title" id="modal-split-title"&gt;Fluxo comparativo&lt;/h3&gt;
+        &lt;div class="cdw-modal__subtitle"&gt;Preencha os campos com cuidado.&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="cdw-modal__body"&gt;Area principal para formul&aacute;rio ou comparacao.&lt;/div&gt;
+      &lt;div class="cdw-modal__footer"&gt;
+        &lt;div class="cdw-modal__actions"&gt;
+          &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded" data-cdw-modal-close&gt;Cancelar&lt;/button&gt;
+          &lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Salvar&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="cdw-fw-docs-example">
+        <div class="cdw-fw-docs-example-head">
+          <div class="cdw-fw-docs-example-title">Modal Card</div>
+          <div class="cdw-fw-docs-badge">Card</div>
+        </div>
+        <div class="cdw-fw-docs-preview">
+          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded cdw-fw-accent-graphite" data-cdw-modal-open="#modal-card">Abrir Card</button>
+        </div>
+        <div class="cdw-fw-docs-codeblock">
+          <div class="cdw-fw-docs-code-head">
+            <div class="cdw-fw-docs-code-title">HTML</div>
+            <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+          </div>
+          <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded cdw-fw-accent-graphite" data-cdw-modal-open="#modal-card"&gt;Abrir Card&lt;/button&gt;
+
+&lt;div class="cdw-modal cdw-modal--card cdw-modal--sm cdw-fw-accent-graphite" id="modal-card" data-cdw-modal data-close-overlay="true"&gt;
+  &lt;div class="cdw-modal__backdrop" data-cdw-modal-close&gt;&lt;/div&gt;
+  &lt;div class="cdw-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-card-title"&gt;
+    &lt;button class="cdw-modal__close" type="button" data-cdw-modal-close aria-label="Fechar"&gt;&lt;/button&gt;
+    &lt;div class="cdw-modal__header"&gt;
+      &lt;h3 class="cdw-modal__title" id="modal-card-title"&gt;Status rapido&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-modal__body"&gt;Atualizacao concluida com sucesso.&lt;/div&gt;
+    &lt;div class="cdw-modal__footer"&gt;
+      &lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Ok&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="cdw-fw-docs-example">
+        <div class="cdw-fw-docs-example-head">
+          <div class="cdw-fw-docs-example-title">Modal Prime</div>
+          <div class="cdw-fw-docs-badge">Prime</div>
+        </div>
+        <div class="cdw-fw-docs-preview">
+          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded cdw-fw-accent-rose" data-cdw-modal-open="#modal-prime">Abrir Prime</button>
+        </div>
+        <div class="cdw-fw-docs-codeblock">
+          <div class="cdw-fw-docs-code-head">
+            <div class="cdw-fw-docs-code-title">HTML</div>
+            <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+          </div>
+          <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded cdw-fw-accent-rose" data-cdw-modal-open="#modal-prime"&gt;Abrir Prime&lt;/button&gt;
+
+&lt;div class="cdw-modal cdw-modal--prime cdw-modal--lg cdw-fw-accent-rose" id="modal-prime" data-cdw-modal data-close-overlay="true"&gt;
+  &lt;div class="cdw-modal__backdrop" data-cdw-modal-close&gt;&lt;/div&gt;
+  &lt;div class="cdw-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-prime-title"&gt;
+    &lt;button class="cdw-modal__close" type="button" data-cdw-modal-close aria-label="Fechar"&gt;&lt;/button&gt;
+    &lt;div class="cdw-modal__header"&gt;
+      &lt;h3 class="cdw-modal__title" id="modal-prime-title"&gt;Plano executivo&lt;/h3&gt;
+      &lt;div class="cdw-modal__subtitle"&gt;Apresentacao com foco em valor percebido.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-modal__body"&gt;Camada premium para destacar planos e condicoes especiais.&lt;/div&gt;
+    &lt;div class="cdw-modal__footer"&gt;
+      &lt;div class="cdw-modal__actions"&gt;
+        &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded" data-cdw-modal-close&gt;Voltar&lt;/button&gt;
+        &lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Escolher&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-subsection" id="modal-exemplos" data-cdw-fw-docs-section>
+      <h3 class="cdw-fw-docs-subtitle">Exemplos visuais</h3>
+      <div class="cdw-fw-docs-example">
+        <div class="cdw-fw-docs-example-head">
+          <div class="cdw-fw-docs-example-title">Modal Frame</div>
+          <div class="cdw-fw-docs-badge">Preview</div>
+        </div>
+        <div class="cdw-fw-docs-preview">
+          <div class="cdw-modal cdw-modal--frame cdw-modal--md cdw-fw-accent-ocean is-open" style="position:relative; inset:auto; display:flex; height:360px;">
+            <div class="cdw-modal__backdrop" style="background:rgba(15,23,42,0.08);"></div>
+            <div class="cdw-modal__dialog">
+              <div class="cdw-modal__header">
+                <div class="cdw-modal__title">Frame premium</div>
+                <div class="cdw-modal__subtitle">Moldura integrada e leitura limpa.</div>
+              </div>
+              <div class="cdw-modal__body">Conteudo central com borda sutil e destaque elegante.</div>
+              <div class="cdw-modal__footer">
+                <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded">Cancelar</button>
+                <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded">Ativar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cdw-fw-docs-example">
+        <div class="cdw-fw-docs-example-head">
+          <div class="cdw-fw-docs-example-title">Modal Split</div>
+          <div class="cdw-fw-docs-badge">Preview</div>
+        </div>
+        <div class="cdw-fw-docs-preview">
+          <div class="cdw-modal cdw-modal--split cdw-modal--lg cdw-fw-accent-sky is-open" style="position:relative; inset:auto; display:flex; height:360px;">
+            <div class="cdw-modal__backdrop" style="background:rgba(15,23,42,0.08);"></div>
+            <div class="cdw-modal__dialog">
+              <div class="cdw-modal__panel">
+                <div class="cdw-modal__panel-title">Resumo</div>
+                <div style="margin-top:8px;">Indicadores para apoiar a escolha.</div>
+              </div>
+              <div class="cdw-modal__content">
+                <div class="cdw-modal__header">
+                  <div class="cdw-modal__title">Comparativo</div>
+                  <div class="cdw-modal__subtitle">Decisao orientada por contexto.</div>
+                </div>
+                <div class="cdw-modal__body">Area principal para formularios e comparacoes tecnicas.</div>
+                <div class="cdw-modal__footer">
+                  <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded">Voltar</button>
+                  <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded">Continuar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="cdw-modal cdw-modal--frame cdw-modal--md cdw-fw-accent-ocean" id="modal-base" data-cdw-modal data-close-overlay="true">
+        <div class="cdw-modal__backdrop" data-cdw-modal-close></div>
+        <div class="cdw-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-base-title">
+          <button class="cdw-modal__close" type="button" data-cdw-modal-close aria-label="Fechar"></button>
+          <div class="cdw-modal__header">
+            <h3 class="cdw-modal__title" id="modal-base-title">Titulo do modal</h3>
+            <div class="cdw-modal__subtitle">Texto de apoio para orientar a decisao.</div>
+          </div>
+          <div class="cdw-modal__body">Conteudo principal do modal.</div>
+          <div class="cdw-modal__footer">
+            <div class="cdw-modal__actions">
+              <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded" data-cdw-modal-close>Cancelar</button>
+              <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded">Confirmar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cdw-modal cdw-modal--frame cdw-modal--md cdw-fw-accent-ocean" id="modal-frame" data-cdw-modal data-close-overlay="true">
+        <div class="cdw-modal__backdrop" data-cdw-modal-close></div>
+        <div class="cdw-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-frame-title">
+          <button class="cdw-modal__close" type="button" data-cdw-modal-close aria-label="Fechar"></button>
+          <div class="cdw-modal__header">
+            <h3 class="cdw-modal__title" id="modal-frame-title">Relatorio executivo</h3>
+            <div class="cdw-modal__subtitle">Painel premium com moldura integrada.</div>
+          </div>
+          <div class="cdw-modal__body">Conteudo com leitura clara e contraste equilibrado.</div>
+          <div class="cdw-modal__footer">
+            <div class="cdw-modal__actions">
+              <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded" data-cdw-modal-close>Fechar</button>
+              <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded">Prosseguir</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cdw-modal cdw-modal--focus cdw-modal--md cdw-fw-accent-obsidian" id="modal-focus" data-cdw-modal data-close-overlay="true">
+        <div class="cdw-modal__backdrop" data-cdw-modal-close></div>
+        <div class="cdw-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-focus-title">
+          <button class="cdw-modal__close" type="button" data-cdw-modal-close aria-label="Fechar"></button>
+          <div class="cdw-modal__body">
+            <h3 class="cdw-modal__title" id="modal-focus-title">Ajuste critico</h3>
+            <div class="cdw-modal__subtitle">Leitura direta para uma decisao importante.</div>
+            <div style="margin-top:14px;">Confirme a acao para manter a consistencia do ambiente.</div>
+          </div>
+          <div class="cdw-modal__footer">
+            <div class="cdw-modal__actions">
+              <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded" data-cdw-modal-close>Cancelar</button>
+              <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded">Confirmar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cdw-modal cdw-modal--action cdw-modal--md cdw-fw-accent-cocoa" id="modal-action" data-cdw-modal data-close-overlay="true">
+        <div class="cdw-modal__backdrop" data-cdw-modal-close></div>
+        <div class="cdw-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-action-title">
+          <button class="cdw-modal__close" type="button" data-cdw-modal-close aria-label="Fechar"></button>
+          <div class="cdw-modal__header">
+            <h3 class="cdw-modal__title" id="modal-action-title">Confirmacao de fluxo</h3>
+            <div class="cdw-modal__subtitle">Acao critica com prioridade alta.</div>
+          </div>
+          <div class="cdw-modal__body">Validar os dados antes de prosseguir evita perda de informacao.</div>
+          <div class="cdw-modal__footer">
+            <div class="cdw-modal__actions">
+          <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded cdw-fw-accent-cocoa" data-cdw-modal-close>Revisar</button>
+          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded cdw-fw-accent-cocoa">Confirmar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cdw-modal cdw-modal--split cdw-modal--lg cdw-fw-accent-sky" id="modal-split" data-cdw-modal data-close-overlay="true">
+        <div class="cdw-modal__backdrop" data-cdw-modal-close></div>
+        <div class="cdw-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-split-title">
+          <button class="cdw-modal__close" type="button" data-cdw-modal-close aria-label="Fechar"></button>
+          <div class="cdw-modal__panel">
+            <div class="cdw-modal__panel-title">Contexto</div>
+            <div style="margin-top:10px;">Dados auxiliares para apoiar a decisao.</div>
+          </div>
+          <div class="cdw-modal__content">
+            <div class="cdw-modal__header">
+              <h3 class="cdw-modal__title" id="modal-split-title">Fluxo comparativo</h3>
+              <div class="cdw-modal__subtitle">Preencha os campos com cuidado.</div>
+            </div>
+            <div class="cdw-modal__body">Area principal para formulario ou comparacao.</div>
+            <div class="cdw-modal__footer">
+              <div class="cdw-modal__actions">
+                <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded" data-cdw-modal-close>Cancelar</button>
+                <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded">Salvar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cdw-modal cdw-modal--card cdw-modal--sm cdw-fw-accent-graphite" id="modal-card" data-cdw-modal data-close-overlay="true">
+        <div class="cdw-modal__backdrop" data-cdw-modal-close></div>
+        <div class="cdw-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-card-title">
+          <button class="cdw-modal__close" type="button" data-cdw-modal-close aria-label="Fechar"></button>
+          <div class="cdw-modal__header">
+            <h3 class="cdw-modal__title" id="modal-card-title">Status rapido</h3>
+          </div>
+          <div class="cdw-modal__body">Atualizacao concluida com sucesso.</div>
+          <div class="cdw-modal__footer">
+            <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded">Ok</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cdw-modal cdw-modal--prime cdw-modal--lg cdw-fw-accent-rose" id="modal-prime" data-cdw-modal data-close-overlay="true">
+        <div class="cdw-modal__backdrop" data-cdw-modal-close></div>
+        <div class="cdw-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-prime-title">
+          <button class="cdw-modal__close" type="button" data-cdw-modal-close aria-label="Fechar"></button>
+          <div class="cdw-modal__header">
+            <h3 class="cdw-modal__title" id="modal-prime-title">Plano executivo</h3>
+            <div class="cdw-modal__subtitle">Apresentacao com foco em valor percebido.</div>
+          </div>
+          <div class="cdw-modal__body">Camada premium para destacar planos e condicoes especiais.</div>
+          <div class="cdw-modal__footer">
+            <div class="cdw-modal__actions">
+              <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded" data-cdw-modal-close>Voltar</button>
+              <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded">Escolher</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-  `,
-  stage: `<section id="stage" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+    `,
+    stage: `<section id="stage" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
   <div class="cdw-fw-docs-section-head">
     <h2 class="cdw-fw-docs-section-title">Stage</h2>
     <p class="cdw-fw-docs-lead">Sequencias visuais premium para destaques, apresentacoes e dashboards sem depender de JS manual.</p>
@@ -5509,12 +6037,13 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     "buttons",
     "accordion",
     "alert",
-    "badges",
-    "cards",
-    "gallery",
-    "stage",
-    "navbars",
-  ];
+      "badges",
+      "cards",
+      "gallery",
+      "modal",
+      "stage",
+      "navbars",
+    ];
 
   app.innerHTML = `
     <div class="cdw-fw-docs-app">
@@ -5664,6 +6193,17 @@ function buildNav(root) {
               { label: "Modelos", href: "#gallery-modelos" },
               { label: "E-commerce", href: "#gallery-ecommerce" },
               { label: "Uso", href: "#gallery-uso" },
+            ],
+          },
+          {
+            title: "Modal",
+            target: "#modal",
+            links: [
+              { label: "Conceito", href: "#modal-conceito" },
+              { label: "Estrutura", href: "#modal-estrutura" },
+              { label: "Tamanhos", href: "#modal-tamanhos" },
+              { label: "Modelos", href: "#modal-modelos" },
+              { label: "Exemplos", href: "#modal-exemplos" },
             ],
           },
           {
