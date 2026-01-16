@@ -149,7 +149,6 @@ function computePlacement(
   tooltip: HTMLElement,
   placement: TooltipPlacement
 ): TooltipPlacement {
-  if (placement !== "auto") return placement;
   const rect = trigger.getBoundingClientRect();
   const tip = tooltip.getBoundingClientRect();
   const gap = 10;
@@ -157,6 +156,34 @@ function computePlacement(
   const spaceBottom = window.innerHeight - rect.bottom;
   const spaceLeft = rect.left;
   const spaceRight = window.innerWidth - rect.right;
+
+  const canFit = (side: TooltipPlacement) => {
+    switch (side) {
+      case "top":
+        return spaceTop >= tip.height + gap;
+      case "bottom":
+        return spaceBottom >= tip.height + gap;
+      case "left":
+        return spaceLeft >= tip.width + gap;
+      case "right":
+        return spaceRight >= tip.width + gap;
+      default:
+        return false;
+    }
+  };
+
+  if (placement !== "auto") {
+    if (canFit(placement)) return placement;
+    const opposite =
+      placement === "top"
+        ? "bottom"
+        : placement === "bottom"
+          ? "top"
+          : placement === "left"
+            ? "right"
+            : "left";
+    if (canFit(opposite)) return opposite;
+  }
 
   if (spaceBottom >= tip.height + gap) return "bottom";
   if (spaceTop >= tip.height + gap) return "top";

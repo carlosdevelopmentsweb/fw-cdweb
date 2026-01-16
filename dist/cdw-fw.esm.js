@@ -260,7 +260,7 @@ function Jt() {
     controlsEnabled: !1,
     lastTap: 0,
     keyHandler: (c) => {
-      s.root.classList.contains("is-open") && (c.key === "Escape" && k(), s.controlsEnabled && c.key === "ArrowLeft" && h(s.index - 1), s.controlsEnabled && c.key === "ArrowRight" && h(s.index + 1));
+      s.root.classList.contains("is-open") && (c.key === "Escape" && k(), s.controlsEnabled && c.key === "ArrowLeft" && y(s.index - 1), s.controlsEnabled && c.key === "ArrowRight" && y(s.index + 1));
     }
   };
   return t.addEventListener("click", (c) => {
@@ -271,10 +271,10 @@ function Jt() {
         return;
       }
       if (l.closest("[data-cdw-gallery-prev]")) {
-        h(s.index - 1);
+        y(s.index - 1);
         return;
       }
-      l.closest("[data-cdw-gallery-next]") && h(s.index + 1);
+      l.closest("[data-cdw-gallery-next]") && y(s.index + 1);
     }
   }), n.addEventListener("click", () => {
     const c = Date.now();
@@ -289,7 +289,7 @@ function Qt(t, e) {
 function k() {
   g && (g.root.classList.remove("is-open", "is-zoomed"), g.root.setAttribute("aria-hidden", "true"), document.body.classList.remove("cdw-gallery-focus-open"));
 }
-function h(t) {
+function y(t) {
   if (!g) return;
   const e = g, n = e.items.length;
   if (!n) return;
@@ -300,7 +300,7 @@ function te(t, e, n) {
   const r = Jt(), o = Array.from(t.querySelectorAll(ft));
   r.items = o, r.controlsEnabled = n && o.length > 1, r.prev.style.display = r.controlsEnabled ? "block" : "none", r.next.style.display = r.controlsEnabled ? "block" : "none", Qt(r.root, t.getAttribute("data-cdw-gallery-focus")), r.root.classList.add("is-open"), r.root.setAttribute("aria-hidden", "false"), document.body.classList.add("cdw-gallery-focus-open");
   const i = Math.max(0, o.indexOf(e));
-  h(i);
+  y(i);
 }
 function ee(t, e) {
   if (!e) return;
@@ -337,15 +337,15 @@ function ne(t) {
   );
   if (!n || !r || !d.length) return;
   const f = (u) => {
-    d.forEach((y) => y.classList.remove("is-active")), u.classList.add("is-active");
+    d.forEach((h) => h.classList.remove("is-active")), u.classList.add("is-active");
     const m = u.getAttribute("data-label") ?? "Product", S = u.getAttribute("data-title") ?? m, E = u.getAttribute("data-desc") ?? "", B = u.getAttribute("data-meta") ?? "", St = u.getAttribute("data-aspect") ?? "cdw-gallery__media--square", x = u.getAttribute("data-src"), xt = u.getAttribute("data-alt") ?? m;
     r.className = `cdw-gallery__media ${St}`;
     const T = () => {
-      o && (o.textContent = m), c && (c.textContent = S), l && (l.textContent = E), a && (a.innerHTML = B ? B.split("|").map((y) => `<span>${y.trim()}</span>`).join("") : ""), s && s.classList.remove("is-loading");
+      o && (o.textContent = m), c && (c.textContent = S), l && (l.textContent = E), a && (a.innerHTML = B ? B.split("|").map((h) => `<span>${h.trim()}</span>`).join("") : ""), s && s.classList.remove("is-loading");
     };
     if (s && s.classList.add("is-loading"), i && x) {
-      const y = new URL(x, window.location.href).href;
-      if (i.src === y) {
+      const h = new URL(x, window.location.href).href;
+      if (i.src === h) {
         A(r, i, T);
         return;
       }
@@ -458,17 +458,17 @@ function be(t, e) {
   const n = `cdw-navbar-panel-${Math.random().toString(36).slice(2, 8)}`;
   return t.id = n, e.setAttribute("data-cdw-navbar-panel", n), n;
 }
-function yt(t, e) {
+function ht(t, e) {
   t && t.setAttribute("aria-expanded", e ? "true" : "false");
 }
-function ye(t) {
-  t.container.classList.add("is-open"), yt(t.toggle, !0);
+function he(t) {
+  t.container.classList.add("is-open"), ht(t.toggle, !0);
 }
 function H(t) {
-  t.container.classList.remove("is-open"), yt(t.toggle, !1);
+  t.container.classList.remove("is-open"), ht(t.toggle, !1);
 }
-function he(t) {
-  t.container.classList.contains("is-open") ? H(t) : ye(t);
+function ye(t) {
+  t.container.classList.contains("is-open") ? H(t) : he(t);
 }
 function we(t) {
   const e = t.closest(".cdw-navbar-item");
@@ -498,7 +498,7 @@ function Ee(t) {
       const l = c.target;
       if (!(l instanceof Element)) return;
       if (l.closest(U)) {
-        he(s);
+        ye(s);
         return;
       }
       if (l.closest(Y) || l.closest(".cdw-navbar-overlay")) {
@@ -556,7 +556,7 @@ function Ce(t) {
     n.setAttribute("role", "group"), n.setAttribute("aria-roledescription", "slide"), n.setAttribute("aria-label", `${r + 1} de ${e}`), n.setAttribute("aria-hidden", r === t.current ? "false" : "true");
   });
 }
-function ht(t) {
+function yt(t) {
   const e = t.slides.length;
   if (t.navButtons.forEach((n, r) => {
     r === t.current ? n.setAttribute("aria-current", "true") : n.removeAttribute("aria-current");
@@ -571,7 +571,7 @@ function w(t, e) {
   const r = ke(t, e), o = t.options.loop ? (r - 1 + n) % n : r - 1, i = t.options.loop ? (r + 1) % n : r + 1;
   t.slides.forEach((s, c) => {
     s.classList.toggle("is-active", c === r), s.classList.toggle("is-prev", o >= 0 && c === o), s.classList.toggle("is-next", i < n && c === i);
-  }), t.current = r, Ce(t), ht(t);
+  }), t.current = r, Ce(t), yt(t);
 }
 function et(t) {
   !t.options.autoplay || t.slides.length <= 1 || (t.timerId && window.clearInterval(t.timerId), t.timerId = window.setInterval(() => {
@@ -655,7 +655,7 @@ function Ne(t) {
     d.className = "cdw-stage-nav", r.forEach((f, p) => {
       const u = document.createElement("button");
       u.type = "button", u.className = "cdw-stage-indicator", u.setAttribute("data-cdw-stage-go", String(p)), u.setAttribute("aria-label", `Ir para o slide ${p + 1}`), d.appendChild(u), a.navButtons.push(u);
-    }), t.appendChild(d), ht(a);
+    }), t.appendChild(d), yt(a);
   }
   Q.set(t, a);
 }
@@ -732,8 +732,25 @@ function We(t, e) {
   return s.className = "cdw-tooltip__arrow", s.setAttribute("aria-hidden", "true"), n.appendChild(s), t.setAttribute("aria-describedby", r), n.setAttribute("aria-hidden", "true"), document.body.appendChild(n), n;
 }
 function ze(t, e, n) {
-  if (n !== "auto") return n;
-  const r = t.getBoundingClientRect(), o = e.getBoundingClientRect(), i = 10, s = r.top, c = window.innerHeight - r.bottom, l = r.left, a = window.innerWidth - r.right;
+  const r = t.getBoundingClientRect(), o = e.getBoundingClientRect(), i = 10, s = r.top, c = window.innerHeight - r.bottom, l = r.left, a = window.innerWidth - r.right, d = (f) => {
+    switch (f) {
+      case "top":
+        return s >= o.height + i;
+      case "bottom":
+        return c >= o.height + i;
+      case "left":
+        return l >= o.width + i;
+      case "right":
+        return a >= o.width + i;
+      default:
+        return !1;
+    }
+  };
+  if (n !== "auto") {
+    if (d(n)) return n;
+    const f = n === "top" ? "bottom" : n === "bottom" ? "top" : n === "left" ? "right" : "left";
+    if (d(f)) return f;
+  }
   return c >= o.height + i ? "bottom" : s >= o.height + i ? "top" : a >= o.width + i ? "right" : l >= o.width + i ? "left" : "bottom";
 }
 function wt(t) {
