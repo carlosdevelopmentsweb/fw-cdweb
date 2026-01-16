@@ -1015,6 +1015,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     <a href="#botoes-estilos">Estilos</a>
     <a href="#botoes-tamanhos">Tamanhos</a>
     <a href="#botoes-combinacoes">Combina&ccedil;&otilde;es</a>
+    <a href="#botoes-modelos">Modelos adicionais</a>
     <a href="#botoes-estados">Estados</a>
   </div>
 
@@ -1189,6 +1190,162 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
 &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-accent-indigo"&gt;Secund&aacute;rio&lt;/button&gt;
 &lt;button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-accent-indigo"&gt;Suave&lt;/button&gt;
 &lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--circle cdw-fw-accent-indigo"&gt;+&lt;/button&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="botoes-modelos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Modelos adicionais</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Mais formatos para compor bot&otilde;es com contagem, sele&ccedil;&atilde;o e &iacute;cones.
+      <span class="cdw-fw-docs-when">Quando usar: a&ccedil;&otilde;es com feedback, filtros e clusters visuais.</span>
+    </p>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Split com contador</div>
+        <div class="cdw-fw-docs-badge">Novo</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-docs-btn-row">
+          <div class="cdw-fw-btn-group cdw-fw-btn-group--rounded">
+            <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded cdw-fw-accent-rose cdw-fw-btn--iconic">
+              <span class="cdw-fw-btn__icon">&hearts;</span>Curtir
+            </button>
+            <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded cdw-fw-accent-rose cdw-fw-btn--count">2.048</button>
+          </div>
+          <div class="cdw-fw-btn-group cdw-fw-btn-group--rounded">
+            <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded cdw-fw-accent-sky cdw-fw-btn--iconic">
+              <span class="cdw-fw-btn__icon">+</span>Salvar
+            </button>
+            <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded cdw-fw-accent-sky cdw-fw-btn--count">1.048</button>
+          </div>
+        </div>
+        <div class="cdw-fw-docs-example-caption">Destaque com contador mantendo o CTA em evid&ecirc;ncia.</div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-btn-group cdw-fw-btn-group--rounded"&gt;
+  &lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded cdw-fw-accent-rose cdw-fw-btn--iconic"&gt;
+    &lt;span class="cdw-fw-btn__icon"&gt;&amp;hearts;&lt;/span&gt;Curtir
+  &lt;/button&gt;
+  &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded cdw-fw-accent-rose cdw-fw-btn--count"&gt;2.048&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="cdw-fw-btn-group cdw-fw-btn-group--rounded"&gt;
+  &lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded cdw-fw-accent-sky cdw-fw-btn--iconic"&gt;
+    &lt;span class="cdw-fw-btn__icon"&gt;+&lt;/span&gt;Salvar
+  &lt;/button&gt;
+  &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded cdw-fw-accent-sky cdw-fw-btn--count"&gt;1.048&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Segmentado de escolha</div>
+        <div class="cdw-fw-docs-badge">Novo</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-docs-btn-row">
+          <div class="cdw-fw-btn-group cdw-fw-btn-group--rounded">
+            <button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--rounded cdw-fw-accent-graphite">Solo</button>
+            <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded cdw-fw-accent-graphite">Duo</button>
+            <button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--rounded cdw-fw-accent-graphite">Trio</button>
+          </div>
+          <div class="cdw-fw-btn-group cdw-fw-btn-group--rounded">
+            <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded cdw-fw-accent-sun">Mensal</button>
+            <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded cdw-fw-accent-sun">Anual</button>
+          </div>
+        </div>
+        <div class="cdw-fw-docs-example-caption">Alterna op&ccedil;&otilde;es mantendo coer&ecirc;ncia visual.</div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-btn-group cdw-fw-btn-group--rounded"&gt;
+  &lt;button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--rounded cdw-fw-accent-graphite"&gt;Solo&lt;/button&gt;
+  &lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded cdw-fw-accent-graphite"&gt;Duo&lt;/button&gt;
+  &lt;button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--rounded cdw-fw-accent-graphite"&gt;Trio&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="cdw-fw-btn-group cdw-fw-btn-group--rounded"&gt;
+  &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded cdw-fw-accent-sun"&gt;Mensal&lt;/button&gt;
+  &lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded cdw-fw-accent-sun"&gt;Anual&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Dock com contador</div>
+        <div class="cdw-fw-docs-badge">Novo</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-docs-btn-row">
+          <div class="cdw-fw-btn-dock cdw-fw-accent-ember">
+            <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded">Pedidos</button>
+            <span class="cdw-fw-btn-dock__count">24</span>
+          </div>
+          <div class="cdw-fw-btn-dock cdw-fw-accent-forest">
+            <button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--rounded">Ativos</button>
+            <span class="cdw-fw-btn-dock__count">128</span>
+          </div>
+        </div>
+        <div class="cdw-fw-docs-example-caption">Contagem acoplada sem perder o contraste da a&ccedil;&atilde;o.</div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-btn-dock cdw-fw-accent-ember"&gt;
+  &lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded"&gt;Pedidos&lt;/button&gt;
+  &lt;span class="cdw-fw-btn-dock__count"&gt;24&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="cdw-fw-btn-dock cdw-fw-accent-forest"&gt;
+  &lt;button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--rounded"&gt;Ativos&lt;/button&gt;
+  &lt;span class="cdw-fw-btn-dock__count"&gt;128&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">&Iacute;cones integrados</div>
+        <div class="cdw-fw-docs-badge">Novo</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-docs-btn-row">
+          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded cdw-fw-btn--iconic cdw-fw-accent-indigo">
+            <span class="cdw-fw-btn__icon">IN</span>Insights
+          </button>
+          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded cdw-fw-btn--iconic cdw-fw-accent-violet">
+            <span class="cdw-fw-btn__icon">CL</span>Clube
+          </button>
+          <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded cdw-fw-btn--iconic cdw-fw-accent-carbon">
+            <span class="cdw-fw-btn__icon">KB</span>Docs
+          </button>
+        </div>
+        <div class="cdw-fw-docs-example-caption">Use solid, soft ou outline mantendo &iacute;cones circulares.</div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded cdw-fw-btn--iconic cdw-fw-accent-indigo"&gt;
+  &lt;span class="cdw-fw-btn__icon"&gt;IN&lt;/span&gt;Insights
+&lt;/button&gt;
+&lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded cdw-fw-btn--iconic cdw-fw-accent-violet"&gt;
+  &lt;span class="cdw-fw-btn__icon"&gt;CL&lt;/span&gt;Clube
+&lt;/button&gt;
+&lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded cdw-fw-btn--iconic cdw-fw-accent-carbon"&gt;
+  &lt;span class="cdw-fw-btn__icon"&gt;KB&lt;/span&gt;Docs
+&lt;/button&gt;</code></pre>
       </div>
     </div>
   </div>

@@ -112,6 +112,104 @@
   color: var(--cdw-fw-accent);
 }
 
+.cdw-fw-btn-group {
+  display: inline-flex;
+  align-items: stretch;
+  gap: 0;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.cdw-fw-btn-group--rounded {
+  border-radius: 999px;
+}
+
+.cdw-fw-btn-group > .cdw-fw-btn {
+  border-radius: 0;
+}
+
+.cdw-fw-btn-group > .cdw-fw-btn + .cdw-fw-btn {
+  margin-left: -1px;
+}
+
+.cdw-fw-btn-group > .cdw-fw-btn:first-child {
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
+
+.cdw-fw-btn-group > .cdw-fw-btn:last-child {
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+
+.cdw-fw-btn--count {
+  min-width: 56px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.cdw-fw-btn--iconic {
+  gap: 10px;
+}
+
+.cdw-fw-btn__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  font-size: 11px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.cdw-fw-btn--solid .cdw-fw-btn__icon {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.cdw-fw-btn--soft .cdw-fw-btn__icon,
+.cdw-fw-btn--outline .cdw-fw-btn__icon,
+.cdw-fw-btn--text .cdw-fw-btn__icon {
+  background-color: color-mix(in srgb, var(--cdw-fw-accent) 18%, white);
+  color: var(--cdw-fw-accent);
+}
+
+.cdw-fw-btn-dock {
+  display: inline-flex;
+  align-items: stretch;
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--cdw-fw-accent) 30%, white);
+  background-color: color-mix(in srgb, var(--cdw-fw-accent) 6%, white);
+}
+
+.cdw-fw-btn-dock > .cdw-fw-btn {
+  border-radius: 0;
+  border-right: 0;
+}
+
+.cdw-fw-btn-dock > .cdw-fw-btn:first-child {
+  border-top-left-radius: 999px;
+  border-bottom-left-radius: 999px;
+}
+
+.cdw-fw-btn-dock__count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  padding: 0 12px;
+  border-left: 1px solid color-mix(in srgb, var(--cdw-fw-accent) 30%, white);
+  background-color: color-mix(in srgb, var(--cdw-fw-accent) 14%, white);
+  color: var(--cdw-fw-accent);
+  font-size: 12px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
 @supports (background-color: color-mix(in srgb, #000 10%, white)) {
   .cdw-fw-btn--solid:hover:not(:disabled) {
     background-color: color-mix(in srgb, var(--cdw-fw-accent) 90%, black);
