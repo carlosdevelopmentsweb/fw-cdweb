@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
   const app = document.getElementById("app");
   if (!app) {
     return;
@@ -1531,7 +1531,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     <a href="#util-flex">Flex</a>
     <a href="#util-gap">Gap</a>
     <a href="#util-tamanho">Tamanho</a>
-    <a href="#util-texto">Alinhamento de texto</a>
+    <a href="#util-texto">Texto</a>
   </div>
 
   <div class="cdw-fw-docs-subsection" id="util-espacamento" data-cdw-fw-docs-section>
@@ -1865,17 +1865,197 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
   </div>
 
   <div class="cdw-fw-docs-subsection" id="util-texto" data-cdw-fw-docs-section>
-    <h3 class="cdw-fw-docs-subtitle">Alinhamento de texto</h3>
+    <h3 class="cdw-fw-docs-subtitle">Texto</h3>
     <p class="cdw-fw-docs-subdesc">
-      Alinhe texto rapidamente sem criar classes customizadas.
-      <span class="cdw-fw-docs-when">Quando usar: t&iacute;tulos, cards e legendas.</span>
+      Utilit&aacute;rios tipogr&aacute;ficos para leitura, hierarquia e consist&ecirc;ncia visual.
+      <span class="cdw-fw-docs-when">Quando usar: t&iacute;tulos, par&aacute;grafos, labels e dados.</span>
     </p>
+
+    <h4 class="cdw-fw-docs-subtitle">Fontes</h4>
+    <div class="cdw-fw-docs-classlist">
+      <span>cdw-fw-font-base</span>
+      <span>cdw-fw-font-display</span>
+      <span>cdw-fw-font-mono</span>
+      <span>cdw-fw-font-soft</span>
+    </div>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Fam&iacute;lias tipogr&aacute;ficas</div>
+        <div class="cdw-fw-docs-badge">Novo</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-text-xl cdw-fw-font-display">Portal CDWeb</div>
+        <div class="cdw-fw-text-base cdw-fw-font-base">Texto base para leitura do dia a dia.</div>
+        <div class="cdw-fw-text-sm cdw-fw-font-soft">Leitura institucional com tom editorial.</div>
+        <div class="cdw-fw-text-sm cdw-fw-font-mono">REF-8392-A / ID 0041</div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-font-display"&gt;Portal CDWeb&lt;/div&gt;
+&lt;div class="cdw-fw-font-base"&gt;Texto base para leitura&lt;/div&gt;
+&lt;div class="cdw-fw-font-soft"&gt;Leitura institucional&lt;/div&gt;
+&lt;div class="cdw-fw-font-mono"&gt;REF-8392-A&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <h4 class="cdw-fw-docs-subtitle">Tamanhos</h4>
+    <div class="cdw-fw-docs-classlist">
+      <span>cdw-fw-text-xs</span>
+      <span>cdw-fw-text-sm</span>
+      <span>cdw-fw-text-base</span>
+      <span>cdw-fw-text-lg</span>
+      <span>cdw-fw-text-xl</span>
+      <span>cdw-fw-text-2xl</span>
+    </div>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Escala de tamanhos</div>
+        <div class="cdw-fw-docs-badge">Novo</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-flex cdw-fw-flex-col cdw-fw-gap-2">
+          <div class="cdw-fw-text-xs">Texto xs para notas</div>
+          <div class="cdw-fw-text-sm">Texto sm para labels</div>
+          <div class="cdw-fw-text-base">Texto base para par&aacute;grafos</div>
+          <div class="cdw-fw-text-lg">Texto lg para destaque leve</div>
+          <div class="cdw-fw-text-xl">Texto xl para subt&iacute;tulos</div>
+          <div class="cdw-fw-text-2xl">Texto 2xl para t&iacute;tulos</div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-text-xs"&gt;Texto xs&lt;/div&gt;
+&lt;div class="cdw-fw-text-sm"&gt;Texto sm&lt;/div&gt;
+&lt;div class="cdw-fw-text-base"&gt;Texto base&lt;/div&gt;
+&lt;div class="cdw-fw-text-lg"&gt;Texto lg&lt;/div&gt;
+&lt;div class="cdw-fw-text-xl"&gt;Texto xl&lt;/div&gt;
+&lt;div class="cdw-fw-text-2xl"&gt;Texto 2xl&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <h4 class="cdw-fw-docs-subtitle">Peso &amp; estilo</h4>
+    <div class="cdw-fw-docs-classlist">
+      <span>cdw-fw-text-light</span>
+      <span>cdw-fw-text-regular</span>
+      <span>cdw-fw-text-medium</span>
+      <span>cdw-fw-text-semibold</span>
+      <span>cdw-fw-text-bold</span>
+      <span>cdw-fw-text-italic</span>
+      <span>cdw-fw-text-uppercase</span>
+      <span>cdw-fw-text-lowercase</span>
+      <span>cdw-fw-text-capitalize</span>
+    </div>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Peso e transforma&ccedil;&atilde;o</div>
+        <div class="cdw-fw-docs-badge">Novo</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-flex cdw-fw-gap-2 cdw-fw-flex-wrap">
+          <div class="cdw-fw-text-light">Light</div>
+          <div class="cdw-fw-text-regular">Regular</div>
+          <div class="cdw-fw-text-medium">Medium</div>
+          <div class="cdw-fw-text-semibold">Semibold</div>
+          <div class="cdw-fw-text-bold">Bold</div>
+        </div>
+        <div class="cdw-fw-flex cdw-fw-gap-2 cdw-fw-flex-wrap" style="margin-top:8px;">
+          <div class="cdw-fw-text-italic">Texto it&aacute;lico</div>
+          <div class="cdw-fw-text-uppercase">Uppercase label</div>
+          <div class="cdw-fw-text-lowercase">lowercase tag</div>
+          <div class="cdw-fw-text-capitalize">texto capitalizado</div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-text-light"&gt;Light&lt;/div&gt;
+&lt;div class="cdw-fw-text-semibold"&gt;Semibold&lt;/div&gt;
+&lt;div class="cdw-fw-text-bold"&gt;Bold&lt;/div&gt;
+&lt;div class="cdw-fw-text-italic"&gt;Texto italico&lt;/div&gt;
+&lt;div class="cdw-fw-text-uppercase"&gt;Uppercase label&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <h4 class="cdw-fw-docs-subtitle">Espa&ccedil;amento</h4>
+    <div class="cdw-fw-docs-classlist">
+      <span>cdw-fw-leading-tight</span>
+      <span>cdw-fw-leading-normal</span>
+      <span>cdw-fw-leading-loose</span>
+      <span>cdw-fw-tracking-tight</span>
+      <span>cdw-fw-tracking-normal</span>
+      <span>cdw-fw-tracking-wide</span>
+    </div>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Line height e tracking</div>
+        <div class="cdw-fw-docs-badge">Novo</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-text-base cdw-fw-leading-tight">
+          Linha tight para chamadas curtas e mensagens r&aacute;pidas.
+        </div>
+        <div class="cdw-fw-text-base cdw-fw-leading-loose" style="margin-top:8px;">
+          Linha loose melhora a leitura em par&aacute;grafos longos e institucionais.
+        </div>
+        <div class="cdw-fw-text-sm cdw-fw-tracking-wide cdw-fw-text-uppercase" style="margin-top:10px;">
+          Label com tracking wide
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;p class="cdw-fw-leading-tight"&gt;Linha tight...&lt;/p&gt;
+&lt;p class="cdw-fw-leading-loose"&gt;Linha loose...&lt;/p&gt;
+&lt;span class="cdw-fw-tracking-wide cdw-fw-text-uppercase"&gt;Label&lt;/span&gt;</code></pre>
+      </div>
+    </div>
+
+    <h4 class="cdw-fw-docs-subtitle">Decora&ccedil;&atilde;o e realce</h4>
+    <div class="cdw-fw-docs-classlist">
+      <span>cdw-fw-text-underline-soft</span>
+      <span>cdw-fw-text-underline-accent</span>
+      <span>cdw-fw-text-muted</span>
+      <span>cdw-fw-text-emphasis</span>
+    </div>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Realces discretos</div>
+        <div class="cdw-fw-docs-badge">Novo</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-text-base cdw-fw-text-underline-soft">Underline soft para links contextuais.</div>
+        <div class="cdw-fw-text-base cdw-fw-text-underline-accent" style="margin-top:6px;">Underline accent com cor do tema.</div>
+        <div class="cdw-fw-text-base cdw-fw-text-muted" style="margin-top:6px;">Texto muted para informa&ccedil;&atilde;o secund&aacute;ria.</div>
+        <div class="cdw-fw-text-base cdw-fw-text-emphasis" style="margin-top:6px;">Texto emphasis para pontos importantes.</div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-text-underline-soft"&gt;Underline soft&lt;/div&gt;
+&lt;div class="cdw-fw-text-underline-accent"&gt;Underline accent&lt;/div&gt;
+&lt;div class="cdw-fw-text-muted"&gt;Texto muted&lt;/div&gt;
+&lt;div class="cdw-fw-text-emphasis"&gt;Texto emphasis&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <h4 class="cdw-fw-docs-subtitle">Alinhamento</h4>
     <div class="cdw-fw-docs-classlist">
       <span>cdw-fw-text-left</span>
       <span>cdw-fw-text-center</span>
       <span>cdw-fw-text-right</span>
     </div>
-
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
         <div class="cdw-fw-docs-example-title">Alinhamento em tr&ecirc;s caixas</div>
@@ -1897,6 +2077,34 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-text-left"&gt;Left&lt;/div&gt;
 &lt;div class="cdw-fw-text-center"&gt;Center&lt;/div&gt;
 &lt;div class="cdw-fw-text-right"&gt;Right&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <h4 class="cdw-fw-docs-subtitle">Exemplos pr&aacute;ticos</h4>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Card com hierarquia tipogr&aacute;fica</div>
+        <div class="cdw-fw-docs-badge">Uso</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div style="background:#f4f7fb; border-radius:14px; padding:16px; border:1px solid #d6dee8;">
+          <div class="cdw-fw-text-xs cdw-fw-text-uppercase cdw-fw-tracking-wide cdw-fw-text-muted">Relat&oacute;rio mensal</div>
+          <div class="cdw-fw-text-xl cdw-fw-text-semibold cdw-fw-font-display" style="margin-top:6px;">Performance operacional</div>
+          <div class="cdw-fw-text-base cdw-fw-leading-loose" style="margin-top:8px;">
+            Conte&uacute;do pensado para leitura longa com espa&ccedil;amento confort&aacute;vel.
+          </div>
+          <div class="cdw-fw-text-sm cdw-fw-text-underline-accent" style="margin-top:10px;">Ver detalhes</div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-text-xs cdw-fw-text-uppercase cdw-fw-tracking-wide cdw-fw-text-muted"&gt;Relatorio mensal&lt;/div&gt;
+&lt;div class="cdw-fw-text-xl cdw-fw-text-semibold cdw-fw-font-display"&gt;Performance operacional&lt;/div&gt;
+&lt;div class="cdw-fw-text-base cdw-fw-leading-loose"&gt;Conteudo pensado para leitura longa.&lt;/div&gt;
+&lt;div class="cdw-fw-text-sm cdw-fw-text-underline-accent"&gt;Ver detalhes&lt;/div&gt;</code></pre>
       </div>
     </div>
   </div>
@@ -4167,7 +4375,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
       </div>
 
       <div class="cdw-fw-docs-subsection" id="gallery-ecommerce" data-cdw-fw-docs-section>
-        <h3 class="cdw-fw-docs-subtitle">Gallery – E-commerce</h3>
+        <h3 class="cdw-fw-docs-subtitle">Gallery � E-commerce</h3>
         <p class="cdw-fw-docs-subdesc">
           Product Switch serve para alternar imagens rapidamente. Product Detail adiciona descricao individual por imagem e leitura de compra. Loading automatico aparece ao trocar.
         </p>
@@ -6345,22 +6553,43 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
 
   };
 
-  const sectionOrder = [
-    "gettingStarted",
-    "layout",
-    "utilities",
-    "colors",
-    "buttons",
-    "accordion",
-    "alert",
-    "badges",
-    "cards",
-    "gallery",
-    "modal",
-    "tooltip",
-    "stage",
-    "navbars",
+  const pageLinks = [
+    { key: "getting-started", label: "Come&ccedil;ando", href: "./index.html" },
+    { key: "layout", label: "Layout", href: "./layout.html" },
+    { key: "design", label: "Sistema de design", href: "./design.html" },
+    { key: "utilities", label: "Utilit&aacute;rios", href: "./utilities.html" },
+    { key: "components", label: "Componentes", href: "./components.html" },
   ];
+
+  const pageSections = {
+    "getting-started": ["gettingStarted"],
+    layout: ["layout"],
+    design: ["colors"],
+    utilities: ["utilities"],
+    components: [
+      "buttons",
+      "accordion",
+      "alert",
+      "badges",
+      "cards",
+      "gallery",
+      "modal",
+      "tooltip",
+      "stage",
+      "navbars",
+    ],
+  };
+
+  const pageKey =
+    typeof window !== "undefined" && window.CDW_DOCS_PAGE
+      ? String(window.CDW_DOCS_PAGE).toLowerCase()
+      : "getting-started";
+
+  const pageConfig = pageSections[pageKey]
+    ? { key: pageKey, sections: pageSections[pageKey] }
+    : { key: "getting-started", sections: pageSections["getting-started"] };
+
+  const sectionOrder = pageConfig.sections;
 
   app.innerHTML = `
     <div class="cdw-fw-docs-app">
@@ -6416,80 +6645,143 @@ function buildNav(root) {
 
   nav.innerHTML = "";
 
-  const navData = [
-    {
-      title: "LAYOUT",
-      items: [
-        {
-          title: "Containers",
-          target: "#layout-container",
-          links: [
-            { label: "Container b&aacute;sico", href: "#layout-container" },
-            { label: "Container fluido", href: "#layout-container" },
-            { label: "Exemplos de uso", href: "#layout-container" },
-          ],
-        },
-        {
-          title: "Grids",
-          target: "#layout-grid",
-          links: [
-            { label: "Grid system", href: "#layout-grid" },
-            { label: "Colunas", href: "#layout-grid" },
-            { label: "Responsividade", href: "#layout-grid" },
-          ],
-        },
-        {
-          title: "Cores",
-          target: "#cores-paleta",
-          links: [
-            { label: "Paleta", href: "#cores-paleta" },
-            { label: "Uso recomendado", href: "#cores-uso" },
-            { label: "Boas pr&aacute;ticas", href: "#cores-uso" },
-          ],
-        },
-      ],
-    },
-    {
-      title: "COMPONENTES",
-      items: [
-        {
-          title: "Bot&otilde;es",
-          target: "#botoes-estrutura",
-          links: [
-            { label: "Tipos", href: "#botoes-estrutura" },
-            { label: "Estados", href: "#botoes-estados" },
-            { label: "&Iacute;cones", href: "#botoes-formas" },
-          ],
-        },
-        {
-          title: "Accordions",
-          target: "#accordion-introducao",
-          links: [
-            { label: "Uso", href: "#accordion-introducao" },
-            { label: "Varia&ccedil;&otilde;es", href: "#accordion-variantes" },
-            { label: "Exemplos", href: "#accordion-basico" },
-          ],
-        },
-        {
-          title: "Alerts",
-          target: "#alert-intro",
-          links: [
-            { label: "Tipos", href: "#alert-variantes" },
-            { label: "Contextos", href: "#alert-intro" },
-            { label: "Exemplos", href: "#alert-modelos" },
-          ],
-        },
-        {
-          title: "Badges",
-          target: "#badges",
-          links: [
-            { label: "Conceito", href: "#badges-conceito" },
-            { label: "Tipos", href: "#badges-tipos" },
-            { label: "Estilos", href: "#badges-estilos" },
-            { label: "Exemplos", href: "#badges-exemplos" },
-            { label: "Uso", href: "#badges-uso" },
-          ],
-        },
+  const navDataByPage = {
+    "getting-started": [
+      {
+        title: "COME&Ccedil;ANDO",
+        items: [
+          {
+            title: "Primeiros passos",
+            target: "#comecando",
+            links: [
+              { label: "Inclus&atilde;o via CDN", href: "#comecando-cdn" },
+              { label: "Vers&atilde;o sempre atual", href: "#comecando-latest" },
+              { label: "Uso com ES Modules", href: "#comecando-esm" },
+            ],
+          },
+        ],
+      },
+    ],
+    layout: [
+      {
+        title: "LAYOUT",
+        items: [
+          {
+            title: "Containers",
+            target: "#layout-container",
+            links: [
+              { label: "Container b&aacute;sico", href: "#layout-container" },
+              { label: "Container fluido", href: "#layout-container" },
+              { label: "Exemplos de uso", href: "#layout-container" },
+            ],
+          },
+          {
+            title: "Grids",
+            target: "#layout-grid",
+            links: [
+              { label: "Grid system", href: "#layout-grid" },
+              { label: "Colunas", href: "#layout-grid" },
+              { label: "Responsividade", href: "#layout-grid" },
+            ],
+          },
+        ],
+      },
+    ],
+    design: [
+      {
+        title: "SISTEMA DE DESIGN",
+        items: [
+          {
+            title: "Cores",
+            target: "#cores",
+            links: [
+              { label: "Introdu&ccedil;&atilde;o", href: "#cores-intro" },
+              { label: "Paleta", href: "#cores-paleta" },
+              { label: "Uso b&aacute;sico", href: "#cores-uso" },
+            ],
+          },
+        ],
+      },
+    ],
+    utilities: [
+      {
+        title: "UTILIT&Aacute;RIOS",
+        items: [
+          {
+            title: "Espa&ccedil;amento",
+            target: "#util-espacamento",
+            links: [{ label: "Espa&ccedil;amento", href: "#util-espacamento" }],
+          },
+          {
+            title: "Display",
+            target: "#util-display",
+            links: [{ label: "Display", href: "#util-display" }],
+          },
+          {
+            title: "Flex",
+            target: "#util-flex",
+            links: [{ label: "Flex", href: "#util-flex" }],
+          },
+          {
+            title: "Gap",
+            target: "#util-gap",
+            links: [{ label: "Gap", href: "#util-gap" }],
+          },
+          {
+            title: "Dimens&otilde;es",
+            target: "#util-tamanho",
+            links: [{ label: "Tamanho", href: "#util-tamanho" }],
+          },
+          {
+            title: "Texto",
+            target: "#util-texto",
+            links: [{ label: "Texto", href: "#util-texto" }],
+          },
+        ],
+      },
+    ],
+    components: [
+      {
+        title: "COMPONENTES",
+        items: [
+          {
+            title: "Bot&otilde;es",
+            target: "#botoes-estrutura",
+            links: [
+              { label: "Tipos", href: "#botoes-estrutura" },
+              { label: "Estados", href: "#botoes-estados" },
+              { label: "&Iacute;cones", href: "#botoes-estilos" },
+            ],
+          },
+          {
+            title: "Accordions",
+            target: "#accordion-estrutura",
+            links: [
+              { label: "Uso", href: "#accordion-estrutura" },
+              { label: "Varia&ccedil;&otilde;es", href: "#accordion-variedades" },
+              { label: "Exemplos", href: "#accordion-exemplos" },
+            ],
+          },
+          {
+            title: "Alerts",
+            target: "#alerts",
+            links: [
+              { label: "Tipos", href: "#alerts-tipos" },
+              { label: "Contextos", href: "#alerts-contextos" },
+              { label: "Exemplos", href: "#alerts-exemplos" },
+            ],
+          },
+          {
+            title: "Badges",
+            target: "#badges",
+            links: [
+              { label: "Conceito", href: "#badges-conceito" },
+              { label: "Tipos", href: "#badges-tipos" },
+              { label: "Estilos", href: "#badges-estilos" },
+              { label: "Exemplos", href: "#badges-exemplos" },
+              { label: "Uso", href: "#badges-uso" },
+            ],
+          },
           {
             title: "Cards",
             target: "#cards",
@@ -6539,12 +6831,12 @@ function buildNav(root) {
             target: "#stage",
             links: [
               { label: "Conceito", href: "#stage-conceito" },
-            { label: "Estrutura", href: "#stage-estrutura" },
-            { label: "Modelos", href: "#stage-modelos" },
-            { label: "Exemplos", href: "#stage-exemplos" },
-            { label: "Uso", href: "#stage-usos" },
-          ],
-        },
+              { label: "Estrutura", href: "#stage-estrutura" },
+              { label: "Modelos", href: "#stage-modelos" },
+              { label: "Exemplos", href: "#stage-exemplos" },
+              { label: "Uso", href: "#stage-usos" },
+            ],
+          },
           {
             title: "NavBars",
             target: "#navbars",
@@ -6556,28 +6848,45 @@ function buildNav(root) {
               { label: "Exemplos", href: "#navbars-exemplos" },
             ],
           },
-      ],
-    },
-    {
-      title: "UTILIT&Aacute;RIOS",
-      items: [
-        {
-          title: "Helpers CSS",
-          target: "#utilitarios",
-          links: [{ label: "Vis&atilde;o geral", href: "#utilitarios" }],
-        },
-        {
-          title: "Classes utilit&aacute;rias",
-          target: "#util-espacamento",
-          links: [
-            { label: "Espa&ccedil;amento", href: "#util-espacamento" },
-            { label: "Display", href: "#util-display" },
-            { label: "Flex", href: "#util-flex" },
-          ],
-        },
-      ],
-    },
+        ],
+      },
+    ],
+  };
+
+    const pageKey =
+    typeof window !== "undefined" && window.CDW_DOCS_PAGE
+      ? String(window.CDW_DOCS_PAGE).toLowerCase()
+      : "getting-started";
+
+  const pageLinks = [
+    { key: "getting-started", label: "Come&ccedil;ando", href: "./index.html" },
+    { key: "layout", label: "Layout", href: "./layout.html" },
+    { key: "design", label: "Sistema de design", href: "./design.html" },
+    { key: "utilities", label: "Utilit&aacute;rios", href: "./utilities.html" },
+    { key: "components", label: "Componentes", href: "./components.html" },
   ];
+
+  const navData = navDataByPage[pageKey] || [];
+
+
+  const createPageLink = (link) => {
+    const anchor = document.createElement("a");
+    anchor.className = "cdw-fw-docs-nav-link";
+    anchor.href = link.href;
+    anchor.innerHTML = link.label;
+    return anchor;
+  };
+
+  const pageLinksWrap = document.createElement("div");
+  pageLinksWrap.className = "cdw-fw-docs-nav-links";
+  pageLinks.forEach((link) => {
+    const anchor = createPageLink(link);
+    if (link.key === pageKey) {
+      anchor.setAttribute("aria-current", "page");
+    }
+    pageLinksWrap.appendChild(anchor);
+  });
+  nav.appendChild(pageLinksWrap);
 
   const createLink = (link) => {
     const anchor = document.createElement("a");
@@ -6850,4 +7159,14 @@ function setupScrollSpy(root) {
     setActive(initialHash);
   }
 }
+
+
+
+
+
+
+
+
+
+
 

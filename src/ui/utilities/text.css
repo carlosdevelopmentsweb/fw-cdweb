@@ -1,3 +1,62 @@
 .cdw-fw-text-left { text-align: left; }
 .cdw-fw-text-center { text-align: center; }
 .cdw-fw-text-right { text-align: right; }
+
+.cdw-fw-font-base { font-family: var(--cdw-fw-font); }
+.cdw-fw-font-display { font-family: "Segoe UI", "Montserrat", "Arial", sans-serif; }
+.cdw-fw-font-mono { font-family: "Cascadia Mono", "Consolas", "Menlo", monospace; }
+.cdw-fw-font-soft { font-family: "Cambria", "Georgia", "Times New Roman", serif; }
+
+.cdw-fw-text-xs { font-size: 0.75rem; }
+.cdw-fw-text-sm { font-size: 0.875rem; }
+.cdw-fw-text-base { font-size: 1rem; }
+.cdw-fw-text-lg { font-size: 1.125rem; }
+.cdw-fw-text-xl { font-size: 1.25rem; }
+.cdw-fw-text-2xl { font-size: 1.5rem; }
+
+.cdw-fw-text-light { font-weight: 300; }
+.cdw-fw-text-regular { font-weight: 400; }
+.cdw-fw-text-medium { font-weight: 500; }
+.cdw-fw-text-semibold { font-weight: 600; }
+.cdw-fw-text-bold { font-weight: 700; }
+
+.cdw-fw-text-italic { font-style: italic; }
+.cdw-fw-text-uppercase { text-transform: uppercase; }
+.cdw-fw-text-lowercase { text-transform: lowercase; }
+.cdw-fw-text-capitalize { text-transform: capitalize; }
+
+.cdw-fw-leading-tight { line-height: 1.2; }
+.cdw-fw-leading-normal { line-height: 1.5; }
+.cdw-fw-leading-loose { line-height: 1.75; }
+
+.cdw-fw-tracking-tight { letter-spacing: -0.02em; }
+.cdw-fw-tracking-normal { letter-spacing: 0; }
+.cdw-fw-tracking-wide { letter-spacing: 0.06em; }
+
+.cdw-fw-text-underline-soft {
+  text-decoration-line: underline;
+  text-decoration-color: color-mix(in srgb, currentColor 25%, transparent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.cdw-fw-text-underline-accent {
+  text-decoration-line: underline;
+  text-decoration-color: var(--cdw-fw-accent, currentColor);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+.cdw-fw-text-muted {
+  color: color-mix(in srgb, currentColor 55%, #64748b);
+}
+
+.cdw-fw-text-emphasis {
+  color: color-mix(in srgb, currentColor 85%, #0f172a);
+  font-weight: 600;
+}
+
+@supports not (color: color-mix(in srgb, #000 50%, #fff)) {
+  .cdw-fw-text-muted { opacity: 0.7; }
+  .cdw-fw-text-emphasis { font-weight: 600; }
+}
