@@ -5196,9 +5196,11 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
       <div class="cdw-fw-docs-highlight">Use um modelo por contexto: institucional, sistema interno, docs.</div>
       <div class="cdw-fw-docs-highlight">O accent deve realcar linhas, cortes e detalhes, nunca apagar o texto.</div>
       <div class="cdw-fw-docs-highlight">A area visual pode ser mock, shape ou preview real do produto.</div>
+      <div class="cdw-fw-docs-highlight">Para arredondar, use style com --cdw-hero-radius e --cdw-hero-visual-radius.</div>
     </div>
   </div>
 </section>
+
 `,
   gallery: `<section id="gallery" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
     <div class="cdw-fw-docs-section-head">
@@ -8273,6 +8275,8 @@ function setupScrollSpy(root) {
     setActive(initialHash);
   }
 }
+
+
 
 
 
