@@ -110,19 +110,45 @@
 
 .cdw-panel-layer,
 .cdw-panel--layer {
-  background: var(--cdw-panel-bg);
-  border: 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f1f4fa 100%);
+  border: 1px solid color-mix(in srgb, var(--cdw-panel-accent) 18%, #d9dfeb);
   border-radius: 16px;
+  box-shadow:
+    0 18px 34px rgba(15, 23, 42, 0.12),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.7);
 }
 
 .cdw-panel-layer::before,
 .cdw-panel--layer::before {
-  background: var(--cdw-panel-soft);
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--cdw-panel-accent) 12%, #ffffff),
+    transparent 70%
+  );
   border-radius: 12px;
-  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--cdw-panel-accent) 14%, transparent);
+  border: 1px solid color-mix(in srgb, var(--cdw-panel-accent) 18%, #e1e6f0);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6);
   content: "";
-  inset: 12px;
+  inset: 10px;
   position: absolute;
+  z-index: 0;
+}
+
+.cdw-panel-layer::after,
+.cdw-panel--layer::after {
+  content: "";
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  top: 18px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in srgb, var(--cdw-panel-accent) 35%, transparent),
+    transparent
+  );
+  opacity: 0.7;
   z-index: 0;
 }
 

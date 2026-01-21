@@ -4226,7 +4226,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
             <div class="cdw-panel-title">Camadas de contexto</div>
             <div class="cdw-panel-subtitle">Base + apoio visual</div>
           </div>
-          <div class="cdw-panel-body">Separar dados prim&aacute;rios de apoio.</div>
+          <div class="cdw-panel-body">Separar informacao principal de apoio.</div>
         </div>
       </div>
       <div class="cdw-fw-docs-codeblock">
@@ -4239,7 +4239,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     &lt;div class="cdw-panel-title"&gt;Camadas de contexto&lt;/div&gt;
     &lt;div class="cdw-panel-subtitle"&gt;Base + apoio visual&lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class="cdw-panel-body"&gt;Separar dados prim&aacute;rios de apoio.&lt;/div&gt;
+  &lt;div class="cdw-panel-body"&gt;Separar informacao principal de apoio.&lt;/div&gt;
 &lt;/div&gt;</code></pre>
       </div>
     </div>
@@ -8275,6 +8275,8 @@ function setupScrollSpy(root) {
     setActive(initialHash);
   }
 }
+
+
 
 
 
