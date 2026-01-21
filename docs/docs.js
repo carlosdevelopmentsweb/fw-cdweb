@@ -4509,7 +4509,698 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     </div>
 </section>
 
-`,  gallery: `<section id="gallery" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+`,  hero: `
+<section id="hero" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+  <div class="cdw-fw-docs-section-head">
+    <h2 class="cdw-fw-docs-section-title">Hero</h2>
+    <p class="cdw-fw-docs-lead">
+      Abertura premium para paginas institucionais, dashboards e documentacao com identidade CDW-FW.
+    </p>
+  </div>
+
+  <div class="cdw-fw-docs-toc">
+    <span class="cdw-fw-docs-toc-title">Indice desta pagina</span>
+    <a href="#hero-conceito">Conceito</a>
+    <a href="#hero-estrutura">Estrutura</a>
+    <a href="#hero-tamanhos">Tamanhos</a>
+    <a href="#hero-modelos">Modelos</a>
+    <a href="#hero-uso">Uso</a>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="hero-conceito" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Conceito</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Hero e a abertura de contexto do framework. Une mensagem, direcao visual e acao para orientar o usuario.
+      <span class="cdw-fw-docs-when">Quando usar: topo de paginas de produto, docs e sistemas internos.</span>
+    </p>
+    <div class="cdw-fw-docs-classlist">
+      <span>cdw-hero</span>
+      <span>cdw-hero-inner</span>
+      <span>cdw-hero-content</span>
+      <span>cdw-hero-visual</span>
+      <span>cdw-hero-visual-inner</span>
+      <span>cdw-hero--*</span>
+      <span>cdw-hero-sm</span>
+      <span>cdw-hero-md</span>
+      <span>cdw-hero-lg</span>
+      <span>cdw-hero-xl</span>
+      <span>cdw-fw-accent-*</span>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="hero-estrutura" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Estrutura</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Eyebrow, acoes e meta sao opcionais. Titulo e subtitulo sao recomendados. O visual sempre existe.
+    </p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Base obrigatoria</div>
+        <div class="cdw-fw-docs-badge">Estrutura</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <section class="cdw-hero cdw-hero--split-prism cdw-hero-md cdw-fw-accent-ocean">
+          <div class="cdw-hero-inner">
+            <div class="cdw-hero-content">
+              <div class="cdw-hero-eyebrow">CDW FW</div>
+              <h1 class="cdw-hero-title">Hero com identidade</h1>
+              <p class="cdw-hero-subtitle">Mensagem curta para direcionar a pagina e destacar o framework.</p>
+              <div class="cdw-hero-actions">
+                <a class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded" href="#">Acao primaria</a>
+                <a class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded" href="#">Acao secundaria</a>
+              </div>
+              <div class="cdw-hero-meta">Meta opcional</div>
+            </div>
+            <div class="cdw-hero-visual">
+              <div class="cdw-hero-visual-inner">
+                <div class="cdw-hero-mock">
+                  <div class="cdw-hero-mock-bar"></div>
+                  <div class="cdw-hero-mock-row"></div>
+                  <div class="cdw-hero-mock-row is-short"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;section class="cdw-hero cdw-hero--split-prism cdw-hero-md cdw-fw-accent-ocean"&gt;
+  &lt;div class="cdw-hero-inner"&gt;
+    &lt;div class="cdw-hero-content"&gt;
+      &lt;div class="cdw-hero-eyebrow"&gt;CDW FW&lt;/div&gt;
+      &lt;h1 class="cdw-hero-title"&gt;Hero com identidade&lt;/h1&gt;
+      &lt;p class="cdw-hero-subtitle"&gt;Mensagem curta para direcionar a pagina e destacar o framework.&lt;/p&gt;
+      &lt;div class="cdw-hero-actions"&gt;
+        &lt;a class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded" href="#"&gt;Acao primaria&lt;/a&gt;
+        &lt;a class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded" href="#"&gt;Acao secundaria&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class="cdw-hero-meta"&gt;Meta opcional&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-hero-visual"&gt;
+      &lt;div class="cdw-hero-visual-inner"&gt;
+        &lt;div class="cdw-hero-mock"&gt;
+          &lt;div class="cdw-hero-mock-bar"&gt;&lt;/div&gt;
+          &lt;div class="cdw-hero-mock-row"&gt;&lt;/div&gt;
+          &lt;div class="cdw-hero-mock-row is-short"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="hero-tamanhos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Tamanhos</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Os tamanhos alteram tipografia, ritmo e proporcao do grid. Escolha pelo contexto da pagina.
+    </p>
+    <div class="cdw-fw-docs-classlist">
+      <span>cdw-hero-sm</span>
+      <span>cdw-hero-md</span>
+      <span>cdw-hero-lg</span>
+      <span>cdw-hero-xl</span>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="hero-modelos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Modelos</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Oito variacoes reais, cada uma com linguagem visual e ritmo proprios.
+    </p>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Hero Split Prism</div>
+        <div class="cdw-fw-docs-badge">Framework</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <section class="cdw-hero cdw-hero--split-prism cdw-hero-lg cdw-fw-accent-ocean">
+          <div class="cdw-hero-inner">
+            <div class="cdw-hero-content">
+              <div class="cdw-hero-eyebrow">CDW FW</div>
+              <h1 class="cdw-hero-title">Release visual 1.0</h1>
+              <p class="cdw-hero-subtitle">Componentes com identidade, tokens claros e fluxo de uso consistente.</p>
+              <div class="cdw-hero-actions">
+                <a class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded" href="#">Ver release</a>
+                <a class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded" href="#">Guia visual</a>
+              </div>
+              <div class="cdw-hero-meta">Atualizado hoje &bull; 24 componentes</div>
+            </div>
+            <div class="cdw-hero-visual">
+              <div class="cdw-hero-visual-inner">
+                <div class="cdw-hero-mock">
+                  <div class="cdw-hero-mock-bar"></div>
+                  <div class="cdw-hero-mock-row"></div>
+                  <div class="cdw-hero-mock-row is-short"></div>
+                  <div class="cdw-hero-mock-row"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;section class="cdw-hero cdw-hero--split-prism cdw-hero-lg cdw-fw-accent-ocean"&gt;
+  &lt;div class="cdw-hero-inner"&gt;
+    &lt;div class="cdw-hero-content"&gt;
+      &lt;div class="cdw-hero-eyebrow"&gt;CDW FW&lt;/div&gt;
+      &lt;h1 class="cdw-hero-title"&gt;Release visual 1.0&lt;/h1&gt;
+      &lt;p class="cdw-hero-subtitle"&gt;Componentes com identidade, tokens claros e fluxo de uso consistente.&lt;/p&gt;
+      &lt;div class="cdw-hero-actions"&gt;
+        &lt;a class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded" href="#"&gt;Ver release&lt;/a&gt;
+        &lt;a class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded" href="#"&gt;Guia visual&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class="cdw-hero-meta"&gt;Atualizado hoje &bull; 24 componentes&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-hero-visual"&gt;
+      &lt;div class="cdw-hero-visual-inner"&gt;
+        &lt;div class="cdw-hero-mock"&gt;
+          &lt;div class="cdw-hero-mock-bar"&gt;&lt;/div&gt;
+          &lt;div class="cdw-hero-mock-row"&gt;&lt;/div&gt;
+          &lt;div class="cdw-hero-mock-row is-short"&gt;&lt;/div&gt;
+          &lt;div class="cdw-hero-mock-row"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+      </div>
+    </div>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Hero Frame Editorial</div>
+        <div class="cdw-fw-docs-badge">Docs</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <section class="cdw-hero cdw-hero--frame-editorial cdw-hero-md cdw-fw-accent-cocoa">
+          <div class="cdw-hero-inner">
+            <div class="cdw-hero-content">
+              <div class="cdw-hero-eyebrow">Documentacao</div>
+              <h1 class="cdw-hero-title">Manual editorial CDW</h1>
+              <p class="cdw-hero-subtitle">Diretrizes de voz, layout e hierarquia para interfaces consistentes.</p>
+              <div class="cdw-hero-actions">
+                <a class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded" href="#">Abrir manual</a>
+                <a class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded" href="#">Baixar PDF</a>
+              </div>
+              <div class="cdw-hero-meta">Versao 3.2 &bull; 48 paginas</div>
+            </div>
+            <div class="cdw-hero-visual">
+              <div class="cdw-hero-visual-inner">
+                <div class="cdw-hero-editorial">
+                  <div class="cdw-hero-editorial-line is-accent"></div>
+                  <div class="cdw-hero-editorial-line"></div>
+                  <div class="cdw-hero-editorial-line"></div>
+                  <div class="cdw-hero-editorial-line is-accent"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;section class="cdw-hero cdw-hero--frame-editorial cdw-hero-md cdw-fw-accent-cocoa"&gt;
+  &lt;div class="cdw-hero-inner"&gt;
+    &lt;div class="cdw-hero-content"&gt;
+      &lt;div class="cdw-hero-eyebrow"&gt;Documentacao&lt;/div&gt;
+      &lt;h1 class="cdw-hero-title"&gt;Manual editorial CDW&lt;/h1&gt;
+      &lt;p class="cdw-hero-subtitle"&gt;Diretrizes de voz, layout e hierarquia para interfaces consistentes.&lt;/p&gt;
+      &lt;div class="cdw-hero-actions"&gt;
+        &lt;a class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded" href="#"&gt;Abrir manual&lt;/a&gt;
+        &lt;a class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded" href="#"&gt;Baixar PDF&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class="cdw-hero-meta"&gt;Versao 3.2 &bull; 48 paginas&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-hero-visual"&gt;
+      &lt;div class="cdw-hero-visual-inner"&gt;
+        &lt;div class="cdw-hero-editorial"&gt;
+          &lt;div class="cdw-hero-editorial-line is-accent"&gt;&lt;/div&gt;
+          &lt;div class="cdw-hero-editorial-line"&gt;&lt;/div&gt;
+          &lt;div class="cdw-hero-editorial-line"&gt;&lt;/div&gt;
+          &lt;div class="cdw-hero-editorial-line is-accent"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Hero Layer Stack</div>
+        <div class="cdw-fw-docs-badge">Sistema</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <section class="cdw-hero cdw-hero--layer-stack cdw-hero-lg cdw-fw-accent-violet">
+          <div class="cdw-hero-inner">
+            <div class="cdw-hero-content">
+              <div class="cdw-hero-eyebrow">Configuracao</div>
+              <h1 class="cdw-hero-title">Camadas de tema e densidade</h1>
+              <p class="cdw-hero-subtitle">Ative niveis de contraste, grade e espacamento com consistencia total.</p>
+              <div class="cdw-hero-actions">
+                <a class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded" href="#">Configurar tema</a>
+                <a class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded" href="#">Ver presets</a>
+              </div>
+              <div class="cdw-hero-meta">3 camadas prontas &bull; 12 presets</div>
+            </div>
+            <div class="cdw-hero-visual">
+              <div class="cdw-hero-visual-inner">
+                <div class="cdw-hero-layer-stack">
+                  <div class="cdw-hero-layer-card">
+                    <div class="cdw-hero-mock-bar"></div>
+                    <div class="cdw-hero-mock-row"></div>
+                  </div>
+                  <div class="cdw-hero-layer-card is-offset">
+                    <div class="cdw-hero-mock-bar"></div>
+                    <div class="cdw-hero-mock-row is-short"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;section class="cdw-hero cdw-hero--layer-stack cdw-hero-lg cdw-fw-accent-violet"&gt;
+  &lt;div class="cdw-hero-inner"&gt;
+    &lt;div class="cdw-hero-content"&gt;
+      &lt;div class="cdw-hero-eyebrow"&gt;Configuracao&lt;/div&gt;
+      &lt;h1 class="cdw-hero-title"&gt;Camadas de tema e densidade&lt;/h1&gt;
+      &lt;p class="cdw-hero-subtitle"&gt;Ative niveis de contraste, grade e espacamento com consistencia total.&lt;/p&gt;
+      &lt;div class="cdw-hero-actions"&gt;
+        &lt;a class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded" href="#"&gt;Configurar tema&lt;/a&gt;
+        &lt;a class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded" href="#"&gt;Ver presets&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class="cdw-hero-meta"&gt;3 camadas prontas &bull; 12 presets&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-hero-visual"&gt;
+      &lt;div class="cdw-hero-visual-inner"&gt;
+        &lt;div class="cdw-hero-layer-stack"&gt;
+          &lt;div class="cdw-hero-layer-card"&gt;
+            &lt;div class="cdw-hero-mock-bar"&gt;&lt;/div&gt;
+            &lt;div class="cdw-hero-mock-row"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="cdw-hero-layer-card is-offset"&gt;
+            &lt;div class="cdw-hero-mock-bar"&gt;&lt;/div&gt;
+            &lt;div class="cdw-hero-mock-row is-short"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Hero Edge Signal</div>
+        <div class="cdw-fw-docs-badge">Sistema</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <section class="cdw-hero cdw-hero--edge-signal cdw-hero-sm cdw-fw-accent-forest">
+          <div class="cdw-hero-inner">
+            <div class="cdw-hero-content">
+              <div class="cdw-hero-eyebrow">Console</div>
+              <h1 class="cdw-hero-title">Politicas de acesso ativas</h1>
+              <p class="cdw-hero-subtitle">Regras, niveis e auditoria alinhados ao padrao CDW.</p>
+              <div class="cdw-hero-actions">
+                <a class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded" href="#">Revisar politicas</a>
+                <a class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded" href="#">Criar regra</a>
+              </div>
+              <div class="cdw-hero-meta">Atualizado ha 2h &bull; 6 niveis</div>
+            </div>
+            <div class="cdw-hero-visual">
+              <div class="cdw-hero-visual-inner">
+                <div class="cdw-hero-mock">
+                  <div class="cdw-hero-mock-bar"></div>
+                  <div class="cdw-hero-mock-row"></div>
+                  <div class="cdw-hero-mock-row is-short"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;section class="cdw-hero cdw-hero--edge-signal cdw-hero-sm cdw-fw-accent-forest"&gt;
+  &lt;div class="cdw-hero-inner"&gt;
+    &lt;div class="cdw-hero-content"&gt;
+      &lt;div class="cdw-hero-eyebrow"&gt;Console&lt;/div&gt;
+      &lt;h1 class="cdw-hero-title"&gt;Politicas de acesso ativas&lt;/h1&gt;
+      &lt;p class="cdw-hero-subtitle"&gt;Regras, niveis e auditoria alinhados ao padrao CDW.&lt;/p&gt;
+      &lt;div class="cdw-hero-actions"&gt;
+        &lt;a class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded" href="#"&gt;Revisar politicas&lt;/a&gt;
+        &lt;a class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded" href="#"&gt;Criar regra&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class="cdw-hero-meta"&gt;Atualizado ha 2h &bull; 6 niveis&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-hero-visual"&gt;
+      &lt;div class="cdw-hero-visual-inner"&gt;
+        &lt;div class="cdw-hero-mock"&gt;
+          &lt;div class="cdw-hero-mock-bar"&gt;&lt;/div&gt;
+          &lt;div class="cdw-hero-mock-row"&gt;&lt;/div&gt;
+          &lt;div class="cdw-hero-mock-row is-short"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+      </div>
+    </div>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Hero Minimal Line</div>
+        <div class="cdw-fw-docs-badge">Docs</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <section class="cdw-hero cdw-hero--minimal-line cdw-hero-md cdw-fw-accent-graphite">
+          <div class="cdw-hero-inner">
+            <div class="cdw-hero-content">
+              <div class="cdw-hero-eyebrow">Documentacao</div>
+              <h1 class="cdw-hero-title">API do CDW FW</h1>
+              <p class="cdw-hero-subtitle">Tokens, grid e utilitarios com exemplos prontos para uso.</p>
+              <div class="cdw-hero-actions">
+                <a class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded" href="#">Ler referencia</a>
+                <a class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded" href="#">Gerar token</a>
+              </div>
+              <div class="cdw-hero-meta">v2.4 &bull; atualizacao semanal</div>
+            </div>
+            <div class="cdw-hero-visual">
+              <div class="cdw-hero-visual-inner">
+                <div class="cdw-hero-wireframe">
+                  <div class="cdw-hero-wireframe-chip">API v2.4</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;section class="cdw-hero cdw-hero--minimal-line cdw-hero-md cdw-fw-accent-graphite"&gt;
+  &lt;div class="cdw-hero-inner"&gt;
+    &lt;div class="cdw-hero-content"&gt;
+      &lt;div class="cdw-hero-eyebrow"&gt;Documentacao&lt;/div&gt;
+      &lt;h1 class="cdw-hero-title"&gt;API do CDW FW&lt;/h1&gt;
+      &lt;p class="cdw-hero-subtitle"&gt;Tokens, grid e utilitarios com exemplos prontos para uso.&lt;/p&gt;
+      &lt;div class="cdw-hero-actions"&gt;
+        &lt;a class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded" href="#"&gt;Ler referencia&lt;/a&gt;
+        &lt;a class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded" href="#"&gt;Gerar token&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class="cdw-hero-meta"&gt;v2.4 &bull; atualizacao semanal&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-hero-visual"&gt;
+      &lt;div class="cdw-hero-visual-inner"&gt;
+        &lt;div class="cdw-hero-wireframe"&gt;
+          &lt;div class="cdw-hero-wireframe-chip"&gt;API v2.4&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Hero Spotlight Glass</div>
+        <div class="cdw-fw-docs-badge">Premium</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <section class="cdw-hero cdw-hero--spotlight-glass cdw-hero-lg cdw-fw-accent-rose">
+          <div class="cdw-hero-inner">
+            <div class="cdw-hero-content">
+              <div class="cdw-hero-eyebrow">Workspace Prime</div>
+              <h1 class="cdw-hero-title">Ambiente de prototipacao guiada</h1>
+              <p class="cdw-hero-subtitle">Camadas visuais com foco em criacao rapida e padrao CDW.</p>
+              <div class="cdw-hero-actions">
+                <a class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded" href="#">Abrir workspace</a>
+                <a class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded" href="#">Solicitar acesso</a>
+              </div>
+              <div class="cdw-hero-meta">Conformidade ativa &bull; 2 niveis</div>
+            </div>
+            <div class="cdw-hero-visual">
+              <div class="cdw-hero-visual-inner">
+                <div class="cdw-hero-glass-stack">
+                  <div class="cdw-hero-glass-tile is-accent">
+                    <div class="cdw-hero-mock-bar"></div>
+                    <div class="cdw-hero-mock-row"></div>
+                  </div>
+                  <div class="cdw-hero-glass-tile">
+                    <div class="cdw-hero-mock-row is-short"></div>
+                    <div class="cdw-hero-mock-row"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;section class="cdw-hero cdw-hero--spotlight-glass cdw-hero-lg cdw-fw-accent-rose"&gt;
+  &lt;div class="cdw-hero-inner"&gt;
+    &lt;div class="cdw-hero-content"&gt;
+      &lt;div class="cdw-hero-eyebrow"&gt;Workspace Prime&lt;/div&gt;
+      &lt;h1 class="cdw-hero-title"&gt;Ambiente de prototipacao guiada&lt;/h1&gt;
+      &lt;p class="cdw-hero-subtitle"&gt;Camadas visuais com foco em criacao rapida e padrao CDW.&lt;/p&gt;
+      &lt;div class="cdw-hero-actions"&gt;
+        &lt;a class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded" href="#"&gt;Abrir workspace&lt;/a&gt;
+        &lt;a class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded" href="#"&gt;Solicitar acesso&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class="cdw-hero-meta"&gt;Conformidade ativa &bull; 2 niveis&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-hero-visual"&gt;
+      &lt;div class="cdw-hero-visual-inner"&gt;
+        &lt;div class="cdw-hero-glass-stack"&gt;
+          &lt;div class="cdw-hero-glass-tile is-accent"&gt;
+            &lt;div class="cdw-hero-mock-bar"&gt;&lt;/div&gt;
+            &lt;div class="cdw-hero-mock-row"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="cdw-hero-glass-tile"&gt;
+            &lt;div class="cdw-hero-mock-row is-short"&gt;&lt;/div&gt;
+            &lt;div class="cdw-hero-mock-row"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Hero Dashboard Preview</div>
+        <div class="cdw-fw-docs-badge">Sistema</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <section class="cdw-hero cdw-hero--dashboard-preview cdw-hero-xl cdw-fw-accent-sky">
+          <div class="cdw-hero-inner">
+            <div class="cdw-hero-content">
+              <div class="cdw-hero-eyebrow">Painel CDW</div>
+              <h1 class="cdw-hero-title">Insights do framework</h1>
+              <p class="cdw-hero-subtitle">Adocao, cobertura e performance dos componentes em tempo real.</p>
+              <div class="cdw-hero-actions">
+                <a class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded" href="#">Abrir painel</a>
+                <a class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded" href="#">Criar visao</a>
+              </div>
+              <div class="cdw-hero-meta">Atualizacao a cada 5 min &bull; 12 indicadores</div>
+            </div>
+            <div class="cdw-hero-visual">
+              <div class="cdw-hero-visual-inner">
+                <div class="cdw-hero-preview">
+                  <div class="cdw-hero-preview-top">
+                    <div class="cdw-hero-preview-brand">
+                      <span class="cdw-hero-preview-dot"></span>
+                      CDW Insights
+                    </div>
+                    <div class="cdw-hero-preview-status">Live</div>
+                  </div>
+                  <div class="cdw-hero-preview-grid">
+                    <div class="cdw-hero-preview-card">
+                      <div class="cdw-hero-preview-bar"></div>
+                      <div class="cdw-hero-preview-bar is-short"></div>
+                    </div>
+                    <div class="cdw-hero-preview-card">
+                      <div class="cdw-hero-preview-bar"></div>
+                      <div class="cdw-hero-preview-bar is-short"></div>
+                    </div>
+                    <div class="cdw-hero-preview-card">
+                      <div class="cdw-hero-preview-bar"></div>
+                      <div class="cdw-hero-preview-bar is-short"></div>
+                    </div>
+                  </div>
+                  <div class="cdw-hero-preview-chart"></div>
+                  <div class="cdw-hero-preview-metrics">
+                    <div class="cdw-hero-preview-pill">Adocao diaria</div>
+                    <div class="cdw-hero-preview-pill">Qualidade alta</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;section class="cdw-hero cdw-hero--dashboard-preview cdw-hero-xl cdw-fw-accent-sky"&gt;
+  &lt;div class="cdw-hero-inner"&gt;
+    &lt;div class="cdw-hero-content"&gt;
+      &lt;div class="cdw-hero-eyebrow"&gt;Painel CDW&lt;/div&gt;
+      &lt;h1 class="cdw-hero-title"&gt;Insights do framework&lt;/h1&gt;
+      &lt;p class="cdw-hero-subtitle"&gt;Adocao, cobertura e performance dos componentes em tempo real.&lt;/p&gt;
+      &lt;div class="cdw-hero-actions"&gt;
+        &lt;a class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded" href="#"&gt;Abrir painel&lt;/a&gt;
+        &lt;a class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded" href="#"&gt;Criar visao&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class="cdw-hero-meta"&gt;Atualizacao a cada 5 min &bull; 12 indicadores&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-hero-visual"&gt;
+      &lt;div class="cdw-hero-visual-inner"&gt;
+        &lt;div class="cdw-hero-preview"&gt;
+          &lt;div class="cdw-hero-preview-top"&gt;
+            &lt;div class="cdw-hero-preview-brand"&gt;
+              &lt;span class="cdw-hero-preview-dot"&gt;&lt;/span&gt;
+              CDW Insights
+            &lt;/div&gt;
+            &lt;div class="cdw-hero-preview-status"&gt;Live&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="cdw-hero-preview-grid"&gt;
+            &lt;div class="cdw-hero-preview-card"&gt;
+              &lt;div class="cdw-hero-preview-bar"&gt;&lt;/div&gt;
+              &lt;div class="cdw-hero-preview-bar is-short"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="cdw-hero-preview-card"&gt;
+              &lt;div class="cdw-hero-preview-bar"&gt;&lt;/div&gt;
+              &lt;div class="cdw-hero-preview-bar is-short"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="cdw-hero-preview-card"&gt;
+              &lt;div class="cdw-hero-preview-bar"&gt;&lt;/div&gt;
+              &lt;div class="cdw-hero-preview-bar is-short"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="cdw-hero-preview-chart"&gt;&lt;/div&gt;
+          &lt;div class="cdw-hero-preview-metrics"&gt;
+            &lt;div class="cdw-hero-preview-pill"&gt;Adocao diaria&lt;/div&gt;
+            &lt;div class="cdw-hero-preview-pill"&gt;Qualidade alta&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Hero Center Stage</div>
+        <div class="cdw-fw-docs-badge">CDW FW</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <section class="cdw-hero cdw-hero--center-stage cdw-hero-xl cdw-fw-accent-sun">
+          <div class="cdw-hero-inner">
+            <div class="cdw-hero-content">
+              <div class="cdw-hero-eyebrow">CDW Framework</div>
+              <h1 class="cdw-hero-title">Abertura clara para interfaces CDWeb</h1>
+              <p class="cdw-hero-subtitle">Componentes elegantes, identidade forte e ritmo visual para produtos digitais.</p>
+              <div class="cdw-hero-actions">
+                <a class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded" href="#">Comecar agora</a>
+                <a class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded" href="#">Ver componentes</a>
+              </div>
+              <div class="cdw-hero-meta">Atualizado hoje &bull; v0.0.0</div>
+            </div>
+            <div class="cdw-hero-visual">
+              <div class="cdw-hero-visual-inner">
+                <div class="cdw-hero-mock">
+                  <div class="cdw-hero-mock-bar"></div>
+                  <div class="cdw-hero-mock-row"></div>
+                  <div class="cdw-hero-mock-row"></div>
+                  <div class="cdw-hero-mock-row is-short"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;section class="cdw-hero cdw-hero--center-stage cdw-hero-xl cdw-fw-accent-sun"&gt;
+  &lt;div class="cdw-hero-inner"&gt;
+    &lt;div class="cdw-hero-content"&gt;
+      &lt;div class="cdw-hero-eyebrow"&gt;CDW Framework&lt;/div&gt;
+      &lt;h1 class="cdw-hero-title"&gt;Abertura clara para interfaces CDWeb&lt;/h1&gt;
+      &lt;p class="cdw-hero-subtitle"&gt;Componentes elegantes, identidade forte e ritmo visual para produtos digitais.&lt;/p&gt;
+      &lt;div class="cdw-hero-actions"&gt;
+        &lt;a class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded" href="#"&gt;Comecar agora&lt;/a&gt;
+        &lt;a class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded" href="#"&gt;Ver componentes&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class="cdw-hero-meta"&gt;Atualizado hoje &bull; v0.0.0&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-hero-visual"&gt;
+      &lt;div class="cdw-hero-visual-inner"&gt;
+        &lt;div class="cdw-hero-mock"&gt;
+          &lt;div class="cdw-hero-mock-bar"&gt;&lt;/div&gt;
+          &lt;div class="cdw-hero-mock-row"&gt;&lt;/div&gt;
+          &lt;div class="cdw-hero-mock-row"&gt;&lt;/div&gt;
+          &lt;div class="cdw-hero-mock-row is-short"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="hero-uso" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Uso</h3>
+    <div class="cdw-fw-docs-card">
+      <div class="cdw-fw-docs-card-title">Boas praticas</div>
+      <div class="cdw-fw-docs-highlight">Use um modelo por contexto: institucional, sistema interno, docs.</div>
+      <div class="cdw-fw-docs-highlight">O accent deve realcar linhas, cortes e detalhes, nunca apagar o texto.</div>
+      <div class="cdw-fw-docs-highlight">A area visual pode ser mock, shape ou preview real do produto.</div>
+    </div>
+  </div>
+</section>
+`,
+  gallery: `<section id="gallery" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
     <div class="cdw-fw-docs-section-head">
       <h2 class="cdw-fw-docs-section-title">Gallery</h2>
       <p class="cdw-fw-docs-lead">
@@ -6971,6 +7662,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
       "alert",
       "badges",
       "cards",
+      "hero",
       "panel",
       "gallery",
       "modal",
@@ -7182,7 +7874,7 @@ function buildNav(root) {
               { label: "Uso", href: "#badges-uso" },
             ],
           },
-                    {
+          {
             title: "Cards",
             target: "#cards",
             links: [
@@ -7191,6 +7883,17 @@ function buildNav(root) {
               { label: "Estrutura", href: "#cards-estrutura" },
               { label: "Exemplos", href: "#cards-exemplos" },
               { label: "Uso", href: "#cards-uso" },
+            ],
+          },
+          {
+            title: "Hero",
+            target: "#hero",
+            links: [
+              { label: "Conceito", href: "#hero-conceito" },
+              { label: "Estrutura", href: "#hero-estrutura" },
+              { label: "Tamanhos", href: "#hero-tamanhos" },
+              { label: "Modelos", href: "#hero-modelos" },
+              { label: "Uso", href: "#hero-uso" },
             ],
           },
           {
@@ -7570,6 +8273,17 @@ function setupScrollSpy(root) {
     setActive(initialHash);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

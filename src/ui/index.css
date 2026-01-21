@@ -1,4 +1,4 @@
-﻿@import "./tokens.css";
+@import "./tokens.css";
 @import "./base.css";
 @import "./colors.css";
 @import "./components/button.css";
@@ -6,6 +6,7 @@
 @import "./components/alert.css";
 @import "./components/badge.css";
 @import "./components/card.css";
+@import "./components/hero.css";
 @import "./components/panel.css";
 @import "./components/gallery.css";
 @import "./components/modal.css";
@@ -20,5 +21,8 @@
 @import "./utilities/text.css";
 @import "./layout/container.css";
 @import "./layout/grid.css";
+
+
+
 
 
