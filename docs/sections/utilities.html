@@ -1,26 +1,30 @@
+
 <section id="utilitarios" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
   <div class="cdw-fw-docs-section-head">
-    <h2 class="cdw-fw-docs-section-title">Utilitários</h2>
+    <h2 class="cdw-fw-docs-section-title">Utilit&aacute;rios</h2>
     <p class="cdw-fw-docs-lead">
-      Classes utilitárias para resolver layout e ajustes rápidos sem criar componentes.
+      Classes utilit&aacute;rias para ajustes de layout e comportamento visual sem criar componentes.
     </p>
   </div>
 
   <div class="cdw-fw-docs-toc">
-    <span class="cdw-fw-docs-toc-title">Índice desta página</span>
-    <a href="#util-espacamento">Espaçamento</a>
+    <span class="cdw-fw-docs-toc-title">Indice desta pagina</span>
+    <a href="#util-espacamento">Espacamento</a>
     <a href="#util-display">Display</a>
     <a href="#util-flex">Flex</a>
     <a href="#util-gap">Gap</a>
-    <a href="#util-tamanho">Tamanho</a>
+    <a href="#util-dimensoes">Dimensoes</a>
+    <a href="#util-alinhamento">Alinhamento</a>
+    <a href="#util-posicionamento">Posicionamento</a>
+    <a href="#util-overflow">Overflow</a>
     <a href="#util-texto">Texto</a>
   </div>
 
   <div class="cdw-fw-docs-subsection" id="util-espacamento" data-cdw-fw-docs-section>
-    <h3 class="cdw-fw-docs-subtitle">Espaçamento</h3>
+    <h3 class="cdw-fw-docs-subtitle">Espacamento</h3>
     <p class="cdw-fw-docs-subdesc">
       Controle de margin e padding com escala fixa baseada em 4px.
-      <span class="cdw-fw-docs-when">Quando usar: separação entre elementos e respiro interno.</span>
+      <span class="cdw-fw-docs-when">Quando usar: separacao entre elementos e respiro interno.</span>
     </p>
     <div class="cdw-fw-docs-classlist">
       <span>cdw-fw-m-*</span>
@@ -31,7 +35,7 @@
     </div>
 
     <div class="cdw-fw-docs-card">
-      <div class="cdw-fw-docs-card-title">Escala de espaçamento</div>
+      <div class="cdw-fw-docs-card-title">Escala de espacamento</div>
       <table class="cdw-fw-docs-scale-table">
         <thead>
           <tr>
@@ -58,7 +62,7 @@
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
         <div class="cdw-fw-docs-example-title">Padding e margin</div>
-        <div class="cdw-fw-docs-badge">Básico</div>
+        <div class="cdw-fw-docs-badge">Basico</div>
       </div>
       <div class="cdw-fw-docs-preview">
         <div class="cdw-fw-p-4" style="background:#dfe9f6; border-radius:12px;">
@@ -68,7 +72,7 @@
           Margin top 4
         </div>
         <div class="cdw-fw-docs-example-caption">
-          Use p-* para espaço interno e mt-* para separar itens verticalmente.
+          Use p-* para espaco interno e mt-* para separar itens verticalmente.
         </div>
       </div>
       <div class="cdw-fw-docs-codeblock">
@@ -107,24 +111,27 @@
       </div>
     </div>
   </div>
-
   <div class="cdw-fw-docs-subsection" id="util-display" data-cdw-fw-docs-section>
     <h3 class="cdw-fw-docs-subtitle">Display</h3>
     <p class="cdw-fw-docs-subdesc">
-      Ajuste o comportamento de renderização dos elementos.
-      <span class="cdw-fw-docs-when">Quando usar: alinhar itens pequenos ou ocultar conteúdo.</span>
+      Ajuste o comportamento de renderizacao dos elementos.
+      <span class="cdw-fw-docs-when">Quando usar: alinhar itens pequenos, alternar visibilidade ou trocar o fluxo.</span>
     </p>
     <div class="cdw-fw-docs-classlist">
       <span>cdw-fw-block</span>
       <span>cdw-fw-inline</span>
       <span>cdw-fw-inline-block</span>
+      <span>cdw-fw-flex</span>
+      <span>cdw-fw-inline-flex</span>
+      <span>cdw-fw-none</span>
       <span>cdw-fw-hidden</span>
+      <span>cdw-fw-visible</span>
     </div>
 
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
         <div class="cdw-fw-docs-example-title">Inline vs block</div>
-        <div class="cdw-fw-docs-badge">Básico</div>
+        <div class="cdw-fw-docs-badge">Basico</div>
       </div>
       <div class="cdw-fw-docs-preview">
         <div class="cdw-fw-inline" style="background:#dfe9f6; padding:6px 10px; border-radius:8px;">inline</div>
@@ -145,18 +152,40 @@
 
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Flex basico</div>
+        <div class="cdw-fw-docs-badge">Comum</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-flex cdw-fw-gap-2" style="background:#eef2f7; padding:12px; border-radius:12px;">
+          <div class="cdw-fw-docs-preview-box">A</div>
+          <div class="cdw-fw-docs-preview-box">B</div>
+          <div class="cdw-fw-docs-preview-box">C</div>
+        </div>
+        <div class="cdw-fw-docs-example-caption">cdw-fw-flex coloca itens na mesma linha.</div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-flex"&gt;...&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
         <div class="cdw-fw-docs-example-title">Hidden com toggle</div>
         <div class="cdw-fw-docs-badge">Comum</div>
       </div>
       <div class="cdw-fw-docs-preview">
         <div id="cdw-fw-docs-hidden-target" class="cdw-fw-docs-preview-box cdw-fw-docs-preview-box--dark">
-          Alvo ocultável
+          Alvo ocultavel
         </div>
         <button class="cdw-fw-docs-toggle" type="button" data-cdw-fw-docs-toggle-hidden="cdw-fw-docs-hidden-target">
           Esconder
         </button>
         <div class="cdw-fw-docs-example-caption">
-          O botão alterna a classe cdw-fw-hidden no alvo.
+          O botao alterna a classe cdw-fw-hidden no alvo.
         </div>
       </div>
       <div class="cdw-fw-docs-codeblock">
@@ -164,30 +193,31 @@
           <div class="cdw-fw-docs-code-title">HTML</div>
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div id="alvo" class="cdw-fw-hidden"&gt;Alvo ocultável&lt;/div&gt;
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div id="alvo" class="cdw-fw-hidden"&gt;Alvo ocultavel&lt;/div&gt;
 &lt;button&gt;Mostrar/Esconder&lt;/button&gt;</code></pre>
       </div>
     </div>
   </div>
-
   <div class="cdw-fw-docs-subsection" id="util-flex" data-cdw-fw-docs-section>
     <h3 class="cdw-fw-docs-subtitle">Flex</h3>
     <p class="cdw-fw-docs-subdesc">
-      Controle de alinhamento, direção e quebra de linha com flexbox.
-      <span class="cdw-fw-docs-when">Quando usar: barras de ação, cards alinhados e grids flexíveis.</span>
+      Controle de alinhamento, direcao e quebra de linha com flexbox.
+      <span class="cdw-fw-docs-when">Quando usar: barras de acao, cards alinhados e grids flexiveis.</span>
     </p>
     <div class="cdw-fw-docs-classlist">
-      <span>cdw-fw-flex</span>
+      <span>cdw-fw-flex-row</span>
       <span>cdw-fw-flex-col</span>
       <span>cdw-fw-items-center</span>
       <span>cdw-fw-justify-between</span>
       <span>cdw-fw-flex-wrap</span>
+      <span>cdw-fw-grow</span>
+      <span>cdw-fw-shrink-0</span>
     </div>
 
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
         <div class="cdw-fw-docs-example-title">Justify between + items center</div>
-        <div class="cdw-fw-docs-badge">Básico</div>
+        <div class="cdw-fw-docs-badge">Basico</div>
       </div>
       <div class="cdw-fw-docs-preview">
         <div class="cdw-fw-flex cdw-fw-items-center cdw-fw-justify-between" style="background:#eef2f7; padding:12px; border-radius:12px;">
@@ -195,61 +225,40 @@
           <div class="cdw-fw-docs-preview-box cdw-fw-docs-preview-box--alt">Centro</div>
           <div class="cdw-fw-docs-preview-box cdw-fw-docs-preview-box--dark">Direita</div>
         </div>
-        <div class="cdw-fw-docs-example-caption">Distribui o conteúdo com espaço entre os itens.</div>
+        <div class="cdw-fw-docs-example-caption">Distribui o conteudo com espaco entre os itens.</div>
       </div>
       <div class="cdw-fw-docs-codeblock">
         <div class="cdw-fw-docs-code-head">
           <div class="cdw-fw-docs-code-title">HTML</div>
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-flex cdw-fw-items-center cdw-fw-justify-between"&gt;
-  ...
-&lt;/div&gt;</code></pre>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-flex cdw-fw-items-center cdw-fw-justify-between"&gt;...&lt;/div&gt;</code></pre>
       </div>
     </div>
 
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
-        <div class="cdw-fw-docs-example-title">Coluna</div>
+        <div class="cdw-fw-docs-example-title">Grow e shrink</div>
         <div class="cdw-fw-docs-badge">Comum</div>
       </div>
       <div class="cdw-fw-docs-preview">
-        <div class="cdw-fw-flex cdw-fw-flex-col cdw-fw-gap-2" style="background:#eef2f7; padding:12px; border-radius:12px;">
-          <div class="cdw-fw-docs-preview-box">Item 1</div>
-          <div class="cdw-fw-docs-preview-box cdw-fw-docs-preview-box--alt">Item 2</div>
-        </div>
-        <div class="cdw-fw-docs-example-caption">Empilha itens verticalmente com espaçamento.</div>
-      </div>
-      <div class="cdw-fw-docs-codeblock">
-        <div class="cdw-fw-docs-code-head">
-          <div class="cdw-fw-docs-code-title">HTML</div>
-          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
-        </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-flex cdw-fw-flex-col cdw-fw-gap-2"&gt;...&lt;/div&gt;</code></pre>
-      </div>
-    </div>
-
-    <div class="cdw-fw-docs-example">
-      <div class="cdw-fw-docs-example-head">
-        <div class="cdw-fw-docs-example-title">Wrap com gap</div>
-        <div class="cdw-fw-docs-badge">Avançado</div>
-      </div>
-      <div class="cdw-fw-docs-preview">
-        <div class="cdw-fw-flex cdw-fw-flex-wrap cdw-fw-gap-2" style="background:#eef2f7; padding:12px; border-radius:12px;">
+        <div class="cdw-fw-flex cdw-fw-gap-2" style="background:#eef2f7; padding:12px; border-radius:12px;">
           <div class="cdw-fw-docs-preview-box">A</div>
-          <div class="cdw-fw-docs-preview-box">B</div>
-          <div class="cdw-fw-docs-preview-box">C</div>
-          <div class="cdw-fw-docs-preview-box">D</div>
-          <div class="cdw-fw-docs-preview-box">E</div>
+          <div class="cdw-fw-docs-preview-box cdw-fw-grow">Grow</div>
+          <div class="cdw-fw-docs-preview-box cdw-fw-shrink-0" style="min-width:80px;">Fixo</div>
         </div>
-        <div class="cdw-fw-docs-example-caption">Quebra linhas automaticamente mantendo o gap.</div>
+        <div class="cdw-fw-docs-example-caption">cdw-fw-grow ocupa o espaco livre e cdw-fw-shrink-0 evita reduzir.</div>
       </div>
       <div class="cdw-fw-docs-codeblock">
         <div class="cdw-fw-docs-code-head">
           <div class="cdw-fw-docs-code-title">HTML</div>
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-flex cdw-fw-flex-wrap cdw-fw-gap-2"&gt;...&lt;/div&gt;</code></pre>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-flex"&gt;
+  &lt;div&gt;A&lt;/div&gt;
+  &lt;div class="cdw-fw-grow"&gt;Grow&lt;/div&gt;
+  &lt;div class="cdw-fw-shrink-0"&gt;Fixo&lt;/div&gt;
+&lt;/div&gt;</code></pre>
       </div>
     </div>
   </div>
@@ -257,63 +266,64 @@
   <div class="cdw-fw-docs-subsection" id="util-gap" data-cdw-fw-docs-section>
     <h3 class="cdw-fw-docs-subtitle">Gap</h3>
     <p class="cdw-fw-docs-subdesc">
-      Espaçamento entre itens de flex ou grid.
+      Espacamento entre itens de flex ou grid.
       <span class="cdw-fw-docs-when">Quando usar: listas horizontais e colunas alinhadas.</span>
     </p>
     <div class="cdw-fw-docs-classlist">
       <span>cdw-fw-gap-*</span>
+      <span>cdw-fw-row-gap-*</span>
+      <span>cdw-fw-col-gap-*</span>
     </div>
 
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
-        <div class="cdw-fw-docs-example-title">Comparando gap-2 e gap-6</div>
-        <div class="cdw-fw-docs-badge">Básico</div>
+        <div class="cdw-fw-docs-example-title">Row e column gap</div>
+        <div class="cdw-fw-docs-badge">Basico</div>
       </div>
       <div class="cdw-fw-docs-preview">
-        <div class="cdw-fw-flex cdw-fw-gap-2">
-          <div class="cdw-fw-docs-preview-box">gap-2</div>
-          <div class="cdw-fw-docs-preview-box">gap-2</div>
-          <div class="cdw-fw-docs-preview-box">gap-2</div>
+        <div class="cdw-fw-row-gap-2 cdw-fw-col-gap-4" style="display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); background:#eef2f7; padding:12px; border-radius:12px;">
+          <div class="cdw-fw-docs-preview-box">A1</div>
+          <div class="cdw-fw-docs-preview-box">A2</div>
+          <div class="cdw-fw-docs-preview-box cdw-fw-docs-preview-box--alt">B1</div>
+          <div class="cdw-fw-docs-preview-box cdw-fw-docs-preview-box--alt">B2</div>
         </div>
-        <div class="cdw-fw-flex cdw-fw-gap-6" style="margin-top:10px;">
-          <div class="cdw-fw-docs-preview-box cdw-fw-docs-preview-box--alt">gap-6</div>
-          <div class="cdw-fw-docs-preview-box cdw-fw-docs-preview-box--alt">gap-6</div>
-          <div class="cdw-fw-docs-preview-box cdw-fw-docs-preview-box--alt">gap-6</div>
-        </div>
-        <div class="cdw-fw-docs-example-caption">Use gaps maiores para blocos mais espaçados.</div>
+        <div class="cdw-fw-docs-example-caption">row-gap controla linhas e col-gap controla colunas.</div>
       </div>
       <div class="cdw-fw-docs-codeblock">
         <div class="cdw-fw-docs-code-head">
           <div class="cdw-fw-docs-code-title">HTML</div>
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-flex cdw-fw-gap-2"&gt;...&lt;/div&gt;
-&lt;div class="cdw-fw-flex cdw-fw-gap-6"&gt;...&lt;/div&gt;</code></pre>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-row-gap-2 cdw-fw-col-gap-4"&gt;...&lt;/div&gt;</code></pre>
       </div>
     </div>
   </div>
-
-  <div class="cdw-fw-docs-subsection" id="util-tamanho" data-cdw-fw-docs-section>
-    <h3 class="cdw-fw-docs-subtitle">Tamanho</h3>
+  <div class="cdw-fw-docs-subsection" id="util-dimensoes" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Dimensoes</h3>
     <p class="cdw-fw-docs-subdesc">
-      Ajuste largura e limite máximo de forma simples.
-      <span class="cdw-fw-docs-when">Quando usar: formulários e containers responsivos.</span>
+      Ajuste largura, altura e limites basicos.
+      <span class="cdw-fw-docs-when">Quando usar: containers responsivos e areas que precisam preencher o layout.</span>
     </p>
     <div class="cdw-fw-docs-classlist">
       <span>cdw-fw-w-100</span>
       <span>cdw-fw-w-auto</span>
       <span>cdw-fw-maxw-100</span>
+      <span>cdw-fw-h-100</span>
+      <span>cdw-fw-h-auto</span>
+      <span>cdw-fw-maxh-100</span>
+      <span>cdw-fw-minw-0</span>
+      <span>cdw-fw-minh-0</span>
     </div>
 
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
         <div class="cdw-fw-docs-example-title">Largura 100% e auto</div>
-        <div class="cdw-fw-docs-badge">Básico</div>
+        <div class="cdw-fw-docs-badge">Basico</div>
       </div>
       <div class="cdw-fw-docs-preview">
         <input class="cdw-fw-w-100" type="text" placeholder="Input com w-100" style="padding:8px; border-radius:8px; border:1px solid #d1d7df;" />
         <div class="cdw-fw-w-auto" style="margin-top:10px; background:#dfe9f6; padding:10px; border-radius:10px;">Caixa w-auto</div>
-        <div class="cdw-fw-docs-example-caption">w-100 expande, w-auto ajusta ao conteúdo.</div>
+        <div class="cdw-fw-docs-example-caption">w-100 expande, w-auto ajusta ao conteudo.</div>
       </div>
       <div class="cdw-fw-docs-codeblock">
         <div class="cdw-fw-docs-code-head">
@@ -327,21 +337,170 @@
 
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
-        <div class="cdw-fw-docs-example-title">Máximo de largura</div>
+        <div class="cdw-fw-docs-example-title">Altura preenchida</div>
         <div class="cdw-fw-docs-badge">Comum</div>
       </div>
       <div class="cdw-fw-docs-preview">
-        <div class="cdw-fw-maxw-100" style="background:#eef2f7; padding:10px; border-radius:10px;">
-          Conteúdo longo que não ultrapassa o container.
+        <div style="height:120px; background:#eef2f7; border-radius:12px; padding:10px;">
+          <div class="cdw-fw-h-100" style="background:#dfe9f6; border-radius:10px; padding:10px;">h-100</div>
         </div>
-        <div class="cdw-fw-docs-example-caption">maxw-100 evita estouro horizontal.</div>
+        <div class="cdw-fw-docs-example-caption">h-100 ocupa toda a altura do container.</div>
       </div>
       <div class="cdw-fw-docs-codeblock">
         <div class="cdw-fw-docs-code-head">
           <div class="cdw-fw-docs-code-title">HTML</div>
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-maxw-100"&gt;Conteúdo longo...&lt;/div&gt;</code></pre>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div style="height:120px;"&gt;
+  &lt;div class="cdw-fw-h-100"&gt;h-100&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="util-alinhamento" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Alinhamento</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Alinhe texto, blocos e elementos inline sem depender de flex.
+      <span class="cdw-fw-docs-when">Quando usar: textos, cards e elementos simples em colunas.</span>
+    </p>
+    <div class="cdw-fw-docs-classlist">
+      <span>cdw-fw-text-left</span>
+      <span>cdw-fw-text-center</span>
+      <span>cdw-fw-text-right</span>
+      <span>cdw-fw-text-justify</span>
+      <span>cdw-fw-align-left</span>
+      <span>cdw-fw-align-center</span>
+      <span>cdw-fw-align-right</span>
+      <span>cdw-fw-align-top</span>
+      <span>cdw-fw-align-middle</span>
+      <span>cdw-fw-align-bottom</span>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Alinhamento de texto</div>
+        <div class="cdw-fw-docs-badge">Basico</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-text-left" style="background:#dfe9f6; padding:10px; border-radius:10px;">Texto alinhado a esquerda</div>
+        <div class="cdw-fw-text-center" style="background:#f8dcc8; padding:10px; border-radius:10px; margin-top:8px;">Texto centralizado</div>
+        <div class="cdw-fw-text-right" style="background:#eef2f7; padding:10px; border-radius:10px; margin-top:8px;">Texto alinhado a direita</div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-text-left"&gt;Texto alinhado a esquerda&lt;/div&gt;
+&lt;div class="cdw-fw-text-center"&gt;Texto centralizado&lt;/div&gt;
+&lt;div class="cdw-fw-text-right"&gt;Texto alinhado a direita&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Alinhamento de blocos e vertical</div>
+        <div class="cdw-fw-docs-badge">Comum</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div style="background:#eef2f7; padding:12px; border-radius:12px;">
+          <div class="cdw-fw-align-left" style="width:140px; background:#dfe9f6; padding:8px 10px; border-radius:8px;">Left</div>
+          <div class="cdw-fw-align-center" style="width:140px; background:#f8dcc8; padding:8px 10px; border-radius:8px; margin-top:8px;">Center</div>
+          <div class="cdw-fw-align-right" style="width:140px; background:#e2f0dc; padding:8px 10px; border-radius:8px; margin-top:8px;">Right</div>
+        </div>
+        <div style="margin-top:10px; background:#eef2f7; padding:10px; border-radius:12px; height:120px; line-height:120px;">
+          <span class="cdw-fw-align-top" style="display:inline-block; width:70px; height:40px; background:#dfe9f6; line-height:40px; text-align:center; border-radius:8px;">Top</span>
+          <span class="cdw-fw-align-middle" style="display:inline-block; width:70px; height:60px; background:#f8dcc8; line-height:60px; text-align:center; border-radius:8px;">Mid</span>
+          <span class="cdw-fw-align-bottom" style="display:inline-block; width:70px; height:80px; background:#e2f0dc; line-height:80px; text-align:center; border-radius:8px;">Bottom</span>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-align-center"&gt;Bloco centralizado&lt;/div&gt;
+&lt;span class="cdw-fw-align-top"&gt;Inline top&lt;/span&gt;
+&lt;span class="cdw-fw-align-middle"&gt;Inline middle&lt;/span&gt;
+&lt;span class="cdw-fw-align-bottom"&gt;Inline bottom&lt;/span&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+  <div class="cdw-fw-docs-subsection" id="util-posicionamento" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Posicionamento</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Posicao basica para elementos fixos, absolutos ou relativos.
+      <span class="cdw-fw-docs-when">Quando usar: badges, notificacoes e elementos destacados.</span>
+    </p>
+    <div class="cdw-fw-docs-classlist">
+      <span>cdw-fw-pos-relative</span>
+      <span>cdw-fw-pos-absolute</span>
+      <span>cdw-fw-pos-fixed</span>
+      <span>cdw-fw-pos-sticky</span>
+      <span>cdw-fw-top-0</span>
+      <span>cdw-fw-right-0</span>
+      <span>cdw-fw-bottom-0</span>
+      <span>cdw-fw-left-0</span>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Badge absoluto</div>
+        <div class="cdw-fw-docs-badge">Basico</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-pos-relative" style="background:#eef2f7; padding:16px; border-radius:12px;">
+          Caixa relativa
+          <span class="cdw-fw-pos-absolute cdw-fw-top-0 cdw-fw-right-0" style="background:#0f172a; color:#fff; font-size:0.7rem; padding:4px 8px; border-radius:999px; transform: translate(-6px, 6px);">Novo</span>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-pos-relative"&gt;
+  Caixa relativa
+  &lt;span class="cdw-fw-pos-absolute cdw-fw-top-0 cdw-fw-right-0"&gt;Novo&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="util-overflow" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Overflow</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Controle o excesso de conteudo em areas compactas.
+      <span class="cdw-fw-docs-when">Quando usar: tabelas, cards e paineis com altura fixa.</span>
+    </p>
+    <div class="cdw-fw-docs-classlist">
+      <span>cdw-fw-overflow-hidden</span>
+      <span>cdw-fw-overflow-auto</span>
+      <span>cdw-fw-overflow-scroll</span>
+      <span>cdw-fw-overflow-x-auto</span>
+      <span>cdw-fw-overflow-y-auto</span>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Lista com overflow</div>
+        <div class="cdw-fw-docs-badge">Basico</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-overflow-auto" style="height:90px; background:#eef2f7; border-radius:12px; padding:10px;">
+          <div style="padding:6px 0; border-bottom:1px solid #d6dee8;">Registro 1</div>
+          <div style="padding:6px 0; border-bottom:1px solid #d6dee8;">Registro 2</div>
+          <div style="padding:6px 0; border-bottom:1px solid #d6dee8;">Registro 3</div>
+          <div style="padding:6px 0;">Registro 4</div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-overflow-auto"&gt;...&lt;/div&gt;</code></pre>
       </div>
     </div>
   </div>
@@ -349,8 +508,8 @@
   <div class="cdw-fw-docs-subsection" id="util-texto" data-cdw-fw-docs-section>
     <h3 class="cdw-fw-docs-subtitle">Texto</h3>
     <p class="cdw-fw-docs-subdesc">
-      Utilit&aacute;rios tipogr&aacute;ficos para leitura, hierarquia e consist&ecirc;ncia visual.
-      <span class="cdw-fw-docs-when">Quando usar: t&iacute;tulos, par&aacute;grafos, labels e dados.</span>
+      Utilitarios tipograficos para leitura, hierarquia e consistencia visual.
+      <span class="cdw-fw-docs-when">Quando usar: titulos, paragrafos, labels e dados.</span>
     </p>
 
     <h4 class="cdw-fw-docs-subtitle">Fontes</h4>
@@ -362,7 +521,7 @@
     </div>
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
-        <div class="cdw-fw-docs-example-title">Fam&iacute;lias tipogr&aacute;ficas</div>
+        <div class="cdw-fw-docs-example-title">Familias tipograficas</div>
         <div class="cdw-fw-docs-badge">Novo</div>
       </div>
       <div class="cdw-fw-docs-preview">
@@ -401,10 +560,10 @@
         <div class="cdw-fw-flex cdw-fw-flex-col cdw-fw-gap-2">
           <div class="cdw-fw-text-xs">Texto xs para notas</div>
           <div class="cdw-fw-text-sm">Texto sm para labels</div>
-          <div class="cdw-fw-text-base">Texto base para par&aacute;grafos</div>
+          <div class="cdw-fw-text-base">Texto base para paragrafos</div>
           <div class="cdw-fw-text-lg">Texto lg para destaque leve</div>
-          <div class="cdw-fw-text-xl">Texto xl para subt&iacute;tulos</div>
-          <div class="cdw-fw-text-2xl">Texto 2xl para t&iacute;tulos</div>
+          <div class="cdw-fw-text-xl">Texto xl para subtitulos</div>
+          <div class="cdw-fw-text-2xl">Texto 2xl para titulos</div>
         </div>
       </div>
       <div class="cdw-fw-docs-codeblock">
@@ -435,7 +594,7 @@
     </div>
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
-        <div class="cdw-fw-docs-example-title">Peso e transforma&ccedil;&atilde;o</div>
+        <div class="cdw-fw-docs-example-title">Peso e transformacao</div>
         <div class="cdw-fw-docs-badge">Novo</div>
       </div>
       <div class="cdw-fw-docs-preview">
@@ -447,7 +606,7 @@
           <div class="cdw-fw-text-bold">Bold</div>
         </div>
         <div class="cdw-fw-flex cdw-fw-gap-2 cdw-fw-flex-wrap" style="margin-top:8px;">
-          <div class="cdw-fw-text-italic">Texto it&aacute;lico</div>
+          <div class="cdw-fw-text-italic">Texto italico</div>
           <div class="cdw-fw-text-uppercase">Uppercase label</div>
           <div class="cdw-fw-text-lowercase">lowercase tag</div>
           <div class="cdw-fw-text-capitalize">texto capitalizado</div>
@@ -466,7 +625,7 @@
       </div>
     </div>
 
-    <h4 class="cdw-fw-docs-subtitle">Espa&ccedil;amento</h4>
+    <h4 class="cdw-fw-docs-subtitle">Espacamento</h4>
     <div class="cdw-fw-docs-classlist">
       <span>cdw-fw-leading-tight</span>
       <span>cdw-fw-leading-normal</span>
@@ -482,10 +641,10 @@
       </div>
       <div class="cdw-fw-docs-preview">
         <div class="cdw-fw-text-base cdw-fw-leading-tight">
-          Linha tight para chamadas curtas e mensagens r&aacute;pidas.
+          Linha tight para chamadas curtas e mensagens rapidas.
         </div>
         <div class="cdw-fw-text-base cdw-fw-leading-loose" style="margin-top:8px;">
-          Linha loose melhora a leitura em par&aacute;grafos longos e institucionais.
+          Linha loose melhora a leitura em paragrafos longos e institucionais.
         </div>
         <div class="cdw-fw-text-sm cdw-fw-tracking-wide cdw-fw-text-uppercase" style="margin-top:10px;">
           Label com tracking wide
@@ -502,7 +661,7 @@
       </div>
     </div>
 
-    <h4 class="cdw-fw-docs-subtitle">Decora&ccedil;&atilde;o e realce</h4>
+    <h4 class="cdw-fw-docs-subtitle">Decoracao e realce</h4>
     <div class="cdw-fw-docs-classlist">
       <span>cdw-fw-text-underline-soft</span>
       <span>cdw-fw-text-underline-accent</span>
@@ -517,7 +676,7 @@
       <div class="cdw-fw-docs-preview">
         <div class="cdw-fw-text-base cdw-fw-text-underline-soft">Underline soft para links contextuais.</div>
         <div class="cdw-fw-text-base cdw-fw-text-underline-accent" style="margin-top:6px;">Underline accent com cor do tema.</div>
-        <div class="cdw-fw-text-base cdw-fw-text-muted" style="margin-top:6px;">Texto muted para informa&ccedil;&atilde;o secund&aacute;ria.</div>
+        <div class="cdw-fw-text-base cdw-fw-text-muted" style="margin-top:6px;">Texto muted para informacao secundaria.</div>
         <div class="cdw-fw-text-base cdw-fw-text-emphasis" style="margin-top:6px;">Texto emphasis para pontos importantes.</div>
       </div>
       <div class="cdw-fw-docs-codeblock">
@@ -531,66 +690,7 @@
 &lt;div class="cdw-fw-text-emphasis"&gt;Texto emphasis&lt;/div&gt;</code></pre>
       </div>
     </div>
-
-    <h4 class="cdw-fw-docs-subtitle">Alinhamento</h4>
-    <div class="cdw-fw-docs-classlist">
-      <span>cdw-fw-text-left</span>
-      <span>cdw-fw-text-center</span>
-      <span>cdw-fw-text-right</span>
-    </div>
-    <div class="cdw-fw-docs-example">
-      <div class="cdw-fw-docs-example-head">
-        <div class="cdw-fw-docs-example-title">Alinhamento em tr&ecirc;s caixas</div>
-        <div class="cdw-fw-docs-badge">B&aacute;sico</div>
-      </div>
-      <div class="cdw-fw-docs-preview">
-        <div class="cdw-fw-flex cdw-fw-gap-2">
-          <div class="cdw-fw-text-left" style="background:#dfe9f6; padding:10px; border-radius:10px; flex:1;">Left</div>
-          <div class="cdw-fw-text-center" style="background:#f8dcc8; padding:10px; border-radius:10px; flex:1;">Center</div>
-          <div class="cdw-fw-text-right" style="background:#eef2f7; padding:10px; border-radius:10px; flex:1;">Right</div>
-        </div>
-        <div class="cdw-fw-docs-example-caption">Cada caixa usa uma classe de alinhamento.</div>
-      </div>
-      <div class="cdw-fw-docs-codeblock">
-        <div class="cdw-fw-docs-code-head">
-          <div class="cdw-fw-docs-code-title">HTML</div>
-          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
-        </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-text-left"&gt;Left&lt;/div&gt;
-&lt;div class="cdw-fw-text-center"&gt;Center&lt;/div&gt;
-&lt;div class="cdw-fw-text-right"&gt;Right&lt;/div&gt;</code></pre>
-      </div>
-    </div>
-
-    <h4 class="cdw-fw-docs-subtitle">Exemplos pr&aacute;ticos</h4>
-    <div class="cdw-fw-docs-example">
-      <div class="cdw-fw-docs-example-head">
-        <div class="cdw-fw-docs-example-title">Card com hierarquia tipogr&aacute;fica</div>
-        <div class="cdw-fw-docs-badge">Uso</div>
-      </div>
-      <div class="cdw-fw-docs-preview">
-        <div style="background:#f4f7fb; border-radius:14px; padding:16px; border:1px solid #d6dee8;">
-          <div class="cdw-fw-text-xs cdw-fw-text-uppercase cdw-fw-tracking-wide cdw-fw-text-muted">Relat&oacute;rio mensal</div>
-          <div class="cdw-fw-text-xl cdw-fw-text-semibold cdw-fw-font-display" style="margin-top:6px;">Performance operacional</div>
-          <div class="cdw-fw-text-base cdw-fw-leading-loose" style="margin-top:8px;">
-            Conte&uacute;do pensado para leitura longa com espa&ccedil;amento confort&aacute;vel.
-          </div>
-          <div class="cdw-fw-text-sm cdw-fw-text-underline-accent" style="margin-top:10px;">Ver detalhes</div>
-        </div>
-      </div>
-      <div class="cdw-fw-docs-codeblock">
-        <div class="cdw-fw-docs-code-head">
-          <div class="cdw-fw-docs-code-title">HTML</div>
-          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
-        </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-text-xs cdw-fw-text-uppercase cdw-fw-tracking-wide cdw-fw-text-muted"&gt;Relatorio mensal&lt;/div&gt;
-&lt;div class="cdw-fw-text-xl cdw-fw-text-semibold cdw-fw-font-display"&gt;Performance operacional&lt;/div&gt;
-&lt;div class="cdw-fw-text-base cdw-fw-leading-loose"&gt;Conteudo pensado para leitura longa.&lt;/div&gt;
-&lt;div class="cdw-fw-text-sm cdw-fw-text-underline-accent"&gt;Ver detalhes&lt;/div&gt;</code></pre>
-      </div>
-    </div>
   </div>
 </section>
-
 
 

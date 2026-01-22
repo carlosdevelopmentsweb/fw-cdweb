@@ -1,6 +1,7 @@
 .cdw-fw-text-left { text-align: left; }
 .cdw-fw-text-center { text-align: center; }
 .cdw-fw-text-right { text-align: right; }
+.cdw-fw-text-justify { text-align: justify; }
 
 .cdw-fw-font-base { font-family: var(--cdw-fw-font); }
 .cdw-fw-font-display { font-family: "Segoe UI", "Montserrat", "Arial", sans-serif; }

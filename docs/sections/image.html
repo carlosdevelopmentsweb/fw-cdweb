@@ -1,0 +1,495 @@
+
+<section id="images" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+  <div class="cdw-fw-docs-section-head">
+    <h2 class="cdw-fw-docs-section-title">Image</h2>
+    <p class="cdw-fw-docs-lead">
+      Tratamento visual premium para imagens, com formas, bordas e efeitos sob medida para o CDW-FW.
+    </p>
+  </div>
+
+  <div class="cdw-fw-docs-toc">
+    <span class="cdw-fw-docs-toc-title">Indice desta pagina</span>
+    <a href="#image-conceito">Conceito</a>
+    <a href="#image-estrutura">Estrutura</a>
+    <a href="#image-tamanhos">Tamanhos</a>
+    <a href="#image-tipos">Tipos</a>
+    <a href="#image-bordas">Bordas</a>
+    <a href="#image-alinhamento">Alinhamento</a>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="image-conceito" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Conceito</h3>
+    <p class="cdw-fw-docs-subdesc">
+      CDW Image trata a imagem como elemento de design: forma, borda, recorte e efeito fazem parte da hierarquia visual.
+      <span class="cdw-fw-docs-when">Quando usar: avatar, destaque, leitura visual e apoio editorial.</span>
+    </p>
+    <div class="cdw-fw-docs-classlist">
+      <span>cdw-image</span>
+      <span>cdw-image--*</span>
+      <span>cdw-image-xs</span>
+      <span>cdw-image-sm</span>
+      <span>cdw-image-md</span>
+      <span>cdw-image-lg</span>
+      <span>cdw-image-xl</span>
+      <span>cdw-fw-accent-*</span>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="image-estrutura" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Estrutura</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Estrutura minima: um wrapper e uma tag img. Toda a variacao visual fica no wrapper.
+    </p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Base obrigatoria</div>
+        <div class="cdw-fw-docs-badge">Estrutura</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-image cdw-image--rounded cdw-image-md cdw-fw-accent-ocean">
+          <img src="https://picsum.photos/600/400?random=3" alt="Imagem de exemplo">
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-image cdw-image--rounded cdw-image-md cdw-fw-accent-ocean"&gt;
+  &lt;img src="https://picsum.photos/600/400?random=3" alt="Imagem de exemplo"&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="image-tamanhos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Tamanhos</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Os tamanhos mudam proporcao e ritmo visual, nao apenas largura. Escolha pelo contexto.
+    </p>
+    <div class="cdw-fw-docs-classlist">
+      <span>cdw-image-xs</span>
+      <span>cdw-image-sm</span>
+      <span>cdw-image-md</span>
+      <span>cdw-image-lg</span>
+      <span>cdw-image-xl</span>
+    </div>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Escala completa</div>
+        <div class="cdw-fw-docs-badge">Tamanhos</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-flex cdw-fw-gap-3 cdw-fw-flex-wrap">
+          <div class="cdw-image cdw-image--square cdw-image-xs cdw-fw-accent-slate">
+            <img src="https://picsum.photos/160/160?random=11" alt="Imagem xs">
+          </div>
+          <div class="cdw-image cdw-image--rounded cdw-image-sm cdw-fw-accent-emerald">
+            <img src="https://picsum.photos/320/240?random=12" alt="Imagem sm">
+          </div>
+          <div class="cdw-image cdw-image--frame cdw-image-md cdw-fw-accent-ocean">
+            <img src="https://picsum.photos/600/400?random=13" alt="Imagem md">
+          </div>
+          <div class="cdw-image cdw-image--shadow-soft cdw-image-lg cdw-fw-accent-violet">
+            <img src="https://picsum.photos/900/520?random=14" alt="Imagem lg">
+          </div>
+          <div class="cdw-image cdw-image--overlay cdw-image-xl cdw-fw-accent-sun">
+            <img src="https://picsum.photos/1200/520?random=15" alt="Imagem xl">
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-image cdw-image--square cdw-image-xs cdw-fw-accent-slate"&gt;
+  &lt;img src="https://picsum.photos/160/160?random=11" alt="Imagem xs"&gt;
+&lt;/div&gt;
+&lt;div class="cdw-image cdw-image--rounded cdw-image-sm cdw-fw-accent-emerald"&gt;
+  &lt;img src="https://picsum.photos/320/240?random=12" alt="Imagem sm"&gt;
+&lt;/div&gt;
+&lt;div class="cdw-image cdw-image--frame cdw-image-md cdw-fw-accent-ocean"&gt;
+  &lt;img src="https://picsum.photos/600/400?random=13" alt="Imagem md"&gt;
+&lt;/div&gt;
+&lt;div class="cdw-image cdw-image--shadow-soft cdw-image-lg cdw-fw-accent-violet"&gt;
+  &lt;img src="https://picsum.photos/900/520?random=14" alt="Imagem lg"&gt;
+&lt;/div&gt;
+&lt;div class="cdw-image cdw-image--overlay cdw-image-xl cdw-fw-accent-sun"&gt;
+  &lt;img src="https://picsum.photos/1200/520?random=15" alt="Imagem xl"&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="image-tipos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Tipos</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Dez tipos reais com forma, borda ou efeito proprio. Cada exemplo e o codigo exato do preview.
+    </p>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Image Square</div>
+        <div class="cdw-fw-docs-badge">Tecnico</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-image cdw-image--square cdw-image-md cdw-fw-accent-slate">
+          <img src="https://picsum.photos/600/600?random=21" alt="Imagem quadrada">
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-image cdw-image--square cdw-image-md cdw-fw-accent-slate"&gt;
+  &lt;img src="https://picsum.photos/600/600?random=21" alt="Imagem quadrada"&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Image Rounded</div>
+        <div class="cdw-fw-docs-badge">Leitura</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-image cdw-image--rounded cdw-image-lg cdw-fw-accent-ocean">
+          <img src="https://picsum.photos/900/520?random=22" alt="Imagem arredondada">
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-image cdw-image--rounded cdw-image-lg cdw-fw-accent-ocean"&gt;
+  &lt;img src="https://picsum.photos/900/520?random=22" alt="Imagem arredondada"&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Image Circle</div>
+        <div class="cdw-fw-docs-badge">Avatar</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-image cdw-image--circle cdw-image-sm cdw-fw-accent-emerald">
+          <img src="https://picsum.photos/400/400?random=23" alt="Imagem circular">
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-image cdw-image--circle cdw-image-sm cdw-fw-accent-emerald"&gt;
+  &lt;img src="https://picsum.photos/400/400?random=23" alt="Imagem circular"&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Image Frame</div>
+        <div class="cdw-fw-docs-badge">Editorial</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-image cdw-image--frame cdw-image-md cdw-fw-accent-cocoa">
+          <img src="https://picsum.photos/640/420?random=24" alt="Imagem com frame">
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-image cdw-image--frame cdw-image-md cdw-fw-accent-cocoa"&gt;
+  &lt;img src="https://picsum.photos/640/420?random=24" alt="Imagem com frame"&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Image Border Soft</div>
+        <div class="cdw-fw-docs-badge">Apoio</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-image cdw-image--border-soft cdw-image-md cdw-fw-accent-sky">
+          <img src="https://picsum.photos/640/420?random=25" alt="Borda suave">
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-image cdw-image--border-soft cdw-image-md cdw-fw-accent-sky"&gt;
+  &lt;img src="https://picsum.photos/640/420?random=25" alt="Borda suave"&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Image Border Strong</div>
+        <div class="cdw-fw-docs-badge">Destaque</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-image cdw-image--border-strong cdw-image-md cdw-fw-accent-rose">
+          <img src="https://picsum.photos/640/420?random=26" alt="Borda forte">
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-image cdw-image--border-strong cdw-image-md cdw-fw-accent-rose"&gt;
+  &lt;img src="https://picsum.photos/640/420?random=26" alt="Borda forte"&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Image Edge Accent</div>
+        <div class="cdw-fw-docs-badge">Sistema</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-image cdw-image--edge-accent cdw-image-md cdw-fw-accent-forest">
+          <img src="https://picsum.photos/640/420?random=27" alt="Destaque lateral">
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-image cdw-image--edge-accent cdw-image-md cdw-fw-accent-forest"&gt;
+  &lt;img src="https://picsum.photos/640/420?random=27" alt="Destaque lateral"&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Image Shadow Soft</div>
+        <div class="cdw-fw-docs-badge">Elegante</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-image cdw-image--shadow-soft cdw-image-md cdw-fw-accent-indigo">
+          <img src="https://picsum.photos/640/420?random=28" alt="Sombra suave">
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-image cdw-image--shadow-soft cdw-image-md cdw-fw-accent-indigo"&gt;
+  &lt;img src="https://picsum.photos/640/420?random=28" alt="Sombra suave"&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Image Shadow Layer</div>
+        <div class="cdw-fw-docs-badge">Camadas</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-image cdw-image--shadow-layer cdw-image-md cdw-fw-accent-lilac">
+          <img src="https://picsum.photos/640/420?random=29" alt="Sombra em camadas">
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-image cdw-image--shadow-layer cdw-image-md cdw-fw-accent-lilac"&gt;
+  &lt;img src="https://picsum.photos/640/420?random=29" alt="Sombra em camadas"&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Image Overlay</div>
+        <div class="cdw-fw-docs-badge">Leitura</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-image cdw-image--overlay cdw-image-lg cdw-fw-accent-sun">
+          <img src="https://picsum.photos/900/520?random=30" alt="Overlay leve">
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-image cdw-image--overlay cdw-image-lg cdw-fw-accent-sun"&gt;
+  &lt;img src="https://picsum.photos/900/520?random=30" alt="Overlay leve"&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Image Placeholder</div>
+        <div class="cdw-fw-docs-badge">Estado</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-image cdw-image--placeholder cdw-image-md cdw-fw-accent-slate">
+          <img src="https://picsum.photos/640/420?random=31" alt="Imagem em placeholder">
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-image cdw-image--placeholder cdw-image-md cdw-fw-accent-slate"&gt;
+  &lt;img src="https://picsum.photos/640/420?random=31" alt="Imagem em placeholder"&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="image-bordas" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Bordas</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Bordas combinaveis com qualquer tipo. Solida, dupla, tracejada, assimetrica e com recorte.
+    </p>
+    <div class="cdw-fw-docs-classlist">
+      <span>cdw-image-border-solid</span>
+      <span>cdw-image-border-double</span>
+      <span>cdw-image-border-dashed</span>
+      <span>cdw-image-border-asym</span>
+      <span>cdw-image-border-notch</span>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Variacoes de borda</div>
+        <div class="cdw-fw-docs-badge">Bordas</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-flex cdw-fw-gap-3 cdw-fw-flex-wrap">
+          <div class="cdw-image cdw-image--square cdw-image-sm cdw-image-border-solid cdw-fw-accent-ocean">
+            <img src="https://picsum.photos/320/320?random=41" alt="Borda solida">
+          </div>
+          <div class="cdw-image cdw-image--rounded cdw-image-sm cdw-image-border-double cdw-fw-accent-cocoa">
+            <img src="https://picsum.photos/320/240?random=42" alt="Borda dupla">
+          </div>
+          <div class="cdw-image cdw-image--square cdw-image-sm cdw-image-border-dashed cdw-fw-accent-emerald">
+            <img src="https://picsum.photos/320/320?random=43" alt="Borda tracejada">
+          </div>
+          <div class="cdw-image cdw-image--rounded cdw-image-sm cdw-image-border-asym cdw-fw-accent-rose">
+            <img src="https://picsum.photos/320/240?random=44" alt="Borda assimetrica">
+          </div>
+          <div class="cdw-image cdw-image--square cdw-image-sm cdw-image-border-notch cdw-fw-accent-slate">
+            <img src="https://picsum.photos/320/320?random=45" alt="Borda com recorte">
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-image cdw-image--square cdw-image-sm cdw-image-border-solid cdw-fw-accent-ocean"&gt;
+  &lt;img src="https://picsum.photos/320/320?random=41" alt="Borda solida"&gt;
+&lt;/div&gt;
+&lt;div class="cdw-image cdw-image--rounded cdw-image-sm cdw-image-border-double cdw-fw-accent-cocoa"&gt;
+  &lt;img src="https://picsum.photos/320/240?random=42" alt="Borda dupla"&gt;
+&lt;/div&gt;
+&lt;div class="cdw-image cdw-image--square cdw-image-sm cdw-image-border-dashed cdw-fw-accent-emerald"&gt;
+  &lt;img src="https://picsum.photos/320/320?random=43" alt="Borda tracejada"&gt;
+&lt;/div&gt;
+&lt;div class="cdw-image cdw-image--rounded cdw-image-sm cdw-image-border-asym cdw-fw-accent-rose"&gt;
+  &lt;img src="https://picsum.photos/320/240?random=44" alt="Borda assimetrica"&gt;
+&lt;/div&gt;
+&lt;div class="cdw-image cdw-image--square cdw-image-sm cdw-image-border-notch cdw-fw-accent-slate"&gt;
+  &lt;img src="https://picsum.photos/320/320?random=45" alt="Borda com recorte"&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="image-alinhamento" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Alinhamento</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Uso combinado para inline, centralizado e flutuado sem criar novos componentes.
+    </p>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Inline e centralizado</div>
+        <div class="cdw-fw-docs-badge">Uso</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-image cdw-image--circle cdw-image-xs cdw-image--inline cdw-fw-accent-ocean">
+          <img src="https://picsum.photos/160/160?random=51" alt="Inline avatar">
+        </div>
+        <div class="cdw-image cdw-image--rounded cdw-image-sm cdw-image--inline cdw-fw-accent-emerald" style="margin-left:8px;">
+          <img src="https://picsum.photos/320/240?random=52" alt="Inline apoio">
+        </div>
+        <div class="cdw-image cdw-image--frame cdw-image-md cdw-image--center cdw-fw-accent-slate" style="margin-top:12px;">
+          <img src="https://picsum.photos/640/420?random=53" alt="Imagem centralizada">
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-image cdw-image--circle cdw-image-xs cdw-image--inline cdw-fw-accent-ocean"&gt;
+  &lt;img src="https://picsum.photos/160/160?random=51" alt="Inline avatar"&gt;
+&lt;/div&gt;
+&lt;div class="cdw-image cdw-image--rounded cdw-image-sm cdw-image--inline cdw-fw-accent-emerald"&gt;
+  &lt;img src="https://picsum.photos/320/240?random=52" alt="Inline apoio"&gt;
+&lt;/div&gt;
+&lt;div class="cdw-image cdw-image--frame cdw-image-md cdw-image--center cdw-fw-accent-slate"&gt;
+  &lt;img src="https://picsum.photos/640/420?random=53" alt="Imagem centralizada"&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Float esquerda e direita</div>
+        <div class="cdw-fw-docs-badge">Leitura</div>
+      </div>
+      <div class="cdw-fw-docs-preview" style="overflow:hidden;">
+        <div class="cdw-image cdw-image--rounded cdw-image-sm cdw-image--float-left cdw-fw-accent-ocean">
+          <img src="https://picsum.photos/320/240?random=54" alt="Float esquerda">
+        </div>
+        <div class="cdw-image cdw-image--rounded cdw-image-sm cdw-image--float-right cdw-fw-accent-rose">
+          <img src="https://picsum.photos/320/240?random=55" alt="Float direita">
+        </div>
+        <p style="margin:0; color:#1f2937;">
+          Bloco de texto curto para demonstrar leitura com imagem flutuada em ambos os lados. A imagem nao vira galeria,
+          apenas organiza o fluxo visual do conteudo.
+        </p>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-image cdw-image--rounded cdw-image-sm cdw-image--float-left cdw-fw-accent-ocean"&gt;
+  &lt;img src="https://picsum.photos/320/240?random=54" alt="Float esquerda"&gt;
+&lt;/div&gt;
+&lt;div class="cdw-image cdw-image--rounded cdw-image-sm cdw-image--float-right cdw-fw-accent-rose"&gt;
+  &lt;img src="https://picsum.photos/320/240?random=55" alt="Float direita"&gt;
+&lt;/div&gt;
+&lt;p&gt;Bloco de texto curto para demonstrar leitura com imagem flutuada em ambos os lados.&lt;/p&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+</section>

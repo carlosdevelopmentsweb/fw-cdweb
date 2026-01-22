@@ -1,0 +1,9 @@
+.cdw-fw-pos-relative { position: relative; }
+.cdw-fw-pos-absolute { position: absolute; }
+.cdw-fw-pos-fixed { position: fixed; }
+.cdw-fw-pos-sticky { position: sticky; }
+
+.cdw-fw-top-0 { top: 0; }
+.cdw-fw-right-0 { right: 0; }
+.cdw-fw-bottom-0 { bottom: 0; }
+.cdw-fw-left-0 { left: 0; }

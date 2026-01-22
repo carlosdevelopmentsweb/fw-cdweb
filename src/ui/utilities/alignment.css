@@ -1,0 +1,21 @@
+.cdw-fw-align-left {
+  margin-left: 0;
+  margin-right: auto;
+  display: block;
+}
+
+.cdw-fw-align-center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.cdw-fw-align-right {
+  margin-left: auto;
+  margin-right: 0;
+  display: block;
+}
+
+.cdw-fw-align-top { vertical-align: top; }
+.cdw-fw-align-middle { vertical-align: middle; }
+.cdw-fw-align-bottom { vertical-align: bottom; }

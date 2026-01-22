@@ -6,6 +6,7 @@
 @import "./components/alert.css";
 @import "./components/badge.css";
 @import "./components/card.css";
+@import "./components/image.css";
 @import "./components/hero.css";
 @import "./components/panel.css";
 @import "./components/table.css";
@@ -19,6 +20,9 @@
 @import "./utilities/flex.css";
 @import "./utilities/gap.css";
 @import "./utilities/sizing.css";
+@import "./utilities/alignment.css";
+@import "./utilities/position.css";
+@import "./utilities/overflow.css";
 @import "./utilities/text.css";
 @import "./layout/container.css";
 @import "./layout/grid.css";

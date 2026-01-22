@@ -1,4 +1,6 @@
 .cdw-fw-block { display: block; }
 .cdw-fw-inline-block { display: inline-block; }
 .cdw-fw-inline { display: inline; }
+.cdw-fw-none { display: none !important; }
 .cdw-fw-hidden { display: none !important; }
+.cdw-fw-visible { visibility: visible; }

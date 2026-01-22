@@ -12,3 +12,7 @@
 .cdw-fw-justify-between { justify-content: space-between; }
 .cdw-fw-flex-wrap { flex-wrap: wrap; }
 .cdw-fw-flex-nowrap { flex-wrap: nowrap; }
+.cdw-fw-grow { flex-grow: 1; }
+.cdw-fw-grow-0 { flex-grow: 0; }
+.cdw-fw-shrink { flex-shrink: 1; }
+.cdw-fw-shrink-0 { flex-shrink: 0; }
