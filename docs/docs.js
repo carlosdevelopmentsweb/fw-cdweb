@@ -4109,7 +4109,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
   </div>
 </section>
   `,
-  tables: `
+  tables: `r`n
 <section id="tables" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
   <div class="cdw-fw-docs-section-head">
     <h2 class="cdw-fw-docs-section-title">Tabelas</h2>
@@ -4155,7 +4155,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
   <div class="cdw-fw-docs-subsection" id="tables-estrutura" data-cdw-fw-docs-section>
     <h3 class="cdw-fw-docs-subtitle">Estrutura</h3>
     <p class="cdw-fw-docs-subdesc">
-      Header separado, body em blocos e linhas com estados. Use data-label para responsivo.
+      Header separado, body em blocos e linhas com estados. Use data-label para responsivo ou deixe o JS sincronizar pelo header.
     </p>
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-example-head">
@@ -4999,7 +4999,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
   </div>
 
 
-`,
+`r`n  `,
   panel: `<section id="panel" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
   <div class="cdw-fw-docs-section-head">
     <h2 class="cdw-fw-docs-section-title">CDW Panel</h2>
@@ -9186,6 +9186,7 @@ function setupScrollSpy(root) {
     setActive(initialHash);
   }
 }
+
 
 
 

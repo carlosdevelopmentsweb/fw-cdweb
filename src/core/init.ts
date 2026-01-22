@@ -4,6 +4,7 @@ import { bindGallery } from "../components/gallery";
 import { bindModal } from "../components/modal";
 import { bindNavbar } from "../components/navbar";
 import { bindStage } from "../components/stage";
+import { bindTable } from "../components/table";
 import { bindTooltip } from "../components/tooltip";
 
 export interface FrameworkAPI {
@@ -47,6 +48,11 @@ const defs = [
     name: "stage",
     selector: "[data-cdw-stage]",
     bind: bindStage,
+  },
+  {
+    name: "table",
+    selector: ".cdw-table",
+    bind: bindTable,
   },
   {
     name: "tooltip",
