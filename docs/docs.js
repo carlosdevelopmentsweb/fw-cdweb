@@ -5,10 +5,11 @@
   }
 
   const framework = window.CDWFW || null;
+  const docsVersion = "v0.1.33";
   const version =
     framework && typeof framework.CDW_FW_VERSION === "string"
       ? framework.CDW_FW_VERSION
-      : "0.0.0";
+      : docsVersion;
 
   const sections = {
   layout: `<section id="layout" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
@@ -8232,6 +8233,32 @@ function buildNav(root) {
 
   const navData = navDataByPage[pageKey] || [];
 
+  const normalizeLabel = (value) => {
+    if (!value) return "";
+    const el = document.createElement("textarea");
+    el.innerHTML = value;
+    return el.value.trim().toLowerCase();
+  };
+
+  const sortByLabel = (a, b, key) => {
+    const aLabel = normalizeLabel(key ? a[key] : a.label || a.title || "");
+    const bLabel = normalizeLabel(key ? b[key] : b.label || b.title || "");
+    return aLabel.localeCompare(bLabel, "pt-BR");
+  };
+
+  const sortedPageLinks = [...pageLinks].sort((a, b) => sortByLabel(a, b, "label"));
+  const sortedNavData = navData
+    .map((group) => ({
+      ...group,
+      items: [...group.items]
+        .sort((a, b) => sortByLabel(a, b, "title"))
+        .map((item) => ({
+          ...item,
+          links: [...item.links].sort((a, b) => sortByLabel(a, b, "label")),
+        })),
+    }))
+    .sort((a, b) => sortByLabel(a, b, "title"));
+
 
   const createPageLink = (link) => {
     const anchor = document.createElement("a");
@@ -8243,7 +8270,7 @@ function buildNav(root) {
 
   const pageLinksWrap = document.createElement("div");
   pageLinksWrap.className = "cdw-fw-docs-nav-links";
-  pageLinks.forEach((link) => {
+  sortedPageLinks.forEach((link) => {
     const anchor = createPageLink(link);
     if (link.key === pageKey) {
       anchor.setAttribute("aria-current", "page");
@@ -8268,7 +8295,7 @@ function buildNav(root) {
   navAccordion.setAttribute("data-collapsible", "true");
   navAccordion.setAttribute("data-icon", "chevron");
 
-  navData.forEach((group) => {
+  sortedNavData.forEach((group) => {
     const groupItem = document.createElement("div");
     groupItem.className = "cdw-accordion-item";
 
@@ -8523,6 +8550,8 @@ function setupScrollSpy(root) {
     setActive(initialHash);
   }
 }
+
+
 
 
 
