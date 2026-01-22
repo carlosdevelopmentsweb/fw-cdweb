@@ -90,22 +90,42 @@
 .cdw-panel-frame,
 .cdw-panel--frame {
   background: #ffffff;
-  border: 1px solid var(--cdw-panel-border);
-  border-radius: 14px;
+  border: 1px solid color-mix(in srgb, var(--cdw-panel-accent) 28%, #d7dde7);
+  border-radius: 12px;
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.08);
+  z-index: 0;
 }
 
 .cdw-panel-frame::before,
 .cdw-panel--frame::before {
-  border: 1px solid color-mix(in srgb, var(--cdw-panel-accent) 40%, #e6ebf4);
-  border-radius: calc(14px - 2px);
   content: "";
-  inset: 8px;
   position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  border: 1px solid color-mix(in srgb, var(--cdw-panel-accent) 18%, #e2e8f0);
+  background: linear-gradient(160deg, #ffffff 0%, #f6f8fc 100%);
+  transform: translate(10px, 10px);
+  z-index: -1;
 }
 
 .cdw-panel-frame > *,
 .cdw-panel--frame > * {
   position: relative;
+  z-index: 1;
+}
+
+.cdw-panel-frame::after,
+.cdw-panel--frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  border: 1px solid color-mix(in srgb, var(--cdw-panel-accent) 12%, #eef2f7);
+  background: linear-gradient(180deg, #ffffff 0%, #f9fafc 100%);
+  transform: translate(18px, 18px);
+  z-index: -2;
+  opacity: 0.9;
+  pointer-events: none;
 }
 
 .cdw-panel-layer,

@@ -8,6 +8,7 @@
 @import "./components/card.css";
 @import "./components/hero.css";
 @import "./components/panel.css";
+@import "./components/table.css";
 @import "./components/gallery.css";
 @import "./components/modal.css";
 @import "./components/navbar.css";
@@ -21,6 +22,8 @@
 @import "./utilities/text.css";
 @import "./layout/container.css";
 @import "./layout/grid.css";
+
+
 
 
 
