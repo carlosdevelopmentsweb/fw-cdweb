@@ -37,46 +37,46 @@
 }
 
 .cdw-fab--bl {
-  --fab-rot: 90deg;
+  --fab-rot: -90deg;
   left: var(--cdw-fab-offset);
   bottom: var(--cdw-fab-offset);
 }
 
 .cdw-fab--tr {
-  --fab-rot: -90deg;
+  --fab-rot: 90deg;
   right: var(--cdw-fab-offset);
   top: var(--cdw-fab-offset);
 }
 
 .cdw-fab--tl {
-  --fab-rot: 180deg;
+  --fab-rot: -180deg;
   left: var(--cdw-fab-offset);
   top: var(--cdw-fab-offset);
 }
 
 .cdw-fab--cr {
-  --fab-rot: -45deg;
+  --fab-rot: 0deg;
   right: var(--cdw-fab-offset);
   top: 50%;
   transform: translateY(-50%);
 }
 
 .cdw-fab--cl {
-  --fab-rot: 135deg;
+  --fab-rot: 180deg;
   left: var(--cdw-fab-offset);
   top: 50%;
   transform: translateY(-50%);
 }
 
 .cdw-fab--bc {
-  --fab-rot: 45deg;
+  --fab-rot: 90deg;
   left: 50%;
   bottom: var(--cdw-fab-offset);
   transform: translateX(-50%);
 }
 
 .cdw-fab--tc {
-  --fab-rot: -135deg;
+  --fab-rot: -90deg;
   left: 50%;
   top: var(--cdw-fab-offset);
   transform: translateX(-50%);
