@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
   const app = document.getElementById("app");
   if (!app) {
     return;
@@ -4710,7 +4710,900 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
   </div>
 </section>
 
-`,  hero: `
+`,
+  tables: `
+
+<section id="tables" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+  <div class="cdw-fw-docs-section-head">
+    <h2 class="cdw-fw-docs-section-title">Tabelas</h2>
+    <p class="cdw-fw-docs-lead">
+      Tabelas narrativas e contextuais para leitura rapida, com identidade premium CDW-FW.
+    </p>
+  </div>
+
+  <div class="cdw-fw-docs-toc">
+    <span class="cdw-fw-docs-toc-title">Indice desta pagina</span>
+    <a href="#tables-conceito">Conceito</a>
+    <a href="#tables-estrutura">Estrutura</a>
+    <a href="#tables-opcoes">Opcoes</a>
+    <a href="#tables-variacoes">Variacoes</a>
+    <a href="#tables-tamanhos">Tamanhos</a>
+    <a href="#tables-estados">Estados</a>
+    <a href="#tables-surface">Table Surface</a>
+    <a href="#tables-rail">Table Rail</a>
+    <a href="#tables-focus">Table Focus</a>
+    <a href="#tables-split">Table Split</a>
+    <a href="#tables-timeline">Table Timeline</a>
+    <a href="#tables-minimal">Table Minimal</a>
+    <a href="#tables-responsivo">Responsivo</a>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="tables-conceito" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Conceito</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Leitura em blocos e ritmo visual, sem grid agressivo. Ideal para admin, ERP e ambientes operacionais.
+    </p>
+    <div class="cdw-fw-docs-classlist">
+      <span>cdw-table</span>
+      <span>cdw-table-header</span>
+      <span>cdw-table-body</span>
+      <span>cdw-table-row</span>
+      <span>cdw-table-cell</span>
+      <span>cdw-table-actions</span>
+      <span>cdw-table-*</span>
+      <span>row-*</span>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="tables-estrutura" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Estrutura</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Header separado, body em blocos e linhas com estados. Use data-label para responsivo ou deixe o JS sincronizar pelo header.
+    </p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Base do componente</div>
+        <div class="cdw-fw-docs-badge">Estrutura</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-table cdw-table-surface cdw-table-sm cdw-table-grid cdw-fw-accent-ocean">
+          <div class="cdw-table-header">
+            <div class="cdw-table-cell">Modulo</div>
+            <div class="cdw-table-cell">Status</div>
+            <div class="cdw-table-cell">Owner</div>
+            <div class="cdw-table-cell">Acoes</div>
+          </div>
+          <div class="cdw-table-body">
+            <div class="cdw-table-row row-default">
+              <div class="cdw-table-cell" data-label="Modulo">
+                Tokens base
+                <span class="cdw-table-meta">Atualizado hoje</span>
+              </div>
+              <div class="cdw-table-cell" data-label="Status">Ativo</div>
+              <div class="cdw-table-cell" data-label="Owner">UI Core</div>
+              <div class="cdw-table-cell cdw-table-actions" data-label="Acoes">
+                <button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--sm cdw-fw-btn--rounded">Abrir</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-table cdw-table-surface cdw-table-sm cdw-table-grid cdw-fw-accent-ocean"&gt;
+  &lt;div class="cdw-table-header"&gt;
+    &lt;div class="cdw-table-cell"&gt;Modulo&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Status&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Owner&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Acoes&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-table-body"&gt;
+    &lt;div class="cdw-table-row row-default"&gt;
+      &lt;div class="cdw-table-cell" data-label="Modulo"&gt;
+        Tokens base
+        &lt;span class="cdw-table-meta"&gt;Atualizado hoje&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Status"&gt;Ativo&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Owner"&gt;UI Core&lt;/div&gt;
+      &lt;div class="cdw-table-cell cdw-table-actions" data-label="Acoes"&gt;
+        &lt;button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Abrir&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="tables-opcoes" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Opcoes</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Controle grade, hover, zebra, cores e bordas via classes. Sem grade e com hover ja sao o padrao.
+    </p>
+    <div class="cdw-fw-docs-classlist">
+      <span>cdw-table-grid</span>
+      <span>cdw-table-no-grid</span>
+      <span>cdw-table-no-hover</span>
+      <span>cdw-table-zebra</span>
+      <span>cdw-table-head-accent</span>
+      <span>cdw-table-head-strong</span>
+      <span>cdw-table-row-accent</span>
+      <span>cdw-table-row-muted</span>
+      <span>cdw-table-surface-muted</span>
+      <span>cdw-table-surface-accent</span>
+      <span>cdw-table-border-all</span>
+      <span>cdw-table-border-top</span>
+      <span>cdw-table-border-right</span>
+      <span>cdw-table-border-bottom</span>
+      <span>cdw-table-border-left</span>
+      <span>cdw-table-border-none</span>
+      <span>cdw-table-cell-border-all</span>
+      <span>cdw-table-cell-border-top</span>
+      <span>cdw-table-cell-border-right</span>
+      <span>cdw-table-cell-border-bottom</span>
+      <span>cdw-table-cell-border-left</span>
+      <span>cdw-table-cell-border-none</span>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="tables-tamanhos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Tamanhos</h3>
+    <p class="cdw-fw-docs-subdesc">Altura da linha, padding interno e espacamento entre blocos.</p>
+    <div class="cdw-fw-docs-classlist">
+      <span>cdw-table-sm</span>
+      <span>cdw-table-md</span>
+      <span>cdw-table-lg</span>
+    </div>
+  </div>
+  <div class="cdw-fw-docs-subsection" id="tables-estados" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Estados de linha</h3>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Row states</div>
+        <div class="cdw-fw-docs-badge">Estados</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-table cdw-table-minimal cdw-table-sm cdw-fw-accent-rose">
+          <div class="cdw-table-body">
+            <div class="cdw-table-row row-default">
+              <div class="cdw-table-cell" data-label="Estado">row-default</div>
+              <div class="cdw-table-cell" data-label="Nota">Padrao</div>
+            </div>
+            <div class="cdw-table-row row-hover">
+              <div class="cdw-table-cell" data-label="Estado">row-hover</div>
+              <div class="cdw-table-cell" data-label="Nota">Hover aplicado</div>
+            </div>
+            <div class="cdw-table-row row-active">
+              <div class="cdw-table-cell" data-label="Estado">row-active</div>
+              <div class="cdw-table-cell" data-label="Nota">Linha em foco</div>
+            </div>
+            <div class="cdw-table-row row-selected">
+              <div class="cdw-table-cell" data-label="Estado">row-selected</div>
+              <div class="cdw-table-cell" data-label="Nota">Selecionada</div>
+            </div>
+            <div class="cdw-table-row row-disabled">
+              <div class="cdw-table-cell" data-label="Estado">row-disabled</div>
+              <div class="cdw-table-cell" data-label="Nota">Bloqueada</div>
+            </div>
+            <div class="cdw-table-row row-alert">
+              <div class="cdw-table-cell" data-label="Estado">row-alert</div>
+              <div class="cdw-table-cell" data-label="Nota">Atencao</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-table cdw-table-minimal cdw-table-sm cdw-fw-accent-rose"&gt;
+  &lt;div class="cdw-table-body"&gt;
+    &lt;div class="cdw-table-row row-default"&gt;
+      &lt;div class="cdw-table-cell" data-label="Estado"&gt;row-default&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Nota"&gt;Padrao&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-table-row row-hover"&gt;
+      &lt;div class="cdw-table-cell" data-label="Estado"&gt;row-hover&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Nota"&gt;Hover aplicado&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-table-row row-active"&gt;
+      &lt;div class="cdw-table-cell" data-label="Estado"&gt;row-active&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Nota"&gt;Linha em foco&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-table-row row-selected"&gt;
+      &lt;div class="cdw-table-cell" data-label="Estado"&gt;row-selected&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Nota"&gt;Selecionada&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-table-row row-disabled"&gt;
+      &lt;div class="cdw-table-cell" data-label="Estado"&gt;row-disabled&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Nota"&gt;Bloqueada&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-table-row row-alert"&gt;
+      &lt;div class="cdw-table-cell" data-label="Estado"&gt;row-alert&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Nota"&gt;Atencao&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="tables-surface" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Table Surface</h3>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Surface</div>
+        <div class="cdw-fw-docs-badge">Modelo</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-table cdw-table-surface cdw-table-md cdw-fw-accent-ocean">
+          <div class="cdw-table-header">
+            <div class="cdw-table-cell">Modulo</div>
+            <div class="cdw-table-cell">Etapa</div>
+            <div class="cdw-table-cell">Owner</div>
+            <div class="cdw-table-cell">Acoes</div>
+          </div>
+          <div class="cdw-table-body">
+            <div class="cdw-table-row row-default">
+              <div class="cdw-table-cell" data-label="Modulo">Tokens base<span class="cdw-table-meta">Core UI</span></div>
+              <div class="cdw-table-cell" data-label="Etapa">Concluido</div>
+              <div class="cdw-table-cell" data-label="Owner">CDW Labs</div>
+              <div class="cdw-table-cell cdw-table-actions" data-label="Acoes">
+                <button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--sm cdw-fw-btn--rounded">Abrir</button>
+              </div>
+            </div>
+            <div class="cdw-table-row row-default">
+              <div class="cdw-table-cell" data-label="Modulo">Layout grid<span class="cdw-table-meta">12 colunas</span></div>
+              <div class="cdw-table-cell" data-label="Etapa">Revisao</div>
+              <div class="cdw-table-cell" data-label="Owner">Equipe UI</div>
+              <div class="cdw-table-cell cdw-table-actions" data-label="Acoes">
+                <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded">Detalhar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-table cdw-table-surface cdw-table-md cdw-fw-accent-ocean"&gt;
+  &lt;div class="cdw-table-header"&gt;
+    &lt;div class="cdw-table-cell"&gt;Modulo&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Etapa&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Owner&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Acoes&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-table-body"&gt;
+    &lt;div class="cdw-table-row row-default"&gt;
+      &lt;div class="cdw-table-cell" data-label="Modulo"&gt;Tokens base&lt;span class="cdw-table-meta"&gt;Core UI&lt;/span&gt;&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Etapa"&gt;Concluido&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Owner"&gt;CDW Labs&lt;/div&gt;
+      &lt;div class="cdw-table-cell cdw-table-actions" data-label="Acoes"&gt;
+        &lt;button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Abrir&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-table-row row-default"&gt;
+      &lt;div class="cdw-table-cell" data-label="Modulo"&gt;Layout grid&lt;span class="cdw-table-meta"&gt;12 colunas&lt;/span&gt;&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Etapa"&gt;Revisao&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Owner"&gt;Equipe UI&lt;/div&gt;
+      &lt;div class="cdw-table-cell cdw-table-actions" data-label="Acoes"&gt;
+        &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Detalhar&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+  <div class="cdw-fw-docs-subsection" id="tables-rail" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Table Rail</h3>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Rail</div>
+        <div class="cdw-fw-docs-badge">Modelo</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-table cdw-table-rail cdw-table-md cdw-fw-accent-emerald">
+          <div class="cdw-table-header">
+            <div class="cdw-table-cell">Servico</div>
+            <div class="cdw-table-cell">Status</div>
+            <div class="cdw-table-cell">Owner</div>
+            <div class="cdw-table-cell">Acoes</div>
+          </div>
+          <div class="cdw-table-body">
+            <div class="cdw-table-row row-default">
+              <div class="cdw-table-cell" data-label="Servico">Login API<span class="cdw-table-meta">v3</span></div>
+              <div class="cdw-table-cell" data-label="Status">Ativo</div>
+              <div class="cdw-table-cell" data-label="Owner">Core</div>
+              <div class="cdw-table-cell cdw-table-actions" data-label="Acoes">
+                <button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--sm cdw-fw-btn--rounded">Monitorar</button>
+              </div>
+            </div>
+            <div class="cdw-table-row row-alert">
+              <div class="cdw-table-cell" data-label="Servico">Notificacoes<span class="cdw-table-meta">Fila</span></div>
+              <div class="cdw-table-cell" data-label="Status">Atencao</div>
+              <div class="cdw-table-cell" data-label="Owner">Ops</div>
+              <div class="cdw-table-cell cdw-table-actions" data-label="Acoes">
+                <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded">Revisar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-table cdw-table-rail cdw-table-md cdw-fw-accent-emerald"&gt;
+  &lt;div class="cdw-table-header"&gt;
+    &lt;div class="cdw-table-cell"&gt;Servico&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Status&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Owner&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Acoes&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-table-body"&gt;
+    &lt;div class="cdw-table-row row-default"&gt;
+      &lt;div class="cdw-table-cell" data-label="Servico"&gt;Login API&lt;span class="cdw-table-meta"&gt;v3&lt;/span&gt;&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Status"&gt;Ativo&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Owner"&gt;Core&lt;/div&gt;
+      &lt;div class="cdw-table-cell cdw-table-actions" data-label="Acoes"&gt;
+        &lt;button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Monitorar&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-table-row row-alert"&gt;
+      &lt;div class="cdw-table-cell" data-label="Servico"&gt;Notificacoes&lt;span class="cdw-table-meta"&gt;Fila&lt;/span&gt;&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Status"&gt;Atencao&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Owner"&gt;Ops&lt;/div&gt;
+      &lt;div class="cdw-table-cell cdw-table-actions" data-label="Acoes"&gt;
+        &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Revisar&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="tables-focus" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Table Focus</h3>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Focus</div>
+        <div class="cdw-fw-docs-badge">Modelo</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-table cdw-table-focus cdw-table-md cdw-fw-accent-violet">
+          <div class="cdw-table-header">
+            <div class="cdw-table-cell">Item</div>
+            <div class="cdw-table-cell">Status</div>
+            <div class="cdw-table-cell">Owner</div>
+            <div class="cdw-table-cell">Acoes</div>
+          </div>
+          <div class="cdw-table-body">
+            <div class="cdw-table-row row-hover">
+              <div class="cdw-table-cell" data-label="Item">Cadastro UI<span class="cdw-table-meta">Ativo</span></div>
+              <div class="cdw-table-cell" data-label="Status">Ok</div>
+              <div class="cdw-table-cell" data-label="Owner">Design</div>
+              <div class="cdw-table-cell cdw-table-actions" data-label="Acoes">
+                <button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--sm cdw-fw-btn--rounded">Editar</button>
+              </div>
+            </div>
+            <div class="cdw-table-row row-active">
+              <div class="cdw-table-cell" data-label="Item">Fluxo tokens<span class="cdw-table-meta">Focus</span></div>
+              <div class="cdw-table-cell" data-label="Status">Em uso</div>
+              <div class="cdw-table-cell" data-label="Owner">Core</div>
+              <div class="cdw-table-cell cdw-table-actions" data-label="Acoes">
+                <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded">Abrir</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-table cdw-table-focus cdw-table-md cdw-fw-accent-violet"&gt;
+  &lt;div class="cdw-table-header"&gt;
+    &lt;div class="cdw-table-cell"&gt;Item&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Status&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Owner&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Acoes&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-table-body"&gt;
+    &lt;div class="cdw-table-row row-hover"&gt;
+      &lt;div class="cdw-table-cell" data-label="Item"&gt;Cadastro UI&lt;span class="cdw-table-meta"&gt;Ativo&lt;/span&gt;&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Status"&gt;Ok&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Owner"&gt;Design&lt;/div&gt;
+      &lt;div class="cdw-table-cell cdw-table-actions" data-label="Acoes"&gt;
+        &lt;button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Editar&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-table-row row-active"&gt;
+      &lt;div class="cdw-table-cell" data-label="Item"&gt;Fluxo tokens&lt;span class="cdw-table-meta"&gt;Focus&lt;/span&gt;&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Status"&gt;Em uso&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Owner"&gt;Core&lt;/div&gt;
+      &lt;div class="cdw-table-cell cdw-table-actions" data-label="Acoes"&gt;
+        &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Abrir&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="tables-split" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Table Split</h3>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Split</div>
+        <div class="cdw-fw-docs-badge">Modelo</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-table cdw-table-split cdw-table-md cdw-fw-accent-indigo">
+          <div class="cdw-table-header">
+            <div class="cdw-table-cell">Projeto</div>
+            <div class="cdw-table-cell">Ambiente</div>
+            <div class="cdw-table-cell">Owner</div>
+            <div class="cdw-table-cell">Acoes</div>
+          </div>
+          <div class="cdw-table-body">
+            <div class="cdw-table-row row-default">
+              <div class="cdw-table-cell" data-label="Projeto">CDW UI Kit<span class="cdw-table-meta">Docs</span></div>
+              <div class="cdw-table-cell" data-label="Ambiente">Prod</div>
+              <div class="cdw-table-cell" data-label="Owner">CDW</div>
+              <div class="cdw-table-cell cdw-table-cell--actions cdw-table-actions" data-label="Acoes">
+                <button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--sm cdw-fw-btn--rounded">Ver</button>
+                <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded">Abrir</button>
+              </div>
+            </div>
+            <div class="cdw-table-row row-selected">
+              <div class="cdw-table-cell" data-label="Projeto">Tokens System<span class="cdw-table-meta">Atualizado</span></div>
+              <div class="cdw-table-cell" data-label="Ambiente">Stage</div>
+              <div class="cdw-table-cell" data-label="Owner">UI Core</div>
+              <div class="cdw-table-cell cdw-table-cell--actions cdw-table-actions" data-label="Acoes">
+                <button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--sm cdw-fw-btn--rounded">Detalhar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-table cdw-table-split cdw-table-md cdw-fw-accent-indigo"&gt;
+  &lt;div class="cdw-table-header"&gt;
+    &lt;div class="cdw-table-cell"&gt;Projeto&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Ambiente&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Owner&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Acoes&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-table-body"&gt;
+    &lt;div class="cdw-table-row row-default"&gt;
+      &lt;div class="cdw-table-cell" data-label="Projeto"&gt;CDW UI Kit&lt;span class="cdw-table-meta"&gt;Docs&lt;/span&gt;&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Ambiente"&gt;Prod&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Owner"&gt;CDW&lt;/div&gt;
+      &lt;div class="cdw-table-cell cdw-table-cell--actions cdw-table-actions" data-label="Acoes"&gt;
+        &lt;button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Ver&lt;/button&gt;
+        &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Abrir&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-table-row row-selected"&gt;
+      &lt;div class="cdw-table-cell" data-label="Projeto"&gt;Tokens System&lt;span class="cdw-table-meta"&gt;Atualizado&lt;/span&gt;&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Ambiente"&gt;Stage&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Owner"&gt;UI Core&lt;/div&gt;
+      &lt;div class="cdw-table-cell cdw-table-cell--actions cdw-table-actions" data-label="Acoes"&gt;
+        &lt;button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Detalhar&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+  <div class="cdw-fw-docs-subsection" id="tables-timeline" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Table Timeline</h3>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Timeline</div>
+        <div class="cdw-fw-docs-badge">Modelo</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-table cdw-table-timeline cdw-table-md cdw-fw-accent-teal">
+          <div class="cdw-table-header">
+            <div class="cdw-table-cell">Evento</div>
+            <div class="cdw-table-cell">Status</div>
+            <div class="cdw-table-cell">Owner</div>
+            <div class="cdw-table-cell">Acoes</div>
+          </div>
+          <div class="cdw-table-body">
+            <div class="cdw-table-row row-default">
+              <div class="cdw-table-cell" data-label="Evento">Deploy UI<span class="cdw-table-meta">10:42</span></div>
+              <div class="cdw-table-cell" data-label="Status">Ok</div>
+              <div class="cdw-table-cell" data-label="Owner">Pipeline</div>
+              <div class="cdw-table-cell cdw-table-actions" data-label="Acoes">
+                <button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--sm cdw-fw-btn--rounded">Log</button>
+              </div>
+            </div>
+            <div class="cdw-table-row row-alert">
+              <div class="cdw-table-cell" data-label="Evento">Build tokens<span class="cdw-table-meta">10:15</span></div>
+              <div class="cdw-table-cell" data-label="Status">Atencao</div>
+              <div class="cdw-table-cell" data-label="Owner">CI</div>
+              <div class="cdw-table-cell cdw-table-actions" data-label="Acoes">
+                <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded">Detalhar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-table cdw-table-timeline cdw-table-md cdw-fw-accent-teal"&gt;
+  &lt;div class="cdw-table-header"&gt;
+    &lt;div class="cdw-table-cell"&gt;Evento&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Status&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Owner&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Acoes&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-table-body"&gt;
+    &lt;div class="cdw-table-row row-default"&gt;
+      &lt;div class="cdw-table-cell" data-label="Evento"&gt;Deploy UI&lt;span class="cdw-table-meta"&gt;10:42&lt;/span&gt;&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Status"&gt;Ok&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Owner"&gt;Pipeline&lt;/div&gt;
+      &lt;div class="cdw-table-cell cdw-table-actions" data-label="Acoes"&gt;
+        &lt;button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Log&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-table-row row-alert"&gt;
+      &lt;div class="cdw-table-cell" data-label="Evento"&gt;Build tokens&lt;span class="cdw-table-meta"&gt;10:15&lt;/span&gt;&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Status"&gt;Atencao&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Owner"&gt;CI&lt;/div&gt;
+      &lt;div class="cdw-table-cell cdw-table-actions" data-label="Acoes"&gt;
+        &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Detalhar&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="tables-minimal" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Table Minimal</h3>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Minimal</div>
+        <div class="cdw-fw-docs-badge">Modelo</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-table cdw-table-minimal cdw-table-lg cdw-fw-accent-slate">
+          <div class="cdw-table-header">
+            <div class="cdw-table-cell">Documento</div>
+            <div class="cdw-table-cell">Versao</div>
+            <div class="cdw-table-cell">Owner</div>
+            <div class="cdw-table-cell">Acoes</div>
+          </div>
+          <div class="cdw-table-body">
+            <div class="cdw-table-row row-default">
+              <div class="cdw-table-cell" data-label="Documento">Guia visual<span class="cdw-table-meta">Editorial</span></div>
+              <div class="cdw-table-cell" data-label="Versao">v1.2</div>
+              <div class="cdw-table-cell" data-label="Owner">CDW</div>
+              <div class="cdw-table-cell cdw-table-actions" data-label="Acoes">
+                <button class="cdw-fw-btn cdw-fw-btn--text cdw-fw-btn--sm">Abrir</button>
+              </div>
+            </div>
+            <div class="cdw-table-row row-default">
+              <div class="cdw-table-cell" data-label="Documento">Notas release<span class="cdw-table-meta">Semana</span></div>
+              <div class="cdw-table-cell" data-label="Versao">v1.1</div>
+              <div class="cdw-table-cell" data-label="Owner">Core</div>
+              <div class="cdw-table-cell cdw-table-actions" data-label="Acoes">
+                <button class="cdw-fw-btn cdw-fw-btn--text cdw-fw-btn--sm">Ler</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-table cdw-table-minimal cdw-table-lg cdw-fw-accent-slate"&gt;
+  &lt;div class="cdw-table-header"&gt;
+    &lt;div class="cdw-table-cell"&gt;Documento&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Versao&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Owner&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Acoes&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-table-body"&gt;
+    &lt;div class="cdw-table-row row-default"&gt;
+      &lt;div class="cdw-table-cell" data-label="Documento"&gt;Guia visual&lt;span class="cdw-table-meta"&gt;Editorial&lt;/span&gt;&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Versao"&gt;v1.2&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Owner"&gt;CDW&lt;/div&gt;
+      &lt;div class="cdw-table-cell cdw-table-actions" data-label="Acoes"&gt;
+        &lt;button class="cdw-fw-btn cdw-fw-btn--text cdw-fw-btn--sm"&gt;Abrir&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-table-row row-default"&gt;
+      &lt;div class="cdw-table-cell" data-label="Documento"&gt;Notas release&lt;span class="cdw-table-meta"&gt;Semana&lt;/span&gt;&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Versao"&gt;v1.1&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Owner"&gt;Core&lt;/div&gt;
+      &lt;div class="cdw-table-cell cdw-table-actions" data-label="Acoes"&gt;
+        &lt;button class="cdw-fw-btn cdw-fw-btn--text cdw-fw-btn--sm"&gt;Ler&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="tables-responsivo" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Responsivo</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Use (padrao nas demos). Em telas pequenas, cada linha vira bloco empilhado e o header vira label via data-label.
+    </p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Table responsive</div>
+        <div class="cdw-fw-docs-badge">Default</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-table cdw-table-sm cdw-fw-accent-sky">
+          <div class="cdw-table-header">
+            <div class="cdw-table-cell">Area</div>
+            <div class="cdw-table-cell">Status</div>
+            <div class="cdw-table-cell">Owner</div>
+            <div class="cdw-table-cell">Acoes</div>
+          </div>
+          <div class="cdw-table-body">
+            <div class="cdw-table-row row-default">
+              <div class="cdw-table-cell" data-label="Area">Painel config<span class="cdw-table-meta">UI</span></div>
+              <div class="cdw-table-cell" data-label="Status">Ok</div>
+              <div class="cdw-table-cell" data-label="Owner">CDW</div>
+              <div class="cdw-table-cell cdw-table-actions" data-label="Acoes">
+                <button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--sm cdw-fw-btn--rounded">Abrir</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-table cdw-table-sm cdw-fw-accent-sky"&gt;
+  &lt;div class="cdw-table-header"&gt;
+    &lt;div class="cdw-table-cell"&gt;Area&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Status&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Owner&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Acoes&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-table-body"&gt;
+    &lt;div class="cdw-table-row row-default"&gt;
+      &lt;div class="cdw-table-cell" data-label="Area"&gt;Painel config&lt;span class="cdw-table-meta"&gt;UI&lt;/span&gt;&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Status"&gt;Ok&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Owner"&gt;CDW&lt;/div&gt;
+      &lt;div class="cdw-table-cell cdw-table-actions" data-label="Acoes"&gt;
+        &lt;button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Abrir&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+  <div class="cdw-fw-docs-subsection" id="tables-variacoes" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Variacoes</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Exemplos diretos de fundo do header, cor de linha, zebra e bordas direcionais.
+    </p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Header + fundo + zebra</div>
+        <div class="cdw-fw-docs-badge">Variacao</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-table cdw-table-md cdw-table-head-strong cdw-table-row-accent cdw-table-zebra cdw-table-surface-accent cdw-table-border-all cdw-fw-accent-slate">
+          <div class="cdw-table-header">
+            <div class="cdw-table-cell">Modulo</div>
+            <div class="cdw-table-cell">Status</div>
+            <div class="cdw-table-cell">Owner</div>
+            <div class="cdw-table-cell">Acoes</div>
+          </div>
+          <div class="cdw-table-body">
+            <div class="cdw-table-row row-default">
+              <div class="cdw-table-cell" data-label="Modulo">Core tokens<span class="cdw-table-meta">Base</span></div>
+              <div class="cdw-table-cell" data-label="Status">Ativo</div>
+              <div class="cdw-table-cell" data-label="Owner">CDW</div>
+              <div class="cdw-table-cell cdw-table-actions" data-label="Acoes">
+                <button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--sm cdw-fw-btn--rounded">Abrir</button>
+              </div>
+            </div>
+            <div class="cdw-table-row row-default">
+              <div class="cdw-table-cell" data-label="Modulo">Layout system<span class="cdw-table-meta">Grid</span></div>
+              <div class="cdw-table-cell" data-label="Status">Revisao</div>
+              <div class="cdw-table-cell" data-label="Owner">UI Core</div>
+              <div class="cdw-table-cell cdw-table-actions" data-label="Acoes">
+                <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded">Detalhar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-table cdw-table-md cdw-table-head-strong cdw-table-row-accent cdw-table-zebra cdw-table-surface-accent cdw-table-border-all cdw-fw-accent-slate"&gt;
+  &lt;div class="cdw-table-header"&gt;
+    &lt;div class="cdw-table-cell"&gt;Modulo&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Status&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Owner&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Acoes&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-table-body"&gt;
+    &lt;div class="cdw-table-row row-default"&gt;
+      &lt;div class="cdw-table-cell" data-label="Modulo"&gt;Core tokens&lt;span class="cdw-table-meta"&gt;Base&lt;/span&gt;&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Status"&gt;Ativo&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Owner"&gt;CDW&lt;/div&gt;
+      &lt;div class="cdw-table-cell cdw-table-actions" data-label="Acoes"&gt;
+        &lt;button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Abrir&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-table-row row-default"&gt;
+      &lt;div class="cdw-table-cell" data-label="Modulo"&gt;Layout system&lt;span class="cdw-table-meta"&gt;Grid&lt;/span&gt;&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Status"&gt;Revisao&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Owner"&gt;UI Core&lt;/div&gt;
+      &lt;div class="cdw-table-cell cdw-table-actions" data-label="Acoes"&gt;
+        &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Detalhar&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Bordas direcionais</div>
+        <div class="cdw-fw-docs-badge">Variacao</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-table cdw-table-sm cdw-table-head-accent cdw-table-border-left cdw-fw-accent-emerald">
+          <div class="cdw-table-header">
+            <div class="cdw-table-cell">Servico</div>
+            <div class="cdw-table-cell">Status</div>
+            <div class="cdw-table-cell">Owner</div>
+            <div class="cdw-table-cell">Acoes</div>
+          </div>
+          <div class="cdw-table-body">
+            <div class="cdw-table-row row-default">
+              <div class="cdw-table-cell" data-label="Servico">Gateway API<span class="cdw-table-meta">v4</span></div>
+              <div class="cdw-table-cell" data-label="Status">Ok</div>
+              <div class="cdw-table-cell" data-label="Owner">Platform</div>
+              <div class="cdw-table-cell cdw-table-actions" data-label="Acoes">
+                <button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--sm cdw-fw-btn--rounded">Monitorar</button>
+              </div>
+            </div>
+            <div class="cdw-table-row row-default">
+              <div class="cdw-table-cell" data-label="Servico">Alert router<span class="cdw-table-meta">Fila</span></div>
+              <div class="cdw-table-cell" data-label="Status">Ajuste</div>
+              <div class="cdw-table-cell" data-label="Owner">Ops</div>
+              <div class="cdw-table-cell cdw-table-actions" data-label="Acoes">
+                <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded">Revisar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-table cdw-table-sm cdw-table-head-accent cdw-table-border-left cdw-fw-accent-emerald"&gt;
+  &lt;div class="cdw-table-header"&gt;
+    &lt;div class="cdw-table-cell"&gt;Servico&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Status&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Owner&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Acoes&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-table-body"&gt;
+    &lt;div class="cdw-table-row row-default"&gt;
+      &lt;div class="cdw-table-cell" data-label="Servico"&gt;Gateway API&lt;span class="cdw-table-meta"&gt;v4&lt;/span&gt;&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Status"&gt;Ok&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Owner"&gt;Platform&lt;/div&gt;
+      &lt;div class="cdw-table-cell cdw-table-actions" data-label="Acoes"&gt;
+        &lt;button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Monitorar&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-table-row row-default"&gt;
+      &lt;div class="cdw-table-cell" data-label="Servico"&gt;Alert router&lt;span class="cdw-table-meta"&gt;Fila&lt;/span&gt;&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Status"&gt;Ajuste&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Owner"&gt;Ops&lt;/div&gt;
+      &lt;div class="cdw-table-cell cdw-table-actions" data-label="Acoes"&gt;
+        &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Revisar&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Borda em celula</div>
+        <div class="cdw-fw-docs-badge">Variacao</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-table cdw-table-sm cdw-table-border-all cdw-fw-accent-ocean">
+          <div class="cdw-table-header">
+            <div class="cdw-table-cell">Token</div>
+            <div class="cdw-table-cell">Status</div>
+            <div class="cdw-table-cell">Owner</div>
+            <div class="cdw-table-cell">Acoes</div>
+          </div>
+          <div class="cdw-table-body">
+            <div class="cdw-table-row row-default">
+              <div class="cdw-table-cell cdw-table-cell-border-left" data-label="Token">Core UI<span class="cdw-table-meta">Base</span></div>
+              <div class="cdw-table-cell" data-label="Status">Ok</div>
+              <div class="cdw-table-cell cdw-table-cell-border-right" data-label="Owner">CDW</div>
+              <div class="cdw-table-cell cdw-table-actions" data-label="Acoes">
+                <button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--sm cdw-fw-btn--rounded">Abrir</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-table cdw-table-sm cdw-table-border-all cdw-fw-accent-ocean"&gt;
+  &lt;div class="cdw-table-header"&gt;
+    &lt;div class="cdw-table-cell"&gt;Token&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Status&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Owner&lt;/div&gt;
+    &lt;div class="cdw-table-cell"&gt;Acoes&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-table-body"&gt;
+    &lt;div class="cdw-table-row row-default"&gt;
+      &lt;div class="cdw-table-cell cdw-table-cell-border-left" data-label="Token"&gt;Core UI&lt;span class="cdw-table-meta"&gt;Base&lt;/span&gt;&lt;/div&gt;
+      &lt;div class="cdw-table-cell" data-label="Status"&gt;Ok&lt;/div&gt;
+      &lt;div class="cdw-table-cell cdw-table-cell-border-right" data-label="Owner"&gt;CDW&lt;/div&gt;
+      &lt;div class="cdw-table-cell cdw-table-actions" data-label="Acoes"&gt;
+        &lt;button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-btn--sm cdw-fw-btn--rounded"&gt;Abrir&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+`,
+  hero: `
 <section id="hero" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
   <div class="cdw-fw-docs-section-head">
     <h2 class="cdw-fw-docs-section-title">Hero</h2>
@@ -5403,6 +6296,1191 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
 </section>
 
 `,
+  panel: `
+<section id="panel" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+  <div class="cdw-fw-docs-section-head">
+    <h2 class="cdw-fw-docs-section-title">Panel</h2>
+    <p class="cdw-fw-docs-lead">
+      Paineis premium para organizar contexto, acao e leitura em blocos sofisticados.
+    </p>
+  </div>
+
+  <div class="cdw-fw-docs-toc">
+    <span class="cdw-fw-docs-toc-title">Indice desta pagina</span>
+    <a href="#panel-conceito">Conceito</a>
+    <a href="#panel-estrutura">Estrutura</a>
+    <a href="#panel-tamanhos">Tamanhos</a>
+    <a href="#panel-modelos">Modelos</a>
+    <a href="#panel-exemplos">Exemplos</a>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="panel-conceito" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Conceito</h3>
+    <p class="cdw-fw-docs-subdesc">
+      O Panel organiza informacao com ritmo visual, hierarquia e bordas expressivas.
+      <span class="cdw-fw-docs-when">Quando usar: contexto, resumo, cards de apoio e blocos de sistema.</span>
+    </p>
+    <div class="cdw-fw-docs-classlist">
+      <span>cdw-panel</span>
+      <span>cdw-panel-header</span>
+      <span>cdw-panel-title</span>
+      <span>cdw-panel-subtitle</span>
+      <span>cdw-panel-body</span>
+      <span>cdw-panel-footer</span>
+      <span>cdw-panel-actions</span>
+      <span>cdw-panel-*</span>
+      <span>cdw-fw-accent-*</span>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="panel-estrutura" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Estrutura</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Estrutura base com header, body e footer opcionais.
+    </p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Base obrigatoria</div>
+        <div class="cdw-fw-docs-badge">Estrutura</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-panel cdw-panel-md cdw-panel--frame cdw-fw-accent-ocean">
+          <div class="cdw-panel-header">
+            <div class="cdw-panel-title">Visao geral</div>
+            <div class="cdw-panel-subtitle">Resumo do contexto</div>
+          </div>
+          <div class="cdw-panel-body">Conteudo principal do painel para orientar a leitura.</div>
+          <div class="cdw-panel-footer">
+            <div class="cdw-panel-meta">Atualizado agora</div>
+            <div class="cdw-panel-actions">
+              <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded" type="button">Abrir</button>
+              <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded" type="button">Detalhar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-panel cdw-panel-md cdw-panel--frame cdw-fw-accent-ocean"&gt;
+  &lt;div class="cdw-panel-header"&gt;
+    &lt;div class="cdw-panel-title"&gt;Visao geral&lt;/div&gt;
+    &lt;div class="cdw-panel-subtitle"&gt;Resumo do contexto&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-panel-body"&gt;Conteudo principal do painel para orientar a leitura.&lt;/div&gt;
+  &lt;div class="cdw-panel-footer"&gt;
+    &lt;div class="cdw-panel-meta"&gt;Atualizado agora&lt;/div&gt;
+    &lt;div class="cdw-panel-actions"&gt;
+      &lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded" type="button"&gt;Abrir&lt;/button&gt;
+      &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded" type="button"&gt;Detalhar&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="panel-tamanhos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Tamanhos</h3>
+    <p class="cdw-fw-docs-subdesc">Use sm, md e lg para ajustar ritmo e densidade.</p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Escalas de leitura</div>
+        <div class="cdw-fw-docs-badge">Tamanho</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-panel cdw-panel-sm cdw-panel--rail cdw-fw-accent-sky">
+          <div class="cdw-panel-title">Panel sm</div>
+          <div class="cdw-panel-body">Compacto para contexto rapido.</div>
+        </div>
+        <div class="cdw-panel cdw-panel-md cdw-panel--rail cdw-fw-accent-ocean" style="margin-top:12px;">
+          <div class="cdw-panel-title">Panel md</div>
+          <div class="cdw-panel-body">Padrao para paineis de leitura.</div>
+        </div>
+        <div class="cdw-panel cdw-panel-lg cdw-panel--rail cdw-fw-accent-mint" style="margin-top:12px;">
+          <div class="cdw-panel-title">Panel lg</div>
+          <div class="cdw-panel-body">Mais respiro para conteudo amplo.</div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-panel cdw-panel-sm cdw-panel--rail cdw-fw-accent-sky"&gt;...&lt;/div&gt;
+&lt;div class="cdw-panel cdw-panel-md cdw-panel--rail cdw-fw-accent-ocean"&gt;...&lt;/div&gt;
+&lt;div class="cdw-panel cdw-panel-lg cdw-panel--rail cdw-fw-accent-mint"&gt;...&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="panel-modelos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Modelos</h3>
+    <p class="cdw-fw-docs-subdesc">Cada modelo altera borda, camadas e recortes sem depender de sombras genericas.</p>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Panel Frame</div>
+        <div class="cdw-fw-docs-badge">Modelo</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-panel cdw-panel-md cdw-panel--frame cdw-fw-accent-indigo">
+          <div class="cdw-panel-title">Documento institucional</div>
+          <div class="cdw-panel-subtitle">Moldura editorial</div>
+          <div class="cdw-panel-body">Estrutura para decisoes formais e comunicados.</div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-panel cdw-panel-md cdw-panel--frame cdw-fw-accent-indigo"&gt;
+  &lt;div class="cdw-panel-title"&gt;Documento institucional&lt;/div&gt;
+  &lt;div class="cdw-panel-subtitle"&gt;Moldura editorial&lt;/div&gt;
+  &lt;div class="cdw-panel-body"&gt;Estrutura para decisoes formais e comunicados.&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Panel Layer</div>
+        <div class="cdw-fw-docs-badge">Modelo</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-panel cdw-panel-lg cdw-panel--layer cdw-fw-accent-sky">
+          <div class="cdw-panel-title">Camadas de contexto</div>
+          <div class="cdw-panel-subtitle">Base + apoio visual</div>
+          <div class="cdw-panel-body">Separar dados principais de apoio e acao.</div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-panel cdw-panel-lg cdw-panel--layer cdw-fw-accent-sky"&gt;
+  &lt;div class="cdw-panel-title"&gt;Camadas de contexto&lt;/div&gt;
+  &lt;div class="cdw-panel-subtitle"&gt;Base + apoio visual&lt;/div&gt;
+  &lt;div class="cdw-panel-body"&gt;Separar dados principais de apoio e acao.&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Panel Rail</div>
+        <div class="cdw-fw-docs-badge">Modelo</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-panel cdw-panel-md cdw-panel--rail cdw-fw-accent-amber">
+          <div class="cdw-panel-title">Status ativo</div>
+          <div class="cdw-panel-subtitle">Sinal lateral</div>
+          <div class="cdw-panel-body">Destaque discreto para estados e alertas.</div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-panel cdw-panel-md cdw-panel--rail cdw-fw-accent-amber"&gt;
+  &lt;div class="cdw-panel-title"&gt;Status ativo&lt;/div&gt;
+  &lt;div class="cdw-panel-subtitle"&gt;Sinal lateral&lt;/div&gt;
+  &lt;div class="cdw-panel-body"&gt;Destaque discreto para estados e alertas.&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Panel Stack</div>
+        <div class="cdw-fw-docs-badge">Modelo</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-panel cdw-panel-md cdw-panel--stack cdw-fw-accent-rose">
+          <div class="cdw-panel-title">Stack narrativo</div>
+          <div class="cdw-panel-subtitle">Camadas offset</div>
+          <div class="cdw-panel-body">Organize blocos com profundidade real.</div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-panel cdw-panel-md cdw-panel--stack cdw-fw-accent-rose"&gt;
+  &lt;div class="cdw-panel-title"&gt;Stack narrativo&lt;/div&gt;
+  &lt;div class="cdw-panel-subtitle"&gt;Camadas offset&lt;/div&gt;
+  &lt;div class="cdw-panel-body"&gt;Organize blocos com profundidade real.&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Panel Cut</div>
+        <div class="cdw-fw-docs-badge">Modelo</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-panel cdw-panel-md cdw-panel--cut cdw-fw-accent-graphite">
+          <div class="cdw-panel-title">Recortes sutis</div>
+          <div class="cdw-panel-subtitle">Cantos assimetricos</div>
+          <div class="cdw-panel-body">Quebra visual elegante sem excesso.</div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-panel cdw-panel-md cdw-panel--cut cdw-fw-accent-graphite"&gt;
+  &lt;div class="cdw-panel-title"&gt;Recortes sutis&lt;/div&gt;
+  &lt;div class="cdw-panel-subtitle"&gt;Cantos assimetricos&lt;/div&gt;
+  &lt;div class="cdw-panel-body"&gt;Quebra visual elegante sem excesso.&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="panel-exemplos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Exemplos</h3>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Resumo operacional</div>
+        <div class="cdw-fw-docs-badge">Uso</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-panel cdw-panel-lg cdw-panel--outline-offset cdw-fw-accent-ocean">
+          <div class="cdw-panel-header">
+            <div class="cdw-panel-title">Modulo de configuracao</div>
+            <div class="cdw-panel-subtitle">Fluxo base</div>
+          </div>
+          <div class="cdw-panel-body">Estrutura para escolhas administrativas com foco em decisao rapida.</div>
+          <div class="cdw-panel-footer">
+            <div class="cdw-panel-meta">Atualizado ha 2 horas</div>
+            <div class="cdw-panel-actions">
+              <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded" type="button">Abrir</button>
+              <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded" type="button">Auditar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-panel cdw-panel-lg cdw-panel--outline-offset cdw-fw-accent-ocean"&gt;
+  &lt;div class="cdw-panel-header"&gt;
+    &lt;div class="cdw-panel-title"&gt;Modulo de configuracao&lt;/div&gt;
+    &lt;div class="cdw-panel-subtitle"&gt;Fluxo base&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-panel-body"&gt;Estrutura para escolhas administrativas com foco em decisao rapida.&lt;/div&gt;
+  &lt;div class="cdw-panel-footer"&gt;
+    &lt;div class="cdw-panel-meta"&gt;Atualizado ha 2 horas&lt;/div&gt;
+    &lt;div class="cdw-panel-actions"&gt;
+      &lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--sm cdw-fw-btn--rounded" type="button"&gt;Abrir&lt;/button&gt;
+      &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--sm cdw-fw-btn--rounded" type="button"&gt;Auditar&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+`, 
+  forms: `
+
+<section id="forms" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+  <div class="cdw-fw-docs-section-head">
+    <h2 class="cdw-fw-docs-section-title">Formularios</h2>
+    <p class="cdw-fw-docs-lead">
+      Formularios elegantes, consistentes e com identidade CDW-FW, prontos para sistemas e produtos premium.
+    </p>
+  </div>
+
+  <div class="cdw-fw-docs-toc">
+    <span class="cdw-fw-docs-toc-title">Indice desta pagina</span>
+    <a href="#forms-conceito">Conceito</a>
+    <a href="#forms-estrutura">Estrutura base</a>
+    <a href="#forms-inputs">Inputs</a>
+    <a href="#forms-selects">Selects</a>
+    <a href="#forms-checks">Check / Radio</a>
+    <a href="#forms-uploads">Uploads</a>
+    <a href="#forms-grid">Grid</a>
+    <a href="#forms-estados">Estados</a>
+    <a href="#forms-responsivo">Responsividade</a>
+    <a href="#forms-exemplos">Exemplos completos</a>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="forms-conceito" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Conceito</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Formularios como carro-chefe: tipografia precisa, contorno elegante, estados claros e leitura consistente.
+      <span class="cdw-fw-docs-when">Quando usar: cadastro, configuracao, fluxos operacionais e onboarding.</span>
+    </p>
+    <div class="cdw-fw-docs-classlist">
+      <span>cdw-form</span>
+      <span>cdw-form-group</span>
+      <span>cdw-form-label</span>
+      <span>cdw-form-input</span>
+      <span>cdw-form-select</span>
+      <span>cdw-form-textarea</span>
+      <span>cdw-form-check</span>
+      <span>cdw-form-dropzone</span>
+      <span>cdw-form-actions</span>
+      <span>cdw-form-grid</span>
+      <span>cdw-fw-accent-*</span>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="forms-estrutura" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Estrutura base</h3>
+    <p class="cdw-fw-docs-subdesc">Container do formulario + grupos de campo.</p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Base obrigatoria</div>
+        <div class="cdw-fw-docs-badge">Estrutura</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <form class="cdw-form cdw-form-md cdw-fw-accent-ocean">
+          <div class="cdw-form-group">
+            <label class="cdw-form-label">Nome</label>
+            <input class="cdw-form-input cdw-input-md" type="text" placeholder="Nome completo" />
+            <div class="cdw-form-helper">Obrigatorio para identificacao.</div>
+          </div>
+        </form>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;form class="cdw-form cdw-form-md cdw-fw-accent-ocean"&gt;
+  &lt;div class="cdw-form-group"&gt;
+    &lt;label class="cdw-form-label"&gt;Nome&lt;/label&gt;
+    &lt;input class="cdw-form-input cdw-input-md" type="text" placeholder="Nome completo" /&gt;
+    &lt;div class="cdw-form-helper"&gt;Obrigatorio para identificacao.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="forms-inputs" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Inputs</h3>
+    <p class="cdw-fw-docs-subdesc">Inputs com tamanhos e estilos clean, soft, outline e underline.</p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Tipos e estilos</div>
+        <div class="cdw-fw-docs-badge">Inputs</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <form class="cdw-form cdw-form-md cdw-fw-accent-sky">
+          <div class="cdw-form-group">
+            <label class="cdw-form-label">Email</label>
+            <input class="cdw-form-input cdw-input-md is-soft" type="email" placeholder="nome@empresa.com" />
+          </div>
+          <div class="cdw-form-group">
+            <label class="cdw-form-label">Senha</label>
+            <input class="cdw-form-input cdw-input-md is-outline" type="password" placeholder="Senha segura" />
+          </div>
+          <div class="cdw-form-group">
+            <label class="cdw-form-label">Numero</label>
+            <input class="cdw-form-input cdw-input-md is-underline" type="number" placeholder="0" />
+          </div>
+        </form>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;form class="cdw-form cdw-form-md cdw-fw-accent-sky"&gt;
+  &lt;div class="cdw-form-group"&gt;
+    &lt;label class="cdw-form-label"&gt;Email&lt;/label&gt;
+    &lt;input class="cdw-form-input cdw-input-md is-soft" type="email" placeholder="nome@empresa.com" /&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-form-group"&gt;
+    &lt;label class="cdw-form-label"&gt;Senha&lt;/label&gt;
+    &lt;input class="cdw-form-input cdw-input-md is-outline" type="password" placeholder="Senha segura" /&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-form-group"&gt;
+    &lt;label class="cdw-form-label"&gt;Numero&lt;/label&gt;
+    &lt;input class="cdw-form-input cdw-input-md is-underline" type="number" placeholder="0" /&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Tamanhos</div>
+        <div class="cdw-fw-docs-badge">Escalas</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <form class="cdw-form cdw-form-md cdw-fw-accent-sky">
+          <div class="cdw-form-group">
+            <label class="cdw-form-label">Input sm</label>
+            <input class="cdw-form-input cdw-input-sm" type="text" placeholder="Compacto" />
+          </div>
+          <div class="cdw-form-group">
+            <label class="cdw-form-label">Input md</label>
+            <input class="cdw-form-input cdw-input-md" type="text" placeholder="Padrao" />
+          </div>
+          <div class="cdw-form-group">
+            <label class="cdw-form-label">Input lg</label>
+            <input class="cdw-form-input cdw-input-lg" type="text" placeholder="Destaque" />
+          </div>
+          <div class="cdw-form-group">
+            <label class="cdw-form-label">Textarea sm</label>
+            <textarea class="cdw-form-textarea cdw-textarea-sm" placeholder="Mini texto"></textarea>
+          </div>
+          <div class="cdw-form-group">
+            <label class="cdw-form-label">Textarea md</label>
+            <textarea class="cdw-form-textarea cdw-textarea-md" placeholder="Texto padrao"></textarea>
+          </div>
+          <div class="cdw-form-group">
+            <label class="cdw-form-label">Textarea lg</label>
+            <textarea class="cdw-form-textarea cdw-textarea-lg" placeholder="Texto amplo"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;input class="cdw-form-input cdw-input-sm" type="text" /&gt;
+&lt;input class="cdw-form-input cdw-input-md" type="text" /&gt;
+&lt;input class="cdw-form-input cdw-input-lg" type="text" /&gt;
+&lt;textarea class="cdw-form-textarea cdw-textarea-sm"&gt;&lt;/textarea&gt;
+&lt;textarea class="cdw-form-textarea cdw-textarea-md"&gt;&lt;/textarea&gt;
+&lt;textarea class="cdw-form-textarea cdw-textarea-lg"&gt;&lt;/textarea&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Textarea com contador</div>
+        <div class="cdw-fw-docs-badge">Textarea</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <form class="cdw-form cdw-form-md cdw-fw-accent-mint">
+          <div class="cdw-form-group">
+            <label class="cdw-form-label">Resumo</label>
+            <textarea class="cdw-form-textarea cdw-textarea-lg" data-cdw-form-counter maxlength="240" placeholder="Descricao curta"></textarea>
+          </div>
+        </form>
+        <div class="cdw-fw-docs-example-caption">Use data-cdw-form-counter para ativar o contador.</div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;form class="cdw-form cdw-form-md cdw-fw-accent-mint"&gt;
+  &lt;div class="cdw-form-group"&gt;
+    &lt;label class="cdw-form-label"&gt;Resumo&lt;/label&gt;
+    &lt;textarea class="cdw-form-textarea cdw-textarea-lg" data-cdw-form-counter maxlength="240" placeholder="Descricao curta"&gt;&lt;/textarea&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="forms-selects" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Selects</h3>
+    <p class="cdw-fw-docs-subdesc">Select nativo estilizado e select avancado autoral com busca.</p>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Select simples</div>
+        <div class="cdw-fw-docs-badge">Basico</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <form class="cdw-form cdw-form-md cdw-fw-accent-amber">
+          <div class="cdw-form-group">
+            <label class="cdw-form-label">Categoria</label>
+            <select class="cdw-form-select">
+              <option>Operacional</option>
+              <option>Financeiro</option>
+              <option>Compliance</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;form class="cdw-form cdw-form-md cdw-fw-accent-amber"&gt;
+  &lt;div class="cdw-form-group"&gt;
+    &lt;label class="cdw-form-label"&gt;Categoria&lt;/label&gt;
+    &lt;select class="cdw-form-select"&gt;
+      &lt;option&gt;Operacional&lt;/option&gt;
+      &lt;option&gt;Financeiro&lt;/option&gt;
+      &lt;option&gt;Compliance&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Select avancado</div>
+        <div class="cdw-fw-docs-badge">Premium</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-form cdw-form-md cdw-fw-accent-ocean">
+          <div class="cdw-form-group">
+            <label class="cdw-form-label">Workspace</label>
+            <div class="cdw-form-select-advanced" data-cdw-form-select>
+              <button class="cdw-form-select-trigger" type="button">
+                <span class="cdw-form-select-value">Selecione...</span>
+                <span class="cdw-form-select-icon"></span>
+              </button>
+              <div class="cdw-form-select-panel">
+                <input class="cdw-form-select-search" type="text" placeholder="Buscar" />
+                <div class="cdw-form-select-options">
+                  <button class="cdw-form-select-option" data-value="core">Core UI</button>
+                  <button class="cdw-form-select-option" data-value="ops">Operacoes</button>
+                  <button class="cdw-form-select-option" data-value="labs">CDW Labs</button>
+                  <button class="cdw-form-select-option" data-value="docs">Documentacao</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-form cdw-form-md cdw-fw-accent-ocean"&gt;
+  &lt;div class="cdw-form-group"&gt;
+    &lt;label class="cdw-form-label"&gt;Workspace&lt;/label&gt;
+    &lt;div class="cdw-form-select-advanced" data-cdw-form-select&gt;
+      &lt;button class="cdw-form-select-trigger" type="button"&gt;
+        &lt;span class="cdw-form-select-value"&gt;Selecione...&lt;/span&gt;
+        &lt;span class="cdw-form-select-icon"&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;div class="cdw-form-select-panel"&gt;
+        &lt;input class="cdw-form-select-search" type="text" placeholder="Buscar" /&gt;
+        &lt;div class="cdw-form-select-options"&gt;
+          &lt;button class="cdw-form-select-option" data-value="core"&gt;Core UI&lt;/button&gt;
+          &lt;button class="cdw-form-select-option" data-value="ops"&gt;Operacoes&lt;/button&gt;
+          &lt;button class="cdw-form-select-option" data-value="labs"&gt;CDW Labs&lt;/button&gt;
+          &lt;button class="cdw-form-select-option" data-value="docs"&gt;Documentacao&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Tamanhos de select</div>
+        <div class="cdw-fw-docs-badge">Escalas</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <form class="cdw-form cdw-form-md cdw-fw-accent-graphite">
+          <div class="cdw-form-group">
+            <label class="cdw-form-label">Select sm</label>
+            <select class="cdw-form-select cdw-input-sm">
+              <option>Compacto</option>
+              <option>Base</option>
+            </select>
+          </div>
+          <div class="cdw-form-group">
+            <label class="cdw-form-label">Select md</label>
+            <select class="cdw-form-select cdw-input-md">
+              <option>Padrao</option>
+              <option>Amplo</option>
+            </select>
+          </div>
+          <div class="cdw-form-group">
+            <label class="cdw-form-label">Select lg</label>
+            <select class="cdw-form-select cdw-input-lg">
+              <option>Destaque</option>
+              <option>Amplo</option>
+            </select>
+          </div>
+          <div class="cdw-form-group">
+            <label class="cdw-form-label">Select avancado sm</label>
+            <div class="cdw-form-select-advanced cdw-input-sm" data-cdw-form-select>
+              <button class="cdw-form-select-trigger" type="button">
+                <span class="cdw-form-select-value">Compacto</span>
+                <span class="cdw-form-select-icon"></span>
+              </button>
+              <div class="cdw-form-select-panel">
+                <input class="cdw-form-select-search" type="text" placeholder="Buscar" />
+                <div class="cdw-form-select-options">
+                  <button class="cdw-form-select-option" data-value="sm">Compacto</button>
+                  <button class="cdw-form-select-option" data-value="md">Padrao</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cdw-form-group">
+            <label class="cdw-form-label">Select avancado lg</label>
+            <div class="cdw-form-select-advanced cdw-input-lg" data-cdw-form-select>
+              <button class="cdw-form-select-trigger" type="button">
+                <span class="cdw-form-select-value">Destaque</span>
+                <span class="cdw-form-select-icon"></span>
+              </button>
+              <div class="cdw-form-select-panel">
+                <input class="cdw-form-select-search" type="text" placeholder="Buscar" />
+                <div class="cdw-form-select-options">
+                  <button class="cdw-form-select-option" data-value="lg">Destaque</button>
+                  <button class="cdw-form-select-option" data-value="xl">Amplo</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;form class="cdw-form cdw-form-md cdw-fw-accent-graphite"&gt;
+  &lt;div class="cdw-form-group"&gt;
+    &lt;label class="cdw-form-label"&gt;Select sm&lt;/label&gt;
+    &lt;select class="cdw-form-select cdw-input-sm"&gt;
+      &lt;option&gt;Compacto&lt;/option&gt;
+      &lt;option&gt;Base&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-form-group"&gt;
+    &lt;label class="cdw-form-label"&gt;Select md&lt;/label&gt;
+    &lt;select class="cdw-form-select cdw-input-md"&gt;
+      &lt;option&gt;Padrao&lt;/option&gt;
+      &lt;option&gt;Amplo&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-form-group"&gt;
+    &lt;label class="cdw-form-label"&gt;Select lg&lt;/label&gt;
+    &lt;select class="cdw-form-select cdw-input-lg"&gt;
+      &lt;option&gt;Destaque&lt;/option&gt;
+      &lt;option&gt;Amplo&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-form-group"&gt;
+    &lt;label class="cdw-form-label"&gt;Select avancado sm&lt;/label&gt;
+    &lt;div class="cdw-form-select-advanced cdw-input-sm" data-cdw-form-select&gt;
+      &lt;button class="cdw-form-select-trigger" type="button"&gt;
+        &lt;span class="cdw-form-select-value"&gt;Compacto&lt;/span&gt;
+        &lt;span class="cdw-form-select-icon"&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;div class="cdw-form-select-panel"&gt;
+        &lt;input class="cdw-form-select-search" type="text" placeholder="Buscar" /&gt;
+        &lt;div class="cdw-form-select-options"&gt;
+          &lt;button class="cdw-form-select-option" data-value="sm"&gt;Compacto&lt;/button&gt;
+          &lt;button class="cdw-form-select-option" data-value="md"&gt;Padrao&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-form-group"&gt;
+    &lt;label class="cdw-form-label"&gt;Select avancado lg&lt;/label&gt;
+    &lt;div class="cdw-form-select-advanced cdw-input-lg" data-cdw-form-select&gt;
+      &lt;button class="cdw-form-select-trigger" type="button"&gt;
+        &lt;span class="cdw-form-select-value"&gt;Destaque&lt;/span&gt;
+        &lt;span class="cdw-form-select-icon"&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;div class="cdw-form-select-panel"&gt;
+        &lt;input class="cdw-form-select-search" type="text" placeholder="Buscar" /&gt;
+        &lt;div class="cdw-form-select-options"&gt;
+          &lt;button class="cdw-form-select-option" data-value="lg"&gt;Destaque&lt;/button&gt;
+          &lt;button class="cdw-form-select-option" data-value="xl"&gt;Amplo&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="forms-checks" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Check / Radio</h3>
+    <p class="cdw-fw-docs-subdesc">Checks em linha, bloco e switch autoral.</p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Variacoes</div>
+        <div class="cdw-fw-docs-badge">Checks</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-form cdw-form-md cdw-fw-accent-rose">
+          <label class="cdw-form-check cdw-form-check--inline">
+            <input type="checkbox" checked />
+            <span>Ativo</span>
+          </label>
+          <label class="cdw-form-check cdw-form-check--inline">
+            <input type="checkbox" />
+            <span>Revisao</span>
+          </label>
+          <div style="margin-top:12px;">
+            <label class="cdw-form-check cdw-form-check--block cdw-form-check--radio">
+              <input type="radio" name="perfil" checked />
+              <span>Perfil primario</span>
+            </label>
+            <label class="cdw-form-check cdw-form-check--block cdw-form-check--radio">
+              <input type="radio" name="perfil" />
+              <span>Perfil secundario</span>
+            </label>
+          </div>
+          <div style="margin-top:12px;">
+            <label class="cdw-form-check cdw-form-check--switch">
+              <input type="checkbox" checked />
+              <span>Modo compacto</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-form cdw-form-md cdw-fw-accent-rose"&gt;
+  &lt;label class="cdw-form-check cdw-form-check--inline"&gt;
+    &lt;input type="checkbox" checked /&gt;
+    &lt;span&gt;Ativo&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;label class="cdw-form-check cdw-form-check--inline"&gt;
+    &lt;input type="checkbox" /&gt;
+    &lt;span&gt;Revisao&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;div style="margin-top:12px;"&gt;
+    &lt;label class="cdw-form-check cdw-form-check--block cdw-form-check--radio"&gt;
+      &lt;input type="radio" name="perfil" checked /&gt;
+      &lt;span&gt;Perfil primario&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class="cdw-form-check cdw-form-check--block cdw-form-check--radio"&gt;
+      &lt;input type="radio" name="perfil" /&gt;
+      &lt;span&gt;Perfil secundario&lt;/span&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div style="margin-top:12px;"&gt;
+    &lt;label class="cdw-form-check cdw-form-check--switch"&gt;
+      &lt;input type="checkbox" checked /&gt;
+      &lt;span&gt;Modo compacto&lt;/span&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Tamanhos</div>
+        <div class="cdw-fw-docs-badge">Escalas</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-form cdw-form-md cdw-fw-accent-ocean">
+          <div>
+            <label class="cdw-form-check cdw-form-check-sm cdw-form-check--inline">
+              <input type="checkbox" checked />
+              <span>Check sm</span>
+            </label>
+            <label class="cdw-form-check cdw-form-check--inline">
+              <input type="checkbox" checked />
+              <span>Check md</span>
+            </label>
+            <label class="cdw-form-check cdw-form-check-lg cdw-form-check--inline">
+              <input type="checkbox" checked />
+              <span>Check lg</span>
+            </label>
+          </div>
+          <div style="margin-top:12px;">
+            <label class="cdw-form-check cdw-form-check-sm cdw-form-check--radio cdw-form-check--inline">
+              <input type="radio" name="perfil-size" checked />
+              <span>Radio sm</span>
+            </label>
+            <label class="cdw-form-check cdw-form-check--radio cdw-form-check--inline">
+              <input type="radio" name="perfil-size" />
+              <span>Radio md</span>
+            </label>
+            <label class="cdw-form-check cdw-form-check-lg cdw-form-check--radio cdw-form-check--inline">
+              <input type="radio" name="perfil-size" />
+              <span>Radio lg</span>
+            </label>
+          </div>
+          <div style="margin-top:12px;">
+            <label class="cdw-form-check cdw-form-check--switch cdw-form-check-sm">
+              <input type="checkbox" checked />
+              <span>Switch sm</span>
+            </label>
+            <label class="cdw-form-check cdw-form-check--switch">
+              <input type="checkbox" checked />
+              <span>Switch md</span>
+            </label>
+            <label class="cdw-form-check cdw-form-check--switch cdw-form-check-lg">
+              <input type="checkbox" checked />
+              <span>Switch lg</span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-form cdw-form-md cdw-fw-accent-ocean"&gt;
+  &lt;label class="cdw-form-check cdw-form-check-sm cdw-form-check--inline"&gt;
+    &lt;input type="checkbox" checked /&gt;
+    &lt;span&gt;Check sm&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;label class="cdw-form-check cdw-form-check--inline"&gt;
+    &lt;input type="checkbox" checked /&gt;
+    &lt;span&gt;Check md&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;label class="cdw-form-check cdw-form-check-lg cdw-form-check--inline"&gt;
+    &lt;input type="checkbox" checked /&gt;
+    &lt;span&gt;Check lg&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;div style="margin-top:12px;"&gt;
+    &lt;label class="cdw-form-check cdw-form-check-sm cdw-form-check--radio cdw-form-check--inline"&gt;
+      &lt;input type="radio" name="perfil-size" checked /&gt;
+      &lt;span&gt;Radio sm&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class="cdw-form-check cdw-form-check--radio cdw-form-check--inline"&gt;
+      &lt;input type="radio" name="perfil-size" /&gt;
+      &lt;span&gt;Radio md&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class="cdw-form-check cdw-form-check-lg cdw-form-check--radio cdw-form-check--inline"&gt;
+      &lt;input type="radio" name="perfil-size" /&gt;
+      &lt;span&gt;Radio lg&lt;/span&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div style="margin-top:12px;"&gt;
+    &lt;label class="cdw-form-check cdw-form-check--switch cdw-form-check-sm"&gt;
+      &lt;input type="checkbox" checked /&gt;
+      &lt;span&gt;Switch sm&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class="cdw-form-check cdw-form-check--switch"&gt;
+      &lt;input type="checkbox" checked /&gt;
+      &lt;span&gt;Switch md&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class="cdw-form-check cdw-form-check--switch cdw-form-check-lg"&gt;
+      &lt;input type="checkbox" checked /&gt;
+      &lt;span&gt;Switch lg&lt;/span&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="forms-uploads" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Uploads</h3>
+    <p class="cdw-fw-docs-subdesc">Upload simples com botao + lista e dropzone premium com preview.</p>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Upload simples</div>
+        <div class="cdw-fw-docs-badge">Basico</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <form class="cdw-form cdw-form-md cdw-fw-accent-graphite">
+          <div class="cdw-form-group">
+            <label class="cdw-form-label">Arquivo</label>
+            <div class="cdw-form-filebox" data-cdw-form-file>
+              <input type="file" class="cdw-form-file-input" />
+              <button class="cdw-form-file-button" type="button">Selecionar arquivo</button>
+              <div class="cdw-form-file-list"></div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;form class="cdw-form cdw-form-md cdw-fw-accent-graphite"&gt;
+  &lt;div class="cdw-form-group"&gt;
+    &lt;label class="cdw-form-label"&gt;Arquivo&lt;/label&gt;
+    &lt;div class="cdw-form-filebox" data-cdw-form-file&gt;
+      &lt;input type="file" class="cdw-form-file-input" /&gt;
+      &lt;button class="cdw-form-file-button" type="button"&gt;Selecionar arquivo&lt;/button&gt;
+      &lt;div class="cdw-form-file-list"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Dropzone premium</div>
+        <div class="cdw-fw-docs-badge">Premium</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-form cdw-form-md cdw-fw-accent-ocean">
+          <div class="cdw-form-dropzone-wrap">
+            <div class="cdw-form-dropzone" data-cdw-form-dropzone>
+              <input class="cdw-form-dropzone-input" type="file" multiple />
+              <div class="cdw-form-dropzone-title">Arraste arquivos aqui</div>
+              <div class="cdw-form-dropzone-helper">Formatos PDF, CSV ou PNG</div>
+            </div>
+            <div class="cdw-form-dropzone-list"></div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-form cdw-form-md cdw-fw-accent-ocean"&gt;
+  &lt;div class="cdw-form-dropzone-wrap"&gt;
+    &lt;div class="cdw-form-dropzone" data-cdw-form-dropzone&gt;
+      &lt;input class="cdw-form-dropzone-input" type="file" multiple /&gt;
+      &lt;div class="cdw-form-dropzone-title"&gt;Arraste arquivos aqui&lt;/div&gt;
+      &lt;div class="cdw-form-dropzone-helper"&gt;Formatos PDF, CSV ou PNG&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-form-dropzone-list"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="forms-grid" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Grid</h3>
+    <p class="cdw-fw-docs-subdesc">Grid 12 colunas com quebra automatica no mobile.</p>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Grid de formulario</div>
+        <div class="cdw-fw-docs-badge">Layout</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <form class="cdw-form cdw-form-md cdw-fw-accent-sky">
+          <div class="cdw-form-grid">
+            <div class="cdw-col-6">
+              <div class="cdw-form-group">
+                <label class="cdw-form-label">Nome</label>
+                <input class="cdw-form-input cdw-input-md" type="text" />
+              </div>
+            </div>
+            <div class="cdw-col-6">
+              <div class="cdw-form-group">
+                <label class="cdw-form-label">Sobrenome</label>
+                <input class="cdw-form-input cdw-input-md" type="text" />
+              </div>
+            </div>
+            <div class="cdw-col-12">
+              <div class="cdw-form-group">
+                <label class="cdw-form-label">Email</label>
+                <input class="cdw-form-input cdw-input-md" type="email" />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;form class="cdw-form cdw-form-md cdw-fw-accent-sky"&gt;
+  &lt;div class="cdw-form-grid"&gt;
+    &lt;div class="cdw-col-6"&gt;
+      &lt;div class="cdw-form-group"&gt;
+        &lt;label class="cdw-form-label"&gt;Nome&lt;/label&gt;
+        &lt;input class="cdw-form-input cdw-input-md" type="text" /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-col-6"&gt;
+      &lt;div class="cdw-form-group"&gt;
+        &lt;label class="cdw-form-label"&gt;Sobrenome&lt;/label&gt;
+        &lt;input class="cdw-form-input cdw-input-md" type="text" /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-col-12"&gt;
+      &lt;div class="cdw-form-group"&gt;
+        &lt;label class="cdw-form-label"&gt;Email&lt;/label&gt;
+        &lt;input class="cdw-form-input cdw-input-md" type="email" /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="forms-estados" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Estados</h3>
+    <p class="cdw-fw-docs-subdesc">Default, filled, disabled, error, success e warning.</p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Estados visuais</div>
+        <div class="cdw-fw-docs-badge">Estados</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <form class="cdw-form cdw-form-md cdw-fw-accent-ocean">
+          <div class="cdw-form-group is-filled">
+            <label class="cdw-form-label">Preenchido</label>
+            <input class="cdw-form-input" value="Conteudo" />
+          </div>
+          <div class="cdw-form-group is-error">
+            <label class="cdw-form-label">Erro</label>
+            <input class="cdw-form-input" value="Valor invalido" />
+            <div class="cdw-form-helper">Campo obrigatorio</div>
+          </div>
+          <div class="cdw-form-group is-success">
+            <label class="cdw-form-label">Sucesso</label>
+            <input class="cdw-form-input" value="Validado" />
+            <div class="cdw-form-helper">Tudo certo</div>
+          </div>
+          <div class="cdw-form-group is-warning">
+            <label class="cdw-form-label">Atencao</label>
+            <input class="cdw-form-input" value="Revisar" />
+            <div class="cdw-form-helper">Confirme antes de salvar</div>
+          </div>
+          <div class="cdw-form-group is-disabled">
+            <label class="cdw-form-label">Desabilitado</label>
+            <input class="cdw-form-input" value="Bloqueado" disabled />
+          </div>
+        </form>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;form class="cdw-form cdw-form-md cdw-fw-accent-ocean"&gt;
+  &lt;div class="cdw-form-group is-filled"&gt;
+    &lt;label class="cdw-form-label"&gt;Preenchido&lt;/label&gt;
+    &lt;input class="cdw-form-input" value="Conteudo" /&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-form-group is-error"&gt;
+    &lt;label class="cdw-form-label"&gt;Erro&lt;/label&gt;
+    &lt;input class="cdw-form-input" value="Valor invalido" /&gt;
+    &lt;div class="cdw-form-helper"&gt;Campo obrigatorio&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-form-group is-success"&gt;
+    &lt;label class="cdw-form-label"&gt;Sucesso&lt;/label&gt;
+    &lt;input class="cdw-form-input" value="Validado" /&gt;
+    &lt;div class="cdw-form-helper"&gt;Tudo certo&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-form-group is-warning"&gt;
+    &lt;label class="cdw-form-label"&gt;Atencao&lt;/label&gt;
+    &lt;input class="cdw-form-input" value="Revisar" /&gt;
+    &lt;div class="cdw-form-helper"&gt;Confirme antes de salvar&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-form-group is-disabled"&gt;
+    &lt;label class="cdw-form-label"&gt;Desabilitado&lt;/label&gt;
+    &lt;input class="cdw-form-input" value="Bloqueado" disabled /&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="forms-responsivo" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Responsividade</h3>
+    <p class="cdw-fw-docs-subdesc">No mobile: inputs full width, labels empilhados e botoes em stack.</p>
+    <div class="cdw-fw-docs-card">
+      <div class="cdw-fw-docs-card-title">Boas praticas</div>
+      <div class="cdw-fw-docs-highlight">Use cdw-form-grid para manter proporcoes consistentes.</div>
+      <div class="cdw-fw-docs-highlight">Acoes ficam em coluna automaticamente no mobile.</div>
+      <div class="cdw-fw-docs-highlight">Dropzone reduz espacamento e mantem lista visivel.</div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="forms-exemplos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Exemplos completos</h3>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Cadastro institucional</div>
+        <div class="cdw-fw-docs-badge">Form</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <form class="cdw-form cdw-form-lg cdw-fw-accent-graphite">
+          <div class="cdw-form-grid">
+            <div class="cdw-col-6">
+              <div class="cdw-form-group">
+                <label class="cdw-form-label">Nome</label>
+                <input class="cdw-form-input cdw-input-lg" type="text" placeholder="Nome completo" />
+              </div>
+            </div>
+            <div class="cdw-col-6">
+              <div class="cdw-form-group">
+                <label class="cdw-form-label">Departamento</label>
+                <input class="cdw-form-input cdw-input-lg is-soft" type="text" placeholder="Area" />
+              </div>
+            </div>
+            <div class="cdw-col-12">
+              <div class="cdw-form-group">
+                <label class="cdw-form-label">Mensagem</label>
+                <textarea class="cdw-form-textarea cdw-textarea-lg" placeholder="Resumo do contexto"></textarea>
+              </div>
+            </div>
+            <div class="cdw-col-12">
+              <div class="cdw-form-actions">
+                <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded" type="button">Salvar</button>
+                <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded" type="button">Cancelar</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;form class="cdw-form cdw-form-lg cdw-fw-accent-graphite"&gt;
+  &lt;div class="cdw-form-grid"&gt;
+    &lt;div class="cdw-col-6"&gt;
+      &lt;div class="cdw-form-group"&gt;
+        &lt;label class="cdw-form-label"&gt;Nome&lt;/label&gt;
+        &lt;input class="cdw-form-input cdw-input-lg" type="text" placeholder="Nome completo" /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-col-6"&gt;
+      &lt;div class="cdw-form-group"&gt;
+        &lt;label class="cdw-form-label"&gt;Departamento&lt;/label&gt;
+        &lt;input class="cdw-form-input cdw-input-lg is-soft" type="text" placeholder="Area" /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-col-12"&gt;
+      &lt;div class="cdw-form-group"&gt;
+        &lt;label class="cdw-form-label"&gt;Mensagem&lt;/label&gt;
+        &lt;textarea class="cdw-form-textarea cdw-textarea-lg" placeholder="Resumo do contexto"&gt;&lt;/textarea&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-col-12"&gt;
+      &lt;div class="cdw-form-actions"&gt;
+        &lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--rounded" type="button"&gt;Salvar&lt;/button&gt;
+        &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--rounded" type="button"&gt;Cancelar&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+`,
   gallery: `<section id="gallery" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
     <div class="cdw-fw-docs-section-head">
       <h2 class="cdw-fw-docs-section-title">Gallery</h2>
@@ -5668,7 +7746,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
       </div>
 
       <div class="cdw-fw-docs-subsection" id="gallery-ecommerce" data-cdw-fw-docs-section>
-        <h3 class="cdw-fw-docs-subtitle">Gallery � E-commerce</h3>
+        <h3 class="cdw-fw-docs-subtitle">Gallery – E-commerce</h3>
         <p class="cdw-fw-docs-subdesc">
           Product Switch serve para alternar imagens rapidamente. Product Detail adiciona descricao individual por imagem e leitura de compra. Loading automatico aparece ao trocar.
         </p>
@@ -7869,6 +9947,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
       "tables",
       "hero",
       "panel",
+      "forms",
       "gallery",
       "modal",
       "tooltip",
@@ -8075,12 +10154,15 @@ function buildNav(root) {
             ],
           },
           {
-            title: "Alerts",
-            target: "#alerts",
+            title: "Alertas",
+            target: "#alertas",
             links: [
-              { label: "Tipos", href: "#alerts-tipos" },
-              { label: "Contextos", href: "#alerts-contextos" },
-              { label: "Exemplos", href: "#alerts-exemplos" },
+              { label: "Introducao", href: "#alert-intro" },
+              { label: "Estrutura base", href: "#alert-estrutura" },
+              { label: "Modelos", href: "#alert-modelos" },
+              { label: "Cores e variantes", href: "#alert-variantes" },
+              { label: "API / Opcoes", href: "#alert-api" },
+              { label: "Boas praticas", href: "#alert-boas-praticas" },
             ],
           },
           {
@@ -8134,6 +10216,22 @@ function buildNav(root) {
               { label: "Timeline", href: "#tables-timeline" },
               { label: "Minimal", href: "#tables-minimal" },
               { label: "Responsivo", href: "#tables-responsivo" },
+            ],
+          },
+          {
+            title: "Formularios",
+            target: "#forms",
+            links: [
+              { label: "Conceito", href: "#forms-conceito" },
+              { label: "Estrutura base", href: "#forms-estrutura" },
+              { label: "Inputs", href: "#forms-inputs" },
+              { label: "Selects", href: "#forms-selects" },
+              { label: "Check / Radio", href: "#forms-checks" },
+              { label: "Uploads", href: "#forms-uploads" },
+              { label: "Grid", href: "#forms-grid" },
+              { label: "Estados", href: "#forms-estados" },
+              { label: "Responsividade", href: "#forms-responsivo" },
+              { label: "Exemplos completos", href: "#forms-exemplos" },
             ],
           },
           {
@@ -8550,6 +10648,23 @@ function setupScrollSpy(root) {
     setActive(initialHash);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
