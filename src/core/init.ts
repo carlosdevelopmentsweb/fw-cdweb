@@ -7,6 +7,7 @@ import { bindStage } from "../components/stage";
 import { bindTable } from "../components/table";
 import { bindForm } from "../components/form";
 import { bindTooltip } from "../components/tooltip";
+import { bindFab } from "../components/fab";
 
 export interface FrameworkAPI {
   version: string;
@@ -64,6 +65,11 @@ const defs = [
     name: "tooltip",
     selector: "[data-cdw-tooltip]",
     bind: bindTooltip,
+  },
+  {
+    name: "fab",
+    selector: ".cdw-fab",
+    bind: bindFab,
   },
 ];
 

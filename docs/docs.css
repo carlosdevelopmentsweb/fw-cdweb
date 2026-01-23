@@ -522,6 +522,18 @@
   gap: 6px;
 }
 
+.cdw-fw-docs-preview--fab {
+  position: relative;
+  min-height: 220px;
+  overflow: hidden;
+  background-image: linear-gradient(180deg, rgba(15, 23, 42, 0.03), rgba(15, 23, 42, 0)),
+    radial-gradient(circle at 20% 20%, rgba(15, 23, 42, 0.04), transparent 60%);
+}
+
+.cdw-fw-docs-preview--fab .cdw-fab {
+  position: absolute;
+}
+
 .cdw-fw-docs-example-caption {
   margin-top: 10px;
   font-size: 13px;

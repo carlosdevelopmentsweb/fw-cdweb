@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
   const app = document.getElementById("app");
   if (!app) {
     return;
@@ -4647,6 +4647,434 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
 </section>
 
 `,
+  fab: `
+<section id="fab" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+  <div class="cdw-fw-docs-section-head">
+    <h2 class="cdw-fw-docs-section-title">Floating Action Button</h2>
+    <p class="cdw-fw-docs-lead">
+      Botao flutuante para acoes globais, com visual premium e interacoes elegantes.
+    </p>
+  </div>
+
+  <div class="cdw-fw-docs-toc">
+    <span class="cdw-fw-docs-toc-title">Indice desta pagina</span>
+    <a href="#fab-conceito">Conceito</a>
+    <a href="#fab-estrutura">Estrutura</a>
+    <a href="#fab-posicionamento">Posicionamento</a>
+    <a href="#fab-formas">Formas</a>
+    <a href="#fab-tamanhos">Tamanhos</a>
+    <a href="#fab-modelos">Modelos</a>
+    <a href="#fab-exemplos">Exemplos de uso</a>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="fab-conceito" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Conceito</h3>
+    <p class="cdw-fw-docs-subdesc">
+      cdw-fab e um botao flutuante fixo com foco em acao rapida e contexto global.
+      <span class="cdw-fw-docs-when">Quando usar: ajuda, contato, acao principal ou menu rapido.</span>
+    </p>
+    <div class="cdw-fw-docs-classlist">
+      <span>cdw-fab</span>
+      <span>cdw-fab-main</span>
+      <span>cdw-fab-actions</span>
+      <span>cdw-fab-action</span>
+      <span>cdw-fab--br</span>
+      <span>cdw-fab--circle</span>
+      <span>cdw-fab--md</span>
+      <span>cdw-fw-accent-*</span>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="fab-estrutura" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Estrutura</h3>
+    <p class="cdw-fw-docs-subdesc">Estrutura base com botao principal e, opcionalmente, acoes secundarias.</p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Base obrigatoria</div>
+        <div class="cdw-fw-docs-badge">Estrutura</div>
+      </div>
+      <div class="cdw-fw-docs-preview cdw-fw-docs-preview--fab">
+        <div class="cdw-fab cdw-fab--simple cdw-fab--br cdw-fab--md cdw-fab--circle cdw-fw-accent-ocean" aria-label="FAB base">
+          <button class="cdw-fab-main" type="button" aria-label="Ajuda">?</button>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class=&quot;cdw-fab cdw-fab--simple cdw-fab--br cdw-fab--md cdw-fab--circle cdw-fw-accent-ocean&quot;&gt;
+  &lt;button class=&quot;cdw-fab-main&quot; type=&quot;button&quot; aria-label=&quot;Ajuda&quot;&gt;?&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="fab-posicionamento" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Posicionamento</h3>
+    <p class="cdw-fw-docs-subdesc">O FAB pode ser fixado em oito pontos da viewport usando classes.</p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Mapa de posicoes</div>
+        <div class="cdw-fw-docs-badge">Posicao</div>
+      </div>
+      <div class="cdw-fw-docs-preview cdw-fw-docs-preview--fab">
+        <div class="cdw-fab cdw-fab--tl cdw-fab--sm cdw-fab--circle cdw-fw-accent-sky">
+          <button class="cdw-fab-main" type="button" aria-label="Top left">TL</button>
+        </div>
+        <div class="cdw-fab cdw-fab--tr cdw-fab--sm cdw-fab--circle cdw-fw-accent-amber">
+          <button class="cdw-fab-main" type="button" aria-label="Top right">TR</button>
+        </div>
+        <div class="cdw-fab cdw-fab--tc cdw-fab--sm cdw-fab--circle cdw-fw-accent-mint">
+          <button class="cdw-fab-main" type="button" aria-label="Top center">TC</button>
+        </div>
+        <div class="cdw-fab cdw-fab--cl cdw-fab--sm cdw-fab--circle cdw-fw-accent-indigo">
+          <button class="cdw-fab-main" type="button" aria-label="Center left">CL</button>
+        </div>
+        <div class="cdw-fab cdw-fab--cr cdw-fab--sm cdw-fab--circle cdw-fw-accent-rose">
+          <button class="cdw-fab-main" type="button" aria-label="Center right">CR</button>
+        </div>
+        <div class="cdw-fab cdw-fab--bl cdw-fab--sm cdw-fab--circle cdw-fw-accent-ocean">
+          <button class="cdw-fab-main" type="button" aria-label="Bottom left">BL</button>
+        </div>
+        <div class="cdw-fab cdw-fab--br cdw-fab--sm cdw-fab--circle cdw-fw-accent-graphite">
+          <button class="cdw-fab-main" type="button" aria-label="Bottom right">BR</button>
+        </div>
+        <div class="cdw-fab cdw-fab--bc cdw-fab--sm cdw-fab--circle cdw-fw-accent-cocoa">
+          <button class="cdw-fab-main" type="button" aria-label="Bottom center">BC</button>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class=&quot;cdw-fab cdw-fab--tl cdw-fab--sm cdw-fab--circle cdw-fw-accent-sky&quot;&gt;
+  &lt;button class=&quot;cdw-fab-main&quot; type=&quot;button&quot;&gt;TL&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cdw-fab cdw-fab--tr cdw-fab--sm cdw-fab--circle cdw-fw-accent-amber&quot;&gt;
+  &lt;button class=&quot;cdw-fab-main&quot; type=&quot;button&quot;&gt;TR&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cdw-fab cdw-fab--tc cdw-fab--sm cdw-fab--circle cdw-fw-accent-mint&quot;&gt;
+  &lt;button class=&quot;cdw-fab-main&quot; type=&quot;button&quot;&gt;TC&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cdw-fab cdw-fab--cl cdw-fab--sm cdw-fab--circle cdw-fw-accent-indigo&quot;&gt;
+  &lt;button class=&quot;cdw-fab-main&quot; type=&quot;button&quot;&gt;CL&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cdw-fab cdw-fab--cr cdw-fab--sm cdw-fab--circle cdw-fw-accent-rose&quot;&gt;
+  &lt;button class=&quot;cdw-fab-main&quot; type=&quot;button&quot;&gt;CR&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cdw-fab cdw-fab--bl cdw-fab--sm cdw-fab--circle cdw-fw-accent-ocean&quot;&gt;
+  &lt;button class=&quot;cdw-fab-main&quot; type=&quot;button&quot;&gt;BL&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cdw-fab cdw-fab--br cdw-fab--sm cdw-fab--circle cdw-fw-accent-graphite&quot;&gt;
+  &lt;button class=&quot;cdw-fab-main&quot; type=&quot;button&quot;&gt;BR&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cdw-fab cdw-fab--bc cdw-fab--sm cdw-fab--circle cdw-fw-accent-cocoa&quot;&gt;
+  &lt;button class=&quot;cdw-fab-main&quot; type=&quot;button&quot;&gt;BC&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="fab-formas" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Formas</h3>
+    <p class="cdw-fw-docs-subdesc">Circular, quadrado e octagono com recorte real.</p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Variacoes de forma</div>
+        <div class="cdw-fw-docs-badge">Forma</div>
+      </div>
+      <div class="cdw-fw-docs-preview cdw-fw-docs-preview--fab">
+        <div class="cdw-fab cdw-fab--bl cdw-fab--md cdw-fab--circle cdw-fw-accent-ocean">
+          <button class="cdw-fab-main" type="button" aria-label="Circular">O</button>
+        </div>
+        <div class="cdw-fab cdw-fab--bc cdw-fab--md cdw-fab--square cdw-fw-accent-amber">
+          <button class="cdw-fab-main" type="button" aria-label="Square">Q</button>
+        </div>
+        <div class="cdw-fab cdw-fab--br cdw-fab--md cdw-fab--octagon cdw-fw-accent-violet">
+          <button class="cdw-fab-main" type="button" aria-label="Octagon">O</button>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class=&quot;cdw-fab cdw-fab--bl cdw-fab--md cdw-fab--circle cdw-fw-accent-ocean&quot;&gt;
+  &lt;button class=&quot;cdw-fab-main&quot; type=&quot;button&quot;&gt;O&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cdw-fab cdw-fab--bc cdw-fab--md cdw-fab--square cdw-fw-accent-amber&quot;&gt;
+  &lt;button class=&quot;cdw-fab-main&quot; type=&quot;button&quot;&gt;Q&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cdw-fab cdw-fab--br cdw-fab--md cdw-fab--octagon cdw-fw-accent-violet&quot;&gt;
+  &lt;button class=&quot;cdw-fab-main&quot; type=&quot;button&quot;&gt;O&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="fab-tamanhos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Tamanhos</h3>
+    <p class="cdw-fw-docs-subdesc">Escalas reais para o botao completo e icone.</p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">sm, md, lg</div>
+        <div class="cdw-fw-docs-badge">Tamanho</div>
+      </div>
+      <div class="cdw-fw-docs-preview cdw-fw-docs-preview--fab">
+        <div class="cdw-fab cdw-fab--bl cdw-fab--sm cdw-fab--circle cdw-fw-accent-sky">
+          <button class="cdw-fab-main" type="button" aria-label="Small">S</button>
+        </div>
+        <div class="cdw-fab cdw-fab--bc cdw-fab--md cdw-fab--circle cdw-fw-accent-ocean">
+          <button class="cdw-fab-main" type="button" aria-label="Medium">M</button>
+        </div>
+        <div class="cdw-fab cdw-fab--br cdw-fab--lg cdw-fab--circle cdw-fw-accent-graphite">
+          <button class="cdw-fab-main" type="button" aria-label="Large">L</button>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class=&quot;cdw-fab cdw-fab--bl cdw-fab--sm cdw-fab--circle cdw-fw-accent-sky&quot;&gt;
+  &lt;button class=&quot;cdw-fab-main&quot; type=&quot;button&quot;&gt;S&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cdw-fab cdw-fab--bc cdw-fab--md cdw-fab--circle cdw-fw-accent-ocean&quot;&gt;
+  &lt;button class=&quot;cdw-fab-main&quot; type=&quot;button&quot;&gt;M&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;cdw-fab cdw-fab--br cdw-fab--lg cdw-fab--circle cdw-fw-accent-graphite&quot;&gt;
+  &lt;button class=&quot;cdw-fab-main&quot; type=&quot;button&quot;&gt;L&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="fab-modelos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Modelos</h3>
+    <p class="cdw-fw-docs-subdesc">Seis modelos distintos com comportamento proprio.</p>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">FAB Simple</div>
+        <div class="cdw-fw-docs-badge">Modelo</div>
+      </div>
+      <div class="cdw-fw-docs-preview cdw-fw-docs-preview--fab">
+        <div class="cdw-fab cdw-fab--simple cdw-fab--br cdw-fab--md cdw-fab--circle cdw-fw-accent-ocean">
+          <button class="cdw-fab-main" type="button" aria-label="Ajuda">?</button>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class=&quot;cdw-fab cdw-fab--simple cdw-fab--br cdw-fab--md cdw-fab--circle cdw-fw-accent-ocean&quot;&gt;
+  &lt;button class=&quot;cdw-fab-main&quot; type=&quot;button&quot; aria-label=&quot;Ajuda&quot;&gt;?&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">FAB WhatsApp</div>
+        <div class="cdw-fw-docs-badge">WhatsApp</div>
+      </div>
+      <div class="cdw-fw-docs-preview cdw-fw-docs-preview--fab">
+        <div class="cdw-fab cdw-fab--whatsapp cdw-fab--bl cdw-fab--md cdw-fab--circle" data-phone="5511999999999" data-message="Quero suporte rapido">
+          <a class="cdw-fab-main" aria-label="WhatsApp">WA</a>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class=&quot;cdw-fab cdw-fab--whatsapp cdw-fab--bl cdw-fab--md cdw-fab--circle&quot; data-phone=&quot;5511999999999&quot; data-message=&quot;Quero suporte rapido&quot;&gt;
+  &lt;a class=&quot;cdw-fab-main&quot; aria-label=&quot;WhatsApp&quot;&gt;WA&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">FAB Menu Radial</div>
+        <div class="cdw-fw-docs-badge">Radial</div>
+      </div>
+      <div class="cdw-fw-docs-preview cdw-fw-docs-preview--fab">
+        <div class="cdw-fab cdw-fab--radial cdw-fab--br cdw-fab--md cdw-fab--circle cdw-fw-accent-rose">
+          <button class="cdw-fab-main" type="button" aria-label="Menu">+</button>
+          <div class="cdw-fab-actions" aria-hidden="true">
+            <button class="cdw-fab-action cdw-fab-action--1" type="button" aria-label="Nova tarefa">N</button>
+            <button class="cdw-fab-action cdw-fab-action--2" type="button" aria-label="Buscar">B</button>
+            <button class="cdw-fab-action cdw-fab-action--3" type="button" aria-label="Filtro">F</button>
+            <button class="cdw-fab-action cdw-fab-action--4" type="button" aria-label="Calendario">C</button>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class=&quot;cdw-fab cdw-fab--radial cdw-fab--br cdw-fab--md cdw-fab--circle cdw-fw-accent-rose&quot;&gt;
+  &lt;button class=&quot;cdw-fab-main&quot; type=&quot;button&quot; aria-label=&quot;Menu&quot;&gt;+&lt;/button&gt;
+  &lt;div class=&quot;cdw-fab-actions&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;button class=&quot;cdw-fab-action cdw-fab-action--1&quot; type=&quot;button&quot; aria-label=&quot;Nova tarefa&quot;&gt;N&lt;/button&gt;
+    &lt;button class=&quot;cdw-fab-action cdw-fab-action--2&quot; type=&quot;button&quot; aria-label=&quot;Buscar&quot;&gt;B&lt;/button&gt;
+    &lt;button class=&quot;cdw-fab-action cdw-fab-action--3&quot; type=&quot;button&quot; aria-label=&quot;Filtro&quot;&gt;F&lt;/button&gt;
+    &lt;button class=&quot;cdw-fab-action cdw-fab-action--4&quot; type=&quot;button&quot; aria-label=&quot;Calendario&quot;&gt;C&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">FAB Menu Stack</div>
+        <div class="cdw-fw-docs-badge">Stack</div>
+      </div>
+      <div class="cdw-fw-docs-preview cdw-fw-docs-preview--fab">
+        <div class="cdw-fab cdw-fab--stack cdw-fab--tr cdw-fab--md cdw-fab--square cdw-fw-accent-indigo">
+          <button class="cdw-fab-main" type="button" aria-label="Acoes">+</button>
+          <div class="cdw-fab-actions" aria-hidden="true">
+            <button class="cdw-fab-action-pill" type="button" aria-label="Criar">
+              <span class="cdw-fab-action-icon">+</span>
+              <span>Criar</span>
+            </button>
+            <button class="cdw-fab-action-pill" type="button" aria-label="Duplicar">
+              <span class="cdw-fab-action-icon">D</span>
+              <span>Duplicar</span>
+            </button>
+            <button class="cdw-fab-action-pill" type="button" aria-label="Arquivar">
+              <span class="cdw-fab-action-icon">A</span>
+              <span>Arquivar</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class=&quot;cdw-fab cdw-fab--stack cdw-fab--tr cdw-fab--md cdw-fab--square cdw-fw-accent-indigo&quot;&gt;
+  &lt;button class=&quot;cdw-fab-main&quot; type=&quot;button&quot; aria-label=&quot;Acoes&quot;&gt;+&lt;/button&gt;
+  &lt;div class=&quot;cdw-fab-actions&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;button class=&quot;cdw-fab-action-pill&quot; type=&quot;button&quot; aria-label=&quot;Criar&quot;&gt;
+      &lt;span class=&quot;cdw-fab-action-icon&quot;&gt;+&lt;/span&gt;
+      &lt;span&gt;Criar&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;button class=&quot;cdw-fab-action-pill&quot; type=&quot;button&quot; aria-label=&quot;Duplicar&quot;&gt;
+      &lt;span class=&quot;cdw-fab-action-icon&quot;&gt;D&lt;/span&gt;
+      &lt;span&gt;Duplicar&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;button class=&quot;cdw-fab-action-pill&quot; type=&quot;button&quot; aria-label=&quot;Arquivar&quot;&gt;
+      &lt;span class=&quot;cdw-fab-action-icon&quot;&gt;A&lt;/span&gt;
+      &lt;span&gt;Arquivar&lt;/span&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">FAB Contextual</div>
+        <div class="cdw-fw-docs-badge">Contexto</div>
+      </div>
+      <div class="cdw-fw-docs-preview cdw-fw-docs-preview--fab">
+        <div class="cdw-fab cdw-fab--contextual cdw-fab--cl cdw-fab--md cdw-fab--circle cdw-fw-accent-amber">
+          <button class="cdw-fab-main" type="button" aria-label="Notificacoes">
+            !
+            <span class="cdw-fab-badge">3</span>
+          </button>
+          <div class="cdw-fab-actions" aria-hidden="true">
+            <button class="cdw-fab-action" type="button" aria-label="Urgente">U</button>
+            <button class="cdw-fab-action" type="button" aria-label="Aviso">A</button>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class=&quot;cdw-fab cdw-fab--contextual cdw-fab--cl cdw-fab--md cdw-fab--circle cdw-fw-accent-amber&quot;&gt;
+  &lt;button class=&quot;cdw-fab-main&quot; type=&quot;button&quot; aria-label=&quot;Notificacoes&quot;&gt;
+    !
+    &lt;span class=&quot;cdw-fab-badge&quot;&gt;3&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;div class=&quot;cdw-fab-actions&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;button class=&quot;cdw-fab-action&quot; type=&quot;button&quot; aria-label=&quot;Urgente&quot;&gt;U&lt;/button&gt;
+    &lt;button class=&quot;cdw-fab-action&quot; type=&quot;button&quot; aria-label=&quot;Aviso&quot;&gt;A&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">FAB Multi-Action Premium</div>
+        <div class="cdw-fw-docs-badge">Premium</div>
+      </div>
+      <div class="cdw-fw-docs-preview cdw-fw-docs-preview--fab">
+        <div class="cdw-fab cdw-fab--premium cdw-fab--br cdw-fab--lg cdw-fab--circle cdw-fw-accent-violet">
+          <button class="cdw-fab-main" type="button" aria-label="Painel">+</button>
+          <div class="cdw-fab-actions" aria-hidden="true">
+            <button class="cdw-fab-action cdw-fab-action--1" type="button" aria-label="Agenda">A</button>
+            <button class="cdw-fab-action cdw-fab-action--2" type="button" aria-label="Relatorio">R</button>
+            <button class="cdw-fab-action cdw-fab-action--3" type="button" aria-label="Equipe">E</button>
+            <button class="cdw-fab-action cdw-fab-action--4" type="button" aria-label="Notas">N</button>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class=&quot;cdw-fab cdw-fab--premium cdw-fab--br cdw-fab--lg cdw-fab--circle cdw-fw-accent-violet&quot;&gt;
+  &lt;button class=&quot;cdw-fab-main&quot; type=&quot;button&quot; aria-label=&quot;Painel&quot;&gt;+&lt;/button&gt;
+  &lt;div class=&quot;cdw-fab-actions&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;button class=&quot;cdw-fab-action cdw-fab-action--1&quot; type=&quot;button&quot; aria-label=&quot;Agenda&quot;&gt;A&lt;/button&gt;
+    &lt;button class=&quot;cdw-fab-action cdw-fab-action--2&quot; type=&quot;button&quot; aria-label=&quot;Relatorio&quot;&gt;R&lt;/button&gt;
+    &lt;button class=&quot;cdw-fab-action cdw-fab-action--3&quot; type=&quot;button&quot; aria-label=&quot;Equipe&quot;&gt;E&lt;/button&gt;
+    &lt;button class=&quot;cdw-fab-action cdw-fab-action--4&quot; type=&quot;button&quot; aria-label=&quot;Notas&quot;&gt;N&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="fab-exemplos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Exemplos de uso</h3>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Ajuda global</div>
+        <div class="cdw-fw-docs-badge">Uso</div>
+      </div>
+      <div class="cdw-fw-docs-preview cdw-fw-docs-preview--fab">
+        <div class="cdw-fab cdw-fab--simple cdw-fab--cr cdw-fab--md cdw-fab--circle cdw-fw-accent-graphite">
+          <button class="cdw-fab-main" type="button" aria-label="Ajuda">?</button>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class=&quot;cdw-fab cdw-fab--simple cdw-fab--cr cdw-fab--md cdw-fab--circle cdw-fw-accent-graphite&quot;&gt;
+  &lt;button class=&quot;cdw-fab-main&quot; type=&quot;button&quot; aria-label=&quot;Ajuda&quot;&gt;?&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+`,
+
   tables: `
 
 <section id="tables" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
@@ -8724,7 +9152,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
       </div>
 
       <div class="cdw-fw-docs-subsection" id="gallery-ecommerce" data-cdw-fw-docs-section>
-        <h3 class="cdw-fw-docs-subtitle">Gallery – E-commerce</h3>
+        <h3 class="cdw-fw-docs-subtitle">Gallery � E-commerce</h3>
         <p class="cdw-fw-docs-subdesc">
           Product Switch serve para alternar imagens rapidamente. Product Detail adiciona descricao individual por imagem e leitura de compra. Loading automatico aparece ao trocar.
         </p>
@@ -10922,7 +11350,8 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
       "badges",
       "cards",
       "images",
-      "tables",
+        "fab",
+        "tables",
       "hero",
       "panel",
       "steps",
@@ -11176,6 +11605,18 @@ function buildNav(root) {
               { label: "Tipos", href: "#image-tipos" },
               { label: "Bordas", href: "#image-bordas" },
               { label: "Alinhamento", href: "#image-alinhamento" },
+            ],
+          },          {
+            title: "Floating Action Button",
+            target: "#fab",
+            links: [
+              { label: "Conceito", href: "#fab-conceito" },
+              { label: "Estrutura", href: "#fab-estrutura" },
+              { label: "Posicionamento", href: "#fab-posicionamento" },
+              { label: "Formas", href: "#fab-formas" },
+              { label: "Tamanhos", href: "#fab-tamanhos" },
+              { label: "Modelos", href: "#fab-modelos" },
+              { label: "Exemplos de uso", href: "#fab-exemplos" },
             ],
           },
           {
@@ -11639,6 +12080,16 @@ function setupScrollSpy(root) {
     setActive(initialHash);
   }
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
