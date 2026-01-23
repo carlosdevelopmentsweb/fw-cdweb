@@ -31,52 +31,44 @@
 }
 
 .cdw-fab--br {
-  --fab-rot: 0deg;
   right: var(--cdw-fab-offset);
   bottom: var(--cdw-fab-offset);
 }
 
 .cdw-fab--bl {
-  --fab-rot: -90deg;
   left: var(--cdw-fab-offset);
   bottom: var(--cdw-fab-offset);
 }
 
 .cdw-fab--tr {
-  --fab-rot: 90deg;
   right: var(--cdw-fab-offset);
   top: var(--cdw-fab-offset);
 }
 
 .cdw-fab--tl {
-  --fab-rot: -180deg;
   left: var(--cdw-fab-offset);
   top: var(--cdw-fab-offset);
 }
 
 .cdw-fab--cr {
-  --fab-rot: 0deg;
   right: var(--cdw-fab-offset);
   top: 50%;
   transform: translateY(-50%);
 }
 
 .cdw-fab--cl {
-  --fab-rot: 180deg;
   left: var(--cdw-fab-offset);
   top: 50%;
   transform: translateY(-50%);
 }
 
 .cdw-fab--bc {
-  --fab-rot: 90deg;
   left: 50%;
   bottom: var(--cdw-fab-offset);
   transform: translateX(-50%);
 }
 
 .cdw-fab--tc {
-  --fab-rot: -90deg;
   left: 50%;
   top: var(--cdw-fab-offset);
   transform: translateX(-50%);
@@ -289,20 +281,132 @@
     rotate(calc(-1 * (var(--fab-angle) + var(--fab-rot)))) scale(1);
 }
 
-.cdw-fab--radial .cdw-fab-action--1 {
+.cdw-fab--br .cdw-fab-action--1 {
   --fab-angle: 180deg;
 }
 
-.cdw-fab--radial .cdw-fab-action--2 {
+.cdw-fab--br .cdw-fab-action--2 {
   --fab-angle: 210deg;
 }
 
-.cdw-fab--radial .cdw-fab-action--3 {
+.cdw-fab--br .cdw-fab-action--3 {
   --fab-angle: 240deg;
 }
 
-.cdw-fab--radial .cdw-fab-action--4 {
+.cdw-fab--br .cdw-fab-action--4 {
   --fab-angle: 270deg;
+}
+
+.cdw-fab--bl .cdw-fab-action--1 {
+  --fab-angle: 270deg;
+}
+
+.cdw-fab--bl .cdw-fab-action--2 {
+  --fab-angle: 300deg;
+}
+
+.cdw-fab--bl .cdw-fab-action--3 {
+  --fab-angle: 330deg;
+}
+
+.cdw-fab--bl .cdw-fab-action--4 {
+  --fab-angle: 360deg;
+}
+
+.cdw-fab--tr .cdw-fab-action--1 {
+  --fab-angle: 90deg;
+}
+
+.cdw-fab--tr .cdw-fab-action--2 {
+  --fab-angle: 120deg;
+}
+
+.cdw-fab--tr .cdw-fab-action--3 {
+  --fab-angle: 150deg;
+}
+
+.cdw-fab--tr .cdw-fab-action--4 {
+  --fab-angle: 180deg;
+}
+
+.cdw-fab--tl .cdw-fab-action--1 {
+  --fab-angle: 0deg;
+}
+
+.cdw-fab--tl .cdw-fab-action--2 {
+  --fab-angle: 30deg;
+}
+
+.cdw-fab--tl .cdw-fab-action--3 {
+  --fab-angle: 60deg;
+}
+
+.cdw-fab--tl .cdw-fab-action--4 {
+  --fab-angle: 90deg;
+}
+
+.cdw-fab--cr .cdw-fab-action--1 {
+  --fab-angle: 135deg;
+}
+
+.cdw-fab--cr .cdw-fab-action--2 {
+  --fab-angle: 165deg;
+}
+
+.cdw-fab--cr .cdw-fab-action--3 {
+  --fab-angle: 195deg;
+}
+
+.cdw-fab--cr .cdw-fab-action--4 {
+  --fab-angle: 225deg;
+}
+
+.cdw-fab--cl .cdw-fab-action--1 {
+  --fab-angle: 315deg;
+}
+
+.cdw-fab--cl .cdw-fab-action--2 {
+  --fab-angle: 345deg;
+}
+
+.cdw-fab--cl .cdw-fab-action--3 {
+  --fab-angle: 15deg;
+}
+
+.cdw-fab--cl .cdw-fab-action--4 {
+  --fab-angle: 45deg;
+}
+
+.cdw-fab--bc .cdw-fab-action--1 {
+  --fab-angle: 225deg;
+}
+
+.cdw-fab--bc .cdw-fab-action--2 {
+  --fab-angle: 255deg;
+}
+
+.cdw-fab--bc .cdw-fab-action--3 {
+  --fab-angle: 285deg;
+}
+
+.cdw-fab--bc .cdw-fab-action--4 {
+  --fab-angle: 315deg;
+}
+
+.cdw-fab--tc .cdw-fab-action--1 {
+  --fab-angle: 45deg;
+}
+
+.cdw-fab--tc .cdw-fab-action--2 {
+  --fab-angle: 75deg;
+}
+
+.cdw-fab--tc .cdw-fab-action--3 {
+  --fab-angle: 105deg;
+}
+
+.cdw-fab--tc .cdw-fab-action--4 {
+  --fab-angle: 135deg;
 }
 
 .cdw-fab--contextual .cdw-fab-main {
@@ -347,21 +451,6 @@
   box-shadow: 0 16px 28px rgba(15, 23, 42, 0.16);
 }
 
-.cdw-fab--premium .cdw-fab-action--1 {
-  --fab-angle: 180deg;
-}
-
-.cdw-fab--premium .cdw-fab-action--2 {
-  --fab-angle: 210deg;
-}
-
-.cdw-fab--premium .cdw-fab-action--3 {
-  --fab-angle: 240deg;
-}
-
-.cdw-fab--premium .cdw-fab-action--4 {
-  --fab-angle: 270deg;
-}
 
 .cdw-fab.is-disabled {
   opacity: 0.5;
