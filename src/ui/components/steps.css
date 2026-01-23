@@ -426,6 +426,12 @@
     flex-direction: column;
   }
 
+  .cdw-steps--linear-rail::before,
+  .cdw-steps--cards-connected::before,
+  .cdw-steps--minimal-dots::before {
+    display: none;
+  }
+
   .cdw-steps--linear-rail .cdw-step,
   .cdw-steps--cards-connected .cdw-step,
   .cdw-steps--minimal-dots .cdw-step {
