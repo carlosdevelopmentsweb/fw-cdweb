@@ -15,6 +15,7 @@
 @import "./components/navbar.css";
 @import "./components/stage.css";
 @import "./components/tooltip.css";
+@import "./components/steps.css";
 @import "./utilities/spacing.css";
 @import "./utilities/display.css";
 @import "./utilities/flex.css";

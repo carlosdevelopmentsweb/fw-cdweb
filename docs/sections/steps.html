@@ -1,0 +1,1039 @@
+﻿<section id="steps" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+  <div class="cdw-fw-docs-section-head">
+    <h2 class="cdw-fw-docs-section-title">Steps</h2>
+    <p class="cdw-fw-docs-lead">
+      Etapas elegantes para progresso, fluxos e jornadas, com leitura clara em desktop e mobile.
+    </p>
+  </div>
+
+  <div class="cdw-fw-docs-toc">
+    <span class="cdw-fw-docs-toc-title">Indice desta pagina</span>
+    <a href="#steps-conceito">Conceito</a>
+    <a href="#steps-estrutura">Estrutura</a>
+    <a href="#steps-estados">Estados</a>
+    <a href="#steps-tamanhos">Tamanhos</a>
+    <a href="#steps-modelos">Modelos</a>
+    <a href="#steps-exemplos">Exemplos reais</a>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="steps-conceito" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Conceito</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Steps guia o usuario por etapas com ritmo visual, estados claros e hierarquia consistente.
+      <span class="cdw-fw-docs-when">Quando usar: onboarding, checkout, cadastro e workflows.</span>
+    </p>
+    <div class="cdw-fw-docs-classlist">
+      <span>cdw-steps</span>
+      <span>cdw-steps--*</span>
+      <span>cdw-steps--sm</span>
+      <span>cdw-steps--md</span>
+      <span>cdw-steps--lg</span>
+      <span>cdw-steps--xl</span>
+      <span>cdw-step</span>
+      <span>cdw-step-indicator</span>
+      <span>cdw-step-content</span>
+      <span>cdw-step-title</span>
+      <span>cdw-step-desc</span>
+      <span>cdw-fw-accent-*</span>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="steps-estrutura" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Estrutura</h3>
+    <p class="cdw-fw-docs-subdesc">Estrutura base simples, com indicador e conteudo.</p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Base obrigatoria</div>
+        <div class="cdw-fw-docs-badge">Estrutura</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-steps cdw-steps--linear-rail cdw-steps--md cdw-fw-accent-sky">
+          <div class="cdw-step is-complete">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Conta</div>
+              <div class="cdw-step-desc">Dados basicos do perfil.</div>
+            </div>
+          </div>
+          <div class="cdw-step is-active">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Endereco</div>
+              <div class="cdw-step-desc">Informacoes de entrega.</div>
+            </div>
+          </div>
+          <div class="cdw-step is-pending">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Confirmacao</div>
+              <div class="cdw-step-desc">Revisao final do pedido.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-steps cdw-steps--linear-rail cdw-steps--md cdw-fw-accent-sky"&gt;
+  &lt;div class="cdw-step is-complete"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Conta&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Dados basicos do perfil.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-active"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Endereco&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Informacoes de entrega.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-pending"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Confirmacao&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Revisao final do pedido.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="steps-estados" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Estados</h3>
+    <p class="cdw-fw-docs-subdesc">Complete, active, pending, disabled e error.</p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Mapa de estados</div>
+        <div class="cdw-fw-docs-badge">Estados</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-steps cdw-steps--cards-connected cdw-steps--md cdw-fw-accent-ember">
+          <div class="cdw-step is-complete">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Completo</div>
+              <div class="cdw-step-desc">Etapa validada.</div>
+            </div>
+          </div>
+          <div class="cdw-step is-active">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Ativo</div>
+              <div class="cdw-step-desc">Em andamento.</div>
+            </div>
+          </div>
+          <div class="cdw-step is-pending">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Pendente</div>
+              <div class="cdw-step-desc">Aguardando.</div>
+            </div>
+          </div>
+          <div class="cdw-step is-disabled">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Desabilitado</div>
+              <div class="cdw-step-desc">Bloqueado.</div>
+            </div>
+          </div>
+          <div class="cdw-step is-error">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Erro</div>
+              <div class="cdw-step-desc">Falha encontrada.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-steps cdw-steps--cards-connected cdw-steps--md cdw-fw-accent-ember"&gt;
+  &lt;div class="cdw-step is-complete"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Completo&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Etapa validada.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-active"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Ativo&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Em andamento.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-pending"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Pendente&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Aguardando.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-disabled"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Desabilitado&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Bloqueado.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-error"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Erro&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Falha encontrada.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="steps-tamanhos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Tamanhos</h3>
+    <p class="cdw-fw-docs-subdesc">Comparacao vertical entre sm, md, lg e xl.</p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Escalas do componente</div>
+        <div class="cdw-fw-docs-badge">Tamanho</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-steps cdw-steps--linear-rail cdw-steps--sm cdw-fw-accent-ocean">
+          <div class="cdw-step is-complete">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Cadastro</div>
+              <div class="cdw-step-desc">Dados basicos.</div>
+            </div>
+          </div>
+          <div class="cdw-step is-active">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Perfil</div>
+              <div class="cdw-step-desc">Preferencias.</div>
+            </div>
+          </div>
+          <div class="cdw-step is-pending">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Finalizar</div>
+              <div class="cdw-step-desc">Confirmacao.</div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:16px;">
+          <div class="cdw-steps cdw-steps--linear-rail cdw-steps--md cdw-fw-accent-ocean">
+            <div class="cdw-step is-complete">
+              <div class="cdw-step-indicator"></div>
+              <div class="cdw-step-content">
+                <div class="cdw-step-title">Cadastro</div>
+                <div class="cdw-step-desc">Dados basicos.</div>
+              </div>
+            </div>
+            <div class="cdw-step is-active">
+              <div class="cdw-step-indicator"></div>
+              <div class="cdw-step-content">
+                <div class="cdw-step-title">Perfil</div>
+                <div class="cdw-step-desc">Preferencias.</div>
+              </div>
+            </div>
+            <div class="cdw-step is-pending">
+              <div class="cdw-step-indicator"></div>
+              <div class="cdw-step-content">
+                <div class="cdw-step-title">Finalizar</div>
+                <div class="cdw-step-desc">Confirmacao.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:16px;">
+          <div class="cdw-steps cdw-steps--linear-rail cdw-steps--lg cdw-fw-accent-ocean">
+            <div class="cdw-step is-complete">
+              <div class="cdw-step-indicator"></div>
+              <div class="cdw-step-content">
+                <div class="cdw-step-title">Cadastro</div>
+                <div class="cdw-step-desc">Dados basicos.</div>
+              </div>
+            </div>
+            <div class="cdw-step is-active">
+              <div class="cdw-step-indicator"></div>
+              <div class="cdw-step-content">
+                <div class="cdw-step-title">Perfil</div>
+                <div class="cdw-step-desc">Preferencias.</div>
+              </div>
+            </div>
+            <div class="cdw-step is-pending">
+              <div class="cdw-step-indicator"></div>
+              <div class="cdw-step-content">
+                <div class="cdw-step-title">Finalizar</div>
+                <div class="cdw-step-desc">Confirmacao.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:16px;">
+          <div class="cdw-steps cdw-steps--linear-rail cdw-steps--xl cdw-fw-accent-ocean">
+            <div class="cdw-step is-complete">
+              <div class="cdw-step-indicator"></div>
+              <div class="cdw-step-content">
+                <div class="cdw-step-title">Cadastro</div>
+                <div class="cdw-step-desc">Dados basicos.</div>
+              </div>
+            </div>
+            <div class="cdw-step is-active">
+              <div class="cdw-step-indicator"></div>
+              <div class="cdw-step-content">
+                <div class="cdw-step-title">Perfil</div>
+                <div class="cdw-step-desc">Preferencias.</div>
+              </div>
+            </div>
+            <div class="cdw-step is-pending">
+              <div class="cdw-step-indicator"></div>
+              <div class="cdw-step-content">
+                <div class="cdw-step-title">Finalizar</div>
+                <div class="cdw-step-desc">Confirmacao.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-steps cdw-steps--linear-rail cdw-steps--sm cdw-fw-accent-ocean"&gt;
+  &lt;div class="cdw-step is-complete"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Cadastro&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Dados basicos.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-active"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Perfil&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Preferencias.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-pending"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Finalizar&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Confirmacao.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cdw-steps cdw-steps--linear-rail cdw-steps--md cdw-fw-accent-ocean"&gt;
+  &lt;div class="cdw-step is-complete"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Cadastro&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Dados basicos.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-active"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Perfil&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Preferencias.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-pending"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Finalizar&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Confirmacao.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cdw-steps cdw-steps--linear-rail cdw-steps--lg cdw-fw-accent-ocean"&gt;
+  &lt;div class="cdw-step is-complete"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Cadastro&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Dados basicos.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-active"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Perfil&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Preferencias.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-pending"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Finalizar&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Confirmacao.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cdw-steps cdw-steps--linear-rail cdw-steps--xl cdw-fw-accent-ocean"&gt;
+  &lt;div class="cdw-step is-complete"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Cadastro&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Dados basicos.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-active"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Perfil&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Preferencias.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-pending"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Finalizar&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Confirmacao.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="steps-modelos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Modelos</h3>
+    <p class="cdw-fw-docs-subdesc">Sete modelos distintos com identidade propria.</p>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Linear Rail</div>
+        <div class="cdw-fw-docs-badge">Modelo</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-steps cdw-steps--linear-rail cdw-steps--md cdw-fw-accent-sky">
+          <div class="cdw-step is-complete">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Pedido</div>
+              <div class="cdw-step-desc">Itens conferidos.</div>
+            </div>
+          </div>
+          <div class="cdw-step is-active">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Pagamento</div>
+              <div class="cdw-step-desc">Aprovacao em andamento.</div>
+            </div>
+          </div>
+          <div class="cdw-step is-pending">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Entrega</div>
+              <div class="cdw-step-desc">Previsao 2 dias.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-steps cdw-steps--linear-rail cdw-steps--md cdw-fw-accent-sky"&gt;
+  &lt;div class="cdw-step is-complete"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Pedido&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Itens conferidos.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-active"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Pagamento&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Aprovacao em andamento.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-pending"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Entrega&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Previsao 2 dias.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Cards Conectados</div>
+        <div class="cdw-fw-docs-badge">Modelo</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-steps cdw-steps--cards-connected cdw-steps--md cdw-fw-accent-mint">
+          <div class="cdw-step is-complete">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Briefing</div>
+              <div class="cdw-step-desc">Contexto alinhado.</div>
+            </div>
+          </div>
+          <div class="cdw-step is-active">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Proposta</div>
+              <div class="cdw-step-desc">Revisao interna.</div>
+            </div>
+          </div>
+          <div class="cdw-step is-pending">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Entrega</div>
+              <div class="cdw-step-desc">Publicacao final.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-steps cdw-steps--cards-connected cdw-steps--md cdw-fw-accent-mint"&gt;
+  &lt;div class="cdw-step is-complete"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Briefing&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Contexto alinhado.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-active"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Proposta&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Revisao interna.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-pending"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Entrega&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Publicacao final.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Vertical Timeline</div>
+        <div class="cdw-fw-docs-badge">Modelo</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-steps cdw-steps--vertical-timeline cdw-steps--md cdw-fw-accent-ocean">
+          <div class="cdw-step is-complete">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Solicitado</div>
+              <div class="cdw-step-desc">Pedido aberto pelo time.</div>
+            </div>
+          </div>
+          <div class="cdw-step is-active">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Analise</div>
+              <div class="cdw-step-desc">Revisao operacional.</div>
+            </div>
+          </div>
+          <div class="cdw-step is-pending">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Aprovacao</div>
+              <div class="cdw-step-desc">Liberacao do gestor.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-steps cdw-steps--vertical-timeline cdw-steps--md cdw-fw-accent-ocean"&gt;
+  &lt;div class="cdw-step is-complete"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Solicitado&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Pedido aberto pelo time.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-active"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Analise&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Revisao operacional.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-pending"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Aprovacao&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Liberacao do gestor.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Focus Step</div>
+        <div class="cdw-fw-docs-badge">Modelo</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-steps cdw-steps--focus-step cdw-steps--lg cdw-fw-accent-amber">
+          <div class="cdw-step is-complete">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Configurar</div>
+              <div class="cdw-step-desc">Preferencias iniciais.</div>
+            </div>
+          </div>
+          <div class="cdw-step is-active">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Integrar</div>
+              <div class="cdw-step-desc">Conectar aos sistemas.</div>
+            </div>
+          </div>
+          <div class="cdw-step is-pending">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Finalizar</div>
+              <div class="cdw-step-desc">Checklist final.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-steps cdw-steps--focus-step cdw-steps--lg cdw-fw-accent-amber"&gt;
+  &lt;div class="cdw-step is-complete"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Configurar&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Preferencias iniciais.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-active"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Integrar&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Conectar aos sistemas.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-pending"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Finalizar&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Checklist final.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Split Context</div>
+        <div class="cdw-fw-docs-badge">Modelo</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-steps cdw-steps--split-context cdw-steps--md cdw-fw-accent-violet">
+          <div class="cdw-step is-complete">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Dados pessoais</div>
+              <div class="cdw-step-desc">Documentos e perfil.</div>
+            </div>
+          </div>
+          <div class="cdw-step is-active">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Endereco fiscal</div>
+              <div class="cdw-step-desc">Informacoes para emissao.</div>
+            </div>
+          </div>
+          <div class="cdw-step is-pending">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Validacao</div>
+              <div class="cdw-step-desc">Analise automatica.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-steps cdw-steps--split-context cdw-steps--md cdw-fw-accent-violet"&gt;
+  &lt;div class="cdw-step is-complete"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Dados pessoais&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Documentos e perfil.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-active"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Endereco fiscal&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Informacoes para emissao.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-pending"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Validacao&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Analise automatica.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Minimal Dots</div>
+        <div class="cdw-fw-docs-badge">Modelo</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-steps cdw-steps--minimal-dots cdw-steps--sm cdw-fw-accent-graphite">
+          <div class="cdw-step is-complete">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Info</div>
+              <div class="cdw-step-desc">Base.</div>
+            </div>
+          </div>
+          <div class="cdw-step is-active">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Plano</div>
+              <div class="cdw-step-desc">Escolha.</div>
+            </div>
+          </div>
+          <div class="cdw-step is-pending">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Revisao</div>
+              <div class="cdw-step-desc">Confirmar.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-steps cdw-steps--minimal-dots cdw-steps--sm cdw-fw-accent-graphite"&gt;
+  &lt;div class="cdw-step is-complete"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Info&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Base.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-active"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Plano&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Escolha.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-pending"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Revisao&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Confirmar.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Narrative Progress</div>
+        <div class="cdw-fw-docs-badge">Modelo</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-steps cdw-steps--narrative-progress cdw-steps--xl cdw-fw-accent-ocean">
+          <div class="cdw-step is-complete">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Diagnostico</div>
+              <div class="cdw-step-desc">Levantamento completo do contexto e metas.</div>
+            </div>
+          </div>
+          <div class="cdw-step is-active">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Planejamento</div>
+              <div class="cdw-step-desc">Estrutura de entregas e prioridades alinhadas.</div>
+            </div>
+          </div>
+          <div class="cdw-step is-pending">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Execucao</div>
+              <div class="cdw-step-desc">Ciclos de implementacao e validacao.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-steps cdw-steps--narrative-progress cdw-steps--xl cdw-fw-accent-ocean"&gt;
+  &lt;div class="cdw-step is-complete"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Diagnostico&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Levantamento completo do contexto e metas.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-active"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Planejamento&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Estrutura de entregas e prioridades alinhadas.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-pending"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Execucao&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Ciclos de implementacao e validacao.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="steps-exemplos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Exemplos reais</h3>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Checkout de produto</div>
+        <div class="cdw-fw-docs-badge">Checkout</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-steps cdw-steps--linear-rail cdw-steps--md cdw-fw-accent-mint">
+          <div class="cdw-step is-complete">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Carrinho</div>
+              <div class="cdw-step-desc">Itens revisados.</div>
+            </div>
+          </div>
+          <div class="cdw-step is-active">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Entrega</div>
+              <div class="cdw-step-desc">Endereco confirmado.</div>
+            </div>
+          </div>
+          <div class="cdw-step is-pending">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Pagamento</div>
+              <div class="cdw-step-desc">Cartao ou boleto.</div>
+            </div>
+          </div>
+          <div class="cdw-step is-pending">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Finalizar</div>
+              <div class="cdw-step-desc">Confirmacao final.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-steps cdw-steps--linear-rail cdw-steps--md cdw-fw-accent-mint"&gt;
+  &lt;div class="cdw-step is-complete"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Carrinho&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Itens revisados.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-active"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Entrega&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Endereco confirmado.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-pending"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Pagamento&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Cartao ou boleto.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-pending"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Finalizar&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Confirmacao final.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Cadastro institucional</div>
+        <div class="cdw-fw-docs-badge">Cadastro</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-steps cdw-steps--split-context cdw-steps--md cdw-fw-accent-rose">
+          <div class="cdw-step is-complete">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Identidade</div>
+              <div class="cdw-step-desc">Dados legais e contato.</div>
+            </div>
+          </div>
+          <div class="cdw-step is-active">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Equipe</div>
+              <div class="cdw-step-desc">Usuarios e niveis de acesso.</div>
+            </div>
+          </div>
+          <div class="cdw-step is-pending">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Seguranca</div>
+              <div class="cdw-step-desc">Politicas e revisao final.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-steps cdw-steps--split-context cdw-steps--md cdw-fw-accent-rose"&gt;
+  &lt;div class="cdw-step is-complete"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Identidade&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Dados legais e contato.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-active"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Equipe&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Usuarios e niveis de acesso.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-pending"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Seguranca&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Politicas e revisao final.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Fluxo operacional</div>
+        <div class="cdw-fw-docs-badge">Workflow</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-steps cdw-steps--vertical-timeline cdw-steps--md cdw-fw-accent-graphite">
+          <div class="cdw-step is-complete">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Recebimento</div>
+              <div class="cdw-step-desc">Registro inicial do pedido.</div>
+            </div>
+          </div>
+          <div class="cdw-step is-active">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Separacao</div>
+              <div class="cdw-step-desc">Itens em picking.</div>
+            </div>
+          </div>
+          <div class="cdw-step is-pending">
+            <div class="cdw-step-indicator"></div>
+            <div class="cdw-step-content">
+              <div class="cdw-step-title">Despacho</div>
+              <div class="cdw-step-desc">Aguardando expedicao.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-steps cdw-steps--vertical-timeline cdw-steps--md cdw-fw-accent-graphite"&gt;
+  &lt;div class="cdw-step is-complete"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Recebimento&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Registro inicial do pedido.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-active"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Separacao&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Itens em picking.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-step is-pending"&gt;
+    &lt;div class="cdw-step-indicator"&gt;&lt;/div&gt;
+    &lt;div class="cdw-step-content"&gt;
+      &lt;div class="cdw-step-title"&gt;Despacho&lt;/div&gt;
+      &lt;div class="cdw-step-desc"&gt;Aguardando expedicao.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
