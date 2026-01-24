@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
   const app = document.getElementById("app");
   if (!app) {
     return;
@@ -1526,8 +1526,9 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     </p>
   </div>
 
-  <div class="cdw-fw-docs-toc">
+    <div class="cdw-fw-docs-toc">
     <span class="cdw-fw-docs-toc-title">Indice desta pagina</span>
+    <a href="#cores">Cores</a>
     <a href="#util-espacamento">Espacamento</a>
     <a href="#util-display">Display</a>
     <a href="#util-flex">Flex</a>
@@ -1537,6 +1538,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     <a href="#util-posicionamento">Posicionamento</a>
     <a href="#util-overflow">Overflow</a>
     <a href="#util-texto">Texto</a>
+    <a href="#util-design-exemplos">Design (exemplos)</a>
   </div>
 
   <div class="cdw-fw-docs-subsection" id="util-espacamento" data-cdw-fw-docs-section>
@@ -1584,10 +1586,10 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <div class="cdw-fw-docs-badge">Basico</div>
       </div>
       <div class="cdw-fw-docs-preview">
-        <div class="cdw-fw-p-4" style="background:#dfe9f6; border-radius:12px;">
+        <div class="cdw-fw-p-4 cdw-fw-accent-sky cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-lg">
           Caixa com padding 4
         </div>
-        <div class="cdw-fw-mt-4" style="background:#f8dcc8; padding:10px 12px; border-radius:12px;">
+        <div class="cdw-fw-mt-4 cdw-fw-px-3 cdw-fw-py-2 cdw-fw-accent-sun cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-lg">
           Margin top 4
         </div>
         <div class="cdw-fw-docs-example-caption">
@@ -1599,8 +1601,12 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <div class="cdw-fw-docs-code-title">HTML</div>
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-p-4"&gt;Caixa com padding 4&lt;/div&gt;
-&lt;div class="cdw-fw-mt-4"&gt;Margin top 4&lt;/div&gt;</code></pre>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-p-4 cdw-fw-accent-sky cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-lg"&gt;
+  Caixa com padding 4
+&lt;/div&gt;
+&lt;div class="cdw-fw-mt-4 cdw-fw-px-3 cdw-fw-py-2 cdw-fw-accent-sun cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-lg"&gt;
+  Margin top 4
+&lt;/div&gt;</code></pre>
       </div>
     </div>
 
@@ -1610,10 +1616,10 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <div class="cdw-fw-docs-badge">Comum</div>
       </div>
       <div class="cdw-fw-docs-preview">
-        <div class="cdw-fw-mx-4" style="background:#eef2f7; padding:10px; border-radius:12px;">
+        <div class="cdw-fw-mx-4 cdw-fw-p-3 cdw-fw-accent-slate cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-lg">
           mx-4 adiciona margem lateral
         </div>
-        <div class="cdw-fw-my-6" style="background:#dfe9f6; padding:10px; border-radius:12px;">
+        <div class="cdw-fw-my-6 cdw-fw-p-3 cdw-fw-accent-sky cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-lg">
           my-6 cria respiro vertical
         </div>
         <div class="cdw-fw-docs-example-caption">
@@ -1625,8 +1631,12 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <div class="cdw-fw-docs-code-title">HTML</div>
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-mx-4"&gt;mx-4 adiciona margem lateral&lt;/div&gt;
-&lt;div class="cdw-fw-my-6"&gt;my-6 cria respiro vertical&lt;/div&gt;</code></pre>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-mx-4 cdw-fw-p-3 cdw-fw-accent-slate cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-lg"&gt;
+  mx-4 adiciona margem lateral
+&lt;/div&gt;
+&lt;div class="cdw-fw-my-6 cdw-fw-p-3 cdw-fw-accent-sky cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-lg"&gt;
+  my-6 cria respiro vertical
+&lt;/div&gt;</code></pre>
       </div>
     </div>
   </div>
@@ -1653,9 +1663,9 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <div class="cdw-fw-docs-badge">Basico</div>
       </div>
       <div class="cdw-fw-docs-preview">
-        <div class="cdw-fw-inline" style="background:#dfe9f6; padding:6px 10px; border-radius:8px;">inline</div>
-        <div class="cdw-fw-inline-block" style="background:#f8dcc8; padding:6px 10px; border-radius:8px;">inline-block</div>
-        <div class="cdw-fw-block" style="background:#e2f0dc; padding:6px 10px; border-radius:8px;">block</div>
+        <div class="cdw-fw-inline cdw-fw-px-3 cdw-fw-py-2 cdw-fw-accent-sky cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-sm">inline</div>
+        <div class="cdw-fw-inline-block cdw-fw-px-3 cdw-fw-py-2 cdw-fw-accent-sun cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-sm">inline-block</div>
+        <div class="cdw-fw-block cdw-fw-px-3 cdw-fw-py-2 cdw-fw-accent-forest cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-sm">block</div>
         <div class="cdw-fw-docs-example-caption">Block quebra linha; inline fica na mesma linha.</div>
       </div>
       <div class="cdw-fw-docs-codeblock">
@@ -1663,9 +1673,9 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <div class="cdw-fw-docs-code-title">HTML</div>
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-inline"&gt;inline&lt;/div&gt;
-&lt;div class="cdw-fw-inline-block"&gt;inline-block&lt;/div&gt;
-&lt;div class="cdw-fw-block"&gt;block&lt;/div&gt;</code></pre>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-inline cdw-fw-px-3 cdw-fw-py-2 cdw-fw-accent-sky cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-sm"&gt;inline&lt;/div&gt;
+&lt;div class="cdw-fw-inline-block cdw-fw-px-3 cdw-fw-py-2 cdw-fw-accent-sun cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-sm"&gt;inline-block&lt;/div&gt;
+&lt;div class="cdw-fw-block cdw-fw-px-3 cdw-fw-py-2 cdw-fw-accent-forest cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-sm"&gt;block&lt;/div&gt;</code></pre>
       </div>
     </div>
 
@@ -1675,7 +1685,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <div class="cdw-fw-docs-badge">Comum</div>
       </div>
       <div class="cdw-fw-docs-preview">
-        <div class="cdw-fw-flex cdw-fw-gap-2" style="background:#eef2f7; padding:12px; border-radius:12px;">
+        <div class="cdw-fw-flex cdw-fw-gap-2 cdw-fw-p-3 cdw-fw-accent-ash cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-lg">
           <div class="cdw-fw-docs-preview-box">A</div>
           <div class="cdw-fw-docs-preview-box">B</div>
           <div class="cdw-fw-docs-preview-box">C</div>
@@ -1739,7 +1749,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <div class="cdw-fw-docs-badge">Basico</div>
       </div>
       <div class="cdw-fw-docs-preview">
-        <div class="cdw-fw-flex cdw-fw-items-center cdw-fw-justify-between" style="background:#eef2f7; padding:12px; border-radius:12px;">
+        <div class="cdw-fw-flex cdw-fw-items-center cdw-fw-justify-between cdw-fw-p-3 cdw-fw-accent-ash cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-lg">
           <div class="cdw-fw-docs-preview-box">Esquerda</div>
           <div class="cdw-fw-docs-preview-box cdw-fw-docs-preview-box--alt">Centro</div>
           <div class="cdw-fw-docs-preview-box cdw-fw-docs-preview-box--dark">Direita</div>
@@ -1751,7 +1761,9 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <div class="cdw-fw-docs-code-title">HTML</div>
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-flex cdw-fw-items-center cdw-fw-justify-between"&gt;...&lt;/div&gt;</code></pre>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-flex cdw-fw-items-center cdw-fw-justify-between cdw-fw-p-3 cdw-fw-accent-ash cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-lg"&gt;
+  ...
+&lt;/div&gt;</code></pre>
       </div>
     </div>
 
@@ -1761,10 +1773,10 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <div class="cdw-fw-docs-badge">Comum</div>
       </div>
       <div class="cdw-fw-docs-preview">
-        <div class="cdw-fw-flex cdw-fw-gap-2" style="background:#eef2f7; padding:12px; border-radius:12px;">
+        <div class="cdw-fw-flex cdw-fw-gap-2 cdw-fw-p-3 cdw-fw-accent-ash cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-lg">
           <div class="cdw-fw-docs-preview-box">A</div>
           <div class="cdw-fw-docs-preview-box cdw-fw-grow">Grow</div>
-          <div class="cdw-fw-docs-preview-box cdw-fw-shrink-0" style="min-width:80px;">Fixo</div>
+          <div class="cdw-fw-docs-preview-box cdw-fw-shrink-0 cdw-fw-minw-80">Fixo</div>
         </div>
         <div class="cdw-fw-docs-example-caption">cdw-fw-grow ocupa o espaco livre e cdw-fw-shrink-0 evita reduzir.</div>
       </div>
@@ -1773,10 +1785,10 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <div class="cdw-fw-docs-code-title">HTML</div>
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-flex"&gt;
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-flex cdw-fw-gap-2 cdw-fw-p-3 cdw-fw-accent-ash cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-lg"&gt;
   &lt;div&gt;A&lt;/div&gt;
   &lt;div class="cdw-fw-grow"&gt;Grow&lt;/div&gt;
-  &lt;div class="cdw-fw-shrink-0"&gt;Fixo&lt;/div&gt;
+  &lt;div class="cdw-fw-shrink-0 cdw-fw-minw-80"&gt;Fixo&lt;/div&gt;
 &lt;/div&gt;</code></pre>
       </div>
     </div>
@@ -1800,11 +1812,19 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <div class="cdw-fw-docs-badge">Basico</div>
       </div>
       <div class="cdw-fw-docs-preview">
-        <div class="cdw-fw-row-gap-2 cdw-fw-col-gap-4" style="display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); background:#eef2f7; padding:12px; border-radius:12px;">
-          <div class="cdw-fw-docs-preview-box">A1</div>
-          <div class="cdw-fw-docs-preview-box">A2</div>
-          <div class="cdw-fw-docs-preview-box cdw-fw-docs-preview-box--alt">B1</div>
-          <div class="cdw-fw-docs-preview-box cdw-fw-docs-preview-box--alt">B2</div>
+        <div class="cdw-fw-row cdw-fw-row-gap-2 cdw-fw-col-gap-4 cdw-fw-p-3 cdw-fw-accent-ash cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-lg">
+          <div class="cdw-fw-col-6">
+            <div class="cdw-fw-docs-preview-box">A1</div>
+          </div>
+          <div class="cdw-fw-col-6">
+            <div class="cdw-fw-docs-preview-box">A2</div>
+          </div>
+          <div class="cdw-fw-col-6">
+            <div class="cdw-fw-docs-preview-box cdw-fw-docs-preview-box--alt">B1</div>
+          </div>
+          <div class="cdw-fw-col-6">
+            <div class="cdw-fw-docs-preview-box cdw-fw-docs-preview-box--alt">B2</div>
+          </div>
         </div>
         <div class="cdw-fw-docs-example-caption">row-gap controla linhas e col-gap controla colunas.</div>
       </div>
@@ -1813,7 +1833,10 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <div class="cdw-fw-docs-code-title">HTML</div>
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-row-gap-2 cdw-fw-col-gap-4"&gt;...&lt;/div&gt;</code></pre>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-row cdw-fw-row-gap-2 cdw-fw-col-gap-4"&gt;
+  &lt;div class="cdw-fw-col-6"&gt;...&lt;/div&gt;
+  &lt;div class="cdw-fw-col-6"&gt;...&lt;/div&gt;
+&lt;/div&gt;</code></pre>
       </div>
     </div>
   </div>
@@ -1840,8 +1863,8 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <div class="cdw-fw-docs-badge">Basico</div>
       </div>
       <div class="cdw-fw-docs-preview">
-        <input class="cdw-fw-w-100" type="text" placeholder="Input com w-100" style="padding:8px; border-radius:8px; border:1px solid #d1d7df;" />
-        <div class="cdw-fw-w-auto" style="margin-top:10px; background:#dfe9f6; padding:10px; border-radius:10px;">Caixa w-auto</div>
+        <input class="cdw-fw-w-100 cdw-fw-p-2 cdw-fw-radius-sm cdw-fw-border-soft" type="text" placeholder="Input com w-100" />
+        <div class="cdw-fw-w-auto cdw-fw-mt-3 cdw-fw-p-3 cdw-fw-accent-sky cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-md">Caixa w-auto</div>
         <div class="cdw-fw-docs-example-caption">w-100 expande, w-auto ajusta ao conteudo.</div>
       </div>
       <div class="cdw-fw-docs-codeblock">
@@ -1849,8 +1872,10 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <div class="cdw-fw-docs-code-title">HTML</div>
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;input class="cdw-fw-w-100" /&gt;
-&lt;div class="cdw-fw-w-auto"&gt;Caixa w-auto&lt;/div&gt;</code></pre>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;input class="cdw-fw-w-100 cdw-fw-p-2 cdw-fw-radius-sm cdw-fw-border-soft" /&gt;
+&lt;div class="cdw-fw-w-auto cdw-fw-mt-3 cdw-fw-p-3 cdw-fw-accent-sky cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-md"&gt;
+  Caixa w-auto
+&lt;/div&gt;</code></pre>
       </div>
     </div>
 
@@ -1860,8 +1885,8 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <div class="cdw-fw-docs-badge">Comum</div>
       </div>
       <div class="cdw-fw-docs-preview">
-        <div style="height:120px; background:#eef2f7; border-radius:12px; padding:10px;">
-          <div class="cdw-fw-h-100" style="background:#dfe9f6; border-radius:10px; padding:10px;">h-100</div>
+        <div class="cdw-fw-h-120 cdw-fw-p-3 cdw-fw-accent-ash cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-lg">
+          <div class="cdw-fw-h-100 cdw-fw-p-3 cdw-fw-accent-sky cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-md">h-100</div>
         </div>
         <div class="cdw-fw-docs-example-caption">h-100 ocupa toda a altura do container.</div>
       </div>
@@ -1870,8 +1895,8 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <div class="cdw-fw-docs-code-title">HTML</div>
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div style="height:120px;"&gt;
-  &lt;div class="cdw-fw-h-100"&gt;h-100&lt;/div&gt;
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-h-120 cdw-fw-p-3 cdw-fw-accent-ash cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-lg"&gt;
+  &lt;div class="cdw-fw-h-100 cdw-fw-p-3 cdw-fw-accent-sky cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-md"&gt;h-100&lt;/div&gt;
 &lt;/div&gt;</code></pre>
       </div>
     </div>
@@ -1902,18 +1927,24 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <div class="cdw-fw-docs-badge">Basico</div>
       </div>
       <div class="cdw-fw-docs-preview">
-        <div class="cdw-fw-text-left" style="background:#dfe9f6; padding:10px; border-radius:10px;">Texto alinhado a esquerda</div>
-        <div class="cdw-fw-text-center" style="background:#f8dcc8; padding:10px; border-radius:10px; margin-top:8px;">Texto centralizado</div>
-        <div class="cdw-fw-text-right" style="background:#eef2f7; padding:10px; border-radius:10px; margin-top:8px;">Texto alinhado a direita</div>
+        <div class="cdw-fw-text-left cdw-fw-p-3 cdw-fw-accent-sky cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-md">Texto alinhado a esquerda</div>
+        <div class="cdw-fw-text-center cdw-fw-mt-2 cdw-fw-p-3 cdw-fw-accent-sun cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-md">Texto centralizado</div>
+        <div class="cdw-fw-text-right cdw-fw-mt-2 cdw-fw-p-3 cdw-fw-accent-slate cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-md">Texto alinhado a direita</div>
       </div>
       <div class="cdw-fw-docs-codeblock">
         <div class="cdw-fw-docs-code-head">
           <div class="cdw-fw-docs-code-title">HTML</div>
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-text-left"&gt;Texto alinhado a esquerda&lt;/div&gt;
-&lt;div class="cdw-fw-text-center"&gt;Texto centralizado&lt;/div&gt;
-&lt;div class="cdw-fw-text-right"&gt;Texto alinhado a direita&lt;/div&gt;</code></pre>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-text-left cdw-fw-p-3 cdw-fw-accent-sky cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-md"&gt;
+  Texto alinhado a esquerda
+&lt;/div&gt;
+&lt;div class="cdw-fw-text-center cdw-fw-mt-2 cdw-fw-p-3 cdw-fw-accent-sun cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-md"&gt;
+  Texto centralizado
+&lt;/div&gt;
+&lt;div class="cdw-fw-text-right cdw-fw-mt-2 cdw-fw-p-3 cdw-fw-accent-slate cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-md"&gt;
+  Texto alinhado a direita
+&lt;/div&gt;</code></pre>
       </div>
     </div>
 
@@ -1923,15 +1954,15 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <div class="cdw-fw-docs-badge">Comum</div>
       </div>
       <div class="cdw-fw-docs-preview">
-        <div style="background:#eef2f7; padding:12px; border-radius:12px;">
-          <div class="cdw-fw-align-left" style="width:140px; background:#dfe9f6; padding:8px 10px; border-radius:8px;">Left</div>
-          <div class="cdw-fw-align-center" style="width:140px; background:#f8dcc8; padding:8px 10px; border-radius:8px; margin-top:8px;">Center</div>
-          <div class="cdw-fw-align-right" style="width:140px; background:#e2f0dc; padding:8px 10px; border-radius:8px; margin-top:8px;">Right</div>
+        <div class="cdw-fw-p-3 cdw-fw-accent-ash cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-lg">
+          <div class="cdw-fw-align-left cdw-fw-w-140 cdw-fw-px-3 cdw-fw-py-2 cdw-fw-accent-sky cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-sm">Left</div>
+          <div class="cdw-fw-align-center cdw-fw-w-140 cdw-fw-mt-2 cdw-fw-px-3 cdw-fw-py-2 cdw-fw-accent-sun cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-sm">Center</div>
+          <div class="cdw-fw-align-right cdw-fw-w-140 cdw-fw-mt-2 cdw-fw-px-3 cdw-fw-py-2 cdw-fw-accent-forest cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-sm">Right</div>
         </div>
-        <div style="margin-top:10px; background:#eef2f7; padding:10px; border-radius:12px; height:120px; line-height:120px;">
-          <span class="cdw-fw-align-top" style="display:inline-block; width:70px; height:40px; background:#dfe9f6; line-height:40px; text-align:center; border-radius:8px;">Top</span>
-          <span class="cdw-fw-align-middle" style="display:inline-block; width:70px; height:60px; background:#f8dcc8; line-height:60px; text-align:center; border-radius:8px;">Mid</span>
-          <span class="cdw-fw-align-bottom" style="display:inline-block; width:70px; height:80px; background:#e2f0dc; line-height:80px; text-align:center; border-radius:8px;">Bottom</span>
+        <div class="cdw-fw-mt-3 cdw-fw-h-120 cdw-fw-p-3 cdw-fw-accent-ash cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-lg">
+          <span class="cdw-fw-align-top cdw-fw-inline-flex cdw-fw-items-center cdw-fw-justify-center cdw-fw-text-center cdw-fw-w-70 cdw-fw-h-40 cdw-fw-accent-sky cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-sm">Top</span>
+          <span class="cdw-fw-align-middle cdw-fw-inline-flex cdw-fw-items-center cdw-fw-justify-center cdw-fw-text-center cdw-fw-w-70 cdw-fw-h-60 cdw-fw-accent-sun cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-sm">Mid</span>
+          <span class="cdw-fw-align-bottom cdw-fw-inline-flex cdw-fw-items-center cdw-fw-justify-center cdw-fw-text-center cdw-fw-w-70 cdw-fw-h-80 cdw-fw-accent-forest cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-sm">Bottom</span>
         </div>
       </div>
       <div class="cdw-fw-docs-codeblock">
@@ -1939,10 +1970,18 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <div class="cdw-fw-docs-code-title">HTML</div>
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-align-center"&gt;Bloco centralizado&lt;/div&gt;
-&lt;span class="cdw-fw-align-top"&gt;Inline top&lt;/span&gt;
-&lt;span class="cdw-fw-align-middle"&gt;Inline middle&lt;/span&gt;
-&lt;span class="cdw-fw-align-bottom"&gt;Inline bottom&lt;/span&gt;</code></pre>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-align-center cdw-fw-w-140 cdw-fw-px-3 cdw-fw-py-2 cdw-fw-accent-sun cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-sm"&gt;
+  Center
+&lt;/div&gt;
+&lt;span class="cdw-fw-align-top cdw-fw-inline-flex cdw-fw-items-center cdw-fw-justify-center cdw-fw-text-center cdw-fw-w-70 cdw-fw-h-40 cdw-fw-accent-sky cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-sm"&gt;
+  Top
+&lt;/span&gt;
+&lt;span class="cdw-fw-align-middle cdw-fw-inline-flex cdw-fw-items-center cdw-fw-justify-center cdw-fw-text-center cdw-fw-w-70 cdw-fw-h-60 cdw-fw-accent-sun cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-sm"&gt;
+  Mid
+&lt;/span&gt;
+&lt;span class="cdw-fw-align-bottom cdw-fw-inline-flex cdw-fw-items-center cdw-fw-justify-center cdw-fw-text-center cdw-fw-w-70 cdw-fw-h-80 cdw-fw-accent-forest cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-sm"&gt;
+  Bottom
+&lt;/span&gt;</code></pre>
       </div>
     </div>
   </div>
@@ -1969,9 +2008,9 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <div class="cdw-fw-docs-badge">Basico</div>
       </div>
       <div class="cdw-fw-docs-preview">
-        <div class="cdw-fw-pos-relative" style="background:#eef2f7; padding:16px; border-radius:12px;">
+        <div class="cdw-fw-pos-relative cdw-fw-p-4 cdw-fw-accent-ash cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-lg">
           Caixa relativa
-          <span class="cdw-fw-pos-absolute cdw-fw-top-0 cdw-fw-right-0" style="background:#0f172a; color:#fff; font-size:0.7rem; padding:4px 8px; border-radius:999px; transform: translate(-6px, 6px);">Novo</span>
+          <span class="cdw-badge cdw-badge--docked cdw-badge--obsidian cdw-badge--solid cdw-badge--sm cdw-badge--pos-tr cdw-badge--offset">Novo</span>
         </div>
       </div>
       <div class="cdw-fw-docs-codeblock">
@@ -1979,9 +2018,9 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <div class="cdw-fw-docs-code-title">HTML</div>
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-pos-relative"&gt;
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-pos-relative cdw-fw-p-4 cdw-fw-accent-ash cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-lg"&gt;
   Caixa relativa
-  &lt;span class="cdw-fw-pos-absolute cdw-fw-top-0 cdw-fw-right-0"&gt;Novo&lt;/span&gt;
+  &lt;span class="cdw-badge cdw-badge--docked cdw-badge--obsidian cdw-badge--solid cdw-badge--sm cdw-badge--pos-tr cdw-badge--offset"&gt;Novo&lt;/span&gt;
 &lt;/div&gt;</code></pre>
       </div>
     </div>
@@ -2007,11 +2046,11 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <div class="cdw-fw-docs-badge">Basico</div>
       </div>
       <div class="cdw-fw-docs-preview">
-        <div class="cdw-fw-overflow-auto" style="height:90px; background:#eef2f7; border-radius:12px; padding:10px;">
-          <div style="padding:6px 0; border-bottom:1px solid #d6dee8;">Registro 1</div>
-          <div style="padding:6px 0; border-bottom:1px solid #d6dee8;">Registro 2</div>
-          <div style="padding:6px 0; border-bottom:1px solid #d6dee8;">Registro 3</div>
-          <div style="padding:6px 0;">Registro 4</div>
+        <div class="cdw-fw-overflow-auto cdw-fw-h-90 cdw-fw-p-3 cdw-fw-accent-ash cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-lg">
+          <div class="cdw-fw-py-2 cdw-fw-border-bottom-soft">Registro 1</div>
+          <div class="cdw-fw-py-2 cdw-fw-border-bottom-soft">Registro 2</div>
+          <div class="cdw-fw-py-2 cdw-fw-border-bottom-soft">Registro 3</div>
+          <div class="cdw-fw-py-2">Registro 4</div>
         </div>
       </div>
       <div class="cdw-fw-docs-codeblock">
@@ -2019,7 +2058,10 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <div class="cdw-fw-docs-code-title">HTML</div>
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-overflow-auto"&gt;...&lt;/div&gt;</code></pre>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-overflow-auto cdw-fw-h-90 cdw-fw-p-3 cdw-fw-accent-ash cdw-fw-bg-accent cdw-fw-soft cdw-fw-radius-lg"&gt;
+  &lt;div class="cdw-fw-py-2 cdw-fw-border-bottom-soft"&gt;Registro 1&lt;/div&gt;
+  ...
+&lt;/div&gt;</code></pre>
       </div>
     </div>
   </div>
@@ -2124,7 +2166,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <div class="cdw-fw-text-semibold">Semibold</div>
           <div class="cdw-fw-text-bold">Bold</div>
         </div>
-        <div class="cdw-fw-flex cdw-fw-gap-2 cdw-fw-flex-wrap" style="margin-top:8px;">
+        <div class="cdw-fw-flex cdw-fw-gap-2 cdw-fw-flex-wrap cdw-fw-mt-2">
           <div class="cdw-fw-text-italic">Texto italico</div>
           <div class="cdw-fw-text-uppercase">Uppercase label</div>
           <div class="cdw-fw-text-lowercase">lowercase tag</div>
@@ -2162,10 +2204,10 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
         <div class="cdw-fw-text-base cdw-fw-leading-tight">
           Linha tight para chamadas curtas e mensagens rapidas.
         </div>
-        <div class="cdw-fw-text-base cdw-fw-leading-loose" style="margin-top:8px;">
+        <div class="cdw-fw-text-base cdw-fw-leading-loose cdw-fw-mt-2">
           Linha loose melhora a leitura em paragrafos longos e institucionais.
         </div>
-        <div class="cdw-fw-text-sm cdw-fw-tracking-wide cdw-fw-text-uppercase" style="margin-top:10px;">
+        <div class="cdw-fw-text-sm cdw-fw-tracking-wide cdw-fw-text-uppercase cdw-fw-mt-3">
           Label com tracking wide
         </div>
       </div>
@@ -2194,9 +2236,9 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
       </div>
       <div class="cdw-fw-docs-preview">
         <div class="cdw-fw-text-base cdw-fw-text-underline-soft">Underline soft para links contextuais.</div>
-        <div class="cdw-fw-text-base cdw-fw-text-underline-accent" style="margin-top:6px;">Underline accent com cor do tema.</div>
-        <div class="cdw-fw-text-base cdw-fw-text-muted" style="margin-top:6px;">Texto muted para informacao secundaria.</div>
-        <div class="cdw-fw-text-base cdw-fw-text-emphasis" style="margin-top:6px;">Texto emphasis para pontos importantes.</div>
+        <div class="cdw-fw-text-base cdw-fw-text-underline-accent cdw-fw-mt-2">Underline accent com cor do tema.</div>
+        <div class="cdw-fw-text-base cdw-fw-text-muted cdw-fw-mt-2">Texto muted para informacao secundaria.</div>
+        <div class="cdw-fw-text-base cdw-fw-text-emphasis cdw-fw-mt-2">Texto emphasis para pontos importantes.</div>
       </div>
       <div class="cdw-fw-docs-codeblock">
         <div class="cdw-fw-docs-code-head">
@@ -2204,9 +2246,248 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
           <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
         <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-text-underline-soft"&gt;Underline soft&lt;/div&gt;
-&lt;div class="cdw-fw-text-underline-accent"&gt;Underline accent&lt;/div&gt;
-&lt;div class="cdw-fw-text-muted"&gt;Texto muted&lt;/div&gt;
-&lt;div class="cdw-fw-text-emphasis"&gt;Texto emphasis&lt;/div&gt;</code></pre>
+&lt;div class="cdw-fw-text-underline-accent cdw-fw-mt-2"&gt;Underline accent&lt;/div&gt;
+&lt;div class="cdw-fw-text-muted cdw-fw-mt-2"&gt;Texto muted&lt;/div&gt;
+&lt;div class="cdw-fw-text-emphasis cdw-fw-mt-2"&gt;Texto emphasis&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+  <div class="cdw-fw-docs-subsection" id="util-design-exemplos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Design (exemplos)</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Exemplos conceituais para cor, bordas, sombras, gradientes e estados visuais.
+      <span class="cdw-fw-docs-when">Quando usar: reforcar identidade sem criar novos componentes.</span>
+    </p>
+
+    <h4 class="cdw-fw-docs-subtitle">Cores em uso</h4>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Accent aplicado</div>
+        <div class="cdw-fw-docs-badge">Design</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-flex cdw-fw-gap-3 cdw-fw-flex-wrap">
+          <div class="cdw-fw-accent-ocean cdw-fw-text-accent cdw-fw-text-sm cdw-fw-p-3 cdw-fw-border cdw-fw-radius-lg">Texto com accent</div>
+          <div class="cdw-fw-accent-sky cdw-fw-bg-accent cdw-fw-soft cdw-fw-text-sm cdw-fw-p-3 cdw-fw-radius-lg">Fundo soft</div>
+          <div class="cdw-fw-accent-rose cdw-fw-border-accent cdw-fw-text-sm cdw-fw-p-3 cdw-fw-border-strong cdw-fw-radius-lg">Borda com accent</div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-flex cdw-fw-gap-3 cdw-fw-flex-wrap"&gt;
+  &lt;div class="cdw-fw-accent-ocean cdw-fw-text-accent cdw-fw-text-sm cdw-fw-p-3 cdw-fw-border cdw-fw-radius-lg"&gt;Texto com accent&lt;/div&gt;
+  &lt;div class="cdw-fw-accent-sky cdw-fw-bg-accent cdw-fw-soft cdw-fw-text-sm cdw-fw-p-3 cdw-fw-radius-lg"&gt;Fundo soft&lt;/div&gt;
+  &lt;div class="cdw-fw-accent-rose cdw-fw-border-accent cdw-fw-text-sm cdw-fw-p-3 cdw-fw-border-strong cdw-fw-radius-lg"&gt;Borda com accent&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <h4 class="cdw-fw-docs-subtitle">Formas &amp; raios</h4>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Cantos com intencao</div>
+        <div class="cdw-fw-docs-badge">Design</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-flex cdw-fw-gap-3 cdw-fw-flex-wrap">
+          <div class="cdw-fw-p-3 cdw-fw-text-sm cdw-fw-border-soft cdw-fw-radius-0">Canto reto</div>
+          <div class="cdw-fw-p-3 cdw-fw-text-sm cdw-fw-border-soft cdw-fw-radius-lg">Canto suave</div>
+          <div class="cdw-fw-p-3 cdw-fw-text-sm cdw-fw-border-soft cdw-fw-radius-narrative">Canto narrativo</div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-flex cdw-fw-gap-3 cdw-fw-flex-wrap"&gt;
+  &lt;div class="cdw-fw-p-3 cdw-fw-text-sm cdw-fw-border-soft cdw-fw-radius-0"&gt;Canto reto&lt;/div&gt;
+  &lt;div class="cdw-fw-p-3 cdw-fw-text-sm cdw-fw-border-soft cdw-fw-radius-lg"&gt;Canto suave&lt;/div&gt;
+  &lt;div class="cdw-fw-p-3 cdw-fw-text-sm cdw-fw-border-soft cdw-fw-radius-narrative"&gt;Canto narrativo&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <h4 class="cdw-fw-docs-subtitle">Bordas</h4>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Separacao visual</div>
+        <div class="cdw-fw-docs-badge">Design</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-flex cdw-fw-gap-3 cdw-fw-flex-wrap">
+          <div class="cdw-fw-p-3 cdw-fw-text-sm cdw-fw-border cdw-fw-radius-md">Separacao leve</div>
+          <div class="cdw-fw-accent-indigo cdw-fw-border-accent cdw-fw-p-3 cdw-fw-text-sm cdw-fw-border-strong cdw-fw-radius-md">Borda com acento</div>
+          <div class="cdw-fw-p-3 cdw-fw-text-sm cdw-fw-border-left-dashed cdw-fw-radius-md">Guia discreta</div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-flex cdw-fw-gap-3 cdw-fw-flex-wrap"&gt;
+  &lt;div class="cdw-fw-p-3 cdw-fw-text-sm cdw-fw-border cdw-fw-radius-md"&gt;Separacao leve&lt;/div&gt;
+  &lt;div class="cdw-fw-accent-indigo cdw-fw-border-accent cdw-fw-p-3 cdw-fw-text-sm cdw-fw-border-strong cdw-fw-radius-md"&gt;Borda com acento&lt;/div&gt;
+  &lt;div class="cdw-fw-p-3 cdw-fw-text-sm cdw-fw-border-left-dashed cdw-fw-radius-md"&gt;Guia discreta&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <h4 class="cdw-fw-docs-subtitle">Sombras &amp; elevacao</h4>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Camadas de profundidade</div>
+        <div class="cdw-fw-docs-badge">Design</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-flex cdw-fw-gap-3 cdw-fw-flex-wrap">
+          <div class="cdw-fw-p-3 cdw-fw-text-sm cdw-fw-border cdw-fw-radius-lg cdw-fw-shadow-sm">Separacao suave</div>
+          <div class="cdw-fw-p-3 cdw-fw-text-sm cdw-fw-border cdw-fw-radius-lg cdw-fw-shadow-md">Destaque moderado</div>
+          <div class="cdw-fw-p-3 cdw-fw-text-sm cdw-fw-border cdw-fw-radius-lg cdw-fw-shadow-lg">Camada dominante</div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-flex cdw-fw-gap-3 cdw-fw-flex-wrap"&gt;
+  &lt;div class="cdw-fw-p-3 cdw-fw-text-sm cdw-fw-border cdw-fw-radius-lg cdw-fw-shadow-sm"&gt;Separacao suave&lt;/div&gt;
+  &lt;div class="cdw-fw-p-3 cdw-fw-text-sm cdw-fw-border cdw-fw-radius-lg cdw-fw-shadow-md"&gt;Destaque moderado&lt;/div&gt;
+  &lt;div class="cdw-fw-p-3 cdw-fw-text-sm cdw-fw-border cdw-fw-radius-lg cdw-fw-shadow-lg"&gt;Camada dominante&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <h4 class="cdw-fw-docs-subtitle">Gradientes</h4>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Direcao e profundidade</div>
+        <div class="cdw-fw-docs-badge">Design</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-flex cdw-fw-gap-3 cdw-fw-flex-wrap">
+          <div class="cdw-fw-p-3 cdw-fw-text-sm cdw-fw-radius-lg cdw-fw-gradient-ocean-soft">Fundo narrativo</div>
+          <div class="cdw-fw-p-3 cdw-fw-text-sm cdw-fw-radius-lg cdw-fw-gradient-mint-soft">Destaque suave</div>
+          <div class="cdw-fw-p-3 cdw-fw-text-sm cdw-fw-radius-lg cdw-fw-gradient-amber-soft">Chamada equilibrada</div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-flex cdw-fw-gap-3 cdw-fw-flex-wrap"&gt;
+  &lt;div class="cdw-fw-p-3 cdw-fw-text-sm cdw-fw-radius-lg cdw-fw-gradient-ocean-soft"&gt;Fundo narrativo&lt;/div&gt;
+  &lt;div class="cdw-fw-p-3 cdw-fw-text-sm cdw-fw-radius-lg cdw-fw-gradient-mint-soft"&gt;Destaque suave&lt;/div&gt;
+  &lt;div class="cdw-fw-p-3 cdw-fw-text-sm cdw-fw-radius-lg cdw-fw-gradient-amber-soft"&gt;Chamada equilibrada&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <h4 class="cdw-fw-docs-subtitle">Estados</h4>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Feedback visual</div>
+        <div class="cdw-fw-docs-badge">Design</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-flex cdw-fw-gap-2 cdw-fw-flex-wrap">
+          <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-accent-sky" type="button">Default</button>
+          <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-accent-sky cdw-fw-state-hover" type="button">Hover</button>
+          <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-accent-sky cdw-fw-state-focus" type="button">Focus</button>
+          <button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-accent-sky" type="button" disabled>Disabled</button>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-flex cdw-fw-gap-2 cdw-fw-flex-wrap"&gt;
+  &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-accent-sky" type="button"&gt;Default&lt;/button&gt;
+  &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-accent-sky cdw-fw-state-hover" type="button"&gt;Hover&lt;/button&gt;
+  &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-accent-sky cdw-fw-state-focus" type="button"&gt;Focus&lt;/button&gt;
+  &lt;button class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-accent-sky" type="button" disabled&gt;Disabled&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <h4 class="cdw-fw-docs-subtitle">Motion &amp; transicoes</h4>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Microinteracoes</div>
+        <div class="cdw-fw-docs-badge">Design</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-flex cdw-fw-gap-2 cdw-fw-flex-wrap">
+          <button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-accent-violet" type="button">Passe o mouse</button>
+          <button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-accent-violet" type="button">Transicao suave</button>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-flex cdw-fw-gap-2"&gt;
+  &lt;button class="cdw-fw-btn cdw-fw-btn--solid cdw-fw-accent-violet" type="button"&gt;Passe o mouse&lt;/button&gt;
+  &lt;button class="cdw-fw-btn cdw-fw-btn--soft cdw-fw-accent-violet" type="button"&gt;Transicao suave&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <h4 class="cdw-fw-docs-subtitle">Acessibilidade</h4>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Contraste e foco</div>
+        <div class="cdw-fw-docs-badge">Design</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-flex cdw-fw-gap-3 cdw-fw-flex-wrap">
+          <div class="cdw-fw-p-3 cdw-fw-text-sm cdw-fw-border cdw-fw-radius-lg">Contraste minimo</div>
+          <a class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-accent-graphite cdw-fw-ring-soft" href="#">Foco visivel</a>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-flex cdw-fw-gap-3 cdw-fw-flex-wrap"&gt;
+  &lt;div class="cdw-fw-p-3 cdw-fw-text-sm cdw-fw-border cdw-fw-radius-lg"&gt;Contraste minimo&lt;/div&gt;
+  &lt;a class="cdw-fw-btn cdw-fw-btn--outline cdw-fw-accent-graphite cdw-fw-ring-soft" href="#"&gt;Foco visivel&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <h4 class="cdw-fw-docs-subtitle">Tokens do sistema</h4>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-example-head">
+        <div class="cdw-fw-docs-example-title">Tokens em contexto</div>
+        <div class="cdw-fw-docs-badge">Design</div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-fw-flex cdw-fw-flex-col cdw-fw-gap-2">
+          <div class="cdw-fw-font-mono cdw-fw-text-sm">--cdw-fw-accent-ocean</div>
+          <div class="cdw-fw-font-mono cdw-fw-text-sm">--cdw-fw-accent-slate</div>
+          <div class="cdw-fw-font-mono cdw-fw-text-sm">--cdw-fw-font</div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-flex cdw-fw-flex-col cdw-fw-gap-2"&gt;
+  &lt;div class="cdw-fw-font-mono cdw-fw-text-sm"&gt;--cdw-fw-accent-ocean&lt;/div&gt;
+  &lt;div class="cdw-fw-font-mono cdw-fw-text-sm"&gt;--cdw-fw-accent-slate&lt;/div&gt;
+  &lt;div class="cdw-fw-font-mono cdw-fw-text-sm"&gt;--cdw-fw-font&lt;/div&gt;
+&lt;/div&gt;</code></pre>
       </div>
     </div>
   </div>
@@ -2214,7 +2495,140 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
 
 
 `,
-  colors: `
+  designOverview: `
+<section id="design-visao" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+  <div class="cdw-fw-docs-section-head">
+    <h2 class="cdw-fw-docs-section-title">Visao geral</h2>
+    <p class="cdw-fw-docs-lead">
+      O Sistema de Design do CDW-FW define linguagem visual, ritmo e criterios de consistencia.
+      Ele orienta escolhas e evita variacoes arbitrarias, mantendo o framework coeso.
+    </p>
+  </div>
+</section>
+
+
+`,
+  designTypography: `
+<section id="design-tipografia" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+  <div class="cdw-fw-docs-section-head">
+    <h2 class="cdw-fw-docs-section-title">Tipografia</h2>
+    <p class="cdw-fw-docs-lead">
+      Tipografia define a voz do sistema. Titulos fortes para hierarquia e texto limpo para leitura longa.
+    </p>
+  </div>
+</section>
+
+
+`,
+  designRhythm: `
+<section id="design-ritmo" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+  <div class="cdw-fw-docs-section-head">
+    <h2 class="cdw-fw-docs-section-title">Ritmo &amp; Espacamento</h2>
+    <p class="cdw-fw-docs-lead">
+      O CDW-FW trabalha com escala de 4px para manter ritmo vertical. Espaco cria hierarquia e respiracao.
+    </p>
+  </div>
+</section>
+
+
+`,
+  designShapes: `
+<section id="design-formas" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+  <div class="cdw-fw-docs-section-head">
+    <h2 class="cdw-fw-docs-section-title">Formas &amp; Raios</h2>
+    <p class="cdw-fw-docs-lead">
+      O CDW-FW alterna cantos retos e suaves conforme o contexto. Raios devem ter intencao, nao ser genericos.
+    </p>
+  </div>
+</section>
+
+
+`,
+  designBorders: `
+<section id="design-bordas" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+  <div class="cdw-fw-docs-section-head">
+    <h2 class="cdw-fw-docs-section-title">Bordas</h2>
+    <p class="cdw-fw-docs-lead">
+      Bordas servem para separar e organizar. Elas comunicam estrutura, nao decoracao.
+    </p>
+  </div>
+</section>
+
+
+`,
+  designShadows: `
+<section id="design-sombras" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+  <div class="cdw-fw-docs-section-head">
+    <h2 class="cdw-fw-docs-section-title">Sombras &amp; Elevacao</h2>
+    <p class="cdw-fw-docs-lead">
+      Elevacao cria hierarquia. A sombra deve ser precisa e sobria, nunca pesada ou generica.
+    </p>
+  </div>
+</section>
+
+
+`,
+  designGradients: `
+<section id="design-gradientes" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+  <div class="cdw-fw-docs-section-head">
+    <h2 class="cdw-fw-docs-section-title">Gradientes</h2>
+    <p class="cdw-fw-docs-lead">
+      Gradientes sao usados para dar profundidade e direcao. Use com moderacao e foco institucional.
+    </p>
+  </div>
+</section>
+
+
+`,
+  designStates: `
+<section id="design-estados" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+  <div class="cdw-fw-docs-section-head">
+    <h2 class="cdw-fw-docs-section-title">Estados</h2>
+    <p class="cdw-fw-docs-lead">
+      Estados visuais comunicam interacao: hover, focus, active, disabled e loading.
+      O feedback deve ser consistente em todos os componentes.
+    </p>
+  </div>
+</section>
+
+
+`,
+  designMotion: `
+<section id="design-motion" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+  <div class="cdw-fw-docs-section-head">
+    <h2 class="cdw-fw-docs-section-title">Motion &amp; Transicoes</h2>
+    <p class="cdw-fw-docs-lead">
+      Animacoes reforcam compreensao, nunca distracao. Use microinteracoes com tempos curtos e easing suave.
+    </p>
+  </div>
+</section>
+
+
+`,
+  designAccessibility: `
+<section id="design-acessibilidade" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+  <div class="cdw-fw-docs-section-head">
+    <h2 class="cdw-fw-docs-section-title">Acessibilidade</h2>
+    <p class="cdw-fw-docs-lead">
+      Contraste, foco visivel e legibilidade sustentam a qualidade do sistema em qualquer contexto.
+    </p>
+  </div>
+</section>
+
+
+`,
+  designTokens: `
+<section id="design-tokens" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+  <div class="cdw-fw-docs-section-head">
+    <h2 class="cdw-fw-docs-section-title">Tokens do Sistema</h2>
+    <p class="cdw-fw-docs-lead">
+      Tokens conectam cor, espacamento, raio e sombra aos componentes. Eles garantem consistencia global.
+    </p>
+  </div>
+</section>
+
+
+`,  colors: `
 <section id="cores" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
   <div class="cdw-fw-docs-section-head">
     <h2 class="cdw-fw-docs-section-title">Cores (Accent System)</h2>
@@ -2349,7 +2763,73 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     </div>
   </div>
 
-  <div class="cdw-fw-docs-subsection" id="cores-uso" data-cdw-fw-docs-section>
+  
+  <div class="cdw-fw-docs-subsection" id="cores-mono" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Monocromaticas</h3>
+    <p class="cdw-fw-docs-subdesc">
+      Tons neutros para UI tecnica, hierarquia discreta e fundos institucionais.
+      <span class="cdw-fw-docs-when">Quando usar: interfaces administrativas e base neutra.</span>
+    </p>
+
+    <div class="cdw-fw-docs-color-grid">
+      <div class="cdw-fw-docs-color-card">
+        <div class="cdw-fw-docs-color-name">carbon</div>
+        <div class="cdw-fw-docs-color-swatches">
+          <div class="cdw-fw-docs-color-swatch cdw-fw-docs-color-swatch--base cdw-fw-accent-carbon cdw-fw-bg-accent">Base</div>
+          <div class="cdw-fw-docs-color-swatch cdw-fw-accent-carbon cdw-fw-bg-accent cdw-fw-soft">Soft</div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-color-card">
+        <div class="cdw-fw-docs-color-name">obsidian</div>
+        <div class="cdw-fw-docs-color-swatches">
+          <div class="cdw-fw-docs-color-swatch cdw-fw-docs-color-swatch--base cdw-fw-accent-obsidian cdw-fw-bg-accent">Base</div>
+          <div class="cdw-fw-docs-color-swatch cdw-fw-accent-obsidian cdw-fw-bg-accent cdw-fw-soft">Soft</div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-color-card">
+        <div class="cdw-fw-docs-color-name">graphite-dark</div>
+        <div class="cdw-fw-docs-color-swatches">
+          <div class="cdw-fw-docs-color-swatch cdw-fw-docs-color-swatch--base cdw-fw-accent-graphite-dark cdw-fw-bg-accent">Base</div>
+          <div class="cdw-fw-docs-color-swatch cdw-fw-accent-graphite-dark cdw-fw-bg-accent cdw-fw-soft">Soft</div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-color-card">
+        <div class="cdw-fw-docs-color-name">graphite</div>
+        <div class="cdw-fw-docs-color-swatches">
+          <div class="cdw-fw-docs-color-swatch cdw-fw-docs-color-swatch--base cdw-fw-accent-graphite cdw-fw-bg-accent">Base</div>
+          <div class="cdw-fw-docs-color-swatch cdw-fw-accent-graphite cdw-fw-bg-accent cdw-fw-soft">Soft</div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-color-card">
+        <div class="cdw-fw-docs-color-name">steel</div>
+        <div class="cdw-fw-docs-color-swatches">
+          <div class="cdw-fw-docs-color-swatch cdw-fw-docs-color-swatch--base cdw-fw-accent-steel cdw-fw-bg-accent">Base</div>
+          <div class="cdw-fw-docs-color-swatch cdw-fw-accent-steel cdw-fw-bg-accent cdw-fw-soft">Soft</div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-color-card">
+        <div class="cdw-fw-docs-color-name">slate</div>
+        <div class="cdw-fw-docs-color-swatches">
+          <div class="cdw-fw-docs-color-swatch cdw-fw-docs-color-swatch--base cdw-fw-accent-slate cdw-fw-bg-accent">Base</div>
+          <div class="cdw-fw-docs-color-swatch cdw-fw-accent-slate cdw-fw-bg-accent cdw-fw-soft">Soft</div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-color-card">
+        <div class="cdw-fw-docs-color-name">ash</div>
+        <div class="cdw-fw-docs-color-swatches">
+          <div class="cdw-fw-docs-color-swatch cdw-fw-docs-color-swatch--base cdw-fw-accent-ash cdw-fw-bg-accent">Base</div>
+          <div class="cdw-fw-docs-color-swatch cdw-fw-accent-ash cdw-fw-bg-accent cdw-fw-soft">Soft</div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-color-card">
+        <div class="cdw-fw-docs-color-name">fog</div>
+        <div class="cdw-fw-docs-color-swatches">
+          <div class="cdw-fw-docs-color-swatch cdw-fw-docs-color-swatch--base cdw-fw-accent-fog cdw-fw-bg-accent">Base</div>
+          <div class="cdw-fw-docs-color-swatch cdw-fw-accent-fog cdw-fw-bg-accent cdw-fw-soft">Soft</div>
+        </div>
+      </div>
+    </div>
+  </div><div class="cdw-fw-docs-subsection" id="cores-uso" data-cdw-fw-docs-section>
     <h3 class="cdw-fw-docs-subtitle">Uso b&aacute;sico</h3>
     <p class="cdw-fw-docs-subdesc">
       Aplique a mesma cor em texto, fundo ou borda com modificadores.
@@ -2361,71 +2841,9 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
       <span>cdw-fw-border-accent</span>
       <span>cdw-fw-soft</span>
     </div>
-
-    <div class="cdw-fw-docs-example">
-      <div class="cdw-fw-docs-example-head">
-        <div class="cdw-fw-docs-example-title">Texto colorido</div>
-        <div class="cdw-fw-docs-badge">B&aacute;sico</div>
-      </div>
-      <div class="cdw-fw-docs-preview">
-        <span class="cdw-fw-accent-ocean cdw-fw-text-accent">Texto em ocean</span>
-        <div class="cdw-fw-docs-example-caption">A cor vem da classe cdw-fw-accent-ocean.</div>
-      </div>
-      <div class="cdw-fw-docs-codeblock">
-        <div class="cdw-fw-docs-code-head">
-          <div class="cdw-fw-docs-code-title">HTML</div>
-          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
-        </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;span class="cdw-fw-accent-ocean cdw-fw-text-accent"&gt;
-  Texto em ocean
-&lt;/span&gt;</code></pre>
-      </div>
-    </div>
-
-    <div class="cdw-fw-docs-example">
-      <div class="cdw-fw-docs-example-head">
-        <div class="cdw-fw-docs-example-title">Fundo suave</div>
-        <div class="cdw-fw-docs-badge">Comum</div>
-      </div>
-      <div class="cdw-fw-docs-preview">
-        <div class="cdw-fw-accent-rose cdw-fw-bg-accent cdw-fw-soft" style="padding:10px 12px; border-radius:10px;">
-          Fundo pastel com a mesma cor base
-        </div>
-        <div class="cdw-fw-docs-example-caption">Soft deriva da mesma cor, sem criar nova paleta.</div>
-      </div>
-      <div class="cdw-fw-docs-codeblock">
-        <div class="cdw-fw-docs-code-head">
-          <div class="cdw-fw-docs-code-title">HTML</div>
-          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
-        </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-accent-rose cdw-fw-bg-accent cdw-fw-soft"&gt;
-  Fundo pastel com a mesma cor base
-&lt;/div&gt;</code></pre>
-      </div>
-    </div>
-
-    <div class="cdw-fw-docs-example">
-      <div class="cdw-fw-docs-example-head">
-        <div class="cdw-fw-docs-example-title">Borda de destaque</div>
-        <div class="cdw-fw-docs-badge">Comum</div>
-      </div>
-      <div class="cdw-fw-docs-preview">
-        <div class="cdw-fw-accent-indigo cdw-fw-border-accent" style="border:2px solid; padding:10px 12px; border-radius:10px;">
-          Borda usando a mesma cor de destaque
-        </div>
-        <div class="cdw-fw-docs-example-caption">A classe accent define a cor da borda.</div>
-      </div>
-      <div class="cdw-fw-docs-codeblock">
-        <div class="cdw-fw-docs-code-head">
-          <div class="cdw-fw-docs-code-title">HTML</div>
-          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
-        </div>
-        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-accent-indigo cdw-fw-border-accent" style="border:2px solid;"&gt;
-  Borda usando a mesma cor de destaque
-&lt;/div&gt;</code></pre>
-      </div>
-    </div>
   </div>
+
+    
 </section>
 
 
@@ -9160,7 +9578,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
       </div>
 
       <div class="cdw-fw-docs-subsection" id="gallery-ecommerce" data-cdw-fw-docs-section>
-        <h3 class="cdw-fw-docs-subtitle">Gallery � E-commerce</h3>
+        <h3 class="cdw-fw-docs-subtitle">Gallery – E-commerce</h3>
         <p class="cdw-fw-docs-subdesc">
           Product Switch serve para alternar imagens rapidamente. Product Detail adiciona descricao individual por imagem e leitura de compra. Loading automatico aparece ao trocar.
         </p>
@@ -11349,8 +11767,8 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
   const pageSections = {
     "getting-started": ["gettingStarted"],
     layout: ["layout"],
-    design: ["colors"],
-    utilities: ["utilities"],
+    design: ["designOverview", "designTypography", "designRhythm", "designShapes", "designBorders", "designShadows", "designGradients", "designStates", "designMotion", "designAccessibility", "designTokens"],
+    utilities: ["colors", "utilities"],
     components: [
       "buttons",
       "accordion",
@@ -11478,20 +11896,21 @@ function buildNav(root) {
           },
         ],
       },
-    ],
-    design: [
+    ],        design: [
       {
         title: "SISTEMA DE DESIGN",
         items: [
-          {
-            title: "Cores",
-            target: "#cores",
-            links: [
-              { label: "Introdu&ccedil;&atilde;o", href: "#cores-intro" },
-              { label: "Paleta", href: "#cores-paleta" },
-              { label: "Uso b&aacute;sico", href: "#cores-uso" },
-            ],
-          },
+          { title: "Visao geral", target: "#design-visao", links: [{ label: "Visao geral", href: "#design-visao" }] },
+          { title: "Tipografia", target: "#design-tipografia", links: [{ label: "Tipografia", href: "#design-tipografia" }] },
+          { title: "Ritmo &amp; Espacamento", target: "#design-ritmo", links: [{ label: "Ritmo &amp; Espacamento", href: "#design-ritmo" }] },
+          { title: "Formas &amp; Raios", target: "#design-formas", links: [{ label: "Formas &amp; Raios", href: "#design-formas" }] },
+          { title: "Bordas", target: "#design-bordas", links: [{ label: "Bordas", href: "#design-bordas" }] },
+          { title: "Sombras &amp; Elevacao", target: "#design-sombras", links: [{ label: "Sombras &amp; Elevacao", href: "#design-sombras" }] },
+          { title: "Gradientes", target: "#design-gradientes", links: [{ label: "Gradientes", href: "#design-gradientes" }] },
+          { title: "Estados", target: "#design-estados", links: [{ label: "Estados", href: "#design-estados" }] },
+          { title: "Motion &amp; Transicoes", target: "#design-motion", links: [{ label: "Motion &amp; Transicoes", href: "#design-motion" }] },
+          { title: "Acessibilidade", target: "#design-acessibilidade", links: [{ label: "Acessibilidade", href: "#design-acessibilidade" }] },
+          { title: "Tokens do Sistema", target: "#design-tokens", links: [{ label: "Tokens do Sistema", href: "#design-tokens" }] },
         ],
       },
     ],
@@ -11499,6 +11918,16 @@ function buildNav(root) {
       {
         title: "UTILIT&Aacute;RIOS",
         items: [
+          {
+            title: "Cores",
+            target: "#cores",
+            links: [
+              { label: "Introdu&ccedil;&atilde;o", href: "#cores-intro" },
+              { label: "Paleta", href: "#cores-paleta" },
+              { label: "Monocrom&aacute;ticas", href: "#cores-mono" },
+              { label: "Uso b&aacute;sico", href: "#cores-uso" },
+            ],
+          },
           {
             title: "Espa&ccedil;amento",
             target: "#util-espacamento",
@@ -11544,10 +11973,14 @@ function buildNav(root) {
             target: "#util-texto",
             links: [{ label: "Texto", href: "#util-texto" }],
           },
+          {
+            title: "Design (exemplos)",
+            target: "#util-design-exemplos",
+            links: [{ label: "Design (exemplos)", href: "#util-design-exemplos" }],
+          },
         ],
       },
-    ],
-    components: [
+    ],components: [
       {
         title: "COMPONENTES",
         items: [
@@ -12088,6 +12521,24 @@ function setupScrollSpy(root) {
     setActive(initialHash);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

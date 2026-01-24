@@ -22,6 +22,7 @@
 @import "./utilities/flex.css";
 @import "./utilities/gap.css";
 @import "./utilities/sizing.css";
+@import "./utilities/surface.css";
 @import "./utilities/alignment.css";
 @import "./utilities/position.css";
 @import "./utilities/overflow.css";
