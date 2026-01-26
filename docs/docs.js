@@ -11926,21 +11926,235 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     </div>
     <div class="cdw-fw-docs-example">
       <div class="cdw-fw-docs-preview">
-        <div class="cdw-login cdw-login--inverted-focus cdw-fw-accent-indigo">
+        <div class="cdw-login cdw-login--enterprise cdw-fw-accent-sky">
+          <div class="cdw-login-panel cdw-login-panel--form">
+            <div class="cdw-login__brand">
+              <div class="cdw-login__brand-mark"></div>
+              <div>
+                <strong>CDW-FW</strong>
+                <span>Enterprise Flow</span>
+              </div>
+            </div>
+            <div class="cdw-login__meta-tag">Auth corporativa</div>
+            <h1 class="cdw-login__title">Gestão Empresarial Inteligente</h1>
+            <p class="cdw-login__subtitle">Simplifique processos, otimize recursos e tome decisões mais assertivas.</p>
+            <form class="cdw-login__form cdw-form" data-cdw-login>
+              <div class="cdw-form-group">
+                <label class="cdw-form-label">E-mail corporativo</label>
+                <div class="cdw-login__input-wrap">
+                  <span class="cdw-login__input-icon">@</span>
+                  <input class="cdw-form-input cdw-input-lg" type="email" placeholder="seu.nome@empresa.com" data-cdw-login-input="email" />
+                </div>
+              </div>
+              <div class="cdw-form-group">
+                <label class="cdw-form-label">Senha</label>
+                <div class="cdw-login__input-wrap cdw-login__field">
+                  <span class="cdw-login__input-icon">#</span>
+                  <input class="cdw-form-input cdw-input-lg" type="password" placeholder="Sua senha de acesso" data-cdw-login-input="password" />
+                  <button type="button" class="cdw-login__toggle" data-cdw-login-toggle="password">Mostrar</button>
+                </div>
+              </div>
+              <div class="cdw-login__row">
+                <label class="cdw-login__link">
+                  <input type="checkbox" class="cdw-login__checkbox" checked />
+                  Manter sessão ativa
+                </label>
+                <a class="cdw-login__link" href="#">Esqueceu a senha?</a>
+              </div>
+              <button type="submit" class="cdw-login__form-button cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--lg" data-cdw-login-submit>
+                Acessar Sistema
+              </button>
+              <button type="button" class="cdw-login__form-button cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--lg" data-cdw-login-google>
+                <span class="cdw-login__google-icon">G</span> Conta Google Corporativa
+              </button>
+            </form>
+            <div class="cdw-login__row cdw-login__row--center">
+              <span class="cdw-login__meta-tag">Não possui credenciais?</span>
+              <a class="cdw-login__link" href="#">Solicitar acesso à empresa</a>
+            </div>
+          </div>
           <div class="cdw-login-panel cdw-login-panel--visual">
-            <div class="cdw-login__visual-block">
-              <h4>Inverted Focus</h4>
-              <p>Gradiente mais escuro com texto claro e espaço vazio.</p>
+            <div class="cdw-login-visual cdw-login-visual--night">
+              <div class="cdw-login-visual__shape is-organic is-color-indigo is-float-a" style="width:260px;height:260px;top:8%;left:12%;"></div>
+              <div class="cdw-login-visual__shape is-organic is-color-red is-float-b" style="width:220px;height:200px;bottom:16%;left:18%;"></div>
+              <div class="cdw-login-visual__shape is-organic is-color-amber is-float-a" style="width:190px;height:170px;top:18%;right:12%;"></div>
+              <div class="cdw-login-visual__shape is-organic is-color-teal is-float-b" style="width:240px;height:210px;bottom:10%;right:18%;"></div>
+              <div class="cdw-login-visual__line" style="width:360px;height:360px;top:14%;left:14%;transform:rotate(18deg);"></div>
+              <div class="cdw-login-visual__line" style="width:260px;height:260px;bottom:12%;right:12%;transform:rotate(-16deg);"></div>
+              <div class="cdw-login-visual__thin" style="width:520px;top:42%;left:-6%;transform:rotate(12deg);"></div>
+              <div class="cdw-login-visual__thin" style="width:420px;bottom:32%;right:-4%;transform:rotate(-14deg);"></div>
+              <div class="cdw-login-visual__complex" style="width:220px;height:220px;top:34%;left:42%;"></div>
+              <div class="cdw-login-visual__dot" style="width:12px;height:12px;top:22%;right:30%;"></div>
+              <div class="cdw-login-visual__dot" style="width:10px;height:10px;top:48%;left:28%;"></div>
+              <div class="cdw-login-visual__dot" style="width:14px;height:14px;bottom:24%;right:34%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+    <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-login cdw-login--enterprise cdw-fw-accent-sky"&gt;
+  &lt;div class="cdw-login-panel cdw-login-panel--form"&gt;
+    &lt;div class="cdw-login__brand"&gt;
+      &lt;div class="cdw-login__brand-mark"&gt;&lt;/div&gt;
+      &lt;div&gt;&lt;strong&gt;CDW-FW&lt;/strong&gt;&lt;span&gt;Enterprise Flow&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="cdw-login__meta-tag"&gt;Auth corporativa&lt;/div&gt;
+    &lt;h1 class="cdw-login__title"&gt;Gest&atilde;o Empresarial Inteligente&lt;/h1&gt;
+    &lt;p class="cdw-login__subtitle"&gt;Simplifique processos, otimize recursos e tome decis&otilde;es mais assertivas.&lt;/p&gt;
+    &lt;form class="cdw-login__form cdw-form" data-cdw-login&gt;
+      &lt;div class="cdw-form-group"&gt;
+        &lt;label class="cdw-form-label"&gt;E-mail corporativo&lt;/label&gt;
+        &lt;div class="cdw-login__input-wrap"&gt;
+          &lt;span class="cdw-login__input-icon"&gt;@&lt;/span&gt;
+          &lt;input class="cdw-form-input cdw-input-lg" type="email" placeholder="seu.nome@empresa.com" data-cdw-login-input="email" /&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="cdw-form-group"&gt;
+        &lt;label class="cdw-form-label"&gt;Senha&lt;/label&gt;
+        &lt;div class="cdw-login__input-wrap cdw-login__field"&gt;
+          &lt;span class="cdw-login__input-icon"&gt;#&lt;/span&gt;
+          &lt;input class="cdw-form-input cdw-input-lg" type="password" placeholder="Sua senha de acesso" data-cdw-login-input="password" /&gt;
+          &lt;button type="button" class="cdw-login__toggle" data-cdw-login-toggle="password"&gt;Mostrar&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="cdw-login__row"&gt;
+        &lt;label class="cdw-login__link"&gt;
+          &lt;input type="checkbox" class="cdw-login__checkbox" checked /&gt;
+          Manter sess&atilde;o ativa
+        &lt;/label&gt;
+        &lt;a class="cdw-login__link" href="#"&gt;Esqueceu a senha?&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;button type="submit" class="cdw-login__form-button cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--lg" data-cdw-login-submit&gt;Acessar Sistema&lt;/button&gt;
+      &lt;button type="button" class="cdw-login__form-button cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--lg" data-cdw-login-google&gt;
+        &lt;span class="cdw-login__google-icon"&gt;G&lt;/span&gt; Conta Google Corporativa
+      &lt;/button&gt;
+    &lt;/form&gt;
+    &lt;div class="cdw-login__row cdw-login__row--center"&gt;
+      &lt;span class="cdw-login__meta-tag"&gt;N&atilde;o possui credenciais?&lt;/span&gt;
+      &lt;a class="cdw-login__link" href="#"&gt;Solicitar acesso &agrave; empresa&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-login-panel cdw-login-panel--visual"&gt;
+    &lt;div class="cdw-login-visual cdw-login-visual--night"&gt;
+      &lt;div class="cdw-login-visual__shape is-organic is-color-indigo is-float-a" style="width:260px;height:260px;top:8%;left:12%;"&gt;&lt;/div&gt;
+      &lt;div class="cdw-login-visual__shape is-organic is-color-red is-float-b" style="width:220px;height:200px;bottom:16%;left:18%;"&gt;&lt;/div&gt;
+      &lt;div class="cdw-login-visual__shape is-organic is-color-amber is-float-a" style="width:190px;height:170px;top:18%;right:12%;"&gt;&lt;/div&gt;
+      &lt;div class="cdw-login-visual__shape is-organic is-color-teal is-float-b" style="width:240px;height:210px;bottom:10%;right:18%;"&gt;&lt;/div&gt;
+      &lt;div class="cdw-login-visual__line" style="width:360px;height:360px;top:14%;left:14%;transform:rotate(18deg);"&gt;&lt;/div&gt;
+      &lt;div class="cdw-login-visual__line" style="width:260px;height:260px;bottom:12%;right:12%;transform:rotate(-16deg);"&gt;&lt;/div&gt;
+      &lt;div class="cdw-login-visual__thin" style="width:520px;top:42%;left:-6%;transform:rotate(12deg);"&gt;&lt;/div&gt;
+      &lt;div class="cdw-login-visual__thin" style="width:420px;bottom:32%;right:-4%;transform:rotate(-14deg);"&gt;&lt;/div&gt;
+      &lt;div class="cdw-login-visual__complex" style="width:220px;height:220px;top:34%;left:42%;"&gt;&lt;/div&gt;
+      &lt;div class="cdw-login-visual__dot" style="width:12px;height:12px;top:22%;right:30%;"&gt;&lt;/div&gt;
+      &lt;div class="cdw-login-visual__dot" style="width:10px;height:10px;top:48%;left:28%;"&gt;&lt;/div&gt;
+      &lt;div class="cdw-login-visual__dot" style="width:14px;height:14px;bottom:24%;right:34%;"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-login cdw-login--synapse cdw-fw-accent-indigo">
+          <div class="cdw-login-panel cdw-login-panel--visual">
+            <div class="cdw-login-visual cdw-login-visual--glow">
+              <div class="cdw-login-visual__glow is-glow-indigo" style="width:440px;height:440px;top:18%;left:22%;"></div>
+              <div class="cdw-login-visual__glow is-glow-blue" style="width:400px;height:400px;bottom:14%;left:28%;"></div>
+              <div class="cdw-login-visual__glow is-glow-cyan" style="width:360px;height:360px;bottom:16%;right:20%;"></div>
+              <div class="cdw-login__visual-brand">
+                <div class="cdw-login__visual-logo"><span>&#8734;</span></div>
+                <div class="cdw-login__visual-name">SYNAPSE</div>
+                <div class="cdw-login__visual-tagline">Sistemas inteligentes para gestão empresarial</div>
+              </div>
             </div>
           </div>
           <div class="cdw-login-panel cdw-login-panel--form">
-            <h3 class="cdw-login__title">Controles do produto</h3>
-            <form class="cdw-login__form" data-cdw-login>
-              <input class="cdw-form-input" type="email" placeholder="produto@empresa.com" />
-              <input class="cdw-form-input" type="password" placeholder="••••••••" />
+            <div class="cdw-login__meta-tag">Acesso seguro</div>
+            <h1 class="cdw-login__title">Acessar Sistema</h1>
+            <p class="cdw-login__subtitle">Entre com suas credenciais para acessar o painel.</p>
+            <form class="cdw-login__form cdw-form" data-cdw-login>
+              <div class="cdw-form-group">
+                <label class="cdw-form-label">Email</label>
+                <input class="cdw-form-input cdw-input-lg" type="email" placeholder="seu@email.com" data-cdw-login-input="email" />
+              </div>
+              <div class="cdw-form-group">
+                <label class="cdw-form-label">Senha</label>
+                <input class="cdw-form-input cdw-input-lg" type="password" placeholder="••••••••" data-cdw-login-input="password" />
+              </div>
+              <div class="cdw-login__row cdw-login__row--gap">
+                <label class="cdw-login__link">
+                  <input type="checkbox" class="cdw-login__checkbox" checked />
+                  Manter sessão ativa
+                </label>
+                <a class="cdw-login__link" href="#">Esqueceu a senha?</a>
+              </div>
+              <button type="submit" class="cdw-login__form-button cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--lg" data-cdw-login-submit>
+                Entrar no Sistema
+              </button>
+              <button type="button" class="cdw-login__form-button cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--lg" data-cdw-login-google>
+                <span class="cdw-login__google-icon">G</span> Conta Google
+              </button>
             </form>
+            <div class="cdw-login__row cdw-login__row--center">
+              <span class="cdw-login__meta-tag">Não possui conta?</span>
+              <a class="cdw-login__link" href="#">Solicitar acesso</a>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-login cdw-login--synapse cdw-fw-accent-indigo"&gt;
+  &lt;div class="cdw-login-panel cdw-login-panel--visual"&gt;
+    &lt;div class="cdw-login-visual cdw-login-visual--glow"&gt;
+      &lt;div class="cdw-login-visual__glow is-glow-indigo" style="width:440px;height:440px;top:18%;left:22%;"&gt;&lt;/div&gt;
+      &lt;div class="cdw-login-visual__glow is-glow-blue" style="width:400px;height:400px;bottom:14%;left:28%;"&gt;&lt;/div&gt;
+      &lt;div class="cdw-login-visual__glow is-glow-cyan" style="width:360px;height:360px;bottom:16%;right:20%;"&gt;&lt;/div&gt;
+      &lt;div class="cdw-login__visual-brand"&gt;
+        &lt;div class="cdw-login__visual-logo"&gt;&lt;span&gt;&#8734;&lt;/span&gt;&lt;/div&gt;
+        &lt;div class="cdw-login__visual-name"&gt;SYNAPSE&lt;/div&gt;
+        &lt;div class="cdw-login__visual-tagline"&gt;Sistemas inteligentes para gestão empresarial&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-login-panel cdw-login-panel--form"&gt;
+    &lt;div class="cdw-login__meta-tag"&gt;Acesso seguro&lt;/div&gt;
+    &lt;h1 class="cdw-login__title"&gt;Acessar Sistema&lt;/h1&gt;
+    &lt;p class="cdw-login__subtitle"&gt;Entre com suas credenciais para acessar o painel.&lt;/p&gt;
+    &lt;form class="cdw-login__form cdw-form" data-cdw-login&gt;
+      &lt;div class="cdw-form-group"&gt;
+        &lt;label class="cdw-form-label"&gt;Email&lt;/label&gt;
+        &lt;input class="cdw-form-input cdw-input-lg" type="email" placeholder="seu@email.com" data-cdw-login-input="email" /&gt;
+      &lt;/div&gt;
+      &lt;div class="cdw-form-group"&gt;
+        &lt;label class="cdw-form-label"&gt;Senha&lt;/label&gt;
+        &lt;input class="cdw-form-input cdw-input-lg" type="password" placeholder="••••••••" data-cdw-login-input="password" /&gt;
+      &lt;/div&gt;
+      &lt;div class="cdw-login__row cdw-login__row--gap"&gt;
+        &lt;label class="cdw-login__link"&gt;
+          &lt;input type="checkbox" class="cdw-login__checkbox" checked /&gt;
+          Manter sessão ativa
+        &lt;/label&gt;
+        &lt;a class="cdw-login__link" href="#"&gt;Esqueceu a senha?&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;button type="submit" class="cdw-login__form-button cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--lg" data-cdw-login-submit&gt;Entrar no Sistema&lt;/button&gt;
+      &lt;button type="button" class="cdw-login__form-button cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--lg" data-cdw-login-google&gt;
+        &lt;span class="cdw-login__google-icon"&gt;G&lt;/span&gt; Conta Google
+      &lt;/button&gt;
+    &lt;/form&gt;
+    &lt;div class="cdw-login__row cdw-login__row--center"&gt;
+      &lt;span class="cdw-login__meta-tag"&gt;Não possui conta?&lt;/span&gt;
+      &lt;a class="cdw-login__link" href="#"&gt;Solicitar acesso&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
       </div>
     </div>
   </div>

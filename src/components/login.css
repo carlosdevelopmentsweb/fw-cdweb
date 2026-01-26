@@ -18,7 +18,8 @@
 }
 
 .cdw-login-panel--form {
-  max-width: 480px;
+  flex: 0 0 35%;
+  max-width: 520px;
   width: 100%;
   background: #ffffff;
   border-radius: 20px;
@@ -76,6 +77,23 @@
   padding-right: 110px;
 }
 
+.cdw-login__input-wrap {
+  position: relative;
+}
+
+.cdw-login__input-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+  font-size: 1rem;
+}
+
+.cdw-login__input-wrap .cdw-form-input {
+  padding-left: 50px;
+}
+
 .cdw-login__toggle {
   position: absolute;
   right: 0;
@@ -98,6 +116,15 @@
   font-size: 0.9rem;
 }
 
+.cdw-login__row--center {
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.cdw-login__row--gap {
+  gap: 0.75rem;
+}
+
 .cdw-login__link {
   color: var(--cdw-fw-accent, #0f172a);
   text-decoration: none;
@@ -112,6 +139,10 @@
   font-size: 0.75rem;
   letter-spacing: 0.2em;
   color: #94a3b8;
+}
+
+.cdw-login__checkbox {
+  margin-right: 0.6rem;
 }
 
 .cdw-login__form-button {
@@ -187,12 +218,47 @@
 
 .cdw-login-panel--visual {
   position: relative;
+  flex: 0 0 65%;
   flex-direction: column;
   gap: 1.5rem;
   color: #0f172a;
   padding: clamp(2rem, 3vw, 3.5rem);
   overflow: hidden;
   background: linear-gradient(135deg, color-mix(in srgb, var(--cdw-fw-accent, #4a6fa5) 75%, #dce8ff), color-mix(in srgb, var(--cdw-fw-accent, #4a6fa5) 55%, #bcd4ff));
+}
+
+.cdw-login--enterprise .cdw-login-panel--form {
+  flex: 0 0 42%;
+  max-width: 560px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.16);
+}
+
+.cdw-login--enterprise .cdw-login-panel--visual {
+  flex: 0 0 58%;
+  padding: 0;
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--cdw-fw-accent, #38bdf8) 55%, #eaf6ff) 0%,
+    color-mix(in srgb, var(--cdw-fw-accent, #38bdf8) 45%, #d8f0ff) 100%
+  );
+}
+
+.cdw-login--synapse .cdw-login-panel--form {
+  flex: 0 0 55%;
+  max-width: 640px;
+  background: #ffffff;
+  box-shadow: none;
+  border-radius: 0;
+  align-items: center;
+  padding: clamp(2.5rem, 4vw, 3.5rem);
+}
+
+.cdw-login--synapse .cdw-login-panel--visual {
+  flex: 0 0 45%;
+  padding: 0;
+  background: linear-gradient(135deg, #0b1427 0%, #0f1f35 60%, #0b1529 100%);
+  border-radius: 0;
 }
 
 .cdw-login-panel--visual::before {
@@ -202,6 +268,18 @@
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
   mix-blend-mode: screen;
   pointer-events: none;
+}
+
+.cdw-login--enterprise .cdw-login-panel--visual::before {
+  display: none;
+}
+
+.cdw-login--synapse .cdw-login-panel--visual::before {
+  display: none;
+}
+
+.cdw-login--synapse {
+  min-height: 100vh;
 }
 
 .cdw-login-panel--visual > * {
@@ -253,6 +331,47 @@
   color: rgba(248, 250, 252, 0.85);
 }
 
+.cdw-login__visual-brand {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  justify-content: center;
+  
+}
+
+.cdw-login__visual-logo {
+  width: 112px;
+  height: 112px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #6366f1, #3b82f6);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 24px 48px rgba(59, 130, 246, 0.35);
+}
+
+.cdw-login__visual-logo span {
+  font-size: 2.6rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.cdw-login__visual-name {
+  font-size: 2.4rem;
+  font-weight: 900;
+  letter-spacing: 0.01em;
+}
+
+.cdw-login__visual-tagline {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.72);
+}
+
 /* Visual shapes inspired by “Deepseek” layout, adapted to CDW tokens */
 .cdw-login-visual {
   position: relative;
@@ -264,11 +383,60 @@
   border-radius: 20px;
 }
 
+.cdw-login-visual--night {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--cdw-fw-accent, #38bdf8) 60%, #f2fbff) 0%,
+    color-mix(in srgb, var(--cdw-fw-accent, #38bdf8) 45%, #e4f6ff) 100%
+  );
+  box-shadow: none;
+}
+
+.cdw-login--enterprise .cdw-login-visual {
+  border-radius: 0;
+  min-height: 100%;
+}
+
+.cdw-login-visual--glow {
+  background: linear-gradient(145deg, #0c1424 0%, #0f1e33 60%, #0b1528 100%);
+  border-radius: 0;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cdw-login--synapse .cdw-login-visual {
+  min-height: 100%;
+  border-radius: 0;
+}
+
 .cdw-login-visual__shape {
   position: absolute;
   background: rgba(255, 255, 255, 0.18);
   filter: drop-shadow(0 6px 16px rgba(74, 111, 165, 0.28));
 }
+
+.cdw-login-visual--night .cdw-login-visual__shape {
+  filter: drop-shadow(0 10px 18px rgba(34, 76, 255, 0.16));
+}
+
+.cdw-login-visual__glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(110px);
+  opacity: 0.42;
+}
+
+.cdw-login-visual__glow.is-glow-blue { background: #3b82f6; }
+.cdw-login-visual__glow.is-glow-indigo { background: #6366f1; }
+.cdw-login-visual__glow.is-glow-cyan { background: #06b6d4; }
+
+.cdw-login-visual__shape.is-color-blue { background: #4f8bff; }
+.cdw-login-visual__shape.is-color-teal { background: #0fb5a9; }
+.cdw-login-visual__shape.is-color-amber { background: #f59e0b; }
+.cdw-login-visual__shape.is-color-red { background: #ef4444; }
+.cdw-login-visual__shape.is-color-indigo { background: #6366f1; }
 
 .cdw-login-visual__shape.is-circle {
   border-radius: 50%;
@@ -288,10 +456,18 @@
   border-radius: 999px;
 }
 
+.cdw-login-visual--night .cdw-login-visual__line {
+  border-color: rgba(15, 23, 42, 0.1);
+}
+
 .cdw-login-visual__thin {
   position: absolute;
   height: 2px;
   background: rgba(255, 255, 255, 0.12);
+}
+
+.cdw-login-visual--night .cdw-login-visual__thin {
+  background: rgba(15, 23, 42, 0.1);
 }
 
 .cdw-login-visual__complex {
@@ -300,10 +476,19 @@
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
+.cdw-login-visual--night .cdw-login-visual__complex {
+  background: linear-gradient(45deg, rgba(15, 23, 42, 0.04), rgba(15, 23, 42, 0.12));
+}
+
 .cdw-login-visual__dot {
   position: absolute;
   background: rgba(255, 255, 255, 0.38);
   border-radius: 50%;
+}
+
+.cdw-login-visual--night .cdw-login-visual__dot {
+  background: rgba(15, 23, 42, 0.18);
+  box-shadow: 0 0 10px rgba(15, 23, 42, 0.1);
 }
 
 @keyframes cdw-login-float {
@@ -336,11 +521,13 @@
   }
 
   .cdw-login-panel--visual {
+    flex: 1 1 auto;
     order: 1;
     min-height: 320px;
   }
 
   .cdw-login-panel--form {
+    flex: 1 1 auto;
     order: 0;
     margin: 0 auto;
   }
