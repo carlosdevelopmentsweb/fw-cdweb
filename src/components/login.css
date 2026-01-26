@@ -245,9 +245,9 @@
 }
 
 .cdw-login--synapse .cdw-login-panel--form {
-  flex: 0 0 55%;
+  flex: 0 0 40%;
   max-width: none;
-  width: 55%;
+  width: 40%;
   background: #ffffff;
   box-shadow: none;
   border-radius: 0;
@@ -256,7 +256,7 @@
 }
 
 .cdw-login--synapse .cdw-login-panel--visual {
-  flex: 0 0 45%;
+  flex: 0 0 60%;
   padding: 0;
   background: linear-gradient(135deg, #0b1427 0%, #0f1f35 60%, #0b1529 100%);
   border-radius: 0;
