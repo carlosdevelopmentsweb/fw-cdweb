@@ -11756,12 +11756,206 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
 
   };
 
-  const pageLinks = [
+      sections.login = `
+<section id="login" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+  <div class="cdw-fw-docs-section-head">
+    <h2 class="cdw-fw-docs-section-title">Login / Auth</h2>
+    <p class="cdw-fw-docs-lead">
+      Tela full-screen com painel funcional e visual simplificado, com fundo liso e foco no produto.
+    </p>
+  </div>
+
+  <div class="cdw-fw-docs-toc">
+    <span class="cdw-fw-docs-toc-title">Índice desta página</span>
+    <a href="#login-base">Base</a>
+    <a href="#login-modelos">Modelos</a>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="login-base" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Base</h3>
+    <p class="cdw-fw-docs-subdesc">Painel funcional + visual minimalista com fundo escuro e letras claras.</p>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-login cdw-login--split-clean cdw-fw-accent-carbon">
+          <div class="cdw-login-panel cdw-login-panel--form">
+            <div class="cdw-login__brand">
+              <div class="cdw-login__brand-mark"></div>
+              <div>
+                <strong>CDW-FW</strong>
+                <span>ERP Control Hub</span>
+              </div>
+            </div>
+            <h3 class="cdw-login__title">Acesso seguro</h3>
+            <p class="cdw-login__subtitle">Entrar em sistemas corporativos com confiança.</p>
+            <form class="cdw-login__form cdw-form" data-cdw-login>
+              <div class="cdw-form-group">
+                <label class="cdw-form-label">Email corporativo</label>
+                <input class="cdw-form-input cdw-input-lg" type="email" placeholder="nome@empresa.com" data-cdw-login-input="email" />
+              </div>
+              <div class="cdw-form-group">
+                <label class="cdw-form-label">Senha</label>
+                <div class="cdw-login__field">
+                  <input class="cdw-form-input cdw-input-lg" type="password" data-cdw-login-input="password" placeholder="••••••••" />
+                  <button type="button" class="cdw-login__toggle" data-cdw-login-toggle="password">Mostrar</button>
+                </div>
+              </div>
+              <button type="submit" class="cdw-login__form-button cdw-fw-btn cdw-fw-btn--solid" data-cdw-login-submit>Entrar</button>
+            </form>
+          </div>
+          <div class="cdw-login-panel cdw-login-panel--visual">
+            <div class="cdw-login__visual-block">
+              <h4>Inteligência Operacional</h4>
+              <p>Fundo liso, frases curtas e formas limpas reforçam maturidade.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="login-modelos" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Modelos</h3>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-login cdw-login--split-clean cdw-fw-accent-sky">
+          <div class="cdw-login-panel cdw-login-panel--form">
+            <div class="cdw-login__brand">
+              <div class="cdw-login__brand-mark"></div>
+              <div>
+                <strong>CDW-FW</strong>
+                <span>Project Flow</span>
+              </div>
+            </div>
+            <h1 class="cdw-login__title">Login</h1>
+            <p class="cdw-login__subtitle">Entre no painel de gestão de projetos.</p>
+            <form class="cdw-login__form cdw-form" data-cdw-login>
+              <div class="cdw-form-group">
+                <label class="cdw-form-label">Email</label>
+                <input class="cdw-form-input cdw-input-lg" type="email" placeholder="seu@email.com" data-cdw-login-input="email" />
+              </div>
+              <div class="cdw-form-group">
+                <label class="cdw-form-label">Senha</label>
+                <div class="cdw-login__field">
+                  <input class="cdw-form-input cdw-input-lg" type="password" placeholder="Sua senha" data-cdw-login-input="password" />
+                  <button type="button" class="cdw-login__toggle" data-cdw-login-toggle="password">Mostrar</button>
+                </div>
+              </div>
+              <div class="cdw-login__row">
+                <a class="cdw-login__link" href="#">Esqueci minha senha</a>
+                <span class="cdw-login__meta-tag">Manter conectado</span>
+              </div>
+              <button type="submit" class="cdw-login__form-button cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--lg" data-cdw-login-submit>Entrar</button>
+              <button type="button" class="cdw-login__form-button cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--lg" data-cdw-login-google>
+                <span class="cdw-login__google-icon">G</span> Google
+              </button>
+            </form>
+          </div>
+          <div class="cdw-login-panel cdw-login-panel--visual">
+            <div class="cdw-login-visual">
+              <div class="cdw-login-visual__shape is-organic is-float-a" style="width:250px;height:250px;top:10%;left:10%;"></div>
+              <div class="cdw-login-visual__shape is-circle is-float-b" style="width:180px;height:180px;bottom:15%;right:15%;"></div>
+              <div class="cdw-login-visual__shape is-pill is-float-a" style="width:300px;height:100px;bottom:30%;left:5%;"></div>
+              <div class="cdw-login-visual__shape is-organic is-float-b" style="width:150px;height:150px;top:20%;right:25%;"></div>
+              <div class="cdw-login-visual__line" style="width:320px;height:320px;top:15%;left:15%;"></div>
+              <div class="cdw-login-visual__line" style="width:220px;height:220px;bottom:10%;right:10%;transform:rotate(30deg);"></div>
+              <div class="cdw-login-visual__thin" style="width:400px;top:35%;left:5%;transform:rotate(25deg);"></div>
+              <div class="cdw-login-visual__thin" style="width:350px;bottom:40%;right:5%;transform:rotate(-20deg);"></div>
+              <div class="cdw-login-visual__complex" style="width:160px;height:160px;top:10%;right:10%;"></div>
+              <div class="cdw-login-visual__complex" style="width:120px;height:120px;bottom:20%;left:15%;"></div>
+              <div class="cdw-login-visual__dot" style="width:12px;height:12px;top:25%;left:30%;"></div>
+              <div class="cdw-login-visual__dot" style="width:8px;height:8px;top:40%;right:35%;"></div>
+              <div class="cdw-login-visual__dot" style="width:16px;height:16px;bottom:45%;left:35%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-login cdw-login--split-clean cdw-fw-accent-sky"&gt;
+  &lt;div class="cdw-login-panel cdw-login-panel--form"&gt;
+    &lt;div class="cdw-login__brand"&gt;
+      &lt;div class="cdw-login__brand-mark"&gt;&lt;/div&gt;
+      &lt;div&gt;&lt;strong&gt;CDW-FW&lt;/strong&gt;&lt;span&gt;Project Flow&lt;/span&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;h1 class="cdw-login__title"&gt;Login&lt;/h1&gt;
+    &lt;p class="cdw-login__subtitle"&gt;Entre no painel de gest&atilde;o de projetos.&lt;/p&gt;
+    &lt;form class="cdw-login__form cdw-form" data-cdw-login&gt;
+      &lt;div class="cdw-form-group"&gt;
+        &lt;label class="cdw-form-label"&gt;Email&lt;/label&gt;
+        &lt;input class="cdw-form-input cdw-input-lg" type="email" placeholder="seu@email.com" data-cdw-login-input="email" /&gt;
+      &lt;/div&gt;
+      &lt;div class="cdw-form-group"&gt;
+        &lt;label class="cdw-form-label"&gt;Senha&lt;/label&gt;
+        &lt;div class="cdw-login__field"&gt;
+          &lt;input class="cdw-form-input cdw-input-lg" type="password" placeholder="Sua senha" data-cdw-login-input="password" /&gt;
+          &lt;button type="button" class="cdw-login__toggle" data-cdw-login-toggle="password"&gt;Mostrar&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="cdw-login__row"&gt;
+        &lt;a class="cdw-login__link" href="#"&gt;Esqueci minha senha&lt;/a&gt;
+        &lt;span class="cdw-login__meta-tag"&gt;Manter conectado&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;button type="submit" class="cdw-login__form-button cdw-fw-btn cdw-fw-btn--solid cdw-fw-btn--lg" data-cdw-login-submit&gt;Entrar&lt;/button&gt;
+      &lt;button type="button" class="cdw-login__form-button cdw-fw-btn cdw-fw-btn--outline cdw-fw-btn--lg" data-cdw-login-google&gt;
+        &lt;span class="cdw-login__google-icon"&gt;G&lt;/span&gt; Google
+      &lt;/button&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-login-panel cdw-login-panel--visual"&gt;
+    &lt;div class="cdw-login-visual"&gt;
+      &lt;div class="cdw-login-visual__shape is-organic is-float-a" style="width:250px;height:250px;top:10%;left:10%;"&gt;&lt;/div&gt;
+      &lt;div class="cdw-login-visual__shape is-circle is-float-b" style="width:180px;height:180px;bottom:15%;right:15%;"&gt;&lt;/div&gt;
+      &lt;div class="cdw-login-visual__shape is-pill is-float-a" style="width:300px;height:100px;bottom:30%;left:5%;"&gt;&lt;/div&gt;
+      &lt;div class="cdw-login-visual__shape is-organic is-float-b" style="width:150px;height:150px;top:20%;right:25%;"&gt;&lt;/div&gt;
+      &lt;div class="cdw-login-visual__line" style="width:320px;height:320px;top:15%;left:15%;"&gt;&lt;/div&gt;
+      &lt;div class="cdw-login-visual__line" style="width:220px;height:220px;bottom:10%;right:10%;transform:rotate(30deg);"&gt;&lt;/div&gt;
+      &lt;div class="cdw-login-visual__thin" style="width:400px;top:35%;left:5%;transform:rotate(25deg);"&gt;&lt;/div&gt;
+      &lt;div class="cdw-login-visual__thin" style="width:350px;bottom:40%;right:5%;transform:rotate(-20deg);"&gt;&lt;/div&gt;
+      &lt;div class="cdw-login-visual__complex" style="width:160px;height:160px;top:10%;right:10%;"&gt;&lt;/div&gt;
+      &lt;div class="cdw-login-visual__complex" style="width:120px;height:120px;bottom:20%;left:15%;"&gt;&lt;/div&gt;
+      &lt;div class="cdw-login-visual__dot" style="width:12px;height:12px;top:25%;left:30%;"&gt;&lt;/div&gt;
+      &lt;div class="cdw-login-visual__dot" style="width:8px;height:8px;top:40%;right:35%;"&gt;&lt;/div&gt;
+      &lt;div class="cdw-login-visual__dot" style="width:16px;height:16px;bottom:45%;left:35%;"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-login cdw-login--inverted-focus cdw-fw-accent-indigo">
+          <div class="cdw-login-panel cdw-login-panel--visual">
+            <div class="cdw-login__visual-block">
+              <h4>Inverted Focus</h4>
+              <p>Gradiente mais escuro com texto claro e espaço vazio.</p>
+            </div>
+          </div>
+          <div class="cdw-login-panel cdw-login-panel--form">
+            <h3 class="cdw-login__title">Controles do produto</h3>
+            <form class="cdw-login__form" data-cdw-login>
+              <input class="cdw-form-input" type="email" placeholder="produto@empresa.com" />
+              <input class="cdw-form-input" type="password" placeholder="••••••••" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;
+
+
+
+    const pageLinks = [
     { key: "getting-started", label: "Come&ccedil;ando", href: "./index.html" },
     { key: "layout", label: "Layout", href: "./layout.html" },
     { key: "design", label: "Sistema de design", href: "./design.html" },
     { key: "utilities", label: "Utilit&aacute;rios", href: "./utilities.html" },
     { key: "components", label: "Componentes", href: "./components.html" },
+    { key: "login", label: "Login / Auth", href: "./login.html" },
   ];
 
   const pageSections = {
@@ -11788,6 +11982,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
       "stage",
       "navbars",
     ],
+    login: ["login"],
   };
 
   const pageKey =
@@ -12187,6 +12382,32 @@ function buildNav(root) {
         ],
       },
     ],
+    login: [
+      {
+        title: "LOGIN / AUTH",
+        items: [
+          {
+            title: "Estrutura",
+            target: "#login-estrutura",
+            links: [{ label: "Estrutura base", href: "#login-estrutura" }],
+          },
+          {
+            title: "Modelos",
+            target: "#login-modelos",
+            links: [
+              { label: "Split Clean", href: "#login-modelos" },
+              { label: "Inverted Focus", href: "#login-modelos" },
+              { label: "Frame / Panel", href: "#login-modelos" },
+            ],
+          },
+          {
+            title: "Painel visual",
+            target: "#login-visual",
+            links: [{ label: "Identidade", href: "#login-visual" }],
+          },
+        ],
+      },
+    ],
   };
 
     const pageKey =
@@ -12345,6 +12566,12 @@ function buildNav(root) {
   });
 
   nav.appendChild(navAccordion);
+
+  const loginShortcut = document.createElement("a");
+  loginShortcut.className = "cdw-fw-docs-nav-link";
+  loginShortcut.href = "./login.html";
+  loginShortcut.textContent = "Login / Auth";
+  nav.appendChild(loginShortcut);
 }
 
 function setupNavTargets(root) {
