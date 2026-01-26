@@ -246,7 +246,8 @@
 
 .cdw-login--synapse .cdw-login-panel--form {
   flex: 0 0 55%;
-  max-width: 640px;
+  max-width: none;
+  width: 55%;
   background: #ffffff;
   box-shadow: none;
   border-radius: 0;
@@ -280,6 +281,7 @@
 
 .cdw-login--synapse {
   min-height: 100vh;
+  width: 100%;
 }
 
 .cdw-login-panel--visual > * {
@@ -341,7 +343,8 @@
   align-items: center;
   gap: 0.6rem;
   justify-content: center;
-  
+  width: 100%;
+  height: 100%;
 }
 
 .cdw-login__visual-logo {
