@@ -12161,6 +12161,186 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
 </section>
 `;
 
+      sections.tabs = `
+<section id="tabs" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+  <div class="cdw-fw-docs-section-head">
+    <h2 class="cdw-fw-docs-section-title">Tabs</h2>
+    <p class="cdw-fw-docs-lead">Componente premium de navegação em páginas, painéis e formulários. Mobile-first, acessível e alinhado ao CDW-FW.</p>
+  </div>
+
+  <div class="cdw-fw-docs-toc">
+    <span class="cdw-fw-docs-toc-title">Índice desta página</span>
+    <a href="#tabs-base">Base</a>
+    <a href="#tabs-variacoes">Variações</a>
+    <a href="#tabs-vertical">Vertical</a>
+    <a href="#tabs-api">API JS</a>
+    <a href="#tabs-acessibilidade">Acessibilidade</a>
+    <a href="#tabs-boas-praticas">Boas práticas</a>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="tabs-base" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">HTML base</h3>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-tabs cdw-tabs--line cdw-fw-accent-sky" data-cdw-tabs>
+          <div class="cdw-tabs-nav">
+            <button class="cdw-tabs-tab is-active" data-cdw-tab="overview">Visão geral</button>
+            <button class="cdw-tabs-tab" data-cdw-tab="dados">Dados</button>
+            <button class="cdw-tabs-tab" data-cdw-tab="seguranca">Segurança</button>
+          </div>
+          <div class="cdw-tabs-content">
+            <div class="cdw-tabs-panel is-active" id="overview" data-cdw-tab-panel="overview">
+              Painel de visão geral carregado.
+            </div>
+            <div class="cdw-tabs-panel" id="dados" data-cdw-tab-panel="dados">
+              Dados operacionais e indicadores.
+            </div>
+            <div class="cdw-tabs-panel" id="seguranca" data-cdw-tab-panel="seguranca">
+              Perfis, permissões e MFA.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+        </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-tabs cdw-tabs--line cdw-fw-accent-sky" data-cdw-tabs&gt;
+  &lt;div class="cdw-tabs-nav" role="tablist"&gt;
+    &lt;button class="cdw-tabs-tab is-active" data-cdw-tab="overview"&gt;Visão geral&lt;/button&gt;
+    &lt;button class="cdw-tabs-tab" data-cdw-tab="dados"&gt;Dados&lt;/button&gt;
+    &lt;button class="cdw-tabs-tab" data-cdw-tab="seguranca"&gt;Segurança&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-tabs-content"&gt;
+    &lt;div class="cdw-tabs-panel is-active" id="overview" data-cdw-tab-panel="overview"&gt;Painel de visão geral&lt;/div&gt;
+    &lt;div class="cdw-tabs-panel" id="dados" data-cdw-tab-panel="dados"&gt;Dados operacionais&lt;/div&gt;
+    &lt;div class="cdw-tabs-panel" id="seguranca" data-cdw-tab-panel="seguranca"&gt;Perfis e permissões&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="tabs-variacoes" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Variações</h3>
+    <p class="cdw-fw-docs-subdesc">Line · Pill · Card · Minimal · Icon · Segmented · Bottom.</p>
+    <div class="cdw-fw-docs-grid cdw-fw-docs-grid--two">
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-tabs cdw-tabs--pill cdw-tabs--sm cdw-fw-accent-ocean" data-cdw-tabs>
+          <div class="cdw-tabs-nav">
+            <button class="cdw-tabs-tab is-active" data-cdw-tab="pill-1">Projetos</button>
+            <button class="cdw-tabs-tab" data-cdw-tab="pill-2">Financeiro</button>
+            <button class="cdw-tabs-tab" data-cdw-tab="pill-3">Pessoas</button>
+          </div>
+          <div class="cdw-tabs-content">
+            <div class="cdw-tabs-panel is-active" data-cdw-tab-panel="pill-1">Resumo de projetos.</div>
+            <div class="cdw-tabs-panel" data-cdw-tab-panel="pill-2">KPIs financeiros.</div>
+            <div class="cdw-tabs-panel" data-cdw-tab-panel="pill-3">Time &amp; squads.</div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-tabs cdw-tabs--card cdw-tabs--md cdw-fw-accent-slate" data-cdw-tabs>
+          <div class="cdw-tabs-nav">
+            <button class="cdw-tabs-tab is-active" data-cdw-tab="card-1">Pipeline</button>
+            <button class="cdw-tabs-tab" data-cdw-tab="card-2">Leads</button>
+            <button class="cdw-tabs-tab" data-cdw-tab="card-3">Conversões</button>
+          </div>
+          <div class="cdw-tabs-content">
+            <div class="cdw-tabs-panel is-active" data-cdw-tab-panel="card-1">Pipeline em cards.</div>
+            <div class="cdw-tabs-panel" data-cdw-tab-panel="card-2">Lista de leads.</div>
+            <div class="cdw-tabs-panel" data-cdw-tab-panel="card-3">Taxa de conversão.</div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-tabs cdw-tabs--minimal cdw-tabs--icon cdw-fw-accent-ash" data-cdw-tabs>
+          <div class="cdw-tabs-nav">
+            <button class="cdw-tabs-tab is-active" data-cdw-tab="icon-1"><span class="cdw-tabs-tab__icon">★</span>Favoritos</button>
+            <button class="cdw-tabs-tab" data-cdw-tab="icon-2"><span class="cdw-tabs-tab__icon">☁</span>Cloud</button>
+            <button class="cdw-tabs-tab" data-cdw-tab="icon-3"><span class="cdw-tabs-tab__icon">⚙</span>Setup</button>
+          </div>
+          <div class="cdw-tabs-content">
+            <div class="cdw-tabs-panel is-active" data-cdw-tab-panel="icon-1">Itens marcados.</div>
+            <div class="cdw-tabs-panel" data-cdw-tab-panel="icon-2">Serviços em nuvem.</div>
+            <div class="cdw-tabs-panel" data-cdw-tab-panel="icon-3">Configurações.</div>
+          </div>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-tabs cdw-tabs--segmented cdw-tabs--lg cdw-fw-accent-ink cdw-tabs--bottom" data-cdw-tabs>
+          <div class="cdw-tabs-nav">
+            <button class="cdw-tabs-tab is-active" data-cdw-tab="seg-1">Resumo</button>
+            <button class="cdw-tabs-tab" data-cdw-tab="seg-2">Detalhes</button>
+            <button class="cdw-tabs-tab" data-cdw-tab="seg-3">Auditoria</button>
+          </div>
+          <div class="cdw-tabs-content">
+            <div class="cdw-tabs-panel is-active" data-cdw-tab-panel="seg-1">Resumo do cliente.</div>
+            <div class="cdw-tabs-panel" data-cdw-tab-panel="seg-2">Dados completos.</div>
+            <div class="cdw-tabs-panel" data-cdw-tab-panel="seg-3">Logs e trilhas.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="tabs-vertical" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Vertical / Lateral</h3>
+    <div class="cdw-fw-docs-preview">
+      <div class="cdw-tabs cdw-tabs--vertical cdw-tabs--card cdw-fw-accent-sky" data-cdw-tabs>
+        <div class="cdw-tabs-nav">
+          <button class="cdw-tabs-tab is-active" data-cdw-tab="v-1">Perfil</button>
+          <button class="cdw-tabs-tab" data-cdw-tab="v-2">Notificações</button>
+          <button class="cdw-tabs-tab" data-cdw-tab="v-3">Segurança</button>
+        </div>
+        <div class="cdw-tabs-content">
+          <div class="cdw-tabs-panel is-active" data-cdw-tab-panel="v-1">Dados de perfil.</div>
+          <div class="cdw-tabs-panel" data-cdw-tab-panel="v-2">Preferências de alerta.</div>
+          <div class="cdw-tabs-panel" data-cdw-tab-panel="v-3">MFA, senhas e SSO.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="tabs-api" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">API JS</h3>
+    <ul class="cdw-fw-docs-list">
+      <li><code>CDW.Tabs.init(root?)</code> — reescaneia e inicializa tabs no escopo.</li>
+      <li><code>CDW.Tabs.open(tabId)</code> — abre a aba pelo id (tab ou painel).</li>
+      <li><code>CDW.Tabs.destroy(root?)</code> — remove listeners e ARIA.</li>
+    </ul>
+    <p class="cdw-fw-docs-subdesc">Evento: <code>cdw:tab:change</code> com <code>{ id, index, tab, panel }</code>.</p>
+    <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>const tabs = document.querySelector("[data-cdw-tabs]");
+tabs.addEventListener("cdw:tab:change", (e) =&gt; {
+  console.log("tab mudou:", e.detail.id);
+});
+
+CDW.Tabs.open("seguranca");</code></pre>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="tabs-acessibilidade" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Acessibilidade</h3>
+    <ul class="cdw-fw-docs-list">
+      <li><code>role="tablist"</code>, <code>role="tab"</code>, <code>role="tabpanel"</code>.</li>
+      <li>Navegação por teclado: ← → (ou ↑ ↓ em vertical), Home/End, Enter/Espaço para ativar.</li>
+      <li>Foco visível e aria-selected/aria-controls sempre sincronizados.</li>
+      <li>Deep-link: hash <code>#id</code> ativa o painel correspondente.</li>
+    </ul>
+  </div>
+
+  <div class="cdw-fw-docs-subsection" id="tabs-boas-praticas" data-cdw-fw-docs-section>
+    <h3 class="cdw-fw-docs-subtitle">Boas práticas</h3>
+    <ul class="cdw-fw-docs-list">
+      <li>Use títulos curtos (1–2 palavras) e evite frases longas nas labels.</li>
+      <li>Para lazy load, marque o painel com <code>data-loading="true"</code> até receber conteúdo.</li>
+      <li>Evite empilhar tabs e acordeões juntos; mantenha hierarquias simples.</li>
+      <li>Em mobile, priorize poucas abas (3–4) e textos curtos.</li>
+    </ul>
+  </div>
+</section>
+`;
+
 
 
     const pageLinks = [
@@ -12170,6 +12350,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     { key: "utilities", label: "Utilit&aacute;rios", href: "./utilities.html" },
     { key: "components", label: "Componentes", href: "./components.html" },
     { key: "login", label: "Login / Auth", href: "./login.html" },
+    { key: "tabs", label: "Tabs", href: "./tabs.html" },
   ];
 
   const pageSections = {
@@ -12197,6 +12378,7 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
       "navbars",
     ],
     login: ["login"],
+    tabs: ["tabs"],
   };
 
   const pageKey =
