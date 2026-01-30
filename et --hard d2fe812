@@ -1,0 +1,63 @@
+[33md2fe812[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;33mtag: [m[1;33mv0.1.53[m[33m, [m[1;31morigin/main[m[33m)[m Feat: Novo recurso: Tabs
+[33mcfa4f10[m[33m ([m[1;33mtag: [m[1;33mv0.1.52[m[33m)[m Correção no posicionamento dos elementos
+[33m3ba3561[m[33m ([m[1;33mtag: [m[1;33mv0.1.51[m[33m)[m alinhamento dos inputs modelo 3 de login
+[33m6645546[m[33m ([m[1;33mtag: [m[1;33mv0.1.50[m[33m)[m ajuste modelo 3 de login
+[33m08776a2[m[33m ([m[1;33mtag: [m[1;33mv0.1.49[m[33m)[m Inclusão e ajuste do modelo 3 de login
+[33me0d48f6[m[33m ([m[1;33mtag: [m[1;33mv0.1.48[m[33m)[m Criação de novos modelos
+[33m60657e9[m[33m ([m[1;33mtag: [m[1;33mv0.1.47[m[33m)[m Feat: Inclusão de novo recurso: Tela de login - modelo 1
+[33m38fcfb5[m[33m ([m[1;33mtag: [m[1;33mv0.1.46[m[33m)[m Ajuste documentação
+[33ma1867c0[m Limpando sugeiras do projeto
+[33mf2bfcc9[m[33m ([m[1;33mtag: [m[1;33mv0.1.45[m[33m)[m Correção no fab de whats
+[33m61ab400[m[33m ([m[1;33mtag: [m[1;33mv0.1.44[m[33m)[m Ajustando icone do fab whatsapp
+[33m7589384[m[33m ([m[1;33mtag: [m[1;33mv0.1.43[m[33m)[m Novo Ajuste de posicionamento fab
+[33m9e795b9[m[33m ([m[1;33mtag: [m[1;33mv0.1.42[m[33m)[m AJuste de posicionamento FAB
+[33m8f4594b[m[33m ([m[1;33mtag: [m[1;33mv0.1.41[m[33m)[m Ajustes de posicionamento fab
+[33m967bfc1[m[33m ([m[1;33mtag: [m[1;33mv0.1.40[m[33m, [m[1;33mtag: [m[1;33mpush[m[33m)[m Fix: ajustes no posicionamento dos btn FAB
+[33m85153dc[m[33m ([m[1;33mtag: [m[1;33mv0.1.39[m[33m)[m Fix: ajustes no posicionamento dos btn FAB
+[33me55e3dc[m[33m ([m[1;33mtag: [m[1;33mv0.1.38[m[33m)[m Fix: ajustes no posicionamento dos btn FAB
+[33m2272307[m[33m ([m[1;33mtag: [m[1;33mv0.1.37[m[33m)[m Feat: Inclusão de novo recurso: FAB
+[33m0601b93[m[33m ([m[1;33mtag: [m[1;33mv0.1.36[m[33m)[m Fix: ajustes na responsividade dos steps
+[33mfbc8ee7[m[33m ([m[1;33mtag: [m[1;33mv0.1.35[m[33m)[m Feat: Inclusão de novo recurso: Steps
+[33m9a06d38[m[33m ([m[1;33mtag: [m[1;33mv0.1.34[m[33m)[m Feat: Inclusão de novo recurso: Forms
+[33me2d5d1f[m Organização doc
+[33m7185eaa[m[33m ([m[1;33mtag: [m[1;33mv0.1.33[m[33m)[m Feat: Inclusão de novo recurso: Imagens
+[33m60a2b54[m[33m ([m[1;33mtag: [m[1;33mv0.1.32[m[33m)[m Ajustes Tabelas
+[33m5f44e66[m[33m ([m[1;33mtag: [m[1;33mv0.1.31[m[33m)[m Ajustes Tabelas
+[33m438400c[m[33m ([m[1;33mtag: [m[1;33mv0.1.30[m[33m)[m Feat: Inclusão do novo recurso: Tabelas
+[33ma972e88[m[33m ([m[1;33mtag: [m[1;33mv0.1.29[m[33m)[m Ajustes visuais Hero
+[33m98c3c05[m[33m ([m[1;33mtag: [m[1;33mv0.1.28[m[33m)[m Ajustes visuais Hero
+[33m2cce64d[m[33m ([m[1;33mtag: [m[1;33mv0.1.27[m[33m)[m Feat: Inclusão do novo recurso: Hero
+[33m4cdc016[m[33m ([m[1;33mtag: [m[1;33mv0.1.26[m[33m)[m Feat: Inclusão do novo recurso: Panel
+[33m45091d7[m[33m ([m[1;33mtag: [m[1;33mv0.1.25[m[33m)[m Ajustes e padronização na doc
+[33ma701bb5[m[33m ([m[1;33mtag: [m[1;33mv0.1.24[m[33m)[m Fix: Ajustes orientação Tooltips
+[33m2c351f8[m[33m ([m[1;33mtag: [m[1;33mv0.1.23[m[33m)[m Fix: Ajustes orientação Tooltips
+[33md024107[m[33m ([m[1;33mtag: [m[1;33mv0.1.22[m[33m)[m Feat: Inclusão Tooltips
+[33m79e106f[m[33m ([m[1;33mtag: [m[1;33mv0.1.21[m[33m)[m Feat: Inclusão de mais opções de botões
+[33mc946040[m[33m ([m[1;33mtag: [m[1;33mv0.1.20[m[33m)[m Fix: Ajustes e inclusão de imagens no nos stages
+[33m8b3c216[m[33m ([m[1;33mtag: [m[1;33mv0.1.19[m[33m)[m Feat: Inclusão modals
+[33me5d8513[m[33m ([m[1;33mtag: [m[1;33mv0.1.18[m[33m)[m Feat: Inclusão gallery
+[33m33fa357[m[33m ([m[1;33mtag: [m[1;33mv0.1.17[m[33m)[m Fix: AJuste  Navs
+[33md357d43[m Fix: AJuste  Navs
+[33m21eb138[m[33m ([m[1;33mtag: [m[1;33mv0.1.16[m[33m)[m Fix: AJuste  Navs
+[33m9845903[m[33m ([m[1;33mtag: [m[1;33mv0.1.15[m[33m)[m Fix: AJuste  Navs
+[33m2afa8bf[m[33m ([m[1;33mtag: [m[1;33mv0.1.14[m[33m)[m Feat: Inclusão de Navs
+[33m3112caa[m[33m ([m[1;33mtag: [m[1;33mv0.1.13[m[33m)[m Inclusao novo recurso: Stage (slides/Carrossel)
+[33mef6ed3e[m[33m ([m[1;33mtag: [m[1;33mv0.1.12[m[33m)[m Ajustes cores badges
+[33m3b2a16c[m[33m ([m[1;33mtag: [m[1;33mv0.1.11[m[33m)[m Ajustes caracteres
+[33m9c0d74b[m[33m ([m[1;33mtag: [m[1;33mv0.1.10[m[33m)[m Ajustes das cores dos cards
+[33m3a89dbd[m Ajustes das cores dos cards
+[33mb33aa98[m Ajustes exemplo de uso em cards
+[33m05a52d9[m[33m ([m[1;33mtag: [m[1;33mv0.1.9[m[33m)[m Ajustes exemplo de uso em cards
+[33ma667a27[m[33m ([m[1;33mtag: [m[1;33mv0.1.8[m[33m)[m Inclusão cores monocromaticas
+[33m67f3d7d[m[33m ([m[1;33mtag: [m[1;33mv0.1.7[m[33m)[m Feat: Inclusão de badges
+[33m9ac200d[m Upgrade front doc
+[33m30c2094[m[33m ([m[1;33mtag: [m[1;33mv0.1.6[m[33m)[m fix: ajustes auto init js
+[33maea6652[m[33m ([m[1;33mtag: [m[1;33mv0.1.5[m[33m)[m feat: Correção de renderização alerts
+[33m884a733[m feat: Inclusão de alerts
+[33m0d5d13a[m Ajuste icones accordions
+[33m410e12d[m fix(docs): corrige erro de JS e destrava accordion
+[33m7e0a13d[m[33m ([m[1;33mtag: [m[1;33m0.1.3[m[33m)[m build: gera dist para CDN
+[33m231e724[m[33m ([m[1;33mtag: [m[1;33mv0.1.1[m[33m, [m[1;33mtag: [m[1;33mv0.1.0[m[33m)[m Merge branch 'main' of https://github.com/carlosdevelopmentsweb/fw-cdweb
+[33m784d266[m chore: estrutura inicial do cdw-fw
+[33m880b81b[m Update README.md
+[33m32ad413[m Initial commit

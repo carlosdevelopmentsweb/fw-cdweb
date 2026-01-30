@@ -119,72 +119,6 @@
   flex-direction: column;
   gap: 12px;
 }
-
-.cdw-fw-docs-nav-accordion {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.cdw-fw-docs-nav-accordion .cdw-accordion-item {
-  border: 1px solid var(--cdw-docs-menu-border);
-  border-radius: 16px;
-  overflow: hidden;
-  background: var(--cdw-docs-menu-panel);
-}
-
-.cdw-fw-docs-nav-group-trigger {
-  width: 100%;
-  padding: 12px 14px;
-  background: transparent;
-  color: var(--cdw-docs-menu-text);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: none;
-  gap: 10px;
-  cursor: pointer;
-}
-
-.cdw-fw-docs-nav-group-title {
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 1.6px;
-  font-weight: 600;
-  color: var(--cdw-docs-menu-text);
-}
-
-.cdw-fw-docs-nav-sub {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.cdw-fw-docs-nav-sub .cdw-accordion-item {
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 14px;
-  background: var(--cdw-docs-menu-panel-2);
-}
-
-.cdw-fw-docs-nav-item-trigger {
-  width: 100%;
-  padding: 10px 12px;
-  background: transparent;
-  color: var(--cdw-docs-menu-text);
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 13px;
-  gap: 10px;
-  cursor: pointer;
-}
-
-.cdw-fw-docs-nav-item-title {
-  color: var(--cdw-docs-menu-text);
-  font-weight: 500;
-}
-
 .cdw-fw-docs-nav-links {
   display: flex;
   flex-direction: column;
@@ -192,6 +126,29 @@
   padding: 6px 6px 8px;
   position: relative;
   z-index: 1;
+}
+
+.cdw-fw-docs-nav-group {
+  border: 1px solid var(--cdw-docs-menu-border);
+  border-radius: 16px;
+  padding: 12px 14px;
+  background: var(--cdw-docs-menu-panel);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cdw-fw-docs-nav-group-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  font-weight: 600;
+  color: var(--cdw-docs-menu-text);
+}
+
+.cdw-fw-docs-nav-group .cdw-fw-docs-nav-links {
+  padding: 0;
+  gap: 8px;
 }
 
 .cdw-fw-docs-nav-link {

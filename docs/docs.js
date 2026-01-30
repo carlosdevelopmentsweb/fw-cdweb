@@ -2847,7 +2847,144 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
 </section>
 
 
-`,
+  `,
+  fonts: `
+  <section id="fontes" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
+    <div class="cdw-fw-docs-section-head">
+      <h2 class="cdw-fw-docs-section-title">Fontes &amp; Tipografia</h2>
+      <p class="cdw-fw-docs-lead">
+        As famílias tipográficas do CDW-FW definem o tom institucional e o ritmo das páginas.
+      </p>
+    </div>
+
+    <div class="cdw-fw-docs-subsection" id="fontes-familias" data-cdw-fw-docs-section>
+      <h3 class="cdw-fw-docs-subtitle">Famílias</h3>
+      <p class="cdw-fw-docs-subdesc">
+        Use cdw-fw-font-display para títulos, cdw-fw-font-base para corpo corrido, cdw-fw-font-soft para texto editorial e cdw-fw-font-mono para dados e códigos.
+      </p>
+      <div class="cdw-fw-docs-classlist">
+        <span>cdw-fw-font-display</span>
+        <span>cdw-fw-font-base</span>
+        <span>cdw-fw-font-soft</span>
+        <span>cdw-fw-font-mono</span>
+      </div>
+      <div class="cdw-fw-docs-example">
+        <div class="cdw-fw-docs-example-head">
+          <div class="cdw-fw-docs-example-title">Famílias em ação</div>
+          <div class="cdw-fw-docs-badge">Tipografia</div>
+        </div>
+        <div class="cdw-fw-docs-preview">
+          <div class="cdw-fw-text-xl cdw-fw-font-display">Portal CDWeb</div>
+          <div class="cdw-fw-text-base cdw-fw-font-base">Texto base para leitura do dia a dia.</div>
+          <div class="cdw-fw-text-sm cdw-fw-font-soft">Leitura institucional com tom editorial.</div>
+          <div class="cdw-fw-text-sm cdw-fw-font-mono">REF-8392-A / ID 0041</div>
+        </div>
+        <div class="cdw-fw-docs-codeblock">
+          <div class="cdw-fw-docs-code-head">
+            <div class="cdw-fw-docs-code-title">HTML</div>
+            <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+          </div>
+          <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-font-display"&gt;Portal CDWeb&lt;/div&gt;
+&lt;div class="cdw-fw-font-base"&gt;Texto base para leitura&lt;/div&gt;
+&lt;div class="cdw-fw-font-soft"&gt;Leitura institucional&lt;/div&gt;
+&lt;div class="cdw-fw-font-mono"&gt;REF-8392-A&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-subsection" id="fontes-tamanhos" data-cdw-fw-docs-section>
+      <h3 class="cdw-fw-docs-subtitle">Tamanhos</h3>
+      <p class="cdw-fw-docs-subdesc">
+        A escala cdw-fw-text-* garante consistência e legibilidade em todos os breakpoints.
+      </p>
+      <div class="cdw-fw-docs-classlist">
+        <span>cdw-fw-text-xs</span>
+        <span>cdw-fw-text-sm</span>
+        <span>cdw-fw-text-base</span>
+        <span>cdw-fw-text-lg</span>
+        <span>cdw-fw-text-xl</span>
+        <span>cdw-fw-text-2xl</span>
+      </div>
+      <div class="cdw-fw-docs-example">
+        <div class="cdw-fw-docs-example-head">
+          <div class="cdw-fw-docs-example-title">Escala de tamanhos</div>
+          <div class="cdw-fw-docs-badge">Tipografia</div>
+        </div>
+        <div class="cdw-fw-docs-preview">
+          <div class="cdw-fw-flex cdw-fw-flex-col cdw-fw-gap-2">
+            <div class="cdw-fw-text-xs">Texto xs para notas</div>
+            <div class="cdw-fw-text-sm">Texto sm para labels</div>
+            <div class="cdw-fw-text-base">Texto base para parágrafos</div>
+            <div class="cdw-fw-text-lg">Texto lg para destaque leve</div>
+            <div class="cdw-fw-text-xl">Texto xl para subtítulos</div>
+            <div class="cdw-fw-text-2xl">Texto 2xl para títulos</div>
+          </div>
+        </div>
+        <div class="cdw-fw-docs-codeblock">
+          <div class="cdw-fw-docs-code-head">
+            <div class="cdw-fw-docs-code-title">HTML</div>
+            <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+          </div>
+          <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-text-xs"&gt;Texto xs&lt;/div&gt;
+&lt;div class="cdw-fw-text-sm"&gt;Texto sm&lt;/div&gt;
+&lt;div class="cdw-fw-text-base"&gt;Texto base&lt;/div&gt;
+&lt;div class="cdw-fw-text-lg"&gt;Texto lg&lt;/div&gt;
+&lt;div class="cdw-fw-text-xl"&gt;Texto xl&lt;/div&gt;
+&lt;div class="cdw-fw-text-2xl"&gt;Texto 2xl&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="cdw-fw-docs-subsection" id="fontes-pesos" data-cdw-fw-docs-section>
+      <h3 class="cdw-fw-docs-subtitle">Peso &amp; estilo</h3>
+      <p class="cdw-fw-docs-subdesc">
+        Combine peso, transformação e espaçamento de letras para comunicados precisos.
+      </p>
+      <div class="cdw-fw-docs-classlist">
+        <span>cdw-fw-text-light</span>
+        <span>cdw-fw-text-regular</span>
+        <span>cdw-fw-text-medium</span>
+        <span>cdw-fw-text-semibold</span>
+        <span>cdw-fw-text-bold</span>
+        <span>cdw-fw-text-italic</span>
+        <span>cdw-fw-text-uppercase</span>
+        <span>cdw-fw-text-lowercase</span>
+        <span>cdw-fw-text-capitalize</span>
+      </div>
+      <div class="cdw-fw-docs-example">
+        <div class="cdw-fw-docs-example-head">
+          <div class="cdw-fw-docs-example-title">Peso e transformações</div>
+          <div class="cdw-fw-docs-badge">Tipografia</div>
+        </div>
+        <div class="cdw-fw-docs-preview">
+          <div class="cdw-fw-flex cdw-fw-gap-2 cdw-fw-flex-wrap">
+            <div class="cdw-fw-text-light">Light</div>
+            <div class="cdw-fw-text-semibold">Semibold</div>
+            <div class="cdw-fw-text-bold">Bold</div>
+            <div class="cdw-fw-text-italic">Itálico</div>
+            <div class="cdw-fw-text-uppercase">UPPERCASE</div>
+            <div class="cdw-fw-text-lowercase">lowercase</div>
+            <div class="cdw-fw-text-capitalize">Texto Capitalizado</div>
+          </div>
+        </div>
+        <div class="cdw-fw-docs-codeblock">
+          <div class="cdw-fw-docs-code-head">
+            <div class="cdw-fw-docs-code-title">HTML</div>
+            <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+          </div>
+          <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-fw-text-light"&gt;Light&lt;/div&gt;
+&lt;div class="cdw-fw-text-semibold"&gt;Semibold&lt;/div&gt;
+&lt;div class="cdw-fw-text-bold"&gt;Bold&lt;/div&gt;
+&lt;div class="cdw-fw-text-italic"&gt;Itálico&lt;/div&gt;
+&lt;div class="cdw-fw-text-uppercase"&gt;UPPERCASE&lt;/div&gt;
+&lt;div class="cdw-fw-text-capitalize"&gt;Texto Capitalizado&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  `,
   alert: `<section id="alertas" class="cdw-fw-docs-section" data-cdw-fw-docs-section>
   <div class="cdw-fw-docs-section-head">
     <h2 class="cdw-fw-docs-section-title">Alert</h2>
@@ -12226,60 +12363,140 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
     <h3 class="cdw-fw-docs-subtitle">Variações</h3>
     <p class="cdw-fw-docs-subdesc">Line · Pill · Card · Minimal · Icon · Segmented · Bottom.</p>
     <div class="cdw-fw-docs-grid cdw-fw-docs-grid--two">
-      <div class="cdw-fw-docs-preview">
-        <div class="cdw-tabs cdw-tabs--pill cdw-tabs--sm cdw-fw-accent-ocean" data-cdw-tabs>
-          <div class="cdw-tabs-nav">
-            <button class="cdw-tabs-tab is-active" data-cdw-tab="pill-1">Projetos</button>
-            <button class="cdw-tabs-tab" data-cdw-tab="pill-2">Financeiro</button>
-            <button class="cdw-tabs-tab" data-cdw-tab="pill-3">Pessoas</button>
-          </div>
-          <div class="cdw-tabs-content">
-            <div class="cdw-tabs-panel is-active" data-cdw-tab-panel="pill-1">Resumo de projetos.</div>
-            <div class="cdw-tabs-panel" data-cdw-tab-panel="pill-2">KPIs financeiros.</div>
-            <div class="cdw-tabs-panel" data-cdw-tab-panel="pill-3">Time &amp; squads.</div>
-          </div>
-        </div>
-      </div>
-      <div class="cdw-fw-docs-preview">
-        <div class="cdw-tabs cdw-tabs--card cdw-tabs--md cdw-fw-accent-slate" data-cdw-tabs>
-          <div class="cdw-tabs-nav">
-            <button class="cdw-tabs-tab is-active" data-cdw-tab="card-1">Pipeline</button>
-            <button class="cdw-tabs-tab" data-cdw-tab="card-2">Leads</button>
-            <button class="cdw-tabs-tab" data-cdw-tab="card-3">Conversões</button>
-          </div>
-          <div class="cdw-tabs-content">
-            <div class="cdw-tabs-panel is-active" data-cdw-tab-panel="card-1">Pipeline em cards.</div>
-            <div class="cdw-tabs-panel" data-cdw-tab-panel="card-2">Lista de leads.</div>
-            <div class="cdw-tabs-panel" data-cdw-tab-panel="card-3">Taxa de conversão.</div>
+      <div class="cdw-fw-docs-example">
+        <div class="cdw-fw-docs-preview">
+          <div class="cdw-tabs cdw-tabs--pill cdw-tabs--sm cdw-fw-accent-ocean" data-cdw-tabs>
+            <div class="cdw-tabs-nav">
+              <button class="cdw-tabs-tab is-active" data-cdw-tab="pill-1">Projetos</button>
+              <button class="cdw-tabs-tab" data-cdw-tab="pill-2">Financeiro</button>
+              <button class="cdw-tabs-tab" data-cdw-tab="pill-3">Pessoas</button>
+            </div>
+            <div class="cdw-tabs-content">
+              <div class="cdw-tabs-panel is-active" data-cdw-tab-panel="pill-1">Resumo de projetos.</div>
+              <div class="cdw-tabs-panel" data-cdw-tab-panel="pill-2">KPIs financeiros.</div>
+              <div class="cdw-tabs-panel" data-cdw-tab-panel="pill-3">Time &amp; squads.</div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="cdw-fw-docs-preview">
-        <div class="cdw-tabs cdw-tabs--minimal cdw-tabs--icon cdw-fw-accent-ash" data-cdw-tabs>
-          <div class="cdw-tabs-nav">
-            <button class="cdw-tabs-tab is-active" data-cdw-tab="icon-1"><span class="cdw-tabs-tab__icon">★</span>Favoritos</button>
-            <button class="cdw-tabs-tab" data-cdw-tab="icon-2"><span class="cdw-tabs-tab__icon">☁</span>Cloud</button>
-            <button class="cdw-tabs-tab" data-cdw-tab="icon-3"><span class="cdw-tabs-tab__icon">⚙</span>Setup</button>
+        <div class="cdw-fw-docs-codeblock">
+          <div class="cdw-fw-docs-code-head">
+            <div class="cdw-fw-docs-code-title">HTML · Pill</div>
+            <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
           </div>
-          <div class="cdw-tabs-content">
-            <div class="cdw-tabs-panel is-active" data-cdw-tab-panel="icon-1">Itens marcados.</div>
-            <div class="cdw-tabs-panel" data-cdw-tab-panel="icon-2">Serviços em nuvem.</div>
-            <div class="cdw-tabs-panel" data-cdw-tab-panel="icon-3">Configurações.</div>
-          </div>
+          <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-tabs cdw-tabs--pill cdw-tabs--sm cdw-fw-accent-ocean" data-cdw-tabs&gt;
+  &lt;div class="cdw-tabs-nav"&gt;
+    &lt;button class="cdw-tabs-tab is-active" data-cdw-tab="pill-1"&gt;Projetos&lt;/button&gt;
+    &lt;button class="cdw-tabs-tab" data-cdw-tab="pill-2"&gt;Financeiro&lt;/button&gt;
+    &lt;button class="cdw-tabs-tab" data-cdw-tab="pill-3"&gt;Pessoas&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-tabs-content"&gt;
+    &lt;div class="cdw-tabs-panel is-active" data-cdw-tab-panel="pill-1"&gt;Resumo de projetos.&lt;/div&gt;
+    &lt;div class="cdw-tabs-panel" data-cdw-tab-panel="pill-2"&gt;KPIs financeiros.&lt;/div&gt;
+    &lt;div class="cdw-tabs-panel" data-cdw-tab-panel="pill-3"&gt;Time &amp; squads.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
         </div>
       </div>
-      <div class="cdw-fw-docs-preview">
-        <div class="cdw-tabs cdw-tabs--segmented cdw-tabs--lg cdw-fw-accent-ink cdw-tabs--bottom" data-cdw-tabs>
-          <div class="cdw-tabs-nav">
-            <button class="cdw-tabs-tab is-active" data-cdw-tab="seg-1">Resumo</button>
-            <button class="cdw-tabs-tab" data-cdw-tab="seg-2">Detalhes</button>
-            <button class="cdw-tabs-tab" data-cdw-tab="seg-3">Auditoria</button>
+      <div class="cdw-fw-docs-example">
+        <div class="cdw-fw-docs-preview">
+          <div class="cdw-tabs cdw-tabs--card cdw-tabs--md cdw-fw-accent-slate" data-cdw-tabs>
+            <div class="cdw-tabs-nav">
+              <button class="cdw-tabs-tab is-active" data-cdw-tab="card-1">Pipeline</button>
+              <button class="cdw-tabs-tab" data-cdw-tab="card-2">Leads</button>
+              <button class="cdw-tabs-tab" data-cdw-tab="card-3">Conversões</button>
+            </div>
+            <div class="cdw-tabs-content">
+              <div class="cdw-tabs-panel is-active" data-cdw-tab-panel="card-1">Pipeline em cards.</div>
+              <div class="cdw-tabs-panel" data-cdw-tab-panel="card-2">Lista de leads.</div>
+              <div class="cdw-tabs-panel" data-cdw-tab-panel="card-3">Taxa de conversão.</div>
+            </div>
           </div>
-          <div class="cdw-tabs-content">
-            <div class="cdw-tabs-panel is-active" data-cdw-tab-panel="seg-1">Resumo do cliente.</div>
-            <div class="cdw-tabs-panel" data-cdw-tab-panel="seg-2">Dados completos.</div>
-            <div class="cdw-tabs-panel" data-cdw-tab-panel="seg-3">Logs e trilhas.</div>
+        </div>
+        <div class="cdw-fw-docs-codeblock">
+          <div class="cdw-fw-docs-code-head">
+            <div class="cdw-fw-docs-code-title">HTML · Cards</div>
+            <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
           </div>
+          <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-tabs cdw-tabs--card cdw-tabs--md cdw-fw-accent-slate" data-cdw-tabs&gt;
+  &lt;div class="cdw-tabs-nav"&gt;
+    &lt;button class="cdw-tabs-tab is-active" data-cdw-tab="card-1"&gt;Pipeline&lt;/button&gt;
+    &lt;button class="cdw-tabs-tab" data-cdw-tab="card-2"&gt;Leads&lt;/button&gt;
+    &lt;button class="cdw-tabs-tab" data-cdw-tab="card-3"&gt;Conversões&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-tabs-content"&gt;
+    &lt;div class="cdw-tabs-panel is-active" data-cdw-tab-panel="card-1"&gt;Pipeline em cards.&lt;/div&gt;
+    &lt;div class="cdw-tabs-panel" data-cdw-tab-panel="card-2"&gt;Lista de leads.&lt;/div&gt;
+    &lt;div class="cdw-tabs-panel" data-cdw-tab-panel="card-3"&gt;Taxa de conversão.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-example">
+        <div class="cdw-fw-docs-preview">
+          <div class="cdw-tabs cdw-tabs--minimal cdw-tabs--icon cdw-fw-accent-ash" data-cdw-tabs>
+            <div class="cdw-tabs-nav">
+              <button class="cdw-tabs-tab is-active" data-cdw-tab="icon-1"><span class="cdw-tabs-tab__icon">★</span>Favoritos</button>
+              <button class="cdw-tabs-tab" data-cdw-tab="icon-2"><span class="cdw-tabs-tab__icon">☁</span>Cloud</button>
+              <button class="cdw-tabs-tab" data-cdw-tab="icon-3"><span class="cdw-tabs-tab__icon">⚙</span>Setup</button>
+            </div>
+            <div class="cdw-tabs-content">
+              <div class="cdw-tabs-panel is-active" data-cdw-tab-panel="icon-1">Itens marcados.</div>
+              <div class="cdw-tabs-panel" data-cdw-tab-panel="icon-2">Serviços em nuvem.</div>
+              <div class="cdw-tabs-panel" data-cdw-tab-panel="icon-3">Configurações.</div>
+            </div>
+          </div>
+        </div>
+        <div class="cdw-fw-docs-codeblock">
+          <div class="cdw-fw-docs-code-head">
+            <div class="cdw-fw-docs-code-title">HTML · Minimal / Icon</div>
+            <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+          </div>
+          <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-tabs cdw-tabs--minimal cdw-tabs--icon cdw-fw-accent-ash" data-cdw-tabs&gt;
+  &lt;div class="cdw-tabs-nav"&gt;
+    &lt;button class="cdw-tabs-tab is-active" data-cdw-tab="icon-1"&gt;&lt;span class="cdw-tabs-tab__icon"&gt;★&lt;/span&gt;Favoritos&lt;/button&gt;
+    &lt;button class="cdw-tabs-tab" data-cdw-tab="icon-2"&gt;&lt;span class="cdw-tabs-tab__icon"&gt;☁&lt;/span&gt;Cloud&lt;/button&gt;
+    &lt;button class="cdw-tabs-tab" data-cdw-tab="icon-3"&gt;&lt;span class="cdw-tabs-tab__icon"&gt;⚙&lt;/span&gt;Setup&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-tabs-content"&gt;
+    &lt;div class="cdw-tabs-panel is-active" data-cdw-tab-panel="icon-1"&gt;Itens marcados.&lt;/div&gt;
+    &lt;div class="cdw-tabs-panel" data-cdw-tab-panel="icon-2"&gt;Serviços em nuvem.&lt;/div&gt;
+    &lt;div class="cdw-tabs-panel" data-cdw-tab-panel="icon-3"&gt;Configurações.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+      <div class="cdw-fw-docs-example">
+        <div class="cdw-fw-docs-preview">
+          <div class="cdw-tabs cdw-tabs--segmented cdw-tabs--lg cdw-fw-accent-ink cdw-tabs--bottom" data-cdw-tabs>
+            <div class="cdw-tabs-nav">
+              <button class="cdw-tabs-tab is-active" data-cdw-tab="seg-1">Resumo</button>
+              <button class="cdw-tabs-tab" data-cdw-tab="seg-2">Detalhes</button>
+              <button class="cdw-tabs-tab" data-cdw-tab="seg-3">Auditoria</button>
+            </div>
+            <div class="cdw-tabs-content">
+              <div class="cdw-tabs-panel is-active" data-cdw-tab-panel="seg-1">Resumo do cliente.</div>
+              <div class="cdw-tabs-panel" data-cdw-tab-panel="seg-2">Dados completos.</div>
+              <div class="cdw-tabs-panel" data-cdw-tab-panel="seg-3">Logs e trilhas.</div>
+            </div>
+          </div>
+        </div>
+        <div class="cdw-fw-docs-codeblock">
+          <div class="cdw-fw-docs-code-head">
+            <div class="cdw-fw-docs-code-title">HTML · Segmentado</div>
+            <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
+          </div>
+          <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-tabs cdw-tabs--segmented cdw-tabs--lg cdw-fw-accent-ink cdw-tabs--bottom" data-cdw-tabs&gt;
+  &lt;div class="cdw-tabs-nav"&gt;
+    &lt;button class="cdw-tabs-tab is-active" data-cdw-tab="seg-1"&gt;Resumo&lt;/button&gt;
+    &lt;button class="cdw-tabs-tab" data-cdw-tab="seg-2"&gt;Detalhes&lt;/button&gt;
+    &lt;button class="cdw-tabs-tab" data-cdw-tab="seg-3"&gt;Auditoria&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-tabs-content"&gt;
+    &lt;div class="cdw-tabs-panel is-active" data-cdw-tab-panel="seg-1"&gt;Resumo do cliente.&lt;/div&gt;
+    &lt;div class="cdw-tabs-panel" data-cdw-tab-panel="seg-2"&gt;Dados completos.&lt;/div&gt;
+    &lt;div class="cdw-tabs-panel" data-cdw-tab-panel="seg-3"&gt;Logs e trilhas.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
         </div>
       </div>
     </div>
@@ -12287,18 +12504,38 @@ accordion?.addEventListener("cdw:accordion:close", (event) =&gt; {
 
   <div class="cdw-fw-docs-subsection" id="tabs-vertical" data-cdw-fw-docs-section>
     <h3 class="cdw-fw-docs-subtitle">Vertical / Lateral</h3>
-    <div class="cdw-fw-docs-preview">
-      <div class="cdw-tabs cdw-tabs--vertical cdw-tabs--card cdw-fw-accent-sky" data-cdw-tabs>
-        <div class="cdw-tabs-nav">
-          <button class="cdw-tabs-tab is-active" data-cdw-tab="v-1">Perfil</button>
-          <button class="cdw-tabs-tab" data-cdw-tab="v-2">Notificações</button>
-          <button class="cdw-tabs-tab" data-cdw-tab="v-3">Segurança</button>
+    <div class="cdw-fw-docs-example">
+      <div class="cdw-fw-docs-preview">
+        <div class="cdw-tabs cdw-tabs--vertical cdw-tabs--card cdw-fw-accent-sky" data-cdw-tabs>
+          <div class="cdw-tabs-nav">
+            <button class="cdw-tabs-tab is-active" data-cdw-tab="v-1">Perfil</button>
+            <button class="cdw-tabs-tab" data-cdw-tab="v-2">Notificações</button>
+            <button class="cdw-tabs-tab" data-cdw-tab="v-3">Segurança</button>
+          </div>
+          <div class="cdw-tabs-content">
+            <div class="cdw-tabs-panel is-active" data-cdw-tab-panel="v-1">Dados de perfil.</div>
+            <div class="cdw-tabs-panel" data-cdw-tab-panel="v-2">Preferências de alerta.</div>
+            <div class="cdw-tabs-panel" data-cdw-tab-panel="v-3">MFA, senhas e SSO.</div>
+          </div>
         </div>
-        <div class="cdw-tabs-content">
-          <div class="cdw-tabs-panel is-active" data-cdw-tab-panel="v-1">Dados de perfil.</div>
-          <div class="cdw-tabs-panel" data-cdw-tab-panel="v-2">Preferências de alerta.</div>
-          <div class="cdw-tabs-panel" data-cdw-tab-panel="v-3">MFA, senhas e SSO.</div>
+      </div>
+      <div class="cdw-fw-docs-codeblock">
+        <div class="cdw-fw-docs-code-head">
+          <div class="cdw-fw-docs-code-title">HTML · Vertical</div>
+          <button class="cdw-fw-docs-copy" type="button" data-cdw-fw-docs-copy>Copiar</button>
         </div>
+        <pre class="cdw-fw-docs-code"><code data-cdw-fw-docs-code>&lt;div class="cdw-tabs cdw-tabs--vertical cdw-tabs--card cdw-fw-accent-sky" data-cdw-tabs&gt;
+  &lt;div class="cdw-tabs-nav"&gt;
+    &lt;button class="cdw-tabs-tab is-active" data-cdw-tab="v-1"&gt;Perfil&lt;/button&gt;
+    &lt;button class="cdw-tabs-tab" data-cdw-tab="v-2"&gt;Notificações&lt;/button&gt;
+    &lt;button class="cdw-tabs-tab" data-cdw-tab="v-3"&gt;Segurança&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="cdw-tabs-content"&gt;
+    &lt;div class="cdw-tabs-panel is-active" data-cdw-tab-panel="v-1"&gt;Dados de perfil.&lt;/div&gt;
+    &lt;div class="cdw-tabs-panel" data-cdw-tab-panel="v-2"&gt;Preferências de alerta.&lt;/div&gt;
+    &lt;div class="cdw-tabs-panel" data-cdw-tab-panel="v-3"&gt;MFA, senhas e SSO.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
       </div>
     </div>
   </div>
@@ -12343,43 +12580,52 @@ CDW.Tabs.open("seguranca");</code></pre>
 
 
 
-    const pageLinks = [
-    { key: "getting-started", label: "Come&ccedil;ando", href: "./index.html" },
-    { key: "layout", label: "Layout", href: "./layout.html" },
-    { key: "design", label: "Sistema de design", href: "./design.html" },
-    { key: "utilities", label: "Utilit&aacute;rios", href: "./utilities.html" },
-    { key: "components", label: "Componentes", href: "./components.html" },
-    { key: "login", label: "Login / Auth", href: "./login.html" },
-    { key: "tabs", label: "Tabs", href: "./tabs.html" },
-  ];
-
-  const pageSections = {
-    "getting-started": ["gettingStarted"],
-    layout: ["layout"],
-    design: ["designOverview", "designTypography", "designRhythm", "designShapes", "designBorders", "designShadows", "designGradients", "designStates", "designMotion", "designAccessibility", "designTokens"],
-    utilities: ["colors", "utilities"],
-    components: [
-      "buttons",
-      "accordion",
-      "alert",
-      "badges",
-      "cards",
-      "images",
+    const pageSections = {
+      "getting-started": ["gettingStarted"],
+      layout: ["layout"],
+      design: ["designOverview", "designTypography", "designRhythm", "designShapes", "designBorders", "designShadows", "designGradients", "designStates", "designMotion", "designAccessibility", "designTokens"],
+      utilities: ["utilities"],
+      colors: ["colors"],
+      fonts: ["fonts"],
+      components: [
+        "buttons",
+        "accordion",
+        "alert",
+        "badges",
+        "cards",
+        "images",
         "fab",
         "tables",
-      "hero",
-      "panel",
-      "steps",
-      "forms",
-      "gallery",
-      "modal",
-      "tooltip",
-      "stage",
-      "navbars",
-    ],
-    login: ["login"],
-    tabs: ["tabs"],
-  };
+        "hero",
+        "panel",
+        "steps",
+        "forms",
+        "gallery",
+        "modal",
+        "tooltip",
+        "stage",
+        "navbars",
+      ],
+      login: ["login"],
+      tabs: ["tabs"],
+      accordion: ["accordion"],
+      alert: ["alert"],
+      badges: ["badges"],
+      buttons: ["buttons"],
+      cards: ["cards"],
+      fab: ["fab"],
+      forms: ["forms"],
+      gallery: ["gallery"],
+      hero: ["hero"],
+      images: ["images"],
+      modal: ["modal"],
+      navbars: ["navbars"],
+      panel: ["panel"],
+      stage: ["stage"],
+      steps: ["steps"],
+      tables: ["tables"],
+      tooltip: ["tooltip"],
+    };
 
   const pageKey =
     typeof window !== "undefined" && window.CDW_DOCS_PAGE
@@ -12429,7 +12675,7 @@ CDW.Tabs.open("seguranca");</code></pre>
     .filter(Boolean)
     .join("\n");
 
-  buildNav(app);
+    buildNav(app, pageKey);
   setupCopy(app);
   setupHiddenToggle(app);
   setupNavTargets(app);
@@ -12438,388 +12684,13 @@ CDW.Tabs.open("seguranca");</code></pre>
 
 })();
 
-function buildNav(root) {
+function buildNav(root, pageKey) {
   const nav = root.querySelector("[data-cdw-fw-docs-nav-container]");
   if (!nav) {
     return;
   }
 
   nav.innerHTML = "";
-
-  const navDataByPage = {
-    "getting-started": [
-      {
-        title: "COME&Ccedil;ANDO",
-        items: [
-          {
-            title: "Primeiros passos",
-            target: "#comecando",
-            links: [
-              { label: "Inclus&atilde;o via CDN", href: "#comecando-cdn" },
-              { label: "Vers&atilde;o sempre atual", href: "#comecando-latest" },
-              { label: "Uso com ES Modules", href: "#comecando-esm" },
-            ],
-          },
-        ],
-      },
-    ],
-    layout: [
-      {
-        title: "LAYOUT",
-        items: [
-          {
-            title: "Containers",
-            target: "#layout-container",
-            links: [
-              { label: "Container b&aacute;sico", href: "#layout-container" },
-              { label: "Container fluido", href: "#layout-container" },
-              { label: "Exemplos de uso", href: "#layout-container" },
-            ],
-          },
-          {
-            title: "Grids",
-            target: "#layout-grid",
-            links: [
-              { label: "Grid system", href: "#layout-grid" },
-              { label: "Colunas", href: "#layout-grid" },
-              { label: "Responsividade", href: "#layout-grid" },
-            ],
-          },
-        ],
-      },
-    ],        design: [
-      {
-        title: "SISTEMA DE DESIGN",
-        items: [
-          { title: "Visao geral", target: "#design-visao", links: [{ label: "Visao geral", href: "#design-visao" }] },
-          { title: "Tipografia", target: "#design-tipografia", links: [{ label: "Tipografia", href: "#design-tipografia" }] },
-          { title: "Ritmo &amp; Espacamento", target: "#design-ritmo", links: [{ label: "Ritmo &amp; Espacamento", href: "#design-ritmo" }] },
-          { title: "Formas &amp; Raios", target: "#design-formas", links: [{ label: "Formas &amp; Raios", href: "#design-formas" }] },
-          { title: "Bordas", target: "#design-bordas", links: [{ label: "Bordas", href: "#design-bordas" }] },
-          { title: "Sombras &amp; Elevacao", target: "#design-sombras", links: [{ label: "Sombras &amp; Elevacao", href: "#design-sombras" }] },
-          { title: "Gradientes", target: "#design-gradientes", links: [{ label: "Gradientes", href: "#design-gradientes" }] },
-          { title: "Estados", target: "#design-estados", links: [{ label: "Estados", href: "#design-estados" }] },
-          { title: "Motion &amp; Transicoes", target: "#design-motion", links: [{ label: "Motion &amp; Transicoes", href: "#design-motion" }] },
-          { title: "Acessibilidade", target: "#design-acessibilidade", links: [{ label: "Acessibilidade", href: "#design-acessibilidade" }] },
-          { title: "Tokens do Sistema", target: "#design-tokens", links: [{ label: "Tokens do Sistema", href: "#design-tokens" }] },
-        ],
-      },
-    ],
-    utilities: [
-      {
-        title: "UTILIT&Aacute;RIOS",
-        items: [
-          {
-            title: "Cores",
-            target: "#cores",
-            links: [
-              { label: "Introdu&ccedil;&atilde;o", href: "#cores-intro" },
-              { label: "Paleta", href: "#cores-paleta" },
-              { label: "Monocrom&aacute;ticas", href: "#cores-mono" },
-              { label: "Uso b&aacute;sico", href: "#cores-uso" },
-            ],
-          },
-          {
-            title: "Espa&ccedil;amento",
-            target: "#util-espacamento",
-            links: [{ label: "Espa&ccedil;amento", href: "#util-espacamento" }],
-          },
-          {
-            title: "Display",
-            target: "#util-display",
-            links: [{ label: "Display", href: "#util-display" }],
-          },
-          {
-            title: "Flex",
-            target: "#util-flex",
-            links: [{ label: "Flex", href: "#util-flex" }],
-          },
-          {
-            title: "Gap",
-            target: "#util-gap",
-            links: [{ label: "Gap", href: "#util-gap" }],
-          },
-          {
-            title: "Dimens&otilde;es",
-            target: "#util-dimensoes",
-            links: [{ label: "Dimens&otilde;es", href: "#util-dimensoes" }],
-          },
-          {
-            title: "Alinhamento",
-            target: "#util-alinhamento",
-            links: [{ label: "Alinhamento", href: "#util-alinhamento" }],
-          },
-          {
-            title: "Posicionamento",
-            target: "#util-posicionamento",
-            links: [{ label: "Posicionamento", href: "#util-posicionamento" }],
-          },
-          {
-            title: "Overflow",
-            target: "#util-overflow",
-            links: [{ label: "Overflow", href: "#util-overflow" }],
-          },
-          {
-            title: "Texto",
-            target: "#util-texto",
-            links: [{ label: "Texto", href: "#util-texto" }],
-          },
-          {
-            title: "Design (exemplos)",
-            target: "#util-design-exemplos",
-            links: [{ label: "Design (exemplos)", href: "#util-design-exemplos" }],
-          },
-        ],
-      },
-    ],components: [
-      {
-        title: "COMPONENTES",
-        items: [
-          {
-            title: "Bot&otilde;es",
-            target: "#botoes-estrutura",
-            links: [
-              { label: "Tipos", href: "#botoes-estrutura" },
-              { label: "Estados", href: "#botoes-estados" },
-              { label: "&Iacute;cones", href: "#botoes-estilos" },
-            ],
-          },
-          {
-            title: "Accordions",
-            target: "#accordion-estrutura",
-            links: [
-              { label: "Uso", href: "#accordion-estrutura" },
-              { label: "Varia&ccedil;&otilde;es", href: "#accordion-variedades" },
-              { label: "Exemplos", href: "#accordion-exemplos" },
-            ],
-          },
-          {
-            title: "Alertas",
-            target: "#alertas",
-            links: [
-              { label: "Introducao", href: "#alert-intro" },
-              { label: "Estrutura base", href: "#alert-estrutura" },
-              { label: "Modelos", href: "#alert-modelos" },
-              { label: "Cores e variantes", href: "#alert-variantes" },
-              { label: "API / Opcoes", href: "#alert-api" },
-              { label: "Boas praticas", href: "#alert-boas-praticas" },
-            ],
-          },
-          {
-            title: "Badges",
-            target: "#badges",
-            links: [
-              { label: "Conceito", href: "#badges-conceito" },
-              { label: "Tipos", href: "#badges-tipos" },
-              { label: "Estilos", href: "#badges-estilos" },
-              { label: "Exemplos", href: "#badges-exemplos" },
-              { label: "Uso", href: "#badges-uso" },
-            ],
-          },
-          {
-            title: "Cards",
-            target: "#cards",
-            links: [
-              { label: "Conceito", href: "#cards-conceito" },
-              { label: "Tipos", href: "#cards-tipos" },
-              { label: "Estrutura", href: "#cards-estrutura" },
-              { label: "Exemplos", href: "#cards-exemplos" },
-              { label: "Uso", href: "#cards-uso" },
-            ],
-          },
-          {
-            title: "Image",
-            target: "#images",
-            links: [
-              { label: "Conceito", href: "#image-conceito" },
-              { label: "Estrutura", href: "#image-estrutura" },
-              { label: "Tamanhos", href: "#image-tamanhos" },
-              { label: "Tipos", href: "#image-tipos" },
-              { label: "Bordas", href: "#image-bordas" },
-              { label: "Alinhamento", href: "#image-alinhamento" },
-            ],
-          },          {
-            title: "Floating Action Button",
-            target: "#fab",
-            links: [
-              { label: "Conceito", href: "#fab-conceito" },
-              { label: "Estrutura", href: "#fab-estrutura" },
-              { label: "Posicionamento", href: "#fab-posicionamento" },
-              { label: "Formas", href: "#fab-formas" },
-              { label: "Tamanhos", href: "#fab-tamanhos" },
-              { label: "Modelos", href: "#fab-modelos" },
-              { label: "Exemplos de uso", href: "#fab-exemplos" },
-            ],
-          },
-          {
-            title: "Tabelas",
-            target: "#tables",
-            links: [
-              { label: "Conceito", href: "#tables-conceito" },
-              { label: "Estrutura", href: "#tables-estrutura" },
-              { label: "Opcoes", href: "#tables-opcoes" },
-              { label: "Variacoes", href: "#tables-variacoes" },
-              { label: "Tamanhos", href: "#tables-tamanhos" },
-              { label: "Estados", href: "#tables-estados" },
-              { label: "Surface", href: "#tables-surface" },
-              { label: "Rail", href: "#tables-rail" },
-              { label: "Focus", href: "#tables-focus" },
-              { label: "Split", href: "#tables-split" },
-              { label: "Timeline", href: "#tables-timeline" },
-              { label: "Minimal", href: "#tables-minimal" },
-              { label: "Responsivo", href: "#tables-responsivo" },
-            ],
-          },
-          {
-            title: "Steps",
-            target: "#steps",
-            links: [
-              { label: "Conceito", href: "#steps-conceito" },
-              { label: "Estrutura", href: "#steps-estrutura" },
-              { label: "Estados", href: "#steps-estados" },
-              { label: "Tamanhos", href: "#steps-tamanhos" },
-              { label: "Modelos", href: "#steps-modelos" },
-              { label: "Exemplos reais", href: "#steps-exemplos" },
-            ],
-          },
-          {
-            title: "Formularios",
-            target: "#forms",
-            links: [
-              { label: "Conceito", href: "#forms-conceito" },
-              { label: "Estrutura base", href: "#forms-estrutura" },
-              { label: "Inputs", href: "#forms-inputs" },
-              { label: "Selects", href: "#forms-selects" },
-              { label: "Check / Radio", href: "#forms-checks" },
-              { label: "Uploads", href: "#forms-uploads" },
-              { label: "Grid", href: "#forms-grid" },
-              { label: "Estados", href: "#forms-estados" },
-              { label: "Responsividade", href: "#forms-responsivo" },
-              { label: "Exemplos completos", href: "#forms-exemplos" },
-            ],
-          },
-          {
-            title: "Hero",
-            target: "#hero",
-            links: [
-              { label: "Conceito", href: "#hero-conceito" },
-              { label: "Estrutura", href: "#hero-estrutura" },
-              { label: "Tamanhos", href: "#hero-tamanhos" },
-              { label: "Modelos", href: "#hero-modelos" },
-              { label: "Uso", href: "#hero-uso" },
-            ],
-          },
-          {
-            title: "Panel",
-            target: "#panel",
-            links: [
-              { label: "Conceito", href: "#panel-conceito" },
-              { label: "Estrutura", href: "#panel-estrutura" },
-              { label: "Tamanhos", href: "#panel-tamanhos" },
-              { label: "Modelos", href: "#panel-modelos" },
-              { label: "Exemplos", href: "#panel-exemplos" },
-            ],
-          },
-          {
-            title: "Gallery",
-            target: "#gallery",
-            links: [
-              { label: "Conceito", href: "#gallery-conceito" },
-              { label: "Estrutura", href: "#gallery-estrutura" },
-              { label: "Modelos", href: "#gallery-modelos" },
-              { label: "E-commerce", href: "#gallery-ecommerce" },
-              { label: "Uso", href: "#gallery-uso" },
-            ],
-          },
-          {
-            title: "Modal",
-            target: "#modal",
-            links: [
-              { label: "Conceito", href: "#modal-conceito" },
-              { label: "Estrutura", href: "#modal-estrutura" },
-              { label: "Tamanhos", href: "#modal-tamanhos" },
-              { label: "Modelos", href: "#modal-modelos" },
-              { label: "Exemplos", href: "#modal-exemplos" },
-            ],
-          },
-          {
-            title: "Tooltip",
-            target: "#tooltip",
-            links: [
-              { label: "Conceito", href: "#tooltip-conceito" },
-              { label: "Modelos", href: "#tooltip-modelos" },
-              { label: "Posicionamento", href: "#tooltip-posicionamento" },
-              { label: "Cores", href: "#tooltip-cores" },
-              { label: "Exemplos", href: "#tooltip-exemplos" },
-            ],
-          },
-          {
-            title: "Stage",
-            target: "#stage",
-            links: [
-              { label: "Conceito", href: "#stage-conceito" },
-              { label: "Estrutura", href: "#stage-estrutura" },
-              { label: "Modelos", href: "#stage-modelos" },
-              { label: "Exemplos", href: "#stage-exemplos" },
-              { label: "Uso", href: "#stage-usos" },
-            ],
-          },
-          {
-            title: "NavBars",
-            target: "#navbars",
-            links: [
-              { label: "Conceito", href: "#navbars-conceito" },
-              { label: "Estrutura", href: "#navbars-estrutura" },
-              { label: "Modelos", href: "#navbars-modelos" },
-              { label: "Mobile", href: "#navbars-mobile" },
-              { label: "Exemplos", href: "#navbars-exemplos" },
-            ],
-          },
-        ],
-      },
-    ],
-    login: [
-      {
-        title: "LOGIN / AUTH",
-        items: [
-          {
-            title: "Estrutura",
-            target: "#login-estrutura",
-            links: [{ label: "Estrutura base", href: "#login-estrutura" }],
-          },
-          {
-            title: "Modelos",
-            target: "#login-modelos",
-            links: [
-              { label: "Split Clean", href: "#login-modelos" },
-              { label: "Inverted Focus", href: "#login-modelos" },
-              { label: "Frame / Panel", href: "#login-modelos" },
-            ],
-          },
-          {
-            title: "Painel visual",
-            target: "#login-visual",
-            links: [{ label: "Identidade", href: "#login-visual" }],
-          },
-        ],
-      },
-    ],
-  };
-
-    const pageKey =
-    typeof window !== "undefined" && window.CDW_DOCS_PAGE
-      ? String(window.CDW_DOCS_PAGE).toLowerCase()
-      : "getting-started";
-
-  const pageLinks = [
-    { key: "getting-started", label: "Come&ccedil;ando", href: "./index.html" },
-    { key: "layout", label: "Layout", href: "./layout.html" },
-    { key: "design", label: "Sistema de design", href: "./design.html" },
-    { key: "utilities", label: "Utilit&aacute;rios", href: "./utilities.html" },
-    { key: "components", label: "Componentes", href: "./components.html" },
-  ];
-
-  const navData = navDataByPage[pageKey] || [];
 
   const normalizeLabel = (value) => {
     if (!value) return "";
@@ -12834,140 +12705,84 @@ function buildNav(root) {
     return aLabel.localeCompare(bLabel, "pt-BR");
   };
 
-  const sortedPageLinks = [...pageLinks].sort((a, b) => sortByLabel(a, b, "label"));
-  const sortedNavData = navData
-    .map((group) => ({
-      ...group,
-      items: [...group.items]
-        .sort((a, b) => sortByLabel(a, b, "title"))
-        .map((item) => ({
-          ...item,
-          links: [...item.links].sort((a, b) => sortByLabel(a, b, "label")),
-        })),
-    }))
-    .sort((a, b) => sortByLabel(a, b, "title"));
+  const componentPages = [
+    { key: "accordion", label: "Accordions", href: "./accordion.html" },
+    { key: "alert", label: "Alertas", href: "./alert.html" },
+    { key: "badges", label: "Badges", href: "./badges.html" },
+    { key: "buttons", label: "Botões", href: "./buttons.html" },
+    { key: "cards", label: "Cards", href: "./cards.html" },
+    { key: "fab", label: "FAB", href: "./fab.html" },
+    { key: "forms", label: "Formulários", href: "./forms.html" },
+    { key: "gallery", label: "Galeria", href: "./gallery.html" },
+    { key: "hero", label: "Hero", href: "./hero.html" },
+    { key: "images", label: "Imagens", href: "./images.html" },
+    { key: "modal", label: "Modal", href: "./modal.html" },
+    { key: "navbars", label: "NavBars", href: "./navbars.html" },
+    { key: "panel", label: "Panel", href: "./panel.html" },
+    { key: "stage", label: "Stage", href: "./stage.html" },
+    { key: "steps", label: "Steps", href: "./steps.html" },
+    { key: "tables", label: "Tables", href: "./tables.html" },
+    { key: "tabs", label: "Tabs", href: "./tabs.html" },
+    { key: "tooltip", label: "Tooltip", href: "./tooltip.html" },
+    { key: "login", label: "Login / Auth", href: "./login.html" },
+  ];
 
+  const utilityPages = [
+    { key: "colors", label: "Cores", href: "./colors.html" },
+    { key: "fonts", label: "Fontes", href: "./fonts.html" },
+    { key: "utilities", label: "Utilitários", href: "./utilities.html" },
+    { key: "spacing", label: "Espaçamento", href: "./utilities.html#util-espacamento" },
+    { key: "display", label: "Display", href: "./utilities.html#util-display" },
+    { key: "flex", label: "Flex", href: "./utilities.html#util-flex" },
+    { key: "gap", label: "Gap", href: "./utilities.html#util-gap" },
+    { key: "dimensions", label: "Dimensões", href: "./utilities.html#util-dimensoes" },
+    { key: "alignment", label: "Alinhamento", href: "./utilities.html#util-alinhamento" },
+    { key: "positioning", label: "Posicionamento", href: "./utilities.html#util-posicionamento" },
+    { key: "overflow", label: "Overflow", href: "./utilities.html#util-overflow" },
+    { key: "text", label: "Texto", href: "./utilities.html#util-texto" },
+    { key: "design-examples", label: "Design (exemplos)", href: "./utilities.html#util-design-exemplos" },
+  ];
 
-  const createPageLink = (link) => {
-    const anchor = document.createElement("a");
-    anchor.className = "cdw-fw-docs-nav-link";
-    anchor.href = link.href;
-    anchor.innerHTML = link.label;
-    return anchor;
-  };
+  const navGroups = [
+    {
+      title: "Fundamentos",
+      items: [
+        { key: "getting-started", label: "Começando", href: "./index.html" },
+        { key: "layout", label: "Layout", href: "./layout.html" },
+      ],
+    },
+    { title: "Componentes", items: componentPages },
+    { title: "Utilitários", items: utilityPages },
+  ];
 
-  const pageLinksWrap = document.createElement("div");
-  pageLinksWrap.className = "cdw-fw-docs-nav-links";
-  sortedPageLinks.forEach((link) => {
-    const anchor = createPageLink(link);
-    if (link.key === pageKey) {
-      anchor.setAttribute("aria-current", "page");
-    }
-    pageLinksWrap.appendChild(anchor);
-  });
-  nav.appendChild(pageLinksWrap);
+  navGroups.forEach((group) => {
+    const groupContainer = document.createElement("div");
+    groupContainer.className = "cdw-fw-docs-nav-group";
 
-  const createLink = (link) => {
-    const anchor = document.createElement("a");
-    anchor.className = "cdw-fw-docs-nav-link";
-    anchor.href = link.href;
-    anchor.innerHTML = link.label;
-    anchor.setAttribute("data-cdw-fw-docs-nav", "");
-    return anchor;
-  };
+    const groupTitle = document.createElement("div");
+    groupTitle.className = "cdw-fw-docs-nav-group-label";
+    groupTitle.textContent = group.title;
+    groupContainer.appendChild(groupTitle);
 
-  const navAccordion = document.createElement("div");
-  navAccordion.className = "cdw-accordion cdw-fw-docs-nav-accordion";
-  navAccordion.setAttribute("data-cdw-accordion", "");
-  navAccordion.setAttribute("data-mode", "single");
-  navAccordion.setAttribute("data-collapsible", "true");
-  navAccordion.setAttribute("data-icon", "chevron");
-
-  sortedNavData.forEach((group) => {
-    const groupItem = document.createElement("div");
-    groupItem.className = "cdw-accordion-item";
-
-    const groupTrigger = document.createElement("button");
-    groupTrigger.className = "cdw-accordion-trigger cdw-fw-docs-nav-group-trigger";
-    groupTrigger.type = "button";
-
-    const groupTitle = document.createElement("span");
-    groupTitle.className = "cdw-fw-docs-nav-group-title";
-    groupTitle.innerHTML = group.title;
-
-    const groupIcon = document.createElement("span");
-    groupIcon.className = "cdw-accordion-icon";
-    groupIcon.setAttribute("aria-hidden", "true");
-
-    groupTrigger.appendChild(groupTitle);
-    groupTrigger.appendChild(groupIcon);
-    groupItem.appendChild(groupTrigger);
-
-    const groupPanel = document.createElement("div");
-    groupPanel.className = "cdw-accordion-panel";
-    const groupContent = document.createElement("div");
-    groupContent.className = "cdw-accordion-content";
-
-    const subAccordion = document.createElement("div");
-    subAccordion.className = "cdw-accordion cdw-fw-docs-nav-sub";
-    subAccordion.setAttribute("data-cdw-accordion", "");
-    subAccordion.setAttribute("data-mode", "single");
-    subAccordion.setAttribute("data-collapsible", "true");
-    subAccordion.setAttribute("data-icon", "caret");
-
-    group.items.forEach((item) => {
-      const itemEntry = document.createElement("div");
-      itemEntry.className = "cdw-accordion-item";
-
-      const itemTrigger = document.createElement("button");
-      itemTrigger.className = "cdw-accordion-trigger cdw-fw-docs-nav-item-trigger";
-      itemTrigger.type = "button";
-
-      const itemTitle = document.createElement("span");
-      itemTitle.className = "cdw-fw-docs-nav-item-title";
-      itemTitle.innerHTML = item.title;
-
-      const itemIcon = document.createElement("span");
-      itemIcon.className = "cdw-accordion-icon";
-      itemIcon.setAttribute("aria-hidden", "true");
-
-      itemTrigger.appendChild(itemTitle);
-      itemTrigger.appendChild(itemIcon);
-      if (item.target) {
-        itemTrigger.setAttribute("data-cdw-fw-docs-target", item.target);
+    const linksWrap = document.createElement("div");
+    linksWrap.className = "cdw-fw-docs-nav-links";
+    const sortedItems = [...group.items].sort((a, b) => sortByLabel(a, b, "label"));
+    sortedItems.forEach((item) => {
+      const anchor = document.createElement("a");
+      anchor.className = "cdw-fw-docs-nav-link";
+      anchor.href = item.href;
+      anchor.innerHTML = item.label;
+      if (item.key === pageKey) {
+        anchor.classList.add("cdw-fw-docs-nav-link--active");
+        anchor.setAttribute("aria-current", "page");
       }
-      itemEntry.appendChild(itemTrigger);
-
-      const itemPanel = document.createElement("div");
-      itemPanel.className = "cdw-accordion-panel";
-      const itemContent = document.createElement("div");
-      itemContent.className = "cdw-accordion-content";
-      const linksWrap = document.createElement("div");
-      linksWrap.className = "cdw-fw-docs-nav-links";
-
-      item.links.forEach((link) => {
-        linksWrap.appendChild(createLink(link));
-      });
-
-      itemContent.appendChild(linksWrap);
-      itemPanel.appendChild(itemContent);
-      itemEntry.appendChild(itemPanel);
-      subAccordion.appendChild(itemEntry);
+      linksWrap.appendChild(anchor);
     });
 
-    groupContent.appendChild(subAccordion);
-    groupPanel.appendChild(groupContent);
-    groupItem.appendChild(groupPanel);
-    navAccordion.appendChild(groupItem);
+    groupContainer.appendChild(linksWrap);
+    nav.appendChild(groupContainer);
   });
 
-  nav.appendChild(navAccordion);
-
-  const loginShortcut = document.createElement("a");
-  loginShortcut.className = "cdw-fw-docs-nav-link";
-  loginShortcut.href = "./login.html";
-  loginShortcut.textContent = "Login / Auth";
-  nav.appendChild(loginShortcut);
 }
 
 function setupNavTargets(root) {

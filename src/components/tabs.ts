@@ -273,9 +273,12 @@ function initTabs(container: HTMLElement): void {
     tabs,
     activeId: "",
     orientation,
-    clickHandler: (e) => handleClick(state, e),
-    keyHandler: (e) => handleKeydown(state, e),
+    clickHandler: () => {},
+    keyHandler: () => {},
   };
+
+  state.clickHandler = (e) => handleClick(state, e);
+  state.keyHandler = (e) => handleKeydown(state, e);
 
   applyAria(state);
   nav.addEventListener("click", state.clickHandler);

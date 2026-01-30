@@ -1255,10 +1255,12 @@ function zt(t) {
     tabs: n,
     activeId: "",
     orientation: o,
-    clickHandler: (a) => Xn(r, a),
-    keyHandler: (a) => Yn(r, a)
+    clickHandler: () => {
+    },
+    keyHandler: () => {
+    }
   };
-  if (Gn(r), e.addEventListener("click", r.clickHandler), e.addEventListener("keydown", r.keyHandler), !(typeof window < "u" ? Un(r) : !1)) {
+  if (r.clickHandler = (a) => Xn(r, a), r.keyHandler = (a) => Yn(r, a), Gn(r), e.addEventListener("click", r.clickHandler), e.addEventListener("keydown", r.keyHandler), !(typeof window < "u" ? Un(r) : !1)) {
     const a = n.find((s) => s.button.classList.contains("is-active")) || n.find((s) => s.button.getAttribute("aria-selected") === "true") || n.find((s) => !s.disabled);
     a && L(r, a.id, !1);
   }
